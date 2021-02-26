@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Tgb Pubg Hack - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Tgb Pubg Hack",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/474x/8a/e9/c8/8ae9c8746e7f5ea5737b5b1154c6895e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=tgb+pubg+hack",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Tgb Pubg Hack</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">There are various reasons why one should go for the PUBG mobile emulator and download TGB to play PUBG on pc. 03022021 How to install. Pubg mobile hack latest hack update 0 pubg mobile ios gamek 12 5 esp aimbot marco god view high. <br>				
+			</p>
+										<a class="badge badge-warning" href="/xtc-riau.html">xtc riau</a>
+											<a class="badge badge-light" href="/xtc-zero.html">xtc zero</a>
+											<a class="badge badge-secondary" href="/yugoslav-army-rank-insignia.html">yugoslav army rank insignia</a>
+											<a class="badge badge-success" href="/xtc-xtc-advanced.html">xtc xtc advanced</a>
+											<a class="badge badge-info" href="/z-guard-sweep-no-gi.html">z guard sweep no gi</a>
+											<a class="badge badge-warning" href="/xtc-website.html">xtc website</a>
+											<a class="badge badge-light" href="/yongbi-mobile-apk.html">yongbi mobile apk</a>
+											<a class="badge badge-danger" href="/xtc-tasik.html">xtc tasik</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to visit the right site.  Our site provides you with hints for seeing the highest quality video and image content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to see.  It is also possible to bring about supporting this website by sharing videos and images that you like on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/76/48/f976488a89e2010fa4a1a77d540b1fed.png" data-lightbox="roadtrip" data-title="Pubg Mobile Tgb Hack Free Download Top 5 Hack Free Https Ift Tt 2z8vjx9 Free Download Gaming Tips Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/76/48/f976488a89e2010fa4a1a77d540b1fed.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9y1qo5JVIaY-93iNtkTyOpCRegeXKb-dOSA';" alt="Pubg Mobile Tgb Hack Free Download Top 5 Hack Free Https Ift Tt 2z8vjx9 Free Download Gaming Tips Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pubg Mobile Tgb Hack Free Download Top 5 Hack Free Https Ift Tt 2z8vjx9 Free Download Gaming Tips Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b9/66/66/b96666162289f14dfcfc7ba56b34dfe5.jpg" data-lightbox="roadtrip" data-title="Bypass Emulator Detected Pubg Mobile Tencent Gaming Buddy Tgb Buddy Games I Am Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b9/66/66/b96666162289f14dfcfc7ba56b34dfe5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkAN04GJQUrI9YG6ty_ngNUElu1rRibrv5JA';" alt="Bypass Emulator Detected Pubg Mobile Tencent Gaming Buddy Tgb Buddy Games I Am Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bypass Emulator Detected Pubg Mobile Tencent Gaming Buddy Tgb Buddy Games I Am Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/68/67/2f68679f3ee62f763c172ae919f4b522.png" data-lightbox="roadtrip" data-title="New Tools Hack Unknownsmobile Com Uc Generator Cara Top In 2021 Tool Hacks Generation Uc News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/68/67/2f68679f3ee62f763c172ae919f4b522.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJYTULb8amIDUjAl0k0ZOIEt8k-kM6s0SPSg';" alt="New Tools Hack Unknownsmobile Com Uc Generator Cara Top In 2021 Tool Hacks Generation Uc News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Tools Hack Unknownsmobile Com Uc Generator Cara Top In 2021 Tool Hacks Generation Uc News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/33/42/a23342345478a1fdc9164c97bdf15b80.png" data-lightbox="roadtrip" data-title="Play Pubg Mobile On Pc Tencent Game Buddy Games Brothers In Arms Mobile Offers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/33/42/a23342345478a1fdc9164c97bdf15b80.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiXQFZD2XzdJ85oGTG3yptXTZ3XQC5UYLyog';" alt="Play Pubg Mobile On Pc Tencent Game Buddy Games Brothers In Arms Mobile Offers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Play Pubg Mobile On Pc Tencent Game Buddy Games Brothers In Arms Mobile Offers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/8f/b4/c18fb49a5b11619c0f5f6796396a53c9.jpg" data-lightbox="roadtrip" data-title="Pubg Mobile Emulator Detected Bypass No Ban Safe Pubg Hack Download Hacks Code Free Bypass">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/8f/b4/c18fb49a5b11619c0f5f6796396a53c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkzx__ULiHYR3nRaXX6fLVwFqnnNMwhuYW7w';" alt="Pubg Mobile Emulator Detected Bypass No Ban Safe Pubg Hack Download Hacks Code Free Bypass">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pubg Mobile Emulator Detected Bypass No Ban Safe Pubg Hack Download Hacks Code Free Bypass</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/f7/46/5af7465b6bff911939eb9a0644985fc6.jpg" data-lightbox="roadtrip" data-title="Pin On Android Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/f7/46/5af7465b6bff911939eb9a0644985fc6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo51hRh6c9ihRhxio8rTA_XhrBGjg2w9u5Hw';" alt="Pin On Android Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Android Hacks</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/2f/68/67/2f68679f3ee62f763c172ae919f4b522.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo51hRh6c9ihRhxio8rTA_XhrBGjg2w9u5Hw';" alt="Pin On Android Hacks">
+										<div class="card-body">
+						<h3 class="h5"><b>Download Gameloop the upgraded brand of Tencent Gaming Buddy one of the largest android emulators to download and play mobile games on PC.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Tgb pubg hack</strong>. 
+								
+																	Download PUBG Hack Unzip the file to game folder O. 
+																	PUBG Hack or PUBG Aimbot is a Program that allows us to cheat in PUBG Mobile Emulator. 
+																	All Clip Of download game pubg mobile quantum. 
+																	Tencent Gaming Buddy is the best Android emulator for playing PUBG Mobile on Windows PC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	0 Response to Pubg Hack Tgb Posting Komentar. 
+																	Antiban New tema pubg mobile asus Mod Menu Hack Pubg Mobile Pc Tgb Last Update 0 11 0 pubg mobile tencent emulator vip hack. 
+																	Antiban new mod menu hack pubg can you delete pubg mobile account mobile pc tgb last update 0 11 0 2019. 
+																	You can enjoy hundreds of hot games for free includes PUBG Mobile Free Fire Call of Duty Mobile Mobile Legends Arena of Valor and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	05022021 How to install. 
+																	The following are the new additions that come with the PUBG Mobile 0165 update. 
+																	Posting Komentar Atom About Me. 
+																	The right PUBG hack will not only allow you to flourish in any server you join but it will give you the confidence needed to approach every match with a killer instinct. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Playerunknown S Battlegrounds Pubg Mobile Gun Weapon Game Weapon pubg mobile guns power list pubg mobile gun weapon auto part png. 
+																	You can find more updates on Pub Twitter. 
+																	Therefore each new PUBG mobile update brings new features improvements and other additions to make the game better and more fun. 
+																	Tencent emulator developed to provide better gaming controls you can easily play Android games through mouse and keyboard and also connect other gaming consoles as well. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download TGB in easy steps. 
+																	Page 1 of 2. 
+																	Remember your time only starts when you enter the key in hack loader we have done this for you not to lose any time while you set-up your PC and get it ready. 
+																	Is it possible to cheat in PUBG Mobile. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Install the cheat engine from the official website. 
+																	Pubg Mobile Lite Download. 
+																	Now locate the file. 
+																	Pubg Mobile Guns Power List. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The functions of the cheats will depend on the script used. 
+																	Pubg Generator Lihat profil lengkapku. 
+																	Pubg hack tgb hack pubg mobile pc bypass emulator detected tgb pubg mobile lite dns ayarlara ldplayer update 0 10 5. 
+																	Discussion on PUBG Mobile TGB Emulator - AimbotESPNo RecoilMuch More - Undetected - CHEAP within the PlayerUnknowns Battlegrounds Trading forum part of the Shooter Trading category. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PUBG Mobile Developers are always working on new features modes and other things while making PUBG Mobile more fun and enjoyable. 
+																	So your 24-hours 7-days 30-days only start countdown when you enter the key for the first time. 
+																	Posting Lebih Baru Posting Lama Beranda. 
+																	PUBG Hack has a lot of features like aimbot esp wallhack high jump god view car fly no recoil speed hack fuel hack god mode etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Crypto Cheats has been developing hacks for years now and its allowed our team to perfect the process. 
+																	Pubg mobile pc hacker Download Pubg Mobile Pc Ha. 
+																	It is an official gaming emulator of PUBG mobile PlayerUnknowns Battlegrounds. 
+																	Ck 0 9 1 Undetected Esp Aimbot No Recoil pubg mobile emalatar hack 2019. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	 
+																	In case of pubg Jump hack speed hack Antenna Hack FOV Hack Wallhack Aimbot Magic Bullet Auto Headshot Esp Color Hack Black White etc are available and will be explained in detail below. 
+																	In regards to PUBG hacks there is no other place to turn when you want the best possible option. 
+																	New 2019 Pubg pubg mobile. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PUBG is a massive game that has you battling against 99 other people in a world filled to the brim with guns so sporting a PUBG aimbot is going to make things much easier. 
+																	Crypto Cheats is a name that you can count on when youre looking for reliable hacks regardless of the game title. 
+																	The Tencent emulator can be easily installed on Windows 10 or any other operating system with easy instructions. 
+																	Download Creation Hack Video Imclips Net. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download PUBG Hack Unzip the file to game folder. 
+																	This post should be used as a tool to help the public understand how hackers are bypassing pubg anti-cheat detection. 
+																	When you are done with instructions just download the hack run it insert your key and then start up PUBG. 
+																	Click here to download Tencent Gaming Buddy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pubg Hack Tgb Tweet. 
+																	Agree on the terms and conditions. 
+																	New hack how to start pubg promethios 05 05 2019 cheat pubg mobile di emulator tencent esp. 
+																	Using other cheats and even an emulator bypass is a hack according to Tencent and Pubg corporation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2 Start the emulator. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/49/dc/5349dc43dd4707cbef56ee987a493c86.jpg" data-lightbox="roadtrip" data-title="Pubg Mobile 0 15 0 Emulator Detection Bypass In Gameloop Tgb Detection Shared Folder Party Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/49/dc/5349dc43dd4707cbef56ee987a493c86.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbhr5g45JSTV3nai3_kQihTtSVMrHnwkXa5Q';" alt="Pubg Mobile 0 15 0 Emulator Detection Bypass In Gameloop Tgb Detection Shared Folder Party Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pubg Mobile 0 15 0 Emulator Detection Bypass In Gameloop Tgb Detection Shared Folder Party Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/30/62/8b/30628b9c1a0492f87fe147eb2ce6c33f.jpg" data-lightbox="roadtrip" data-title="Pubg Mobile Mod Apk V1 1 0 Download Unlimited Uc Hack Aimbot Mod Mobile Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/30/62/8b/30628b9c1a0492f87fe147eb2ce6c33f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9zNmjLY2EpGidIJBwbup7J05QIe4NuBr-bw';" alt="Pubg Mobile Mod Apk V1 1 0 Download Unlimited Uc Hack Aimbot Mod Mobile Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pubg Mobile Mod Apk V1 1 0 Download Unlimited Uc Hack Aimbot Mod Mobile Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/43/df/b943df53a11dfab0cd8c846ae2e767a1.png" data-lightbox="roadtrip" data-title="Play Pubg Mobile On Pc Tencent Game Buddy Best Action Games Im App Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/43/df/b943df53a11dfab0cd8c846ae2e767a1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0teG9P6lWNh3KP7-SWa58NSlwdExKRQKpw';" alt="Play Pubg Mobile On Pc Tencent Game Buddy Best Action Games Im App Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Play Pubg Mobile On Pc Tencent Game Buddy Best Action Games Im App Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/a6/5d/9a/a65d9a926daba76c214c3ba1a4ed09e8.jpg" data-lightbox="roadtrip" data-title="Bypass Emulator Detected Pubg Mobile Ldplayer Bypass Mobile Download Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/a6/5d/9a/a65d9a926daba76c214c3ba1a4ed09e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVH0rkCk3ucMRprYPLsfTg5srwdbxGAz0efw';" alt="Bypass Emulator Detected Pubg Mobile Ldplayer Bypass Mobile Download Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bypass Emulator Detected Pubg Mobile Ldplayer Bypass Mobile Download Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2d/8c/b7/2d8cb74941414e4d628961b5d19caf55.jpg" data-lightbox="roadtrip" data-title="Setting Emulator Tencent Gaming Buddy Mobile Game Battle Royale Game Buddy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2d/8c/b7/2d8cb74941414e4d628961b5d19caf55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMSjpKM8LSTnE5CIyLCaCNnDbjjKFZ2MHYZg';" alt="Setting Emulator Tencent Gaming Buddy Mobile Game Battle Royale Game Buddy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Setting Emulator Tencent Gaming Buddy Mobile Game Battle Royale Game Buddy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/74/23/c4/7423c4824d6f62128bb1e2307be4f0e9.jpg" data-lightbox="roadtrip" data-title="Jamutgb Bypass Emulator Detected Pubg Mobile Tencent Gaming Buddy Games Buddy I Am Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/74/23/c4/7423c4824d6f62128bb1e2307be4f0e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1YA0nMc87kcQNf5HTt249p0efQqXpIcpMtQ';" alt="Jamutgb Bypass Emulator Detected Pubg Mobile Tencent Gaming Buddy Games Buddy I Am Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jamutgb Bypass Emulator Detected Pubg Mobile Tencent Gaming Buddy Games Buddy I Am Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/de/01/35/de01353e18f3c2d3ba06597cf1531f10.jpg" data-lightbox="roadtrip" data-title="How To Play Pubg Mobile On Pc In Hindi Without Graphics Card No Lag Guranteed Youtube Graphic Card Youtube Tutorials Youtube">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/de/01/35/de01353e18f3c2d3ba06597cf1531f10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT37MVM3NY38qPX2t003DSLo3oJdnjhYw8t0g';" alt="How To Play Pubg Mobile On Pc In Hindi Without Graphics Card No Lag Guranteed Youtube Graphic Card Youtube Tutorials Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Play Pubg Mobile On Pc In Hindi Without Graphics Card No Lag Guranteed Youtube Graphic Card Youtube Tutorials Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/1a/3d/d61a3db661098966336f8533c1625f2a.png" data-lightbox="roadtrip" data-title="Play Pubg Mobile On Pc Tencent Game Buddy Games Mobile Legends Buddy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/1a/3d/d61a3db661098966336f8533c1625f2a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFdgeMWLXaHB7sqhH8IYj7UmFgYdMhPjgleQ';" alt="Play Pubg Mobile On Pc Tencent Game Buddy Games Mobile Legends Buddy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Play Pubg Mobile On Pc Tencent Game Buddy Games Mobile Legends Buddy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/76/57/50765706e819f143bf1fb99a4cc87d68.png" data-lightbox="roadtrip" data-title="Play Pubg Mobile On Pc Tencent Game Buddy Best Action Games Gaming Tips Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/76/57/50765706e819f143bf1fb99a4cc87d68.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKXJE4wiHnqV4Z-_5xadLStY3crw6TO6xOog';" alt="Play Pubg Mobile On Pc Tencent Game Buddy Best Action Games Gaming Tips Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Play Pubg Mobile On Pc Tencent Game Buddy Best Action Games Gaming Tips Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/de/fa/02defac6de719b82851d8f063285c65d.png" data-lightbox="roadtrip" data-title="Play Freefire On Pc Tencent Game Buddy New Survivor Battle Royale Game Free Facebook Likes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/de/fa/02defac6de719b82851d8f063285c65d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1DUHwdr27MQYtBTWLHsvx-Xx97jk3WqV3Tg';" alt="Play Freefire On Pc Tencent Game Buddy New Survivor Battle Royale Game Free Facebook Likes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Play Freefire On Pc Tencent Game Buddy New Survivor Battle Royale Game Free Facebook Likes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ff/62/4b/ff624bdcafe8d7ec4521622d16166110.jpg" data-lightbox="roadtrip" data-title="Pubg Mobile Lite New Vip Hack Flying Car Hack In 2021 Car Hacks Hacks Flying Car">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ff/62/4b/ff624bdcafe8d7ec4521622d16166110.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLwh_3CQEhUrd5bmIPX20ofC0czVv9GRk-eA';" alt="Pubg Mobile Lite New Vip Hack Flying Car Hack In 2021 Car Hacks Hacks Flying Car">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pubg Mobile Lite New Vip Hack Flying Car Hack In 2021 Car Hacks Hacks Flying Car</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/19/45/00/194500a495c55abcf3d14eada97e0f07.jpg" data-lightbox="roadtrip" data-title="Beastx Pro Scrim Highlights 12 Pubg Mobile Latest Version 2020 2021 Updated 13 Aug 2020 17 22 Highlights Pro 2020 2021 In 2020 Highlights Stickman Battle Rush Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/19/45/00/194500a495c55abcf3d14eada97e0f07.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZkU7AxHhvWanTsu99pMggYcHOdWxNQrKdtQ';" alt="Beastx Pro Scrim Highlights 12 Pubg Mobile Latest Version 2020 2021 Updated 13 Aug 2020 17 22 Highlights Pro 2020 2021 In 2020 Highlights Stickman Battle Rush Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Beastx Pro Scrim Highlights 12 Pubg Mobile Latest Version 2020 2021 Updated 13 Aug 2020 17 22 Highlights Pro 2020 2021 In 2020 Highlights Stickman Battle Rush Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8a/e9/c8/8ae9c8746e7f5ea5737b5b1154c6895e.jpg" data-lightbox="roadtrip" data-title="How Did I Move To Phoenix Os From Pubg Mobile Emulator Phoenix Vs Tgb Latest Games Graphic Card Moving">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8a/e9/c8/8ae9c8746e7f5ea5737b5b1154c6895e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOq3BLuUlytQUyYsIIaGYH5mr7cSM_3cN1nw';" alt="How Did I Move To Phoenix Os From Pubg Mobile Emulator Phoenix Vs Tgb Latest Games Graphic Card Moving">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Did I Move To Phoenix Os From Pubg Mobile Emulator Phoenix Vs Tgb Latest Games Graphic Card Moving</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-rank-insignia-ww1.html">Army Rank Insignia Ww1</a></li>
+													<li class="list-group-item"><a href="/army-rank-insignia-on-bdu.html">Army Rank Insignia On Bdu</a></li>
+													<li class="list-group-item"><a href="/army-rank-equivalent-to-squadron-leader.html">Army Rank Equivalent To Squadron Leader</a></li>
+													<li class="list-group-item"><a href="/army-rank-corporal.html">Army Rank Corporal</a></li>
+													<li class="list-group-item"><a href="/army-rank-from-lowest-to-highest.html">Army Rank From Lowest To Highest</a></li>
+													<li class="list-group-item"><a href="/army-rank-insignia-quiz.html">Army Rank Insignia Quiz</a></li>
+													<li class="list-group-item"><a href="/army-rank-e5.html">Army Rank E5</a></li>
+													<li class="list-group-item"><a href="/army-rank-decals.html">Army Rank Decals</a></li>
+													<li class="list-group-item"><a href="/army-rank-insignia-enlisted.html">Army Rank Insignia Enlisted</a></li>
+													<li class="list-group-item"><a href="/army-rank-beginning-with-s.html">Army Rank Beginning With S</a></li>
+													<li class="list-group-item"><a href="/army-rank-definition.html">Army Rank Definition</a></li>
+													<li class="list-group-item"><a href="/army-rank-after-15-years.html">Army Rank After 15 Years</a></li>
+													<li class="list-group-item"><a href="/army-rank-insignia-specialist.html">Army Rank Insignia Specialist</a></li>
+													<li class="list-group-item"><a href="/army-rank-australia.html">Army Rank Australia</a></li>
+													<li class="list-group-item"><a href="/army-rank-in-the-world.html">Army Rank In The World</a></li>
+													<li class="list-group-item"><a href="/army-rank-and-symbols.html">Army Rank And Symbols</a></li>
+													<li class="list-group-item"><a href="/army-rank-hats.html">Army Rank Hats</a></li>
+													<li class="list-group-item"><a href="/army-rank-csm.html">Army Rank Csm</a></li>
+													<li class="list-group-item"><a href="/army-rank-insignia-world-war-2.html">Army Rank Insignia World War 2</a></li>
+													<li class="list-group-item"><a href="/army-rank-enlisted.html">Army Rank Enlisted</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Benefits Of Joining The National Guard - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Benefits Of Joining The National Guard",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/d6/c6/d7/d6c6d7b5b077378ddea3485a0df0053a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=benefits+of+joining+the+national+guard",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Benefits Of Joining The National Guard</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">One main benefit of the Army National Guard is that it offers paid job training. Joining The Army National Guard. Be at least a junior in high school or have a high school diploma or a GED certificate. <br>				
+			</p>
+										<a class="badge badge-light" href="/otis-and-allen.html">otis and allen</a>
+											<a class="badge badge-info" href="/otis-and-andy.html">otis and andy</a>
+											<a class="badge badge-dark" href="/otis-and-david.html">otis and david</a>
+											<a class="badge badge-primary" href="/otis-and-bedingfield.html">otis and bedingfield</a>
+											<a class="badge badge-danger" href="/otis-and-his-best-friend.html">otis and his best friend</a>
+											<a class="badge badge-danger" href="/orange-army-theme-song-download.html">orange army theme song download</a>
+											<a class="badge badge-dark" href="/orange-army-members.html">orange army members</a>
+											<a class="badge badge-light" href="/orange-army-deer-video.html">orange army deer video</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to visit the right site.  Our site gives you suggestions for seeing the maximum quality video and image content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video for you to see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/85/9a/bb859a77267d6a150daa59da4c874c12.png" data-lightbox="roadtrip" data-title="What Are The Benefits Of Joining The Army Military Jobs Army Benefits Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/85/9a/bb859a77267d6a150daa59da4c874c12.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNo4b3qYKsNaXoBlY2GJ20-p8sMvRDW5tMtQ&amp;ec=45774421';" alt="What Are The Benefits Of Joining The Army Military Jobs Army Benefits Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Are The Benefits Of Joining The Army Military Jobs Army Benefits Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/97/92/719792001e4794665bc7e13cb75bd184.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Is Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/97/92/719792001e4794665bc7e13cb75bd184.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQm9tq3rVO55ueefD4lrxEUf9tBAs8hCREEQ&amp;ec=45774421';" alt="Pin On Guard Is Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Is Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/22/16/022216e5652eb9bedb1ace804fcc3194.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/22/16/022216e5652eb9bedb1ace804fcc3194.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0dTG59Fuo4ErWwQdS-dZzAFH8OM9PGfkUeA&amp;ec=45774421';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/b5/f5/e5b5f55c25482673d021080fca8e20c0.png" data-lightbox="roadtrip" data-title="Financial Benefits Of Joining The Military Military Benefits Joining The Military Army Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/b5/f5/e5b5f55c25482673d021080fca8e20c0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN9Mmcx1N_c5yVGtVBIxK41e0WKM9glKNANg&amp;ec=45774421';" alt="Financial Benefits Of Joining The Military Military Benefits Joining The Military Army Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Financial Benefits Of Joining The Military Military Benefits Joining The Military Army Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/c6/d7/d6c6d7b5b077378ddea3485a0df0053a.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/c6/d7/d6c6d7b5b077378ddea3485a0df0053a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1oTNp8JAtiEu9fILneQ4xlvE4c_hi4mBQ-A&amp;ec=45774421';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/7b/c9/d77bc9689022d07537d752f58232116f.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/7b/c9/d77bc9689022d07537d752f58232116f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ZveMn_QuNCfg85NzMJ4zVKPU9LUP470v1A&amp;ec=45774421';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e6/fa/8a/e6fa8a85fadcf73297730236971531f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ZveMn_QuNCfg85NzMJ4zVKPU9LUP470v1A&amp;ec=45774421';" alt="Pin On Guard Benefits">
+										<div class="card-body">
+						<h3 class="h5"><b>Have you thought about joining the military but arent ready for the complete lifestyle change.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Benefits of joining the national guard</strong>. 
+								
+																	Six years of service in the Selected Reserve AND Were discharged honorably OR. 
+																	Achieve a minimum score on the ASVAB test. 
+																	You must qualify for the job you want with an adequate score on the Armed Services Vocational Aptitude Battery test. 
+																	One National Guard benefit is that you can effectively try out active military without going all-in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Every branch of military has this. 
+																	One of the best benefits you get from enlisting to the National Guard is its paid job training. 
+																	One of the many benefits of the National Guard is paid job training. 
+																	It will strengthen your professional development and leadership potential. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Be between the ages of 17 and 35. 
+																	Other benefits of the National Guard include military discounts. 
+																	MSO Military Service Obligation. 
+																	Joining the Reserve or National. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Joining the Nation Guard in your state is always worth it because if you are a 17 year old still in high school as a Junior you can serve out two years of an 8 year MSO while in school and never go anywhere - deployment-wise. 
+																	5 Reasons Millennials Should Consider Joining The Reserve Or National Guard 1. 
+																	Additionally if you are in the National. 
+																	For instance it gives you 100. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While in the Reserves or Guard you may continue your education and may be helped in defraying the cost of college-accredited courses. 
+																	Meet medical physical and moral requirements. 
+																	I said 91B tank mechanic but thats a lig. 
+																	Many national and local companies still offer wonderful discounts for military personnel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Life insurance is available at very low rates up to a maximum payout of 400000. 
+																	There are also full-time opportunities for some people in the Guard and you may decide you want one of those military jobs. 
+																	Citizen or permanent resident. 
+																	Tuition assistance of up to 100 is offered within the organization. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Guard and Reserve members may qualify for a VA-guaranteed home loan by meeting one of the following conditions. 
+																	VA Home Loan benefits help Servicemembers and Veterans purchase retain or adapt a home. 
+																	Traditional drilling National Guard and reserve members are eligible for the TRICARE Reserve Select health plan. 
+																	The National Guard offers you opportunities to pursue higher education. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	5 Pros of Joining the National Guard Job Training. 
+																	Pros and cons of joining national guard. 
+																	List of Pros of Joining the National Guard 1. 
+																	The third benefit is a financial one. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Along with signing and education bonuses the Air National Guard offers incentives for medical dental and life insurance benefits. 
+																	The service member may also qualify for Line of Duty Care for any injury or illness sustained in the line of duty including traveling to and from the place of duty. 
+																	The National Guard is a good way to get a taste of it. 
+																	Please subscribe and check out my other vlogs thanksAlright last time. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Reserve and National. 
+																	Youll reap the financial rewards of military service when you join the National Guard even if you serve part-time. 
+																	Serving in the Guard is a one-weekend-a-month two-weeks-a-year commitment and gets you a regular paycheck with great benefits. 
+																	List of the Pros of the National Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get a degree with money for school learn job skills that translate to the civilian world make bonds that last a lifetime and earn pride for life. 
+																	When you first sign up for the. 
+																	Joining gives you the opportunity to be part of something greater than yourself. 
+																	Its not easy but youll overcome whatever challenge is laid out before you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If it turns out that military service isnt for you dont worry. 
+																	Its a reserve component of the Army and Air Force and you work alongside well-educated and motivated professionals who eventually become like family. 
+																	It provides educational opportunities. 
+																	The National Guard works with members to build leadership development strategies that reflect. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But thats not the case with the National Guard. 
+																	And the best benefit of being in the National Guard is that it gives you the equipment and knowledge that allows you to be a leader within your family your community and our Country. 
+																	Individuals who are accepted into the National Guard receive an opportunity to pursue an education. 
+																	When you join the Guard you create a world where goals are within your grasp. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tricare medical and dental are available to both enlisted personnel and their families. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/52/73/c2/5273c24f7894a69a4ffad5b6f0cee799.jpg" data-lightbox="roadtrip" data-title="Pin On Deployment Sucks But You Can Do It">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/52/73/c2/5273c24f7894a69a4ffad5b6f0cee799.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPWL41j9hyrdUdEq5loJi8lOTOHRUkTCgLig&amp;ec=45774421';" alt="Pin On Deployment Sucks But You Can Do It">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Deployment Sucks But You Can Do It</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/5b/ae/ea5bae4e832d187fc6904bfe00c051d0.jpg" data-lightbox="roadtrip" data-title="Veterans Day O Judge Of The Nations We Remember Before You With Grateful Hearts The Men And Women Of Our Countr Book Of Common Prayer Names Of Jesus National">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/5b/ae/ea5bae4e832d187fc6904bfe00c051d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnvJQXZAFc6GTh7YjW5A6Yk87iVYuKXObBtw&amp;ec=45774421';" alt="Veterans Day O Judge Of The Nations We Remember Before You With Grateful Hearts The Men And Women Of Our Countr Book Of Common Prayer Names Of Jesus National">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veterans Day O Judge Of The Nations We Remember Before You With Grateful Hearts The Men And Women Of Our Countr Book Of Common Prayer Names Of Jesus National</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fb/c6/d0/fbc6d000c9417bcf6a28108b3b32c8fe.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fb/c6/d0/fbc6d000c9417bcf6a28108b3b32c8fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmjnT0y_AWBOIUlzQGkTtw2jz55CXCre1WVw&amp;ec=45774421';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/2e/32/172e3253c859345590502d7581b9e9a1.jpg" data-lightbox="roadtrip" data-title="Pin On Basic Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/2e/32/172e3253c859345590502d7581b9e9a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSArXM_OimVngMj2fznXyTz9DQhD-r6E7dU5w&amp;ec=45774421';" alt="Pin On Basic Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Basic Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/2f/c0/8c2fc002023cbd4abc83fe13a2391cad.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/2f/c0/8c2fc002023cbd4abc83fe13a2391cad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgcP0xu5WtIfIjvUVhOwX5mgNtZsuyLZPQug&amp;ec=45774421';" alt="Pin On Guard Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/09/ca/3809caad578946addcc8181ecad9d242.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/09/ca/3809caad578946addcc8181ecad9d242.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_LCXhNj40EvqnZtHiUBdupMjsYF-1YDGdg&amp;ec=45774421';" alt="Pin On Guard Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f6/4d/af/f64daf2e2fd715e96159ac5652568b27--joining-the-army-national-guard.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Is Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f6/4d/af/f64daf2e2fd715e96159ac5652568b27--joining-the-army-national-guard.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVdPk90ddjqDtm_Z3rRvJOHXhoik9tTVTpEw&amp;ec=45774421';" alt="Pin On Guard Is Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Is Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4a/ee/44/4aee446dd6b58951c8c29421e0cbc4bd.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4a/ee/44/4aee446dd6b58951c8c29421e0cbc4bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSYZK1x-Czj4VAnrLoIJJCu9SxQqCniCW-5w&amp;ec=45774421';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/a9/f0/c9a9f0ff8c61aacc941c8576660b9ec1.jpg" data-lightbox="roadtrip" data-title="Your Fellow Soldiers Can Become Lifelong Friends Tag Your Bestie To Celebrate Nationalbestfriendsday Military Men Military Police Army Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/a9/f0/c9a9f0ff8c61aacc941c8576660b9ec1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP-jGb38iOI3xmOBMunymxK9LtWHyyX678hg&amp;ec=45774421';" alt="Your Fellow Soldiers Can Become Lifelong Friends Tag Your Bestie To Celebrate Nationalbestfriendsday Military Men Military Police Army Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Fellow Soldiers Can Become Lifelong Friends Tag Your Bestie To Celebrate Nationalbestfriendsday Military Men Military Police Army Decor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/fa/8a/e6fa8a85fadcf73297730236971531f3.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/fa/8a/e6fa8a85fadcf73297730236971531f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmJhPbGuJO4TuAze7i5k6weaqcDCehk9sZiQ&amp;ec=45774421';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/d1/ca/a2d1caf9eaadb0f0b3f856c9d9cd75f3.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/d1/ca/a2d1caf9eaadb0f0b3f856c9d9cd75f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCRVw0zFmuqXLIX0b84r4WAjBpN6mIqti07Q&amp;ec=45774421';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/e1/04/d0e104aa285dc3d755bae6c36bd10b16.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/e1/04/d0e104aa285dc3d755bae6c36bd10b16.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRi6YCO6alBTzeP2SpVM_so7o1kMuvtVlV3w&amp;ec=45774421';" alt="Pin On Guard Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/f9/b8/26f9b802c3fb5f8b5d6bd96f2776f281.png" data-lightbox="roadtrip" data-title="Pin On Workouts And Health Stuff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/f9/b8/26f9b802c3fb5f8b5d6bd96f2776f281.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW6IWRBlvcOyPM66jSnqgoOxAMhnF1ARllEw&amp;ec=45774421';" alt="Pin On Workouts And Health Stuff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Workouts And Health Stuff</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-army-logo-transparent.html">Us Army Logo Transparent</a></li>
+													<li class="list-group-item"><a href="/us-army-picatinny-arsenal-nj.html">Us Army Picatinny Arsenal Nj</a></li>
+													<li class="list-group-item"><a href="/us-army-news-in-nigeria.html">Us Army News In Nigeria</a></li>
+													<li class="list-group-item"><a href="/us-army-national-anthem.html">Us Army National Anthem</a></li>
+													<li class="list-group-item"><a href="/us-army-nco-sword.html">Us Army Nco Sword</a></li>
+													<li class="list-group-item"><a href="/us-army-ncoer-intellect-bullets.html">Us Army Ncoer Intellect Bullets</a></li>
+													<li class="list-group-item"><a href="/us-army-national-archives.html">Us Army National Archives</a></li>
+													<li class="list-group-item"><a href="/us-army-newspaper.html">Us Army Newspaper</a></li>
+													<li class="list-group-item"><a href="/us-army-orange-recruiting-station.html">Us Army Orange Recruiting Station</a></li>
+													<li class="list-group-item"><a href="/us-army-ncoer-leads-bullets.html">Us Army Ncoer Leads Bullets</a></li>
+													<li class="list-group-item"><a href="/us-army-news.html">Us Army News</a></li>
+													<li class="list-group-item"><a href="/us-army-national-guard-state-partnership-program.html">Us Army National Guard State Partnership Program</a></li>
+													<li class="list-group-item"><a href="/us-army-military-news.html">Us Army Military News</a></li>
+													<li class="list-group-item"><a href="/us-army-news-in-iraq-today.html">Us Army News In Iraq Today</a></li>
+													<li class="list-group-item"><a href="/us-army-pickelhaube.html">Us Army Pickelhaube</a></li>
+													<li class="list-group-item"><a href="/us-army-newport-news-va.html">Us Army Newport News Va</a></li>
+													<li class="list-group-item"><a href="/us-army-orange-beret.html">Us Army Orange Beret</a></li>
+													<li class="list-group-item"><a href="/us-army-ncoer.html">Us Army Ncoer</a></li>
+													<li class="list-group-item"><a href="/us-army-nco-insignia.html">Us Army Nco Insignia</a></li>
+													<li class="list-group-item"><a href="/us-army-ngcv-program.html">Us Army Ngcv Program</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

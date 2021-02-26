@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Warna Army Cocok Untuk Kulit Sawo Matang - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Warna Army Cocok Untuk Kulit Sawo Matang",
+  "datePublished": "2021-02-27",
+  "image": "https://cdn-image.hipwee.com/wp-content/uploads/2019/08/hipwee-hijab-sawo-matang-750x422.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=warna+army+cocok+untuk+kulit+sawo+matang",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Warna Army Cocok Untuk Kulit Sawo Matang</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Di bawah ini akan kami jelaskan tentang beberapa warna cat kuku untuk kulit sawo matang. Warna-warna ini akan membuat kulit sawo matang terlihat lebih segar dan cocok untuk makeup harian. Warna terakhir yang cocok untuk pemilik kulit sawo matang adalah warna coklat. <br>				
+			</p>
+										<a class="badge badge-warning" href="/42a-national-guard.html">42a national guard</a>
+											<a class="badge badge-secondary" href="/28th-infantry-division-in-world-war-ii.html">28th infantry division in world war ii</a>
+											<a class="badge badge-success" href="/159th-fighter-squadron.html">159th fighter squadron</a>
+											<a class="badge badge-warning" href="/about-the-air-national-guard.html">about the air national guard</a>
+											<a class="badge badge-light" href="/air-guard-reserve.html">air guard reserve</a>
+											<a class="badge badge-info" href="/129-rqw.html">129 rqw</a>
+											<a class="badge badge-primary" href="/35l-national-guard.html">35l national guard</a>
+											<a class="badge badge-secondary" href="/abg-vs-vbg-slideshare.html">abg vs vbg slideshare</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the right blog.  Our website provides you with hints for viewing the highest quality video and image content, hunt and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you view.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://obs.line-scdn.net/0hd6yeiomIOxlEHBPXFvJETn5KOHZ3cCgaICpqBxRyZS09fHRLLyl8LGgbZiFoKXxHKnJzfGUeICg6eHhGfyp8/w644" data-lightbox="roadtrip" data-title="8 Warna Baju Earth Tone Untuk Kulit Sawo Matang Agar Tampak Lebih Cerah Womantalk Com Line Today">
+											<img class="card-img v-image ads-img " src="https://obs.line-scdn.net/0hd6yeiomIOxlEHBPXFvJETn5KOHZ3cCgaICpqBxRyZS09fHRLLyl8LGgbZiFoKXxHKnJzfGUeICg6eHhGfyp8/w644" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZQpjzfaEy1VWMqfIQJ17h1TwuW5zbKz1vgg';" alt="8 Warna Baju Earth Tone Untuk Kulit Sawo Matang Agar Tampak Lebih Cerah Womantalk Com Line Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Warna Baju Earth Tone Untuk Kulit Sawo Matang Agar Tampak Lebih Cerah Womantalk Com Line Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn-image.hipwee.com/wp-content/uploads/2019/08/hipwee-hijab-sawo-matang-750x422.png" data-lightbox="roadtrip" data-title="8 Pilihan Warna Hijab Buat Kulit Sawo Matang Bikin Wajah Kelihatan Lebih Cerah Dan Nggak Kusam">
+											<img class="card-img v-image ads-img " src="https://cdn-image.hipwee.com/wp-content/uploads/2019/08/hipwee-hijab-sawo-matang-750x422.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_5n-IXrg5HxMdnzF4lFr41r7_7-0uvcJ8lg';" alt="8 Pilihan Warna Hijab Buat Kulit Sawo Matang Bikin Wajah Kelihatan Lebih Cerah Dan Nggak Kusam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Pilihan Warna Hijab Buat Kulit Sawo Matang Bikin Wajah Kelihatan Lebih Cerah Dan Nggak Kusam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/a8/51/61a85100ae33b8f9b4d1956b5ee2d083.jpg" data-lightbox="roadtrip" data-title="Delta Apparel Pro Weight Mens 100 Cotton Moss Green Plain T Shirt Mens Plain T Shirts Wholesale Tee Shirts Wholesale T Shirts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/a8/51/61a85100ae33b8f9b4d1956b5ee2d083.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrCzskGHXP7g3LyVIyCkDQ7BlcMMoqFVIB7Q';" alt="Delta Apparel Pro Weight Mens 100 Cotton Moss Green Plain T Shirt Mens Plain T Shirts Wholesale Tee Shirts Wholesale T Shirts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Delta Apparel Pro Weight Mens 100 Cotton Moss Green Plain T Shirt Mens Plain T Shirts Wholesale Tee Shirts Wholesale T Shirts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://obs.line-scdn.net/0hwxd8A1PjKFdZQQEpNLtXAGMXKzhqLTtUPXd5SQkvdmMjcWcGZHcyYnUTczUkJG8JN3BgNHtBM2YmdWsIYy8y/w644" data-lightbox="roadtrip" data-title="6 Warna Baju Tercantik Untuk Hijab Hijau Army Selain Hitam Agar Wajah Fresh Dan Glowing Womantalk Com Line Today">
+											<img class="card-img v-image ads-img " src="https://obs.line-scdn.net/0hwxd8A1PjKFdZQQEpNLtXAGMXKzhqLTtUPXd5SQkvdmMjcWcGZHcyYnUTczUkJG8JN3BgNHtBM2YmdWsIYy8y/w644" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpe0nMCz-7lBXNEGLbZpXQvRMhpSBJDSwUYA';" alt="6 Warna Baju Tercantik Untuk Hijab Hijau Army Selain Hitam Agar Wajah Fresh Dan Glowing Womantalk Com Line Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Warna Baju Tercantik Untuk Hijab Hijau Army Selain Hitam Agar Wajah Fresh Dan Glowing Womantalk Com Line Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1591785556/k46hcttmk7i7rvfhj5jk.jpg" data-lightbox="roadtrip" data-title="7 Warna Baju Yang Cocok Untuk Pemilik Kulit Gelap Kumparan Com">
+											<img class="card-img v-image ads-img " src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1591785556/k46hcttmk7i7rvfhj5jk.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_WSoCf9wypK6TPHqeg_5j3jW8NxpaluPaiQ';" alt="7 Warna Baju Yang Cocok Untuk Pemilik Kulit Gelap Kumparan Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Warna Baju Yang Cocok Untuk Pemilik Kulit Gelap Kumparan Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://avanascarf.id/wp-content/uploads/2020/06/83021c7f-6ff7-4bf3-ace7-7506b6819ee4_43.jpeg" data-lightbox="roadtrip" data-title="Warna Warni Hijab Yang Cocok Untuk Hijaber Berkulit Sawo Matang Avanascarf">
+											<img class="card-img v-image ads-img " src="https://avanascarf.id/wp-content/uploads/2020/06/83021c7f-6ff7-4bf3-ace7-7506b6819ee4_43.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvlFG6gm6vt6sm28H8b587PLCypqyY3dRJKw';" alt="Warna Warni Hijab Yang Cocok Untuk Hijaber Berkulit Sawo Matang Avanascarf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warna Warni Hijab Yang Cocok Untuk Hijaber Berkulit Sawo Matang Avanascarf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/61/a8/51/61a85100ae33b8f9b4d1956b5ee2d083.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvlFG6gm6vt6sm28H8b587PLCypqyY3dRJKw';" alt="Warna Warni Hijab Yang Cocok Untuk Hijaber Berkulit Sawo Matang Avanascarf">
+										<div class="card-body">
+						<h3 class="h5"><b>Namun apricot cenderung lebih muda dari peach.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Warna army cocok untuk kulit sawo matang</strong>. 
+								
+																	Meskipun punya kulit sawo matang tak berarti kita tak boleh pakai lipstik warna terang lo. 
+																	Ada warna apa saja. 
+																	Tampilan kamu jadi elegan tapi tidak terkesan berlebihan. 
+																	Mungkin banyak yang berpendapat. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hal ini perlu dilakukan agar kita bisa memiliki penampilan yang oke. 
+																	Terkadang warna pink adalah warna yang sering dihindari untuk pemilik kulit sawo matang. 
+																	Salah satu warna kulit yang banyak dimiliki oleh orang Indonesia adalah sawo matang. 
+																	Atau jika Ada penyuka warna bold Anda bisa pilih warna dark brown atau red. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sawo matang memiliki warna yang lebih redup dari kuning langsat dan sedikit lebih cerah dari kulit hitam. 
+																	Karna Posy Liquid Lipstick di series pertamanya Sinse of Desire hadir dengan 5 warna yang semuanya cocok untuk warna kulit sawo matang. 
+																	Memiliki kulit gelap atau hitam manis bukan berarti kamu tidak bisa menggunakan warna-warna. 
+																	Warna blush on apricot akan menghasilkan riasan wajah yang cenderung lembut dan segar. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lebih spesialnya lagi ternyata Lip Tint Implora mengandung Omega 369 yang dapat merawat permukaan bibir yang pecah-pecah serta vitamin C yang dapat mencerahkan kulit bibir. 
+																	Kedua untuk anda yang memiliki warna kulit sawo matang ternyata warna maroon juga cocok loh untuk kamu sehingga akan semakin mempermudah anda dalam menggunakan jenis jilbab apapun yang berwarna maroon. 
+																	Milani Color Statement Bronze Beauty Rp 85500. 
+																	Ketiga warna navy ternyata juga sangat cocok untuk anda yang memiliki kult warna sawo matang sehingga anda sagat bisa menggunakan jilbab. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ini warna lipstik yang cocok untuk kulit sawo matang juga untuk rona kulit Indian dan Afrika. 
+																	Punya kulit sawo matang dan merasa sulit menemukan warna lipstik yang tepat. 
+																	Coba saja Flormar Extreme Matte Lipstick Shade 012. 
+																	Untuk kulit berwarna gelap. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A post shared by Suhaylah suhaysalim Warna coklat dan sejenisnya bisa menambah kesan segar pada kulit sawo matang. 
+																	Langkah Ke-7 Memilih Blush On. 
+																	Warnanya soft banget dan cocok untuk sehari-hari cerahnya juga cocok untuk kulit sawo matang ujar Bestari Gita Fashion and Beauty Stylist dalam kanal Youtube NOVA. 
+																	Jangan sampai kamu yang memiliki kulit sawo matang malah salah memilih warna hijab. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kulit sawo matang hijab kulit gelap warna hijab sesuai warna kulit warna hijab yang oke untuk kulit sawo matang warna yang cocok untuk kulit sawo matang hijab merah maruh hijab hijau hijau cokelat padu padan warna hijab. 
+																	Klik Di Sini Untuk Melihat Rekomendasi Lipstick Wardah Yang Cocok Untuk kulit sawo matang. 
+																	Kesan eksotis dan cantik akan terlihat ketika kuku kamu berwarna coklat. 
+																	Sudah tidak diragukan lagi warna coklat merupakan warna yang cocok bagi pemilik kulit sawo matang. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Warna hijab kulit sawo matang Hijab yang cocok untuk kulit sawo matang atau gelap. 
+																	Warna ini juga bisa dipakai siang ataupun malam hari. 
+																	Thats not a big deal girlsPada dasarnya kulit sawo matang juga dapat tampil stunning dengan berbagai warna lipstik asalkan sesuai dengan undertone-nyaJika memiliki warm undertone pilih warna lipstik yang memiliki sentuhan coral sedangkan nuansa biru untuk pemilik cool undertone. 
+																	Untuk mendapatkan tampilan yang natural untuk pemilik kulit cokelat Anda bisa gunakan blush on berwarna terang seperti peach atau orange karena warna. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pada dasarnya mencari warna pakaian untuk kulit sawo matang tidak terlalu sulit karena sebenarnya kamu bisa menggunakan pakaian dengan warna-warna lain selain warna aman yang biasa kamu gunakan. 
+																	Namun jika kamu memilih warna nude yang agak rose pink kamu bisa terlihat lebih segar lho. 
+																	Semua warna pada Cheek Lip tint ini cocok digunakan untuk semua kalangan Bela termasuk kamu yang berkulit sawo matang. 
+																	Untuk memilih baju warna seseorang yang berkulit sawo matang bisa mencoba melakukan mix and match. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Untuk kamu yang memiliki warna kulit sawo matang dan berani menggunakan warna-warna cerah kamu wajib mencoba lipstik berwarna oranyeAlasannya karena lipstik oranye dapat membuat warna kulitmu jadi terlihat lebih segar dan eksotis tentunya. 
+																	Tapi sesekali kami perlu berimprovisasi dengan pemilihan warna lain. 
+																	Memilih warna hijab untuk pemilik kulit sawo matang gampang-gampang susah. 
+																	Pakaian Berwarna Kuning Kuning Mustard Ilustrasi pakaian berwarna. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Penggunaan blush on dengan warna tint sedikit oranye ini cocok untuk warna kulit medium dan sawo matang karena mereka memiliki undertone hangat dan kekuningan. 
+																	Melansir New Woman India berikut empat merek lipstik warna oranye yang cocok dengan kulitmu. 
+																	Ini artinya kita harus terlebih dahulu menyadari atau mengetahui warna kulit yang kita miliki untuk menentukan warna baju apa saja yang cocok untuk dikenakan. 
+																	Bagi Anda yang berkulit sawo matang Anda tidak perlu ragu karena semua jenis warna merah merupakan warna yang cocok buat dipoles pada kuku Anda. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Berikut ini beberapa warna pakaian yang cocok untuk kulit sawo matang dari yang cerah sampai gelap. 
+																	Segera dapatkan Posy Liquid Lipistick di store kita httpsposybeautycoidshop Be charming with Posy and stay beauty with us. 
+																	Warna rambut yang cocok untuk kulit sawo matang yang ketujuh adalah warna-warna pastel. 
+																	Bronze adalah warna lipstik untuk kulit sawo matang yang boleh dibilang jadi pegangan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Warna cat kuku merah terang maroon plum bahkan burgundy cocok Anda pakai ketika menghadiri acara pada malam hari. 
+																	Dalam hal pemilik pemilik kulit sawo matang harus pandai mengelola pilihan warna baju yang cocok untuk kulit sawo matang. 
+																	Lipstik rose pink juga sangat cocok untuk gaya street look. 
+																	Sekilas warna blush on apricot ini mirip dengan warna peach. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	View this post on Instagram. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn0-production-images-kly.akamaized.net/OLlc_zau81zKmN39GGQNvGxPX7o=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1517053/original/084293800_1487842032-hijab.jpg" data-lightbox="roadtrip" data-title="Tips Memilih Warna Hijab Yang Cocok Sesuai Warna Kulit Fashion Beauty Liputan6 Com">
+											<img class="card-img v-image ads-img " src="https://cdn0-production-images-kly.akamaized.net/OLlc_zau81zKmN39GGQNvGxPX7o=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1517053/original/084293800_1487842032-hijab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_WtlIzuk3ygQJ6F89iMTKVQJFkJBAXrelvQ';" alt="Tips Memilih Warna Hijab Yang Cocok Sesuai Warna Kulit Fashion Beauty Liputan6 Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tips Memilih Warna Hijab Yang Cocok Sesuai Warna Kulit Fashion Beauty Liputan6 Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://awsimages.detik.net.id/community/media/visual/2020/05/28/ea6c282b-14ad-49da-a2c0-ec25a5e630b0.jpeg?w=1125" data-lightbox="roadtrip" data-title="8 Warna Hijab Yang Cocok Untuk Kulit Sawo Matang">
+											<img class="card-img v-image ads-img " src="https://awsimages.detik.net.id/community/media/visual/2020/05/28/ea6c282b-14ad-49da-a2c0-ec25a5e630b0.jpeg?w=1125" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMWIpBWbkTRxuf6pjLuwz3MdJPynYPFPfKDg';" alt="8 Warna Hijab Yang Cocok Untuk Kulit Sawo Matang">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Warna Hijab Yang Cocok Untuk Kulit Sawo Matang</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/2c/d6/b72cd686e180edc8a96f81fba1647bd6.jpg" data-lightbox="roadtrip" data-title="Cheap Plain T Shirts Stars Stripes 100 Soft Cotton 165 Gsm T Shirt Lime Green Shirts Cotton Shorts T Shirt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/2c/d6/b72cd686e180edc8a96f81fba1647bd6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYlctSvGTXs1efaxkKJdjZLrh7e8CxSuKJ9w';" alt="Cheap Plain T Shirts Stars Stripes 100 Soft Cotton 165 Gsm T Shirt Lime Green Shirts Cotton Shorts T Shirt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cheap Plain T Shirts Stars Stripes 100 Soft Cotton 165 Gsm T Shirt Lime Green Shirts Cotton Shorts T Shirt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s2.bukalapak.com/uploads/content_attachment/783d96534532a1f3b96e07b5/w-744/Temukan_Warna_Hijab_yang_Tepat_Sesuai_Warna_Kulit_%28Foto_Pexels%29.jpg" data-lightbox="roadtrip" data-title="Ini 5 Tips Temukan Warna Hijab Yang Tepat Sesuai Dengan Warna Kulit Bukareview">
+											<img class="card-img v-image ads-img " src="https://s2.bukalapak.com/uploads/content_attachment/783d96534532a1f3b96e07b5/w-744/Temukan_Warna_Hijab_yang_Tepat_Sesuai_Warna_Kulit_%28Foto_Pexels%29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdgKiAcnuMizdAbfTzo7AZv3-kNUCR9l5f6A';" alt="Ini 5 Tips Temukan Warna Hijab Yang Tepat Sesuai Dengan Warna Kulit Bukareview">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ini 5 Tips Temukan Warna Hijab Yang Tepat Sesuai Dengan Warna Kulit Bukareview</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1592042863/tdckt6vqbgxjpucgbzoy.jpg" data-lightbox="roadtrip" data-title="7 Warna Hijab Yang Cocok Untuk Kulit Gelap Kumparan Com">
+											<img class="card-img v-image ads-img " src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1592042863/tdckt6vqbgxjpucgbzoy.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyoRlj8L-e8p63egm_OTxweLjLqa8gAxa94g';" alt="7 Warna Hijab Yang Cocok Untuk Kulit Gelap Kumparan Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Warna Hijab Yang Cocok Untuk Kulit Gelap Kumparan Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://obs.line-scdn.net/0hz56cIj7OJRoLGg1wkO5aTTFMJnU4djYZbyx0BFt0ey5yKzdEMCxodCgbfy0iKmJEYn9tfSkePit1L2ofYnRo/w1200" data-lightbox="roadtrip" data-title="8 Warna Hijab Yang Cocok Untuk Kulit Sawo Matang Agar Tampak Lebih Cerah Womantalk Com Line Today">
+											<img class="card-img v-image ads-img " src="https://obs.line-scdn.net/0hz56cIj7OJRoLGg1wkO5aTTFMJnU4djYZbyx0BFt0ey5yKzdEMCxodCgbfy0iKmJEYn9tfSkePit1L2ofYnRo/w1200" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaujdiHx-M44Jj4iAun5hdeyMaNJ3IPesTIg';" alt="8 Warna Hijab Yang Cocok Untuk Kulit Sawo Matang Agar Tampak Lebih Cerah Womantalk Com Line Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Warna Hijab Yang Cocok Untuk Kulit Sawo Matang Agar Tampak Lebih Cerah Womantalk Com Line Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://obs.line-scdn.net/0ha1ef_gLNPh5YHxde6yhBSWJJPXFrcy0dPClvAAhxYCoiLH8bMH5wcHtPZSlzfHlANnF4e3gXJS8nKHscYH1w/w644" data-lightbox="roadtrip" data-title="8 Warna Baju Tercantik Yang Bikin Kulit Gelap Tampak Glowing Termasuk Untuk Hijaber Womantalk Com Line Today">
+											<img class="card-img v-image ads-img " src="https://obs.line-scdn.net/0ha1ef_gLNPh5YHxde6yhBSWJJPXFrcy0dPClvAAhxYCoiLH8bMH5wcHtPZSlzfHlANnF4e3gXJS8nKHscYH1w/w644" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcBbld7U64M9E5w4jtn_IMo9qmYEu2w-tJiw';" alt="8 Warna Baju Tercantik Yang Bikin Kulit Gelap Tampak Glowing Termasuk Untuk Hijaber Womantalk Com Line Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 Warna Baju Tercantik Yang Bikin Kulit Gelap Tampak Glowing Termasuk Untuk Hijaber Womantalk Com Line Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://akcdn.detik.net.id/visual/2020/03/10/d693acd6-a08c-4502-8036-8b5ec90b24ca_169.jpeg?w=480&amp;q=90" data-lightbox="roadtrip" data-title="Jangan Salah Pilih Ini Lho Warna Hijab Yang Cocok Untuk Kulit Sawo Matang">
+											<img class="card-img v-image ads-img " src="https://akcdn.detik.net.id/visual/2020/03/10/d693acd6-a08c-4502-8036-8b5ec90b24ca_169.jpeg?w=480&amp;q=90" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCmGaFHzpgglAlC9ytv1xDTX1bU_ha7Nc9Hg';" alt="Jangan Salah Pilih Ini Lho Warna Hijab Yang Cocok Untuk Kulit Sawo Matang">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jangan Salah Pilih Ini Lho Warna Hijab Yang Cocok Untuk Kulit Sawo Matang</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdns.klimg.com/merdeka.com/i/w/news/2020/06/15/1187764/540x270/5-warna-baju-yang-bikin-kulit-sawo-matang-terlihat-segar-dan-cerah.jpg" data-lightbox="roadtrip" data-title="5 Warna Baju Yang Bikin Kulit Sawo Matang Terlihat Segar Dan Cerah Merdeka Com">
+											<img class="card-img v-image ads-img " src="https://cdns.klimg.com/merdeka.com/i/w/news/2020/06/15/1187764/540x270/5-warna-baju-yang-bikin-kulit-sawo-matang-terlihat-segar-dan-cerah.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBpSQ-G8Kz1Bj5Z55YsZAlQNvFdEkRQelMIA';" alt="5 Warna Baju Yang Bikin Kulit Sawo Matang Terlihat Segar Dan Cerah Merdeka Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Warna Baju Yang Bikin Kulit Sawo Matang Terlihat Segar Dan Cerah Merdeka Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1578985041/dgv0okmcvyqg5tpomacu.jpg" data-lightbox="roadtrip" data-title="6 Warna Busana Yang Cocok Untuk Pemilik Kulit Sawo Matang Kumparan Com">
+											<img class="card-img v-image ads-img " src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1578985041/dgv0okmcvyqg5tpomacu.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVV6XoppQ02ZktE4sKLjm72gxt-eCC4f8Y7g';" alt="6 Warna Busana Yang Cocok Untuk Pemilik Kulit Sawo Matang Kumparan Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">6 Warna Busana Yang Cocok Untuk Pemilik Kulit Sawo Matang Kumparan Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://obs.line-scdn.net/0hqs0Zdw62LlwNIwd8c7xRCzd1LTM-Tz1faRV_Ql1NcGh3Fm8MMxdoMi4idGkoR2kCZERkPCAhNW1yGmsCYRZo/w644" data-lightbox="roadtrip" data-title="Hindari Warna Baju Ini Yang Bisa Membuat Kulit Jadi Lebih Kusam Womantalk Com Line Today">
+											<img class="card-img v-image ads-img " src="https://obs.line-scdn.net/0hqs0Zdw62LlwNIwd8c7xRCzd1LTM-Tz1faRV_Ql1NcGh3Fm8MMxdoMi4idGkoR2kCZERkPCAhNW1yGmsCYRZo/w644" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVqzZLrcuM1T6EtQLN-rXIh3-V2u1S-LBZEg';" alt="Hindari Warna Baju Ini Yang Bisa Membuat Kulit Jadi Lebih Kusam Womantalk Com Line Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hindari Warna Baju Ini Yang Bisa Membuat Kulit Jadi Lebih Kusam Womantalk Com Line Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://asset-a.grid.id/crop/0x0:0x0/360x240/photo/2019/06/24/1079813488.jpg" data-lightbox="roadtrip" data-title="Jangan Asal 5 Warna Hijab Ini Paling Cocok Buat Kulit Sawo Matang Semua Halaman Cewekbanget">
+											<img class="card-img v-image ads-img " src="https://asset-a.grid.id/crop/0x0:0x0/360x240/photo/2019/06/24/1079813488.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeEg4Opr8AF5Jx2-VkxHilLt_OftWWj1IdJw';" alt="Jangan Asal 5 Warna Hijab Ini Paling Cocok Buat Kulit Sawo Matang Semua Halaman Cewekbanget">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jangan Asal 5 Warna Hijab Ini Paling Cocok Buat Kulit Sawo Matang Semua Halaman Cewekbanget</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://oss.mommyasia.id/photo/5caeeaa88e4d537b0ac60e3f?x-oss-process=style/_l" data-lightbox="roadtrip" data-title="5 Warna Baju Yang Cocok Dan Harus Dihindari Si Kulit Sawo Matang">
+											<img class="card-img v-image ads-img " src="https://oss.mommyasia.id/photo/5caeeaa88e4d537b0ac60e3f?x-oss-process=style/_l" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgB4EGpNzEOJzNJEjo44u455g1rxqfk4adrQ';" alt="5 Warna Baju Yang Cocok Dan Harus Dihindari Si Kulit Sawo Matang">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Warna Baju Yang Cocok Dan Harus Dihindari Si Kulit Sawo Matang</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-army-academy.html">Army Army Academy</a></li>
+													<li class="list-group-item"><a href="/argus-za.html">Argus Za</a></li>
+													<li class="list-group-item"><a href="/arlington-national-cemetery-guard.html">Arlington National Cemetery Guard</a></li>
+													<li class="list-group-item"><a href="/argus-uhp-tires.html">Argus Uhp Tires</a></li>
+													<li class="list-group-item"><a href="/armed-forces-artinya.html">Armed Forces Artinya</a></li>
+													<li class="list-group-item"><a href="/army-army-gear.html">Army Army Gear</a></li>
+													<li class="list-group-item"><a href="/army-army-cutting.html">Army Army Cutting</a></li>
+													<li class="list-group-item"><a href="/armed-service-artinya.html">Armed Service Artinya</a></li>
+													<li class="list-group-item"><a href="/argus-zombies.html">Argus Zombies</a></li>
+													<li class="list-group-item"><a href="/argus-vs-aldous.html">Argus Vs Aldous</a></li>
+													<li class="list-group-item"><a href="/argus-upcoming-skin.html">Argus Upcoming Skin</a></li>
+													<li class="list-group-item"><a href="/argus-skin-elite.html">Argus Skin Elite</a></li>
+													<li class="list-group-item"><a href="/argus-skin-epic.html">Argus Skin Epic</a></li>
+													<li class="list-group-item"><a href="/argus-roselle.html">Argus Roselle</a></li>
+													<li class="list-group-item"><a href="/argus-wow.html">Argus Wow</a></li>
+													<li class="list-group-item"><a href="/army-army-join.html">Army Army Join</a></li>
+													<li class="list-group-item"><a href="/army-army-jacket.html">Army Army Jacket</a></li>
+													<li class="list-group-item"><a href="/armored-vehicles-stolen-in-atlanta.html">Armored Vehicles Stolen In Atlanta</a></li>
+													<li class="list-group-item"><a href="/arkansas-national-guard-military-police.html">Arkansas National Guard Military Police</a></li>
+													<li class="list-group-item"><a href="/army-1996-mp3-songs-free-download.html">Army 1996 Mp3 Songs Free Download</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

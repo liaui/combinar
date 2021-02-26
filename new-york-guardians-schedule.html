@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>New York Guardians Schedule - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "New York Guardians Schedule",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/e2/b2/7d/e2b27d2843e082470c467efab9de6a22.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=new+york+guardians+schedule",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>New York Guardians Schedule</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The 2020 New York Guardians season was the first season for the New York Guardians as a professional American football franchiseThey played as charter members of the XFL one of eight teams to compete in the league for the 2020 seasonThe Guardians played their home games at MetLife Stadium and were led by head coach Kevin Gilbride. -- The XFL 2020 schedule a 79-day sprint from kickoff to the championship game starts in early February. Shop for great seats with our interactive seating charts. <br>				
+			</p>
+										<a class="badge badge-dark" href="/apa-artinya-warna-army.html">apa artinya warna army</a>
+											<a class="badge badge-warning" href="/arang-kayu.html">arang kayu</a>
+											<a class="badge badge-dark" href="/ang-sio-hie.html">ang sio hie</a>
+											<a class="badge badge-secondary" href="/arang-tempurung-kelapa.html">arang tempurung kelapa</a>
+											<a class="badge badge-success" href="/ang-ung-mang-artinya.html">ang ung mang artinya</a>
+											<a class="badge badge-primary" href="/arang-wangi.html">arang wangi</a>
+											<a class="badge badge-primary" href="/arang.html">arang</a>
+											<a class="badge badge-info" href="/arang-batok-kelapa.html">arang batok kelapa</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the ideal blog.  Our site provides you with hints for viewing the highest quality video and image content, search and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video for you to see.  It is also possible to contribute to supporting this website by sharing videos and images that you like on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/aa/30/97aa30acab16a1388ac0cce2a888bbe9.png" data-lightbox="roadtrip" data-title="What Channel Is Ny Guardians Vs Dc Defenders On Today Time Tv Schedule For Xfl Week 2 Game National Fo In 2020 National Football League Nfl News National Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/aa/30/97aa30acab16a1388ac0cce2a888bbe9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSISCv2PMtTXjmFkcyPqWCGMGNPYbGvKFEJSA';" alt="What Channel Is Ny Guardians Vs Dc Defenders On Today Time Tv Schedule For Xfl Week 2 Game National Fo In 2020 National Football League Nfl News National Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Channel Is Ny Guardians Vs Dc Defenders On Today Time Tv Schedule For Xfl Week 2 Game National Fo In 2020 National Football League Nfl News National Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/a9/64/46a9644b197c92e7941d74c2f3b3e01e.jpg" data-lightbox="roadtrip" data-title="Xfl Com New York Guardians In 2020 New York Xfl Football York">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/a9/64/46a9644b197c92e7941d74c2f3b3e01e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvuZHqAe-9EpxRquiuuVzMTBrEZXzkjYGlEA';" alt="Xfl Com New York Guardians In 2020 New York Xfl Football York">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xfl Com New York Guardians In 2020 New York Xfl Football York</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/87/5d/ec875d0774d4c2964cbbb754172aa08d.jpg" data-lightbox="roadtrip" data-title="Xfl Com New York Guardians In 2020 Ohio State Football Players Xfl Football Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/87/5d/ec875d0774d4c2964cbbb754172aa08d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPwSDU_WMzqm7q5I-EcHM5_0sWwj6ZgUQ7mQ';" alt="Xfl Com New York Guardians In 2020 Ohio State Football Players Xfl Football Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xfl Com New York Guardians In 2020 Ohio State Football Players Xfl Football Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/49/35/7a/49357a8317f700a44ee9c525018fbedb.jpg" data-lightbox="roadtrip" data-title="New 2020 Los Angeles Wildcats Xfl Team Football Schedule Ad Angeles Sponsored Wildcats Los Football Xfl Teams Wild Cats Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/49/35/7a/49357a8317f700a44ee9c525018fbedb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBKbtjiiH30sURQjbRCOngZTamV0AziSHJUQ';" alt="New 2020 Los Angeles Wildcats Xfl Team Football Schedule Ad Angeles Sponsored Wildcats Los Football Xfl Teams Wild Cats Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New 2020 Los Angeles Wildcats Xfl Team Football Schedule Ad Angeles Sponsored Wildcats Los Football Xfl Teams Wild Cats Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/10/01/e210017282755d2b8acaec7382e181e9.jpg" data-lightbox="roadtrip" data-title="New York Guardians Xflguardians Instagram Photos And Videos Xfl Football Football Helmets Cool Football Helmets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/10/01/e210017282755d2b8acaec7382e181e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRup-OOtltgGL3dPB6wi_WHVPhewySpQ5lQVw';" alt="New York Guardians Xflguardians Instagram Photos And Videos Xfl Football Football Helmets Cool Football Helmets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New York Guardians Xflguardians Instagram Photos And Videos Xfl Football Football Helmets Cool Football Helmets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/4e/40/e24e4006d824b8475c423703f753df90.jpg" data-lightbox="roadtrip" data-title="Xfl Com New York Guardians Ohio State Football Players Xfl Football Football League">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/4e/40/e24e4006d824b8475c423703f753df90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZ4Hh2LTR5_HKKcU5nzhltG-dvvGXBVPm-A';" alt="Xfl Com New York Guardians Ohio State Football Players Xfl Football Football League">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xfl Com New York Guardians Ohio State Football Players Xfl Football Football League</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c1/7f/ac/c17faccdaa9ef0b310f932552c2d3d42.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZ4Hh2LTR5_HKKcU5nzhltG-dvvGXBVPm-A';" alt="Xfl Com New York Guardians Ohio State Football Players Xfl Football Football League">
+										<div class="card-body">
+						<h3 class="h5"><b>New York Guardians XFL 2020 Week 5 Fantasy Rankings Schedule and Odds Joe Tansey.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>New york guardians schedule</strong>. 
+								
+																	Create an profile to manage all of your reminders. 
+																	While MetLife Stadium has a total capacity of 82500 XFL games. 
+																	New York Guardians 2020 Schedule Week 1. 
+																	New York Guardians XFLGuardians January 17 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Days before this event. 
+																	Finally in 2019 he was on the Colts over the summer and ended up being drafted by the XFL New York Guardians however he would be. 
+																	An online community that will give football fans opportunities to share their thoughts ideas and feedback and help the NY Guardians create its football and fan experience. 
+																	New York Guardians Schedule The Guardians schedule is typically released in October. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	View the 2020 New York Guardians schedule results and scores for regular season preseason and postseason XFL games. 
+																	The XFLs New York Guardians were able to coax Kevin Gilbride out of retirement to be their head coach. 
+																	New York Guardians Tickets Schedule. 
+																	New York Guardians Season Ticket Members will enjoy exclusive benefits including. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2023 New York Guardians Schedule. 
+																	All ticket sales are 100 guaranteed. 
+																	New York Guardians Schedule tickets and dates. 
+																	We couldnt find any scheduled events. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	From entering the parking area to going into the stadium and enjoying the amenities I had a great experience and the football game was an exciting game. 
+																	The New York Guardians share the home of the New York Jets and Giants in East Rutherford NJ. 
+																	Season ticket price-lock for the first two seasons. 
+																	Their inaugural season was cut short due to the COVID-19. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The New York Guardian season starts on Sunday February 9th with a home game against the Tampa Bay Vipers. 
+																	New York Guardians Seating Chart. 
+																	2020 New York Guardians Event Schedule We are proud to offer sports fans the best New York Guardians seats available for the most affordable prices. 
+																	See above for all Guardians home and away games. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Decided to go to an XFL game primarily the New York guardians playing the LA Wildcats this past Saturday 29 February. 
+																	It was the summer of 2017 as New Yorks subway trains groaned along on near-100-year-old equipment throttled by a decades-long lack of funding when things really came to a head. 
+																	The team is coached by Kevin Gilbride a longtime offensive coordinator in the National Football League most. 
+																	The schedule includes the opponents dates and results. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The New York Guardians are a professional American football team based in the New York metropolitan areaThe team is an owned-and-operated member of the new XFL founded by Vince McMahons Alpha Entertainment and plays its home games at MetLife Stadium in East Rutherford New Jersey. 
+																	Early access to the XFLs Football Advisory Network. 
+																	Leave your worries aside as no presale codes are needed to complete your purchase at TicketSmarter. 
+																	2024 New York Guardians Schedule. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	New Yorks 10-week regular season begins at home when the Guardians host the Tampa Bay Vipers at MetLife Stadium on Sunday Feb. 
+																	Remind me to get tickets. 
+																	The New York Guardians home games are played at MetLife Stadium in East Rutherford NJ. 
+																	Your reminders have been set. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	19271 likes 14 talking about this. 
+																	In June a. 
+																	Not only do we offer access to the best available seats we also offer New York Guardians event and venue information so that. 
+																	2018 was no easier a year for Silberman having been on the practice squad of the Titans and Panthers and in-between them he was on the Raiders a third time this time playing in 2 regular-season games. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	View upcoming events from our New York Guardians schedule and find tickets to see New York Guardians live in your city. 
+																	Get the latest New York Guardians news photos rankings lists and more on Bleacher Report. 
+																	This is a little surprising that the XFL would start their coldest market team at home for opening weekend. 
+																	9 Tampa Bay Vipers at New York. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The New York Guardians schedule starts on February 9th at home in Metlife Stadium. 
+																	9 at 200 pm. 
+																	Future New York Guardians Opponents. 
+																	Purchase tickets for the New York Guardians and get started planning your next fun football outing by using our website. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Remind me to upload a photo from my seat after this event. 
+																	25 discount on merchandise at. 
+																	Photos Seating Chart Schedule. 
+																	The New York Guardian football schedule above is updated in real-time so check back frequently. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Games for the Guardians this season will consist of a 10 week season followed by playoffs on either Saturdays or Sundays. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/a9/48/7da948166d2b921caa2fd2a2d73e01d8.png" data-lightbox="roadtrip" data-title="Nyguardians Guardians Xfl Logo Fanart Fanartbyroxxi Buy New York Guardians Tickets Without Fees College Football Helmets Sports Logo Design Xfl Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/a9/48/7da948166d2b921caa2fd2a2d73e01d8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcs520FdGZ_9I9_WRzi5GFjJd_04wpS1wMZQ';" alt="Nyguardians Guardians Xfl Logo Fanart Fanartbyroxxi Buy New York Guardians Tickets Without Fees College Football Helmets Sports Logo Design Xfl Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nyguardians Guardians Xfl Logo Fanart Fanartbyroxxi Buy New York Guardians Tickets Without Fees College Football Helmets Sports Logo Design Xfl Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/f8/c2/21f8c2707688cb9d02796075cc76bc89.png" data-lightbox="roadtrip" data-title="New York Guardians Primary Logo 2020 Pres Xfl Teams New York Teams Xfl Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/f8/c2/21f8c2707688cb9d02796075cc76bc89.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4hICr5YMdRv6UnHKsA9mlEe4kIviofoPPFA';" alt="New York Guardians Primary Logo 2020 Pres Xfl Teams New York Teams Xfl Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New York Guardians Primary Logo 2020 Pres Xfl Teams New York Teams Xfl Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/3c/f0/e03cf0f64940844af069ab304f92b112.jpg" data-lightbox="roadtrip" data-title="Xfl Com New York Guardians Xfl Football New York Football Helmets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/3c/f0/e03cf0f64940844af069ab304f92b112.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4GTg-GNrda_1QFL4KuS-TXT4HGkIWs5MmMQ';" alt="Xfl Com New York Guardians Xfl Football New York Football Helmets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xfl Com New York Guardians Xfl Football New York Football Helmets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/dd/a6/10dda6ce3607cda153108ec14dbade00.png" data-lightbox="roadtrip" data-title="The New Xfl Team Names And Logos Ranked Xfl Teams Team Names Xfl Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/dd/a6/10dda6ce3607cda153108ec14dbade00.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8U29Ia4blFOIet2PqR3IJspBTPZldWB9Zjw';" alt="The New Xfl Team Names And Logos Ranked Xfl Teams Team Names Xfl Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The New Xfl Team Names And Logos Ranked Xfl Teams Team Names Xfl Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/bf/21/aabf212f8ada5c997a49edcd3bed8b11.png" data-lightbox="roadtrip" data-title="Xfl Schedule Week 2 What Football Games Are On Today Tv Channels Times Scores National Football League News Xfl S Week 2 In 2020 Nfl News Xfl Teams Xfl Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/bf/21/aabf212f8ada5c997a49edcd3bed8b11.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQJKu2cF4h9Uitz6-GrkJVdZDKi8XtHFv5fQ';" alt="Xfl Schedule Week 2 What Football Games Are On Today Tv Channels Times Scores National Football League News Xfl S Week 2 In 2020 Nfl News Xfl Teams Xfl Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xfl Schedule Week 2 What Football Games Are On Today Tv Channels Times Scores National Football League News Xfl S Week 2 In 2020 Nfl News Xfl Teams Xfl Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b3/e2/9d/b3e29d5171aacc0ab1323d0eb01dd8f0.jpg" data-lightbox="roadtrip" data-title="Xfl Full Games Youtube In 2020 Full Games Xfl Football Ten Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b3/e2/9d/b3e29d5171aacc0ab1323d0eb01dd8f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScKdSLa8QMww3iMEaoaec1AHe1-dDyTApEEg';" alt="Xfl Full Games Youtube In 2020 Full Games Xfl Football Ten Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xfl Full Games Youtube In 2020 Full Games Xfl Football Ten Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/65/92/8065923ec5f62f348b02117a789dd964.png" data-lightbox="roadtrip" data-title="New York Guardians Logo Xfl Football Xfl Teams Mls Teams">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/65/92/8065923ec5f62f348b02117a789dd964.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlbg7LLZj-J1zB98kufhatpGnwBcbYlZanDA';" alt="New York Guardians Logo Xfl Football Xfl Teams Mls Teams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New York Guardians Logo Xfl Football Xfl Teams Mls Teams</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/73/24/627324eb31314f9cd27f409c3a3fbd62.jpg" data-lightbox="roadtrip" data-title="New York Guardians Xflguardians Instagram Photos And Videos Xfl Football Ten Games Football Season">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/73/24/627324eb31314f9cd27f409c3a3fbd62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW-OuP6uV5HaUWH4atx7DVqrw8c-T4kNcOpg';" alt="New York Guardians Xflguardians Instagram Photos And Videos Xfl Football Ten Games Football Season">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New York Guardians Xflguardians Instagram Photos And Videos Xfl Football Ten Games Football Season</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/09/64/99096436fb88fa3c0c155ecce9cec8e5.jpg" data-lightbox="roadtrip" data-title="Xfl Com New York Guardians In 2020 Ohio State Football Players Xfl Football New York">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/09/64/99096436fb88fa3c0c155ecce9cec8e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8_tvWFoZZvSNkqaaEACKO9HoAX-hhFUDCtw';" alt="Xfl Com New York Guardians In 2020 Ohio State Football Players Xfl Football New York">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xfl Com New York Guardians In 2020 Ohio State Football Players Xfl Football New York</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/7f/ac/c17faccdaa9ef0b310f932552c2d3d42.jpg" data-lightbox="roadtrip" data-title="New York Guardians Xflguardians Instagram Photos And Videos In 2020 Xfl Football Football Helmets Ten Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/7f/ac/c17faccdaa9ef0b310f932552c2d3d42.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdhb4yTX9VAS8kZSPr-wV6QdW8QkRPn5Cq2g';" alt="New York Guardians Xflguardians Instagram Photos And Videos In 2020 Xfl Football Football Helmets Ten Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New York Guardians Xflguardians Instagram Photos And Videos In 2020 Xfl Football Football Helmets Ten Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/ad/b8/daadb8607fb5522c53653b70b71c3293.jpg" data-lightbox="roadtrip" data-title="Pin Auf N Y C Project">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/ad/b8/daadb8607fb5522c53653b70b71c3293.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOZoRs3T_ObYGrIuhgFk1KAx3_9T8HLTbqbg';" alt="Pin Auf N Y C Project">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Auf N Y C Project</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/a9/90/3ca99042d8b09e433c2349df4f872895.png" data-lightbox="roadtrip" data-title="Xfl Com New York Guardians Xfl Teams New York York">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/a9/90/3ca99042d8b09e433c2349df4f872895.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4xLpsPdmBoK6MBWgE0_En9r9thT69uUmvoQ';" alt="Xfl Com New York Guardians Xfl Teams New York York">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xfl Com New York Guardians Xfl Teams New York York</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/b2/7d/e2b27d2843e082470c467efab9de6a22.jpg" data-lightbox="roadtrip" data-title="Xfl Com New York Guardians College Football Players Xfl Football Defender">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/b2/7d/e2b27d2843e082470c467efab9de6a22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtL1p3D9drvb2JRsoLO8BX0oKfxfCC_Vr75Q';" alt="Xfl Com New York Guardians College Football Players Xfl Football Defender">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xfl Com New York Guardians College Football Players Xfl Football Defender</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/george-bush-national-guard.html">George Bush National Guard</a></li>
+													<li class="list-group-item"><a href="/harga-jaket-us-army-original.html">Harga Jaket Us Army Original</a></li>
+													<li class="list-group-item"><a href="/guam-national-guard-aafes.html">Guam National Guard Aafes</a></li>
+													<li class="list-group-item"><a href="/geaux-guard.html">Geaux Guard</a></li>
+													<li class="list-group-item"><a href="/hilang-bos.html">Hilang Bos</a></li>
+													<li class="list-group-item"><a href="/gb-whatsapp-delta.html">Gb Whatsapp Delta</a></li>
+													<li class="list-group-item"><a href="/going-from-army-national-guard-to-active-duty.html">Going From Army National Guard To Active Duty</a></li>
+													<li class="list-group-item"><a href="/hijab-warna-hijau-army.html">Hijab Warna Hijau Army</a></li>
+													<li class="list-group-item"><a href="/gbwhatsapp-official-website-gb-plus.html">Gbwhatsapp Official Website Gb Plus</a></li>
+													<li class="list-group-item"><a href="/hawaii-national-guard-adjutant-general.html">Hawaii National Guard Adjutant General</a></li>
+													<li class="list-group-item"><a href="/great-pretender.html">Great Pretender</a></li>
+													<li class="list-group-item"><a href="/happy-army-day-artinya.html">Happy Army Day Artinya</a></li>
+													<li class="list-group-item"><a href="/hilang-bahasa-inggris.html">Hilang Bahasa Inggris</a></li>
+													<li class="list-group-item"><a href="/hilang-background.html">Hilang Background</a></li>
+													<li class="list-group-item"><a href="/guards-al-espanol.html">Guards Al Espanol</a></li>
+													<li class="list-group-item"><a href="/general-joseph-l-lengyel-biography.html">General Joseph L Lengyel Biography</a></li>
+													<li class="list-group-item"><a href="/ghost-army-artwork.html">Ghost Army Artwork</a></li>
+													<li class="list-group-item"><a href="/hgb-adalah.html">Hgb Adalah</a></li>
+													<li class="list-group-item"><a href="/guard-pa-dansk.html">Guard Pa Dansk</a></li>
+													<li class="list-group-item"><a href="/georgia-national-guard-hro.html">Georgia National Guard Hro</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

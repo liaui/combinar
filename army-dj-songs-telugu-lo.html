@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Dj Songs Telugu Lo - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Dj Songs Telugu Lo",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/564x/a2/52/99/a25299bf00e432a5abf378f8179e5bd3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+dj+songs+telugu+lo",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Dj Songs Telugu Lo</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Lastly Roll Rida had to perform on Naire Baba. Singer Geetha Madhuri was asked to groove to the song Jigel Rani while Shyamala was given Junction Lo song Kaushal Manda had to perform on Tauba Tauba. Although Telugu songs are not very famous among the millennials some songs are so good that they have been remade by the Bollywood music industry. <br>				
+			</p>
+										<a class="badge badge-dark" href="/hijau-army-cocok-dgn-warna-apa.html">hijau army cocok dgn warna apa</a>
+											<a class="badge badge-info" href="/guardus-security.html">guardus security</a>
+											<a class="badge badge-warning" href="/georgia-army-national-guard-airborne.html">georgia army national guard airborne</a>
+											<a class="badge badge-success" href="/hilang-chord-garasi.html">hilang chord garasi</a>
+											<a class="badge badge-light" href="/gb-whatsapp.html">gb whatsapp</a>
+											<a class="badge badge-info" href="/green-berets-us-national-guard.html">green berets us national guard</a>
+											<a class="badge badge-info" href="/gp-23ae-alkalicka-baterie-12-v.html">gp 23ae alkalicka baterie 12 v</a>
+											<a class="badge badge-success" href="/gp-23ae-12v-battery.html">gp 23ae 12v battery</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to visit the ideal blog.  Our website gives you hints for seeing the maximum quality video and picture content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you see.  You can also contribute to supporting this website by sharing videos and images that you like on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fc/c9/4c/fcc94c74e45ee3df297c4e80fc7c6ba7.jpg" data-lightbox="roadtrip" data-title="Ramuloo Ramula New Dj Song Alaa Vaikuntapuram Lo Dj Songs Allu Arjun Www Newdjsworld In Dj Remix Songs Dj Songs Dj Remix">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fc/c9/4c/fcc94c74e45ee3df297c4e80fc7c6ba7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFx_B71NboEo7VBkZsuxphvDUHKX8NuUmDaw';" alt="Ramuloo Ramula New Dj Song Alaa Vaikuntapuram Lo Dj Songs Allu Arjun Www Newdjsworld In Dj Remix Songs Dj Songs Dj Remix">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ramuloo Ramula New Dj Song Alaa Vaikuntapuram Lo Dj Songs Allu Arjun Www Newdjsworld In Dj Remix Songs Dj Songs Dj Remix</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/XXlvoX5yKy4/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Love Failure Dj Songs In Telugu Latest Love Failure Songs 2021 Love Songs In Telugu Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/XXlvoX5yKy4/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUmFi4p1KV3KC_qFAKA77yX96gCUkD6HSWDg';" alt="Love Failure Dj Songs In Telugu Latest Love Failure Songs 2021 Love Songs In Telugu Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Love Failure Dj Songs In Telugu Latest Love Failure Songs 2021 Love Songs In Telugu Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/97/c7/9e/97c79ec38b859c20ebbb47ee5d3dadb6.jpg" data-lightbox="roadtrip" data-title="Telugu Dj Songs 2020 Telugu Latest Songs Dj Mix 2020 New Year Dj Songs Telugu Dj Yns Sandeep Youtube Dj Remix Songs Dj Songs Dj Mix Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/97/c7/9e/97c79ec38b859c20ebbb47ee5d3dadb6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsRowVXAMX8NlFWfsMKykKS_mGtXa2yC5cnw';" alt="Telugu Dj Songs 2020 Telugu Latest Songs Dj Mix 2020 New Year Dj Songs Telugu Dj Yns Sandeep Youtube Dj Remix Songs Dj Songs Dj Mix Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Telugu Dj Songs 2020 Telugu Latest Songs Dj Mix 2020 New Year Dj Songs Telugu Dj Yns Sandeep Youtube Dj Remix Songs Dj Songs Dj Mix Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/25/21/dc/2521dcf7176050b3accada63bea816a3.jpg" data-lightbox="roadtrip" data-title="Teenmaar Mashup Full Base Mix 2020 Telugu New Dj Songs Trending Tollywood Teenmaar Dj Songs Youtube Dj Songs New Dj Song New Dj">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/25/21/dc/2521dcf7176050b3accada63bea816a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwYdOFOHd-I9YHczaf-Ovm2hvMGKnucbMVAA';" alt="Teenmaar Mashup Full Base Mix 2020 Telugu New Dj Songs Trending Tollywood Teenmaar Dj Songs Youtube Dj Songs New Dj Song New Dj">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Teenmaar Mashup Full Base Mix 2020 Telugu New Dj Songs Trending Tollywood Teenmaar Dj Songs Youtube Dj Songs New Dj Song New Dj</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.hungama.com/c/1/96a/cc9/32901920/32901920_300x300.jpg" data-lightbox="roadtrip" data-title="Telugu Folk Dj Songs Vol 7 Songs Download Telugu Folk Dj Songs Vol 7 Songs Mp3 Free Online Movie Songs Hungama">
+											<img class="card-img v-image ads-img " src="https://images.hungama.com/c/1/96a/cc9/32901920/32901920_300x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfHaJLGCQdrEzJq7PJxoxR1gniMLUOwT00mA';" alt="Telugu Folk Dj Songs Vol 7 Songs Download Telugu Folk Dj Songs Vol 7 Songs Mp3 Free Online Movie Songs Hungama">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Telugu Folk Dj Songs Vol 7 Songs Download Telugu Folk Dj Songs Vol 7 Songs Mp3 Free Online Movie Songs Hungama</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/69/c9/54/69c954358471baf407d777957ddb5da9.jpg" data-lightbox="roadtrip" data-title="Pubg Dj Mix Mashup Songs Telugu Mix Aa Army Nalgonda Youtube In 2020 Dj Mix Songs Dj Songs Dj Remix Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/69/c9/54/69c954358471baf407d777957ddb5da9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVymt19hXtnDVoWCaRR6B2_pR8q8lEAcC-Sg';" alt="Pubg Dj Mix Mashup Songs Telugu Mix Aa Army Nalgonda Youtube In 2020 Dj Mix Songs Dj Songs Dj Remix Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pubg Dj Mix Mashup Songs Telugu Mix Aa Army Nalgonda Youtube In 2020 Dj Mix Songs Dj Songs Dj Remix Music</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/91/42/5c/91425c38c2727fd208f1efbd75d4c491.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVymt19hXtnDVoWCaRR6B2_pR8q8lEAcC-Sg';" alt="Pubg Dj Mix Mashup Songs Telugu Mix Aa Army Nalgonda Youtube In 2020 Dj Mix Songs Dj Songs Dj Remix Music">
+										<div class="card-body">
+						<h3 class="h5"><b>Create and Listen to your playlist like and share your favorite music on the Wynk Music app.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army dj songs telugu lo</strong>. 
+								
+																	Deepthi was given An ante Amalapuram song Tanish was given Sarrainodu Samrat had to perform on DJ and Amit on Tring Tring song. 
+																	Alluarjun Alluarjun AlwaysAAfans bunny_icons_ army stylish_star lovers devotes. 
+																	Enjoy from over 30 Lakh Hindi English Bollywood Regional Latest Old songs and more. 
+																	ALU ARJUN on Instagram. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sarileru Neekevvaru Ringtones Sarileru Neekevvaru Bgm Ringtones Sarileru Neekevvaru Bgm Sarileru Neekevvaru Bgm Download Sarileru Neekevvaru Bgm Mp3 Download Sarileru Neekevvaru Teaser Ringtone Bgm Download Sarileru Neekevvaru Trailer Ringtone Bgm Download Mahesh Babu Rashmika Mandanna. 
+																	For More Videos Do Subscribe My Channel. 
+																	Jan 18 2020 - Explore savarapu prasads board Mp3 song download on Pinterest. 
+																	Wynk Music - Download Listen mp3 songs music online for free. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Watch Bharata Matha Patriotic Song Indian Army Song. 
+																	See more ideas about dj movie allu arjun images mp3 song download. 
+																	Watch Bharata Matha Patriotic Song Indian Army Song. 
+																	Telugu ringtones 2020 2020 telugu ringtones download latest telugu ringtones 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Song Dedicated to Pulwama. 
+																	Tv lo DJs lo Weddings lo occasion tho sambandham lekunda play iyye song. 
+																	Includes Allu Arjuns top Telugu Malayalam Tamil songs. 
+																	Listen to top songs featuring Allu Arjun on JioSaavn. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Allu Arjun Hairstyle Allu Arjun Wallpapers Allu Arjun Images Download Free Movies Online Galaxy Pictures Dj Songs Crazy Fans Actors Images. 
+																	They have produced great Telugu songs in 20202019 and the years passed by. 
+																	Please subscribedjbalaji A1folks Balajicreations djbalajikothagudemheart touching love song please watch this song alsocontact number 7675078878 whatsapp. 
+																	HINDI REMIX MASHUP SONGS MARCH 2019 Open for Free Download Tracklist and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The new Telugu songs which have recently come up are remarkable in terms of the composition. 
+																	Actors Male Actors. 
+																	Play online or download to listen offline free - in HD audio only on JioSaavn. 
+																	Madhu Priya Emotional Song on Indian Army Jawans Army Jawan Songs Telugu 2019 tribute to Indian army Pulwama incidentindian army tribete song Madhu Pri. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Padipoya MP3 Song by Haricharan from the Telugu movie DK Bose. 
+																	8 Well Known Telugu Folk Songs 1Gunna Gunna Mamidi E song entha popular indo special ga cheppanakkarledu. 
+																	Indias first FM Radio - Radio City 911 FM. 
+																	Best of Radio City from 39 Cities Original Audio Video Shows Streaming Online Now. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some of them are Ladi Ladi. 
+																	Teri Mitti Song MIXUP With URI Akshay kumar new song teri mitti cover uri. 
+																	Aug 21 2019 - Best Place to Download latest and atoz Telugu Ringtones Hindi Ringtones Tamil Ringtones and English Ringtones for mobile devices from all fusions. 
+																	Amulya Audios And Videos says Johar to the Indian Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To listen and download mp3 install DjWalebhai App httpplaygoogle. 
+																	See what Gundeti Vanaja gundetivanaja has discovered on Pinterest the worlds biggest collection of ideas. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/da/c7/e3/dac7e3870c4497d4cb3e4b05b191df18.jpg" data-lightbox="roadtrip" data-title="Ramulo Ramula Full Bass Dj Remix Song Ala Vaikuntapuramlo Dj Songs Allu Arjun Dj Bharath Rdm Www Ne Dj Remix Songs Dj Remix Dj Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/da/c7/e3/dac7e3870c4497d4cb3e4b05b191df18.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4aSKs6nDXnRxm4JuOfk5UCek34S4f6KbTdg';" alt="Ramulo Ramula Full Bass Dj Remix Song Ala Vaikuntapuramlo Dj Songs Allu Arjun Dj Bharath Rdm Www Ne Dj Remix Songs Dj Remix Dj Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ramulo Ramula Full Bass Dj Remix Song Ala Vaikuntapuramlo Dj Songs Allu Arjun Dj Bharath Rdm Www Ne Dj Remix Songs Dj Remix Dj Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/91/42/5c/91425c38c2727fd208f1efbd75d4c491.jpg" data-lightbox="roadtrip" data-title="Telugu Dj Mix Mp3 Songs 2019 Free Download Telugu Folk Dj Songs Telugu Dj Remix Songs Telugu Mp3 Songs Telugu Folk Dj Dj Songs Dj Mix Songs Dj Remix Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/91/42/5c/91425c38c2727fd208f1efbd75d4c491.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjBa-AJpvXv6fBMvWg8hsUFjRd9YuZgS_OJQ';" alt="Telugu Dj Mix Mp3 Songs 2019 Free Download Telugu Folk Dj Songs Telugu Dj Remix Songs Telugu Mp3 Songs Telugu Folk Dj Dj Songs Dj Mix Songs Dj Remix Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Telugu Dj Mix Mp3 Songs 2019 Free Download Telugu Folk Dj Songs Telugu Dj Remix Songs Telugu Mp3 Songs Telugu Folk Dj Dj Songs Dj Mix Songs Dj Remix Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/97/ad/b2/97adb29f29a166a14cfe421e8a143916.jpg" data-lightbox="roadtrip" data-title="Srujana Nak Nak Nakoddu Full Song Dj Song Dj Karthik Fz Rasoolpura Www Newdjsworld In In 2020 Dj Remix Songs Dj Mix Songs Dj Remix">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/97/ad/b2/97adb29f29a166a14cfe421e8a143916.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnj9WrrfVBBfliWOYJscv1SWIYtXjwcHWLvg';" alt="Srujana Nak Nak Nakoddu Full Song Dj Song Dj Karthik Fz Rasoolpura Www Newdjsworld In In 2020 Dj Remix Songs Dj Mix Songs Dj Remix">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Srujana Nak Nak Nakoddu Full Song Dj Song Dj Karthik Fz Rasoolpura Www Newdjsworld In In 2020 Dj Remix Songs Dj Mix Songs Dj Remix</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/53/9d/2b/539d2be897e8e278b0f01039abd30b01.jpg" data-lightbox="roadtrip" data-title="Rajahmundry Ramba Dj Song 2020 Telugu Dj Song Telugu Folk Songs Telugu Songs Dj Uday Youtube Dj Songs Dj Remix Songs Dj Songs List">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/53/9d/2b/539d2be897e8e278b0f01039abd30b01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5-zg2nAj0yugggQ9RjpzMdjxdnz56uxC6ew';" alt="Rajahmundry Ramba Dj Song 2020 Telugu Dj Song Telugu Folk Songs Telugu Songs Dj Uday Youtube Dj Songs Dj Remix Songs Dj Songs List">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rajahmundry Ramba Dj Song 2020 Telugu Dj Song Telugu Folk Songs Telugu Songs Dj Uday Youtube Dj Songs Dj Remix Songs Dj Songs List</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/7a/f7/5f/7af75f3444a766d88e053a6fd2538d4c.jpg" data-lightbox="roadtrip" data-title="Pin By Shiva Mani On Siva Dj Mix Songs Dj Remix Songs Dj Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/7a/f7/5f/7af75f3444a766d88e053a6fd2538d4c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBc05M-_Jyi8ThNGUiOefu1bMwnq9ACy_13A';" alt="Pin By Shiva Mani On Siva Dj Mix Songs Dj Remix Songs Dj Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Shiva Mani On Siva Dj Mix Songs Dj Remix Songs Dj Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/5c/41/57/5c41575d04a6af55f9994d7b4c02e708.jpg" data-lightbox="roadtrip" data-title="Y2mate Com Ramuloo Ramulaa Ala Vaikuntapuram Lo Dj Song Ala Vaikunta Puram Lo Dj Song Telugu Dj So Youtube Dj Songs Dj Mix Songs Dj Remix Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/5c/41/57/5c41575d04a6af55f9994d7b4c02e708.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgexijJX52dUGSRLFr4uBQiH9dcddOkhUVPA';" alt="Y2mate Com Ramuloo Ramulaa Ala Vaikuntapuram Lo Dj Song Ala Vaikunta Puram Lo Dj Song Telugu Dj So Youtube Dj Songs Dj Mix Songs Dj Remix Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Y2mate Com Ramuloo Ramulaa Ala Vaikuntapuram Lo Dj Song Ala Vaikunta Puram Lo Dj Song Telugu Dj So Youtube Dj Songs Dj Mix Songs Dj Remix Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/f7/0b/56f70b97302cb9bde7bc4881103cadda.jpg" data-lightbox="roadtrip" data-title="Ala Vaikunta Puram Lo Naa Songs 2019 Mp3 Songs Download Alavaikunthapurramuloo Alavaikuntapuram Naa Song In 2020 Audio Songs Telugu Movies Download Mp3 Song Download">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/f7/0b/56f70b97302cb9bde7bc4881103cadda.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREmh41WNVpAsnezk9uuWHpiZ3PItU06W_3-w';" alt="Ala Vaikunta Puram Lo Naa Songs 2019 Mp3 Songs Download Alavaikunthapurramuloo Alavaikuntapuram Naa Song In 2020 Audio Songs Telugu Movies Download Mp3 Song Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ala Vaikunta Puram Lo Naa Songs 2019 Mp3 Songs Download Alavaikunthapurramuloo Alavaikuntapuram Naa Song In 2020 Audio Songs Telugu Movies Download Mp3 Song Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/08/f5/b308f5018846dad016f64bcca6ceafd5.jpg" data-lightbox="roadtrip" data-title="Telugu Dj Mix Mp3 Songs 2019 Free Download Telugu Folk Dj Songs Telugu Dj Remix Songs Telugu Mp3 Songs Telugu Folk Dj Dj Songs Dj Remix Songs Dj Mix Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/08/f5/b308f5018846dad016f64bcca6ceafd5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVxdVQGuuqidVHJpzQW5uV9fyzxIeslvQVew';" alt="Telugu Dj Mix Mp3 Songs 2019 Free Download Telugu Folk Dj Songs Telugu Dj Remix Songs Telugu Mp3 Songs Telugu Folk Dj Dj Songs Dj Remix Songs Dj Mix Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Telugu Dj Mix Mp3 Songs 2019 Free Download Telugu Folk Dj Songs Telugu Dj Remix Songs Telugu Mp3 Songs Telugu Folk Dj Dj Songs Dj Remix Songs Dj Mix Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d6/bf/5a/d6bf5af5c5b6ed63b87c1ee5b447af90.jpg" data-lightbox="roadtrip" data-title="Ramuloo Ramulaa Ala Vaikuntapuram Lo Dj Song Ala Vaikunta Puram Lo Dj Song Telugu Dj Song 2019 Youtube Dj Songs Dj Remix Songs Dj Remix">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d6/bf/5a/d6bf5af5c5b6ed63b87c1ee5b447af90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXt9GfOWdT1vkEcrhUt1rHHTXoU03L3i1OcQ';" alt="Ramuloo Ramulaa Ala Vaikuntapuram Lo Dj Song Ala Vaikunta Puram Lo Dj Song Telugu Dj Song 2019 Youtube Dj Songs Dj Remix Songs Dj Remix">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ramuloo Ramulaa Ala Vaikuntapuram Lo Dj Song Ala Vaikunta Puram Lo Dj Song Telugu Dj Song 2019 Youtube Dj Songs Dj Remix Songs Dj Remix</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/27/4b/7f/274b7f7880749826ca041ca5d4f93a46.jpg" data-lightbox="roadtrip" data-title="Hyderabad Bonalu Spl Mix S Dj Anil Dj Mix Songs Dj Songs Dj Remix Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/27/4b/7f/274b7f7880749826ca041ca5d4f93a46.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlQYvgnjSSPcCL68F8wzAC3T8molwMFGdImQ';" alt="Hyderabad Bonalu Spl Mix S Dj Anil Dj Mix Songs Dj Songs Dj Remix Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hyderabad Bonalu Spl Mix S Dj Anil Dj Mix Songs Dj Songs Dj Remix Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/7e/d0/75/7ed07513cc182a6dac0fb53ad1f9ea12.jpg" data-lightbox="roadtrip" data-title="Mandesthu Chindeyira Dj Song Telugu Movie Dj Songs 2019 Letest Dj Songs Mix By Dj Abhi Mixes Www Newdjsworld In Dj Songs Dj Songs List Dj Mix Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/7e/d0/75/7ed07513cc182a6dac0fb53ad1f9ea12.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPQKyBzDiGzSJ9PrGXg3PmWhRai_EPPqcfoQ';" alt="Mandesthu Chindeyira Dj Song Telugu Movie Dj Songs 2019 Letest Dj Songs Mix By Dj Abhi Mixes Www Newdjsworld In Dj Songs Dj Songs List Dj Mix Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mandesthu Chindeyira Dj Song Telugu Movie Dj Songs 2019 Letest Dj Songs Mix By Dj Abhi Mixes Www Newdjsworld In Dj Songs Dj Songs List Dj Mix Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a2/52/99/a25299bf00e432a5abf378f8179e5bd3.jpg" data-lightbox="roadtrip" data-title="Bava Ninnu Chudapothe New Dj Remix 2019 Folk Dj Songs Telugu Lalitha Audios And Videos Youtube Dj Remix Dj Songs Dj Mix Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a2/52/99/a25299bf00e432a5abf378f8179e5bd3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8bFGqkx1dLV2MXWhfimUUI1P62N9yHfX0pw';" alt="Bava Ninnu Chudapothe New Dj Remix 2019 Folk Dj Songs Telugu Lalitha Audios And Videos Youtube Dj Remix Dj Songs Dj Mix Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bava Ninnu Chudapothe New Dj Remix 2019 Folk Dj Songs Telugu Lalitha Audios And Videos Youtube Dj Remix Dj Songs Dj Mix Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/29/e0/32/29e032e8ac08b7e7653757a381399569.jpg" data-lightbox="roadtrip" data-title="Latest Super Hit Dj Songs Rajitha Dj Song Telugu Private Songs Lalitha Audios And Videos Youtube Dj Songs Audio Songs Dj Mix Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/29/e0/32/29e032e8ac08b7e7653757a381399569.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2GXcytZg0KHv8V6ABJAb431Jef2Khiupn6A';" alt="Latest Super Hit Dj Songs Rajitha Dj Song Telugu Private Songs Lalitha Audios And Videos Youtube Dj Songs Audio Songs Dj Mix Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Latest Super Hit Dj Songs Rajitha Dj Song Telugu Private Songs Lalitha Audios And Videos Youtube Dj Songs Audio Songs Dj Mix Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-army-games.html">Army Army Games</a></li>
+													<li class="list-group-item"><a href="/army-and-army-national-guard.html">Army And Army National Guard</a></li>
+													<li class="list-group-item"><a href="/argus911-twitter.html">Argus911 Twitter</a></li>
+													<li class="list-group-item"><a href="/argus-upcoming-skin.html">Argus Upcoming Skin</a></li>
+													<li class="list-group-item"><a href="/arizona-army-national-guard-medical-command.html">Arizona Army National Guard Medical Command</a></li>
+													<li class="list-group-item"><a href="/army-army-email.html">Army Army Email</a></li>
+													<li class="list-group-item"><a href="/argus-skin-survey.html">Argus Skin Survey</a></li>
+													<li class="list-group-item"><a href="/argus-vape-mod.html">Argus Vape Mod</a></li>
+													<li class="list-group-item"><a href="/army-army-academy.html">Army Army Academy</a></li>
+													<li class="list-group-item"><a href="/army-army-game-download.html">Army Army Game Download</a></li>
+													<li class="list-group-item"><a href="/argus-youtube.html">Argus Youtube</a></li>
+													<li class="list-group-item"><a href="/arkansas-national-guard-best-warrior-competition.html">Arkansas National Guard Best Warrior Competition</a></li>
+													<li class="list-group-item"><a href="/argus-starlight.html">Argus Starlight</a></li>
+													<li class="list-group-item"><a href="/army-army-gd.html">Army Army Gd</a></li>
+													<li class="list-group-item"><a href="/argus-wallpaper-3d.html">Argus Wallpaper 3d</a></li>
+													<li class="list-group-item"><a href="/argus-roselle.html">Argus Roselle</a></li>
+													<li class="list-group-item"><a href="/army-army-gun.html">Army Army Gun</a></li>
+													<li class="list-group-item"><a href="/argus-x-mod.html">Argus X Mod</a></li>
+													<li class="list-group-item"><a href="/arin-golf.html">Arin Golf</a></li>
+													<li class="list-group-item"><a href="/army-army-hindi-movie.html">Army Army Hindi Movie</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

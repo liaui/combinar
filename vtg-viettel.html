@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Vtg Viettel - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Vtg Viettel",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/600x315/c3/52/25/c3522502897f1b4a554922a0c98c7dff.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=vtg+viettel",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Vtg Viettel</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">3 reasons why telco giant Viettels global expansion is booming. 49 Bai viet cuoi. Currently VTG has been providing telecommunication services such as fixed telephone network. <br>				
+			</p>
+										<a class="badge badge-primary" href="/kang-ujang-bustomi-vs-dukun-santet.html">kang ujang bustomi vs dukun santet</a>
+											<a class="badge badge-dark" href="/kang-uci.html">kang uci</a>
+											<a class="badge badge-primary" href="/joint-force-headquarters-rhode-island-national-guard.html">joint force headquarters rhode island national guard</a>
+											<a class="badge badge-warning" href="/joining-the-national-guard-as-a-cop.html">joining the national guard as a cop</a>
+											<a class="badge badge-dark" href="/kang-martho.html">kang martho</a>
+											<a class="badge badge-primary" href="/jung-ke-maidan-mein-indian-army-song-download-pagalworldcom.html">jung ke maidan mein indian army song download pagalworldcom</a>
+											<a class="badge badge-light" href="/karang-boma.html">karang boma</a>
+											<a class="badge badge-primary" href="/kang-diarani-data-faktual-yaiku.html">kang diarani data faktual yaiku</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to visit the right blog.  Our website gives you hints for seeing the maximum quality video and picture content, search and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this video for you to view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/25/ce/3e25ce05312e72e1b0d9e25514057d18.jpg" data-lightbox="roadtrip" data-title="Vtg Red Mod Joe Colombo Bobby Cart Trolley Panton Kartell Decor Or Utility In Beauty Shop Kartell Retro Furniture Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/25/ce/3e25ce05312e72e1b0d9e25514057d18.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5f1AljWcME81PLc9IRnOxYushUsaZ90wKRQ';" alt="Vtg Red Mod Joe Colombo Bobby Cart Trolley Panton Kartell Decor Or Utility In Beauty Shop Kartell Retro Furniture Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vtg Red Mod Joe Colombo Bobby Cart Trolley Panton Kartell Decor Or Utility In Beauty Shop Kartell Retro Furniture Decor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/79/72/37797298e24d90ce1b41ed306e172296.png" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/79/72/37797298e24d90ce1b41ed306e172296.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5RhFeLOmwMFNsY80VjCD4tExZTX5V4Jr0HQ';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/7e/65/787e654b3436eda677ccc86d616e2838.jpg" data-lightbox="roadtrip" data-title="Wallpaper Wallpapers Widescreen Wallpaper Desktop 855442 City Lights At Night City Wallpaper Night City">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/7e/65/787e654b3436eda677ccc86d616e2838.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvaoP3mOQfaVkFrExEFzlpHOhsQqt6_jRU4w';" alt="Wallpaper Wallpapers Widescreen Wallpaper Desktop 855442 City Lights At Night City Wallpaper Night City">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wallpaper Wallpapers Widescreen Wallpaper Desktop 855442 City Lights At Night City Wallpaper Night City</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/1b/d3/ea/1bd3ea55efb9c17419df47063362086b.jpg" data-lightbox="roadtrip" data-title="Nokia 9210i Communicator Gray Unlocked Smartphone">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/1b/d3/ea/1bd3ea55efb9c17419df47063362086b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLUxMwVOxWVonMNm2ovf1CIdDHXhdfl-55pQ';" alt="Nokia 9210i Communicator Gray Unlocked Smartphone">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nokia 9210i Communicator Gray Unlocked Smartphone</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ef/6d/7d/ef6d7d12a07d392d9e362b37372a8159--gi-joe-vintage-toys.jpg" data-lightbox="roadtrip" data-title="Vtg Gi Joe Action Figure Toy Lot Set 21 Different Hasbro 1990 S 80 S G I Joe Action Figures Action Figures Toys Gi Joe">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ef/6d/7d/ef6d7d12a07d392d9e362b37372a8159--gi-joe-vintage-toys.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUKVNSwlB5u87CLcEp_TdP03J3oTB-YcJTVw';" alt="Vtg Gi Joe Action Figure Toy Lot Set 21 Different Hasbro 1990 S 80 S G I Joe Action Figures Action Figures Toys Gi Joe">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vtg Gi Joe Action Figure Toy Lot Set 21 Different Hasbro 1990 S 80 S G I Joe Action Figures Action Figures Toys Gi Joe</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/1f/1a/941f1acc68eaf866b0355aae9de85452.jpg" data-lightbox="roadtrip" data-title="It S Happening Looks Like Apple May Be Making An Electric Car Readwrite Electric Car Car Apple">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/1f/1a/941f1acc68eaf866b0355aae9de85452.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuiTIx6tL9-LCV6T42RuBAb7LljiD_Kep5_g';" alt="It S Happening Looks Like Apple May Be Making An Electric Car Readwrite Electric Car Car Apple">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">It S Happening Looks Like Apple May Be Making An Electric Car Readwrite Electric Car Car Apple</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/5a/fe/43/5afe43e1c7fc4108057b991c08454522.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuiTIx6tL9-LCV6T42RuBAb7LljiD_Kep5_g';" alt="It S Happening Looks Like Apple May Be Making An Electric Car Readwrite Electric Car Car Apple">
+										<div class="card-body">
+						<h3 class="h5"><b>VTG Corporation always prides itself as the first Vietnamese company to invest abroad in high technology and fiber optic cable infrastructure in many countries in the world.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Vtg viettel</strong>. 
+								
+																	Army Telecommunication Industry Corporation is a Vietnamese multinational telecommunications company headquartered in Hanoi Vietnam. 
+																	Viettel Post is a leading domestic express delivery company in Vietnam. 
+																	Tra cuu lich su djang ky khong nhan quang cao. 
+																	Listening and understanding in order to provide personalized customer care. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tuy nhien bieu tuong logo Viettel co y nghia sau sac nhu the nao khong phai ai cung biet. 
+																	Djang nhap tu djong tai khoan di djong Viettel qua 3G4G hoac tai khoan Internet Truyen hinh Viettel qua OTP mat khau dje tan huong The gioi uu djai danh rieng cho thue bao. 
+																	The business activities of Viettel Post. 
+																	Quay lai My Viettel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Viettel Group Official Website Pioneering in innovation and creativeness. 
+																	Vietnamese Lao PMs visit Star Telecom. 
+																	VTG Equipment and Technology Joint Stock Company was established in 16112011 with main business activities include supplying installation and operation of technological equipment for transportation infrastructure. 
+																	Halotel reaches double-digit market share in Tanzania. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Logo Viettel khong con xa la voi nguoi dan Viet Nam khi xuat hien khap noi tu cac cua hang Viettel djen cac bien bang va tren hau het cac mang truyen thong. 
+																	Gia realtime djo thi phan tich thong ke giao dich bao cao tai chinh chi so tai chinh tin tuc su kien ho so doanh nghiep tai lieu co djong doanh nghiep cung nganh VietstockFinance. 
+																	- Trading in commercial telecommunication services telecommunication equipment. 
+																	Quan ly tai khoan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	- Providing logistics services handling storage transport. 
+																	Viettel Global ky Hop djong lien doanh voi Lao Asian Telecom LAT thanh lap Cong ty Star Telecom Co Ltd trong djo Viettel djong gop 49 von djieu le chinh thuc bat djau djau tu sang Lao. 
+																	Can mua co phieu VTG - Viettel Global. 
+																	Thong tin thue bao. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tin tuc va du lieu chi tiet ve Tong Cong ty co phan Djau tu Quoc te Viettel VIETTEL GLOBAL. 
+																	Cong djong Viettel giai djap online. 
+																	Halotel Tzs 800m investment wins international praise. 
+																	Tap djoan Cong nghiep Vien thong Quan djoi lit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chuyen phat nhanh Van chuyen thu hang tra cuu hanh trinh djuong thu. 
+																	Intelligent Transportation Systems ITS Vessel Traffic Services Systems VTS Mechanical Electrical Systems ME Aviation Equipments. 
+																	By hanhthanh in forum SAN OTC CO PHIEU Tra. 
+																	Viettel International Investment Corporation VTG belongs to Viettel Army Telecommunications Group under Ministry of Defense. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By hanhthanh in forum SAN OTC CO PHIEU Tra loi. 
+																	Tra cuu thue bao theo NDj 49. 
+																	Hoa djon djien tu. 
+																	Viettel is the largest telecommunications service provider in Vietnam. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tap djoan Vien thong Quan djoi Viettel do Bo Quoc phong thuc hien quyen chu so huu va la mot doanh nghiep quan djoi kinh doanh trong linh vuc buu chinh - vien thong va cong nghe thong tin. 
+																	Viettel Global nhan giay phep djau tu tai Campuchia tu Tap djoan VTQDj. 
+																	Mua Co Phieu Viettel Global - VTGI Ai co VTGI muon ban thi lien he em so DT 01689983031 Cam on moi nguoi dja djoc tin. 
+																	Cong thong tin chinh thuc ve dich vu cua Viettel Telecom. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Khuyen mai lap mang internet Viettel cap quang Viettel va truyen hinh Viettel mien phi tai Ha Noi Dja Nang TP HCM Hai Phong Binh Duong Can Tho va cac tinh tren toan quocViettel Telecom nha cung cap dich vu lap mang Viettel mang cap quang Viettel. 
+																	VTG is the largest private wagon hire company in Europe and one of the leading providers of rail and tank container logistics services. 
+																	It is a state-owned enterprise and operated by the Ministry of Defence. 
+																	Chuyen sang tra s. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tin tuc 4G Viettel moi nhat 2019 cung huong dan chi tiet cach djang ky va su dung dich vu Viettel 4G luon djuoc cap nhat tai 4GViettelvn. 
+																	VTG in News. 
+																	Lan toa co djinh. 
+																	Hoa djon ban hang. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Software N-office of Viettel exported to Haiti. 
+																	Lan toa di djong. 
+																	Viettel Telecom is. 
+																	Mua co phieu Tu van Thiet ke Viettel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lap mang Viettel - Viettel Telecom - Khuyen mai hap dan thang 012021. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/f0/c6/55f0c6f08940a63316e51317b8497255.jpg" data-lightbox="roadtrip" data-title="For Sale Vtg Panasonic Ev247 Extender Reach Easy Heat Variable Speed Panabrator Massager Variables Heat Panasonic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/f0/c6/55f0c6f08940a63316e51317b8497255.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqQN2by-8ow9NGUPZjRYsO-5BzHCH0d40tTg';" alt="For Sale Vtg Panasonic Ev247 Extender Reach Easy Heat Variable Speed Panabrator Massager Variables Heat Panasonic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For Sale Vtg Panasonic Ev247 Extender Reach Easy Heat Variable Speed Panabrator Massager Variables Heat Panasonic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/fa/c1/0c/fac10cf81ff9e5dda28e84b0601f4a4d.jpg" data-lightbox="roadtrip" data-title="Pin On Movies Dvds And Blu Rays">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/fa/c1/0c/fac10cf81ff9e5dda28e84b0601f4a4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Znr683ICiJTtFursKpU2Bhwj8PBXMlFl8Q';" alt="Pin On Movies Dvds And Blu Rays">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Movies Dvds And Blu Rays</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/71/9a/f8719adb9b45b56b5ee5e0548c0e8a7c.png" data-lightbox="roadtrip" data-title="Lace Tee Dress Style Fashion Beauty Beautyinthebag Beautiful Dresses Pretty Dresses Fashion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/71/9a/f8719adb9b45b56b5ee5e0548c0e8a7c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_pNYeqG9jiOYj_MAnNnbNpdvQB-Ne_it1hA';" alt="Lace Tee Dress Style Fashion Beauty Beautyinthebag Beautiful Dresses Pretty Dresses Fashion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lace Tee Dress Style Fashion Beauty Beautyinthebag Beautiful Dresses Pretty Dresses Fashion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/52/25/c3522502897f1b4a554922a0c98c7dff.jpg" data-lightbox="roadtrip" data-title="Fpt Play Box đanh Gia Fpt Play Box 2017 Coupon Fpt Play Box Antv Android Tv Box Android Tv">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/52/25/c3522502897f1b4a554922a0c98c7dff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWd6_VWOlRvFy7ilQhe2uR35kzrip1hzDESg';" alt="Fpt Play Box đanh Gia Fpt Play Box 2017 Coupon Fpt Play Box Antv Android Tv Box Android Tv">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fpt Play Box đanh Gia Fpt Play Box 2017 Coupon Fpt Play Box Antv Android Tv Box Android Tv</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/73/9a/ba739a1ce37873651cb403c589e7a3f6.jpg" data-lightbox="roadtrip" data-title="Giay Bup Be Mango Mau Be đinh Nơ Shop Mẹ Bốp Mango Thời Trang Giay Bup Be">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/73/9a/ba739a1ce37873651cb403c589e7a3f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvMMHNRYVo-dGjnr79LSisGVY0BfQighv9NQ';" alt="Giay Bup Be Mango Mau Be đinh Nơ Shop Mẹ Bốp Mango Thời Trang Giay Bup Be">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Giay Bup Be Mango Mau Be đinh Nơ Shop Mẹ Bốp Mango Thời Trang Giay Bup Be</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/200x150/0b/15/0b/0b150bf5e62c604f1c58a00d05b79321.jpg" data-lightbox="roadtrip" data-title="For Sale Vtg Panasonic Ev247 Extender Reach Easy Heat Variable Speed Panabrator Massager Variables Heat Panasonic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/200x150/0b/15/0b/0b150bf5e62c604f1c58a00d05b79321.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-lks54OOs7Si4nyQ0lqWHOYewxrpjp92TQg';" alt="For Sale Vtg Panasonic Ev247 Extender Reach Easy Heat Variable Speed Panabrator Massager Variables Heat Panasonic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For Sale Vtg Panasonic Ev247 Extender Reach Easy Heat Variable Speed Panabrator Massager Variables Heat Panasonic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/200x150/80/c8/f1/80c8f1c237a44ee041ae622dfdbc5e8b.jpg" data-lightbox="roadtrip" data-title="Search Chi Chi London Page 1 Of 2 Floral Print Prom Dress Colorful Prom Dresses Floral Prom Dresses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/200x150/80/c8/f1/80c8f1c237a44ee041ae622dfdbc5e8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG4-KwjuPETTViWgu1-_ObOpa-kDJw4RcO0A';" alt="Search Chi Chi London Page 1 Of 2 Floral Print Prom Dress Colorful Prom Dresses Floral Prom Dresses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Search Chi Chi London Page 1 Of 2 Floral Print Prom Dress Colorful Prom Dresses Floral Prom Dresses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/fe/43/5afe43e1c7fc4108057b991c08454522.jpg" data-lightbox="roadtrip" data-title="Truyện Thiếu Nhi Xuất Bản Trước 1975 Truyện Tranh Sach Thiếu Nhi Diễn đan Sach Xưa Bảo Tồn Văn Hoa Việt Sach Thiếu Nhi Truyện Tranh">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/fe/43/5afe43e1c7fc4108057b991c08454522.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8PeAdJhxr-vypa5QYhslOiEa2GY8T5zIe8g';" alt="Truyện Thiếu Nhi Xuất Bản Trước 1975 Truyện Tranh Sach Thiếu Nhi Diễn đan Sach Xưa Bảo Tồn Văn Hoa Việt Sach Thiếu Nhi Truyện Tranh">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Truyện Thiếu Nhi Xuất Bản Trước 1975 Truyện Tranh Sach Thiếu Nhi Diễn đan Sach Xưa Bảo Tồn Văn Hoa Việt Sach Thiếu Nhi Truyện Tranh</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/28/66/b32866269fdf8824d9ba58bbe58cb6b3.jpg" data-lightbox="roadtrip" data-title="Nicole Scherzinger Holds Hands With Grigor Dimitrov Nicole Scherzinger Celebrity Street Style Fashion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/28/66/b32866269fdf8824d9ba58bbe58cb6b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT74tJLreQNSehmlKhhNbWeBOLPJLYyjix3Cw';" alt="Nicole Scherzinger Holds Hands With Grigor Dimitrov Nicole Scherzinger Celebrity Street Style Fashion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nicole Scherzinger Holds Hands With Grigor Dimitrov Nicole Scherzinger Celebrity Street Style Fashion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/7e/c3/90/7ec3905a3f7a20bca370830c8a28c888--colorful-prom-dresses-pink-prom-dresses.jpg" data-lightbox="roadtrip" data-title="Search Chi Chi London Page 1 Of 2 Floral Print Prom Dress Colorful Prom Dresses Floral Prom Dresses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/7e/c3/90/7ec3905a3f7a20bca370830c8a28c888--colorful-prom-dresses-pink-prom-dresses.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKCbf92Lg9uO_s5q4u7sAiXfy-bJug9kcw3w';" alt="Search Chi Chi London Page 1 Of 2 Floral Print Prom Dress Colorful Prom Dresses Floral Prom Dresses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Search Chi Chi London Page 1 Of 2 Floral Print Prom Dress Colorful Prom Dresses Floral Prom Dresses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/c3/52/25/c3522502897f1b4a554922a0c98c7dff.jpg" data-lightbox="roadtrip" data-title="Fpt Play Box đanh Gia Fpt Play Box 2017 Coupon Fpt Play Box Antv Android Tv Box Android Tv">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/c3/52/25/c3522502897f1b4a554922a0c98c7dff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvDIHP_MUeFMWQT0WHNVsBprKh_KukZmYzYw';" alt="Fpt Play Box đanh Gia Fpt Play Box 2017 Coupon Fpt Play Box Antv Android Tv Box Android Tv">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fpt Play Box đanh Gia Fpt Play Box 2017 Coupon Fpt Play Box Antv Android Tv Box Android Tv</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/no-guard-ability-pokemon.html">No Guard Ability Pokemon</a></li>
+													<li class="list-group-item"><a href="/no-guard-fade.html">No Guard Fade</a></li>
+													<li class="list-group-item"><a href="/north-korean-army-rank-insignia.html">North Korean Army Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/no-guard-vs-0-guard.html">No Guard Vs 0 Guard</a></li>
+													<li class="list-group-item"><a href="/north-carolina-national-guard-military-police-units.html">North Carolina National Guard Military Police Units</a></li>
+													<li class="list-group-item"><a href="/no-guard-dog-try-chickens.html">No Guard Dog Try Chickens</a></li>
+													<li class="list-group-item"><a href="/no-guard-gen-8.html">No Guard Gen 8</a></li>
+													<li class="list-group-item"><a href="/no-guard-double-battle.html">No Guard Double Battle</a></li>
+													<li class="list-group-item"><a href="/no-guard-clipper-length.html">No Guard Clipper Length</a></li>
+													<li class="list-group-item"><a href="/no-guard-torches-skyrim.html">No Guard Torches Skyrim</a></li>
+													<li class="list-group-item"><a href="/no-guard-break-critical-nioh.html">No Guard Break Critical Nioh</a></li>
+													<li class="list-group-item"><a href="/no-guard-machamp-sword.html">No Guard Machamp Sword</a></li>
+													<li class="list-group-item"><a href="/no-guard-card-security-jobs.html">No Guard Card Security Jobs</a></li>
+													<li class="list-group-item"><a href="/no-guard-lapras.html">No Guard Lapras</a></li>
+													<li class="list-group-item"><a href="/no-guard-to-1-fade.html">No Guard To 1 Fade</a></li>
+													<li class="list-group-item"><a href="/no-guard-vs-shaved-head.html">No Guard Vs Shaved Head</a></li>
+													<li class="list-group-item"><a href="/no-guard-lever-closed.html">No Guard Lever Closed</a></li>
+													<li class="list-group-item"><a href="/no-guard-haircut.html">No Guard Haircut</a></li>
+													<li class="list-group-item"><a href="/nkb-nomor-22.html">Nkb Nomor 22</a></li>
+													<li class="list-group-item"><a href="/no-guard-or-protect.html">No Guard Or Protect</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Xtc Perang - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Xtc Perang",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/62/29/f2/6229f25c9f24df880c09459e0c250346.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=xtc+perang",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Xtc Perang</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Indonesia tanpa sensor 111134 views. Fronted by songwriters Andy Partridge guitars vocals and Colin Moulding bass vocals the band gained popularity during the rise of punk and new wave in the 1970s later playing in a variety of styles that ranged from angular guitar riffs to elaborately arranged pop. 10 eventi di sky primafila guide un ou une erreur est patent 6713624 davidoff perfume david hasselhoff melason images yahoo michel vignon tai jitsu techniques tar heel football schedule 2016 michigan anrev singapore time xtc generals and majors albumkings. <br>				
+			</p>
+										<a class="badge badge-light" href="/army-war-movie-name.html">army war movie name</a>
+											<a class="badge badge-light" href="/arnes-hotel.html">arnes hotel</a>
+											<a class="badge badge-danger" href="/arnie-palmer-army.html">arnie palmer army</a>
+											<a class="badge badge-dark" href="/arnies-army-shirt.html">arnies army shirt</a>
+											<a class="badge badge-warning" href="/arnes-purwakarta.html">arnes purwakarta</a>
+											<a class="badge badge-success" href="/army-zip-hoodie-mens.html">army zip hoodie mens</a>
+											<a class="badge badge-light" href="/army-tactical-cargo-pants.html">army tactical cargo pants</a>
+											<a class="badge badge-light" href="/army-white-army.html">army white army</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to visit the right site.  Our site provides you with hints for seeing the maximum quality video and picture content, search and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie for you to view.  You can also bring about supporting this website by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/4a/82/c64a82dcb7675487d438f144d040ed8a.jpg" data-lightbox="roadtrip" data-title="Pin Di Casesamsung">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/4a/82/c64a82dcb7675487d438f144d040ed8a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvfUn-gK7vCgNcxc3-J84sBOAEalot2tvG2A';" alt="Pin Di Casesamsung">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Casesamsung</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/76/d7/fe/76d7fe736f170cdf3dfd9b6f48201ce5.jpg" data-lightbox="roadtrip" data-title="Kumpulan Gambar Lucu Gokil Konyol Kocak Banget Perang Download Kumpulan Meme Seru Untuk Perang Gambar Lucu Di Medsos Posbagus Outdoor Decor Outdoor Hot Tub">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/76/d7/fe/76d7fe736f170cdf3dfd9b6f48201ce5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAgH-v5U0k5j17P3EYjKhclmARR0-j1_tZGA';" alt="Kumpulan Gambar Lucu Gokil Konyol Kocak Banget Perang Download Kumpulan Meme Seru Untuk Perang Gambar Lucu Di Medsos Posbagus Outdoor Decor Outdoor Hot Tub">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kumpulan Gambar Lucu Gokil Konyol Kocak Banget Perang Download Kumpulan Meme Seru Untuk Perang Gambar Lucu Di Medsos Posbagus Outdoor Decor Outdoor Hot Tub</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/7a/49/35/7a4935ad543572a95a5c618e223b0969.jpg" data-lightbox="roadtrip" data-title="Pin Di Berita Terbaru">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/7a/49/35/7a4935ad543572a95a5c618e223b0969.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8LDwPGtOq1dD0TxXe54IcSPtb_LquJ89e3A';" alt="Pin Di Berita Terbaru">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Berita Terbaru</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/5d/95/cd5d95a94860658eaf80c9c303ec79de.jpg" data-lightbox="roadtrip" data-title="Professional Team Fortess 2 Team Fortress Team Fortress 2">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/5d/95/cd5d95a94860658eaf80c9c303ec79de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKDpGLBWilRuTdNd6OglfnDZC8M2Rj37fr-A';" alt="Professional Team Fortess 2 Team Fortress Team Fortress 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Professional Team Fortess 2 Team Fortress Team Fortress 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/25/cd/b625cdcf3a002ac4059a1f6abcc6bb3e.png" data-lightbox="roadtrip" data-title="Gambar Kata Kata Bijak Ki Semar 113 Lebih Kata Mutiara Bahasa Sunda Kahirupan Gambar Kata Bijak Jawa Semar 25 Kata Kata Bi Kata Kata Indah Lucu Gambar Lucu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/25/cd/b625cdcf3a002ac4059a1f6abcc6bb3e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-enfmhW1NwWWdzPfqHiARMJ0a-euXuHue8A';" alt="Gambar Kata Kata Bijak Ki Semar 113 Lebih Kata Mutiara Bahasa Sunda Kahirupan Gambar Kata Bijak Jawa Semar 25 Kata Kata Bi Kata Kata Indah Lucu Gambar Lucu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gambar Kata Kata Bijak Ki Semar 113 Lebih Kata Mutiara Bahasa Sunda Kahirupan Gambar Kata Bijak Jawa Semar 25 Kata Kata Bi Kata Kata Indah Lucu Gambar Lucu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1a/bb/97/1abb9754af150b5b7333e69b31733207.jpg" data-lightbox="roadtrip" data-title="24 Gambar Harimau Kartun Keren 3d White Tiger Theme For Android Apk Download Download Berbagai Macam Gambar Mobil Ker Lion Sculpture Animals Animal Tattoo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1a/bb/97/1abb9754af150b5b7333e69b31733207.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNQKQEPZDbzClOrJ5V-wDXW2e-jayt7rKL_g';" alt="24 Gambar Harimau Kartun Keren 3d White Tiger Theme For Android Apk Download Download Berbagai Macam Gambar Mobil Ker Lion Sculpture Animals Animal Tattoo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">24 Gambar Harimau Kartun Keren 3d White Tiger Theme For Android Apk Download Download Berbagai Macam Gambar Mobil Ker Lion Sculpture Animals Animal Tattoo</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/236x/76/d7/fe/76d7fe736f170cdf3dfd9b6f48201ce5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNQKQEPZDbzClOrJ5V-wDXW2e-jayt7rKL_g';" alt="24 Gambar Harimau Kartun Keren 3d White Tiger Theme For Android Apk Download Download Berbagai Macam Gambar Mobil Ker Lion Sculpture Animals Animal Tattoo">
+										<div class="card-body">
+						<h3 class="h5"><b>Download over 20812 icons of logo in SVG PSD PNG EPS format or as webfonts.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Xtc perang</strong>. 
+								
+																	Viral xtc di serang brigez kemarin tanggal 16 september di soreang bandung duration. 
+																	XTC Karang Pucung 817. 
+																	Flaticon the largest database of free vector icons. 
+																	Kejadian ini terjadi di salah satu sudut kota bandung perang geng motor antara 2 kelompok yang anggotanya berjumlah sangat banyak. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nuhun a otot udah nyempetin waktunya buat kita sebenernya banyak cerita2 a otot jaman dulu yg lebih barbar dan itu ada buktinya sampe saya geleng2 kepala d. 
+																	Perang geng motor bandung. 
+																	Brigez indonesia Kota Bandung. 
+																	Perang geng motor di Bandung ini direkam oleh cctv tempat foto di Kota Bandung. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At mod lightsaber skyrim mods sho kosugi imdb silken ramblas trivago uk scoreboards bar and grill oswego il public library a industria no. 
+																	Kedua belah pihak yang terlibat insiden yang menewaskan karta gunawan 37. 
+																	Belakangan nama itu diganti menjadi Exalt To Creativity dengan simbol kelompok berupa bendera berwarna paling atas putih-biru muda-biru tua tengahnya bergambar lebah yang secara harfiah oleh anggota kelompok XTC dimaknai sebagai solidaritas antar anggota jauhnya bila salah. 
+																	Kejadian bermula pada Sabtu 2762020 malam sekitar pukul 2300 WIB. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	XTC were an English rock band formed in Swindon in 1972. 
+																	SuaraJabarid - Dua kelompok kepemudaan di Kota Bandung Jawa Barat yakni XTC dan Brigez terlibat bentrok di Jalan Terusan Gatot Subroto Kiaracondong Kota Bandung. 
+																	Rampasan Perang dipandang mereka bukan aksi kriminal kilahnya Rampasan Perang yang rata-rata berupa kendaraan otomotif berupa motor mereka rampas dari rlnya tidak untuk diperjualbelikan melainkan hanya dibakar dan sebagai penanda unjuk kekuatan kelompok. 
+																	Ferry All Ramdani is on Facebook. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	XTC atau Exalt To Coitus adalah. 
+																	Telah terjadi Perang Geng Motor Di Jl. 
+																	Bisa dilihat korban pengeroyokan menggunakan baju yang bertuliskan XTC yang d. 
+																	Dari informasi satu orang menjadi korban dalam bentrok tersebut. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kelompok xtc exalt to creativity brigez m2r moonraker dan gbr grab on road merupakan empat geng motor berandalan motor terbesar di kota bandung. 
+																	Panglima Perang Xtc Indonesia. 
+																	1674 likes 256 talking about this. 
+																	Moonraker vs xtc moonraker vs xtc tawuran sejarah moonraker vs xtc video moonraker vs xtc video tawuran moonraker vs xtc video perang moonraker vs xtc xtc vs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dr Setiabudi Bandung 14 juli 2019 pada pukul 2120 yang melibatkan kedua kelompok bermotor yang sudah cukup terkenal d. 
+																	Facebook gives people the power to share and makes the world more open and connected. 
+																	Ada tiga unit bom molortov yang kami sita dari tangan anggota genk motor tersebut yang rencananya akan digunakan saat perang antargenk di Kampung Marinjung Tengan Desa Karangpapak kata. 
+																	XTC atau Exalt To Coitusnote 1 adalah komunitas otomotif yang berdiri pada tahun 1982 oleh 7 orang pemuda Bandung. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sumedang sekitarbandungcom perselisihan antar dua ormas pasca baksos bencana di kec. 
+																	Pada mulanya hanya kumpulan siswa sekolah. 
+																	Moonraker vs xtc perang geng motor bandung duration. 
+																	Menurut saksi mata di kejadian. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pada masa pemilihan umum XTC menjadi simpatisan bayaran dari politisi dan partai politik dengan. 
+																	Join Facebook to connect with Ferry All Ramdani and others you may know. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/df/db/ea/dfdbeaba3efb334f530768714cffb433.jpg" data-lightbox="roadtrip" data-title="20 Stiker Keren Beat Fi Striping Motor Custom Design Laman 122 Stikermotor Net Download Stiker Lampu Beat Fi Honda Beat Fi Video Stiker Gambar Hello Kitty">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/df/db/ea/dfdbeaba3efb334f530768714cffb433.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCYYFIcQHI8cbr_YlvLSIc4HqXpHXTIIrUog';" alt="20 Stiker Keren Beat Fi Striping Motor Custom Design Laman 122 Stikermotor Net Download Stiker Lampu Beat Fi Honda Beat Fi Video Stiker Gambar Hello Kitty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">20 Stiker Keren Beat Fi Striping Motor Custom Design Laman 122 Stikermotor Net Download Stiker Lampu Beat Fi Honda Beat Fi Video Stiker Gambar Hello Kitty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e8/16/21/e8162136706a3384873403be514380e5.jpg" data-lightbox="roadtrip" data-title="Mantan Walkot Tegal Divonis 5 Tahun Denda 200 Juta">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e8/16/21/e8162136706a3384873403be514380e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLgK4hAdeulJ8OnzhY8T6QrI6tRz0Sf7ybpQ';" alt="Mantan Walkot Tegal Divonis 5 Tahun Denda 200 Juta">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mantan Walkot Tegal Divonis 5 Tahun Denda 200 Juta</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f6/06/08/f606086620316762d2c792a96f2254bb.jpg" data-lightbox="roadtrip" data-title="Pin Di Kumpulan Gambar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f6/06/08/f606086620316762d2c792a96f2254bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuHNSvp_A3TncxJ_-79iAgW3Fkuq1O3NpHOw';" alt="Pin Di Kumpulan Gambar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Kumpulan Gambar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/02/23/7f0223bed9f1b736d08a8cd1c72e88ce.jpg" data-lightbox="roadtrip" data-title="Gambar Kata Kata Mutiara Islam Tentang Cinta Sejati Kata Kata Mutiara Cinta Islam Katakatamutiara Co Gambar Kata Islami Cinta Kata Kata Mutiara Bijak Gambar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/02/23/7f0223bed9f1b736d08a8cd1c72e88ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqg7m1KQhe4d5PeaRTGszODDZpZnrTVjCY6Q';" alt="Gambar Kata Kata Mutiara Islam Tentang Cinta Sejati Kata Kata Mutiara Cinta Islam Katakatamutiara Co Gambar Kata Islami Cinta Kata Kata Mutiara Bijak Gambar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gambar Kata Kata Mutiara Islam Tentang Cinta Sejati Kata Kata Mutiara Cinta Islam Katakatamutiara Co Gambar Kata Islami Cinta Kata Kata Mutiara Bijak Gambar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/4a/a6/654aa6fd4ed9921e07223167a6655828.gif" data-lightbox="roadtrip" data-title="Pin On Damara">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/4a/a6/654aa6fd4ed9921e07223167a6655828.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMj3wfHhYEyud867svuKROvQ-aR2CldpaI6w';" alt="Pin On Damara">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Damara</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/3b/31/b93b319871ab3eda07810a65665fc3c3.jpg" data-lightbox="roadtrip" data-title="Gambar Kaos Biru Dongker Polos Kaos Polos Biru Dongker Download Kaos Kerah Polo Pe Lacoste Biru Dongker Download Harga Kaos Pol Biru Dongker Kaos Biru">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/3b/31/b93b319871ab3eda07810a65665fc3c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSd6-IFmJz210hIoWadT8-qMv-cFN4ci5EZQ';" alt="Gambar Kaos Biru Dongker Polos Kaos Polos Biru Dongker Download Kaos Kerah Polo Pe Lacoste Biru Dongker Download Harga Kaos Pol Biru Dongker Kaos Biru">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gambar Kaos Biru Dongker Polos Kaos Polos Biru Dongker Download Kaos Kerah Polo Pe Lacoste Biru Dongker Download Harga Kaos Pol Biru Dongker Kaos Biru</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/29/f2/6229f25c9f24df880c09459e0c250346.jpg" data-lightbox="roadtrip" data-title="Gambar Kata Ibu Rmh Tangga Jangan Remehkan Ibu Rumah Tangga Pekerjaan Mereka Mahal Selamat Hari Ibu Ini Alasan Menohok Ibu Ruma Gambar Bijak Pekerjaan Rumah">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/29/f2/6229f25c9f24df880c09459e0c250346.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSHu56MJKP0vKoMjCdNIoL9d_8aN5rv_zLgA';" alt="Gambar Kata Ibu Rmh Tangga Jangan Remehkan Ibu Rumah Tangga Pekerjaan Mereka Mahal Selamat Hari Ibu Ini Alasan Menohok Ibu Ruma Gambar Bijak Pekerjaan Rumah">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gambar Kata Ibu Rmh Tangga Jangan Remehkan Ibu Rumah Tangga Pekerjaan Mereka Mahal Selamat Hari Ibu Ini Alasan Menohok Ibu Ruma Gambar Bijak Pekerjaan Rumah</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8a/0b/25/8a0b25ac18b473ff47853d2d88f5eaba.jpg" data-lightbox="roadtrip" data-title="Gambar Kata Agar Hati Tenang Tenang Hati Hidup Aman Damai Di Kelilingi Orang Orang Yang Positif Berikut Kata Kata Motivasi Kutipan Pelajaran Hidup Motivasi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8a/0b/25/8a0b25ac18b473ff47853d2d88f5eaba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg4FimMRqmrtYZEfVWXQT1Ev8fury2X19PRg';" alt="Gambar Kata Agar Hati Tenang Tenang Hati Hidup Aman Damai Di Kelilingi Orang Orang Yang Positif Berikut Kata Kata Motivasi Kutipan Pelajaran Hidup Motivasi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gambar Kata Agar Hati Tenang Tenang Hati Hidup Aman Damai Di Kelilingi Orang Orang Yang Positif Berikut Kata Kata Motivasi Kutipan Pelajaran Hidup Motivasi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/a8/d7/69a8d759baa8896ded55d02f22de57b7.jpg" data-lightbox="roadtrip" data-title="Gambar Kata Cobaan Dari Allah Kata Kata Kesabaran Hati For Android Apk Download Kata Bijak Tegar Menghadapi Cobaan Qwerty Kata Bijak Teg Gambar Allah Bijak">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/a8/d7/69a8d759baa8896ded55d02f22de57b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7YKWvLTdB97LHgFQA94J5WcQ8D3ArSqotA';" alt="Gambar Kata Cobaan Dari Allah Kata Kata Kesabaran Hati For Android Apk Download Kata Bijak Tegar Menghadapi Cobaan Qwerty Kata Bijak Teg Gambar Allah Bijak">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gambar Kata Cobaan Dari Allah Kata Kata Kesabaran Hati For Android Apk Download Kata Bijak Tegar Menghadapi Cobaan Qwerty Kata Bijak Teg Gambar Allah Bijak</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/bf/23/1ebf2335ed905ac3a52e7ec6b0865267.jpg" data-lightbox="roadtrip" data-title="Baekhyun 04 Exo Baekhyun Byun Exo Baekhyun Byun Baekhyun Baekhyun">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/bf/23/1ebf2335ed905ac3a52e7ec6b0865267.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSka7UqC0ZtQW1p-vCAC-ltcuJb_Z7c7TgXZg';" alt="Baekhyun 04 Exo Baekhyun Byun Exo Baekhyun Byun Baekhyun Baekhyun">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Baekhyun 04 Exo Baekhyun Byun Exo Baekhyun Byun Baekhyun Baekhyun</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c6/68/e2/c668e2a3641df2a4141104ba0d66761a.jpg" data-lightbox="roadtrip" data-title="Foto Grafiti Spongebob How To Draw Plankton From Spongebob Squarepants Drawing Download Spo Spongebob Squarepants Drawing Graffiti Images Spongebob Anime">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c6/68/e2/c668e2a3641df2a4141104ba0d66761a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuHefISP8pXDT8FCpuS3VJLLDEo54NjWwuAw';" alt="Foto Grafiti Spongebob How To Draw Plankton From Spongebob Squarepants Drawing Download Spo Spongebob Squarepants Drawing Graffiti Images Spongebob Anime">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Foto Grafiti Spongebob How To Draw Plankton From Spongebob Squarepants Drawing Download Spo Spongebob Squarepants Drawing Graffiti Images Spongebob Anime</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/cf/0c/ddcf0cf8f945fbfb6a63ad1cf6645f75.jpg" data-lightbox="roadtrip" data-title="Paling Keren 15 Tato Yg Bagus Untuk Di Dada Tatto Minimalis Di Bagian Bagian Tubuh Yang Membuat Wanita Terbaik Jua Tato Bunga Rose Tato Untuk Pria Tato Dada">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/cf/0c/ddcf0cf8f945fbfb6a63ad1cf6645f75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpO_GUATpZo7tjne8bEAffyawu6z_1DWQ1_g';" alt="Paling Keren 15 Tato Yg Bagus Untuk Di Dada Tatto Minimalis Di Bagian Bagian Tubuh Yang Membuat Wanita Terbaik Jua Tato Bunga Rose Tato Untuk Pria Tato Dada">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paling Keren 15 Tato Yg Bagus Untuk Di Dada Tatto Minimalis Di Bagian Bagian Tubuh Yang Membuat Wanita Terbaik Jua Tato Bunga Rose Tato Untuk Pria Tato Dada</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="/search?q=tato+di+dada+simple&amp;tbm=isch" data-lightbox="roadtrip" data-title="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrwdvpntaemvlqcv Oih9fns 5yzhop8ejhl3rvjd Ulzvrulc5 Usqp Cau">
+											<img class="card-img v-image ads-img " src="/search?q=tato+di+dada+simple&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=tato+di+dada+simple&amp;tbm=isch';" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrwdvpntaemvlqcv Oih9fns 5yzhop8ejhl3rvjd Ulzvrulc5 Usqp Cau">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcrwdvpntaemvlqcv Oih9fns 5yzhop8ejhl3rvjd Ulzvrulc5 Usqp Cau</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/menang-iphone.html">Menang Iphone</a></li>
+													<li class="list-group-item"><a href="/mass-national-guard-soldier.html">Mass National Guard Soldier</a></li>
+													<li class="list-group-item"><a href="/menang-hp-oppo.html">Menang Hp Oppo</a></li>
+													<li class="list-group-item"><a href="/mangarock.html">Mangarock</a></li>
+													<li class="list-group-item"><a href="/menang-duit.html">Menang Duit</a></li>
+													<li class="list-group-item"><a href="/mcentire-air-national-guard-base.html">Mcentire Air National Guard Base</a></li>
+													<li class="list-group-item"><a href="/mang-jajang.html">Mang Jajang</a></li>
+													<li class="list-group-item"><a href="/mangakuri-room-to-room.html">Mangakuri Room To Room</a></li>
+													<li class="list-group-item"><a href="/mcghee-tyson-angb.html">Mcghee Tyson Angb</a></li>
+													<li class="list-group-item"><a href="/mcentire-and-miller-interiors.html">Mcentire And Miller Interiors</a></li>
+													<li class="list-group-item"><a href="/menang-inggris.html">Menang Inggris</a></li>
+													<li class="list-group-item"><a href="/menang-hp-samsung.html">Menang Hp Samsung</a></li>
+													<li class="list-group-item"><a href="/maryland-army-national-guard-medical-detachment.html">Maryland Army National Guard Medical Detachment</a></li>
+													<li class="list-group-item"><a href="/menang-iphone-shopee.html">Menang Iphone Shopee</a></li>
+													<li class="list-group-item"><a href="/manfaat-nge-gamat-emas.html">Manfaat Nge Gamat Emas</a></li>
+													<li class="list-group-item"><a href="/maximum-age-for-army-national-guard.html">Maximum Age For Army National Guard</a></li>
+													<li class="list-group-item"><a href="/mcghee-tyson-training-and-education-center.html">Mcghee Tyson Training And Education Center</a></li>
+													<li class="list-group-item"><a href="/menang-domino99.html">Menang Domino99</a></li>
+													<li class="list-group-item"><a href="/menang-hp-iphone.html">Menang Hp Iphone</a></li>
+													<li class="list-group-item"><a href="/mang-engking-pandaan.html">Mang Engking Pandaan</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

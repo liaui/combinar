@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Orang Vc - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Orang Vc",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/b3/55/80/b35580d6e3c53269232da0fd0da47789.gif",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=orang+vc",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Orang Vc</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Venture Capital Fund of Orange Group. At first Naho thinks its just a prank. Jika semua peserta sudah meng-update WhatsApp-nya ke versi terbaru cukup buka tab Call pada bagian. <br>				
+			</p>
+										<a class="badge badge-info" href="/vtg-haberdashers-ebay.html">vtg haberdashers ebay</a>
+											<a class="badge badge-dark" href="/vitonal-f-untuk-ibu-hamil.html">vitonal f untuk ibu hamil</a>
+											<a class="badge badge-danger" href="/wallpaper-warna-hijau-army.html">wallpaper warna hijau army</a>
+											<a class="badge badge-danger" href="/vtgh-s-luni.html">vtgh s luni</a>
+											<a class="badge badge-success" href="/vitonal-f-adalah-obat.html">vitonal f adalah obat</a>
+											<a class="badge badge-success" href="/voting-mama-2020.html">voting mama 2020</a>
+											<a class="badge badge-secondary" href="/vtk-wiki.html">vtk wiki</a>
+											<a class="badge badge-warning" href="/vt-x-bts.html">vt x bts</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to visit the ideal site.  Our website provides you with suggestions for seeing the highest quality video and image content, hunt and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you see.  It is also possible to contribute to supporting this site by sharing videos and graphics that you like on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/67/d1/2667d1a2cd712aab7bf6494ee0dfb18f.jpg" data-lightbox="roadtrip" data-title="Pin Di A">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/67/d1/2667d1a2cd712aab7bf6494ee0dfb18f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0WWTBQsHU7uCTdCqwLu8i-1jswyHw_S52Dg';" alt="Pin Di A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/67/29/e967291e74e7cc832c38d2fde4ad599a.jpg" data-lightbox="roadtrip" data-title="Pin On Girl Photo Poses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/67/29/e967291e74e7cc832c38d2fde4ad599a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_eIAS4N1wzSq17_7r3jBrTHYUTrqM9GUveg';" alt="Pin On Girl Photo Poses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Girl Photo Poses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/65/9e/e7659e3cd6d589eb7aa9477a4fd15202.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Eve Sunita Di Couple Goals Gambar Pasangan Lucu Fotografi Fotografi Remaja">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/65/9e/e7659e3cd6d589eb7aa9477a4fd15202.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB7oHUyiRHuV2btOJQghlXKJl3i1fAV6msmQ';" alt="Pin Oleh Eve Sunita Di Couple Goals Gambar Pasangan Lucu Fotografi Fotografi Remaja">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Eve Sunita Di Couple Goals Gambar Pasangan Lucu Fotografi Fotografi Remaja</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/de/9a/d7de9a2df13f5f7e95798fe36f2e11b2.jpg" data-lightbox="roadtrip" data-title="Pin Di Fake Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/de/9a/d7de9a2df13f5f7e95798fe36f2e11b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHzSotCIUR9BoDy7Yr0sABE5M-UdBj1g4dVg';" alt="Pin Di Fake Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Fake Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5f/ff/00/5fff0073312b70e26618e4de6b5c53c5.jpg" data-lightbox="roadtrip" data-title="Pin Di Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5f/ff/00/5fff0073312b70e26618e4de6b5c53c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy7AGF9itw3ow_VDgizbG3IuGam-J-VRlGvw';" alt="Pin Di Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f1/d9/1f/f1d91f78c66c549bef29347e368b042f.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f1/d9/1f/f1d91f78c66c549bef29347e368b042f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90Gmy4Q2XESPPETN2bOl8YN7qV9zHXuYX9g';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d1/ec/e2/d1ece26f0550282c75f636b4c325c1fe.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90Gmy4Q2XESPPETN2bOl8YN7qV9zHXuYX9g';" alt="">
+										<div class="card-body">
+						<h3 class="h5"><b>Jul 25 2020 1.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Orang vc</strong>. 
+								
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+																	1 Mei 2020 WhatsApp dengan fitur video call delapan orang sudah tersedia di Play Store. 
+																	The next video is starting stop. 
+																	Summer 2016 Anime Plot Summary. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	So I just installed the mountune radiator and am ready to fill the coolant back up. 
+																	Orange spins-off VC arm eyes e-health investments 12 JAN 2021 Orange separated its venture capital division into a standalone company allocating it 350 million with the new business set to focus on investments related to its parents core proposition and adjacent sectors deemed high-growth. 
+																	Orang madura Vc an sama nisa sabyan This video is unavailable. 
+																	Perlu diingat semua peserta harus sudah menginstal WhatsApp versi terbaru. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Middle East. 
+																	Malming ngeliatin orang vc berkedok live ig bareng gunsmile loverrukk gunsmileloverruk fypシ fypdongggggggg fypage foryoupage fyp. 
+																	Versi terbaru tersebut dapat diunduh melalui tautan ini. 
+																	2023 by Name of Site. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jul 25 2020 1. 
+																	Orange has a long history in VC funding for startups reflecting its ongoing desire to play a more influential role in the development of network technologies and its frustration with the. 
+																	One morning Naho Takamiya receives a letter in the mail claiming to be from herself 10 years in the future. 
+																	Start date Jul 25 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Angus Buchanan VC MC 11 August 1894 1 March 1944 was an English recipient of the Victoria Cross the highest and most prestigious award for gallantry in the face of the enemy that can be awarded to British and Commonwealth forces. 
+																	VC-3DIL-B obsolete orange coolant. 
+																	Trending01 viralll vidio orang madura dari beringin dasuk sumenep vc an sama ronaldo pemain bola terkenal. 
+																	Click to manage book marks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ive been searching around the web. 
+																	I went to ford and they told me they use yellow coolant now and that I cannot mix the two. 
+																	The next video is starting stop. 
+																	Di dalam jendela pop-up tersebut ada opsi Decline untuk menolak panggilan yang baru. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sang penerima panggilan lantas bakal disodori notifikasi pop-up yang menginformasikan bahwa ada panggilan lain yang masuk. 
+																	But when the letter mentions a transfer student named Kakeru Naruse who really ends up. 
+																	Kabel raikantophinong has created a short video on TikTok with music 썸 feat. 
+																	Performance focused VC leveraging Orange Group strengths to develop future tech champions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kini ketika pengguna melakukan panggilan WhatsApp ke orang yang sedang aktif menelepon via WhatsApp mereka tidak akan mendengarkan nada sibuk dan panggilan akan tetap disambungkan. 
+																	Messages 141 Likes 47 Location Boone. 
+																	Jika tidak panggilan video delapan orang tidak bisa dilakukan. 
+																	The letter reveals a series of events that are supposed to take place that day. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Orange Ventures becomes a seperate entity with 350m allocation. 
+																	Based out of offices in Paris and Dakar Orange Ventures is now a separate legal entity to the rest of the Orange Group and has been granted an investment budget of 350 million as it looks beyond the seed funding it previously specialised in and focuses on multiple markets from seed stage start-ups in Africa and the Middle East to more mature companies in Europe and the United States. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e4/b5/a8/e4b5a84b804a2354ab0a04043e3490b6.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Astrid Llhy Di Cogan Gambar Teman Fotografi Gambar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e4/b5/a8/e4b5a84b804a2354ab0a04043e3490b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIR-WXIpzvG5KFyTyHjWx0Oi0ttanZerReWQ';" alt="Pin Oleh Astrid Llhy Di Cogan Gambar Teman Fotografi Gambar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Astrid Llhy Di Cogan Gambar Teman Fotografi Gambar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/b2/4b/68b24b977f838a984047ab4ab078665d.jpg" data-lightbox="roadtrip" data-title="Cogan Lokal Di 2020 Gambar Orang Gambar Fotografi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/b2/4b/68b24b977f838a984047ab4ab078665d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7c8w7MAmgMJRPmH550MxiMz63l7b9GB1kpw';" alt="Cogan Lokal Di 2020 Gambar Orang Gambar Fotografi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cogan Lokal Di 2020 Gambar Orang Gambar Fotografi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/55/80/b35580d6e3c53269232da0fd0da47789.gif" data-lightbox="roadtrip" data-title="Strong Woman Jimin Tu Selebritas Orang Lucu Foto Lucu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/55/80/b35580d6e3c53269232da0fd0da47789.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG-znXSgy0HJJqrAUEIDbwIGHGVuVupz-zFw';" alt="Strong Woman Jimin Tu Selebritas Orang Lucu Foto Lucu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Strong Woman Jimin Tu Selebritas Orang Lucu Foto Lucu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/fd/ce/0c/fdce0c86f5007e6435cfb7a363da9afa.jpg" data-lightbox="roadtrip" data-title="Pin Di Nailaimutt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/fd/ce/0c/fdce0c86f5007e6435cfb7a363da9afa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9NOuXOizR4EUwEjC_4wAXBa7nvoe5yQuvwA';" alt="Pin Di Nailaimutt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Nailaimutt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/40/dc/b140dc0ddc2172ce7e6b5fb5d6d62def.jpg" data-lightbox="roadtrip" data-title="Ding Dong Di 2020 Fotografi Orang Potret Diri Gambar Pasangan Lucu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/40/dc/b140dc0ddc2172ce7e6b5fb5d6d62def.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHehRpCwsOq4ybbG0MtmSKfjFhe4dqDsCU0g';" alt="Ding Dong Di 2020 Fotografi Orang Potret Diri Gambar Pasangan Lucu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ding Dong Di 2020 Fotografi Orang Potret Diri Gambar Pasangan Lucu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/ec/e2/d1ece26f0550282c75f636b4c325c1fe.png" data-lightbox="roadtrip" data-title="Cerita Instagram Gambar Pasangan Lucu Gambar Teman Orang">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/ec/e2/d1ece26f0550282c75f636b4c325c1fe.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyB8mWfkoFl4WXARtzVcxnUcpKQuOE0QIckA';" alt="Cerita Instagram Gambar Pasangan Lucu Gambar Teman Orang">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cerita Instagram Gambar Pasangan Lucu Gambar Teman Orang</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/2a/80/772a80d5885ceebcb188dbcb02a8fe6c.jpg" data-lightbox="roadtrip" data-title="Halu Cogan Di 2020 Gambar Wajah Gambar Teman Gambar Orang">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/2a/80/772a80d5885ceebcb188dbcb02a8fe6c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFWKlYN-_4mMK3M7O4G7LOsg51uaGsOR5Fwg';" alt="Halu Cogan Di 2020 Gambar Wajah Gambar Teman Gambar Orang">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Halu Cogan Di 2020 Gambar Wajah Gambar Teman Gambar Orang</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d3/0f/26/d30f26089ac34ae04dd60767e201bcd6.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Hylda Jsyptrap Di Cowo Fotografi Orang Potret Diri Gambar Wajah">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d3/0f/26/d30f26089ac34ae04dd60767e201bcd6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT30O7JDFXf-qhQbVtmEC4aP2R2vaU2Od4QaA';" alt="Pin Oleh Hylda Jsyptrap Di Cowo Fotografi Orang Potret Diri Gambar Wajah">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Hylda Jsyptrap Di Cowo Fotografi Orang Potret Diri Gambar Wajah</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/ed/b1/62edb17cddab7b35385b3bcd5fa123d3.jpg" data-lightbox="roadtrip" data-title="Pin Di Exo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/ed/b1/62edb17cddab7b35385b3bcd5fa123d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv2Ii15reiyZ8-2wXS0Gfpz1bZ3HdeLUF0Gg';" alt="Pin Di Exo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Exo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/30/44/0a/30440a3bca6d8081145617f6c9870547.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Mama Kiki Di Yang Saya Simpan Gambar Teman Fotografi Remaja Gambar Pasangan Lucu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/30/44/0a/30440a3bca6d8081145617f6c9870547.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtg_cc8E5UXL0a_hW7SBlqDxvBx38zLqs6ag';" alt="Pin Oleh Mama Kiki Di Yang Saya Simpan Gambar Teman Fotografi Remaja Gambar Pasangan Lucu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Mama Kiki Di Yang Saya Simpan Gambar Teman Fotografi Remaja Gambar Pasangan Lucu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/2b/ea/1a2bea191104d494a4a029cd60f6151c.jpg" data-lightbox="roadtrip" data-title="Bright Aktor Orang Fotografi Remaja">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/2b/ea/1a2bea191104d494a4a029cd60f6151c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTJhjj58oeM-ZiBTEUqdXI5gDfnWqQKV0OeQ';" alt="Bright Aktor Orang Fotografi Remaja">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bright Aktor Orang Fotografi Remaja</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b3/c2/44/b3c244e61d606b7bef7e390d4e81da3b.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Naila Salsabella Di Cogan Fotografi Orang Gambar Teman Gambar Orang">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b3/c2/44/b3c244e61d606b7bef7e390d4e81da3b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYlRe3qYQaFRUVWCOm7PTMwDvBTYu83avwNw';" alt="Pin Oleh Naila Salsabella Di Cogan Fotografi Orang Gambar Teman Gambar Orang">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Naila Salsabella Di Cogan Fotografi Orang Gambar Teman Gambar Orang</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/21/eb/0a21ebfee353eaf8a4ee40b2b188d6ab.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Nesasopina Di R E C E H Campuran Di 2020 Gambar Pasangan Lucu Fotografi Orang Gambar Teman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/21/eb/0a21ebfee353eaf8a4ee40b2b188d6ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoBVPqBJWMtvgajuAffvBkue3HqsHYa-wzuQ';" alt="Pin Oleh Nesasopina Di R E C E H Campuran Di 2020 Gambar Pasangan Lucu Fotografi Orang Gambar Teman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Nesasopina Di R E C E H Campuran Di 2020 Gambar Pasangan Lucu Fotografi Orang Gambar Teman</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/national-guard-covid-testing-wisconsin-results.html">National Guard Covid Testing Wisconsin Results</a></li>
+													<li class="list-group-item"><a href="/national-guard-florida-election.html">National Guard Florida Election</a></li>
+													<li class="list-group-item"><a href="/national-guard-dc-activated.html">National Guard Dc Activated</a></li>
+													<li class="list-group-item"><a href="/national-guard-dc-cnn.html">National Guard Dc Cnn</a></li>
+													<li class="list-group-item"><a href="/national-guard-kids.html">National Guard Kids</a></li>
+													<li class="list-group-item"><a href="/national-guard-dc-statues.html">National Guard Dc Statues</a></li>
+													<li class="list-group-item"><a href="/national-guard-lakewood.html">National Guard Lakewood</a></li>
+													<li class="list-group-item"><a href="/national-guard-distress-signal-fallout-4.html">National Guard Distress Signal Fallout 4</a></li>
+													<li class="list-group-item"><a href="/national-guard-engineer-pay.html">National Guard Engineer Pay</a></li>
+													<li class="list-group-item"><a href="/national-guard-depot-fallout-3-utility-door.html">National Guard Depot Fallout 3 Utility Door</a></li>
+													<li class="list-group-item"><a href="/national-guard-indonesia.html">National Guard Indonesia</a></li>
+													<li class="list-group-item"><a href="/national-guard-deploy-texas.html">National Guard Deploy Texas</a></li>
+													<li class="list-group-item"><a href="/national-guard-humvee.html">National Guard Humvee</a></li>
+													<li class="list-group-item"><a href="/national-guard-in-washington-dc-today.html">National Guard In Washington Dc Today</a></li>
+													<li class="list-group-item"><a href="/national-guard-dc-unarmed.html">National Guard Dc Unarmed</a></li>
+													<li class="list-group-item"><a href="/national-guard-green-berets.html">National Guard Green Berets</a></li>
+													<li class="list-group-item"><a href="/national-guard-evicted-from-dc.html">National Guard Evicted From Dc</a></li>
+													<li class="list-group-item"><a href="/national-guard-in-federal-service.html">National Guard In Federal Service</a></li>
+													<li class="list-group-item"><a href="/national-guard-job-titles.html">National Guard Job Titles</a></li>
+													<li class="list-group-item"><a href="/national-guard-g1-site.html">National Guard G1 Site</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Song Kannada Mp3 - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Song Kannada Mp3",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/7f/c0/62/7fc062d0dd56306f57fde7b3d18d6214.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+song+kannada+mp3",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Song Kannada Mp3</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Watch Nanna Mannidu HD Video Song from The film Viraparampare Starring Kiccha Sudeep Ambrish Aindrita Ray and Others exclusively on Anand Audio-----. Listen Indian Army mp3 songs free online by Rawan. Download Indian Army mp3 song from Indian Army. <br>				
+			</p>
+										<a class="badge badge-primary" href="/kang-han-na.html">kang han na</a>
+											<a class="badge badge-secondary" href="/karang-laut-bahasa-inggris.html">karang laut bahasa inggris</a>
+											<a class="badge badge-light" href="/joshuas-army-song.html">joshuas army song</a>
+											<a class="badge badge-warning" href="/kang-ho-dong.html">kang ho dong</a>
+											<a class="badge badge-dark" href="/kang-soo-jin.html">kang soo jin</a>
+											<a class="badge badge-success" href="/jung-ke-maidan-mein-chale-army-song.html">jung ke maidan mein chale army song</a>
+											<a class="badge badge-info" href="/jung-ke-maidan-mein-indian-army-wala-song.html">jung ke maidan mein indian army wala song</a>
+											<a class="badge badge-success" href="/kang-ibing-ceramah.html">kang ibing ceramah</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to visit the right site.  Our site provides you with suggestions for seeing the maximum quality video and image content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/be/eb/cc/beebccad516e3757daa96b65c6c34126.jpg" data-lightbox="roadtrip" data-title="Challa Main Lad Jaana Full Video Uri Vicky Kaushal Yami Gautam Shashwat S Romy Vivek Youtube Songs Latest Hit Songs Mp3 Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/be/eb/cc/beebccad516e3757daa96b65c6c34126.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTExGvNamVlOMQAFHudjXGGMs5ymvF9VUCaw';" alt="Challa Main Lad Jaana Full Video Uri Vicky Kaushal Yami Gautam Shashwat S Romy Vivek Youtube Songs Latest Hit Songs Mp3 Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Challa Main Lad Jaana Full Video Uri Vicky Kaushal Yami Gautam Shashwat S Romy Vivek Youtube Songs Latest Hit Songs Mp3 Song</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/d5/60/41d56022237088c57c081086a75085b7.jpg" data-lightbox="roadtrip" data-title="Lucia 2013 Download Kannada Mp3 Songs Pawankumar Lucia Kannadasongs Satishneenasam Mp3 Song Songs Lucia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/d5/60/41d56022237088c57c081086a75085b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fI7eF_Ri0oJWAgdIfKMFnWPU1gGcdnBp6A';" alt="Lucia 2013 Download Kannada Mp3 Songs Pawankumar Lucia Kannadasongs Satishneenasam Mp3 Song Songs Lucia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lucia 2013 Download Kannada Mp3 Songs Pawankumar Lucia Kannadasongs Satishneenasam Mp3 Song Songs Lucia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f5/a7/66/f5a766f0c4a4e953ef1a296e656330e5.jpg" data-lightbox="roadtrip" data-title="Pin On Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f5/a7/66/f5a766f0c4a4e953ef1a296e656330e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFCgmeKQDjUkia_BchT1ES1UEUsbP-Cjql3Q';" alt="Pin On Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/f4/5a/66f45aefd81ffa3cf41953bdfcc5b126.jpg" data-lightbox="roadtrip" data-title="Newkannada New Kannada Mp3 Songs Videos Trailers Reviews News Gallery Rana Vikrama V S Trivikrama S Son Of Satyamurthy Mp3 Song Video Trailer Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/f4/5a/66f45aefd81ffa3cf41953bdfcc5b126.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ8s3_fefNJ0uoVDV0kvBtZMB23Egfqrr1dg';" alt="Newkannada New Kannada Mp3 Songs Videos Trailers Reviews News Gallery Rana Vikrama V S Trivikrama S Son Of Satyamurthy Mp3 Song Video Trailer Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Newkannada New Kannada Mp3 Songs Videos Trailers Reviews News Gallery Rana Vikrama V S Trivikrama S Son Of Satyamurthy Mp3 Song Video Trailer Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/f1/99/d2f1998f2298dcb93c32370ae151ba10.webp" data-lightbox="roadtrip" data-title="Pin On Kannadamaza">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/f1/99/d2f1998f2298dcb93c32370ae151ba10.webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSpZ7syYkwKbUZTqNY3f9P7PLIxybYwKQmYw';" alt="Pin On Kannadamaza">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Kannadamaza</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/28/ca/a2/28caa223e25fcdd9ae5d4d49e33cb1b1.jpg" data-lightbox="roadtrip" data-title="Feeling Proud Indian Army Army Song X Empire Presents Sumit Goswami Xempire Armysong Youtube Indian Army Army Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/28/ca/a2/28caa223e25fcdd9ae5d4d49e33cb1b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjOWl0MK6lmw5nIl7MtBH0OKajMqNbAPf0Ng';" alt="Feeling Proud Indian Army Army Song X Empire Presents Sumit Goswami Xempire Armysong Youtube Indian Army Army Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Feeling Proud Indian Army Army Song X Empire Presents Sumit Goswami Xempire Armysong Youtube Indian Army Army Songs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/4e/cf/56/4ecf56accb15e3924b342d778ff4d203.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjOWl0MK6lmw5nIl7MtBH0OKajMqNbAPf0Ng';" alt="Feeling Proud Indian Army Army Song X Empire Presents Sumit Goswami Xempire Armysong Youtube Indian Army Army Songs">
+										<div class="card-body">
+						<h3 class="h5"><b>Listen to free mp3 songs music and earn Hungama Coins redeem Hungama coins for free subscription.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army song kannada mp3</strong>. 
+								
+																	Basavaraj awati dhp troll creations. 
+																	Listen to Mungda onlineMungda is a Hindi language song and is sung by Mannan Shaah and Sunidhi ChauhanMungda from the album Commando - A One Man Army was released in the year 2013The duration of the song is 508Download Hindi songs online from JioSaavn. 
+																	Army Album has 1 song sung by Sumit Goswami. 
+																	This song is sung by Sanjay Singh Baaz. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	09E0YJ Get 50- instantly Download Classic Media Mp3 Android App Now ht. 
+																	1 My army Song My army Song By The Red Army Choir My army Song Download Download My army MP3 Song. 
+																	This song is tribute to our indian army. 
+																	The Indian Army Song song from the album The Indian Army Song is released on Aug 2019. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The duration of song is 0305. 
+																	 
+																	Anup Bhandari Rangitaranga 2015 Kannada Movie Mp3 Songs Download Download Rangitaranga 2015 Kannada Movie Mp3 Songs 1Akka Pakka MediaBunch MegaBunch 2Kele Cheluve Duet MediaBunch MegaBunch 3Eee Sanje MediaBunch MegaBunch 4Nee Kele. 
+																	Army is a Haryanvi album released on Mar 2019. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The next video is starting stop. 
+																	Enjoy this song Kaavya Kaavya from the movie Dharma. 
+																	Commando - A One Man Army Tamil Songs Mp3 Free Download. 
+																	Listen to Sanjay Singh Baaz The Indian Army Song MP3 song. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The duration of song is 0320. 
+																	Roz Dhan Application Download. 
+																	Filling Proud Indian Army Dj Remix Song Sumit Goswami Best TikTok Famous Song 2019Filling Proud Indian Army Ringtone Best TikTok Famous Ringtone 201. 
+																	Kannada DJ songs back to back 25minutes songlingarajuaudio Welcome To Lingaraju audio Thank you for watching guys Dont Forget - Like Share Comm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Httpsylinkccbbh6NUse Referral Code. 
+																	Download Song Kannada Dj mp3 for free 0407. 
+																	Nirup Bhandari Radhika ChethanMusic Director. 
+																	The song was transformed into a march by John Philip Sousa in 1917 and renamed The Field Artillery Song It was adopted in 1952 as the official song of the Army and retitled The Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army song from the Army album is composed by Kaka while the lyrics are penned by Sumit Goswami. 
+																	This album is composed by Sumit Goswami. 
+																	Related Tags - My army My army Song My army MP3 Song My army MP3 Download My army Song The Red Army Choir My army Song Anthology Vol. 
+																	Popular Haryanvi singer Sumit Goswami marvelously voiced this Haryanvi patriotic song. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download Indian Army on Hungama Music app get access to Indian Army unlimited free songs free movies latest music videos online radio new TV shows and much more at Hungama. 
+																	Singing and lyrics. 
+																	Army MP3 Song by Sumit Goswami from the movie Sonotek DJ Remix Vol 5. 
+																	This song is sung by The Red Army Choir. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Song Kannada Dj 565 MB song and listen to another popular song on Sony Mp3 music video search engine. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/b6/0b/16b60b749618bfffb35ee1eec27ae179.jpg" data-lightbox="roadtrip" data-title="Darshan Son Vineesh In Airavatha Mp3 Song Kannada Movies Video Trailer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/b6/0b/16b60b749618bfffb35ee1eec27ae179.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMVvhgF9UF6h8vF9t8eoBBbZxyiHUYWwgOfw';" alt="Darshan Son Vineesh In Airavatha Mp3 Song Kannada Movies Video Trailer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Darshan Son Vineesh In Airavatha Mp3 Song Kannada Movies Video Trailer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/09/f5/c809f511012b3639ca27e5e8153a1421.png" data-lightbox="roadtrip" data-title="Jagga Jiteya Full Video Songs Latest Hit Songs Mp3 Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/09/f5/c809f511012b3639ca27e5e8153a1421.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSyEvD6jCSpp7gcLjIJJB7nn-X3wectZ_yhw';" alt="Jagga Jiteya Full Video Songs Latest Hit Songs Mp3 Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jagga Jiteya Full Video Songs Latest Hit Songs Mp3 Song</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/37/92/bc37926512f2abf1814da8b16c01574a.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Rana Vikrama Di Puneeth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/37/92/bc37926512f2abf1814da8b16c01574a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmV_dMccpNoZQPMSkPWdE-N6e4BUP-nUwAQ';" alt="Pin Oleh Rana Vikrama Di Puneeth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Rana Vikrama Di Puneeth</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/c0/62/7fc062d0dd56306f57fde7b3d18d6214.jpg" data-lightbox="roadtrip" data-title="Nam Duniya Nam Style 2013 Download Kannada Mp3 Songs Namduniyanamstyle Kannadasongs Mp3 Song Songs Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/c0/62/7fc062d0dd56306f57fde7b3d18d6214.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIaiAMoJutYOz3gp-fqqAZBhv6_bJXeAl5nw';" alt="Nam Duniya Nam Style 2013 Download Kannada Mp3 Songs Namduniyanamstyle Kannadasongs Mp3 Song Songs Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nam Duniya Nam Style 2013 Download Kannada Mp3 Songs Namduniyanamstyle Kannadasongs Mp3 Song Songs Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/2c/b3/b9/2cb3b9409fa254bbba7dc54993937c8c.jpg" data-lightbox="roadtrip" data-title="Napde Killi Lyrics Darbar Rajinikanth Nakash Aziz Mp3 Song Download Anirudh Ravichander Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/2c/b3/b9/2cb3b9409fa254bbba7dc54993937c8c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-JouuG-_2cIvPEJl6hZhHARpsjAV7PaXDfg';" alt="Napde Killi Lyrics Darbar Rajinikanth Nakash Aziz Mp3 Song Download Anirudh Ravichander Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Napde Killi Lyrics Darbar Rajinikanth Nakash Aziz Mp3 Song Download Anirudh Ravichander Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/89/f8/ef89f884bccbf3a69d4f9805aedaa1de.jpg" data-lightbox="roadtrip" data-title="Endendigu Kannada Movie Ninnalle Hd Full Song Video Download Newkannada New Kannada Mp3 Songs Videos Trailers Re Kannada Movies Download Songs Kannada Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/89/f8/ef89f884bccbf3a69d4f9805aedaa1de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQTgFFElWlz-X-Z7uw4qKVbtHiF1mL2I1QtQ';" alt="Endendigu Kannada Movie Ninnalle Hd Full Song Video Download Newkannada New Kannada Mp3 Songs Videos Trailers Re Kannada Movies Download Songs Kannada Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Endendigu Kannada Movie Ninnalle Hd Full Song Video Download Newkannada New Kannada Mp3 Songs Videos Trailers Re Kannada Movies Download Songs Kannada Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d9/6a/ce/d96ace489a383fb57b5c6700ae099a70.jpg" data-lightbox="roadtrip" data-title="Sarileru Neekevvaru 2020 Telugu Movie All Audio Songs Mp3 Free Download Audio Songs Telugu Movies Download Telugu Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d9/6a/ce/d96ace489a383fb57b5c6700ae099a70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdbV06QEXmj7m552RjCH-uh5KzDQZz4lt7vg';" alt="Sarileru Neekevvaru 2020 Telugu Movie All Audio Songs Mp3 Free Download Audio Songs Telugu Movies Download Telugu Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sarileru Neekevvaru 2020 Telugu Movie All Audio Songs Mp3 Free Download Audio Songs Telugu Movies Download Telugu Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/f4/2a/32f42a9c6db931f4ac07218f533f37e7.jpg" data-lightbox="roadtrip" data-title="Masterpiece Kannada Movie Review Movie Songs Kannada Movies Mp3 Song Download">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/f4/2a/32f42a9c6db931f4ac07218f533f37e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS03dV70A6HZwdIkAIHV3yhUs8vkLkcneJlog';" alt="Masterpiece Kannada Movie Review Movie Songs Kannada Movies Mp3 Song Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Masterpiece Kannada Movie Review Movie Songs Kannada Movies Mp3 Song Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/31/be/ce31be12b5c2ec6c82aea1786fd0f9db.jpg" data-lightbox="roadtrip" data-title="Krishna Rukku Kannada Mp3 Songs Free Download All Songs Mp3 Song Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/31/be/ce31be12b5c2ec6c82aea1786fd0f9db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoVA-ekIexS7moHQkTqiiUSffao-V49hy_Pg';" alt="Krishna Rukku Kannada Mp3 Songs Free Download All Songs Mp3 Song Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Krishna Rukku Kannada Mp3 Songs Free Download All Songs Mp3 Song Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/cf/56/4ecf56accb15e3924b342d778ff4d203.jpg" data-lightbox="roadtrip" data-title="Bestwap In Download Free Movies Mp3 Songs Videos Games And Apps Hd Movies Download Free Movies Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/cf/56/4ecf56accb15e3924b342d778ff4d203.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS90L4VzfQlg-65tBKHQegZR_q8cwacdQbZtA';" alt="Bestwap In Download Free Movies Mp3 Songs Videos Games And Apps Hd Movies Download Free Movies Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bestwap In Download Free Movies Mp3 Songs Videos Games And Apps Hd Movies Download Free Movies Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/3c/92/7e3c92f30e64d35175a6c31179d4a9aa.jpg" data-lightbox="roadtrip" data-title="Yuvaratna Kannada Movie Mp3 Songs Kannadamaza In Mp3 Song Songs Album Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/3c/92/7e3c92f30e64d35175a6c31179d4a9aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRild_OWbZur2GiIJ2yaM5SzJMLBROto5dKhw';" alt="Yuvaratna Kannada Movie Mp3 Songs Kannadamaza In Mp3 Song Songs Album Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yuvaratna Kannada Movie Mp3 Songs Kannadamaza In Mp3 Song Songs Album Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/52/52/9352525f777d484354af2effabe46491.jpg" data-lightbox="roadtrip" data-title="Mandya To Mumbai Kannada Movie 2015 Mp3 Songs Download Kannada Movies Mp3 Song Download 2015 Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/52/52/9352525f777d484354af2effabe46491.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoBvUYm9kBe-IfdGVXucF9OGI1-OMiXOSzug';" alt="Mandya To Mumbai Kannada Movie 2015 Mp3 Songs Download Kannada Movies Mp3 Song Download 2015 Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mandya To Mumbai Kannada Movie 2015 Mp3 Songs Download Kannada Movies Mp3 Song Download 2015 Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/3b/6f/79/3b6f79f37ea3d4d35fe134506da83f60.jpg" data-lightbox="roadtrip" data-title="Salaam Rocky Bhai Full Video Song Kgf Kannada Yash Prashanth Neel Hombale Kgf Video Songs Youtube Songs Download Movies Movie Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/3b/6f/79/3b6f79f37ea3d4d35fe134506da83f60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv7pjXcZ5-1UTWxZdFRxYgzfpol7ufkn9K_g';" alt="Salaam Rocky Bhai Full Video Song Kgf Kannada Yash Prashanth Neel Hombale Kgf Video Songs Youtube Songs Download Movies Movie Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salaam Rocky Bhai Full Video Song Kgf Kannada Yash Prashanth Neel Hombale Kgf Video Songs Youtube Songs Download Movies Movie Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-songs-english.html">Army Songs English</a></li>
+													<li class="list-group-item"><a href="/army-songs-mp3-free-download.html">Army Songs Mp3 Free Download</a></li>
+													<li class="list-group-item"><a href="/army-song-sumit-goswami-dj-remix-ringtone.html">Army Song Sumit Goswami Dj Remix Ringtone</a></li>
+													<li class="list-group-item"><a href="/army-songs-dj-remix.html">Army Songs Dj Remix</a></li>
+													<li class="list-group-item"><a href="/army-song-status.html">Army Song Status</a></li>
+													<li class="list-group-item"><a href="/army-songs-malayalam.html">Army Songs Malayalam</a></li>
+													<li class="list-group-item"><a href="/army-song-sinhala-lyrics.html">Army Song Sinhala Lyrics</a></li>
+													<li class="list-group-item"><a href="/army-songs-pk-mp3.html">Army Songs Pk Mp3</a></li>
+													<li class="list-group-item"><a href="/army-songs-for-bts.html">Army Songs For Bts</a></li>
+													<li class="list-group-item"><a href="/army-songs-in-kannada.html">Army Songs In Kannada</a></li>
+													<li class="list-group-item"><a href="/army-songs-full.html">Army Songs Full</a></li>
+													<li class="list-group-item"><a href="/army-songs-hindi-mp3-download.html">Army Songs Hindi Mp3 Download</a></li>
+													<li class="list-group-item"><a href="/army-song-of-india.html">Army Song Of India</a></li>
+													<li class="list-group-item"><a href="/army-song-pawitar-download-mp3-djpunjab.html">Army Song Pawitar Download Mp3 Djpunjab</a></li>
+													<li class="list-group-item"><a href="/army-songs-bts.html">Army Songs Bts</a></li>
+													<li class="list-group-item"><a href="/army-songs-hindi-mp3.html">Army Songs Hindi Mp3</a></li>
+													<li class="list-group-item"><a href="/army-songs-country.html">Army Songs Country</a></li>
+													<li class="list-group-item"><a href="/army-song-written.html">Army Song Written</a></li>
+													<li class="list-group-item"><a href="/army-song-status-video.html">Army Song Status Video</a></li>
+													<li class="list-group-item"><a href="/army-song-to-download.html">Army Song To Download</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

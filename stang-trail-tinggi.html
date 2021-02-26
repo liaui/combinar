@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Stang Trail Tinggi - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Stang Trail Tinggi",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/41/a8/fa/41a8fa804a47e2f39ac61a7353bffe1e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=stang+trail+tinggi",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Stang Trail Tinggi</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Jual beli online aman dan nyaman hanya di Tokopedia. Google has many special features to help you find exactly what youre looking for. Terdapat 551 penyuplai stang jepit tinggi sebagian besar berlokasi di East Asia. <br>				
+			</p>
+										<a class="badge badge-info" href="/anb-c-ac-u-bc.html">anb c ac u bc</a>
+											<a class="badge badge-light" href="/al-gard-4-ply-disposable-face-mask.html">al gard 4 ply disposable face mask</a>
+											<a class="badge badge-light" href="/air-national-guard-recruiter-north-carolina.html">air national guard recruiter north carolina</a>
+											<a class="badge badge-dark" href="/al-quds-irans-revolutionary-guard.html">al quds irans revolutionary guard</a>
+											<a class="badge badge-light" href="/air-national-guard-joint-base-andrews.html">air national guard joint base andrews</a>
+											<a class="badge badge-danger" href="/air-national-guard-military-id.html">air national guard military id</a>
+											<a class="badge badge-info" href="/alabama-army-national-guard-website.html">alabama army national guard website</a>
+											<a class="badge badge-secondary" href="/anb-komplemen.html">anb komplemen</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to visit the ideal blog.  Our website gives you suggestions for viewing the highest quality video and picture content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this video for you to view.  You can also contribute to supporting this site by sharing videos and graphics that you enjoy on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f6/02/dd/f602dd8dbc5ac2e88690684b536f8e11--motor-yamaha-portal.jpg" data-lightbox="roadtrip" data-title="Pin On Modifikasi Motor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f6/02/dd/f602dd8dbc5ac2e88690684b536f8e11--motor-yamaha-portal.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-zB3l3O7EQqY0X1URH5vGvP7TjLHnO7RILg';" alt="Pin On Modifikasi Motor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Modifikasi Motor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/01/24/3301245e6603195de048f1e80ab647bb.png" data-lightbox="roadtrip" data-title="Modifikasi Rx King Jadi Trail Blog Gambar Modifikasi Motor Motor Trail Motor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/01/24/3301245e6603195de048f1e80ab647bb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaTbZvFnBaL4vi6qYnsgb8MJuoogX5Q1W-2Q';" alt="Modifikasi Rx King Jadi Trail Blog Gambar Modifikasi Motor Motor Trail Motor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Modifikasi Rx King Jadi Trail Blog Gambar Modifikasi Motor Motor Trail Motor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/01/a7/4301a7980054916494188dcbc6cdcd2d.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Gngd Cndr Di Japstyle Caferacer Scrambler Flat Freestyle Jepang">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/01/a7/4301a7980054916494188dcbc6cdcd2d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBblK1rkzyVu3bS5AEM_k_asfiAxsVns_6eA';" alt="Pin Oleh Gngd Cndr Di Japstyle Caferacer Scrambler Flat Freestyle Jepang">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Gngd Cndr Di Japstyle Caferacer Scrambler Flat Freestyle Jepang</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/71/fc/5f/71fc5f63ef4ca4c353d85d30c7c8137a.jpg" data-lightbox="roadtrip" data-title="45 Gambar Drag Bike Motor Rx King Terbaru Mobil Drag Racing Cafe Racer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/71/fc/5f/71fc5f63ef4ca4c353d85d30c7c8137a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1wB0wBP9Q9faP071B4P8-t-nOuP1Wv7bx5A';" alt="45 Gambar Drag Bike Motor Rx King Terbaru Mobil Drag Racing Cafe Racer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">45 Gambar Drag Bike Motor Rx King Terbaru Mobil Drag Racing Cafe Racer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/77/f6/7c77f65833db6275a4ac880f2069cc53.jpg" data-lightbox="roadtrip" data-title="Pin Di Raja Motor Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/77/f6/7c77f65833db6275a4ac880f2069cc53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwWhzwVm1bBx6fwwODBQxm0z4kHWK8LOeGcg';" alt="Pin Di Raja Motor Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Raja Motor Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/7e/81/797e817846ffcc0f03ae1ae4b70df12d.jpg" data-lightbox="roadtrip" data-title="Standar Untuk Sepeda Roadbike Maupun Mtb Terbuat Dari Bahan Berkualitas Warna Hitam Happymtbbike Happyproduct Bikestand">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/7e/81/797e817846ffcc0f03ae1ae4b70df12d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjrvF2-Qr6EyqR2Kng7AnoEH5f20RXwV-1JQ';" alt="Standar Untuk Sepeda Roadbike Maupun Mtb Terbuat Dari Bahan Berkualitas Warna Hitam Happymtbbike Happyproduct Bikestand">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Standar Untuk Sepeda Roadbike Maupun Mtb Terbuat Dari Bahan Berkualitas Warna Hitam Happymtbbike Happyproduct Bikestand</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/33/01/24/3301245e6603195de048f1e80ab647bb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjrvF2-Qr6EyqR2Kng7AnoEH5f20RXwV-1JQ';" alt="Standar Untuk Sepeda Roadbike Maupun Mtb Terbuat Dari Bahan Berkualitas Warna Hitam Happymtbbike Happyproduct Bikestand">
+										<div class="card-body">
+						<h3 class="h5"><b>Stang ini ramai diserbu oleh kalangan anak muda.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Stang trail tinggi</strong>. 
+								
+																	Modif Yamaha byson pakai stang tinggi brosisMotor naked Yamaha Byson ini dimodif dengan mengganti stang yang aselinya baplang menjadi stang melengkung tinggi layaknya motor chopper atau bobber. 
+																	Jual sepeda perlengkapannya di toko sepeda SerbaSepeda. 
+																	PENINGGI RISER Y7D STANG RACING VARIASI MOTOR WTC TRANSFORMER BLACK. 
+																	Stang Motor Kendaraan tentunya tidak terlepas dari banyak peranan komponen penting didalamnya salah satunya ketika mengendarai dengan nyaman tidak jauh dari namanya stang. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Stang Almunium TINGGI Minimoto - Mini Trail - Universal. 
+																	Karena sifat peredam pada stabilizer stang makanya handling akan cukup sulit. 
+																	Kota Tangerang Minibike 10 Grosir. 
+																	Silahkan di SUBSCRIBE terlebih dahulu demi kenyamanan bersama hehehesemoga video ini membantu kalian untuk menemukan jawaban atas pertanyaan kalian selama i. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reiser Stang Fatbar CNC Universal. 
+																	Agar stang bisa tampil lebih mempesona anda bisa menggunakan Pelindung Stang agar stang bisa tampil lebih cantik dan awet. 
+																	Pengiriman GoSend One Day Delivery. 
+																	Cari produk Cover Stang Motor lainnya di Tokopedia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jual STANG PROTAPER EVO FATBAR PROTAPER EVO STANG TRAIL PROTAPER EVO NAKED dengan harga Rp250000 dari toko online ZONA RODADUA Kota Depok. 
+																	Kota Tangerang Minibike 16 Grosir. 
+																	Stang jepit memiliki. 
+																	Stang Stir Almunium Mini Trail 50cc Universal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Negara atau wilayah yang memasok paling banyak adalah Cina Brazil dan Taiwan Cina yang masing-masing menyuplai 95 3 dan 1 dari stang jepit tinggi. 
+																	Video ini kami rekomendasikan kepada teman-teman yang ingin memodifikasi stang oryginal dengan stang variasi. 
+																	Jual beli online aman dan nyaman hanya di Tokopedia. 
+																	Produk Asli Original dan Branded dengan Beragam Brand Official. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cara Mengendarai Motor Trail Yang Benar Dalam hal ini sepeda motor trail indentik dengan kendaraan yang biasanya digunakan untuk melewati berbagai permukaan jalanan. 
+																	Raiser Stang Peninggi Stang Fatbar Universal Cnc Full Cb Vixion. 
+																	Dalam video ini kami akan menyajikan Stang Trail dan Dudukan Stang. 
+																	Sumber shopeecoid Stabilizer stang berbentuk seperti as shock breaker karena kegunaannya memang untuk meminimalkan dan menyerap guncangan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jakarta Barat Lestari Motor 2 58 Tambah ke Wishlist. 
+																	Jual beli online aman dan nyaman hanya di Tokopedia. 
+																	Dealer resmi sepeda Polygon United Pacific Element Thrill Dahon Wimcycle dll. 
+																	Dengan pemakaian yang lama digunakai pastinya komponen yang terdapat di sepeda motor akan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kota Tangerang Minibike 1 Grosir. 
+																	Stang ini akan sering anda lihat pada ajang motor trail trial endurom dan supermoto. 
+																	Jual stang motor stang jepit handlebar stang motorA custom trail variasi stang touring guardhand proguard harga stang jepit variasi lengkap hanya di Bukalapak. 
+																	Produk Stang jepit tinggi paling populer di North America Western Europe dan Southeast AsiaAnda dapat memastikan keamanan produk dengan memilih dari. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cari produk Cover Stang Motor lainnya di Tokopedia. 
+																	Kendaraan roda dua ini didukung oleh mesin yang buas bodi ramping dan ground clereance tinggi sehingga sanggup melibas jalanan. 
+																	Jakarta Barat asiaplus 22 Tambah ke Wishlist. 
+																	Gratis Ongkir Gratis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jual stang TS stang trail Universal Xride w175 dan sebagainya warna hitam dengan harga Rp86000 dari toko online Motor ID Jakarta Pusat. 
+																	Benelli Patagonian Eagle - YouTube Stang tracker Stang trail palang tinggi Shopee Indonesia Jual Produk Stang Fatbar Tinggi Murah dan Terlengkap November 2020 Bukalapak Jual stang motor TS untuk kawasaki w175 PNP stang tinggi kawasaki w175 - Jakarta Barat - bigboss mart Tokopedia 77 Modifikasi Motor Cb 150 R Stang Tiger Terbaru Dan Terlengkap Gudeg Motor STANG ALFA TINGGI 16cm. 
+																	Cara pemasangannya secara horizontal dan disesuaikan dengan komstir. 
+																	Tegal SKL Variasi 4 Tambah ke Wishlist. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cari produk Handle - Handfat Motor lainnya di Tokopedia. 
+																	Dudukan Stang Batman Matic Dan Bebek Suzuki Plus Stang Trail Satu Sett. 
+																	Jadinya stabilizer stang ini justru akan. 
+																	Jual Stang Almunium TINGGI Minimoto - Mini Trail - Universal - Biru dengan harga Rp108000 dari toko online Minibike Kota Tangerang. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Stang Jepit Gambar Stang Motor Stang Jepit Amazon Stang jepit adalah nama lain dari stang model clip on. 
+																	Karena modif menjadi stang tinggi maka tentu diperlukan penyesuaian khususnya raiser dan kabel-kabel rem maupun kopling. 
+																	Search the worlds information including webpages images videos and more. 
+																	81 Gambar Modifikasi Yamaha Vixion Stang Tinggi Mengganti Stang Vixion Dengan Setang Yang Lebih Tinggi Dan Nyaman - YouTube. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Stang menjadi komponen yang cukup vital ketidakstabilan dari stang motor ini mempengaruhi pengguna dalam mengendarainya. 
+																	Stabiliser Stang Twin Fatbar - Cross Trail Supermoto Rental. 
+																	Baut Stang Monkey Gorilla. 
+																	Seiring popularitasnya yang semakin menanjak bermunculan juga pengguna sepeda motor trail pemula. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Simak terus video. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/98/b8/be98b83b6ffb1b6b8f9c8ddc392f1960.jpg" data-lightbox="roadtrip" data-title="Modif Yamaha Mio Soul Putih Merah Modif Motor Motor Merah">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/98/b8/be98b83b6ffb1b6b8f9c8ddc392f1960.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvqQkydvfxoRRUfzHiATHZUmTlC9yHL6acAw';" alt="Modif Yamaha Mio Soul Putih Merah Modif Motor Motor Merah">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Modif Yamaha Mio Soul Putih Merah Modif Motor Motor Merah</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/6c/05/db6c0515a68fe12a439b38a9a28cab9f.jpg" data-lightbox="roadtrip" data-title="Chain Tensioner Sepeda Sepeda Komponen Sepeda Jalan Berbatu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/6c/05/db6c0515a68fe12a439b38a9a28cab9f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUFDPyp6cwBhSHorLHiqfP7Rs68jrPym458w';" alt="Chain Tensioner Sepeda Sepeda Komponen Sepeda Jalan Berbatu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chain Tensioner Sepeda Sepeda Komponen Sepeda Jalan Berbatu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/fe/1b/43fe1b048e46069fdbd6922450a1b0e1.jpg" data-lightbox="roadtrip" data-title="Modif Motor Org Gambar Motor Sport Motor Modifikasi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/fe/1b/43fe1b048e46069fdbd6922450a1b0e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYMJ2grIYBAM9fkcJAOyCiwSUU0rh-mRTPQQ';" alt="Modif Motor Org Gambar Motor Sport Motor Modifikasi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Modif Motor Org Gambar Motor Sport Motor Modifikasi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/30/7a/e9307a52c9ae5fe28021c001d509ef21.jpg" data-lightbox="roadtrip" data-title="Tubular Tire Lever Christian Louboutin Pumps Louboutin Pumps Vittoria">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/30/7a/e9307a52c9ae5fe28021c001d509ef21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnS9sB3ktwtPvsnLo2vsD6-3VxyObSGR5vyg';" alt="Tubular Tire Lever Christian Louboutin Pumps Louboutin Pumps Vittoria">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tubular Tire Lever Christian Louboutin Pumps Louboutin Pumps Vittoria</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/cc/0c/06cc0c304c85c1a752b30b2673720833.jpg" data-lightbox="roadtrip" data-title="Global Auto News Provider From India Latest Cars Upcoming Cars Bike News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/cc/0c/06cc0c304c85c1a752b30b2673720833.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaxyzFJhASUIOnLbg6t9bXK3ycazFQS3HyjA';" alt="Global Auto News Provider From India Latest Cars Upcoming Cars Bike News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Global Auto News Provider From India Latest Cars Upcoming Cars Bike News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/03/51/32/0351320cfae6675fca161cc5adfe3e57.jpg" data-lightbox="roadtrip" data-title="Ebike Battery Motors And Electric Bike Kits Em3ev Electric Bike Kits Electric Bike Bike Kit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/03/51/32/0351320cfae6675fca161cc5adfe3e57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvM82jhEsk-wXZjKvtqNXg_WA5X9YivxQg6A';" alt="Ebike Battery Motors And Electric Bike Kits Em3ev Electric Bike Kits Electric Bike Bike Kit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ebike Battery Motors And Electric Bike Kits Em3ev Electric Bike Kits Electric Bike Bike Kit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/a8/fa/41a8fa804a47e2f39ac61a7353bffe1e.jpg" data-lightbox="roadtrip" data-title="Cst Tire Bft 26 X 2 40 Didesain Untuk Mendaki Gunung Bahan Wire Berat 1060 Gram Happymtbbike Happyproduct Biketire Desain">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/a8/fa/41a8fa804a47e2f39ac61a7353bffe1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcJjGJbQ8UVZdF51Q9fF488F2e2Q3uldXuAw';" alt="Cst Tire Bft 26 X 2 40 Didesain Untuk Mendaki Gunung Bahan Wire Berat 1060 Gram Happymtbbike Happyproduct Biketire Desain">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cst Tire Bft 26 X 2 40 Didesain Untuk Mendaki Gunung Bahan Wire Berat 1060 Gram Happymtbbike Happyproduct Biketire Desain</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3e/61/ad/3e61ad194db80cbc1193a7d3c4a0ab01.jpg" data-lightbox="roadtrip" data-title="Baut Pengaturan Rear Derailleur Sepeda Komponen Sepeda Sepeda Balap Sepeda">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3e/61/ad/3e61ad194db80cbc1193a7d3c4a0ab01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcVIfcZDYBhkTug_-wsQRFDCfCiDyfYeCLRA';" alt="Baut Pengaturan Rear Derailleur Sepeda Komponen Sepeda Sepeda Balap Sepeda">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Baut Pengaturan Rear Derailleur Sepeda Komponen Sepeda Sepeda Balap Sepeda</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/5b/6c/e85b6c60be886c6ee090893ab7d1bb98.jpg" data-lightbox="roadtrip" data-title="Velo 709 Handle Grip Black Grey Grip Sepeda Yang Nyaman Dan Mudah Dipasang Memiliki 2 Penutup Untuk Ujung Grip Di Bagian Kanan Dan Kiri Abu Abu Hitam Warna">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/5b/6c/e85b6c60be886c6ee090893ab7d1bb98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFvqdPwqhQseXXG0YaXRUFfEfXm3gKZ07V3A';" alt="Velo 709 Handle Grip Black Grey Grip Sepeda Yang Nyaman Dan Mudah Dipasang Memiliki 2 Penutup Untuk Ujung Grip Di Bagian Kanan Dan Kiri Abu Abu Hitam Warna">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Velo 709 Handle Grip Black Grey Grip Sepeda Yang Nyaman Dan Mudah Dipasang Memiliki 2 Penutup Untuk Ujung Grip Di Bagian Kanan Dan Kiri Abu Abu Hitam Warna</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/19/ca/47/19ca47e2905e86946c4befa948e6dbf7.jpg" data-lightbox="roadtrip" data-title="Simple Red Cafe Racer Instagram Mobil">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/19/ca/47/19ca47e2905e86946c4befa948e6dbf7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv0G93V3A89eK-iBDrX6TTrR3bOk1-PPqYXQ';" alt="Simple Red Cafe Racer Instagram Mobil">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Simple Red Cafe Racer Instagram Mobil</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/ac/1f/7cac1feb89d7b8a2e13832a66abe3530.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Maharani Tya Di Cara Menaikan Tenaga Mesin Drag Kawasaki Ninja 150r Kawasaki Ninja Mesin Mobil Modifikasi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/ac/1f/7cac1feb89d7b8a2e13832a66abe3530.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVPE8vwKNmg4OS0g-OTVWQnUieTg4Jx7ZK3A';" alt="Pin Oleh Maharani Tya Di Cara Menaikan Tenaga Mesin Drag Kawasaki Ninja 150r Kawasaki Ninja Mesin Mobil Modifikasi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Maharani Tya Di Cara Menaikan Tenaga Mesin Drag Kawasaki Ninja 150r Kawasaki Ninja Mesin Mobil Modifikasi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/fe/79/10fe79840c2ac04301075fc74f02ee11.jpg" data-lightbox="roadtrip" data-title="Jangka Sorong Caliper Vernier Peralatan Sepeda Jangka Sorong Alat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/fe/79/10fe79840c2ac04301075fc74f02ee11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdauZgOKtIWu2_R-2OSKf7KtHkrdmc_ve1LQ';" alt="Jangka Sorong Caliper Vernier Peralatan Sepeda Jangka Sorong Alat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jangka Sorong Caliper Vernier Peralatan Sepeda Jangka Sorong Alat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/c3/ed/cfc3ed21cdd6136d659f1208a7b79219.jpg" data-lightbox="roadtrip" data-title="Pin Di Showcase">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/c3/ed/cfc3ed21cdd6136d659f1208a7b79219.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbGBk5EjlXcH1sou5AsTVrRI4i73qiIHnrww';" alt="Pin Di Showcase">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Showcase</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/number-of-national-guard-troops-in-dc.html">Number Of National Guard Troops In Dc</a></li>
+													<li class="list-group-item"><a href="/no-guard-open-meaning.html">No Guard Open Meaning</a></li>
+													<li class="list-group-item"><a href="/number-of-national-guard-soldiers-by-state.html">Number Of National Guard Soldiers By State</a></li>
+													<li class="list-group-item"><a href="/no-guard-rails-star-wars.html">No Guard Rails Star Wars</a></li>
+													<li class="list-group-item"><a href="/norwegian-army-rank-insignia.html">Norwegian Army Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/no-guard-or-guts-machamp.html">No Guard Or Guts Machamp</a></li>
+													<li class="list-group-item"><a href="/no-guard-dog-try-chickens.html">No Guard Dog Try Chickens</a></li>
+													<li class="list-group-item"><a href="/no-guard-clipper-length.html">No Guard Clipper Length</a></li>
+													<li class="list-group-item"><a href="/no-guard-clippers.html">No Guard Clippers</a></li>
+													<li class="list-group-item"><a href="/no-guard-wife.html">No Guard Wife</a></li>
+													<li class="list-group-item"><a href="/north-carolina-army-national-guard-recruiting-office-fayetteville-nc.html">North Carolina Army National Guard Recruiting Office Fayetteville Nc</a></li>
+													<li class="list-group-item"><a href="/no-guard-vs-levitate.html">No Guard Vs Levitate</a></li>
+													<li class="list-group-item"><a href="/nrfpb.html">Nrfpb</a></li>
+													<li class="list-group-item"><a href="/no-16-clipper-guard-uk.html">No 16 Clipper Guard Uk</a></li>
+													<li class="list-group-item"><a href="/no-drop-your-guard.html">No Drop Your Guard</a></li>
+													<li class="list-group-item"><a href="/nkb-nomor-22.html">Nkb Nomor 22</a></li>
+													<li class="list-group-item"><a href="/no-guard-down-meaning.html">No Guard Down Meaning</a></li>
+													<li class="list-group-item"><a href="/nkb-nomor-3.html">Nkb Nomor 3</a></li>
+													<li class="list-group-item"><a href="/nm-ang-tacos.html">Nm Ang Tacos</a></li>
+													<li class="list-group-item"><a href="/no-guard-lapras.html">No Guard Lapras</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

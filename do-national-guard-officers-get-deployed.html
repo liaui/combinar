@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Do National Guard Officers Get Deployed - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Do National Guard Officers Get Deployed",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/b9/29/52/b929528cf60d231ed79e763da0e0798c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=do+national+guard+officers+get+deployed",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Do National Guard Officers Get Deployed</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Hours after the report California Gov. National Guard Bureau chief Gen. However military police members can also be deployed to combat zones. <br>				
+			</p>
+										<a class="badge badge-primary" href="/army-gcss-army-login.html">army gcss army login</a>
+											<a class="badge badge-info" href="/army-highest-ranking-officer.html">army highest ranking officer</a>
+											<a class="badge badge-success" href="/army-jawan-songs-download.html">army jawan songs download</a>
+											<a class="badge badge-success" href="/army-google-form.html">army google form</a>
+											<a class="badge badge-primary" href="/army-kannada-dj-song-janapada.html">army kannada dj song janapada</a>
+											<a class="badge badge-success" href="/army-hoodie-from-army-navy-game.html">army hoodie from army navy game</a>
+											<a class="badge badge-light" href="/army-ki-painting.html">army ki painting</a>
+											<a class="badge badge-secondary" href="/army-india-army-training.html">army india army training</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to pay a visit to the ideal site.  Our website provides you with suggestions for seeing the highest quality video and image content, search and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.623092.1585051269!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="Tens Of Thousands Of National Guard Members May Be Activated Top Officer Says U S Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.623092.1585051269!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJrTJtE-g_EV-Tdl4MVUcJskB5pDrwBqzLeQ';" alt="Tens Of Thousands Of National Guard Members May Be Activated Top Officer Says U S Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tens Of Thousands Of National Guard Members May Be Activated Top Officer Says U S Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/b6/8a/0cb68a1beb17fd6b96bf6fdaf98717a1.jpg" data-lightbox="roadtrip" data-title="Pin On Deployment Sucks But You Can Do It">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/b6/8a/0cb68a1beb17fd6b96bf6fdaf98717a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpH4by7a_y55P61Jhdv4jN35GVQA3baMRmSA';" alt="Pin On Deployment Sucks But You Can Do It">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Deployment Sucks But You Can Do It</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.658166.1610397756!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="Up To 15 000 National Guard Troops Could Activate To Help Law Enforcement During Biden Inauguration U S Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.658166.1610397756!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaWFu_FNvGKPgBbdauouWzTAYIRgGebxo3uw';" alt="Up To 15 000 National Guard Troops Could Activate To Help Law Enforcement During Biden Inauguration U S Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Up To 15 000 National Guard Troops Could Activate To Help Law Enforcement During Biden Inauguration U S Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/87/cf/d987cff6bf7be5ec614e470d39f60ae1.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Benefits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/87/cf/d987cff6bf7be5ec614e470d39f60ae1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvCJEBGIqW0eoHjyhbuvv1S0Tg9sCpIS9zJA';" alt="Pin On Guard Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2019/06/07/555352/original.jpg" data-lightbox="roadtrip" data-title="National Guard Officer Honored For Academic Excellence Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2019/06/07/555352/original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRADOZrBdajFVqG0yFC58uLTUAR9ngKlO1zXw';" alt="National Guard Officer Honored For Academic Excellence Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Officer Honored For Academic Excellence Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.npr.org/assets/img/2021/01/13/ap_21013516623514-85622d1aa03ca1cdcb814ee2fe1db37127f44152-s800-c85.jpg" data-lightbox="roadtrip" data-title="About 20 000 National Guard Members To Deploy For Inauguration Officials Say Capitol Insurrection Updates Npr">
+											<img class="card-img v-image ads-img " src="https://media.npr.org/assets/img/2021/01/13/ap_21013516623514-85622d1aa03ca1cdcb814ee2fe1db37127f44152-s800-c85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaW2XjNfkeP6amVkHzqAXTWmRVJQN2m2-t4A';" alt="About 20 000 National Guard Members To Deploy For Inauguration Officials Say Capitol Insurrection Updates Npr">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About 20 000 National Guard Members To Deploy For Inauguration Officials Say Capitol Insurrection Updates Npr</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://api.army.mil/e2/c/images/2019/06/07/555352/original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaW2XjNfkeP6amVkHzqAXTWmRVJQN2m2-t4A';" alt="About 20 000 National Guard Members To Deploy For Inauguration Officials Say Capitol Insurrection Updates Npr">
+										<div class="card-body">
+						<h3 class="h5"><b>Conducting patrols on foot and in vehicles as well as conducting investigative interviews are common tasks.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Do national guard officers get deployed</strong>. 
+								
+																	The National Guard Bureau has established a new unit made up mostly of military policemen that could be dispatched to help quell unrest in coming days after a turbulent summer in which National. 
+																	Daniel Hokanson said that there will initially be a deployment of 10000 troops an increase of about 4000 from those in DC. 
+																	One of those soldiers comes from the ranks of the Lawrence. 
+																	The National Guard could be deployed in Minnesota indefinitely next year for the duration of the trial of four Minneapolis police officers connected to the death of George Floyd according to a document leaked last week. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Common job activities for National Guard military police personnel are similar to civilian police duties. 
+																	Army National Guard 1LT Promotable occupying a slot authorized up to 1LT. 
+																	Gavin Newsom authorized the deployment of 1000 California National Guard personnel to protect critical infrastructure including the State Capitol and other sites In light of the potential for civil unrest in California surrounding the inauguration of President-Elect Joe Biden. 
+																	The Defense Department has authorized as many as 15000 troops to be deployed to Washington DC for the inauguration of President-elect Joe Biden. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Tuesday Kenosha County District Attorney Michael Graveley announced that his office will not be filing charges against any of the police officers involved in the shooting. 
+																	The busiest day was June 8 with more than 86400 Guardsmen deployed across the country with about half on civil disturbance missions the data shows. 
+																	US President Joe Biden has apologised after some members of the National Guard stationed at the Capitol were pictured sleeping in a car park. 
+																	The move was made ahead of a court decision on the shooting of Jacob Blake last August. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As thousands across the US take to the streets for another day of protests demanding justice for George Floyd more than 17000 members of the National Guard are standing ready to support local law. 
+																	500 members of the US. 
+																	National Guard troops were deployed to suppress strikers in some of the bloodiest and most significant conflicts of the late 19th and early 20th centuries including the Homestead Strike the Pullman Strike of 1894 and the Colorado Labor Wars. 
+																	National Guard will be deployed to aid local police to prevent violence in the city of Kenosha Wisconsin. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Guard deploys soldiers two different ways. 
+																	Monday 24 August 2020 2123 The Wisconsin National Guard has been deployed to Kenosha one day after Jacob Blake was shot by police officers. 
+																	Ive heard that while deployed a person can be promoted one rank above what is authorized such that the deployment does. 
+																	Governor Tony Evers authorised the deployment on Monday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dubbed Operation Safety Net the 12-page document details the guards response to civil unrest expected to take place before during and after the trial of Derek Chauvin J Alexander Keung Thomas Lane and Tou Thao KSTP reported. 
+																	Leading up to the presidential inauguration on Jan. 
+																	Getting Ahead at Work. 
+																	Hundreds of National Guard members from New England have been deployed to Washington DC for the inauguration of President-elect Joe Biden on Jan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Guard have been helping on coronavirus response in Sacramento for several weeks. 
+																	National Guard units are being deployed to keep the peace in Washington DC. 
+																	Yes National Guard service has priority and any other job is required to accommodate for deployments and training. 
+																	The US National Guard has been deployed to the US capital Washington after pro-Trump protesters stormed the US Capitol Building to protest the results of the US presidential election according to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your state government can use you on a variety of missions inside the US. 
+																	More than 25000 troops were deployed to Washington DC. 
+																	Connecticut Maine Massachusetts New Hampshire and Vermont have said they are sending Guard members in the wake of the violent attack on the US. 
+																	December 21 2020 Liz George. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By Fraser Sherman Updated June 27 2018. 
+																	Troops have also been deployed in Los Angeles and Long Beach and are on standby in San Francisco. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/53/7b/f8537bbb0773a37454b2099b4441bbf6.png" data-lightbox="roadtrip" data-title="Pin On Guard Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/53/7b/f8537bbb0773a37454b2099b4441bbf6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE4X0ZDVDfcoDKsVMssyJOzPsTP9rmloWnQw';" alt="Pin On Guard Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/4b/37/a24b372578cabce8f1399f7789f57e4d.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/4b/37/a24b372578cabce8f1399f7789f57e4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0PmMgkpFKSJthgEoxdypbnHvlgif1wOGztg';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/5f/bf/de5fbf6af2d02dffb0c7670f80594562.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/5f/bf/de5fbf6af2d02dffb0c7670f80594562.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVcfB67yrp3j7bBe0jz9iH7FYZ50cD8lFtxw';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/e2/cf/bce2cffe9047c908ebc15e1689966503.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/e2/cf/bce2cffe9047c908ebc15e1689966503.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJbrvu6r549jZzY0_vZf1eppTftSImzwnsmw';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/79/98/7e79986fd3263968c018b7ea66dbb807.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/79/98/7e79986fd3263968c018b7ea66dbb807.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN5iMjEXCI6QHTAHoo9--tScfVuVXrmz4t4g';" alt="Pin On Guard Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/2b/3c/76/2b3c769516a44e25e7c773b0846242e3.jpg" data-lightbox="roadtrip" data-title="Pin On Military Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/2b/3c/76/2b3c769516a44e25e7c773b0846242e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXoHzACERqGQMvneOBrInglVtnOSGs64ATXw';" alt="Pin On Military Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/12/12/631212ce066e2e9e823434eb5e45b2dc.jpg" data-lightbox="roadtrip" data-title="Pin On Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/12/12/631212ce066e2e9e823434eb5e45b2dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxI-wba90idKudkLM2New7Ih54-31epvlSWw';" alt="Pin On Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/81/81/1981819c0c98c1dae0fea576a5a93414.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/81/81/1981819c0c98c1dae0fea576a5a93414.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuDv7oP3yOlBjOnqXtODyzDsVDRJrsDNXFXw';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/ef/11/d6ef11df6d3d9291efb93d1affb0ad27.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/ef/11/d6ef11df6d3d9291efb93d1affb0ad27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX9gPGkqwM9K4CqTfzjF6eg_5NrFQfSiCXrQ';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.legion.org/sites/legion.org/files/styles/scalecrop800x479/public/120618_nationalguard.jpg?itok=HgVYmiel" data-lightbox="roadtrip" data-title="Ten Things You Didn T Know About The National Guard The American Legion">
+											<img class="card-img v-image ads-img " src="http://www.legion.org/sites/legion.org/files/styles/scalecrop800x479/public/120618_nationalguard.jpg?itok=HgVYmiel" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRttg-XZQV3oxtYmgMCqBfaywFEWhxdz9LpXQ';" alt="Ten Things You Didn T Know About The National Guard The American Legion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ten Things You Didn T Know About The National Guard The American Legion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/29/52/b929528cf60d231ed79e763da0e0798c.jpg" data-lightbox="roadtrip" data-title="Getting An Education Can Be Expensive But As A Guard Soldier You Can Receive Tuition Assistance Whether You Re Continuing Y In 2020 Tuition Assistance Tuition Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/29/52/b929528cf60d231ed79e763da0e0798c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQmz11LbgiDUTTaKvoQGv9pbFgjrIY1BV6KQ';" alt="Getting An Education Can Be Expensive But As A Guard Soldier You Can Receive Tuition Assistance Whether You Re Continuing Y In 2020 Tuition Assistance Tuition Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Getting An Education Can Be Expensive But As A Guard Soldier You Can Receive Tuition Assistance Whether You Re Continuing Y In 2020 Tuition Assistance Tuition Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/be/ce/e4bece70ebb22b12554bfe5ed2b40bd4.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/be/ce/e4bece70ebb22b12554bfe5ed2b40bd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQduDylCkakqfeuQl6Y8RVMXw4A-v8KstcxFA';" alt="Pin On Guard Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d.newsweek.com/en/full/1714748/national-guard-hundreds-infected-covid-19-coronavirus-capitol.jpg?w=1600&amp;h=1600&amp;q=88&amp;f=846d1ea6aaf151a8c32ecb4f586c74c6" data-lightbox="roadtrip" data-title="Hundreds Of National Guard Members Test Positive For Covid After Protecting Capitol From Threats">
+											<img class="card-img v-image ads-img " src="https://d.newsweek.com/en/full/1714748/national-guard-hundreds-infected-covid-19-coronavirus-capitol.jpg?w=1600&amp;h=1600&amp;q=88&amp;f=846d1ea6aaf151a8c32ecb4f586c74c6" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9OZ10NLOFcylcwOHDWYbCSG7VBAntpOiuTQ';" alt="Hundreds Of National Guard Members Test Positive For Covid After Protecting Capitol From Threats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hundreds Of National Guard Members Test Positive For Covid After Protecting Capitol From Threats</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/no-guard-hair.html">No Guard Hair</a></li>
+													<li class="list-group-item"><a href="/no-guard-to-1-fade.html">No Guard To 1 Fade</a></li>
+													<li class="list-group-item"><a href="/no-guard-karrablast.html">No Guard Karrablast</a></li>
+													<li class="list-group-item"><a href="/no-one-to-guard-your-potatoes.html">No One To Guard Your Potatoes</a></li>
+													<li class="list-group-item"><a href="/no-guard-shaved-head.html">No Guard Shaved Head</a></li>
+													<li class="list-group-item"><a href="/number-of-national-guard-troops-in-dc.html">Number Of National Guard Troops In Dc</a></li>
+													<li class="list-group-item"><a href="/no-guard-or-protect.html">No Guard Or Protect</a></li>
+													<li class="list-group-item"><a href="/no-guard-fade-into-a-1.html">No Guard Fade Into A 1</a></li>
+													<li class="list-group-item"><a href="/no-guard-style.html">No Guard Style</a></li>
+													<li class="list-group-item"><a href="/no-guard-zap-cannon.html">No Guard Zap Cannon</a></li>
+													<li class="list-group-item"><a href="/no-drop-your-guard.html">No Drop Your Guard</a></li>
+													<li class="list-group-item"><a href="/no-entry-door-guard.html">No Entry Door Guard</a></li>
+													<li class="list-group-item"><a href="/no-guard-gen-8.html">No Guard Gen 8</a></li>
+													<li class="list-group-item"><a href="/north-carolina-army-national-guard-recruiting-office-fayetteville-nc.html">North Carolina Army National Guard Recruiting Office Fayetteville Nc</a></li>
+													<li class="list-group-item"><a href="/no-guard-haircut.html">No Guard Haircut</a></li>
+													<li class="list-group-item"><a href="/no-guard-ghost-type.html">No Guard Ghost Type</a></li>
+													<li class="list-group-item"><a href="/no-guard-rock-blast.html">No Guard Rock Blast</a></li>
+													<li class="list-group-item"><a href="/no-guard-buzz-cut.html">No Guard Buzz Cut</a></li>
+													<li class="list-group-item"><a href="/no-guard-fissure.html">No Guard Fissure</a></li>
+													<li class="list-group-item"><a href="/nkb-nomor-22.html">Nkb Nomor 22</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

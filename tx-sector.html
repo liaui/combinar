@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Tx Sector - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Tx Sector",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/2e/6b/79/2e6b794ef5b167a6dc25a17a07e47233.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=tx+sector",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Tx Sector</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The above intro text acts a bit like a wiki and can be edited by all Pinside members including you. Previous File Robot Zaccaria Next File F-14 Tomcat Williams1987 Backglass FlasherMod. Del Rio Sector Border Patrol officials report an increase of 182 percent of migrants apprehended after illegally crossing the border from Mexico into Texas. <br>				
+			</p>
+										<a class="badge badge-dark" href="/army-orange-pt-belt.html">army orange pt belt</a>
+											<a class="badge badge-danger" href="/army-ranger-fitness-test.html">army ranger fitness test</a>
+											<a class="badge badge-info" href="/army-quartermaster-insignia.html">army quartermaster insignia</a>
+											<a class="badge badge-warning" href="/army-of-orange.html">army of orange</a>
+											<a class="badge badge-dark" href="/army-operational-art.html">army operational art</a>
+											<a class="badge badge-danger" href="/army-ranger-female.html">army ranger female</a>
+											<a class="badge badge-warning" href="/army-painting-set.html">army painting set</a>
+											<a class="badge badge-dark" href="/army-ranger-age-limit.html">army ranger age limit</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the ideal blog.  Our site provides you with suggestions for seeing the highest quality video and picture content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video for you to see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/d0/37/38d03798e9b0825900e815c3fd50d1b7.jpg" data-lightbox="roadtrip" data-title="Tx Sector Pinball Machine Google Search">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/d0/37/38d03798e9b0825900e815c3fd50d1b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoMYQ235WwKbaT3dxGOhzv2rr6q3egDAWXRg';" alt="Tx Sector Pinball Machine Google Search">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tx Sector Pinball Machine Google Search</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/68/f5/4b68f5b6fffa702706f4a38c4b95ad01.png" data-lightbox="roadtrip" data-title="Tx Sector Pinball Pinball Machine Video Game Machines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/68/f5/4b68f5b6fffa702706f4a38c4b95ad01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRer1OpQSOT9Is6KwZdIyVHHuqpC4ClbtLOkQ';" alt="Tx Sector Pinball Pinball Machine Video Game Machines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tx Sector Pinball Pinball Machine Video Game Machines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/6b/79/2e6b794ef5b167a6dc25a17a07e47233.png" data-lightbox="roadtrip" data-title="Rostiwarrior S Realm Gameplay And Walkthrough Videos Let S Play The Pinball Arcade Tx Sector Pinball Lets Play Play">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/6b/79/2e6b794ef5b167a6dc25a17a07e47233.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl1mrZsb_0WWTJ7xu9t2fzFWCkYElhw5uPFA';" alt="Rostiwarrior S Realm Gameplay And Walkthrough Videos Let S Play The Pinball Arcade Tx Sector Pinball Lets Play Play">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rostiwarrior S Realm Gameplay And Walkthrough Videos Let S Play The Pinball Arcade Tx Sector Pinball Lets Play Play</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/13/8b/85138b1789cd8815885966292f6c1c33.jpg" data-lightbox="roadtrip" data-title="The Music In Tx Sector Is One Of The Better Things To Happen In A Pinball Game This Is Not An Opinion This Is An Empirical Fa Pinball Game Pinball Soundtrack">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/13/8b/85138b1789cd8815885966292f6c1c33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXnwpH1oYlmMfnSAf-o3YZMj3fBjI2d1M3iw';" alt="The Music In Tx Sector Is One Of The Better Things To Happen In A Pinball Game This Is Not An Opinion This Is An Empirical Fa Pinball Game Pinball Soundtrack">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Music In Tx Sector Is One Of The Better Things To Happen In A Pinball Game This Is Not An Opinion This Is An Empirical Fa Pinball Game Pinball Soundtrack</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/ac/2c/20ac2ca73dc5a39c009e123508a08916.png" data-lightbox="roadtrip" data-title="Bmx Pinball Video Game Arcade Cabinet Pinball Machine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/ac/2c/20ac2ca73dc5a39c009e123508a08916.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wJWTnp84HmGaBotm7H3gKXJ3rtjuEaZadA';" alt="Bmx Pinball Video Game Arcade Cabinet Pinball Machine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bmx Pinball Video Game Arcade Cabinet Pinball Machine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/be/39/ddbe39e7ec901ff108b933f9482b7968.png" data-lightbox="roadtrip" data-title="For Sale Arena For Sale Pinside Market Pinball Art Pinball Video Game Arcade Cabinet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/be/39/ddbe39e7ec901ff108b933f9482b7968.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmXuSgxvIXhQmINwR0Cpmt_w7dIzLZe_CPMA';" alt="For Sale Arena For Sale Pinside Market Pinball Art Pinball Video Game Arcade Cabinet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For Sale Arena For Sale Pinside Market Pinball Art Pinball Video Game Arcade Cabinet</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/3b/14/e5/3b14e54b64569ab3d80cfdce8272f5ef.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmXuSgxvIXhQmINwR0Cpmt_w7dIzLZe_CPMA';" alt="For Sale Arena For Sale Pinside Market Pinball Art Pinball Video Game Arcade Cabinet">
+										<div class="card-body">
+						<h3 class="h5"><b>TX-Sector Premier 1988 2 and 3 screen versions.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Tx sector</strong>. 
+								
+																	Read reviews and ratings of TX-Sector from our experts and see what our community says too. 
+																	Submitted June 21 2014. 
+																	Del Rio Sector agents arrested 8472 illegal aliens who crossed the border between ports of entry in November. 
+																	TX-Sector is a Sci-Fi themed pinball machine. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	TX-Sector is a 1988 arcade pinball machine from Gottlieb designed by John Trudeau with art by Constantino and Jeanine Mitchell. 
+																	Most of the timberland in Texas is located in the eastern part of the state. 
+																	The latest tweets from txsector. 
+																	Hit the various drop targets to build up the Energy Level then shoot for one of the Transphazers and be teleported across the playield. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Create an account or sign in to download this. 
+																	Hegar said the hospitality sector has been hardest-hit during the pandemic. 
+																	Uedvoezloek minden ide latogatotSzeretnem megosztani veletek az alabbi Visual Pinball X asztal jatekmenet videojat. 
+																	So after watching Classic Game Rooms review of this awesome pinball machine I decided to find out if it was possible to get a hold of the music. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I got a chance to play one at a show last year along with other John Trudeau games. 
+																	TX-Sector was produced by Premier Gottlieb in 1988. 
+																	He said a rebound in oil prices and production substantially improved the economic outlook in Texas from just a few. 
+																	Trying to simulate the act of punching using flippers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	TX-Sector Gottlieb 1988Eredeti tabla. 
+																	The more recent boom has allowed Texas to rise above. 
+																	Wildman Constantino Mitchell Jeanine Mitchell Sign in to follow this Followers 0. 
+																	TX-Sector is a pinball machine designed by John Trudeau and released by Gottlieb in 1988. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rocky pinball was another noteworthy effort. 
+																	More than two-thirds of all forestry and logging companies and the great majority of the forest product companies in the state are found in this region. 
+																	TX-Sector is a pinball machine from March 1988 manufactured by D. 
+																	TX-Sector is definatly one of the more fun Gottliebs out there. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Premier Gottlieb released 66 different machines in our database under this trade name starting in 1946. 
+																	TX-Sector Gottlieb 1988_Bigus MOD Pinballs earliest ancestor Bagatelle machines have been around for close to 300 years. 
+																	The broader tech sector employs 270000 people in Texas which is a new high above the previous peak reached during the tech bubble in 2000. 
+																	John later confirmed to us that TX Sector Premiers 1988 Diamond Lady and Premiers 1987 Victory were the only games to have Vitrigraph playfields a process he believes was solely developed by Premier and not used by other pinball manufacturers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The game features a scifi theme and revolves around raising the energy level to teleport the ball. 
+																	File Size 1085 MB. 
+																	In 28 of the 43 East Texas counties wood-based industries are one of the top five manufacturing employers. 
+																	The report compares November 2019 to the same month this year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It features a vague Science Fiction Excuse Plot about Teleporters and Transporters. 
+																	Texas retail hospitality sector shows signs of life with modest growth in December The service sector accounts for nearly 70 of the states economy and employs about 86 million workers. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/b0/5d/92b05d32b1c80a1a92d58d58317a3872.png" data-lightbox="roadtrip" data-title="Air Compressor Sales And Service In The Dallas Fort Worth Area Curtis Air Compressors Rotary Screw Air Comp Air Compressor Repair Air Compressor Compressor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/b0/5d/92b05d32b1c80a1a92d58d58317a3872.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxXlxY7cXTMDMyMqp3IYMEFtGPbNTEnr-h8Q';" alt="Air Compressor Sales And Service In The Dallas Fort Worth Area Curtis Air Compressors Rotary Screw Air Comp Air Compressor Repair Air Compressor Compressor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Compressor Sales And Service In The Dallas Fort Worth Area Curtis Air Compressors Rotary Screw Air Comp Air Compressor Repair Air Compressor Compressor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/45/35/fd45356e1e3a3794570773901dfaeaa9.png" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/45/35/fd45356e1e3a3794570773901dfaeaa9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT058JBHzN9CC8hpShY7KAUiok4IZLYFxfiYQ';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/7a/67/027a67d56b11b20b90a7302d72ab4055.png" data-lightbox="roadtrip" data-title="Stern Stars For Sale Pinside Market Pinball Pinball Game Pinball Machines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/7a/67/027a67d56b11b20b90a7302d72ab4055.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXyDWBevNOu9h_Xfdw4zkoIxh29yo5zd7b6g';" alt="Stern Stars For Sale Pinside Market Pinball Pinball Game Pinball Machines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stern Stars For Sale Pinside Market Pinball Pinball Game Pinball Machines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/56/f3/7956f31d367fec93b531d8862220176a.png" data-lightbox="roadtrip" data-title="Google Image Result For Https Www Vpforums Org Index Php App Downloads Module Display Section Screenshot Record 3566 Hearthstone Download App Gaming Products">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/56/f3/7956f31d367fec93b531d8862220176a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSugdMNP7T-Q5l-XBMgWdiXpHMxpOREjeensg';" alt="Google Image Result For Https Www Vpforums Org Index Php App Downloads Module Display Section Screenshot Record 3566 Hearthstone Download App Gaming Products">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Google Image Result For Https Www Vpforums Org Index Php App Downloads Module Display Section Screenshot Record 3566 Hearthstone Download App Gaming Products</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/c5/1c/8dc51c16d4dd9af8c20ae690deeff862.png" data-lightbox="roadtrip" data-title="Being In The Roofing Sector For A Long Time Lucas Roofing In Huntsville Tx Has Become A Go To Name In Huntsville Roofing Contractors Roofing Roof Restoration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/c5/1c/8dc51c16d4dd9af8c20ae690deeff862.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgDIPq03wHRwb2wWRc9oYNTNg-BD2Ew0umw';" alt="Being In The Roofing Sector For A Long Time Lucas Roofing In Huntsville Tx Has Become A Go To Name In Huntsville Roofing Contractors Roofing Roof Restoration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Being In The Roofing Sector For A Long Time Lucas Roofing In Huntsville Tx Has Become A Go To Name In Huntsville Roofing Contractors Roofing Roof Restoration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/19/15/53191528a8c6317e6ef97557cdfa16df.jpg" data-lightbox="roadtrip" data-title="Reciprocal Nyc Pinball Adalina Guilty">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/19/15/53191528a8c6317e6ef97557cdfa16df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQocoMA_CX136eCVKHpf_E2-s4jW48_dlcwYw';" alt="Reciprocal Nyc Pinball Adalina Guilty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reciprocal Nyc Pinball Adalina Guilty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/14/e5/3b14e54b64569ab3d80cfdce8272f5ef.png" data-lightbox="roadtrip" data-title="Fscurtis Rotary Screw Compressor Future Of Rotary Screws For The Manufacturing Sector Aircompressors Compresso Gas Air Compressor Air Compressor Compressor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/14/e5/3b14e54b64569ab3d80cfdce8272f5ef.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVra_znnZJuLmz-YbwEicNTSyBfah7OzfmVw';" alt="Fscurtis Rotary Screw Compressor Future Of Rotary Screws For The Manufacturing Sector Aircompressors Compresso Gas Air Compressor Air Compressor Compressor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fscurtis Rotary Screw Compressor Future Of Rotary Screws For The Manufacturing Sector Aircompressors Compresso Gas Air Compressor Air Compressor Compressor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/57/72/0c/57720c1ba45713b1eb4bc0541f46c442.jpg" data-lightbox="roadtrip" data-title="It Staff Augmentation Tx No Experience Jobs Staffing Mobile Operator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/57/72/0c/57720c1ba45713b1eb4bc0541f46c442.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAHvfPgrQ3HJ3TC0PFBrkF_TfLY29Fo4fFgg';" alt="It Staff Augmentation Tx No Experience Jobs Staffing Mobile Operator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">It Staff Augmentation Tx No Experience Jobs Staffing Mobile Operator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/d1/02/6cd102be2f98b930973c537e493a099f.jpg" data-lightbox="roadtrip" data-title="The Bride Of Pinbot Just Got An Upgrade It Looks Like The Machine Is Finally Going To Be A Fun Game To Play Pinball Fun Games Games To Play">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/d1/02/6cd102be2f98b930973c537e493a099f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWyf0_veHJNUhG6mXlgYBHrUgxEyV9ofTjdQ';" alt="The Bride Of Pinbot Just Got An Upgrade It Looks Like The Machine Is Finally Going To Be A Fun Game To Play Pinball Fun Games Games To Play">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Bride Of Pinbot Just Got An Upgrade It Looks Like The Machine Is Finally Going To Be A Fun Game To Play Pinball Fun Games Games To Play</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/a1/02/a3a1027abd0ff5e6b6e3a306350bb2e5.jpg" data-lightbox="roadtrip" data-title="8ball Deluxe Le Rebuild Poker Table Arcade Decor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/a1/02/a3a1027abd0ff5e6b6e3a306350bb2e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScCClm3BY_xVDOv6rfKlDBW7bEaJpp97ztXA';" alt="8ball Deluxe Le Rebuild Poker Table Arcade Decor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8ball Deluxe Le Rebuild Poker Table Arcade Decor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/97/64/7697649a2a8b7d510e89d760be000d95.jpg" data-lightbox="roadtrip" data-title="These Are Some Essential Factors Impacting Scrap Metal Prices Ols Onlinescrap Com Onlinescrap Scrap Metal Metal Prices Scrap Metal Metal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/97/64/7697649a2a8b7d510e89d760be000d95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShhaxu8ASQV2RQWOB3rtmi_3YuDMn5mWToEw';" alt="These Are Some Essential Factors Impacting Scrap Metal Prices Ols Onlinescrap Com Onlinescrap Scrap Metal Metal Prices Scrap Metal Metal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">These Are Some Essential Factors Impacting Scrap Metal Prices Ols Onlinescrap Com Onlinescrap Scrap Metal Metal Prices Scrap Metal Metal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/34/3a/44343a698a16e5949447ee78c74cfb3a.png" data-lightbox="roadtrip" data-title="Haunted House Black Hole 3d Digital Pinball Machine 12 In 1 Gottlieb Titles Toyshock 77000 Walmart Com Pinball Black House Pinball Machine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/34/3a/44343a698a16e5949447ee78c74cfb3a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuN-x3mIcdTkKlcNKtxoJ933WbHWAzjvugxA';" alt="Haunted House Black Hole 3d Digital Pinball Machine 12 In 1 Gottlieb Titles Toyshock 77000 Walmart Com Pinball Black House Pinball Machine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Haunted House Black Hole 3d Digital Pinball Machine 12 In 1 Gottlieb Titles Toyshock 77000 Walmart Com Pinball Black House Pinball Machine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/8f/37/818f37f6c7bb6b235d3cdcf337796b85.jpg" data-lightbox="roadtrip" data-title="Ac Dc Mega Man Edition Would Be Awesome Mega Man Acdc Man">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/8f/37/818f37f6c7bb6b235d3cdcf337796b85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZeWgw51G0Etar2VW__XCUxfLGZQyCJ_kuog';" alt="Ac Dc Mega Man Edition Would Be Awesome Mega Man Acdc Man">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ac Dc Mega Man Edition Would Be Awesome Mega Man Acdc Man</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/south-korean-army-rank-insignia.html">South Korean Army Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/south-carolina-army-national-guard-agr-vacancies.html">South Carolina Army National Guard Agr Vacancies</a></li>
+													<li class="list-group-item"><a href="/shortest-ait-army-national-guard.html">Shortest Ait Army National Guard</a></li>
+													<li class="list-group-item"><a href="/selfridge-angb-air-force-base-in-harrison-mi.html">Selfridge Angb Air Force Base In Harrison Mi</a></li>
+													<li class="list-group-item"><a href="/servo-hidrolik.html">Servo Hidrolik</a></li>
+													<li class="list-group-item"><a href="/songs-bts-wrote-for-army.html">Songs Bts Wrote For Army</a></li>
+													<li class="list-group-item"><a href="/sekarang-jumat-apa.html">Sekarang Jumat Apa</a></li>
+													<li class="list-group-item"><a href="/soldier-guard.html">Soldier Guard</a></li>
+													<li class="list-group-item"><a href="/south-vietnamese-army-rank-insignia.html">South Vietnamese Army Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/stang-brompton.html">Stang Brompton</a></li>
+													<li class="list-group-item"><a href="/springfield-air-national-guard.html">Springfield Air National Guard</a></li>
+													<li class="list-group-item"><a href="/stang-tiger-revo.html">Stang Tiger Revo</a></li>
+													<li class="list-group-item"><a href="/stang-rgr.html">Stang Rgr</a></li>
+													<li class="list-group-item"><a href="/soldier-on-guard-6.html">Soldier On Guard 6</a></li>
+													<li class="list-group-item"><a href="/servo-hitec.html">Servo Hitec</a></li>
+													<li class="list-group-item"><a href="/sinyal-hilang-xiaomi.html">Sinyal Hilang Xiaomi</a></li>
+													<li class="list-group-item"><a href="/sri-lanka-army-songs-mp3-download.html">Sri Lanka Army Songs Mp3 Download</a></li>
+													<li class="list-group-item"><a href="/spouse-benefits-army-national-guard.html">Spouse Benefits Army National Guard</a></li>
+													<li class="list-group-item"><a href="/sl-army-songs-download.html">Sl Army Songs Download</a></li>
+													<li class="list-group-item"><a href="/servo-hobao.html">Servo Hobao</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

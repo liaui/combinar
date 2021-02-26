@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Artillery News - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Artillery News",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/13/ba/05/13ba059014509e74c17050f518c25b1f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+artillery+news",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Artillery News</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Artillery designed built or operated by the United States during the World War I era 1900-1919. The school further develops leaders who are tactically and technically proficient develops and refines warfighting doctrine and designs units capable of winning on future battlefields. A historic moment for Florida as the first female assumes command of a Field Artillery FA Battery in the State. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/13b-national-guard.html">13b national guard</a>
+											<a class="badge badge-info" href="/183rd-airlift-squadron.html">183rd airlift squadron</a>
+											<a class="badge badge-success" href="/air-guard-or-army-guard.html">air guard or army guard</a>
+											<a class="badge badge-success" href="/active-army-vs-national-guard.html">active army vs national guard</a>
+											<a class="badge badge-light" href="/a-national-guard-recruiter.html">a national guard recruiter</a>
+											<a class="badge badge-secondary" href="/25b-reclass-national-guard.html">25b reclass national guard</a>
+											<a class="badge badge-secondary" href="/abg-hco3.html">abg hco3</a>
+											<a class="badge badge-light" href="/13f-national-guard-reddit.html">13f national guard reddit</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the ideal blog.  Our website gives you hints for viewing the maximum quality video and picture content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/74/7e/ac747e5dee6763f256c289946515aa8f.jpg" data-lightbox="roadtrip" data-title="Artillery Us Afghanistan Military Army Vehicles Military Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/74/7e/ac747e5dee6763f256c289946515aa8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFRvygqdfw07sVwixp7F9yAky3Akmdv41-9Q';" alt="Artillery Us Afghanistan Military Army Vehicles Military Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Artillery Us Afghanistan Military Army Vehicles Military Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/27/f1/3627f15751bd6bd2fdcc2be4a5596926.png" data-lightbox="roadtrip" data-title="Army Long Range Cannon Gets Direct Hit On Target 43 Miles Away Army Us Army Artillery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/27/f1/3627f15751bd6bd2fdcc2be4a5596926.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDQSGbkttnGXZTR3EC_KNQ6VIKOvLQkTIZQ';" alt="Army Long Range Cannon Gets Direct Hit On Target 43 Miles Away Army Us Army Artillery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Long Range Cannon Gets Direct Hit On Target 43 Miles Away Army Us Army Artillery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/6c/a4/b36ca4c270a131bed16634057d74ccbd.jpg" data-lightbox="roadtrip" data-title="The U S Army Wants A Cannon With A Crazy And Nearly Impossible Range Artillery Army Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/6c/a4/b36ca4c270a131bed16634057d74ccbd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-AYZlXatiK_kcft_R9Mr4hQdVj2y7NaKDwQ';" alt="The U S Army Wants A Cannon With A Crazy And Nearly Impossible Range Artillery Army Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The U S Army Wants A Cannon With A Crazy And Nearly Impossible Range Artillery Army Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/9b/13/f79b130f9c41867adbd67af00826c720.jpg" data-lightbox="roadtrip" data-title="M109a6 Paladin 155 Mm Self Propelled Howitzer American Artillery Military News Military Vehicles Paladin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/9b/13/f79b130f9c41867adbd67af00826c720.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBHDrJ0foXufkZRLkntTnchiLOgHGGZCvHBA';" alt="M109a6 Paladin 155 Mm Self Propelled Howitzer American Artillery Military News Military Vehicles Paladin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">M109a6 Paladin 155 Mm Self Propelled Howitzer American Artillery Military News Military Vehicles Paladin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/66/e8/d466e8e17dfcf4d8ca6ab99b0b1df34e.jpg" data-lightbox="roadtrip" data-title="United States Army Footage From Usa Flag Co Army American Army United States Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/66/e8/d466e8e17dfcf4d8ca6ab99b0b1df34e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFBXkLmAgXdwRv8kvuZfUajERZve5E2aTJew';" alt="United States Army Footage From Usa Flag Co Army American Army United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Army Footage From Usa Flag Co Army American Army United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/b2/c7/3ab2c73fd946754f6987d2583d10f97a.jpg" data-lightbox="roadtrip" data-title="U S Army Marine Corps Purchase Additional M1156 Guidance Kits Marine Corps Army Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/b2/c7/3ab2c73fd946754f6987d2583d10f97a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUcpjhEgRrqtqFUPpSbgwj1XsvkBJoOBLwTQ';" alt="U S Army Marine Corps Purchase Additional M1156 Guidance Kits Marine Corps Army Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Marine Corps Purchase Additional M1156 Guidance Kits Marine Corps Army Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e9/91/e5/e991e5086ab47a4540b9184a0a1e4f83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUcpjhEgRrqtqFUPpSbgwj1XsvkBJoOBLwTQ';" alt="U S Army Marine Corps Purchase Additional M1156 Guidance Kits Marine Corps Army Military Heroes">
+										<div class="card-body">
+						<h3 class="h5"><b>WASHINGTON The Army is asking Congress to shift 24 million in fiscal year 2018 funding to help pay for a demonstration of a hit-to-kill munition critical to its long-range cannon program.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army artillery news</strong>. 
+								
+																	Breaking the record for. 
+																	The school is currently located at Fort Sill Oklahoma. 
+																	The US Armys field artillery soldiers have tested the new Joint Effects Targeting System Target Laser Designation System JETS-TLDS at the Cold Regions Test Center in Alaska US. 
+																	The Military Issues History Forum is a venue to discuss issues relating to the military aspects of the Indian Armed Forces whether the past present or future. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The US 28th Infantry Division of which Keirons Unit is a part is the oldest and longest serving Division in the US Army and was the first ashore on Omaha Beach during the D Day landings of 1944 immortalised in the film Saving Private Ryan. 
+																	Naval News will examine two 155mm WGS systems and how and why they might qualify towards Anti-Ship artillery for the United States and NATO. 
+																	WASHINGTON The Armys Extended Range Cannon Artillery ERCA system under development hit a target 43 miles away or 70 kilometers on the nose at Yuma Proving Ground Arizona Dec. 
+																	These include a hand-held target location module HTLM precision azimuth and vertical angle module PAVAM and laser marker module LMM. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Leon Lovett was awarded this honor for long service to the US Army and the Field Artillery branch both in uniform and as a volunteer. 
+																	Designed to identify friend or foe in the battlefield the JETS-TLDS precision targeting system features three components. 
+																	Typical state-of-the-art artillery such as an M777. 
+																	Ramey assumed command of B3-116th Field Artillery Battalion on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By Victor Barreira Nexter is joining the field vying to win the US Armys towed howitzer replacement competition and is proposing its CAmionEquipe dun Systeme dARtillerie CAESAR truck-mounted. 
+																	The Ancient Order is the highest level of the Order of Saint Barbara. 
+																	Get premium high resolution news photos at Getty Images. 
+																	Wikimedia Commons has media related to World War I artillery of the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This was tested during a dedicated technical assessment conducted by the USMC and US Army and validatedretired before the weapon moved into. 
+																	The United States Army Field Artillery School trains Field Artillery Soldiers and Marines in tactics techniques and procedures for the employment of fire support systems in support of the maneuver commander. 
+																	Generals said the Extended Range Cannon Artillery system. 
+																	US Army Europe Wants New Hub for Artillery Fire A new targeting center and mobile artillery-and-cyber teams will dominate the way the Army conducts operations says Gen. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A SUPERGUN developed by the US army has broken the record for the longest guided cannon shot in history by hitting a target 43 miles away. 
+																	The US Armys Crusader Advanced Field Artillery System a 155-mm self-propelled howitzer test-firing at the Yuma Proving Ground. 
+																	Citing generals involved in the firing tests Defense news reports that the Extended Range Cannon Artillery ERCA system hit the target on the nose from such distance at a firing range in Yuma Arizona. 
+																	Burke Deputy Project Manager Combat Ammunition Systems CAS Joint PEO Armaments and Ammunition US Army based at Picatinny Arsenal New Jersey. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The roadmap leading to the adoption of a whole new family of 155 mm ammunition was illustrated at Future Artillery Online the virtual edition of the yearly conference organised by Defence iQ by Mr. 
+																	He has strongly supported all artillery battalions stationed at Fort Stewart as a volunteer for more than a decade. 
+																	The US Army fired three M982A1 Excalibur weapons from its Extended Range Cannon Artillery ERCA prototype on 19 December and after a rocky start the final round directly hit a target at a 70 km. 
+																	Today the US Army is determined to modernize its fires capabilities of the Armys Big Six modernization efforts Long-Range Precision Fires is number one. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The US Army Long Range Precision Fires LRPF programme is made of different components a key one being ammunition. 
+																	Army Futures Command has already demonstrated ERCAs ability to hit ranges out to 62km all while sustaining the requisite amount of precision. 
+																	US Artillery has suffered years of. 
+																	A supergun being trialled by the US military has successfully fired an artillery shell to hit a precise target at a distance of more than 43 miles 70 kilometres away. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All NATO-standard 155mm ammunition should be able to be transported and fired by these WGSs such as High Explosive High Explosive Extended Range Illumination and Smoke in addition to specialized precision-guided projectiles and Hypervelocity Projectiles HVP. 
+																	An extremely long-range self-propelled cannon developed by the US army broke the world record for the longest guided cannon shot in history by successfully hitting a target approximately 70 km 43 miles away Defense News reported. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/1c/6f/771c6f8eda54e1dbeb14ba42b89298a8.jpg" data-lightbox="roadtrip" data-title="The Army Is Preparing Artillery For Battles Without Gps Artillery Army Military Guns">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/1c/6f/771c6f8eda54e1dbeb14ba42b89298a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqhqvY8ArReLkrgMetbuJflppTfVoNy5tYEA';" alt="The Army Is Preparing Artillery For Battles Without Gps Artillery Army Military Guns">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Army Is Preparing Artillery For Battles Without Gps Artillery Army Military Guns</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/e5/62/9fe5625a1e85008fe0f8cf33ba28408a.jpg" data-lightbox="roadtrip" data-title="Defense News Joint Live Fire Drill For United States And South Korean Army With Artillery Howitzer M Military Vehicles Self Propelled Artillery Military Armor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/e5/62/9fe5625a1e85008fe0f8cf33ba28408a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcKaGgv3dMBLS2vBn5isKf6s2F2U9TNPMBYw';" alt="Defense News Joint Live Fire Drill For United States And South Korean Army With Artillery Howitzer M Military Vehicles Self Propelled Artillery Military Armor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defense News Joint Live Fire Drill For United States And South Korean Army With Artillery Howitzer M Military Vehicles Self Propelled Artillery Military Armor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/7b/fb/7d7bfb2120c16fbb59aa5ef16f421829.jpg" data-lightbox="roadtrip" data-title="Army Builds New Self Propelled Howitzer Cannon Will Hit 43 5 Miles Army Army Usa Cannon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/7b/fb/7d7bfb2120c16fbb59aa5ef16f421829.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4TMHqbH1LGefXOljVY1nHJNGKbdnGJdwV4Q';" alt="Army Builds New Self Propelled Howitzer Cannon Will Hit 43 5 Miles Army Army Usa Cannon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Builds New Self Propelled Howitzer Cannon Will Hit 43 5 Miles Army Army Usa Cannon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/e0/c5/86e0c524d06690bb6ca46649eb034990.jpg" data-lightbox="roadtrip" data-title="From Paladin Upgrades To A 1 000 Mile Cannon Army Artillery Aims High Er Farther Tanks Military Military Vehicles Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/e0/c5/86e0c524d06690bb6ca46649eb034990.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwAJvzQAKTA3ot2XNw7KSx8v9d6occEwdKvw';" alt="From Paladin Upgrades To A 1 000 Mile Cannon Army Artillery Aims High Er Farther Tanks Military Military Vehicles Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">From Paladin Upgrades To A 1 000 Mile Cannon Army Artillery Aims High Er Farther Tanks Military Military Vehicles Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/91/e5/e991e5086ab47a4540b9184a0a1e4f83.jpg" data-lightbox="roadtrip" data-title="We Got Up Close With The Us Army S M109 Paladin Business Insider Us Army Army Vehicles Us Army Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/91/e5/e991e5086ab47a4540b9184a0a1e4f83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY0g1S1qoYdU79Os26RBBqZL3YRmcTNS_TwA';" alt="We Got Up Close With The Us Army S M109 Paladin Business Insider Us Army Army Vehicles Us Army Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Got Up Close With The Us Army S M109 Paladin Business Insider Us Army Army Vehicles Us Army Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/28/52/6d2852a69a3b986af75e6258c792a1dd.jpg" data-lightbox="roadtrip" data-title="U S Army Troopers Assigned To The Field Artillery Squadron 3rd Cavalry Regiment Fire Their M777 Howitzer On Firebase Sah Us Army Medals Of America Artillery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/28/52/6d2852a69a3b986af75e6258c792a1dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLoxbpuV9DU9IufwKEP1NTKR28fgEjobE6qg';" alt="U S Army Troopers Assigned To The Field Artillery Squadron 3rd Cavalry Regiment Fire Their M777 Howitzer On Firebase Sah Us Army Medals Of America Artillery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Troopers Assigned To The Field Artillery Squadron 3rd Cavalry Regiment Fire Their M777 Howitzer On Firebase Sah Us Army Medals Of America Artillery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/d4/a0/d1d4a077cac2cefc370559f60bcea61d.jpg" data-lightbox="roadtrip" data-title="Syrian Army Began New Military Operation Advancing Toward The Illegal Us Military Base Military Operations Military Military Base">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/d4/a0/d1d4a077cac2cefc370559f60bcea61d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo5u9t-6tMLalJjKGqyl8aQjme1m3D9v1ADQ';" alt="Syrian Army Began New Military Operation Advancing Toward The Illegal Us Military Base Military Operations Military Military Base">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Syrian Army Began New Military Operation Advancing Toward The Illegal Us Military Base Military Operations Military Military Base</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/60/50/376050547950c3cc580af70dd3fd7282.jpg" data-lightbox="roadtrip" data-title="Obice Us Army M109a6 Paladin Military Military Vehicles Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/60/50/376050547950c3cc580af70dd3fd7282.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSjLOcm6HpKWC5sv-c1mhDYr45idOkCCl6Q';" alt="Obice Us Army M109a6 Paladin Military Military Vehicles Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Obice Us Army M109a6 Paladin Military Military Vehicles Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/6c/f2/fc6cf2b7794d1727d4a605417cffee5e.jpg" data-lightbox="roadtrip" data-title="The U S Army S New 155mm Sp Howitzer The M109 A7 Pin Paladin They Plan To Acquire 580 Sets Each Of Whch Wi Tanks Military Military Armor Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/6c/f2/fc6cf2b7794d1727d4a605417cffee5e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsI59FfiCZNcIah4k2uHrdgKArVbbIpwfTqg';" alt="The U S Army S New 155mm Sp Howitzer The M109 A7 Pin Paladin They Plan To Acquire 580 Sets Each Of Whch Wi Tanks Military Military Armor Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The U S Army S New 155mm Sp Howitzer The M109 A7 Pin Paladin They Plan To Acquire 580 Sets Each Of Whch Wi Tanks Military Military Armor Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/58/38/ef/5838ef3d04a264f8d67f881445dd5321.jpg" data-lightbox="roadtrip" data-title="Pin On Military News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/58/38/ef/5838ef3d04a264f8d67f881445dd5321.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSljLNkokOVqWYljbUSBbE1nCFDTuC3Ff4qrg';" alt="Pin On Military News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/ba/05/13ba059014509e74c17050f518c25b1f.jpg" data-lightbox="roadtrip" data-title="Pin On Top Stories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/ba/05/13ba059014509e74c17050f518c25b1f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHfT3olL7ruDdhyKUkZ1aSsc_Sen0x0Bp1gg';" alt="Pin On Top Stories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Top Stories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/a1/65/b8a165aa4071497fe5c58f2bdbc0301f.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/a1/65/b8a165aa4071497fe5c58f2bdbc0301f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6nDCmFS6XA-s9aH0yeg39F3RJsbRWWUs4pw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/6f/3f/d86f3f3fdb97bcfd25650e54952b59b1.jpg" data-lightbox="roadtrip" data-title="Epingle Sur Artillerie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/6f/3f/d86f3f3fdb97bcfd25650e54952b59b1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM_CVAEZuENkZe8dKDeGFAl3hgXjp-hS2dgw';" alt="Epingle Sur Artillerie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Epingle Sur Artillerie</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/new-york-national-guard-commander.html">New York National Guard Commander</a></li>
+													<li class="list-group-item"><a href="/new-york-state-army-national-guard.html">New York State Army National Guard</a></li>
+													<li class="list-group-item"><a href="/new-army-songs-mp3-download.html">New Army Songs Mp3 Download</a></li>
+													<li class="list-group-item"><a href="/nge-wine-adalah.html">Nge Wine Adalah</a></li>
+													<li class="list-group-item"><a href="/netguard-xiaomi.html">Netguard Xiaomi</a></li>
+													<li class="list-group-item"><a href="/ngb-4100.html">Ngb 4100</a></li>
+													<li class="list-group-item"><a href="/netguard-wiki.html">Netguard Wiki</a></li>
+													<li class="list-group-item"><a href="/new-york-guardians-xfl.html">New York Guardians Xfl</a></li>
+													<li class="list-group-item"><a href="/netguard-tethering.html">Netguard Tethering</a></li>
+													<li class="list-group-item"><a href="/netguard-security.html">Netguard Security</a></li>
+													<li class="list-group-item"><a href="/netguard-without-vpn.html">Netguard Without Vpn</a></li>
+													<li class="list-group-item"><a href="/netguard-vs-blokada.html">Netguard Vs Blokada</a></li>
+													<li class="list-group-item"><a href="/nge-gamat-emas.html">Nge Gamat Emas</a></li>
+													<li class="list-group-item"><a href="/new-york-national-guard-scholarship.html">New York National Guard Scholarship</a></li>
+													<li class="list-group-item"><a href="/netguard-pro-cracked.html">Netguard Pro Cracked</a></li>
+													<li class="list-group-item"><a href="/new-york-state-army-national-guard-ig.html">New York State Army National Guard Ig</a></li>
+													<li class="list-group-item"><a href="/netguard-terbaru.html">Netguard Terbaru</a></li>
+													<li class="list-group-item"><a href="/ngewar-artinya.html">Ngewar Artinya</a></li>
+													<li class="list-group-item"><a href="/new-jersey-national-guard-armory.html">New Jersey National Guard Armory</a></li>
+													<li class="list-group-item"><a href="/netguard.html">Netguard</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

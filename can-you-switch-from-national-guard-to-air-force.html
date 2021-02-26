@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Can You Switch From National Guard To Air Force - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Can You Switch From National Guard To Air Force",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/78/8e/15/788e155eb726c77d81d4b93d5225062c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=can+you+switch+from+national+guard+to+air+force",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Can You Switch From National Guard To Air Force</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Both the Army National Guard and Air National Guard are expected to follow the same physical standards and moral character as full-time active-duty recruits. Military expert for The Balance Careers and was a retired Air Force First Sergeant with 22 years of active duty service. My mos can be transfer to the Air Force as 2S0X1 Supply Management. <br>				
+			</p>
+										<a class="badge badge-info" href="/sarang-bahasa-inggris.html">sarang bahasa inggris</a>
+											<a class="badge badge-danger" href="/sarang-burung-lovebird.html">sarang burung lovebird</a>
+											<a class="badge badge-info" href="/samsung-z-flip.html">samsung z flip</a>
+											<a class="badge badge-danger" href="/samsung-z2.html">samsung z2</a>
+											<a class="badge badge-info" href="/sarang-yang-bagus-untuk-lovebird.html">sarang yang bagus untuk lovebird</a>
+											<a class="badge badge-danger" href="/sarangi.html">sarangi</a>
+											<a class="badge badge-info" href="/sarung-hp-vivo-y12.html">sarung hp vivo y12</a>
+											<a class="badge badge-warning" href="/samsung-j2.html">samsung j2</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to pay a visit to the ideal blog.  Our website gives you suggestions for seeing the maximum quality video and picture content, search and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you enjoy on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this website.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.653845.1606846499!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="Air Force Is Looking For Some Airmen To Transition To New Jobs National Guard Or Reserve U S Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.653845.1606846499!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvexmVdfwCTH4E0nN5DAjsAZ-VYVqCI_wzjQ&amp;ec=45774421';" alt="Air Force Is Looking For Some Airmen To Transition To New Jobs National Guard Or Reserve U S Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Is Looking For Some Airmen To Transition To New Jobs National Guard Or Reserve U S Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sandboxx.us/wp-content/uploads/2020/02/140412-Z-VT419-016-scaled.jpg" data-lightbox="roadtrip" data-title="What Is The Air National Guard Here S The Scoop Before You Sign Sandboxx">
+											<img class="card-img v-image ads-img " src="https://www.sandboxx.us/wp-content/uploads/2020/02/140412-Z-VT419-016-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwOfwMB5wdlG1G3YMLlwlDXldqI4VwO0tm5Q&amp;ec=45774421';" alt="What Is The Air National Guard Here S The Scoop Before You Sign Sandboxx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is The Air National Guard Here S The Scoop Before You Sign Sandboxx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/71/80/3c71802248f7547cad89e5d595f6d0e2.jpg" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/71/80/3c71802248f7547cad89e5d595f6d0e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTENOlmO-iH0KFy-EB-_phnIQjj5RxEUrm75w&amp;ec=45774421';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/8e/15/788e155eb726c77d81d4b93d5225062c.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/8e/15/788e155eb726c77d81d4b93d5225062c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTy4KTP2Wp12h3JgN9vTxf9LeGiKkDGZhrXw&amp;ec=45774421';" alt="Pin On Guard Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2018/Aug/13/2001953574/600/400/0/180802-Z-VK221-057.JPG" data-lightbox="roadtrip" data-title="Blending In Air Force To Begin Wear Of Ocp Uniform National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2018/Aug/13/2001953574/600/400/0/180802-Z-VK221-057.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyVF1J1FPzGjlspz3MaE1eX236hddhs-M0cg&amp;ec=45774421';" alt="Blending In Air Force To Begin Wear Of Ocp Uniform National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blending In Air Force To Begin Wear Of Ocp Uniform National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/8d/18/568d18f823ca6cb8f40a1d5c2c89719d.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/8d/18/568d18f823ca6cb8f40a1d5c2c89719d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9YPE93ki563RfsAAFL2jP7h9anA3-uyoJMg&amp;ec=45774421';" alt="Pin On Guard Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Motivation</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/90/b2/05/90b2056d8921eabb2a680b59d9737ab5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9YPE93ki563RfsAAFL2jP7h9anA3-uyoJMg&amp;ec=45774421';" alt="Pin On Guard Motivation">
+										<div class="card-body">
+						<h3 class="h5"><b>The name of this program is Blue to Green.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Can you switch from national guard to air force</strong>. 
+								
+																	Read The Balances editorial policies. 
+																	They are jointly administered by the states and the National Guard Bureau a joint bureau of the Army and Air Force that oversees the United States National Guard. 
+																	You would have to speak to an Air Force recruiter and see if the Air Force is taking National Guard members. 
+																	Good luck to you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Generally however you cant just simply transfer from the Air Guard to the Air Force despite the close relationship both have with each other. 
+																	You will need to transfer either to the Air National Guard or Air Reserves spend a year with that unit and then apply for a transfer to Active Duty Air Force. 
+																	If you dont love your career pick you can always switch later. 
+																	As an Air Guard member youll have access to over 200 career options. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Air Force also apply to the National Guard. 
+																	If they arent willing to release you possible if they are understrength on 68Ws then you are stuck no matter how much the Air Force may want you. 
+																	Rod Powers was the US. 
+																	Munitions Systems Specialist. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All other services will likely have to retake the ASVAB test. 
+																	Your local recruiter will check to determine if your current scores can be converted. 
+																	Any time not spent on active duty must either be served in the Active GuardReserves the program where one performs drill one weekend per month and two weeks per year or in the inactive Reserves. 
+																	Rather if youre Air Guard and want to become active Air Force you can seek a release conditioned on you joining the Air Force. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get in contact with an air guard recruiter. 
+																	My goal is to join the Air Force Active Duty I am currently with the Army National Guard as a 92Y Unit Supply Specialist. 
+																	In fact the road is paved quite nicely to make that transition almost seamless. 
+																	There is a program that will allow members of the Navy and Air Force who are serving in over-manned jobs to request early discharge in exchange for agreeing to a three-year active duty enlistment in the Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Updated November 24 2019 It is possible to transfer from the active duty ranks to the National Guard or Reserves. 
+																	However if federalized by order of the President of the United States Air National Guard units become an active part of the United States Air Force. 
+																	REQUIREMENTS FOR AIR FORCE TO ANG Your path to the Air Guard will be unique to you. 
+																	JANUARY 22 2021 As an outcome of the 101st Air Force uniform board Air Force women will be able to wear their hair in up to two braids or a single ponytail with bulk not exceeding the width. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the inactive Reserves one doesnt perform drills but can be recalled to active duty at any time for war or national emergency. 
+																	To name a few here are some Air National Guard career choices. 
+																	Also youd be coming in as prior service so different contract options open up for you such as a 3 year. 
+																	If they say yes then your next step is to see if your National Guard unit will release you. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Therefore much of the same language in terms of what is allowed for physical presence in the US. 
+																	Officer New officer applicants are required to pass the Air Force Officer Qualifying Test AFOQT. 
+																	If you are prior Air Force and your ASVAB scores are valid you most likely wont have to retest. 
+																	With the Palace Chase program once youve completed at least half of your original contract two-thirds for officers you can transition directly from the Air Force to the Air Guard before your Expiration of Term of Service ETS. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If they say no then you are SOL. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/a4/14/61a414f5f75ab991dbbf9e41f0b4d2d7.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/a4/14/61a414f5f75ab991dbbf9e41f0b4d2d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjAprgk25Rm8M5oe6bMa9VBAuYKAKy3eYHig&amp;ec=45774421';" alt="Pin On Guard Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/88/c5/12/88c5125f9cb708772ec371995fba4965.jpg" data-lightbox="roadtrip" data-title="Pin On Planes Air National Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/88/c5/12/88c5125f9cb708772ec371995fba4965.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZwAlDTjSt5pecN4qywurdAkcn4OvEEkPfUw&amp;ec=45774421';" alt="Pin On Planes Air National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Planes Air National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5d/b3/b8/5db3b8df72f3ea148a5c7fdebea5130c.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5d/b3/b8/5db3b8df72f3ea148a5c7fdebea5130c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Re6fixEqTlG8OD66IUFZtScu7JWpupfo1A&amp;ec=45774421';" alt="Pin On Guard Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/b2/05/90b2056d8921eabb2a680b59d9737ab5.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/b2/05/90b2056d8921eabb2a680b59d9737ab5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT659xoV2YBxm6jlKEnWfMe_sm-_Xs59-dqCQ&amp;ec=45774421';" alt="Pin On Guard Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/ef/b5/ceefb5805f23c003c11d85d77101b33e.jpg" data-lightbox="roadtrip" data-title="Us Air Force Honor Guard United States Air Force Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/ef/b5/ceefb5805f23c003c11d85d77101b33e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSq316IOcPje4EFGNr2n4t0Z_WkqRv618nGQ&amp;ec=45774421';" alt="Us Air Force Honor Guard United States Air Force Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Air Force Honor Guard United States Air Force Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/f9/19/51f919c79923633da525362f64ef79ff.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Motivation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/f9/19/51f919c79923633da525362f64ef79ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSeOalQ5w53hskC12gnQNW7o_9lh5Um1cG0Q&amp;ec=45774421';" alt="Pin On Guard Motivation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Motivation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/7a/3d/017a3d1fc616da91d1a036b889737d9b.jpg" data-lightbox="roadtrip" data-title="United States Air Force Footage From Usa Flag Co Air Force Military Heroes United States Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/7a/3d/017a3d1fc616da91d1a036b889737d9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr88haZskuYzOZVrmmwrZB2jn9DBKnTL6SdA&amp;ec=45774421';" alt="United States Air Force Footage From Usa Flag Co Air Force Military Heroes United States Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Air Force Footage From Usa Flag Co Air Force Military Heroes United States Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.goang.com/etc.clientlibs/goang/clientlibs/clientlib-goang-base/resources/images/ANG-Total-Force-Horizontal-V1-Print-Black-NoCTA.svg" data-lightbox="roadtrip" data-title="Active Prior Service Air National Guard">
+											<img class="card-img v-image ads-img " src="https://www.goang.com/etc.clientlibs/goang/clientlibs/clientlib-goang-base/resources/images/ANG-Total-Force-Horizontal-V1-Print-Black-NoCTA.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCILXlB-ydVc2Lzuv91cJfXRO-RHX7xe3uTA&amp;ec=45774421';" alt="Active Prior Service Air National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Active Prior Service Air National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2018/11/National-Guard_opt.jpg" data-lightbox="roadtrip" data-title="Art Vs Agr Vs Tr Jobs In The Guard Reserve Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2018/11/National-Guard_opt.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsR7uw2madw2WURIYpVFZdPNipUNjgvI9Ohw&amp;ec=45774421';" alt="Art Vs Agr Vs Tr Jobs In The Guard Reserve Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Art Vs Agr Vs Tr Jobs In The Guard Reserve Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/f6/f8/3af6f85c77516032fd5adf175cf14b60.jpg" data-lightbox="roadtrip" data-title="Pin On Exercises And Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/f6/f8/3af6f85c77516032fd5adf175cf14b60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ007HNiMBeQwbQIfE1tiqWtl5GvTBJgFmgA&amp;ec=45774421';" alt="Pin On Exercises And Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Exercises And Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/8b/56/9c/8b569cea02ffd6334eeed60964410c57.jpg" data-lightbox="roadtrip" data-title="Pin On Air Force Aviation Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/8b/56/9c/8b569cea02ffd6334eeed60964410c57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOrZQD_7mmbOuOtPuu8XhCZecSBPEc1xbyCw&amp;ec=45774421';" alt="Pin On Air Force Aviation Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Air Force Aviation Posters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/ec/78/68ec7821766f4e91b1614f472b255612.jpg" data-lightbox="roadtrip" data-title="Pin On 3d">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/ec/78/68ec7821766f4e91b1614f472b255612.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsgE4fTtlavTuuYyIHv9l_5ZW3Oqw7kfrcmQ&amp;ec=45774421';" alt="Pin On 3d">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 3d</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/69/ca/3869cacc043188f04afbf81b54c2fe36.jpg" data-lightbox="roadtrip" data-title="Advice On How To Approach An Effective Military To Civilian Transition Military Military Training Special Operations">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/69/ca/3869cacc043188f04afbf81b54c2fe36.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKO1dJ_QvhXJHlwYrLT1Qnsx6CLjYTOii1UQ&amp;ec=45774421';" alt="Advice On How To Approach An Effective Military To Civilian Transition Military Military Training Special Operations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Advice On How To Approach An Effective Military To Civilian Transition Military Military Training Special Operations</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-rank-list-hindi.html">Army Rank List Hindi</a></li>
+													<li class="list-group-item"><a href="/army-rank-in-the-world.html">Army Rank In The World</a></li>
+													<li class="list-group-item"><a href="/army-rank-insignia-ww1.html">Army Rank Insignia Ww1</a></li>
+													<li class="list-group-item"><a href="/army-rank-beginning-with-s.html">Army Rank Beginning With S</a></li>
+													<li class="list-group-item"><a href="/army-rank-e7.html">Army Rank E7</a></li>
+													<li class="list-group-item"><a href="/army-rank-gs-equivalent.html">Army Rank Gs Equivalent</a></li>
+													<li class="list-group-item"><a href="/army-rank-bombardier.html">Army Rank Bombardier</a></li>
+													<li class="list-group-item"><a href="/army-rank-below-captain.html">Army Rank Below Captain</a></li>
+													<li class="list-group-item"><a href="/army-rank-insignia-specialist.html">Army Rank Insignia Specialist</a></li>
+													<li class="list-group-item"><a href="/army-rank-keychains.html">Army Rank Keychains</a></li>
+													<li class="list-group-item"><a href="/army-rank-korea.html">Army Rank Korea</a></li>
+													<li class="list-group-item"><a href="/army-rank-list-in-india.html">Army Rank List In India</a></li>
+													<li class="list-group-item"><a href="/army-rank-e3.html">Army Rank E3</a></li>
+													<li class="list-group-item"><a href="/army-rank-flashcards.html">Army Rank Flashcards</a></li>
+													<li class="list-group-item"><a href="/army-rank-decals.html">Army Rank Decals</a></li>
+													<li class="list-group-item"><a href="/army-rank-british.html">Army Rank British</a></li>
+													<li class="list-group-item"><a href="/army-rank-in-the-world-list.html">Army Rank In The World List</a></li>
+													<li class="list-group-item"><a href="/army-rank-definition.html">Army Rank Definition</a></li>
+													<li class="list-group-item"><a href="/army-rank-insignia-test.html">Army Rank Insignia Test</a></li>
+													<li class="list-group-item"><a href="/army-rank-dan-word.html">Army Rank Dan Word</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>The National Guard Slept On The Floor Of The Capitol To Protect Lawmakers Ahead Of Impeachment - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "The National Guard Slept On The Floor Of The Capitol To Protect Lawmakers Ahead Of Impeachment",
+  "datePublished": "2021-02-27",
+  "image": "https://s.yimg.com/uu/api/res/1.2/8y1hRFouv.9W9vRQpTT7FA--~B/aD01NTg7dz05OTI7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/us.abcnews.go.com/422807b6ef74982e3d199ec0abe11026",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=the+national+guard+slept+on+the+floor+of+the+capitol+to+protect+lawmakers+ahead+of+impeachment",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>The National Guard Slept On The Floor Of The Capitol To Protect Lawmakers Ahead Of Impeachment</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">WASHINGTON DC JANUARY 13. Ahead of the House vote to impeach President Trump for inciting the deadly insurrection at the Capitol last week National Guard members were spotted in the hallways of the Capitol building on. The National Guard Slept On The Floor Of The Capitol To Protect Lawmakers Ahead Of Impeachment. <br>				
+			</p>
+										<a class="badge badge-dark" href="/jisc-network-status.html">jisc network status</a>
+											<a class="badge badge-info" href="/jisico-j-msfs.html">jisico j msfs</a>
+											<a class="badge badge-warning" href="/jisoo-busters.html">jisoo busters</a>
+											<a class="badge badge-secondary" href="/jis-standard.html">jis standard</a>
+											<a class="badge badge-secondary" href="/jisoo-blackpink-ig.html">jisoo blackpink ig</a>
+											<a class="badge badge-danger" href="/jisc-involve.html">jisc involve</a>
+											<a class="badge badge-danger" href="/jisoo-x-elle.html">jisoo x elle</a>
+											<a class="badge badge-success" href="/jisdor.html">jisdor</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to pay a visit to the ideal blog.  Our site provides you with hints for seeing the maximum quality video and image content, hunt and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie for you to view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.king5.com/assets/CCT/images/c107b93a-9c1e-438a-9d83-97c7b64d6e7a/c107b93a-9c1e-438a-9d83-97c7b64d6e7a_1140x641.jpg" data-lightbox="roadtrip" data-title="National Guard Troops Sleep On Capitol Floor Before Impeachment King5 Com">
+											<img class="card-img v-image ads-img " src="https://media.king5.com/assets/CCT/images/c107b93a-9c1e-438a-9d83-97c7b64d6e7a/c107b93a-9c1e-438a-9d83-97c7b64d6e7a_1140x641.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSenZU09I5mPNwBRN8DnJrn2Fg-DTS_FB9Vg';" alt="National Guard Troops Sleep On Capitol Floor Before Impeachment King5 Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Troops Sleep On Capitol Floor Before Impeachment King5 Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.imgur.com/Ti7XkdP.jpg" data-lightbox="roadtrip" data-title="Us National Guard Slept On The Floor Of The Capitol To Protect Lawmakers Ahead Of Impeachment Album On Imgur">
+											<img class="card-img v-image ads-img " src="https://i.imgur.com/Ti7XkdP.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0MrQozGXLV4XXUcTsmmBUcq0mxPYQYjZT9Q';" alt="Us National Guard Slept On The Floor Of The Capitol To Protect Lawmakers Ahead Of Impeachment Album On Imgur">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us National Guard Slept On The Floor Of The Capitol To Protect Lawmakers Ahead Of Impeachment Album On Imgur</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/uu/api/res/1.2/8y1hRFouv.9W9vRQpTT7FA--~B/aD01NTg7dz05OTI7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/us.abcnews.go.com/422807b6ef74982e3d199ec0abe11026" data-lightbox="roadtrip" data-title="Lawmakers Outraged At Images Of National Guard Sent From Capitol To Parking Garages">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/uu/api/res/1.2/8y1hRFouv.9W9vRQpTT7FA--~B/aD01NTg7dz05OTI7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/us.abcnews.go.com/422807b6ef74982e3d199ec0abe11026" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdlG9YyWHg-9UsL8VmcQxCskHbpGuQzW20jw';" alt="Lawmakers Outraged At Images Of National Guard Sent From Capitol To Parking Garages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lawmakers Outraged At Images Of National Guard Sent From Capitol To Parking Garages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/UiinOmIQGc8g6ViO9Cryiw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNi4zMTU3ODk0NzM2ODQy/https://media.zenfs.com/en/us.abcnews.go.com/b27e50034bce5253385be7c240296a88" data-lightbox="roadtrip" data-title="Lawmakers Outraged At Images Of National Guard Sent From Capitol To Parking Garages">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/UiinOmIQGc8g6ViO9Cryiw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNi4zMTU3ODk0NzM2ODQy/https://media.zenfs.com/en/us.abcnews.go.com/b27e50034bce5253385be7c240296a88" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO4JnB52e7fE6jz-CHIqi4iYE0s6kQvXtUQw';" alt="Lawmakers Outraged At Images Of National Guard Sent From Capitol To Parking Garages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lawmakers Outraged At Images Of National Guard Sent From Capitol To Parking Garages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.twincities.com/wp-content/uploads/2021/01/AP21007070281775.jpg?w=620" data-lightbox="roadtrip" data-title="A Day Of Historic Impeachment A Capitol As Armed Encampment Twin Cities">
+											<img class="card-img v-image ads-img " src="https://www.twincities.com/wp-content/uploads/2021/01/AP21007070281775.jpg?w=620" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHBvme82OYtA9NU20iUT4qLl2KiAILtbf9rg';" alt="A Day Of Historic Impeachment A Capitol As Armed Encampment Twin Cities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Day Of Historic Impeachment A Capitol As Armed Encampment Twin Cities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/os/creatr-uploaded-images/2021-01/26cc1500-5065-11eb-b7ef-8c8dcc15b5e4" data-lightbox="roadtrip" data-title="After Deadly Siege Lawmakers Ask Why Police So Outnumbered">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/os/creatr-uploaded-images/2021-01/26cc1500-5065-11eb-b7ef-8c8dcc15b5e4" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6LnvBaXwbBQFeB3U3JJGRV6BKvDzwFZp0uA';" alt="After Deadly Siege Lawmakers Ask Why Police So Outnumbered">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">After Deadly Siege Lawmakers Ask Why Police So Outnumbered</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/eb/80/91/eb80918f14722b7ba0f755e91d192518.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6LnvBaXwbBQFeB3U3JJGRV6BKvDzwFZp0uA';" alt="After Deadly Siege Lawmakers Ask Why Police So Outnumbered">
+										<div class="card-body">
+						<h3 class="h5"><b>Ahead of Wednesday mornings impeachment hearing National Guard members slept on the floor of the Capitol to protect lawmakers who just one week earlier may have been targeted for assassination by pro-Trump rioters.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>The national guard slept on the floor of the capitol to protect lawmakers ahead of impeachment</strong>. 
+								
+																	Security has been increased throughout Washington following. 
+																	Hundreds of US National Guard troops have been deployed to protect the Capitol building in Washington DC - with many of them seen sleeping on the floor there. 
+																	The troops were seen lying in the halls of Congress dressed in uniform and asleep beside their guns. 
+																	13 as lawmakers neared the second impeachment of President Donald Trump in the wake of a deadly siege by his supporters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hundreds of National Guard troops hold inside the Capitol Visitors Center to reinforce security at the Capitol in Washington Wednesday Jan. 
+																	I have pledged to every National Guard. 
+																	Now seems to have no problem walking past hundreds of National Guards dressed in full riot gear cradling their fully loaded rifles as they slept on the floor of the Capitol building. 
+																	Photos posted on social media showed the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WASHINGTON President Biden on Friday telephoned the chief of the National Guard Bureau to express dismay after troops deployed to protect his inauguration were ordered a day earlier to rest in an. 
+																	Hundreds of National Guard members gathered on the floor of the US. 
+																	I have told those who run the security at the Capitol that it can never happen again Senate Majority Leader Chuck Schumer said on the Senate floor Friday. 
+																	DC hunkers down for the night after Trumps impeachment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Since late Tuesday law enforcement has descended on Washington in great numbers including 1000 armed National Guard troops who slept inside the Capitol overnight NBC News Tom Costello. 
+																	Later on Wednesday Republican. 
+																	WASHINGTON DC - JANUARY 13. 
+																	House Appropriations Committee Chair Rosa DeLauro D-Conn and Defense Appropriations Subcommittee senior member Betty McCollum D-Minn took their plea directly to Army Secretary Ryan McCarthy. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Guard troops rest at the Capitol as workers set up barricades businesses board up and a non-scalable fence is erected outside the. 
+																	Hundreds of National Guard members were spotted throughout Wednesday cradling their rifles and riot gear as they slept on the stone floor of the Capitol building. 
+																	The high levels of security are meant to keep members of Congress safe after they may have been targeted for assassination by pro-Trump rioters a. 
+																	HOUSE Speaker Nancy Pelosi has thanked the National Guard for protecting the Capitol as 20000 soldiers were deployed and many slept on the floor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Members of the National Guard sleep in the halls of Capitol Hill as the House of Representativs convene to impeach President Donald Trump nearly a week after a. 
+																	Some rested under a bust of Abraham Lincoln and a plaque honoring the troops. 
+																	Members of the National Guard spent the night sleeping in the hallways of the Capitol as security measures were stepped up ahead of todays vote to impeach Donald Trump for a second time. 
+																	On Wednesday morning hundreds of National Guard troops slept on the stone floor of the Capitol building with their rifles and riot gear beside them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Guard troops were sent in to protect and fortify Washington DC are now sleeping on the stone floor of the US Capitol as security intensifies and the capital goes into lockdown a week out from Joe Bidens inauguration. 
+																	Capitol on January 13 2021 in Washington DC. 
+																	WASHINGTON - Hundreds of National Guard troops were pictured sleeping on the floor of the US. 
+																	Members of the National Guard sleep on the floor of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The building is where the United. 
+																	Capitol called in to help protect the area a week after President Donald Trumps supporters stormed the building in a deadly siege leaving concerns for security in the days leading up to. 
+																	The National Guard members slept were spotted. 
+																	Two key lawmakers on Thursday asked the Army to provide cots for National Guard members who have resorted to sleeping on the marble floor of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Security has been drastically stepped up after. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/.a8cjprorddHta8fX_HUTQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTQ2OS43MDYyNQ--/https://s.yimg.com/uu/api/res/1.2/MFv7FjelR899gMpD4JpujQ--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/3de7d9eac7085289b4b1cb3e6fb1e3c8" data-lightbox="roadtrip" data-title="U S Lawmakers Say Police Downplayed Threat Of Violence Before Capitol Siege">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/.a8cjprorddHta8fX_HUTQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTQ2OS43MDYyNQ--/https://s.yimg.com/uu/api/res/1.2/MFv7FjelR899gMpD4JpujQ--~B/aD01MzM7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/reuters.com/3de7d9eac7085289b4b1cb3e6fb1e3c8" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIheCsLvopVYbx-E0AA_5JBi9ICn_bSV8tVA';" alt="U S Lawmakers Say Police Downplayed Threat Of Violence Before Capitol Siege">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Lawmakers Say Police Downplayed Threat Of Violence Before Capitol Siege</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/hd/cp-video-transcode/prod/2021-01/21/600a00940da6381836e98f9a/600a00940da6381836e98f9b_o_U_v2.jpg" data-lightbox="roadtrip" data-title="Lawmakers Fume After National Guard Troops Booted From Capitol To Sleep In Garage">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/hd/cp-video-transcode/prod/2021-01/21/600a00940da6381836e98f9a/600a00940da6381836e98f9b_o_U_v2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhKaeDmJgpw7q-dOX57DzBiLMOMSBlXbYXqg';" alt="Lawmakers Fume After National Guard Troops Booted From Capitol To Sleep In Garage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lawmakers Fume After National Guard Troops Booted From Capitol To Sleep In Garage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/08/06/6f0806743a3c9aefade088e672df6d66.png" data-lightbox="roadtrip" data-title="Pin On Factcheck">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/08/06/6f0806743a3c9aefade088e672df6d66.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjXENdDlSr_x_AedKSKXnYd4wPQmWS2o4DgQ';" alt="Pin On Factcheck">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Factcheck</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gannett-cdn.com/presto/2021/01/13/USAT/238f6b7a-1a15-45c4-8104-8f7d88bc112a-VPC_REPS_VOTE_IMPEACH_GETTY_WIDE.jpg?width=660&amp;height=371&amp;fit=crop&amp;format=pjpg&amp;auto=webp" data-lightbox="roadtrip" data-title="Peter Meijer Says Congress Taking Extra Precautions After Capitol Riot">
+											<img class="card-img v-image ads-img " src="https://www.gannett-cdn.com/presto/2021/01/13/USAT/238f6b7a-1a15-45c4-8104-8f7d88bc112a-VPC_REPS_VOTE_IMPEACH_GETTY_WIDE.jpg?width=660&amp;height=371&amp;fit=crop&amp;format=pjpg&amp;auto=webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnMmBMS9NU1n9ZqaOpSDEpItnrkQcgJ-9QAQ';" alt="Peter Meijer Says Congress Taking Extra Precautions After Capitol Riot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Peter Meijer Says Congress Taking Extra Precautions After Capitol Riot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/0RzwmzIJSQCdbOuztklT6Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MC4xMjg-/https://media.zenfs.com/en/business_insider_articles_888/ee6b88b06a3d380d553534a070d8654b" data-lightbox="roadtrip" data-title="Woman Shot Dead After Armed Trump Supporters Stormed The Capitol As Lawmakers Gathered To Certify Biden S Win">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/0RzwmzIJSQCdbOuztklT6Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MC4xMjg-/https://media.zenfs.com/en/business_insider_articles_888/ee6b88b06a3d380d553534a070d8654b" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh7EY8_epZ1CvQnAu3ltJYBbvvWJOTiDLFDg';" alt="Woman Shot Dead After Armed Trump Supporters Stormed The Capitol As Lawmakers Gathered To Certify Biden S Win">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Woman Shot Dead After Armed Trump Supporters Stormed The Capitol As Lawmakers Gathered To Certify Biden S Win</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/S_FWtiHpHKO2xapV8keRWA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/g7.BAdSsq_vAPxxMd98gLg--~B/aD0xMDAwO3c9MTUwMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/people_218/f50be8667c9f5956b68080c43a7c97cb" data-lightbox="roadtrip" data-title="Several Congressmen Fought Off Capitol Rioters And Some Of Them Still Went On To Vote With Trump">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/S_FWtiHpHKO2xapV8keRWA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/g7.BAdSsq_vAPxxMd98gLg--~B/aD0xMDAwO3c9MTUwMDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/people_218/f50be8667c9f5956b68080c43a7c97cb" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_3-3FpI9RBvO5CjPQ7t9wwdes9rb5yXHPjQ';" alt="Several Congressmen Fought Off Capitol Rioters And Some Of Them Still Went On To Vote With Trump">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Several Congressmen Fought Off Capitol Rioters And Some Of Them Still Went On To Vote With Trump</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/hd/cp-video-transcode/prod/2021-01/09/5ff903040da6381b3307be4c/5ff90308f7a4f600012fff7f_1080x1080_FES_v1.jpg" data-lightbox="roadtrip" data-title="Capitol Riot Live Updates Air Force Veteran Fired After Reported Participation Apple Suspends Parler From App Store">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/hd/cp-video-transcode/prod/2021-01/09/5ff903040da6381b3307be4c/5ff90308f7a4f600012fff7f_1080x1080_FES_v1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkfHHdc9tIkXWAFyyJIdM7RJHMuafCftkSHg';" alt="Capitol Riot Live Updates Air Force Veteran Fired After Reported Participation Apple Suspends Parler From App Store">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Capitol Riot Live Updates Air Force Veteran Fired After Reported Participation Apple Suspends Parler From App Store</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/uu/api/res/1.2/ZheqjyB2mBupR9YvVw5VHw--~B/Zmk9ZmlsbDtweW9mZj0wO3c9NjQwO2g9MzYwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/hd/cp-video-transcode/prod/2021-01/07/5ff67d46f1b75b5bf1e61c74/5ff67d46f1b75b5bf1e61c75_o_U_v2.jpg" data-lightbox="roadtrip" data-title="U S Lawmakers Condemn Violent Protests At The Capitol">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/uu/api/res/1.2/ZheqjyB2mBupR9YvVw5VHw--~B/Zmk9ZmlsbDtweW9mZj0wO3c9NjQwO2g9MzYwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/hd/cp-video-transcode/prod/2021-01/07/5ff67d46f1b75b5bf1e61c74/5ff67d46f1b75b5bf1e61c75_o_U_v2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhSqTBPAMY3w0ROCmkFRE7IosxO4TsOoVCvw';" alt="U S Lawmakers Condemn Violent Protests At The Capitol">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Lawmakers Condemn Violent Protests At The Capitol</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/80/91/eb80918f14722b7ba0f755e91d192518.jpg" data-lightbox="roadtrip" data-title="Pin On Articles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/80/91/eb80918f14722b7ba0f755e91d192518.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkZkpVp26AyFmBUq0P77ZLB2kbeTt7x_xy5Q';" alt="Pin On Articles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Articles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/i5N8ZxzEoeWCZIHgEKnzyg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNQ--/https://media.zenfs.com/en-us/usa_today_news_641/112edf023c65ddbfa01a9466f1e04640" data-lightbox="roadtrip" data-title="Double Standard Black Lawmakers And Activists Decry Police Response To Attack On Us Capitol">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/i5N8ZxzEoeWCZIHgEKnzyg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNQ--/https://media.zenfs.com/en-us/usa_today_news_641/112edf023c65ddbfa01a9466f1e04640" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9B_PYnJY-fSBHr0QJSurqv5kKbSjUM6Hp5w';" alt="Double Standard Black Lawmakers And Activists Decry Police Response To Attack On Us Capitol">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Double Standard Black Lawmakers And Activists Decry Police Response To Attack On Us Capitol</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/kyZ42Ay7o07vp8PtYeAs7w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTQ3MA--/https://s.yimg.com/uu/api/res/1.2/qu51dotsX6LsbRSnA1fTEg--~B/aD0zNDU2O3c9NTE4NDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/ap.org/36af5e3e623831b4431a5893fcb19a4a" data-lightbox="roadtrip" data-title="Oregon Lawmaker Faces Outcry After State Capitol Breach">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/kyZ42Ay7o07vp8PtYeAs7w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTQ3MA--/https://s.yimg.com/uu/api/res/1.2/qu51dotsX6LsbRSnA1fTEg--~B/aD0zNDU2O3c9NTE4NDthcHBpZD15dGFjaHlvbg--/https://media.zenfs.com/en/ap.org/36af5e3e623831b4431a5893fcb19a4a" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvXJ9_eDmleTNFucp9lFey0XGUHnGj0c_-4g';" alt="Oregon Lawmaker Faces Outcry After State Capitol Breach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon Lawmaker Faces Outcry After State Capitol Breach</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.penncapital-star.com/wp-content/uploads/2020/11/DSC_3644-1024x692.jpg" data-lightbox="roadtrip" data-title="Vote Count 2020 Continuous Coverage From The Pennsylvania Capital Star Pennsylvania Capital Star">
+											<img class="card-img v-image ads-img " src="https://www.penncapital-star.com/wp-content/uploads/2020/11/DSC_3644-1024x692.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnN7IogJvnuIICJuvJJeB_7yJytiRVa_uaOA';" alt="Vote Count 2020 Continuous Coverage From The Pennsylvania Capital Star Pennsylvania Capital Star">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vote Count 2020 Continuous Coverage From The Pennsylvania Capital Star Pennsylvania Capital Star</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/uu/api/res/1.2/70k33eGM0IoQ3wP6ZovAPw--~B/Zmk9ZmlsbDtweW9mZj0wO3c9NjQwO2g9MzYwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/hd/cp-video-transcode/prod/2021-01/09/5ffa202606c4ef5feabd0e36/5ffa202b21c5340001f79160_1920x1080_FES_v1.jpg" data-lightbox="roadtrip" data-title="Watch Gop Lawmakers Refuse Masks During Capitol Riot">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/uu/api/res/1.2/70k33eGM0IoQ3wP6ZovAPw--~B/Zmk9ZmlsbDtweW9mZj0wO3c9NjQwO2g9MzYwO3NtPTE7YXBwaWQ9eXRhY2h5b24-/https://s.yimg.com/hd/cp-video-transcode/prod/2021-01/09/5ffa202606c4ef5feabd0e36/5ffa202b21c5340001f79160_1920x1080_FES_v1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJZK7Lvo_hs6nP3eFGdxZZsl3wDIo6i2t3Jw';" alt="Watch Gop Lawmakers Refuse Masks During Capitol Riot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch Gop Lawmakers Refuse Masks During Capitol Riot</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/orange-army-deer-video.html">Orange Army Deer Video</a></li>
+													<li class="list-group-item"><a href="/orange-army-lyrics.html">Orange Army Lyrics</a></li>
+													<li class="list-group-item"><a href="/orange-treasure-lirik.html">Orange Treasure Lirik</a></li>
+													<li class="list-group-item"><a href="/orange-military-ear-plugs.html">Orange Military Ear Plugs</a></li>
+													<li class="list-group-item"><a href="/orange-army-print.html">Orange Army Print</a></li>
+													<li class="list-group-item"><a href="/orange-army-suikoden.html">Orange Army Suikoden</a></li>
+													<li class="list-group-item"><a href="/orange-army-duffle-bag.html">Orange Army Duffle Bag</a></li>
+													<li class="list-group-item"><a href="/orange-army-max-verstappen.html">Orange Army Max Verstappen</a></li>
+													<li class="list-group-item"><a href="/otis-and-eric.html">Otis And Eric</a></li>
+													<li class="list-group-item"><a href="/otis-and-friends-basset-hounds.html">Otis And Friends Basset Hounds</a></li>
+													<li class="list-group-item"><a href="/otis-abgebrannt.html">Otis Abgebrannt</a></li>
+													<li class="list-group-item"><a href="/orange-army-roar.html">Orange Army Roar</a></li>
+													<li class="list-group-item"><a href="/otis-and-eleanor-speaker.html">Otis And Eleanor Speaker</a></li>
+													<li class="list-group-item"><a href="/orange-army-srh.html">Orange Army Srh</a></li>
+													<li class="list-group-item"><a href="/orange-army-ireland.html">Orange Army Ireland</a></li>
+													<li class="list-group-item"><a href="/otis-and-grey-og-7000.html">Otis And Grey Og 7000</a></li>
+													<li class="list-group-item"><a href="/otis-and-baby-halloween-costumes.html">Otis And Baby Halloween Costumes</a></li>
+													<li class="list-group-item"><a href="/otis-and-brett.html">Otis And Brett</a></li>
+													<li class="list-group-item"><a href="/otis-and-elevator.html">Otis And Elevator</a></li>
+													<li class="list-group-item"><a href="/otis-and-carrier.html">Otis And Carrier</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

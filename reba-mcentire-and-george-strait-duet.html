@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Reba Mcentire And George Strait Duet - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Reba Mcentire And George Strait Duet",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/81/06/fd/8106fd1a553241a3ac5a58a8b3a7c686.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=reba+mcentire+and+george+strait+duet",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Reba Mcentire And George Strait Duet</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">This was an incredible evening packed with some of the most outstanding talent in the industry. Reba McEntire introduced them saying Two icons who have both been named Artist of the Decade George Strait and Garth Brooks are teaming up for the first time tin honor of our dear friend Dick Clark Brooks began the performance with his song The Dance with images and videos of Clark playing on the screens behind him. She began her career in the music industry as a high school student singing in the Kiowa High School band on local radio shows with her siblings and at rodeos. <br>				
+			</p>
+										<a class="badge badge-dark" href="/army-ke-songs.html">army ke songs</a>
+											<a class="badge badge-primary" href="/army-green-mens-cargo-pants.html">army green mens cargo pants</a>
+											<a class="badge badge-secondary" href="/army-in-arts-stream.html">army in arts stream</a>
+											<a class="badge badge-primary" href="/army-games-2020-ranking.html">army games 2020 ranking</a>
+											<a class="badge badge-secondary" href="/army-goals.html">army goals</a>
+											<a class="badge badge-secondary" href="/army-guard-pay.html">army guard pay</a>
+											<a class="badge badge-danger" href="/army-jung-ke-maidan-mein-kabhi-na-aati-song.html">army jung ke maidan mein kabhi na aati song</a>
+											<a class="badge badge-warning" href="/army-free-art.html">army free art</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to visit the ideal site.  Our website gives you suggestions for seeing the highest quality video and image content, hunt and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie for you to see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e3/c0/e6/e3c0e661c47cf36d7e8fd274c50eaa7d.jpg" data-lightbox="roadtrip" data-title="Vintage George Strait Reba Mcentire Tour 2010 Shirt Vintage Etsy In 2020 George Strait Singer Tee American Vintage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e3/c0/e6/e3c0e661c47cf36d7e8fd274c50eaa7d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlUqP_rRBQnnAXPTG4WxApez-USD2FwxBxKw';" alt="Vintage George Strait Reba Mcentire Tour 2010 Shirt Vintage Etsy In 2020 George Strait Singer Tee American Vintage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vintage George Strait Reba Mcentire Tour 2010 Shirt Vintage Etsy In 2020 George Strait Singer Tee American Vintage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/9f/f9/c69ff90a7f7c0d500655cd1ca0fb1410.jpg" data-lightbox="roadtrip" data-title="So That S What It S Like To Perform With A Legend Lovely Kelseaballerini With Reba Mcentire On The Cmaa Country Music Singers Reba Mcentire Kelsea Ballerini">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/9f/f9/c69ff90a7f7c0d500655cd1ca0fb1410.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe3T-QvJ60Gl0bAVJPyL8WG2OYjR2JbafALA';" alt="So That S What It S Like To Perform With A Legend Lovely Kelseaballerini With Reba Mcentire On The Cmaa Country Music Singers Reba Mcentire Kelsea Ballerini">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">So That S What It S Like To Perform With A Legend Lovely Kelseaballerini With Reba Mcentire On The Cmaa Country Music Singers Reba Mcentire Kelsea Ballerini</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/a2/0a/9ba20aeb8df47b101f885e0615ed52d7.jpg" data-lightbox="roadtrip" data-title="Queen Reebs Country Music Academy Of Country Music Singer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/a2/0a/9ba20aeb8df47b101f885e0615ed52d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQIDlCOvEwMCpzIa3NlLpYudjxY7EbH4wGzw';" alt="Queen Reebs Country Music Academy Of Country Music Singer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Queen Reebs Country Music Academy Of Country Music Singer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/6e/c5/f96ec58cc195f58152fdc4625dc55e83.jpg" data-lightbox="roadtrip" data-title="Reba Mcentire S Older Brother Pake Mcentire Suffers Untimely Stroke Reba Mcentire Country Music Videos Famous Singers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/6e/c5/f96ec58cc195f58152fdc4625dc55e83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEmQBBG_S-h5h4_FaKG5YlXXxkpMgsU6bv1w';" alt="Reba Mcentire S Older Brother Pake Mcentire Suffers Untimely Stroke Reba Mcentire Country Music Videos Famous Singers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire S Older Brother Pake Mcentire Suffers Untimely Stroke Reba Mcentire Country Music Videos Famous Singers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/9f/45/c89f45834c260ea70f1c37c905d1d600.jpg" data-lightbox="roadtrip" data-title="Had To Include This Because You Never Know What Country Stars You Will Run Into In Nashville Bffnashville Country Music Best Country Singers Country Singers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/9f/45/c89f45834c260ea70f1c37c905d1d600.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM7OqmFC8gL87QzbUr8EVrrUIEDACr5qqmfQ';" alt="Had To Include This Because You Never Know What Country Stars You Will Run Into In Nashville Bffnashville Country Music Best Country Singers Country Singers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Had To Include This Because You Never Know What Country Stars You Will Run Into In Nashville Bffnashville Country Music Best Country Singers Country Singers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/8b/44/3d8b4469f15a20a77dea6745210e56e0.jpg" data-lightbox="roadtrip" data-title="Reba Mcentire And Still Live Youtube My Fav Song Country Music Videos Singer Country Music Hits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/8b/44/3d8b4469f15a20a77dea6745210e56e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcEUypG99ax11kisi0tNN-SNGGHKdofEYRWQ';" alt="Reba Mcentire And Still Live Youtube My Fav Song Country Music Videos Singer Country Music Hits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire And Still Live Youtube My Fav Song Country Music Videos Singer Country Music Hits</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9b/a2/0a/9ba20aeb8df47b101f885e0615ed52d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcEUypG99ax11kisi0tNN-SNGGHKdofEYRWQ';" alt="Reba Mcentire And Still Live Youtube My Fav Song Country Music Videos Singer Country Music Hits">
+										<div class="card-body">
+						<h3 class="h5"><b>All his exes may live in Texas but Straits singing about the one who got away in the ballad.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Reba mcentire and george strait duet</strong>. 
+								
+																	While a sophomore in college at Southeastern Oklahoma State University she performed the National Anthem at the National Finals Rodeo in. 
+																	HttpsBrooksAndDunnlnktolistenYD Watch more videos by B. 
+																	Merle Haggard did this version in 1975. 
+																	Straits narrator longs after an. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It was released September 18 2007by MCA Nashville Records and September 24 2007 by Humphead Records in the UK and was produced by Tony Brown Dann Huff McEntire and Justin Timberlake. 
+																	It may be hard to imagine Reba McEntire singing about Texas. 
+																	C 1992 MCA Nashville. 
+																	Music video by Reba McEntire Vince Gill performing The Heart Wont Lie. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 hit for George Strait. 
+																	A preview of the George Friends Variety Show. 
+																	George Strait will headline a January 19 pre-inaugural bash for president-elect George W. 
+																	It is not live as it turn out. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bush at the Marriott Wardman Park in Washington DC reports the New York Post. 
+																	Do you remember what it was. 
+																	Watch the official music video for Cowgirls Dont Cry by Brooks DunnListen to Brooks Dunn. 
+																	Lee Ann Womack Reba McEntire George Strait Austin TX 1142011. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	George Strait Reba McEntire Lee Ann Womack Sing Out for Nashville Ronnie Dunn Melissa Peterman Guest at All-Star Concert by Edward Morris 9132010 George Strait Reba McEntire and Lee Ann. 
+																	But the Does He Love You singer was in line to sing Does Fort Worth Ever Cross Your Mind Ultimately the song went to George Strait instead. 
+																	Reba Nell McEntire born March 28 1955 is an American country singer songwriter and actress. 
+																	Womack performed all her hits including I May Hate Myself In The. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Duets was McEntires second album to appear in the new millennium decade and one of her most successful. 
+																	This is a six pack of Right or Wrong. 
+																	Lee Ann Womack opened and she was terrific. 
+																	Reba RebaMcEntire GeorgeStrait Rebasongs How w. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reba McEntire passed on a song that became a big No. 
+																	George Strait Reba McEntire and Lee Ann Womack at Pepsi Center April 1 st. 
+																	This was my second time seeing her in concert and shes quickly becoming one of my favorite female vocalists. 
+																	The Academy of Country Music hosted its glitzy Las Vegas-based annual awards ceremony back in April. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	6 western Swing versions of this 1929 classic. 
+																	Reba in San Antonio at the Alamodome -Why havent i heard from you. 
+																	Duets is the twenty-seventh studio album by American country music singer Reba McEntire. 
+																	Recorded by Mark Brooks using photo camera with 720p video mode. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After George Straits Does Fort Worth Ever Cross Your Mind album came out it was learned that Reba McEntire had been offered Does Fort Worth Ever Cross Your Mind before it had been pitched to. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/18/01/f6/1801f6a9cc14789cdfae21f0c33f91c1.jpg" data-lightbox="roadtrip" data-title="Reba Mcentire And Vince Gill The Heart Won T Lie In 2020 Vince Gill Reba Mcentire Country Music Videos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/18/01/f6/1801f6a9cc14789cdfae21f0c33f91c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHM2S9bsXSIHiKjlK_eSZGhDRYFssq-bQp2Q';" alt="Reba Mcentire And Vince Gill The Heart Won T Lie In 2020 Vince Gill Reba Mcentire Country Music Videos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire And Vince Gill The Heart Won T Lie In 2020 Vince Gill Reba Mcentire Country Music Videos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/1c/ed/da1cedf7e57f538734efbb8517c238a6.jpg" data-lightbox="roadtrip" data-title="I Love Them Celebrity Couples Country Singers Loretta Lynn">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/1c/ed/da1cedf7e57f538734efbb8517c238a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpt78Aizd1z8A1mmXxuGcQVI0-MCKIFxviBA';" alt="I Love Them Celebrity Couples Country Singers Loretta Lynn">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Love Them Celebrity Couples Country Singers Loretta Lynn</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/06/fd/8106fd1a553241a3ac5a58a8b3a7c686.jpg" data-lightbox="roadtrip" data-title="Pin By Kim Hutson On Reba Mcentire Country Superstar Celebrity Fights Reba Mcentire Singer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/06/fd/8106fd1a553241a3ac5a58a8b3a7c686.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ6_6WWgJZg8JpMq-hBRimxfeAXGfdIpVI3g';" alt="Pin By Kim Hutson On Reba Mcentire Country Superstar Celebrity Fights Reba Mcentire Singer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kim Hutson On Reba Mcentire Country Superstar Celebrity Fights Reba Mcentire Singer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/58/22/bf58225998f08e16587397d8546fe59f.jpg" data-lightbox="roadtrip" data-title="Pin By Ian Collins On Reba Mcentire Country Female Singers Country Music Country Singers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/58/22/bf58225998f08e16587397d8546fe59f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-2jmASY0WUjkDPCGLI_jNJaY0y1I2eCdLiw';" alt="Pin By Ian Collins On Reba Mcentire Country Female Singers Country Music Country Singers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ian Collins On Reba Mcentire Country Female Singers Country Music Country Singers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/9a/0c/7b9a0c8ae3b2976295153cc01a174ad7.jpg" data-lightbox="roadtrip" data-title="Acm Awards Brothers Osborne Miranda Lambert George Strait To Perform George Strait Miranda Lambert Brothers Osborne">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/9a/0c/7b9a0c8ae3b2976295153cc01a174ad7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYmOrjwLwMwA3GuwtsL9-pYhBeJfNlcGAomQ';" alt="Acm Awards Brothers Osborne Miranda Lambert George Strait To Perform George Strait Miranda Lambert Brothers Osborne">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Acm Awards Brothers Osborne Miranda Lambert George Strait To Perform George Strait Miranda Lambert Brothers Osborne</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/2e/1a/ca2e1ac983a0d101179b8cb22dc03bb0.jpg" data-lightbox="roadtrip" data-title="Trisha Yearwood You Lie Live Tribute To Reba Mcentire Video Reba Mcentire Trisha Yearwood Country Music Videos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/2e/1a/ca2e1ac983a0d101179b8cb22dc03bb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGVAZjEX4MRHuesMacfBZVq5pWrOsFp31R4Q';" alt="Trisha Yearwood You Lie Live Tribute To Reba Mcentire Video Reba Mcentire Trisha Yearwood Country Music Videos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trisha Yearwood You Lie Live Tribute To Reba Mcentire Video Reba Mcentire Trisha Yearwood Country Music Videos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/be/2c/e9be2c16ab964f71fb396bb7e6fa949e.jpg" data-lightbox="roadtrip" data-title="Pin By Jamie Hulse On Reba Mcentire Videos Reba Mcentire Carrie Underwood Photos Country Music Videos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/be/2c/e9be2c16ab964f71fb396bb7e6fa949e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLvecFAS12c4UEMlYM8Ame4AyzpUGIIwG7KA';" alt="Pin By Jamie Hulse On Reba Mcentire Videos Reba Mcentire Carrie Underwood Photos Country Music Videos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jamie Hulse On Reba Mcentire Videos Reba Mcentire Carrie Underwood Photos Country Music Videos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6e/be/0b/6ebe0b3cc6bbdc408ef77bd19ac8e3a2.jpg" data-lightbox="roadtrip" data-title="After A Personal And Professional Earthquake What S Next For Reba Mcentire Reba Mcentire Brooks Dunn Country Music Stars">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6e/be/0b/6ebe0b3cc6bbdc408ef77bd19ac8e3a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRXYcNu7vipBsXWSOuPzxFqM24TIMRePqGsg';" alt="After A Personal And Professional Earthquake What S Next For Reba Mcentire Reba Mcentire Brooks Dunn Country Music Stars">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">After A Personal And Professional Earthquake What S Next For Reba Mcentire Reba Mcentire Brooks Dunn Country Music Stars</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/53/db/b453db9d5961053516f7487dceb15cab.jpg" data-lightbox="roadtrip" data-title="Reba And Shelby Favorite Celebrities Country Music Queen Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/53/db/b453db9d5961053516f7487dceb15cab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQckPLU1atM2UWLQjTKrcSFvCcIeVA6zQgBw';" alt="Reba And Shelby Favorite Celebrities Country Music Queen Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba And Shelby Favorite Celebrities Country Music Queen Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/3a/30/593a3083e01a4dc112e0486a08e30f2f.png" data-lightbox="roadtrip" data-title="Reba Mcentire If You See Him If You See Her Official Music Video Youtube Youtube Videos Music Reba Mcentire Country Music Videos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/3a/30/593a3083e01a4dc112e0486a08e30f2f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNPD2DycJnXuv3eoquSta4fWh_hL0WWFN8LQ';" alt="Reba Mcentire If You See Him If You See Her Official Music Video Youtube Youtube Videos Music Reba Mcentire Country Music Videos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire If You See Him If You See Her Official Music Video Youtube Youtube Videos Music Reba Mcentire Country Music Videos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/06/1c/6d/061c6d34add5465f4862cebbadc11a02.jpg" data-lightbox="roadtrip" data-title="Pin On Country Music Singers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/06/1c/6d/061c6d34add5465f4862cebbadc11a02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuPqOHPUX41XYntdM1TuIlpQ5N-VzQVDBCXg';" alt="Pin On Country Music Singers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Country Music Singers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/02/dd/3b02ddb3801f18c31cedf893fa278e80.jpg" data-lightbox="roadtrip" data-title="George Strait And Miranda Lambert Flashback To Run At Acm Awards Miranda Lambert George Strait Miranda">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/02/dd/3b02ddb3801f18c31cedf893fa278e80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuCQ4M5bfkqALI1rpb7ihESfmTkm2DOTROSw';" alt="George Strait And Miranda Lambert Flashback To Run At Acm Awards Miranda Lambert George Strait Miranda">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">George Strait And Miranda Lambert Flashback To Run At Acm Awards Miranda Lambert George Strait Miranda</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/29/67/ef29679289028cbb03d675461c2c17e9.jpg" data-lightbox="roadtrip" data-title="Alan Jackson Honors Legendary Hank Williams With Awe Inspiring Lovesick Blues Alan Jackson Hank Williams Lovesick Blues">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/29/67/ef29679289028cbb03d675461c2c17e9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tIg29X6lEOLnkgEaxwUXyDLX3OO66SvZ8w';" alt="Alan Jackson Honors Legendary Hank Williams With Awe Inspiring Lovesick Blues Alan Jackson Hank Williams Lovesick Blues">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alan Jackson Honors Legendary Hank Williams With Awe Inspiring Lovesick Blues Alan Jackson Hank Williams Lovesick Blues</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/national-guard-wi-covid-testing.html">National Guard Wi Covid Testing</a></li>
+													<li class="list-group-item"><a href="/national-guard-washington-benefits.html">National Guard Washington Benefits</a></li>
+													<li class="list-group-item"><a href="/national-guard-soldiers-dc.html">National Guard Soldiers Dc</a></li>
+													<li class="list-group-item"><a href="/national-guard-soldiers-helicopter-crash.html">National Guard Soldiers Helicopter Crash</a></li>
+													<li class="list-group-item"><a href="/national-guard-unit.html">National Guard Unit</a></li>
+													<li class="list-group-item"><a href="/national-guard-used-as-police.html">National Guard Used As Police</a></li>
+													<li class="list-group-item"><a href="/national-guard-troops-evicted-from-hotel.html">National Guard Troops Evicted From Hotel</a></li>
+													<li class="list-group-item"><a href="/national-guard-troops-at-capitol.html">National Guard Troops At Capitol</a></li>
+													<li class="list-group-item"><a href="/national-guard-troops-riots.html">National Guard Troops Riots</a></li>
+													<li class="list-group-item"><a href="/national-guard-troops-can-lawfully-be-used-following-instances-of.html">National Guard Troops Can Lawfully Be Used Following Instances Of</a></li>
+													<li class="list-group-item"><a href="/national-soldiers-home.html">National Soldiers Home</a></li>
+													<li class="list-group-item"><a href="/national-guard-soldier-of-the-year-competition.html">National Guard Soldier Of The Year Competition</a></li>
+													<li class="list-group-item"><a href="/national-guard-training-yard-x01.html">National Guard Training Yard X01</a></li>
+													<li class="list-group-item"><a href="/national-soldier-factory-gettysburg-pa.html">National Soldier Factory Gettysburg Pa</a></li>
+													<li class="list-group-item"><a href="/national-soldiers-and-sailors-database.html">National Soldiers And Sailors Database</a></li>
+													<li class="list-group-item"><a href="/national-guard-wisconsin-recruiter.html">National Guard Wisconsin Recruiter</a></li>
+													<li class="list-group-item"><a href="/national-guard-soldiers-sworn-in-as-us-marshals.html">National Guard Soldiers Sworn In As Us Marshals</a></li>
+													<li class="list-group-item"><a href="/national-guard-to-active-duty-warrant-officer.html">National Guard To Active Duty Warrant Officer</a></li>
+													<li class="list-group-item"><a href="/national-soldier-month.html">National Soldier Month</a></li>
+													<li class="list-group-item"><a href="/national-guard-uniform-2019.html">National Guard Uniform 2019</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

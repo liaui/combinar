@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army In Kabul - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army In Kabul",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/03/1a/a6/031aa6a1dc20f52b8f33c70079bf6183.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+in+kabul",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army In Kabul</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The United States on Thursday announced new sanctions against Myanmar also known as Burma more than a week after the countrys military overthrew the democratically elected government. Army General Scott Miller assumed command of NATO forces in Afghanistan on Sunday arriving as Washington faces growing questions over its strategy to force the Taliban into. New satellite network for the US Troops in Afghanistan TS2 SPACE has completed the tender documentation for JCC-IA and a satellite network project for the Marines new bases in Afghanistan. <br>				
+			</p>
+										<a class="badge badge-info" href="/us-army-news-germany.html">us army news germany</a>
+											<a class="badge badge-warning" href="/us-army-news-syria.html">us army news syria</a>
+											<a class="badge badge-info" href="/us-army-ocp-rank-patches.html">us army ocp rank patches</a>
+											<a class="badge badge-dark" href="/us-army-nco-academy.html">us army nco academy</a>
+											<a class="badge badge-secondary" href="/us-army-ranger-beret-flash.html">us army ranger beret flash</a>
+											<a class="badge badge-success" href="/us-army-ncoer-achieves-bullets.html">us army ncoer achieves bullets</a>
+											<a class="badge badge-warning" href="/us-army-ncoer-support-form.html">us army ncoer support form</a>
+											<a class="badge badge-warning" href="/us-army-pictures-and-videos.html">us army pictures and videos</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to visit the right site.  Our website provides you with suggestions for seeing the highest quality video and image content, search and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie for you to see.  You can also bring about supporting this site by sharing videos and graphics that you enjoy on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/03/90/830390c0eae444f545bec778acb11007.jpg" data-lightbox="roadtrip" data-title="Freedom Fighter A Tribute To Women In The Military Military Heroes Combat Medic Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/03/90/830390c0eae444f545bec778acb11007.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtiGSxsa8pUEkEM5GcTx_izc6YAW_rcPBvBA';" alt="Freedom Fighter A Tribute To Women In The Military Military Heroes Combat Medic Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Freedom Fighter A Tribute To Women In The Military Military Heroes Combat Medic Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/11/8c/86118cad74bb555272adfdceb64f5b69.jpg" data-lightbox="roadtrip" data-title="Soldiers Us Afghanistan Afghanistan War Military Veterans Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/11/8c/86118cad74bb555272adfdceb64f5b69.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiPKFxy3I9cRjh0I3sI2wTTW-enk856dvn8A';" alt="Soldiers Us Afghanistan Afghanistan War Military Veterans Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldiers Us Afghanistan Afghanistan War Military Veterans Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/86/21/06862172d0fac0faaf4bb1096c50a1c6.jpg" data-lightbox="roadtrip" data-title="Afghanistan I Don T Know If It Says War Is Fun Or A Uniform Makes Us All The Same Afghanistan War Afghanistan Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/86/21/06862172d0fac0faaf4bb1096c50a1c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcHdctLn6XRf5nHbyTQkdGH0VQ2j_HSaBS3g';" alt="Afghanistan I Don T Know If It Says War Is Fun Or A Uniform Makes Us All The Same Afghanistan War Afghanistan Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afghanistan I Don T Know If It Says War Is Fun Or A Uniform Makes Us All The Same Afghanistan War Afghanistan Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/f3/67/edf36788351c4832ce0a26033d628529.jpg" data-lightbox="roadtrip" data-title="U S Army 2nd Lt Jeffery Russell Greets Afghan Children In The Village Sader Kheyl Afghanistan March 17 2012 Russell Is A Pl Military Heroes Human Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/f3/67/edf36788351c4832ce0a26033d628529.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsQ3WYAGHcVizkHnErgS7XizuZrBddKuvl7g';" alt="U S Army 2nd Lt Jeffery Russell Greets Afghan Children In The Village Sader Kheyl Afghanistan March 17 2012 Russell Is A Pl Military Heroes Human Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army 2nd Lt Jeffery Russell Greets Afghan Children In The Village Sader Kheyl Afghanistan March 17 2012 Russell Is A Pl Military Heroes Human Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/0f/cf/7b0fcf7d52fd70affd8a8184c4f0dde2.jpg" data-lightbox="roadtrip" data-title="Pin On Us Army Mp">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/0f/cf/7b0fcf7d52fd70affd8a8184c4f0dde2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYCNCkcr_CEqTCiAtTJv5cBSmsldqmT8oIsg';" alt="Pin On Us Army Mp">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Us Army Mp</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/fe/aa/b1feaa6b21f1e129cd6f7df6b5232ae9.jpg" data-lightbox="roadtrip" data-title="U S Army Special Forces Soldier Pictured While On Patrol In Uruzgan Afghanistan 2010 Military Soldiers Special Forces Military Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/fe/aa/b1feaa6b21f1e129cd6f7df6b5232ae9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS01-oSDTx6MEWwKju1TzIUfbyrpn2QYF6Zhw';" alt="U S Army Special Forces Soldier Pictured While On Patrol In Uruzgan Afghanistan 2010 Military Soldiers Special Forces Military Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Special Forces Soldier Pictured While On Patrol In Uruzgan Afghanistan 2010 Military Soldiers Special Forces Military Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/65/da/66/65da66cd4c9b7aca590f7c6527deb42e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS01-oSDTx6MEWwKju1TzIUfbyrpn2QYF6Zhw';" alt="U S Army Special Forces Soldier Pictured While On Patrol In Uruzgan Afghanistan 2010 Military Soldiers Special Forces Military Special Forces">
+										<div class="card-body">
+						<h3 class="h5"><b>FOB Delaram is a United States military base in Afghanistan.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army in kabul</strong>. 
+								
+																	The government contract concerns establishing and maintaining full communication in new locations for two years for all soldiers stationed there. 
+																	US soldier and 16-year-old charged in the murder of US Army Corporal. 
+																	A day on the job with Kabuls crime scene investigators. 
+																	It is actually the Forward Operating Base of the United States Marine Corps in Afghanistan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The firing of the howitzer is the last test after being refurbished in Afghanistan. 
+																	The United States invasion of Afghanistan occurred after the September 11 attacks in late 2001 and was supported by close US allies. 
+																	Under a February 2020 deal US forces are to leave Afghanistan by May 2021 in exchange for counterterrorism guarantees. 
+																	A free inside look at company reviews and salaries posted anonymously by employees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	38 US Army reviews in Kabul Afghanistan. 
+																	In Afghanistans Delaram District. 
+																	Bases that closed are located in Helmand Uruzgan Paktika and Laghman provinces in southern and eastern Afghanistan. 
+																	By clicking Create Account and Subscribe you agree to us creating an account for you and subscribing you to our newsletter in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lennon is assigned to the NATO Training Mission-Afghanistan at Camp Eggers in Kabul. 
+																	The latest news and information from the US. 
+																	Tosin Femi Olasemo 37 pretended to be American Captain Morgan Travis. 
+																	US President Joe Biden has signaled in his first visit to Pentagon as commander-in-chief that he would extend the US military presence in Afghanistan beyond the May 01 deadline set in the US-Taliban peace deal signed on February 29 2020 the Washington Times reported. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The conflict is also known as the US war in Afghanistan. 
+																	Regional Command South includes the provinces of Daykundi Kandahar Uruzgan and Zabul. 
+																	White House eyes ways to speed up visas for foreign interpreters stranded in war zones Military Times 1400 9-Feb. 
+																	Army Chief Warrant Officer Michael Lennon pulls the lanyard to fire a D-30 howitzer during a test at the Kabul Military Training Center in Kabul Afghanistan on Jan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army covering the Americas Middle East Europe Asia and Pacific and more. 
+																	KABUL Reuters - An Afghan peace ministry official suffered light injuries in a bomb blast in the capital Kabul on Monday police said the latest in a recent series of attacks on civilian targets. 
+																	Afghan media outlet Tolo reported the five US. 
+																	And Afghan forces came under attack in eastern Afghanistan on Saturday officials said in Kabul as they launched investigations into what the New York Times described as a deadly shootout. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	KABUL Reuters - US. 
+																	Delivering his speech beside US Vice President Kamala Harris and Secretary. 
+																	Italian Armed Forces are also stationed at Resolute Support Headquarters in Kabul where Italian Army Lieutenant General Nicola Zanelli holds the position of Deputy Commander Resolute Support further emphasizing the importance of Italian military contributions in Afghanistan. 
+																	US soldier charged with planning attack on 911 memorial. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The mayor of Kabul trying to find normality amid the ruins of. 
+																	Its public aims were to dismantle al-Qaeda and deny it a safe base of operations in Afghanistan by removing the Taliban from power. 
+																	Us Army in Afghanistan kabul. 
+																	This FOB in Afghanistan is located along the 2000 km. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kandahar Airfield serves as the headquarters for RC-South which is commanded by the United States Armed Forces. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/1a/a6/031aa6a1dc20f52b8f33c70079bf6183.jpg" data-lightbox="roadtrip" data-title="Iraq And Afghanistan Have Officially Become Vietnam 2 0 Afghanistan Platoon Refugee Crisis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/1a/a6/031aa6a1dc20f52b8f33c70079bf6183.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpNMoGUkeA4ovRuL9VmZiKUdMqQWBCMPAMeA';" alt="Iraq And Afghanistan Have Officially Become Vietnam 2 0 Afghanistan Platoon Refugee Crisis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iraq And Afghanistan Have Officially Become Vietnam 2 0 Afghanistan Platoon Refugee Crisis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/40/e0/7a40e0f5dccdc8fd180160d1abac10ea.jpg" data-lightbox="roadtrip" data-title="T U S Special Forces Soldiers Attached To Combined Joint Special Operations Task Force Afghanistan Us Special Forces Special Forces Military Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/40/e0/7a40e0f5dccdc8fd180160d1abac10ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTcKgdPTZcV7PeC7k_whh51XWzJdoOrD8WxA';" alt="T U S Special Forces Soldiers Attached To Combined Joint Special Operations Task Force Afghanistan Us Special Forces Special Forces Military Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">T U S Special Forces Soldiers Attached To Combined Joint Special Operations Task Force Afghanistan Us Special Forces Special Forces Military Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/72/a3/7a72a33d16ef13de1aa0cf6117968b53.jpg" data-lightbox="roadtrip" data-title="Pin On America S True Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/72/a3/7a72a33d16ef13de1aa0cf6117968b53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2lbGoqN3M9freebywssCTDfz3OQM0lwajpA';" alt="Pin On America S True Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On America S True Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/83/c7/0d83c798d11530d6abfbd32f6a9646d7.jpg" data-lightbox="roadtrip" data-title="100 Images From De Afghanistan Day 70 Jour 70 Canadian Military Canadian Army Canadian Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/83/c7/0d83c798d11530d6abfbd32f6a9646d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlxQzOFmYZiZvGVhtfbrjOsIZwh2xk7R7YUg';" alt="100 Images From De Afghanistan Day 70 Jour 70 Canadian Military Canadian Army Canadian Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Images From De Afghanistan Day 70 Jour 70 Canadian Military Canadian Army Canadian Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/3d/9e/793d9e9378962f1cdc06cffe78961222.jpg" data-lightbox="roadtrip" data-title="Pin On Take And Love A Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/3d/9e/793d9e9378962f1cdc06cffe78961222.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt-n0Ro2zniMqW9VOS8QJcED3udYJOVbNNqA';" alt="Pin On Take And Love A Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Take And Love A Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/83/42/7b/83427b373e67482a0f078daf3f9fdbcf.jpg" data-lightbox="roadtrip" data-title="Usaf Combat Control On Instagram Cct On Deployment In Afghanistan Us Army Soldier Us Army Infantry Army Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/83/42/7b/83427b373e67482a0f078daf3f9fdbcf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLGSzd_5TwUyKScvl5OHm3Ay3kkeULVo8T9g';" alt="Usaf Combat Control On Instagram Cct On Deployment In Afghanistan Us Army Soldier Us Army Infantry Army Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaf Combat Control On Instagram Cct On Deployment In Afghanistan Us Army Soldier Us Army Infantry Army Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/da/66/65da66cd4c9b7aca590f7c6527deb42e.jpg" data-lightbox="roadtrip" data-title="Themess Forums Powerful Images Army Soldier Afghanistan War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/da/66/65da66cd4c9b7aca590f7c6527deb42e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX4yqaGDUfGv0B2AUR92gWO5Yt1jbAEeu67A';" alt="Themess Forums Powerful Images Army Soldier Afghanistan War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Themess Forums Powerful Images Army Soldier Afghanistan War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/39/56/c03956f00dad87a929271cf385f0a8a8.jpg" data-lightbox="roadtrip" data-title="Us Army Green Berets In Afghanistan 640x640 Army Green Beret Special Forces Green Beret">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/39/56/c03956f00dad87a929271cf385f0a8a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBcDk_WcNVqXf0zelznrzpESmwtS1Ed_Jhcw';" alt="Us Army Green Berets In Afghanistan 640x640 Army Green Beret Special Forces Green Beret">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Green Berets In Afghanistan 640x640 Army Green Beret Special Forces Green Beret</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/d8/16/69d81617181989011d3f01f8cefc0fe1.jpg" data-lightbox="roadtrip" data-title="Us Army Green Berets In Afghanistan Army Green Beret Military Special Forces Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/d8/16/69d81617181989011d3f01f8cefc0fe1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfJ9ZQ_6cSwDWnBBX1BImTjLd-MdEKnm8GCA';" alt="Us Army Green Berets In Afghanistan Army Green Beret Military Special Forces Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Green Berets In Afghanistan Army Green Beret Military Special Forces Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/2c/21/022c21560145dc181d3065d9dffe33a4.jpg" data-lightbox="roadtrip" data-title="Pin By R M On Heroes Military Photography Afghanistan War Military Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/2c/21/022c21560145dc181d3065d9dffe33a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeWi2BzCLtjWrQ6hyrCe_WOuOAnBgTSJ8wig';" alt="Pin By R M On Heroes Military Photography Afghanistan War Military Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By R M On Heroes Military Photography Afghanistan War Military Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/9d/42/dc9d422a7bcdb89890c3f07f9b77493b.jpg" data-lightbox="roadtrip" data-title="Far From Family Us Troops At Kabul Nato Base Celebrate Thanksgiving Celebrities Kabul Army Sergeant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/9d/42/dc9d422a7bcdb89890c3f07f9b77493b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsqLa0EFQ6zFDbdULgDiiHPFXAElR0gZedEw';" alt="Far From Family Us Troops At Kabul Nato Base Celebrate Thanksgiving Celebrities Kabul Army Sergeant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Far From Family Us Troops At Kabul Nato Base Celebrate Thanksgiving Celebrities Kabul Army Sergeant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/ba/fd/1cbafdae11650a1a40f10585498ccffe.jpg" data-lightbox="roadtrip" data-title="Afghanistan Military American Soldiers Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/ba/fd/1cbafdae11650a1a40f10585498ccffe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN6becPIbvFsVTF9sW9ZsT-Hh9f6UyfV3kHg';" alt="Afghanistan Military American Soldiers Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afghanistan Military American Soldiers Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/a5/1e/3aa51e8b697276e3eaddae501a143af4.jpg" data-lightbox="roadtrip" data-title="A Female 82nd Airborne Medic In Afghanistan Female Soldier American Soldiers Engagement Team">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/a5/1e/3aa51e8b697276e3eaddae501a143af4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8jpflUp7JD2ac_81LlWrxi9mbL5QVjluR0A';" alt="A Female 82nd Airborne Medic In Afghanistan Female Soldier American Soldiers Engagement Team">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Female 82nd Airborne Medic In Afghanistan Female Soldier American Soldiers Engagement Team</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/maryland-national-guard-military-police.html">Maryland National Guard Military Police</a></li>
+													<li class="list-group-item"><a href="/mango-live-mod.html">Mango Live Mod</a></li>
+													<li class="list-group-item"><a href="/mang-engking.html">Mang Engking</a></li>
+													<li class="list-group-item"><a href="/menang-ceme.html">Menang Ceme</a></li>
+													<li class="list-group-item"><a href="/mango-live.html">Mango Live</a></li>
+													<li class="list-group-item"><a href="/mang-engking-bekasi.html">Mang Engking Bekasi</a></li>
+													<li class="list-group-item"><a href="/menang-diskualifikasi.html">Menang Diskualifikasi</a></li>
+													<li class="list-group-item"><a href="/mangaloee.html">Mangaloee</a></li>
+													<li class="list-group-item"><a href="/menang-iphone-shopee.html">Menang Iphone Shopee</a></li>
+													<li class="list-group-item"><a href="/menang-hp-di-shopee.html">Menang Hp Di Shopee</a></li>
+													<li class="list-group-item"><a href="/mango-live-twitter.html">Mango Live Twitter</a></li>
+													<li class="list-group-item"><a href="/maryland-army-national-guard-official-website.html">Maryland Army National Guard Official Website</a></li>
+													<li class="list-group-item"><a href="/manfaat-gamat-nge.html">Manfaat Gamat Nge</a></li>
+													<li class="list-group-item"><a href="/mcghee-tyson-arrivals-and-departures.html">Mcghee Tyson Arrivals And Departures</a></li>
+													<li class="list-group-item"><a href="/mang-engking-depok.html">Mang Engking Depok</a></li>
+													<li class="list-group-item"><a href="/massachusetts-national-guard-military-records.html">Massachusetts National Guard Military Records</a></li>
+													<li class="list-group-item"><a href="/mang-uus.html">Mang Uus</a></li>
+													<li class="list-group-item"><a href="/mang-kabayan-surabaya.html">Mang Kabayan Surabaya</a></li>
+													<li class="list-group-item"><a href="/mcentire-and-dilello.html">Mcentire And Dilello</a></li>
+													<li class="list-group-item"><a href="/mang-jana.html">Mang Jana</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

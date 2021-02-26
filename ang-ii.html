@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ang Ii - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ang Ii",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/25/2c/ee/252cee3fe4c65c7ad92ed7645e48d489.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ang+ii",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ang Ii</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In mammals losartan and PD123319 are AT1 and AT2 receptor antagonists respectively but these pharmacological blockers are not effective in other vertebrates. Angiotensin II Ang II is the active peptide of the renin-angiotensin system RAS. ACE2 angiotensin-converting enzyme 2 PRCP prolylcarboxypeptidase and POP prolyloligopeptidase. <br>				
+			</p>
+										<a class="badge badge-success" href="/army-ranger-art.html">army ranger art</a>
+											<a class="badge badge-info" href="/army-painting-pics.html">army painting pics</a>
+											<a class="badge badge-danger" href="/army-paling-cantik.html">army paling cantik</a>
+											<a class="badge badge-secondary" href="/army-navy-ranking.html">army navy ranking</a>
+											<a class="badge badge-dark" href="/army-ranger-books.html">army ranger books</a>
+											<a class="badge badge-info" href="/army-operational-art.html">army operational art</a>
+											<a class="badge badge-secondary" href="/army-orange-book.html">army orange book</a>
+											<a class="badge badge-dark" href="/army-orange-team.html">army orange team</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to visit the right site.  Our website provides you with suggestions for viewing the highest quality video and picture content, search and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you view.   This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/2c/ee/252cee3fe4c65c7ad92ed7645e48d489.png" data-lightbox="roadtrip" data-title="Pin On Medicine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/2c/ee/252cee3fe4c65c7ad92ed7645e48d489.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPsiBaWOHHF4pN9V5VZY4GIOp-gWvmHOVYg';" alt="Pin On Medicine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Medicine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/6e/59/a16e596e85564a1cb57424dd726cf6a5.png" data-lightbox="roadtrip" data-title="Pin On Nursing Program">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/6e/59/a16e596e85564a1cb57424dd726cf6a5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpiiBW0X6hjWZv9zKeMcl0ZVJF7SihIx2mTw';" alt="Pin On Nursing Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Nursing Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/1f/6a/731f6a945b9e3408249270e6d5a454ba.jpg" data-lightbox="roadtrip" data-title="Pin On Systems Renal Urinary">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/1f/6a/731f6a945b9e3408249270e6d5a454ba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShiNJDum4a_UwE7-YEcphAB0mGu9NAwyUvWQ';" alt="Pin On Systems Renal Urinary">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Systems Renal Urinary</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/3d/b4/9e3db44e4f9c4ed3aff47c617182b6ac.gif" data-lightbox="roadtrip" data-title="Ace I Moa Vasoconstriction Pharmacology Vasodilation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/3d/b4/9e3db44e4f9c4ed3aff47c617182b6ac.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7wZJcthwF2IK2ykNw1RDo9LO8nnoyp9mnLQ';" alt="Ace I Moa Vasoconstriction Pharmacology Vasodilation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ace I Moa Vasoconstriction Pharmacology Vasodilation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/07/11/74/071174a177e4c74925018100e354a956.jpg" data-lightbox="roadtrip" data-title="Pin On Physical Therapy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/07/11/74/071174a177e4c74925018100e354a956.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO65bANnRLmcFVbZOHPJmaSoaScdCQTJ45tw';" alt="Pin On Physical Therapy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Physical Therapy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/f9/c9/d6f9c99ee88a639c2a18db0933143238.png" data-lightbox="roadtrip" data-title="Pin On Health Related Relevant Articles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/f9/c9/d6f9c99ee88a639c2a18db0933143238.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcrZ7LPiwzttVArlSJGowZd8OHtl17ar42rw';" alt="Pin On Health Related Relevant Articles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Health Related Relevant Articles</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/44/80/7f/44807f87802fb1aa46b1fbdea6a0792f.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcrZ7LPiwzttVArlSJGowZd8OHtl17ar42rw';" alt="Pin On Health Related Relevant Articles">
+										<div class="card-body">
+						<h3 class="h5"><b>Ang II binds to AT 1 receptors via various binding sites.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ang ii</strong>. 
+								
+																	Angiotensin II Ang II raises blood pressure BP by a number of actions the most important ones being vasoconstriction sympathetic nervous stimulation increased aldosterone biosynthesis and renal actions. 
+																	MOVAs and MAECs were treated with Ang II for 48 hours to further investigate the role of NAMPT in vitro. 
+																	Angiotensin II Ang II activates p38 mitogen-activated protein kinase p38 MAPK and increases reactive oxygen species ROS but the nature of the relationship in vivo is not fully understood. 
+																	Immunochemical staining and Western blotting revealed a significant reduction in Ang II-induced hypertension in rats Figures 1b and 1d. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thus we investigated whether Pterosin B can regulate cardiomyocyte hypertrophy induced by angiotensin II Ang II using H9c2 cells. 
+																	Angiotensin II Ang II is the active peptide of the renin-angiotensin system RAS. 
+																	Angiotensin II AII is an octapeptide which is formed from angiotensin I within the RAS in a reaction catalyzed by angiotensin-converting enzyme and it is a powerful vasoconstrictor. 
+																	Advances in Heterocyclic Chemistry 2017. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Angiotensin II has been implicated as an important factor in cardiac remodeling particularly in the development of pathological left ventricular hypertrophy. 
+																	In mammals losartan and PD123319 are AT1 and AT2 receptor antagonists respectively but these pharmacological blockers are not effective in other vertebrates. 
+																	The antihypertrophic effect of Pterosin B was evaluated and the results showed that it reduced hypertrophy-related gene expression cell size and protein synthesis. 
+																	ANG II mediates the hypertrophic response of overloaded cardiac muscle likely via the ANG II type 1 AT1 receptor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ang II binds to AT1 and AT2 receptors to conduct signals. 
+																	It is generated by the activation of Angiotensin I through the Angiotensin II Converter Enzyme ACE II. 
+																	Angiotensin II type 1 receptor AT1R is a major player in the signal transduction of the renin-angiotensin system and overactivation of this signaling contributes to the progression of visceral obesity and metabolic disorders. 
+																	The Ang II Angiotensin II-Angiotensin- 1-7 axis of the Renin Angiotensin System encompasses 3 enzymes that form Angiotensin- 1-7 Ang- 1-7 directly from Ang II. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Aortic aneurysms developed in 67 of Ang II-infused ApoE -- mice fed with standard chow and water alone n 15 and 40 died of rupture. 
+																	Low Ang II concentrations in conjunction with low plasma renin activity PRA and high serumplasma aldosterone concentration indicate possible primary aldosteronism. 
+																	Angiotensin II receptor blockers ARBs formally angiotensin II receptor type 1 AT 1 antagonists also known as angiotensin receptor blocker angiotensin II receptor antagonists or AT1 receptor antagonists are a group of pharmaceuticals that bind to and inhibit the angiotensin II receptor type 1 AT 1 and thereby block the arteriolar contraction and sodium retention effects of reninangiotensin system. 
+																	Essentials of Pain Medicine Fourth Edition 2018. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	High angiotensin II Ang II concentrations in the absence of angiotensin receptor blockers ARB therapy are suggestive of angiotensin-driven hypertension. 
+																	To examine the potential role of ANG II in overload-induced skeletal muscle hypertrophy plantaris andor soleus muscle overload was produced in female Sprague-Dawley rats 225-250 g by the bilateral surgical ablation of either the synergistic gastrocnemius muscle experiment. 
+																	Ang II binds to AT1 and AT2 receptors to conduct signals. 
+																	Angiotensin II Receptor Type 2 Angiotensin II type 2 receptor AT2R is a relatively newly reported potential analgesic target see Rice and Smith43 and Smith and Muralidharan44 for reviews. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The rats were continually stimulated with Ang II through osmotic minipumps for 4 weeks and fresh aortic wall tissues were collected. 
+																	Angiotensin II causes the local release of prostaglandins which in turn antagonize renal vasoconstriction. 
+																	Angiotensin II is a sensitizer to tubuloglomerular feedback preventing an excessive rise in GFR. 
+																	The net effect of these competing mechanisms on glomerular filtration will vary with the physiological and pharmacological environment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Recent studies indicate that angiotensin II Ang II and TGF-v 1 do not act independently from one another but rather act as part of a signalling network in order to promote cardiac remodeling which is a key determinant of clinical outcome in heart disease. 
+																	The primary binding site is at the extracellular region of the AT 1 receptor where Ang II interacts with residues in the N-terminus of the AT 1 receptor and its first and third extracellular loops. 
+																	Strikingly no telmisartan-treated mouse developed an AAA n 14. 
+																	ANG II has multiple physiologic effects that regulate vascular tone hormone secretion tissue growth and neural activity. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Angiotensin II ANG II is the main effector peptide in the renin-angiotensin system. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/2e/18/a32e18db0e4134d5610f0da95d4eba8c.png" data-lightbox="roadtrip" data-title="Payperview Angiotensin Ii An Important Stress Hormone Karger Publishers Stress Hormones Stress Hormones">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/2e/18/a32e18db0e4134d5610f0da95d4eba8c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIhaVU2Y2wnXZCJ9LZ7MNruFfKPON8FxiLrA';" alt="Payperview Angiotensin Ii An Important Stress Hormone Karger Publishers Stress Hormones Stress Hormones">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Payperview Angiotensin Ii An Important Stress Hormone Karger Publishers Stress Hormones Stress Hormones</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/9f/15/b89f15b92cf27ef3897f0f439cb3d84a.gif" data-lightbox="roadtrip" data-title="Cv Physiology Atrial And Brain Natriuretic Peptides Physiology Nursing Notes Peptides">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/9f/15/b89f15b92cf27ef3897f0f439cb3d84a.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRITQjLosL4Js_t92GfA3LNLHnY0-EyPWKmog';" alt="Cv Physiology Atrial And Brain Natriuretic Peptides Physiology Nursing Notes Peptides">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cv Physiology Atrial And Brain Natriuretic Peptides Physiology Nursing Notes Peptides</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/92/33/68923302a03b6a87b23200fabf17616f.jpg" data-lightbox="roadtrip" data-title="Pin By Jessica Joyce On Systems Renal Urinary Fluid And Electrolytes Renal Physiology Physiology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/92/33/68923302a03b6a87b23200fabf17616f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQngzU6pa5cpfu_qEpGcRf2QBvUCvljzdBuXw';" alt="Pin By Jessica Joyce On Systems Renal Urinary Fluid And Electrolytes Renal Physiology Physiology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jessica Joyce On Systems Renal Urinary Fluid And Electrolytes Renal Physiology Physiology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/50/51/a350517618fa495942a256d1d74a14ed.png" data-lightbox="roadtrip" data-title="Natriuretic Peptides Medical Knowledge Nursing Tips Cardiovascular System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/50/51/a350517618fa495942a256d1d74a14ed.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn5qF_mz84Eg9plYXMdUWmEpiqv_do2qX8dw';" alt="Natriuretic Peptides Medical Knowledge Nursing Tips Cardiovascular System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Natriuretic Peptides Medical Knowledge Nursing Tips Cardiovascular System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/ee/24/c4ee249fab34ad766e04e48223de7e10.jpg" data-lightbox="roadtrip" data-title="Novel Long Non Coding Rnas Are Regulated By Angiotensin Ii In Vascular Smooth Muscle Cells Coding Vascular Research Institute">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/ee/24/c4ee249fab34ad766e04e48223de7e10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFJ8bFu6iBGukUD3yoJsQlCFJyMRzj9RfBQ';" alt="Novel Long Non Coding Rnas Are Regulated By Angiotensin Ii In Vascular Smooth Muscle Cells Coding Vascular Research Institute">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Novel Long Non Coding Rnas Are Regulated By Angiotensin Ii In Vascular Smooth Muscle Cells Coding Vascular Research Institute</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/26/c6/3726c6ea149278de2578d2a8ecf9ff1c.jpg" data-lightbox="roadtrip" data-title="Pin On Nursing School">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/26/c6/3726c6ea149278de2578d2a8ecf9ff1c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3M4G--gvJ38LeSX4Eb64BTdOSauEbf2VMyA';" alt="Pin On Nursing School">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Nursing School</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/39/29/9f3929b6e00d5641d7d6554b6cb117b0.jpg" data-lightbox="roadtrip" data-title="Aldosterone And Parathyroid Hormone A Precarious Couple For Cardiovascular Disease">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/39/29/9f3929b6e00d5641d7d6554b6cb117b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzf15gmcl8VqrA5dCn_lIFVTJznA2Bouan8g';" alt="Aldosterone And Parathyroid Hormone A Precarious Couple For Cardiovascular Disease">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aldosterone And Parathyroid Hormone A Precarious Couple For Cardiovascular Disease</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/3e/37/7c3e37c4688e95d3f966c1846e910683.jpg" data-lightbox="roadtrip" data-title="Pin By Stelios Daskalogiannis On Urogenital Make It Simple Easy Oxidative Stress">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/3e/37/7c3e37c4688e95d3f966c1846e910683.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCrCyl7e8gWNBME1UfcDvM4NNK2oaUTCuyQg';" alt="Pin By Stelios Daskalogiannis On Urogenital Make It Simple Easy Oxidative Stress">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Stelios Daskalogiannis On Urogenital Make It Simple Easy Oxidative Stress</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/f6/c8/51f6c88a92d8415c6689732f2c2f368e.jpg" data-lightbox="roadtrip" data-title="Pin On Https Drawittoknowit Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/f6/c8/51f6c88a92d8415c6689732f2c2f368e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcLE6Q2j8m4l5GvFUlZgphJ7bodgiEfw1u6Q';" alt="Pin On Https Drawittoknowit Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Https Drawittoknowit Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/92/ac/d092ac12c0a4b000f8139dc018bb8c86.jpg" data-lightbox="roadtrip" data-title="Our Latest Tutorials On Adrenal Gland Anatomy Physiology And Histology Are Posted Endocrine System Nursing Nursing School Tips Human Anatomy And Physiology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/92/ac/d092ac12c0a4b000f8139dc018bb8c86.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1lc61xgRjz-bGFnF1t8dkS8NBBzjjeGCp4A';" alt="Our Latest Tutorials On Adrenal Gland Anatomy Physiology And Histology Are Posted Endocrine System Nursing Nursing School Tips Human Anatomy And Physiology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our Latest Tutorials On Adrenal Gland Anatomy Physiology And Histology Are Posted Endocrine System Nursing Nursing School Tips Human Anatomy And Physiology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/51/a2/6751a28ca39544b16f790e7672c87712.png" data-lightbox="roadtrip" data-title="Pin On File1">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/51/a2/6751a28ca39544b16f790e7672c87712.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_etOxKofFYUlqdBcHmgfhvY7nTD-i7PthSg';" alt="Pin On File1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On File1</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/80/7f/44807f87802fb1aa46b1fbdea6a0792f.gif" data-lightbox="roadtrip" data-title="Bjdvd497915 Fig1 Gif 413 535 Pixels Physiology Adrenals Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/80/7f/44807f87802fb1aa46b1fbdea6a0792f.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSjRx-KquwZvrrHIBb72hvsuRvtmMtS38rNQ';" alt="Bjdvd497915 Fig1 Gif 413 535 Pixels Physiology Adrenals Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bjdvd497915 Fig1 Gif 413 535 Pixels Physiology Adrenals Map</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/51/7d/50517df716dfe95689c2717e7ef0121c.jpg" data-lightbox="roadtrip" data-title="Journal Of Investigative Dermatology Figure 1 For Article Prolactin And The Skin A Dermatological Perspective On An Anc Norepinephrine Progesterone Neurons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/51/7d/50517df716dfe95689c2717e7ef0121c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxaomIPI2Y3bdYsmMNV7izntQxwGAtuLoG1Q';" alt="Journal Of Investigative Dermatology Figure 1 For Article Prolactin And The Skin A Dermatological Perspective On An Anc Norepinephrine Progesterone Neurons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Journal Of Investigative Dermatology Figure 1 For Article Prolactin And The Skin A Dermatological Perspective On An Anc Norepinephrine Progesterone Neurons</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/military-orange-hat.html">Military Orange Hat</a></li>
+													<li class="list-group-item"><a href="/military-lodging-orange-county-ca.html">Military Lodging Orange County Ca</a></li>
+													<li class="list-group-item"><a href="/mnangagwa-news.html">Mnangagwa News</a></li>
+													<li class="list-group-item"><a href="/mode-orang-tua-xiaomi.html">Mode Orang Tua Xiaomi</a></li>
+													<li class="list-group-item"><a href="/mn-ng.html">Mn Ng</a></li>
+													<li class="list-group-item"><a href="/military-rank-badges-for-sale.html">Military Rank Badges For Sale</a></li>
+													<li class="list-group-item"><a href="/military-german-songs.html">Military German Songs</a></li>
+													<li class="list-group-item"><a href="/military-rank-us-army.html">Military Rank Us Army</a></li>
+													<li class="list-group-item"><a href="/military-retirement-plan-air-national-guard.html">Military Retirement Plan Air National Guard</a></li>
+													<li class="list-group-item"><a href="/misaeng-incomplete-life-sub-indo.html">Misaeng Incomplete Life Sub Indo</a></li>
+													<li class="list-group-item"><a href="/military-rank-insignia-marines.html">Military Rank Insignia Marines</a></li>
+													<li class="list-group-item"><a href="/military-rank-chart-national-guard.html">Military Rank Chart National Guard</a></li>
+													<li class="list-group-item"><a href="/mn-nm-mm.html">Mn Nm Mm</a></li>
+													<li class="list-group-item"><a href="/mnangagwa-latest-news-zimbabwe.html">Mnangagwa Latest News Zimbabwe</a></li>
+													<li class="list-group-item"><a href="/minnesota-national-guard-soldiers-killed.html">Minnesota National Guard Soldiers Killed</a></li>
+													<li class="list-group-item"><a href="/miniature-army-rank-insignia.html">Miniature Army Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/mo-guardian-law.html">Mo Guardian Law</a></li>
+													<li class="list-group-item"><a href="/military-ranks-ksa.html">Military Ranks Ksa</a></li>
+													<li class="list-group-item"><a href="/mn-national-guard-deployed.html">Mn National Guard Deployed</a></li>
+													<li class="list-group-item"><a href="/misaeng-season-2.html">Misaeng Season 2</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

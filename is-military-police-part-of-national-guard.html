@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Is Military Police Part Of National Guard - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Is Military Police Part Of National Guard",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/564x/ba/1e/0a/ba1e0a1311da3b65cc155a9487a2662d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=is+military+police+part+of+national+guard",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Is Military Police Part Of National Guard</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Elaine ThompsonThe National Guard is a special part of the US military that according to the groups. The National Guard is unique among the US. The cavalry units had previously conducted policing functions at Camp Gordon until relieved October 5 1917 and dispatched to Camp Wheeler in Macon. <br>				
+			</p>
+										<a class="badge badge-success" href="/fallout-3-national-guard-depot-password.html">fallout 3 national guard depot password</a>
+											<a class="badge badge-info" href="/gamis-warna-army-cocok-dengan-kerudung-warna-apa.html">gamis warna army cocok dengan kerudung warna apa</a>
+											<a class="badge badge-primary" href="/gb-pant-official-website.html">gb pant official website</a>
+											<a class="badge badge-secondary" href="/film-indian-army-song-gana.html">film indian army song gana</a>
+											<a class="badge badge-warning" href="/gb-basketball-website.html">gb basketball website</a>
+											<a class="badge badge-primary" href="/failarmy.html">failarmy</a>
+											<a class="badge badge-primary" href="/full-time-nebraska-army-national-guard-jobs.html">full time nebraska army national guard jobs</a>
+											<a class="badge badge-secondary" href="/fm-mods-website-gb-whatsapp.html">fm mods website gb whatsapp</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to pay a visit to the right blog.  Our website gives you hints for seeing the highest quality video and picture content, search and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie for you to see.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this blog on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/9f/72/4c9f723db4d0b27764e2cfa88e7fe402.jpg" data-lightbox="roadtrip" data-title="Hold The Line And Keep The Peace As Mos 31b Military Police You Ll Do Just That And Earn Skills That Crossover To C Military Police Law Enforcement Usa Pride">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/9f/72/4c9f723db4d0b27764e2cfa88e7fe402.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThE3QITfpx0YC2RKfaw8pekrT7DqwCZVS-UA';" alt="Hold The Line And Keep The Peace As Mos 31b Military Police You Ll Do Just That And Earn Skills That Crossover To C Military Police Law Enforcement Usa Pride">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hold The Line And Keep The Peace As Mos 31b Military Police You Ll Do Just That And Earn Skills That Crossover To C Military Police Law Enforcement Usa Pride</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/59/92/89/599289dba99dbaca5f88f19212f9fa04.jpg" data-lightbox="roadtrip" data-title="Pin By Angus On Military Part Of Me Military Police Military Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/59/92/89/599289dba99dbaca5f88f19212f9fa04.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVz37IrqxX0_JV-k-Vq7QvYIDfB9cX4g8Djw';" alt="Pin By Angus On Military Part Of Me Military Police Military Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Angus On Military Part Of Me Military Police Military Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/4a/4b/f24a4b59228c5a9ce932c6f9959b1276.png" data-lightbox="roadtrip" data-title="Pin On Guard Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/4a/4b/f24a4b59228c5a9ce932c6f9959b1276.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCD8UpfHSWm8hYboE84I5XO-Op398RDrKd9A';" alt="Pin On Guard Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/ca/10/faca10294d867cbae46a967aab1bb9cd.jpg" data-lightbox="roadtrip" data-title="Pin On Army National Guard Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/ca/10/faca10294d867cbae46a967aab1bb9cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXrdfaJ2lWEaIJX7iBQaGzEDzlHFiNRbzU1g';" alt="Pin On Army National Guard Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army National Guard Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/8c/48/198c48b175dc6a6b2cd803c0893de2da.jpg" data-lightbox="roadtrip" data-title="Pin On My Soldier My Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/8c/48/198c48b175dc6a6b2cd803c0893de2da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtwbvH6oTmBuzXw8N740DBkJ3SUqnpjYuqQ';" alt="Pin On My Soldier My Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Soldier My Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/bd/36/2cbd368b8191e021cc9b40c404390c1d.jpg" data-lightbox="roadtrip" data-title="Pin On Military Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/bd/36/2cbd368b8191e021cc9b40c404390c1d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVEGa9KUy32JBye9GX7u4hxomF6zHYYPNwfA';" alt="Pin On Military Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Police</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/bd/c0/5b/bdc05b72d7f22c588e95b10126d72d45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVEGa9KUy32JBye9GX7u4hxomF6zHYYPNwfA';" alt="Pin On Military Police">
+										<div class="card-body">
+						<h3 class="h5"><b>With the entry of the United States in World War I units of the Georgia National Guard were assigned to the 31 st Division.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Is military police part of national guard</strong>. 
+								
+																	In the Army National Guard you will learn these valuable job skills while earning a regular paycheck and qualifying for tuition assistance. 
+																	The National Guard is usually called in to help states affected by floods or hurricanesAP. 
+																	Believe it or not accidents and crimes occur within the Army National Guard on a regular basis. 
+																	The 333d Military Police Company is a law enforcement unit within the Illinois Army National Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All members of the National Guard are required to serve two days a month on drill duty. 
+																	The unit is based out of the Freeport Armory in Freeport Illinois. 
+																	The training that you receive as part of the Army National Guard will also prepare you for specialized careers including but not limited to. 
+																	For most of its history the National Guard particularly its officers has been widely viewed as loyal to middle-class interests. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Guard Military Police Soldiers can also be assigned to fill a law enforcement role. 
+																	Garde nationale is a French military gendarmerie and police reserve force active in its current form since 2016 but originally founded in 1789 during the French Revolution. 
+																	National Guard stand on the steps of the Lincoln Memorial as demonstrators participate in a peaceful protest against police brutality and the death of George Floyd on June 2. 
+																	Military Police Officer Current Employee - Maryland City MD - February 17 2020 Apart from the militarys benefits having the opportunity to be of useful service to the civilians in any part of the world is priceless serving in the Maryland army national guard has been the most exciting way to give back to my community and country at large. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It includes two MP battalions one infantry battalion and some support units. 
+																	The National Guard French. 
+																	The brigade was formerly an infantry brigade combat team known as the 92nd Infantry Brigade Combat Team and then a Maneuver Enhancement Brigade. 
+																	The troops are not armed and are not capable of doing anything but be in the way of all the armed federal law enforcement there. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military Police Officer Current Employee - Maryland City MD - February 17 2020 Apart from the militarys benefits having the opportunity to be of useful service to the civilians in any part of the world is priceless serving in the Maryland army national guard has been the most exciting way to give back to my community and country at large. 
+																	Undercover agent private investigator detective correction officer or security officer. 
+																	The Algerian Peoples National Armed Forces has maintained military police units since its founding upon Algerian independence in 1962. 
+																	Armymil Enforcing laws and regulations on a domestic base is extremely important in keeping the troops on the home front safe and while the National Guard may not patrol on a regular basis any base may call upon an MP National Guard unit to fill in empty spots. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the reorganization that followed elements of Georgia National Guards 1 st Squadron of Cavalry were assigned the military police role for the division and reorganized as the 106 th Headquarters and Military Police. 
+																	Job training for Military Police consists of 10 weeks of Basic Training where youll learn basic Soldiering skills and 20 weeks of Advanced Individual Training AIT and on-the-job instruction. 
+																	The Guard is generally called up to respond to state-level emergencies such as. 
+																	It is a military reserve force composed of National Guard military members or units of each state and the territories of Guam the Virgin Islands and Puerto Rico and the District of Columbia for a total of 54 separate organizations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Enlisted members are typically younger and perform many of the daily hands-on duties of military police work. 
+																	In the National Guard military police members can be either enlisted or officers. 
+																	The task of the Algerian military police is to maintain law and order within units and hunt down conscripts trying to flee military service protect and secure military installations and organize and move large combat units. 
+																	Armed forces in that it can perform state as well as federal functions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Citation needed It was founded as separate from the French. 
+																	This is a virus spreading event for already over-taxed National. 
+																	Members of the DC. 
+																	The 92nd Military Police Brigade 92nd MP Bde is a military police brigade of the Puerto Rico Army National Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The day after National Guard troops were ordered to move out of the Dirkson Senate building in Washington and into a nearby parking garage officials from the Capitol Police said the department. 
+																	Job training for Military Police consists of 10 weeks of Basic Training where youll learn basic Soldiering skills and 20 weeks of Advanced Individual Training AIT and on-the-job instruction including practice in police methods. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/f9/8b/52f98bb508bacd2309955a7ffdae0c07.jpg" data-lightbox="roadtrip" data-title="Pin Auf Chixxx Waffen">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/f9/8b/52f98bb508bacd2309955a7ffdae0c07.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdqPmy75Med-vUCctyYLhZV2EHmBsFpGkUPw';" alt="Pin Auf Chixxx Waffen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Auf Chixxx Waffen</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/13/93/13/139313b398020fd9c8bdd38902bb71cc.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/13/93/13/139313b398020fd9c8bdd38902bb71cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDYPQ81bu3po87BpriRUEeNf9GtcoV23NuSw';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bd/c0/5b/bdc05b72d7f22c588e95b10126d72d45.jpg" data-lightbox="roadtrip" data-title="Pin Em Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bd/c0/5b/bdc05b72d7f22c588e95b10126d72d45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGujAurWQ847jEEeNKNGuhYtA4KolLYEH_Vw';" alt="Pin Em Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Em Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/97/c4/2097c49fcc7a4212e63dd09d9ee04a97.jpg" data-lightbox="roadtrip" data-title="Military Police Locate Checkpoints On Plans Near Colorado Wild Fire Stock Footage Ad Checkpoints Plans Locate Military Military Police Wild Fire Fire Video">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/97/c4/2097c49fcc7a4212e63dd09d9ee04a97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZye4ayEy6CI8OXzzwIErzRfyZeD1H6a-r3A';" alt="Military Police Locate Checkpoints On Plans Near Colorado Wild Fire Stock Footage Ad Checkpoints Plans Locate Military Military Police Wild Fire Fire Video">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Police Locate Checkpoints On Plans Near Colorado Wild Fire Stock Footage Ad Checkpoints Plans Locate Military Military Police Wild Fire Fire Video</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/5a/be/445abe0e40d83d74657d7b3c076b66e4.jpg" data-lightbox="roadtrip" data-title="Women Of The 101st Airborne Division Women In Combat Military Women Warrior Woman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/5a/be/445abe0e40d83d74657d7b3c076b66e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBY8cVAhzOB-AoeqGGGgLvYoziaC_WehYAAQ';" alt="Women Of The 101st Airborne Division Women In Combat Military Women Warrior Woman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women Of The 101st Airborne Division Women In Combat Military Women Warrior Woman</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/ac/c0/0cacc0896e148a9c504c135d85c3b45d.png" data-lightbox="roadtrip" data-title="Army Military Police Jobs 31b Military Police Police Officer Job Description Police Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/ac/c0/0cacc0896e148a9c504c135d85c3b45d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLO4YRFqnK4wG58IYAQpxu6e5EU73-_A2dcw';" alt="Army Military Police Jobs 31b Military Police Police Officer Job Description Police Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Military Police Jobs 31b Military Police Police Officer Job Description Police Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/1b/04/69/1b04695344b0d3b73a95dfcdb7c49db7.jpg" data-lightbox="roadtrip" data-title="Pin On Inspiration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/1b/04/69/1b04695344b0d3b73a95dfcdb7c49db7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5KwdSTHxvy-FiB81Q6eISTeSMB0fFhS-oLQ';" alt="Pin On Inspiration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Inspiration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/92/41/44924193cc657241ade824ce6f8d9964.jpg" data-lightbox="roadtrip" data-title="Outofregs Archives Military Police Military Humor Army Memes Police Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/92/41/44924193cc657241ade824ce6f8d9964.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVaK0HHa9HGJK4NJoJbWnb-QS1wQL34rz6uA';" alt="Outofregs Archives Military Police Military Humor Army Memes Police Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Outofregs Archives Military Police Military Humor Army Memes Police Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ba/1e/0a/ba1e0a1311da3b65cc155a9487a2662d.jpg" data-lightbox="roadtrip" data-title="Pin On National Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ba/1e/0a/ba1e0a1311da3b65cc155a9487a2662d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzPaIEuuQv_ff2jHENEz1z63c0sH22wGpklA';" alt="Pin On National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/06/e4/8806e4cbd16ce9eb5e3a2f7c526ff60f.jpg" data-lightbox="roadtrip" data-title="Pin On Mood Board">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/06/e4/8806e4cbd16ce9eb5e3a2f7c526ff60f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3_-75BGDsZ7Enhj75-5al4wC3brYMOXdVjw';" alt="Pin On Mood Board">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mood Board</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/a7/c3/daa7c3b3d612ac9242e538bdad1afe45.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/a7/c3/daa7c3b3d612ac9242e538bdad1afe45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuRXmqex1EG4JI0j7pMTV51XNg4BCjHnihxg';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/c4/36/4cc43619a5bee0f72b28b1e258a81ac0.jpg" data-lightbox="roadtrip" data-title="Pin On National Guard Stories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/c4/36/4cc43619a5bee0f72b28b1e258a81ac0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4R1DkqzhB3X8wDar-0M3gtia98o0oj-t_vg';" alt="Pin On National Guard Stories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On National Guard Stories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/61/88/3b6188e2d6778ceb735c1171fe71ab11.jpg" data-lightbox="roadtrip" data-title="Pin On Guard In The Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/61/88/3b6188e2d6778ceb735c1171fe71ab11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSajM-FjolxAvrLfCDo9ph7K474wnmQLm-BHQ';" alt="Pin On Guard In The Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard In The Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-songs-ringtones-download.html">Army Songs Ringtones Download</a></li>
+													<li class="list-group-item"><a href="/army-songs-com.html">Army Songs Com</a></li>
+													<li class="list-group-item"><a href="/army-songs-and-video.html">Army Songs And Video</a></li>
+													<li class="list-group-item"><a href="/army-songs-dj-hindi.html">Army Songs Dj Hindi</a></li>
+													<li class="list-group-item"><a href="/army-song-over-there.html">Army Song Over There</a></li>
+													<li class="list-group-item"><a href="/army-song-status-video.html">Army Song Status Video</a></li>
+													<li class="list-group-item"><a href="/army-songs-country.html">Army Songs Country</a></li>
+													<li class="list-group-item"><a href="/army-song-status-download.html">Army Song Status Download</a></li>
+													<li class="list-group-item"><a href="/army-songs-pak.html">Army Songs Pak</a></li>
+													<li class="list-group-item"><a href="/army-songs-mp3-free-download.html">Army Songs Mp3 Free Download</a></li>
+													<li class="list-group-item"><a href="/army-songs-rahat-fateh-ali-khan.html">Army Songs Rahat Fateh Ali Khan</a></li>
+													<li class="list-group-item"><a href="/army-song-sumit-goswami-lyrics-in-hindi.html">Army Song Sumit Goswami Lyrics In Hindi</a></li>
+													<li class="list-group-item"><a href="/army-songs-for-running.html">Army Songs For Running</a></li>
+													<li class="list-group-item"><a href="/army-songs-chords-guitar.html">Army Songs Chords Guitar</a></li>
+													<li class="list-group-item"><a href="/army-songs-in-telugu.html">Army Songs In Telugu</a></li>
+													<li class="list-group-item"><a href="/army-songs-download-in-mp3.html">Army Songs Download In Mp3</a></li>
+													<li class="list-group-item"><a href="/army-songs-hindi-download.html">Army Songs Hindi Download</a></li>
+													<li class="list-group-item"><a href="/army-song-whatsapp-status.html">Army Song Whatsapp Status</a></li>
+													<li class="list-group-item"><a href="/army-songs-in-movies.html">Army Songs In Movies</a></li>
+													<li class="list-group-item"><a href="/army-songs-hindi-mp3.html">Army Songs Hindi Mp3</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

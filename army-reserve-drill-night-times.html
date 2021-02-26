@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Reserve Drill Night Times - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Reserve Drill Night Times",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/d3/a1/78/d3a17850b05beefdf382d02a22ca4103.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+reserve+drill+night+times",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Reserve Drill Night Times</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">For reserve infantry it is another 15 day course at catterick. As an ex SPSI for two years no matter how many people you have on your books you will only ever get your usual committed 20-30 on a weekend and maybe 15 plus on a drill night. Reservists can either join the Army Reserve as an Officer or Soldier. <br>				
+			</p>
+										<a class="badge badge-success" href="/xtc-apk.html">xtc apk</a>
+											<a class="badge badge-success" href="/xtc-legaliseren.html">xtc legaliseren</a>
+											<a class="badge badge-secondary" href="/xtc-orgen-trillen.html">xtc orgen trillen</a>
+											<a class="badge badge-info" href="/xtc-meninggal.html">xtc meninggal</a>
+											<a class="badge badge-warning" href="/xtc-hits.html">xtc hits</a>
+											<a class="badge badge-light" href="/xtc-bekasi.html">xtc bekasi</a>
+											<a class="badge badge-warning" href="/xtc-logo.html">xtc logo</a>
+											<a class="badge badge-dark" href="/xtc-logo-wallpaper.html">xtc logo wallpaper</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to visit the right site.  Our site provides you with hints for seeing the highest quality video and image content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/b8/44/d2b844375e752ef908eb6c26b593fd6b.jpg" data-lightbox="roadtrip" data-title="Us Army Soldiers Shooting 2278 Military Wallpapers Us Army Soldier Army Soldier Military Police">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/b8/44/d2b844375e752ef908eb6c26b593fd6b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVEHALmgfGQele3pOXIGhISmG8o4O7SUxHgQ';" alt="Us Army Soldiers Shooting 2278 Military Wallpapers Us Army Soldier Army Soldier Military Police">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Soldiers Shooting 2278 Military Wallpapers Us Army Soldier Army Soldier Military Police</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/a1/78/d3a17850b05beefdf382d02a22ca4103.jpg" data-lightbox="roadtrip" data-title="Final Inspection Can Be Quite Nerve Wracking Us Army Bct Fort Jackson Sc Army Strong United States Army Combat Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/a1/78/d3a17850b05beefdf382d02a22ca4103.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0X1C4VckEqzXc3vJDw2FFR_784IMK2gxJgw';" alt="Final Inspection Can Be Quite Nerve Wracking Us Army Bct Fort Jackson Sc Army Strong United States Army Combat Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Final Inspection Can Be Quite Nerve Wracking Us Army Bct Fort Jackson Sc Army Strong United States Army Combat Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/d1/1a/83d11a1ccd954cfe56cc2ef17d74308f.jpg" data-lightbox="roadtrip" data-title="It S Called Frog Voice Here S What Parris Island Drill Instructors Do To Prevent It Http Militaryoneclick Co Drill Instructor Camp Pendleton Parris Island">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/d1/1a/83d11a1ccd954cfe56cc2ef17d74308f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8DQ8GoeEIs1Gjgoy_z_0SDRz793dW3hMz5Q';" alt="It S Called Frog Voice Here S What Parris Island Drill Instructors Do To Prevent It Http Militaryoneclick Co Drill Instructor Camp Pendleton Parris Island">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">It S Called Frog Voice Here S What Parris Island Drill Instructors Do To Prevent It Http Militaryoneclick Co Drill Instructor Camp Pendleton Parris Island</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/e2/ba/ac/e2baac8fe90ab311ce08861c2194f935.jpg" data-lightbox="roadtrip" data-title="Night Vision Night Vision Goggles Night Vision Tactical Thermal Night Vision Nightvisiongoggles Us Army Uniforms Army Combat Uniform Combat Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/e2/ba/ac/e2baac8fe90ab311ce08861c2194f935.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd8W2ppwmvT0aNdjvfcWku2irqf7ouBsZYPA';" alt="Night Vision Night Vision Goggles Night Vision Tactical Thermal Night Vision Nightvisiongoggles Us Army Uniforms Army Combat Uniform Combat Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Night Vision Night Vision Goggles Night Vision Tactical Thermal Night Vision Nightvisiongoggles Us Army Uniforms Army Combat Uniform Combat Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/86/dc/4b86dcf85a1de00e653032f827828e96.jpg" data-lightbox="roadtrip" data-title="Reserve Marines Fight Mock Battle With Japanese Soldiers Near Kyoto Mock Battle Marine Corps Bases Infantry Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/86/dc/4b86dcf85a1de00e653032f827828e96.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEuB3Ar_wjTy2CfvPgpb55sBGOaC-DgSFFtg';" alt="Reserve Marines Fight Mock Battle With Japanese Soldiers Near Kyoto Mock Battle Marine Corps Bases Infantry Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reserve Marines Fight Mock Battle With Japanese Soldiers Near Kyoto Mock Battle Marine Corps Bases Infantry Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e6/e3/5e/e6e35e6dc9c870bb25770aaf05cc0db2--military-deployment-military-dogs.jpg" data-lightbox="roadtrip" data-title="Whisper Share Secrets Express Yourself Meet New People Us Army Soldier Army Soldier Army Infantry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e6/e3/5e/e6e35e6dc9c870bb25770aaf05cc0db2--military-deployment-military-dogs.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYnYheon3jLkXBx3m71kxcsiaBjuPOoqjj3A';" alt="Whisper Share Secrets Express Yourself Meet New People Us Army Soldier Army Soldier Army Infantry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Whisper Share Secrets Express Yourself Meet New People Us Army Soldier Army Soldier Army Infantry</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/19128272/origin.jpg?width=757" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYnYheon3jLkXBx3m71kxcsiaBjuPOoqjj3A';" alt="Whisper Share Secrets Express Yourself Meet New People Us Army Soldier Army Soldier Army Infantry">
+										<div class="card-body">
+						<h3 class="h5"><b>Do I have to give all my spare time.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army reserve drill night times</strong>. 
+								
+																	The Army Reserve are soldiers and officers who serve alongside the regular Army in their spare time. 
+																	Today I bring you along as I show up to my 1st DrillBattle Assembly Weekend with My Army Reserve Unit. 
+																	If youre particularly lucky youll be driving a few hours to drill meaning that youll drive up Friday night after work using Rip-Its and a pinch of dip to stay awake like youre driving through Ramadi instead of the Carolinas. 
+																	To join the Army Reserve you need to be 18. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	10 Para drill nights was always on a Wednesday. 
+																	Friday nights would be packing CSEP containers coach down to RAF Lynham. 
+																	BACK TO ARMY RESERVE SOLDIER. 
+																	Here you learn basic soldiering skills. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	If there was a lob on at the weekend wednesday would be spent on synethtics - PLPs on the mats and in the parachute harnesses doing flight drills with the APJIs. 
+																	The Annerley Army Reserve Depot is significant in that the place demonstrates a continuity of military use from pre-World War I to the late 1990s. 
+																	Youll get a real look at what its like to be a Reservist. 
+																	Most units are really happy for people to join them for drill nights. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The recruits had an extra night on Tuesday for Phys. 
+																	No theyre on the road for 40 hours or more a week so they have lots of experience to share. 
+																	Every reservist approximately 20 minutes before drill. 
+																	Army Reserve Centres are where Reservists meet for their regular training sessions known as drill nights. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can choose how much time you spend with the Army Reserve. 
+																	Phase 2 which is your trade training differs in length depending on what you are joining. 
+																	After that it is weekly drill nights 1 or 2 weekends a month and a two week consolidated training package each year. 
+																	There is a Lead First scheme available for those already serving in the Reserves which means that you will train and serve as a full-time officer for up to 12 months on a Full Time Reserve Service contract. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Air Force Airman 1st Class Christopher Callaway. 
+																	Armys future annual drill plans In July 2012 the Chief of Staff of the Army General Ray Odierno indicated that he intended to change the Army National Guards annual peacetime active duty commitment from two weeks per year to up to seven weeks per year in addition to the weekend a month which would not change. 
+																	From my experience 95 of the time you are only drilling for 8 hours on each day and get to go home at night. 
+																	Youll also get the chance to spend time with serving Reservists and youre able to ask them any questions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Theyre paid for the time they spend serving and are tr. 
+																	The US militarys reserve components have about thirty-nine days per year a fraction of the time available to the active component to train their unitsIn effect this requires reservists and National Guard members to make sacrifices in the periods between regularly scheduled active and inactive duty training to execute a countless number of tasks necessary to improve military readiness. 
+																	Pretty much what I focused during this 1st weekend wi. 
+																	Rob like most reserve units cannot get the numbers and the people. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can apply to join when you are 17 years and 9 months old so that youre ready to join on your 18th birthday to join as a soldier you must apply. 
+																	The frequency of Tuesday night parading varies from unit to unit and is influenced by a number of factors including training objectives the time of year and the availability of reserve members. 
+																	No matter what you plan 6 weeks plus in advance its always a Friday night ORBAT. 
+																	The combination of World War I and post-World War II drill halls located at the same site is significant for its rarity in Australia and particularly in Queensland. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Youll have to do at least 19 or 27 days a year depending on your unit to earn your bonus but theres no limit to how much extra training you might be able to do. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/80/00/0f80003190cf2a6c008b84c0e2443293.jpg" data-lightbox="roadtrip" data-title="Pin On Army Strong Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/80/00/0f80003190cf2a6c008b84c0e2443293.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa8D1qHIufb_ImE6z73AFcgVIUAYvPGdK4dg';" alt="Pin On Army Strong Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army Strong Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/67/92/106792fbbeba6ea1da4897a62b882167.jpg" data-lightbox="roadtrip" data-title="Vietnam War My Vietnam Experience Page 2 Vietnam War Vietnam Vietnam War Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/67/92/106792fbbeba6ea1da4897a62b882167.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9aRNu4ylHq-YYGu5VDh8ua9dod_8NnDWyCg';" alt="Vietnam War My Vietnam Experience Page 2 Vietnam War Vietnam Vietnam War Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam War My Vietnam Experience Page 2 Vietnam War Vietnam Vietnam War Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/4f/7a/9b4f7a3bff3d7909f374c42341765418.jpg" data-lightbox="roadtrip" data-title="Army Soldier Google Zoeken Us Army Soldier Army Soldier Army Infantry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/4f/7a/9b4f7a3bff3d7909f374c42341765418.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_fqBX7RliliKNgWbrX22qYs5sz5zwcGpKw';" alt="Army Soldier Google Zoeken Us Army Soldier Army Soldier Army Infantry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Soldier Google Zoeken Us Army Soldier Army Soldier Army Infantry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/a3/28/7fa3289da508ddab1833958b2a259cb8.jpg" data-lightbox="roadtrip" data-title="The Scariest Moment Of Bct Arrival Foxtrot 2 60 Fort Jackson Sc Army Strong Army Mom Combat Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/a3/28/7fa3289da508ddab1833958b2a259cb8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwHyhHhaeFAapMqQPfFA1tCvZwhLW1nnOvWg';" alt="The Scariest Moment Of Bct Arrival Foxtrot 2 60 Fort Jackson Sc Army Strong Army Mom Combat Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Scariest Moment Of Bct Arrival Foxtrot 2 60 Fort Jackson Sc Army Strong Army Mom Combat Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/d0/e4/01/d0e401de3bada89c2002c824246ae54f.jpg" data-lightbox="roadtrip" data-title="Pin By Brian Braun On Raw Painting Tanks Military Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/d0/e4/01/d0e401de3bada89c2002c824246ae54f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV7RPH_F518Y7pLAythRgv370-mgvqY9IA1g';" alt="Pin By Brian Braun On Raw Painting Tanks Military Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Brian Braun On Raw Painting Tanks Military Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b3/23/31/b3233112394817d23031fa868032cfd1.jpg" data-lightbox="roadtrip" data-title="انواع پوتین نظامی اولین و پرکاربرد ترین نوع پوتین نظامی پوتین های مخصوص سربازی است که طراحی پوتین های ایمنی جدید مطابق با س Boots Combat Boots Combat Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b3/23/31/b3233112394817d23031fa868032cfd1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRonGHy1a7v-R-_258iPxl0A4B-xgorpFNhGg';" alt="انواع پوتین نظامی اولین و پرکاربرد ترین نوع پوتین نظامی پوتین های مخصوص سربازی است که طراحی پوتین های ایمنی جدید مطابق با س Boots Combat Boots Combat Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">انواع پوتین نظامی اولین و پرکاربرد ترین نوع پوتین نظامی پوتین های مخصوص سربازی است که طراحی پوتین های ایمنی جدید مطابق با س Boots Combat Boots Combat Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/19128272/origin.jpg?width=757" data-lightbox="roadtrip" data-title="The Ridiculous Anatomy Of Most Army Reserve Drill Days We Are The Mighty">
+											<img class="card-img v-image ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/19128272/origin.jpg?width=757" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPF-CAsQRKAMDWQv2vlQ_ofbcZ_O-kql2cSw';" alt="The Ridiculous Anatomy Of Most Army Reserve Drill Days We Are The Mighty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Ridiculous Anatomy Of Most Army Reserve Drill Days We Are The Mighty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sandboxx.us/wp-content/uploads/2019/04/how-does-the-army-reserves-work-1140x558.jpg" data-lightbox="roadtrip" data-title="All You Need To Know About How The Army Reserves Works Sandboxx">
+											<img class="card-img v-image ads-img " src="https://www.sandboxx.us/wp-content/uploads/2019/04/how-does-the-army-reserves-work-1140x558.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaswD2qx3q7qeMN4RBp7haJm1wHnpKeY3jAg';" alt="All You Need To Know About How The Army Reserves Works Sandboxx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">All You Need To Know About How The Army Reserves Works Sandboxx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/93/ed/c493ed77efe0636458034dec672964a1.jpg" data-lightbox="roadtrip" data-title="Urban Assault Course Charlie 3 34 Us Army Bct Fort Jackson Sc Combat Training Army Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/93/ed/c493ed77efe0636458034dec672964a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUn12GPTDXE4l_wTbSxXs8i9ZA613pUXdZ0w';" alt="Urban Assault Course Charlie 3 34 Us Army Bct Fort Jackson Sc Combat Training Army Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Urban Assault Course Charlie 3 34 Us Army Bct Fort Jackson Sc Combat Training Army Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/15/1d/66151dfab4cdbee1c6136e4f8e2edf65.jpg" data-lightbox="roadtrip" data-title="The U S Army 3rd Brigade Combat Team 25th Infantry Division Based Aboard Schofield Barracks Oahu Hawaii Conducts A Home St Infantry Army Schofield Barracks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/15/1d/66151dfab4cdbee1c6136e4f8e2edf65.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSinCFsvkKYRYK_UHmbdSjyQGY2W8Pu3DW2w';" alt="The U S Army 3rd Brigade Combat Team 25th Infantry Division Based Aboard Schofield Barracks Oahu Hawaii Conducts A Home St Infantry Army Schofield Barracks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The U S Army 3rd Brigade Combat Team 25th Infantry Division Based Aboard Schofield Barracks Oahu Hawaii Conducts A Home St Infantry Army Schofield Barracks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="nuqzlIw4pGcEIM" data-lightbox="roadtrip" data-title="Https Www Defencejobs Gov Au Media Dfr Files Army Reserve Information For Employers Pdf">
+											<img class="card-img v-image ads-img " src="nuqzlIw4pGcEIM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPUpfKelUxFHiKk27W-dDqlBh-cDtYRjdoJA';" alt="Https Www Defencejobs Gov Au Media Dfr Files Army Reserve Information For Employers Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Defencejobs Gov Au Media Dfr Files Army Reserve Information For Employers Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images04.military.com/sites/default/files/styles/full/public/media/recruitment/boot-camp/2013/10/recruitspillows.jpg?itok=SegtGGaW" data-lightbox="roadtrip" data-title="Basic Training Waking Up And Going To Sleep Military Com">
+											<img class="card-img v-image ads-img " src="https://images04.military.com/sites/default/files/styles/full/public/media/recruitment/boot-camp/2013/10/recruitspillows.jpg?itok=SegtGGaW" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKpS74-g1NCtDBZK7syLLipA76Vu0Fc2buUQ';" alt="Basic Training Waking Up And Going To Sleep Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Basic Training Waking Up And Going To Sleep Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2021/Jan/13/2002564160/990/382/0/210108-A-EY244-1001.JPG" data-lightbox="roadtrip" data-title="9th Msc">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2021/Jan/13/2002564160/990/382/0/210108-A-EY244-1001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTs0YH_XNB-FzpEgIoX7cDxNABXLCivCq0KQ';" alt="9th Msc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9th Msc</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/toy-army-cargo-truck.html">Toy Army Cargo Truck</a></li>
+													<li class="list-group-item"><a href="/title-32-us-code-army-reserve.html">Title 32 Us Code Army Reserve</a></li>
+													<li class="list-group-item"><a href="/tng-ewallet-customer-service.html">Tng Ewallet Customer Service</a></li>
+													<li class="list-group-item"><a href="/uang-pajak.html">Uang Pajak</a></li>
+													<li class="list-group-item"><a href="/title-32-army-reserve.html">Title 32 Army Reserve</a></li>
+													<li class="list-group-item"><a href="/txt-mv.html">Txt Mv</a></li>
+													<li class="list-group-item"><a href="/top-world-army-ranking-2020.html">Top World Army Ranking 2020</a></li>
+													<li class="list-group-item"><a href="/toon-army-songs-lyrics.html">Toon Army Songs Lyrics</a></li>
+													<li class="list-group-item"><a href="/title-32-90-days.html">Title 32 90 Days</a></li>
+													<li class="list-group-item"><a href="/title-32-jobs-texas.html">Title 32 Jobs Texas</a></li>
+													<li class="list-group-item"><a href="/trang-an-marathon.html">Trang An Marathon</a></li>
+													<li class="list-group-item"><a href="/tyvek-airguard-tape.html">Tyvek Airguard Tape</a></li>
+													<li class="list-group-item"><a href="/tx-sec-of-state-business-search.html">Tx Sec Of State Business Search</a></li>
+													<li class="list-group-item"><a href="/txt-mp3.html">Txt Mp3</a></li>
+													<li class="list-group-item"><a href="/tn-army-national-guard-ocs.html">Tn Army National Guard Ocs</a></li>
+													<li class="list-group-item"><a href="/tx-series-tx750m-semi-modular-80-gold-power-supply-750w.html">Tx Series Tx750m Semi Modular 80 Gold Power Supply 750w</a></li>
+													<li class="list-group-item"><a href="/title-32-status-for-national-guard.html">Title 32 Status For National Guard</a></li>
+													<li class="list-group-item"><a href="/tng-ewallet-free.html">Tng Ewallet Free</a></li>
+													<li class="list-group-item"><a href="/tnx-us-treasury.html">Tnx Us Treasury</a></li>
+													<li class="list-group-item"><a href="/title-32-cfr-20024.html">Title 32 Cfr 20024</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

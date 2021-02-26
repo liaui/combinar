@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Rank Master Sergeant - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Rank Master Sergeant",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/9d/3e/70/9d3e706b7dfac2faa79d6b86db9994a8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+rank+master+sergeant",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Rank Master Sergeant</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The alternative spelling serjeant is used in The Rifles and other units that draw their heritage from the British light. Military Surplus Bargain Sale. The rank insignia were reduced to seven grades and eight ranks first sergeant was considered a senior grade of technical sergeant and were numbered from G1 for the highest rank master sergeant to G7 for the lowest private second class. <br>				
+			</p>
+										<a class="badge badge-primary" href="/chang-e-mobile-legend.html">chang e mobile legend</a>
+											<a class="badge badge-light" href="/colorado-army-national-guard-technician-jobs.html">colorado army national guard technician jobs</a>
+											<a class="badge badge-success" href="/chinese-army-salary-vs-indian-army.html">chinese army salary vs indian army</a>
+											<a class="badge badge-warning" href="/colorado-army-national-guard-agr.html">colorado army national guard agr</a>
+											<a class="badge badge-secondary" href="/certificate.html">certificate</a>
+											<a class="badge badge-light" href="/cervarix.html">cervarix</a>
+											<a class="badge badge-light" href="/chandan-shetty-army-song-download.html">chandan shetty army song download</a>
+											<a class="badge badge-dark" href="/coin-guard-soldiers-key.html">coin guard soldiers key</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to visit the right site.  Our site gives you suggestions for seeing the highest quality video and picture content, search and locate more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you see.  It is also possible to contribute to supporting this website by sharing videos and graphics that you enjoy on this site on your social networking accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/a2/68/3ea268e51b40d7f47eb1dbf688526682.jpg" data-lightbox="roadtrip" data-title="This Is The Rank Insignia Of A United States Army Master Sergeant Us Army Patches Master Sergeant Army Patches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/a2/68/3ea268e51b40d7f47eb1dbf688526682.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo2JymeTdnnbXqiqd8kdyoH7GGGM5bNbxMlw';" alt="This Is The Rank Insignia Of A United States Army Master Sergeant Us Army Patches Master Sergeant Army Patches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is The Rank Insignia Of A United States Army Master Sergeant Us Army Patches Master Sergeant Army Patches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/5d/2d/275d2d450d3be07b78fdc1e75ba46fed.jpg" data-lightbox="roadtrip" data-title="Military U S Army Rank Insignia Metal Sign Army Ranks Military Ranks Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/5d/2d/275d2d450d3be07b78fdc1e75ba46fed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBA9fQeOc4x6dNN6sDU9qJLnx7kpQaJdh4Xw';" alt="Military U S Army Rank Insignia Metal Sign Army Ranks Military Ranks Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military U S Army Rank Insignia Metal Sign Army Ranks Military Ranks Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/8b/6f/b18b6f71ee74391d3b22694a1d89dbf9.jpg" data-lightbox="roadtrip" data-title="Enlisted Ranks Military Marines Army Strong Army Ranks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/8b/6f/b18b6f71ee74391d3b22694a1d89dbf9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAicizMdewRDGobdVm7PMgt0YTUkC1_AU-rw';" alt="Enlisted Ranks Military Marines Army Strong Army Ranks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Enlisted Ranks Military Marines Army Strong Army Ranks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/28/e8/a3/28e8a389c3db60cc9f6c24159ebc3419.jpg" data-lightbox="roadtrip" data-title="Us Army Enlisted Rank Insignia Collection Military Frame Clip Etsy Military Frames Insignia Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/28/e8/a3/28e8a389c3db60cc9f6c24159ebc3419.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXouei0xGReDNhS3V1Eu04fba1qmuqoSdn8A';" alt="Us Army Enlisted Rank Insignia Collection Military Frame Clip Etsy Military Frames Insignia Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Enlisted Rank Insignia Collection Military Frame Clip Etsy Military Frames Insignia Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/bb/1a/4bbb1a0d048e80e354ef866c92e144c3.jpg" data-lightbox="roadtrip" data-title="Pin On America">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/bb/1a/4bbb1a0d048e80e354ef866c92e144c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP6JBEzeIiQjlqFJpg5tIxTi219hHkHb0bCA';" alt="Pin On America">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On America</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/dc/83/93dc83b54e7041a8b914039551772daf.jpg" data-lightbox="roadtrip" data-title="A Simple Chart That Shows The Various Shoulder Blades For Distinguished Soldiers During The War Army Ranks Army Wwii Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/dc/83/93dc83b54e7041a8b914039551772daf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6Hy79eff7uTIL9clURsj7VqMDC05Hg-HKQ';" alt="A Simple Chart That Shows The Various Shoulder Blades For Distinguished Soldiers During The War Army Ranks Army Wwii Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Simple Chart That Shows The Various Shoulder Blades For Distinguished Soldiers During The War Army Ranks Army Wwii Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/89/da/36/89da3612c90a19275b618ddbe3f93821.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6Hy79eff7uTIL9clURsj7VqMDC05Hg-HKQ';" alt="A Simple Chart That Shows The Various Shoulder Blades For Distinguished Soldiers During The War Army Ranks Army Wwii Uniforms">
+										<div class="card-body">
+						<h3 class="h5"><b>Master Sergeants can do a wide variety of jobs.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army rank master sergeant</strong>. 
+								
+																	Fast Domestic USA Shipping. 
+																	So whether you dont know any of the military ranks or youre just. 
+																	A Master Sergeant is a Staff Noncommissioned Officer in the United States Marine Corps at DoD paygrade E-8. 
+																	The promotion to Master Sergeant is known as one of the most significant promotions in the Air Force and it is the point where an airman enters the senior Non-Commissioned Officer tier. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On this page you can learn more about a Master Sergeants payscale the process of becoming a Master Sergeant and the history of the rank in the United States Army. 
+																	Subdued olive-drab-on-khaki stripes were created for wear with the class C khaki uniform. 
+																	The Master Sergeants Roles and Responsibilities - The Master Sergeant is the principal NCO at. 
+																	The new rank structure takes effect Feb. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 the memo states. 
+																	That is the rank when they are identified as the experts in their fields. 
+																	In the Marine Corps a master gunnery sergeant and a sergeant major are. 
+																	Trades were now grouped in seven grades of pay by rank. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The civilian equivalent of this military rank is roughly GS-6 under the federal governments General Schedule payscale. 
+																	Marine Corps just above gunnery sergeant below master gunnery sergeant sergeant. 
+																	A Master Sergeant receives a monthly basic pay salary starting at 0 per month with raises up to 6390 per month once they have served for over 30 years. 
+																	A master sergeant is a Noncommissioned Officer at DoD paygrade E-8 with a starting monthly pay of 4480. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Officers were paid in pay periods of 1st second lieutenants and ensigns through 8th generals and admirals. 
+																	Sergeant ˈ s ɑː r dʒ ən t SARJ-ənt. 
+																	A corporal is expected to fill a leadership role and has a higher rank than a specialist even though both receive E-4 pay. 
+																	Army sergeant from the 29th Infantry Division in 2011. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Master Sergeant MSG is the eighth enlisted grade E-8 ranking above sergeant first class and below sergeant major command sergeant major Sergeant Major of the Army and equal in grade but not authority to a first sergeant. 
+																	Genuine US Military Army MASTER SERGEANT Metal Hat Rank Pins Insignia. 
+																	Duties can range from running operations to being laterally promoted to be. 
+																	A master sergeant is. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The eighth enlisted rank in the US. 
+																	Buy with confidence from a Trusted US Seller. 
+																	How do you become a Master Sergeant. 
+																	Army just above sergeant first class below sergeant major command sergeant. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You are Bidding on a. 
+																	The rank of company quartermaster sergeant CQMS ceathrushairsint complacht in Irish is also used in the Irish ArmyIt is an actual rank and is subordinate to the company sergeant equivalent to a company sergeant major. 
+																	The eighth enlisted rank in the US. 
+																	Has Clips on back to secure it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Master Sergeant is considered a Noncommissioned Officer with a paygrade of E-8. 
+																	Master Sergeant is the 9th rank in the United States Army ranking above Sergeant First Class and directly below First Sergeant. 
+																	The most senior member is the Chief Master Sergeant of the Space Force an E-9 rank the memo adds. 
+																	The CQMS is in charge of supplies transport stores weapons ammunition and accommodation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A master sergeant is a Staff Noncommissioned Officer at DoD paygrade E-8 with a starting monthly pay of 4480. 
+																	Confusion about the order of military ranks can be made even worse from branch to branch by the common use of some easily-recognizable rank names like sergeant or captain for entirely different pay gradesA captain in the Marine Corpss pay grade is O-3 whereas a captain in the Navy is an O-6 as one shining example. 
+																	How do you become a Master Sergeant. 
+																	And capitalized when used as a named persons title is a rank in many uniformed organizations principally military and policing forces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 7th grade indicated the lowest enlisted grade ie private and the 1st grade signified the highest ie master sergeant. 
+																	A Master Sergeant is a noncommissioned officer in the United States Army at DoD paygrade E-8. 
+																	It is just above Technical Sergeant and below Senior Master Sergeant. 
+																	The SFC is the first level at which the term senior NCO properly applies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Master Sergeant MSgt is the third Non-Commissioned Officer rank in the United States Air Force. 
+																	Military budgets previously paid servicemen by trade rather than their rank leading to 134 different trades with an array of insignia and no clear authority. 
+																	Want to learn more. 
+																	The rank of Master Sergeant in the Marines was part of a further restructuring of Marine ranks after WWI senior to Staff Sergeants but suboordinate to Master Gunnery Sergeants. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Senior Non-Commissioned Officers E-7 to E-9 Sergeant First Class Platoon Sergeant E-7. 
+																	You get ONE Master Sergeant Rank Hat Pin in this listing. 
+																	Master Sergeant is the 8th rank in the United States Marine Corps ranking above Gunnery Sergeant and directly below First Sergeant. 
+																	A Master Sergeant is most often promoted from Sergeant First Class SFC although promotion from lower paygrades may occur with sufficient display of leadership and experience. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The seventh enlisted rank in the US. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f7/c5/bd/f7c5bd1eefc18312953b13e75e6e4b5d.jpg" data-lightbox="roadtrip" data-title="Us Army Master Sergeant Rank Army Strong Master Sergeant Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f7/c5/bd/f7c5bd1eefc18312953b13e75e6e4b5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAliE71KZzvuwCOH2djWt7ai6Cp0WusE-icw';" alt="Us Army Master Sergeant Rank Army Strong Master Sergeant Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Master Sergeant Rank Army Strong Master Sergeant Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/18/1a/84181a3529db281bc92519b276f7c840.jpg" data-lightbox="roadtrip" data-title="Rank Insignia For U S Army Enlisted Customize A Crystal Plaque For A Soldier With Their Own Army Rank At Diy Awards For An Ex Army Ranks Army Enlistment Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/18/1a/84181a3529db281bc92519b276f7c840.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSxNwibCE_04yYxH4dS8ioJbYsszxXkmzQoA';" alt="Rank Insignia For U S Army Enlisted Customize A Crystal Plaque For A Soldier With Their Own Army Rank At Diy Awards For An Ex Army Ranks Army Enlistment Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rank Insignia For U S Army Enlisted Customize A Crystal Plaque For A Soldier With Their Own Army Rank At Diy Awards For An Ex Army Ranks Army Enlistment Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/3e/70/9d3e706b7dfac2faa79d6b86db9994a8.jpg" data-lightbox="roadtrip" data-title="Army Nco Rank Yahoo Search Results Military Ranks Army Ranks Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/3e/70/9d3e706b7dfac2faa79d6b86db9994a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJEjYW5aqha5qb1cVlxtJbdi-EXQl2vlIKzQ';" alt="Army Nco Rank Yahoo Search Results Military Ranks Army Ranks Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Nco Rank Yahoo Search Results Military Ranks Army Ranks Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/da/36/89da3612c90a19275b618ddbe3f93821.jpg" data-lightbox="roadtrip" data-title="United States Armed Forces Enlisted Rank Insignia By Zapista Ou In 2021 Military Ranks United States Armed Forces Military Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/da/36/89da3612c90a19275b618ddbe3f93821.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1W5cBH13PGMdDe_YRfil2RvQRRnoHJbI-ZQ';" alt="United States Armed Forces Enlisted Rank Insignia By Zapista Ou In 2021 Military Ranks United States Armed Forces Military Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Armed Forces Enlisted Rank Insignia By Zapista Ou In 2021 Military Ranks United States Armed Forces Military Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/0d/fb/690dfbfde56d51792d9e037800793e96.jpg" data-lightbox="roadtrip" data-title="Us Army Master Sergeant Msgt E8 Rank Pin Sujak Military Items 5 95 For Hat Or Lapel 2 Metal Clasps For Secure Wear 1 2 Master Sergeant Army Sergeant Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/0d/fb/690dfbfde56d51792d9e037800793e96.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1aAdeMXqN_q8cpdZ5cwik4Dqs3XpJIDM_Kw';" alt="Us Army Master Sergeant Msgt E8 Rank Pin Sujak Military Items 5 95 For Hat Or Lapel 2 Metal Clasps For Secure Wear 1 2 Master Sergeant Army Sergeant Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Master Sergeant Msgt E8 Rank Pin Sujak Military Items 5 95 For Hat Or Lapel 2 Metal Clasps For Secure Wear 1 2 Master Sergeant Army Sergeant Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/e9/81/75e9810ad07a00095d0f527b71baa6b9.jpg" data-lightbox="roadtrip" data-title="Us Army Rank Insignia Sergeant Major Of The Army E 10 3 Chevrons 3 Rockers And In The Center The Army Seal Fl Army Ranks Military Insignia Army Sergeant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/e9/81/75e9810ad07a00095d0f527b71baa6b9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdhEDXTq7-8AHV7FEWu02FL0fypT8JyAy5oQ';" alt="Us Army Rank Insignia Sergeant Major Of The Army E 10 3 Chevrons 3 Rockers And In The Center The Army Seal Fl Army Ranks Military Insignia Army Sergeant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Rank Insignia Sergeant Major Of The Army E 10 3 Chevrons 3 Rockers And In The Center The Army Seal Fl Army Ranks Military Insignia Army Sergeant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/ea/da/2feada62e860d6bd6a41fb8263d9c330.jpg" data-lightbox="roadtrip" data-title="For You Writers Out There Army Ranks Military Ranks Military Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/ea/da/2feada62e860d6bd6a41fb8263d9c330.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpTQM0CMQvY1DvUjNMn6uKyRZglIC0mLCPqA';" alt="For You Writers Out There Army Ranks Military Ranks Military Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">For You Writers Out There Army Ranks Military Ranks Military Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/94/22/4e942256bc3a0b56d13bcf9c6c092cc0.jpg" data-lightbox="roadtrip" data-title="Army Enlisted Rank Insignia Vector Complete Collection Of Army Enlisted Rank In Aff Vector Complete Collection Insignia Insignia Army Ranks Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/94/22/4e942256bc3a0b56d13bcf9c6c092cc0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCrvvo8bRIaHC23tupwqI63h7fqXtzmh-fFw';" alt="Army Enlisted Rank Insignia Vector Complete Collection Of Army Enlisted Rank In Aff Vector Complete Collection Insignia Insignia Army Ranks Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Enlisted Rank Insignia Vector Complete Collection Of Army Enlisted Rank In Aff Vector Complete Collection Insignia Insignia Army Ranks Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/3e/64/f53e64a85fd325b3ac8df70a2d4b7593.jpg" data-lightbox="roadtrip" data-title="Us Army Master Sergeant Rank Insignia Pair Combat Obsolete Master Sergeant Military Ranks Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/3e/64/f53e64a85fd325b3ac8df70a2d4b7593.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6cS549HXbSgicozX6oywhsNSD0rVSQn-ORA';" alt="Us Army Master Sergeant Rank Insignia Pair Combat Obsolete Master Sergeant Military Ranks Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Master Sergeant Rank Insignia Pair Combat Obsolete Master Sergeant Military Ranks Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/bf/01/f5bf01f80fbaa6f69c30fb1efbd149df.jpg" data-lightbox="roadtrip" data-title="Pin By Rob Courtemanche On Armed Forces Insignia And Rank Military Decorations Military Ranks Army Information">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/bf/01/f5bf01f80fbaa6f69c30fb1efbd149df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvIsVs0eIUcztqOvD_7l6mPOQ5DLadltDzMg';" alt="Pin By Rob Courtemanche On Armed Forces Insignia And Rank Military Decorations Military Ranks Army Information">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Rob Courtemanche On Armed Forces Insignia And Rank Military Decorations Military Ranks Army Information</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/4a/60/ca4a603a8443f5bdc844c6c627c3ea50.jpg" data-lightbox="roadtrip" data-title="Space Force Military Ranks Military Insignia Army Ranks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/4a/60/ca4a603a8443f5bdc844c6c627c3ea50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSNfrO3rl717ChAWEiIh9QHiXL0AJ60iKNCw';" alt="Space Force Military Ranks Military Insignia Army Ranks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Space Force Military Ranks Military Insignia Army Ranks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/b8/a9/fbb8a9429bd039878ecd9e3b219f459c.jpg" data-lightbox="roadtrip" data-title="Pin On Air Force Mascots Mottos Lingo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/b8/a9/fbb8a9429bd039878ecd9e3b219f459c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_KMdt4UfhtU0U2euilWU4PYKMgPsVZ-ZKMw';" alt="Pin On Air Force Mascots Mottos Lingo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Air Force Mascots Mottos Lingo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/99/1d/90991d452dad0c09e876f9c67996ef48.jpg" data-lightbox="roadtrip" data-title="Pin On Military Political">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/99/1d/90991d452dad0c09e876f9c67996ef48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvppFIDnp4H-owNBg_c2Ou8U7sqjKfbuDG6w';" alt="Pin On Military Political">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Political</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/warna-choco-army.html">Warna Choco Army</a></li>
+													<li class="list-group-item"><a href="/warna-cat-rumah-army.html">Warna Cat Rumah Army</a></li>
+													<li class="list-group-item"><a href="/warna-kombinasi-army.html">Warna Kombinasi Army</a></li>
+													<li class="list-group-item"><a href="/warna-army-warna-apa.html">Warna Army Warna Apa</a></li>
+													<li class="list-group-item"><a href="/warna-army-hoodie.html">Warna Army Hoodie</a></li>
+													<li class="list-group-item"><a href="/warna-army-olive.html">Warna Army Olive</a></li>
+													<li class="list-group-item"><a href="/what-are-the-ranks-in-british-army.html">What Are The Ranks In British Army</a></li>
+													<li class="list-group-item"><a href="/warna-yg-cocok-untuk-army.html">Warna Yg Cocok Untuk Army</a></li>
+													<li class="list-group-item"><a href="/warna-kesukaan-army.html">Warna Kesukaan Army</a></li>
+													<li class="list-group-item"><a href="/what-are-the-ranks-in-the-united-states-coast-guard.html">What Are The Ranks In The United States Coast Guard</a></li>
+													<li class="list-group-item"><a href="/warna-jogger-army.html">Warna Jogger Army</a></li>
+													<li class="list-group-item"><a href="/west-coast-usa-time-zone.html">West Coast Usa Time Zone</a></li>
+													<li class="list-group-item"><a href="/warna-army-polos.html">Warna Army Polos</a></li>
+													<li class="list-group-item"><a href="/warna-army-kaya-gimana.html">Warna Army Kaya Gimana</a></li>
+													<li class="list-group-item"><a href="/warna-army-doff.html">Warna Army Doff</a></li>
+													<li class="list-group-item"><a href="/warna-army-dipadukan-dengan-warna-apa.html">Warna Army Dipadukan Dengan Warna Apa</a></li>
+													<li class="list-group-item"><a href="/warna-ijo-army.html">Warna Ijo Army</a></li>
+													<li class="list-group-item"><a href="/warna-royal-army.html">Warna Royal Army</a></li>
+													<li class="list-group-item"><a href="/warna-army-dan-hijau-botol.html">Warna Army Dan Hijau Botol</a></li>
+													<li class="list-group-item"><a href="/website-resmi-gb-whatsapp.html">Website Resmi Gb Whatsapp</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

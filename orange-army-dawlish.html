@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Orange Army Dawlish - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Orange Army Dawlish",
+  "datePublished": "2021-02-27",
+  "image": "http://www.dawlishnewspapers.co.uk/images/news/2018/1132_rail-2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=orange+army+dawlish",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Orange Army Dawlish</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">But yesterday after a 35million rescue mission and a remarkable feat of emergency engineering David Cameron and the south west of England gave a collective cheer for the Orange Army that got the. David Cameron has paid tribute to an orange army of workmen after they completed a 35m repair project on the badly damaged rail line at Dawlish. I appreciate from comments on this site that not everyone thinks it necessary. <br>				
+			</p>
+										<a class="badge badge-danger" href="/baju-warna-hijau-army-cocok-dengan-warna-apa.html">baju warna hijau army cocok dengan warna apa</a>
+											<a class="badge badge-dark" href="/batang-lidah-buaya.html">batang lidah buaya</a>
+											<a class="badge badge-dark" href="/california-air-national-guard-fire-rescue.html">california air national guard fire rescue</a>
+											<a class="badge badge-dark" href="/arnold-dads-army.html">arnold dads army</a>
+											<a class="badge badge-info" href="/batang-lumut.html">batang lumut</a>
+											<a class="badge badge-light" href="/california-army-national-guard-address.html">california army national guard address</a>
+											<a class="badge badge-danger" href="/british-army-rank-list.html">british army rank list</a>
+											<a class="badge badge-light" href="/arnold-army-photos.html">arnold army photos</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to pay a visit to the ideal blog.  Our site provides you with suggestions for viewing the highest quality video and image content, hunt and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this video that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.theconstructionindex.co.uk/assets/news_articles/2014/04/1396597036_04apr14-dawlish-orangearmy.jpg" data-lightbox="roadtrip" data-title="Winter Storms Help Renew To New Heights">
+											<img class="card-img v-image ads-img " src="https://www.theconstructionindex.co.uk/assets/news_articles/2014/04/1396597036_04apr14-dawlish-orangearmy.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf6TBWzymGOPc6FqrUTCkcno5KanELXYguBA';" alt="Winter Storms Help Renew To New Heights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Winter Storms Help Renew To New Heights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/01/14/f50114da814ada741282ef00db8fbe97.jpg" data-lightbox="roadtrip" data-title="Dawlish Back On Track Sea Wall Aerial Photograph Storm">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/01/14/f50114da814ada741282ef00db8fbe97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1xszUkSRILClGnEefOs-DlUau7i2WVzagaQ';" alt="Dawlish Back On Track Sea Wall Aerial Photograph Storm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dawlish Back On Track Sea Wall Aerial Photograph Storm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.prgloo.com/media/14dd1a9211064907bc125ed1466f8d5c.jpg?width=1135&amp;height=960" data-lightbox="roadtrip" data-title="Dawlish Railway Reopens In Time For Easter Holidays As Network Rail S Orange Army Wins Its War With The Elements">
+											<img class="card-img v-image ads-img " src="https://cdn.prgloo.com/media/14dd1a9211064907bc125ed1466f8d5c.jpg?width=1135&amp;height=960" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNkMcf2YHEFQspSFzEYJW78O6lYfTEyI4BgQ';" alt="Dawlish Railway Reopens In Time For Easter Holidays As Network Rail S Orange Army Wins Its War With The Elements">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dawlish Railway Reopens In Time For Easter Holidays As Network Rail S Orange Army Wins Its War With The Elements</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/CMYJGfNW8AAtuny.jpg" data-lightbox="roadtrip" data-title="Olivia James Design Oliviajamesdes Twitter">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/CMYJGfNW8AAtuny.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAP8WxUbnTg0_Vzx4KhrS9fCbvQ8tYgTpABQ';" alt="Olivia James Design Oliviajamesdes Twitter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Olivia James Design Oliviajamesdes Twitter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mmo.aiircdn.com/22/601d74383a7e6.jpeg" data-lightbox="roadtrip" data-title="F2sfgu27qv9tdm">
+											<img class="card-img v-image ads-img " src="https://mmo.aiircdn.com/22/601d74383a7e6.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwjZAbUN7qgTsaclR9D9oYtg0EeIB4S0wkag';" alt="F2sfgu27qv9tdm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">F2sfgu27qv9tdm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.dawlishbeach.com/wp-content/uploads/2018/03/IMG_1189-1080x675.jpg" data-lightbox="roadtrip" data-title="The Dawlish Myth Dawlish Beach Cams">
+											<img class="card-img v-image ads-img " src="https://www.dawlishbeach.com/wp-content/uploads/2018/03/IMG_1189-1080x675.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK3qw4lUgZtggHSEk9AjGLtEl4fDnJ-Xmusw';" alt="The Dawlish Myth Dawlish Beach Cams">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Dawlish Myth Dawlish Beach Cams</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i2-prod.devonlive.com/incoming/article850839.ece/ALTERNATES/s1200b/DawlishRailJPG.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK3qw4lUgZtggHSEk9AjGLtEl4fDnJ-Xmusw';" alt="The Dawlish Myth Dawlish Beach Cams">
+										<div class="card-body">
+						<h3 class="h5"><b>Dawlish thanks the Orange Army.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Orange army dawlish</strong>. 
+								
+																	Network Rail has sent in a second battalion of the orange army to tackle a huge landslip that is threatening the Great Western Main Line about a mile west of Dawlish. 
+																	The line which is the only rail connection between Exeter Plymouth and Cornwall was reopened on 4 April just after prime minister David Cameron had visited the site and praised Network Rails orange army workforce. 
+																	The team of engineers who worked to reopen the rail link following the severe weather at the start of 2014 have been awarded the prestigious Brunel Medal at the 2014 Institution of Civil Engineers ICE Awards. 
+																	The orange army has rebuilt the railway so you can enjoy your journey to the South West again Mr Cameron who travelled to Dawlish to mark the reopening hailed it as a great day and said. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dawlish Beach Cams now have six state of the art. 
+																	The Brunel Medal named after civil engineering great Isambard. 
+																	On February 4 2014 a devastating storm swept the main rail route into the Westcountry into the sea at Dawlish. 
+																	Download this stock image. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Riviera Line railway linking Exeter Plymouth and Penzance reopens two weeks ahead of schedule and two months after a sea wall was breached and a stretch of the line was badly damaged at Dawlish on February 4th 2014 by large waves and storms which hit much of the British coastline on 4th February. 
+																	Thousands of people from all over the world flocked to the online camera to watch the sea wall being rebuilt by the locally named Orange Army. 
+																	02 Mar 2014 1903 There is now a Facebook page. 
+																	Orange Army of engineers behind Dawlish repairs top engineering Oscars. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Prime Minister was in Dawlish to deliver on his pledge made in February that he would do everything I could to get the line back. 
+																	The Prime Minister was in Dawlish to deliver on his pledge made in February that he would do everything I could to get the line back in action. 
+																	David Cameron has paid tribute to an orange army of workmen after they completed a 35m repair project on the badly damaged rail line at Dawlish. 
+																	This intensive work culminated in the line. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Brunel medal for Orange Army 12th November 2014 The team of engineers who worked round the clock to reopen the Dawlish railway following storms that breached the sea wall has been awarded the prestigious Brunel Medal at the 2014 Institution of Civil Engineers Awards. 
+																	2236 The team of engineers who worked 247 to reopen the Dawlish rail link following the severe weather at the start of 2014 have been awarded the prestigious Brunel Medal at the 2014 Institution of Civil Engineers ICE Awards today. 
+																	Packed with artefacts the displays in Dawlish Museum are regularly updated and depict life past and present in the town and notably tell the story of the February storm of 2014 which severely damaged the railway line. 
+																	The orange army arrived on site immediately but with 80 metres of track engulfed by the sea and a work site that extended over three miles from Dawlish Warren to Teignmouth over 300 staff were required to work day and night around the tides to ensure the railway line and its surrounding area were repaired as expediently as possible. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For those who wish to add their comments to the Appreciation of the men and women too who are working daily wonders to bring our railway and seawall back. 
+																	Dawlish Museum With 11 rooms over 3 floors the Museum is famous for its display of Piper Bill Millins D-Day bagpipes. 
+																	Andy Cooper managing director for CrossCountry said. 
+																	We are also grateful to our customers for their patience and understanding over the last two months while the repair work took place. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dawlish thanks the Orange Army. 
+																	The two-minute video shows how Network Rails orange army worked tirelessly day and night around the tide to rebuild the 100ft length of track on the south coast of Devon. 
+																	Wales Western Network Rails orange army is continuing to work hard at Dawlish to repair the damage caused by the storms at the beginning of the year and to put in place measures to protect the area against any future extreme weather. 
+																	The Brunel Medal named after civil engineering legend Isambard Kingdom Brunel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reopening the railway through Dawlish is a magnificent achievement and we are indebted to the orange army for all they have done. 
+																	All eyes fell on the seaside town as Network Rails Orange Army worked day and night. 
+																	The Orange Army of engineers. 
+																	The broken line which. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The orange army arrived on site immediately but with 80 metres of track engulfed by the sea and a work site that extended over three miles from Dawlish Warren to Teignmouth over 300 staff were required to work day and night around the tides to ensure the railway line and its surrounding area were repaired as expediently as possible. 
+																	Work on a new and more resilient wall started in May 2019 and the first section was completed in July last year. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/4f/9a/994f9aa2496797c5879d33fd4e71610e.jpg" data-lightbox="roadtrip" data-title="Photos Network Rail Engineers Work To Repair Storm Damaged Line At Dawlish Exeter Express And Echo In This Moment Coastal Towns Storm">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/4f/9a/994f9aa2496797c5879d33fd4e71610e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMBRmDHK5UPX5s0xJoAyZzQcUUTUynDBoBeg';" alt="Photos Network Rail Engineers Work To Repair Storm Damaged Line At Dawlish Exeter Express And Echo In This Moment Coastal Towns Storm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos Network Rail Engineers Work To Repair Storm Damaged Line At Dawlish Exeter Express And Echo In This Moment Coastal Towns Storm</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/3/9/1394376098082/repair-dawlish-train-line-008.jpg?width=300&amp;quality=45&amp;auto=format&amp;fit=max&amp;dpr=2&amp;s=cfc3c56d08a2fdf3d522ae5660d74f21" data-lightbox="roadtrip" data-title="Proud Rush To Repair The Hole In Dawlish Coastal Train Line Uk Weather The Guardian">
+											<img class="card-img v-image ads-img " src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/3/9/1394376098082/repair-dawlish-train-line-008.jpg?width=300&amp;quality=45&amp;auto=format&amp;fit=max&amp;dpr=2&amp;s=cfc3c56d08a2fdf3d522ae5660d74f21" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlnyjeNKtL7MhDEWU_IHlYUuUFz25WPsouNQ';" alt="Proud Rush To Repair The Hole In Dawlish Coastal Train Line Uk Weather The Guardian">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Proud Rush To Repair The Hole In Dawlish Coastal Train Line Uk Weather The Guardian</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2-prod.devonlive.com/news/devon-news/article2502195.ece/ALTERNATES/s1200/1_JS174036513.jpg" data-lightbox="roadtrip" data-title="Five Years On The Incredible Images Of Dawlish Storm Devastation Plymouth Live">
+											<img class="card-img v-image ads-img " src="https://i2-prod.devonlive.com/news/devon-news/article2502195.ece/ALTERNATES/s1200/1_JS174036513.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlGpWAYOt07pQkK7K7kfgYzSMsNmAcQEOGug';" alt="Five Years On The Incredible Images Of Dawlish Storm Devastation Plymouth Live">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Five Years On The Incredible Images Of Dawlish Storm Devastation Plymouth Live</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ichef.bbci.co.uk/news/1024/media/images/80153000/jpg/_80153665_6.teignmouthslip.jpg" data-lightbox="roadtrip" data-title="Dawlish Storms Rail Line Threatened By Cliff Homes Bbc News">
+											<img class="card-img v-image ads-img " src="https://ichef.bbci.co.uk/news/1024/media/images/80153000/jpg/_80153665_6.teignmouthslip.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-0CwYFH-nZZDgFKq_5LOAkRmMcnu1An3vbw';" alt="Dawlish Storms Rail Line Threatened By Cliff Homes Bbc News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dawlish Storms Rail Line Threatened By Cliff Homes Bbc News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/1f/12/a51f1260f8cf403a4a6a9b9a006f6e03.jpg" data-lightbox="roadtrip" data-title="Close Up Of Raindrops On A Cobweb Plant Leaves Behind Them Weather Photos Bbc Weather Plant Leaves">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/1f/12/a51f1260f8cf403a4a6a9b9a006f6e03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrqMnjAWnxJeFCbNWT2By77s6be_p7ZdcJLQ';" alt="Close Up Of Raindrops On A Cobweb Plant Leaves Behind Them Weather Photos Bbc Weather Plant Leaves">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Close Up Of Raindrops On A Cobweb Plant Leaves Behind Them Weather Photos Bbc Weather Plant Leaves</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i2-prod.devonlive.com/incoming/article850839.ece/ALTERNATES/s1200b/DawlishRailJPG.jpg" data-lightbox="roadtrip" data-title="Dawlish Train Line Solution Needs To Be Sorted Out Now Say Bosses Devon Live">
+											<img class="card-img v-image ads-img " src="https://i2-prod.devonlive.com/incoming/article850839.ece/ALTERNATES/s1200b/DawlishRailJPG.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq_ueedB8QBP6BkI7nYwljNbu2TmMZUGEtEQ';" alt="Dawlish Train Line Solution Needs To Be Sorted Out Now Say Bosses Devon Live">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dawlish Train Line Solution Needs To Be Sorted Out Now Say Bosses Devon Live</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/4e/4c/704e4cc546c93d04ff03e55b5e520d4a.jpg" data-lightbox="roadtrip" data-title="Work Goes On Into The Evening Filling In The Coffer Dam With Aggregate Memorial Park San Francisco Skyline Bay Bridge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/4e/4c/704e4cc546c93d04ff03e55b5e520d4a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmEbCY3whnRdoAeiiYROHLAvzCkGAeeL2slA';" alt="Work Goes On Into The Evening Filling In The Coffer Dam With Aggregate Memorial Park San Francisco Skyline Bay Bridge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Work Goes On Into The Evening Filling In The Coffer Dam With Aggregate Memorial Park San Francisco Skyline Bay Bridge</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/f4/c8/59f4c8c451e3769ab649f0eaeb4ff7c0.jpg" data-lightbox="roadtrip" data-title="Mike Midgethegooner Counties Of England Storm Surge Norfolk">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/f4/c8/59f4c8c451e3769ab649f0eaeb4ff7c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDOUAuypstlCJF5XfuMc2z8IuuhNEDHiSxoA';" alt="Mike Midgethegooner Counties Of England Storm Surge Norfolk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mike Midgethegooner Counties Of England Storm Surge Norfolk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.theconstructionindex.co.uk/assets/news_articles/2019/05/1557730542_dawlish.jpg" data-lightbox="roadtrip" data-title="Bam Nuttall Wins Dawlish Sea Wall Contract">
+											<img class="card-img v-image ads-img " src="https://www.theconstructionindex.co.uk/assets/news_articles/2019/05/1557730542_dawlish.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCre3WCHCzt2MleskfG-WYJ7TZDNCN4HNLwg';" alt="Bam Nuttall Wins Dawlish Sea Wall Contract">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bam Nuttall Wins Dawlish Sea Wall Contract</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/dd/08/a5dd08434b8b754333863a54bd10cd4e.jpg" data-lightbox="roadtrip" data-title="Graffiti Vintage Shop In Senigallia Italy Vintage Shops Italy Vintage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/dd/08/a5dd08434b8b754333863a54bd10cd4e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy1ibPK5CFEQ2w5cfTAHAQPrV-xhAZMedm9Q';" alt="Graffiti Vintage Shop In Senigallia Italy Vintage Shops Italy Vintage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Graffiti Vintage Shop In Senigallia Italy Vintage Shops Italy Vintage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/23/12/0c/23120c42949cb9aa8792431e3566186a.jpg" data-lightbox="roadtrip" data-title="The New York Staff Band Cossack Fire Dance From Call Of The Cossacks Youtube Salvation Army Army Band Music Bands">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/23/12/0c/23120c42949cb9aa8792431e3566186a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXxgFBNW-6cdivc_q6fKFWBBkpGKEF3F2R0Q';" alt="The New York Staff Band Cossack Fire Dance From Call Of The Cossacks Youtube Salvation Army Army Band Music Bands">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The New York Staff Band Cossack Fire Dance From Call Of The Cossacks Youtube Salvation Army Army Band Music Bands</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4b/95/ee/4b95ee4c42f26c176618e437466babc5.jpg" data-lightbox="roadtrip" data-title="Sunset In February 2019 Southsea Overlooking Gosport H T Simon Zebedee Brown Portsmouth Southsea Instagram">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4b/95/ee/4b95ee4c42f26c176618e437466babc5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDcyx49-b7eo2YwStbfrEBAJ8v9tcYyHpN1w';" alt="Sunset In February 2019 Southsea Overlooking Gosport H T Simon Zebedee Brown Portsmouth Southsea Instagram">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sunset In February 2019 Southsea Overlooking Gosport H T Simon Zebedee Brown Portsmouth Southsea Instagram</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.dawlishnewspapers.co.uk/images/news/2018/1132_rail-2.jpg" data-lightbox="roadtrip" data-title="500m Plan To Move Rail News Dawlish Newspapers">
+											<img class="card-img v-image ads-img " src="http://www.dawlishnewspapers.co.uk/images/news/2018/1132_rail-2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSghfIJV4W_eOotGIVO_Zvg0Z_S6TTtvnhVOg';" alt="500m Plan To Move Rail News Dawlish Newspapers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">500m Plan To Move Rail News Dawlish Newspapers</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/national-guard-to-be-armed.html">National Guard To Be Armed</a></li>
+													<li class="list-group-item"><a href="/national-guard-special-forces-washington.html">National Guard Special Forces Washington</a></li>
+													<li class="list-group-item"><a href="/national-guard-training-yard-x01.html">National Guard Training Yard X01</a></li>
+													<li class="list-group-item"><a href="/national-guard-uniform-2019.html">National Guard Uniform 2019</a></li>
+													<li class="list-group-item"><a href="/national-guard-to-ranger-regiment.html">National Guard To Ranger Regiment</a></li>
+													<li class="list-group-item"><a href="/national-guard-to-ranger.html">National Guard To Ranger</a></li>
+													<li class="list-group-item"><a href="/national-guard-training-yard-fo4.html">National Guard Training Yard Fo4</a></li>
+													<li class="list-group-item"><a href="/national-guard-soldiers-kicked-out.html">National Guard Soldiers Kicked Out</a></li>
+													<li class="list-group-item"><a href="/national-soldier-definition.html">National Soldier Definition</a></li>
+													<li class="list-group-item"><a href="/national-guard-troops-arrive-in-philadelphia.html">National Guard Troops Arrive In Philadelphia</a></li>
+													<li class="list-group-item"><a href="/national-guard-to-active-duty-navy.html">National Guard To Active Duty Navy</a></li>
+													<li class="list-group-item"><a href="/national-guardcomca.html">National Guardcomca</a></li>
+													<li class="list-group-item"><a href="/national-guard-training-yard-complex-fallout-4.html">National Guard Training Yard Complex Fallout 4</a></li>
+													<li class="list-group-item"><a href="/national-guard-ukraine.html">National Guard Ukraine</a></li>
+													<li class="list-group-item"><a href="/national-guard-usa-wikipedia.html">National Guard Usa Wikipedia</a></li>
+													<li class="list-group-item"><a href="/national-guard-webmail.html">National Guard Webmail</a></li>
+													<li class="list-group-item"><a href="/national-security-beat-soldier.html">National Security Beat Soldier</a></li>
+													<li class="list-group-item"><a href="/national-guard-state-capitol.html">National Guard State Capitol</a></li>
+													<li class="list-group-item"><a href="/national-guard-wisconsin-recruiter.html">National Guard Wisconsin Recruiter</a></li>
+													<li class="list-group-item"><a href="/national-soldier-company.html">National Soldier Company</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

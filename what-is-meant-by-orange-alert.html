@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is Meant By Orange Alert - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is Meant By Orange Alert",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/44/c4/2f/44c42f9238eef9b1e235176e1ac0d6d8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+meant+by+orange+alert",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is Meant By Orange Alert</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">An Orange warning stands for Alert and authorities are expected to Be prepared. Not sure what were supposed to do about it though. Orange means elevated level of alert. <br>				
+			</p>
+										<a class="badge badge-warning" href="/army-song-remix-download.html">army song remix download</a>
+											<a class="badge badge-warning" href="/army-song-status-download.html">army song status download</a>
+											<a class="badge badge-light" href="/army-songs-of.html">army songs of</a>
+											<a class="badge badge-dark" href="/army-songs-hindi-dj.html">army songs hindi dj</a>
+											<a class="badge badge-primary" href="/army-songs-and-video.html">army songs and video</a>
+											<a class="badge badge-secondary" href="/army-song-sumit-goswami-dj-remix-ringtone.html">army song sumit goswami dj remix ringtone</a>
+											<a class="badge badge-light" href="/army-songs-download-mp3.html">army songs download mp3</a>
+											<a class="badge badge-dark" href="/army-songs-in-movies.html">army songs in movies</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to pay a visit to the right blog.  Our site gives you suggestions for viewing the maximum quality video and picture content, search and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/9c/58/cf9c58e02615b8945e3c698046ce22a5.png" data-lightbox="roadtrip" data-title="Iteachpsych Exams Tips Teaching Psychology Psychology Notes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/9c/58/cf9c58e02615b8945e3c698046ce22a5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE9UknhQKRsGeibMvnwgNTdjzlBOwmd7G9VQ';" alt="Iteachpsych Exams Tips Teaching Psychology Psychology Notes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iteachpsych Exams Tips Teaching Psychology Psychology Notes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/21/65/f821655bf6ad23dc2a5603a8d9af0fa2.png" data-lightbox="roadtrip" data-title="Pin On Prepaid Electric Meter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/21/65/f821655bf6ad23dc2a5603a8d9af0fa2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR98kK1r_T2hUyI2bYfZIXSxMc_uq0YyTNjpA';" alt="Pin On Prepaid Electric Meter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Prepaid Electric Meter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cb/00/7f/cb007f39bac583a90c7164764e41558a.jpg" data-lightbox="roadtrip" data-title="Pin By Duchess On Red Alert Red Meaning Red Quotes Red Color">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cb/00/7f/cb007f39bac583a90c7164764e41558a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7bE1kf5y2CqwX4OrtEEUmEL96VHNI323KRA';" alt="Pin By Duchess On Red Alert Red Meaning Red Quotes Red Color">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Duchess On Red Alert Red Meaning Red Quotes Red Color</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/74/e5/dd/74e5dd62262332ed7e9aba2f984f42ca.jpg" data-lightbox="roadtrip" data-title="Pin On Poster Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/74/e5/dd/74e5dd62262332ed7e9aba2f984f42ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDrIIjq1P4zd6GqWQfo_kD9h3nbOZOrPlm7Q';" alt="Pin On Poster Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Poster Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/e6/c9/9ce6c9f00fd7ca3530ab728cf7080608.jpg" data-lightbox="roadtrip" data-title="Pin On Do It Doper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/e6/c9/9ce6c9f00fd7ca3530ab728cf7080608.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmuQcslkRyUPhsvBll2u1ZeCzm9E4OOJczCQ';" alt="Pin On Do It Doper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Do It Doper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/c1/72/d7c172b655dd700c19c24fe731221381.jpg" data-lightbox="roadtrip" data-title="Competition Alert Participate And Win Cash Exclusive Prizes For More Info Check Stories Storytelling Competiti Competition Storytelling Told You So">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/c1/72/d7c172b655dd700c19c24fe731221381.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQojFe1V0aB2g9OcG4Yc5LqzqhNOSldAmqiqg';" alt="Competition Alert Participate And Win Cash Exclusive Prizes For More Info Check Stories Storytelling Competiti Competition Storytelling Told You So">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Competition Alert Participate And Win Cash Exclusive Prizes For More Info Check Stories Storytelling Competiti Competition Storytelling Told You So</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9c/e6/c9/9ce6c9f00fd7ca3530ab728cf7080608.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQojFe1V0aB2g9OcG4Yc5LqzqhNOSldAmqiqg';" alt="Competition Alert Participate And Win Cash Exclusive Prizes For More Info Check Stories Storytelling Competiti Competition Storytelling Told You So">
+										<div class="card-body">
+						<h3 class="h5"><b>But Brown said the virus is holding no.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is meant by orange alert</strong>. 
+								
+																	A Red alert stands for Warning and asks authorities to Take action. 
+																	STATUS ORANGE Weather Warning Be PreparedThis category of ORANGE level weather warnings is for weather conditions which have the capacity to impact significantly on people in the affected areas. 
+																	It says the issuing of an orange level weather. 
+																	What do you mean by Red Alert Orange Alert and Yellow alertwhich alert is dangerous. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is acknowledgement that there is local spread. 
+																	For example a Status Orange. 
+																	Orange Level 3 isis the alert stage where the government begins to restrict previously established allowances for public interaction. 
+																	Red Orange or Yellow. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In Level 2 or orange two or three indicators are met. 
+																	An Orange level weather warning implies that all recipients in the affected areas should prepare themselves in an appropriate way for the anticipated conditions. 
+																	Orange is one of the color levels of the national terror alert system. 
+																	Met Eireann says the orange category is for weather conditions which have the capacity to impact significantly on people in the affected areas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What does that mean. 
+																	Health Minister Gan Kim Yong said. 
+																	Counties in Level 2 have increased exposure and spread and residents should exercise caution. 
+																	Although the alert level had dropped to 1 meaning infection rate is low a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Under the Disease Outbreak Response System Condition or Dorscon orange means the outbreak is deemed to have moderate to high public health impact. 
+																	The alert levels are meant to educate. 
+																	The state deems an Orange Alert area 10 to 14 positive cases per 100000 population while 15 or more positive cases per 100000 population is the Red Alert. 
+																	The issue of an Orange level weather warning implies that all recipients in the affected areas should prepare themselves in an appropriate way for the anticipated conditions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Montreal Quebec City and the Chaudiere-Appalaches region are now orange on Quebecs COVID-19 alert system. 
+																	IMD issues Orange alert warns of severe cold conditions in Delhi Punjab UP Bihar. 
+																	The forecast during an Orange warning is of heavy to very heavy rainfall. 
+																	The issue of an Orange level weather warning implies that all recipients in the affected areas should prepare themselves in an appropriate way for the anticipated conditions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An orange alert from IMD means be prepared as the weather conditions could disrupt daily life. 
+																	BORIS JOHNSON unveiled a road map for ending the UK coronavirus lockdown in June which included an alert system. 
+																	Status Orange Weather Alert Be Prepared This category of ORANGE level weather warnings is for weather conditions which have the capacity to impact significantly on people in the affected areas. 
+																	It was meant to provide a comprehensive and effective means to disseminate information regarding the risk of terrorist acts to federal state and local authorities and to the American people It was unveiled March 12 2002 by Tom Ridge then the Assistant to the President for Homeland Security. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2012 Farlex Inc. 
+																	Private indoor or outdoor gatherings are limited. 
+																	Under the Disease Outbreak Response System Condition Dorscon the orange alert means the outbreak is deemed to have moderate to high public health impact. 
+																	A cold wave is likely to grip parts of Delhi over the next four days as frosty winds from the Himalayas have. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A popular term referring to any state of emergency which falls below red alerteg the medical malpractice crisisand in which insurers are increasingly reticent about underwriting insurance. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/1a/ad/831aad9838bdca10085df85bf5f3fbf8.jpg" data-lightbox="roadtrip" data-title="11 11 Meaning All About 11 11 And Repetitive Numbers In5d Com Youtube Numerology Life Path Angel Number Meanings Prayers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/1a/ad/831aad9838bdca10085df85bf5f3fbf8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLtz97Hv9WWXtvjqgtiHkttZ5I5ERf2ZhOxw';" alt="11 11 Meaning All About 11 11 And Repetitive Numbers In5d Com Youtube Numerology Life Path Angel Number Meanings Prayers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 11 Meaning All About 11 11 And Repetitive Numbers In5d Com Youtube Numerology Life Path Angel Number Meanings Prayers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/c4/2f/44c42f9238eef9b1e235176e1ac0d6d8.jpg" data-lightbox="roadtrip" data-title="Traide Compass Forex Alert Software Educational Websites Forex Software">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/c4/2f/44c42f9238eef9b1e235176e1ac0d6d8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8VEjEMo02PkIIwDlKWZ8PQ1Sr1CMAGDd0yA';" alt="Traide Compass Forex Alert Software Educational Websites Forex Software">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Traide Compass Forex Alert Software Educational Websites Forex Software</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/2c/0e/8b2c0e718f7ff92e49cc87c5fa33674b.png" data-lightbox="roadtrip" data-title="2007 Bmw 328xi Warning Light Symbols Google Search Warning Lights Bmw 328 Car Essentials">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/2c/0e/8b2c0e718f7ff92e49cc87c5fa33674b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC2HONWt4K-GlsGw6hsboYujGJR7q5JdGs1Q';" alt="2007 Bmw 328xi Warning Light Symbols Google Search Warning Lights Bmw 328 Car Essentials">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2007 Bmw 328xi Warning Light Symbols Google Search Warning Lights Bmw 328 Car Essentials</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c0/40/2a/c0402a97872ff3ead76b647322734f85.jpg" data-lightbox="roadtrip" data-title="Pin On Supernatural">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c0/40/2a/c0402a97872ff3ead76b647322734f85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0B_Wa5WFc2g87PwBAFcsKDlo3uEuyF_ePtg';" alt="Pin On Supernatural">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Supernatural</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4e/15/36/4e1536cfab7488736e2709abe8fa3144.jpg" data-lightbox="roadtrip" data-title="Casey Male Name Art Print Personalized Art Print Classic Names Names">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4e/15/36/4e1536cfab7488736e2709abe8fa3144.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCTDIlB_feqo6dEy5MkhpfL90FCN_VhZxSNw';" alt="Casey Male Name Art Print Personalized Art Print Classic Names Names">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Casey Male Name Art Print Personalized Art Print Classic Names Names</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/39/a7/0239a74eb1e0318d2b18e0991fe2f9ed.jpg" data-lightbox="roadtrip" data-title="Instagram Twitter Linkedin Facebok Pinterest Growthhack Socialmedia Marketing Strategy Social Media Social Media Strategies Social Media Marketing Help">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/39/a7/0239a74eb1e0318d2b18e0991fe2f9ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWKN4EyyN6AgnOj_RpyJ-FK9kmC2LV8q--UA';" alt="Instagram Twitter Linkedin Facebok Pinterest Growthhack Socialmedia Marketing Strategy Social Media Social Media Strategies Social Media Marketing Help">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Instagram Twitter Linkedin Facebok Pinterest Growthhack Socialmedia Marketing Strategy Social Media Social Media Strategies Social Media Marketing Help</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/b1/a3/36b1a3bfdb7a5f894de5f6d7b30da34a.jpg" data-lightbox="roadtrip" data-title="Pin On Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/b1/a3/36b1a3bfdb7a5f894de5f6d7b30da34a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcePFxeQcP_v5I93aAuKqeXeuCc9hBP8IWFA';" alt="Pin On Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/d1/e9/a6d1e97a3c77721cffaab22507810353.jpg" data-lightbox="roadtrip" data-title="39 Likes 1 Comments Leah Hazard Leahhazard On Instagram New Writing Alert So Excited For You All To Read The Best In 2020 Writer The Twenties Kindle Reading">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/d1/e9/a6d1e97a3c77721cffaab22507810353.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKtK230EHYmKsNOjWgHMCsQm5V7SI0_Eg6YQ';" alt="39 Likes 1 Comments Leah Hazard Leahhazard On Instagram New Writing Alert So Excited For You All To Read The Best In 2020 Writer The Twenties Kindle Reading">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">39 Likes 1 Comments Leah Hazard Leahhazard On Instagram New Writing Alert So Excited For You All To Read The Best In 2020 Writer The Twenties Kindle Reading</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/77/9a/f2/779af2b7f13a4586655baf2feb676303.jpg" data-lightbox="roadtrip" data-title="Don T Touch My Phone Best Phone Anti Theft Alarm App Alarm App Best Phone Anti Theft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/77/9a/f2/779af2b7f13a4586655baf2feb676303.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7uMsh8chjxFUR3BobuN4DI_4w6L3cJE0Ozg';" alt="Don T Touch My Phone Best Phone Anti Theft Alarm App Alarm App Best Phone Anti Theft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don T Touch My Phone Best Phone Anti Theft Alarm App Alarm App Best Phone Anti Theft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/76/c0/d7/76c0d7526974d1298fcd27c4ba601872.jpg" data-lightbox="roadtrip" data-title="Compare Two Columns In Excel For Matches Differences Youtube In 2020 Excel Excel Formula Column">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/76/c0/d7/76c0d7526974d1298fcd27c4ba601872.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQb1tf1qrkfwQ0IYcg3yv5vyD2P4ed54V_PQ';" alt="Compare Two Columns In Excel For Matches Differences Youtube In 2020 Excel Excel Formula Column">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Compare Two Columns In Excel For Matches Differences Youtube In 2020 Excel Excel Formula Column</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e1/2e/99/e12e990d3450e87e80f1921d1dfd6176.jpg" data-lightbox="roadtrip" data-title="Pin On Tips On Life Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e1/2e/99/e12e990d3450e87e80f1921d1dfd6176.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtGAYBgQ1zL5l0Js-eJcfKI_wFAs70O2tEmg';" alt="Pin On Tips On Life Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tips On Life Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/72/87/22728792503da36323e65808390985cd.jpg" data-lightbox="roadtrip" data-title="Candle Colors And Their Meaning Candlecolormeanings Candle Colors And Their Meaning Candlecolormeanings Candle Color Meanings Colorful Candles Color Meanings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/72/87/22728792503da36323e65808390985cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQblEk3Ry0GrWa_EiuXSr0RENEAWVytOPEVPA';" alt="Candle Colors And Their Meaning Candlecolormeanings Candle Colors And Their Meaning Candlecolormeanings Candle Color Meanings Colorful Candles Color Meanings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Candle Colors And Their Meaning Candlecolormeanings Candle Colors And Their Meaning Candlecolormeanings Candle Color Meanings Colorful Candles Color Meanings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/55/18/c955182d708b93782fbf286fd670ec2f.png" data-lightbox="roadtrip" data-title="Discussion Meaning Behind Orange Caramel S Catallena Mv Orange Caramel Caramel Salmon And Shrimp">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/55/18/c955182d708b93782fbf286fd670ec2f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4jCfumTl9tzhLSIgB7wIWQ9KbZZbKFAU0Zw';" alt="Discussion Meaning Behind Orange Caramel S Catallena Mv Orange Caramel Caramel Salmon And Shrimp">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Discussion Meaning Behind Orange Caramel S Catallena Mv Orange Caramel Caramel Salmon And Shrimp</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/korean-army-rank-insignia.html">Korean Army Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/korea-style.html">Korea Style</a></li>
+													<li class="list-group-item"><a href="/lgbt.html">Lgbt</a></li>
+													<li class="list-group-item"><a href="/kepanjangan-dari-army-dan-artinya.html">Kepanjangan Dari Army Dan Artinya</a></li>
+													<li class="list-group-item"><a href="/lawan-warna-army.html">Lawan Warna Army</a></li>
+													<li class="list-group-item"><a href="/love-songs-lyrics-new-model-army.html">Love Songs Lyrics New Model Army</a></li>
+													<li class="list-group-item"><a href="/la-guardia-di-finanza.html">La Guardia Di Finanza</a></li>
+													<li class="list-group-item"><a href="/mama-otis-and-otis.html">Mama Otis And Otis</a></li>
+													<li class="list-group-item"><a href="/karang-taruna-logo.html">Karang Taruna Logo</a></li>
+													<li class="list-group-item"><a href="/maine-army-national-guard-recruiting-office.html">Maine Army National Guard Recruiting Office</a></li>
+													<li class="list-group-item"><a href="/lee-cooper-army-cargo-pants.html">Lee Cooper Army Cargo Pants</a></li>
+													<li class="list-group-item"><a href="/manager.html">Manager</a></li>
+													<li class="list-group-item"><a href="/la-guardia-wiki.html">La Guardia Wiki</a></li>
+													<li class="list-group-item"><a href="/list-of-united-states-coast-guard-stations.html">List Of United States Coast Guard Stations</a></li>
+													<li class="list-group-item"><a href="/kazmunaygaz-tseni.html">Kazmunaygaz Tseni</a></li>
+													<li class="list-group-item"><a href="/list-of-national-guard-mos.html">List Of National Guard Mos</a></li>
+													<li class="list-group-item"><a href="/latar-warna-army.html">Latar Warna Army</a></li>
+													<li class="list-group-item"><a href="/knife-without-guard.html">Knife Without Guard</a></li>
+													<li class="list-group-item"><a href="/karangan.html">Karangan</a></li>
+													<li class="list-group-item"><a href="/list-of-national-guard-units.html">List Of National Guard Units</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

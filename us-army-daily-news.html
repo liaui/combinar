@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Daily News - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Daily News",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/6a/a6/95/6aa695822c2e387d2986ce44021180fa.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+daily+news",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Daily News</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Army carry team transfers the remains of Sgt. Joint training program between Sri Lanka Navy and US Army. Containing informative articles in-depth interviews and insider information from the industrys top people Army Daily News is used industry-wide in making decisions on new techniques and innovative products. <br>				
+			</p>
+										<a class="badge badge-success" href="/army-cargo-pants-blue.html">army cargo pants blue</a>
+											<a class="badge badge-success" href="/army-force-rank-list.html">army force rank list</a>
+											<a class="badge badge-success" href="/army-diamond-art.html">army diamond art</a>
+											<a class="badge badge-secondary" href="/army-design-art.html">army design art</a>
+											<a class="badge badge-dark" href="/army-fatigue-cargo-pants-old-navy.html">army fatigue cargo pants old navy</a>
+											<a class="badge badge-warning" href="/army-cargo-trucks.html">army cargo trucks</a>
+											<a class="badge badge-primary" href="/army-cadence-songs-yellow-bird.html">army cadence songs yellow bird</a>
+											<a class="badge badge-dark" href="/army-cargo-pants-buy.html">army cargo pants buy</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to pay a visit to the ideal blog.  Our site provides you with hints for viewing the highest quality video and image content, hunt and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie for you to view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/5d/d7/375dd70133db6a74cdf34aab36ce9ba7.jpg" data-lightbox="roadtrip" data-title="Us Military And Civilians Are Increasingly Divided Military Pentagon Amazing Stories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/5d/d7/375dd70133db6a74cdf34aab36ce9ba7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5QJxqzoCzAwqNFmd9NpGVpGU-fnm7swRdiw';" alt="Us Military And Civilians Are Increasingly Divided Military Pentagon Amazing Stories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Military And Civilians Are Increasingly Divided Military Pentagon Amazing Stories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/b7/d2/65b7d28368295bf11cc5890a68b21562.jpg" data-lightbox="roadtrip" data-title="Pin On Joint Force Quarterly Issue 74">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/b7/d2/65b7d28368295bf11cc5890a68b21562.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgamKcUN8hIqrFaoYZvGSbFjKMh4NhbxDC5w';" alt="Pin On Joint Force Quarterly Issue 74">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Joint Force Quarterly Issue 74</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/fc/a6/f6fca6be59ef344f03323cb7d9569680.jpg" data-lightbox="roadtrip" data-title="U S News The Daily Beast Military Photos American Soldiers Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/fc/a6/f6fca6be59ef344f03323cb7d9569680.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJjXhQHNNmV3r_L3uTPiqKpT8yY9yxayKTg';" alt="U S News The Daily Beast Military Photos American Soldiers Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S News The Daily Beast Military Photos American Soldiers Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/e4/49/3de4491e6678d0678dd0e5853ce52217.jpg" data-lightbox="roadtrip" data-title="First Two Women Soldiers Pass Elite U S Army Ranger Course Army Rangers Ranger School Female Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/e4/49/3de4491e6678d0678dd0e5853ce52217.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhMJPOFw6_5e4xjvbBBuW4ERV5kY8KUSHXEg';" alt="First Two Women Soldiers Pass Elite U S Army Ranger Course Army Rangers Ranger School Female Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">First Two Women Soldiers Pass Elite U S Army Ranger Course Army Rangers Ranger School Female Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/ae/74/39ae7454dd3f9f81acdf854243998331.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/ae/74/39ae7454dd3f9f81acdf854243998331.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqQ4ERrEs7piWmNPON-_cI9XPq9nW7_tYQPw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/ad/57/17ad570c57c45837a0cc930a69a42f17.jpg" data-lightbox="roadtrip" data-title="Become A Leader With Advanced Technical Skills Become A Warrant Officer Usarecdeft Army Usarmy Armyteam Sold Warrant Officer Tuition Assistance Army Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/ad/57/17ad570c57c45837a0cc930a69a42f17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShIUfXPOOt_K6aWxWXe2oxOhkbgFBRPVJEwQ';" alt="Become A Leader With Advanced Technical Skills Become A Warrant Officer Usarecdeft Army Usarmy Armyteam Sold Warrant Officer Tuition Assistance Army Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Become A Leader With Advanced Technical Skills Become A Warrant Officer Usarecdeft Army Usarmy Armyteam Sold Warrant Officer Tuition Assistance Army Life</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/37/5d/d7/375dd70133db6a74cdf34aab36ce9ba7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShIUfXPOOt_K6aWxWXe2oxOhkbgFBRPVJEwQ';" alt="Become A Leader With Advanced Technical Skills Become A Warrant Officer Usarecdeft Army Usarmy Armyteam Sold Warrant Officer Tuition Assistance Army Life">
+										<div class="card-body">
+						<h3 class="h5"><b>The VAs million-shot milestone puts it ahead of states including North Carolina New Jersey.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army daily news</strong>. 
+								
+																	Joint training program between Sri Lanka Navy and US Army. 
+																	From Army pay and benefits to updates on Army uniforms deployments and information from around the service find your US. 
+																	The latest news video and expert analysis from around the United States of America. 
+																	Defense News offers premier news and analysis of global air warfare programs and technologies to keep military and industry decision-makers informed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military news from around the world. 
+																	Robert Louis Barnett III 34 was placed on the armys most wanted list after fleeing the US military. 
+																	Stay on top of everything from staffing to military equipment. 
+																	Army Daily News is the premier publication in the defense industry. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The device attaches to a rifle barrel and is designed with a gyroscopes and sensors for. 
+																	Most Popular Military News The VA Has Now Administered More COVID-19 Vaccine Shots Than 42 US States. 
+																	Home of the Daily and Sunday Express. 
+																	Joint Combined Exchange Training JCET Balance Style 202001 between Sri Lanka Navy and US Army commenced at the Special Boat Squadron HQ in Trincomalee recentlyThe inauguration ceremony of the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	THE US army may soon be able to send mind-reading soldiers to the battlefield following a brain-decoding breakthrough. 
+																	Army Air Force Navy and Marine Corps. 
+																	He was found hiding in Barnstaple Devon in May six years after going AWOL. 
+																	Army was created on. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Air Force Navy and Marine Corps. 
+																	Joint Combined Exchange Training JCET Balance Style 202001 between Sri Lanka Navy and US Army commenced at the Special Boat Squadron HQ in Trincomalee recentlyThe inauguration ceremony of the. 
+																	See in mobile app. 
+																	The latest breaking news comment and features from The Independent. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army covering the Americas Middle East Europe Asia and Pacific and more. 
+																	News about the US. 
+																	The Democratic nominee and former vice president is set to become the countrys next commander in chief. 
+																	News about the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Breaking military news headlines that highlight the latest from the US capitol and beyond. 
+																	The latest news and information from the US. 
+																	Gutierrez of San Antonio. 
+																	Daily news updates from the military community and abroad including military gear and equipment breaking news international news and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This Channel For Everything It Contains Official News and Information. 
+																	Military Army Marines Airforce Navy And Civilian. 
+																	For the First Time in 2 Decades the US Has Gone a Year Without a Combat Death in Afghanistan. 
+																	1st Class Javier J. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The US Army has given a rifle stabilizer that was set for its now defunct Iron Man suit another go. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/65/42/ab65423bc80e08d4bf0bd5b2e0d4771c.jpg" data-lightbox="roadtrip" data-title="Photos Of The Weekend 10 21 The Christian Science Monitor Us Army Soldier Christian Science Army Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/65/42/ab65423bc80e08d4bf0bd5b2e0d4771c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgrszLszq6mYP2XNC1ic0nFzbopXlGA7JxOA';" alt="Photos Of The Weekend 10 21 The Christian Science Monitor Us Army Soldier Christian Science Army Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos Of The Weekend 10 21 The Christian Science Monitor Us Army Soldier Christian Science Army Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/a6/95/6aa695822c2e387d2986ce44021180fa.jpg" data-lightbox="roadtrip" data-title="This Official Us Military Photo Title Is Both Totally Absurd And Deeply Revealing Military Military Photos Us Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/a6/95/6aa695822c2e387d2986ce44021180fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrvOdo-H9Q46dYxuRRIM3Bd5UWCjHi-hsvrw';" alt="This Official Us Military Photo Title Is Both Totally Absurd And Deeply Revealing Military Military Photos Us Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Official Us Military Photo Title Is Both Totally Absurd And Deeply Revealing Military Military Photos Us Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e6/5d/08/e65d0899064beaf00330a386d58f396d.jpg" data-lightbox="roadtrip" data-title="Middle East Tensions Erupt As Two Us Military Killed In Afghanistan Nato Confirm At Least Two Us Service Members Have Be Afghanistan Troops American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e6/5d/08/e65d0899064beaf00330a386d58f396d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRybmQEFCRufCsxkt8zYaM5qZSTAjPs6wjlTg';" alt="Middle East Tensions Erupt As Two Us Military Killed In Afghanistan Nato Confirm At Least Two Us Service Members Have Be Afghanistan Troops American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Middle East Tensions Erupt As Two Us Military Killed In Afghanistan Nato Confirm At Least Two Us Service Members Have Be Afghanistan Troops American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/58/ce/f058ce6b5b8b70feff5bad9e6122844d.jpg" data-lightbox="roadtrip" data-title="Sgt 1st Class Leroy Arthur Petry Medal Of Honor Army Rangers Us Army Rangers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/58/ce/f058ce6b5b8b70feff5bad9e6122844d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9DtvyLgR_Vh0Kx04YzFxol-mvLe-WVao7oA';" alt="Sgt 1st Class Leroy Arthur Petry Medal Of Honor Army Rangers Us Army Rangers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sgt 1st Class Leroy Arthur Petry Medal Of Honor Army Rangers Us Army Rangers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/14/cd/0d14cd0a4f2e30f35b92996358a714c4.jpg" data-lightbox="roadtrip" data-title="Pin On Jennifer Peace">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/14/cd/0d14cd0a4f2e30f35b92996358a714c4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP9O-P_BErxT5-eJLJZVQ-IDDj19ovo99cPg';" alt="Pin On Jennifer Peace">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Jennifer Peace</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/70/7c/7f707c06b57a88f16a30a7d805d8808f.jpg" data-lightbox="roadtrip" data-title="History Made First Female Soldiers To Graduate Army Ranger School Ranger School Army Rangers Us Army Rangers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/70/7c/7f707c06b57a88f16a30a7d805d8808f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb8awwYQ40pLiAHs7-gSUPaJZqvqnG6PjewA';" alt="History Made First Female Soldiers To Graduate Army Ranger School Ranger School Army Rangers Us Army Rangers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">History Made First Female Soldiers To Graduate Army Ranger School Ranger School Army Rangers Us Army Rangers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/eb/7a/8ceb7ade9e916de361a03e983af84abc.jpg" data-lightbox="roadtrip" data-title="Soldier Systems Daily An Industry Daily And Tactical Gear News Blog Vietnam War Vietnam War Photos Vietnam History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/eb/7a/8ceb7ade9e916de361a03e983af84abc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzcwMwj9hncvTJV5nzM2GDRr-vdiENhJM_oQ';" alt="Soldier Systems Daily An Industry Daily And Tactical Gear News Blog Vietnam War Vietnam War Photos Vietnam History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier Systems Daily An Industry Daily And Tactical Gear News Blog Vietnam War Vietnam War Photos Vietnam History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/70/3e/4d703e7285dbdd282fe047b1fe52f9fd.jpg" data-lightbox="roadtrip" data-title="Soldier Systems Daily An Industry Daily And Tactical Gear News Blog Military Gear Tactical Tactical Gear Military Gear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/70/3e/4d703e7285dbdd282fe047b1fe52f9fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmODOeqo9WIzGfajASU7xwBVHhHj2E-6XYtQ';" alt="Soldier Systems Daily An Industry Daily And Tactical Gear News Blog Military Gear Tactical Tactical Gear Military Gear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier Systems Daily An Industry Daily And Tactical Gear News Blog Military Gear Tactical Tactical Gear Military Gear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/72/6b/cb726b954d86474de7e4f0ae284df534.jpg" data-lightbox="roadtrip" data-title="Pin On People">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/72/6b/cb726b954d86474de7e4f0ae284df534.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN2U-rIwEWE31ZYtBIhpirdEumCxUyU49KAg';" alt="Pin On People">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On People</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c9/05/fd/c905fdea9d794b72e4db5ec167bc352d.jpg" data-lightbox="roadtrip" data-title="Maj Gen Ronald P Clark Commander 25th Infantry Division Pins On The Expert Infantryman Badge On An Awardee At Schofield Barra Army Infantry Infantry Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c9/05/fd/c905fdea9d794b72e4db5ec167bc352d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDBRZkUhH-Fi0QBQmnKGZQds26-VBidIyIEA';" alt="Maj Gen Ronald P Clark Commander 25th Infantry Division Pins On The Expert Infantryman Badge On An Awardee At Schofield Barra Army Infantry Infantry Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maj Gen Ronald P Clark Commander 25th Infantry Division Pins On The Expert Infantryman Badge On An Awardee At Schofield Barra Army Infantry Infantry Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/20/df/a320df7975fb42ee94a05fa66657b2dd.jpg" data-lightbox="roadtrip" data-title="Wallpaper Us Army Wallpapers Wallpaper Hd Us Army Infantry Army Infantry Army Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/20/df/a320df7975fb42ee94a05fa66657b2dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBv3GJW_zfShLhhV1mT9hoF2Vp9rwWaPcagQ';" alt="Wallpaper Us Army Wallpapers Wallpaper Hd Us Army Infantry Army Infantry Army Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wallpaper Us Army Wallpapers Wallpaper Hd Us Army Infantry Army Infantry Army Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/85/69/738569c66514fba700e8b4dd24b8eacb.jpg" data-lightbox="roadtrip" data-title="First Female Us Army Rangers Open Up New Doors For Women Army Rangers Us Army Rangers Female Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/85/69/738569c66514fba700e8b4dd24b8eacb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-hdD9Nm5WaBJU6mKnk9FBTl--M25yTYVag';" alt="First Female Us Army Rangers Open Up New Doors For Women Army Rangers Us Army Rangers Female Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">First Female Us Army Rangers Open Up New Doors For Women Army Rangers Us Army Rangers Female Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/14/35/eb143507ea7df16372fce1290da1ce27.jpg" data-lightbox="roadtrip" data-title="کسی بھی بھارتی غلط کاروائی پر پاکستان کا ردعمل 27 فروری سے زیادہ مضبوط ہوگا آئی ایس پی آر Pakistan Armed Forces Mens Polo Shirts Pakistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/14/35/eb143507ea7df16372fce1290da1ce27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSd4UYVSmfwh6iFXKUAwjZ0JcX1Pu46AAXbw';" alt="کسی بھی بھارتی غلط کاروائی پر پاکستان کا ردعمل 27 فروری سے زیادہ مضبوط ہوگا آئی ایس پی آر Pakistan Armed Forces Mens Polo Shirts Pakistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">کسی بھی بھارتی غلط کاروائی پر پاکستان کا ردعمل 27 فروری سے زیادہ مضبوط ہوگا آئی ایس پی آر Pakistan Armed Forces Mens Polo Shirts Pakistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/national-guard-pt-requirements.html">National Guard Pt Requirements</a></li>
+													<li class="list-group-item"><a href="/national-guard-regiments.html">National Guard Regiments</a></li>
+													<li class="list-group-item"><a href="/national-guard-shoots-hippies.html">National Guard Shoots Hippies</a></li>
+													<li class="list-group-item"><a href="/national-guard-officers-password.html">National Guard Officers Password</a></li>
+													<li class="list-group-item"><a href="/national-guard-north-carolina.html">National Guard North Carolina</a></li>
+													<li class="list-group-item"><a href="/national-guard-pay-indiana.html">National Guard Pay Indiana</a></li>
+													<li class="list-group-item"><a href="/national-guard-paying-for-college.html">National Guard Paying For College</a></li>
+													<li class="list-group-item"><a href="/national-guard-military-bases.html">National Guard Military Bases</a></li>
+													<li class="list-group-item"><a href="/national-guard-of-washington.html">National Guard Of Washington</a></li>
+													<li class="list-group-item"><a href="/national-guard-readiness-center-wilmington-nc.html">National Guard Readiness Center Wilmington Nc</a></li>
+													<li class="list-group-item"><a href="/national-guard-pay-grade.html">National Guard Pay Grade</a></li>
+													<li class="list-group-item"><a href="/national-guard-on-standby.html">National Guard On Standby</a></li>
+													<li class="list-group-item"><a href="/national-guard-los-angeles-arrival.html">National Guard Los Angeles Arrival</a></li>
+													<li class="list-group-item"><a href="/national-guard-recruitment-office-fallout.html">National Guard Recruitment Office Fallout</a></li>
+													<li class="list-group-item"><a href="/national-guard-saginaw-michigan.html">National Guard Saginaw Michigan</a></li>
+													<li class="list-group-item"><a href="/national-guard-reedsburg-wi.html">National Guard Reedsburg Wi</a></li>
+													<li class="list-group-item"><a href="/national-guard-north-dakota.html">National Guard North Dakota</a></li>
+													<li class="list-group-item"><a href="/national-guard-ranger.html">National Guard Ranger</a></li>
+													<li class="list-group-item"><a href="/national-guard-sierra-vista-az.html">National Guard Sierra Vista Az</a></li>
+													<li class="list-group-item"><a href="/national-guard-minneapolis-mn.html">National Guard Minneapolis Mn</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

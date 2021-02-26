@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Xtc You And The Clouds Will Still Be Beautiful Lyrics - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Xtc You And The Clouds Will Still Be Beautiful Lyrics",
+  "datePublished": "2021-02-27",
+  "image": "https://images.genius.com/89d08407c57703a7d21a0de04050d79a.300x300x1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=xtc+you+and+the+clouds+will+still+be+beautiful+lyrics",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Xtc You And The Clouds Will Still Be Beautiful Lyrics</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">And every evening fore I bolt the door. Lyrics to You The Clouds Will Still Be Beautiful by XTC. No matter what the weather you and the clouds will still be beautiful So let it rain And when we see flying saucers flying cups and flying plates And as we trip down lovers lane we sometimes bump into the gate. <br>				
+			</p>
+										<a class="badge badge-warning" href="/cn-apa.html">cn apa</a>
+											<a class="badge badge-danger" href="/cn-tower-apartments.html">cn tower apartments</a>
+											<a class="badge badge-warning" href="/cero-z-psp.html">cero z psp</a>
+											<a class="badge badge-light" href="/chang-e-ml.html">chang e ml</a>
+											<a class="badge badge-dark" href="/cng-eco-connect-app.html">cng eco connect app</a>
+											<a class="badge badge-light" href="/coklat-army-warna.html">coklat army warna</a>
+											<a class="badge badge-warning" href="/cheerful.html">cheerful</a>
+											<a class="badge badge-info" href="/cn-apartments-valemount.html">cn apartments valemount</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to visit the right blog.  Our website provides you with suggestions for seeing the maximum quality video and picture content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you see.  You can also bring about supporting this site by sharing videos and images that you like on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://static1.squarespace.com/static/56b8f8efab48debb2efb2ef5/t/5abf9c59562fa7a28a86fba1/1522506853104/XTC+Wasp+Star.jpg?format=1500w" data-lightbox="roadtrip" data-title="Xtc You And The Clouds Will Still Be Beautiful We Re All Light Song Bar">
+											<img class="card-img v-image ads-img " src="http://static1.squarespace.com/static/56b8f8efab48debb2efb2ef5/t/5abf9c59562fa7a28a86fba1/1522506853104/XTC+Wasp+Star.jpg?format=1500w" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL7UacBUJZuxR7LgKerIDSfIJ9sQp1N1eHnA';" alt="Xtc You And The Clouds Will Still Be Beautiful We Re All Light Song Bar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xtc You And The Clouds Will Still Be Beautiful We Re All Light Song Bar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://t2.genius.com/unsafe/168x0/https%3A%2F%2Fimages.genius.com%2F55d8b777f4cbac735a66e76f3450e591.953x953x1.jpg" data-lightbox="roadtrip" data-title="Xtc You And The Clouds Will Still Be Beautiful Lyrics Genius Lyrics">
+											<img class="card-img v-image ads-img " src="https://t2.genius.com/unsafe/168x0/https%3A%2F%2Fimages.genius.com%2F55d8b777f4cbac735a66e76f3450e591.953x953x1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMHOPExW28OKiBc4YPdeOoz8VvOXBTp2WZ8Q';" alt="Xtc You And The Clouds Will Still Be Beautiful Lyrics Genius Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xtc You And The Clouds Will Still Be Beautiful Lyrics Genius Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/XRxcyukrgHk/hqdefault.jpg" data-lightbox="roadtrip" data-title="Xtc You And The Clouds Will Still Be Beautiful Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/XRxcyukrgHk/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfIg8-ZFUSFeF97yOGwb65ZAu0Zfo6gPJ_lw';" alt="Xtc You And The Clouds Will Still Be Beautiful Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xtc You And The Clouds Will Still Be Beautiful Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/77/28/7f772872fcb472cfacfdb9b3a89b0bc7.jpg" data-lightbox="roadtrip" data-title="Pin On Favorite Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/77/28/7f772872fcb472cfacfdb9b3a89b0bc7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5LeTT9Qa7TW2o3ipgebFpBzS0BUc3Gt1kPw';" alt="Pin On Favorite Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Favorite Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://chalkhills.org/images/cover/WaspPromoRev.jpg" data-lightbox="roadtrip" data-title="Chalkhills Xtc Wasp Star Apple Venus Volume 2">
+											<img class="card-img v-image ads-img " src="http://chalkhills.org/images/cover/WaspPromoRev.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSpdhXWqipJA8XQxFwGWptR-KJ5oBFVSQtIA';" alt="Chalkhills Xtc Wasp Star Apple Venus Volume 2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chalkhills Xtc Wasp Star Apple Venus Volume 2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b0/c7/7c/b0c77c2b42c07bf224ee8224761a21a6.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b0/c7/7c/b0c77c2b42c07bf224ee8224761a21a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShLrXcdCpq8Ya7kLGBvmWK6RgEIcskBz4srQ';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="http://chalkhills.org/images/cover/WaspPromoRev.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShLrXcdCpq8Ya7kLGBvmWK6RgEIcskBz4srQ';" alt="">
+										<div class="card-body">
+						<h3 class="h5"><b>I give the stars.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Xtc you and the clouds will still be beautiful lyrics</strong>. 
+								
+																	And every morning before Im awake I walk around the world to make sure shes alright And every evening fore I bolt the door I give the stars a stir to make sure they will spin all night For I see people who will scratch and spit and kick and fi. 
+																	I walk around the world to make sure shes alright. 
+																	No matter what the weather you and the clouds will still be beautiful No matter what the weather Yeah So let it rain So let it rain You know you still be beautiful So let it rain It doesnt matter what the weather you know youre beautiful Just let it rain Youre just youre beautiful So let it rain Yeah since the clouds all part the clouds. 
+																	I give the stars a stir to make sure they will spin all night. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Apple Box Lyrics. 
+																	For I see people who will scratch and spit and kick and fight. 
+																	And every morning before Im awake I walk around the world to make sure shes alright And every evening fore I bolt the door I give the stars a stir to make sure they will spin all night For I see people who will scratch and spit and kick and fight. 
+																	You And The Clouds Will Still Be Beautiful Lyrics XTC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lyrics to You and the Clouds Will Still Be Beautiful by XTC from the Wasp Star Apple Venus Pt. 
+																	And every morning before Im awake I walk around the world to make sure shes alright And every evening fore I bolt the door I give the stars a stir to make sure they will spin all night For I see people who will scratch and spit and kick and fight And I see nations war about whether right is left and whether wrong is right And I know storms inside your head can amplify the blight But no. 
+																	No matter what the weather you and the clouds will still be beautiful No matter what the weather Yeah So let it rain So let it rain You know you still be beautiful So let it rain It doesnt matter what the weather you know youre beautiful Just let it rain Youre just youre beautiful So let it rain Yeah since the clouds all part the clouds just rose So let it rain From your pretty little mouth to your pretty little nose youre beautiful So let it rain. 
+																	And every morning before Im awake I walk around the world to make sure shes alright And every evening fore I bolt the door I give the sta. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And every evening fore I bolt the door. 
+																	You And The Clouds Will Still Be Beautiful. 
+																	The band enjoyed some chart. 
+																	And every morning before Im awake. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And every morning before Im awake I walk around the world to make sure shes alright And every evening fore I bolt the door I give the stars a stir to make sure they will spin all night. 
+																	Lyrics to You and the Clouds Will Still Be Beautiful by XTC from the Apple Box album - including song video artist biography translations and more. 
+																	Lyrics to You and the Clouds Will Still Be Beautiful by XTC from the Apple Box album - including song video artist biography translations and more. 
+																	And every morning before Im awake. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	XTC - You And The Clouds Will Still Be Beautiful Lyrics. 
+																	Lyrics to You and the Clouds Will Still Be Beautiful by XTC from the Apple Box album - including song video artist biography translations and more. 
+																	And every morning before Im awake I walk around the world to make sure shes alright And every evening fore I bolt the door I give the stars a stir to make sure they will spin all night For I see people who will scratch and spit and kick and fight And I see nations war about whether right is left and whether wrong is right And I know storms inside your head can amplify the blight But no matter what the weather you and the clouds will still be beautiful No matter what the weather you and. 
+																	Lyrics for You and the Clouds Will Still Be Beautiful by XTC And every morning before Im awake I walk around the world to make sure shes alright And every evening fore I bolt the door. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And every morning before Im awake I walk around the world to make sure shes alright And every evening fore I bolt the door I give the stars a stir to make sure they will spin all night For I see people who will scratch and spit and kick and fight And I see nations war about whether right is left and whether wrong is right And I know storms inside your head can amplify the blight But no matter what the weather you and the clouds will still be beautiful No matter what the weather you and. 
+																	FAVORITE 0 fans XTC. 
+																	XTC was a New Wave band from Swindon England active between 1977 and 2005. 
+																	You and the Clouds Will Still Be Beautiful XTC Buy This Song. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You and the clouds will still be beautiful No matter what the weather You and the clouds will still be beautiful so let it rain And we see flying saucers flying cups And flying plates and as we trip down lovers lane We sometimes bump into the gate and I know Thunder in your head can still reverberate But no matter what the weather. 
+																	Lyrics to You And The Clouds Will Still Be Beautiful by XTC. 
+																	And every morning before Im awake. 
+																	I walk around the world to make sure shes alright. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2 album - including song video artist biography translations and more. 
+																	You And The Clouds Will Still Be Beautiful Lyrics. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.pitchfork.com/photos/5929ac6aea9e61561daa5f0d/1:1/w_600/edaeca21.jpg" data-lightbox="roadtrip" data-title="Xtc Apple Box Album Review Pitchfork">
+											<img class="card-img v-image ads-img " src="https://media.pitchfork.com/photos/5929ac6aea9e61561daa5f0d/1:1/w_600/edaeca21.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsIajWrvzO7BsHOMuyEJ3CK_ktPEybLxn1Vg';" alt="Xtc Apple Box Album Review Pitchfork">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xtc Apple Box Album Review Pitchfork</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.genius.com/89d08407c57703a7d21a0de04050d79a.300x300x1.jpg" data-lightbox="roadtrip" data-title="Xtc Wasp Star Apple Venus Volume 2 Lyrics And Tracklist Genius">
+											<img class="card-img v-image ads-img " src="https://images.genius.com/89d08407c57703a7d21a0de04050d79a.300x300x1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLlVFT4KO8pMDnzI0Wudx0hhH97PY_IdUoyQ';" alt="Xtc Wasp Star Apple Venus Volume 2 Lyrics And Tracklist Genius">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xtc Wasp Star Apple Venus Volume 2 Lyrics And Tracklist Genius</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.guim.co.uk/img/media/bdf7448ca4a067e6e7f3898312834bb06ce28d26/0_72_2200_1320/master/2200.jpg?width=445&amp;quality=45&amp;auto=format&amp;fit=max&amp;dpr=2&amp;s=aa0a90cddb281c44c33643161841d618" data-lightbox="roadtrip" data-title="Readers Recommend Playlist Songs About Clouds Music The Guardian">
+											<img class="card-img v-image ads-img " src="https://i.guim.co.uk/img/media/bdf7448ca4a067e6e7f3898312834bb06ce28d26/0_72_2200_1320/master/2200.jpg?width=445&amp;quality=45&amp;auto=format&amp;fit=max&amp;dpr=2&amp;s=aa0a90cddb281c44c33643161841d618" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToE44_-_pauI12bsW3XYcBIemF7G7ZPEoi5Q';" alt="Readers Recommend Playlist Songs About Clouds Music The Guardian">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Readers Recommend Playlist Songs About Clouds Music The Guardian</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/6a/50/42/6a5042ca043ec1be29725c8e5ece44b6.jpg" data-lightbox="roadtrip" data-title="Trevor Daniel Falling Lyrics Youtube My Love Lyrics Film Music Composers Fall Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/6a/50/42/6a5042ca043ec1be29725c8e5ece44b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd19l-uYfMe2wMKrZR1bc4Ay0uyqeq2fwuxQ';" alt="Trevor Daniel Falling Lyrics Youtube My Love Lyrics Film Music Composers Fall Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trevor Daniel Falling Lyrics Youtube My Love Lyrics Film Music Composers Fall Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/ca/f2/65/caf26584d29a46d048ed77932c1cea08--johnny-cash-blame.jpg" data-lightbox="roadtrip" data-title="Johnny Cash One Lyrics Michael Johnny Cash Johnny Cash">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/ca/f2/65/caf26584d29a46d048ed77932c1cea08--johnny-cash-blame.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsrWo_UuX2qPgQbVjh_6f2zcuap1V3OIqwaA';" alt="Johnny Cash One Lyrics Michael Johnny Cash Johnny Cash">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Johnny Cash One Lyrics Michael Johnny Cash Johnny Cash</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/fc/f4/dafcf4223c59f7daf0d7966dcf9c48a7.jpg" data-lightbox="roadtrip" data-title="Pin On When You Were Young">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/fc/f4/dafcf4223c59f7daf0d7966dcf9c48a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgafGH0XTAGbuhWgnxH_yDvDdg9pC9fdRAZQ';" alt="Pin On When You Were Young">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On When You Were Young</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/2e/99/382e99d34025ebf085598b293321b09b.jpg" data-lightbox="roadtrip" data-title="Image Result For Storm Thorgerson Biffy Clyro Biffy Clyro Opposites Storm Thorgerson">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/2e/99/382e99d34025ebf085598b293321b09b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuSL0K1YtBYrfHCUQnTi64YRYFnj9KMMe8Rw';" alt="Image Result For Storm Thorgerson Biffy Clyro Biffy Clyro Opposites Storm Thorgerson">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Storm Thorgerson Biffy Clyro Biffy Clyro Opposites Storm Thorgerson</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/1a/f0/8a1af0a20542dfce8b86ee77d5f3dc01.jpg" data-lightbox="roadtrip" data-title="Pin On Xotic Guitars">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/1a/f0/8a1af0a20542dfce8b86ee77d5f3dc01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrGLzmxAXmahvanfnyhi0EycgCXgkoMlmTyw';" alt="Pin On Xotic Guitars">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Xotic Guitars</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/0a/99/5c0a991004d0b34b37055d716fa3d48e.jpg" data-lightbox="roadtrip" data-title="Discipline King Crimson 1981 King Crimson Crimson Cool Things To Buy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/0a/99/5c0a991004d0b34b37055d716fa3d48e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPSuRCdpr8Tm9u5v6i_H6usSKABHoaw9o9aQ';" alt="Discipline King Crimson 1981 King Crimson Crimson Cool Things To Buy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Discipline King Crimson 1981 King Crimson Crimson Cool Things To Buy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/5b/06/ef/5b06ef0000b3266c700c724d2fe372ea.jpg" data-lightbox="roadtrip" data-title="Pin By Kenneth Hawes On Pretty Nature Photo Outdoor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/5b/06/ef/5b06ef0000b3266c700c724d2fe372ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd7VFftYInjsHUBLU6Sgvr6s4ekXNgXHFkpg';" alt="Pin By Kenneth Hawes On Pretty Nature Photo Outdoor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kenneth Hawes On Pretty Nature Photo Outdoor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/ce/fd/7ecefde140ebdd9b47379973e9e0d1c8.jpg" data-lightbox="roadtrip" data-title="I Fade Away Song By Tulips Ballad Cat Dad M E Spotify Faded Fade Away Cat Dad">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/ce/fd/7ecefde140ebdd9b47379973e9e0d1c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlYTAZ-Q2JZvFPwjHkxnj84jew6uC-sGjb2A';" alt="I Fade Away Song By Tulips Ballad Cat Dad M E Spotify Faded Fade Away Cat Dad">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Fade Away Song By Tulips Ballad Cat Dad M E Spotify Faded Fade Away Cat Dad</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/a8/94/98a8940a7676b2eed9019e76dbea8467.jpg" data-lightbox="roadtrip" data-title="Plur Brittni Hicks Merriman Rave Quotes Dj Quotes Edm Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/a8/94/98a8940a7676b2eed9019e76dbea8467.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPdMaQwa4Rnryu_su63W2j4szi3HgLviuBCg';" alt="Plur Brittni Hicks Merriman Rave Quotes Dj Quotes Edm Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plur Brittni Hicks Merriman Rave Quotes Dj Quotes Edm Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/ed/42/75ed42fadd2679d7119b496fbf2f10e0.jpg" data-lightbox="roadtrip" data-title="Pin On I Love 80 S Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/ed/42/75ed42fadd2679d7119b496fbf2f10e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIeTT1OxbIt4JiqFDIGvu2FeOP_6BQaq4Wzg';" alt="Pin On I Love 80 S Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On I Love 80 S Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/orang-ketiga-serba-tahu.html">Orang Ketiga Serba Tahu</a></li>
+													<li class="list-group-item"><a href="/orang-humoris-artinya.html">Orang Humoris Artinya</a></li>
+													<li class="list-group-item"><a href="/orang-spanyol-yang-memprakarsai-penjelajahan-samudra-pertama-kali-adalah.html">Orang Spanyol Yang Memprakarsai Penjelajahan Samudra Pertama Kali Adalah</a></li>
+													<li class="list-group-item"><a href="/orange-army-chemnitz.html">Orange Army Chemnitz</a></li>
+													<li class="list-group-item"><a href="/orang-quraisy-yang-terkenal-menganut-ajaran-majusi-adalah.html">Orang Quraisy Yang Terkenal Menganut Ajaran Majusi Adalah</a></li>
+													<li class="list-group-item"><a href="/orang-hamil-makan-nanas.html">Orang Hamil Makan Nanas</a></li>
+													<li class="list-group-item"><a href="/orang-waras.html">Orang Waras</a></li>
+													<li class="list-group-item"><a href="/orang-random-artinya.html">Orang Random Artinya</a></li>
+													<li class="list-group-item"><a href="/orang.html">Orang</a></li>
+													<li class="list-group-item"><a href="/orang-sukses.html">Orang Sukses</a></li>
+													<li class="list-group-item"><a href="/orang-pertama-pelaku-sampingan.html">Orang Pertama Pelaku Sampingan</a></li>
+													<li class="list-group-item"><a href="/orang-tua-yang-harus-dihormati-terlebih-dahulu-adalah.html">Orang Tua Yang Harus Dihormati Terlebih Dahulu Adalah</a></li>
+													<li class="list-group-item"><a href="/orang-norwegia.html">Orang Norwegia</a></li>
+													<li class="list-group-item"><a href="/orang-utan-berasal-dari.html">Orang Utan Berasal Dari</a></li>
+													<li class="list-group-item"><a href="/orang-riau.html">Orang Riau</a></li>
+													<li class="list-group-item"><a href="/orang-terkaya-di-indonesia.html">Orang Terkaya Di Indonesia</a></li>
+													<li class="list-group-item"><a href="/orang-vektor.html">Orang Vektor</a></li>
+													<li class="list-group-item"><a href="/orang-quraisy-berdagang-ke-syam-pada.html">Orang Quraisy Berdagang Ke Syam Pada</a></li>
+													<li class="list-group-item"><a href="/orang-sunda.html">Orang Sunda</a></li>
+													<li class="list-group-item"><a href="/orang-yang-menerima-zakat-disebut.html">Orang Yang Menerima Zakat Disebut</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

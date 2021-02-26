@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Orang Jawa - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Orang Jawa",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/a8/0f/07/a80f07754c9ff3b82c7fdaf09a806ba1.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=orang+jawa",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Orang Jawa</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Dari 19 juta orang yang terjaring operasi yustisi 15 juta orang disanksi karena melanggar prokes. Sebelum itu yang dimaksud orang Jawa disini merujuk pada masyarakat Jawa Timur dan Jawa Tengah dengan implikasi bahwa bahasa ibu yang digunakan adalah bahasa Jawa. Repertoir cerita wayang atau lakonan sebahagian besarnya berdasarkan roman kesateriaan Ramayana dan Mahabharata. <br>				
+			</p>
+										<a class="badge badge-dark" href="/jis-l-0854.html">jis l 0854</a>
+											<a class="badge badge-primary" href="/jfhq-sacramento-phone-number.html">jfhq sacramento phone number</a>
+											<a class="badge badge-warning" href="/jis-stadium.html">jis stadium</a>
+											<a class="badge badge-dark" href="/jis-list.html">jis list</a>
+											<a class="badge badge-info" href="/jis-l-0846.html">jis l 0846</a>
+											<a class="badge badge-secondary" href="/jisco-company.html">jisco company</a>
+											<a class="badge badge-danger" href="/jilbab-warna-hijau-army.html">jilbab warna hijau army</a>
+											<a class="badge badge-danger" href="/jis-l-1906.html">jis l 1906</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the ideal blog.  Our website gives you hints for seeing the highest quality video and picture content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this movie for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/24/45/b3244586be225c95cbb71e2b214b13d1.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Kazi Iqbal Di Orang Jawa Lukisan Tubuh Gambar Tokoh Sejarah">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/24/45/b3244586be225c95cbb71e2b214b13d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiufx0wm6kWAZqShlksNIwkwlCzpnRNBN7QA';" alt="Pin Oleh Kazi Iqbal Di Orang Jawa Lukisan Tubuh Gambar Tokoh Sejarah">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Kazi Iqbal Di Orang Jawa Lukisan Tubuh Gambar Tokoh Sejarah</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/89/f6/9c/89f69c8ed5176bcc06c39507ff6144d9.jpg" data-lightbox="roadtrip" data-title="Potret Sekelompok Orang Jawa Barat Di Studio Foto 1901 1902 Studio Foto Sejarah Orang">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/89/f6/9c/89f69c8ed5176bcc06c39507ff6144d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKMIEimMqkDQa4QkzOhfyFFNygdd_JsX5qlw';" alt="Potret Sekelompok Orang Jawa Barat Di Studio Foto 1901 1902 Studio Foto Sejarah Orang">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Potret Sekelompok Orang Jawa Barat Di Studio Foto 1901 1902 Studio Foto Sejarah Orang</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/39/11/91/391191c5de9620c91315709413522ebc.jpg" data-lightbox="roadtrip" data-title="Lukisan Orang Jawa Dari Jogjakarta Sekitar 1930 Lukisan Indonesia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/39/11/91/391191c5de9620c91315709413522ebc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLc3GINpfaZt-1LC15WcBZRQKNaURiKZ4HtA';" alt="Lukisan Orang Jawa Dari Jogjakarta Sekitar 1930 Lukisan Indonesia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lukisan Orang Jawa Dari Jogjakarta Sekitar 1930 Lukisan Indonesia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/0d/2e/560d2e0e531157fe20e3b4995b6e7315.jpg" data-lightbox="roadtrip" data-title="Hasil Gambar Untuk Pakain Orang Jawa Kuno Muslimah Fashion Fashion Victorian Dress">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/0d/2e/560d2e0e531157fe20e3b4995b6e7315.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV2jpEgiZC13Dq83Ahfdaj-v-9pXSpbbztLg';" alt="Hasil Gambar Untuk Pakain Orang Jawa Kuno Muslimah Fashion Fashion Victorian Dress">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hasil Gambar Untuk Pakain Orang Jawa Kuno Muslimah Fashion Fashion Victorian Dress</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/25/80/ac/2580ac5cb498712426514cb015760050.jpg" data-lightbox="roadtrip" data-title="Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Gambar Orang Litografi Orang Bali">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/25/80/ac/2580ac5cb498712426514cb015760050.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyHNOTdJ-W_oEPxna2zxVySlSPQ9u3GTcxbQ';" alt="Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Gambar Orang Litografi Orang Bali">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Gambar Orang Litografi Orang Bali</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/9d/e6/e19de6d5ddd9dfb33a414c34a659496b.jpg" data-lightbox="roadtrip" data-title="Mitos Menyeramkan Dan Unik Masyarakat Jawa Orang Bijak Gambar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/9d/e6/e19de6d5ddd9dfb33a414c34a659496b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg2RkGOyci8lJGeITpStokOe4vm_C4DUheFA';" alt="Mitos Menyeramkan Dan Unik Masyarakat Jawa Orang Bijak Gambar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mitos Menyeramkan Dan Unik Masyarakat Jawa Orang Bijak Gambar</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/1f/5b/7a/1f5b7ae482a1e8da8930fff2eaa5ed11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg2RkGOyci8lJGeITpStokOe4vm_C4DUheFA';" alt="Mitos Menyeramkan Dan Unik Masyarakat Jawa Orang Bijak Gambar">
+										<div class="card-body">
+						<h3 class="h5"><b>Masyarakat dari suku Jawa misalnya terkenal dengan kesopanan tatakrama dan kelembutannya.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Orang jawa</strong>. 
+								
+																	Kenapa perusahaan mengandalkan tenaga orang Jawa dibanding Sunda tulis pemudia itu dalam video TikTok yang diunggah ulang oleh akun Instagram manaberita. 
+																	Orang Jawa nggak cocok sama orang Sumatra pesan Mama setiap saat. 
+																	Artinya hanya ada sekitar 391 ribu lebih orang yang. 
+																	Pria ini sebut orang jawa jauh lebih baik ketimbang sunda auto dibully. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Orang Jawa percaya ibu hamil yang rajin berdandan tampil lebih seksi berpakaian lebih bagus berarti sedang mengandung bayi laki-laki. 
+																	Walaupun demikian terdapat juga pengaruh Islam serta Dunia Barat. 
+																	Ia lantas menuliskan bahwa orang Jawa lebih menunjukkan skill ketimbang gaji. 
+																	Namun pada kenyataannya sebenarnya orang Jawa tidak mutlak disukai oleh semua orang di Indonesia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PJalananSuku Jawa adalah suku bangsa terbesar yang ada di Indonesia dengan jumlah sekitar 120 juta jiwa atau sekitar 45 populasi manusia di Nusantara. 
+																	Kebiasaan Orang Jawa Indonesia adalah negara yang kaya akan budaya yang beragam. 
+																	Maka munculah teknik maupun kebiasaan dalam Orang Jawa untuk berpura-pura. 
+																	Orang jawa pekerja keras jawa tekun dan ulet beda sama sunda orang jawa no carmuk cari muka walaupun ada tapi nggak kayak sunda. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jumlah pasien suspek covid-19 hari ini menjadi 74401 orang. 
+																	Join Facebook to connect with Orangjawa and others you may know. 
+																	Dalam budaya Jawa sering kali orang tidak perlu mengutarakan maksud pembicaran yang sebenarnya secara langsung untuk menghindari kekecewaan lawan bicara. 
+																	Surabaya ANTARA - Kepolisian Daerah Jawa Timur mencatat sebanyak 19 juta orang terjaring operasi yustisi protokol kesehatan prokes selama dua pekan Pemberlakuan Pembatasan Kegiatan Masyarakat PPKM di sana sejak 11-24 Januari 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Orang Sumatera dengan orang Jawa mempunyai gaya bahasa dan komunikasi yang berbeda dan hal tersebut sudah menjadi budaya yang turun temurun dari daerah masing-masing. 
+																	Dan Kalimantan Timur dengan 607 positif baru dengan pasien sembuh sebanyak 479 orang. 
+																	Sedangkan jumlah pasien aktif covid-19 di Indonesia kini berjumlah 176433 orang atau 154 persen dari total terkonfirmasi positif. 
+																	Setiap kali Mama punya pacar orang. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Orang Jawa terkenal kerana kebudayaan seni yang sebahagian besarnya dipengaruhi oleh agama Hindu - Buddha iaitu pementasan wayang. 
+																	Aceh adalah salah satu daerah yang bisa dibilang kurang bisa menerima orang Jawa. 
+																	Facebook gives people the power to share and makes the world more open and connected. 
+																	Dan semua itu kebanyakan tuturnya dalam penggalan kalimat yang ditulis si kreator. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Orangjawa is on Facebook. 
+																	Lalu Jawa Timur dengan 745 kasus positif baru dan 786 sembuh. 
+																	Mama bilang dulu Eyangkung sebutan untuk Kakek saya juga selalu bilang begitu kepada Mama. 
+																	Mitos Orang Jawa Masyarakat tanah Jawa amat dekat dengan yang namanya mitos. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tiap daerah pastinya memiliki kebiasaan dan tradisi yang berbeda seperti Kebiasaan orang Maluku Sunda ataupun Betawi yang berbeda satu dengan lainnya. 
+																	Beberapa orang tua Jawa bahkan sudah menceritakan mengenai sebagian mitos yang berkembang kepada anak anaknya. 
+																	Jangan Buru-buru Percaya Ini 4 Mitos Ciri-ciri Hamil Anak Perempuan Semester 3 yang Sering Didengar Moms. 
+																	Istri Bagikan Tips Cari Uang di Saku Suami Malah Ditransfer Uang. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jawa gaji no dua yang penting kita nunjukin skill kita dulu gaji mah. 
+																	The Orang Melayuand Orang Jawa Prior to the Arrival of the Europeans In a paper presented at a conference on Java and the Java-Sea at Leiden University in the Netherlands in June 1990 Ras. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/1d/12/8f1d12fbeb76ef1020dd637626517bc9.jpg" data-lightbox="roadtrip" data-title="Orang Jawa Jangan Hilang Jawanya Banyak Mengandung Arti Darimana Pun Kita Berasal Harus Selalu Ingat Asal Usul Kita Instagram Update Crochet Hats Ilang">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/1d/12/8f1d12fbeb76ef1020dd637626517bc9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7GbLPYLynSjWYlG5-Jy2VbCk_7UM00Vwlug';" alt="Orang Jawa Jangan Hilang Jawanya Banyak Mengandung Arti Darimana Pun Kita Berasal Harus Selalu Ingat Asal Usul Kita Instagram Update Crochet Hats Ilang">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Orang Jawa Jangan Hilang Jawanya Banyak Mengandung Arti Darimana Pun Kita Berasal Harus Selalu Ingat Asal Usul Kita Instagram Update Crochet Hats Ilang</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/1f/5b/7a/1f5b7ae482a1e8da8930fff2eaa5ed11.jpg" data-lightbox="roadtrip" data-title="Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Di 2020 Litografi Gambar Orang Nagasaki">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/1f/5b/7a/1f5b7ae482a1e8da8930fff2eaa5ed11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDQyl8VtDYf99dihro2gPDaXDMuaqkhSroJg';" alt="Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Di 2020 Litografi Gambar Orang Nagasaki">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Di 2020 Litografi Gambar Orang Nagasaki</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/0f/07/a80f07754c9ff3b82c7fdaf09a806ba1.jpg" data-lightbox="roadtrip" data-title="Dua Orang Jawa Sedang Merokok Ca 1870 Indonesia Orang Budaya">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/0f/07/a80f07754c9ff3b82c7fdaf09a806ba1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJi1LlneOYUE3hIT-mI690OXqICLds1ma3HA';" alt="Dua Orang Jawa Sedang Merokok Ca 1870 Indonesia Orang Budaya">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dua Orang Jawa Sedang Merokok Ca 1870 Indonesia Orang Budaya</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d0/26/7a/d0267a98a73347b8ac059d7e713cb21a.jpg" data-lightbox="roadtrip" data-title="Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Di 2020 British Museum Gambar Orang Litografi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d0/26/7a/d0267a98a73347b8ac059d7e713cb21a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkEU70s66M62uUk-G2yoAOfhijDkz_9-sdHQ';" alt="Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Di 2020 British Museum Gambar Orang Litografi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Di 2020 British Museum Gambar Orang Litografi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/47/30/55/4730556e1d0f54e2fdf5cbf91498dfdf.jpg" data-lightbox="roadtrip" data-title="Potret Wanita Jawa Dengan Dua Orang Anak Sekitar 1900">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/47/30/55/4730556e1d0f54e2fdf5cbf91498dfdf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVj97Sfux9PXLuuzxxvMpOsKafmEo8gjaFw';" alt="Potret Wanita Jawa Dengan Dua Orang Anak Sekitar 1900">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Potret Wanita Jawa Dengan Dua Orang Anak Sekitar 1900</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ea/f9/02/eaf90293c66b842572d464a68216b465.jpg" data-lightbox="roadtrip" data-title="Ilustrasi Vektor Orang Jawa Dengan Kain Tradisional Seperti Sorjan Lurik Stok Vektor C Msjeje 239894598 Ilustrasi Vektor Ilustrasi Komik Seni Tradisional">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ea/f9/02/eaf90293c66b842572d464a68216b465.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmXAHfFF6TzTu6xjeNcwc0mGqO5xenUVvfuQ';" alt="Ilustrasi Vektor Orang Jawa Dengan Kain Tradisional Seperti Sorjan Lurik Stok Vektor C Msjeje 239894598 Ilustrasi Vektor Ilustrasi Komik Seni Tradisional">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ilustrasi Vektor Orang Jawa Dengan Kain Tradisional Seperti Sorjan Lurik Stok Vektor C Msjeje 239894598 Ilustrasi Vektor Ilustrasi Komik Seni Tradisional</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/23/02/c3/2302c38a8d5fdd4d5efd141579ff5365.jpg" data-lightbox="roadtrip" data-title="Ceramah Cak Nun Terbaru 2016 Anugerah Allah Untuk Orang Jawa Orang Allah">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/23/02/c3/2302c38a8d5fdd4d5efd141579ff5365.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJhsQ7vQMh3GB77A-MUxtjGbQdc2D2M44ygA';" alt="Ceramah Cak Nun Terbaru 2016 Anugerah Allah Untuk Orang Jawa Orang Allah">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ceramah Cak Nun Terbaru 2016 Anugerah Allah Untuk Orang Jawa Orang Allah</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/76/74/2b7674d359d2ab8d8c6e538a290cd685.jpg" data-lightbox="roadtrip" data-title="Pakain Orang Jawa Kuno Penelusuran Google Pakaian Modern Gaya Abaya Model Pakaian">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/76/74/2b7674d359d2ab8d8c6e538a290cd685.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6XaDZYMzyhfwl5Ni43VCaCUyQZpzEVLL2sg';" alt="Pakain Orang Jawa Kuno Penelusuran Google Pakaian Modern Gaya Abaya Model Pakaian">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakain Orang Jawa Kuno Penelusuran Google Pakaian Modern Gaya Abaya Model Pakaian</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7d/56/df/7d56df7658c2efa2e32e6b01b5515d6c.jpg" data-lightbox="roadtrip" data-title="Tutorial Make Up Ala Malaysia Di Wajah Orang Jawa Makeup Akad Youtube Wajah Youtube Produk">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7d/56/df/7d56df7658c2efa2e32e6b01b5515d6c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6hA0nNE2xYtoyHmhNcewuco2_Bggv4oHICQ';" alt="Tutorial Make Up Ala Malaysia Di Wajah Orang Jawa Makeup Akad Youtube Wajah Youtube Produk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tutorial Make Up Ala Malaysia Di Wajah Orang Jawa Makeup Akad Youtube Wajah Youtube Produk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/76/39/91763979933f5b78e434832a635f5b36.jpg" data-lightbox="roadtrip" data-title="Potret Seorang Pengantin Jawa Nederlands Indie Sekitar 1875 Indonesia Orang">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/76/39/91763979933f5b78e434832a635f5b36.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9IM7vy-sn9mxsMPj6xJmYCPABVKjtqN7SOg';" alt="Potret Seorang Pengantin Jawa Nederlands Indie Sekitar 1875 Indonesia Orang">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Potret Seorang Pengantin Jawa Nederlands Indie Sekitar 1875 Indonesia Orang</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/57/12/1e/57121edfde853e966b205e256e60037d.jpg" data-lightbox="roadtrip" data-title="Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Di 2020 Litografi Gambar Orang Nagasaki">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/57/12/1e/57121edfde853e966b205e256e60037d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHCpDTL2Pw1XIP743R_CVPW4KiDq8hu7vjXw';" alt="Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Di 2020 Litografi Gambar Orang Nagasaki">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Di 2020 Litografi Gambar Orang Nagasaki</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/d1/91/0e/d1910e04eb112686f2d77bc365c78a32.jpg" data-lightbox="roadtrip" data-title="Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Di 2020 Litografi Gambar Orang Orang Bali">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/d1/91/0e/d1910e04eb112686f2d77bc365c78a32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMOulG98_OOWOWxgw9Ub-eIQS0hxa18Mz04w';" alt="Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Di 2020 Litografi Gambar Orang Orang Bali">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gambar Orang Jawa Kuno Dari Sumber Asing Non Eropa Di 2020 Litografi Gambar Orang Orang Bali</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/95/d5/e895d5f1eeed26c9fddc1538b5025ca9.jpg" data-lightbox="roadtrip" data-title="Pengantin Jawa Pengantin Wanita Pengantin Beautiful">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/95/d5/e895d5f1eeed26c9fddc1538b5025ca9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2ZhO_EYLaiSNLD9vLAyqktp8YPI8xdLU0yQ';" alt="Pengantin Jawa Pengantin Wanita Pengantin Beautiful">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pengantin Jawa Pengantin Wanita Pengantin Beautiful</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/ang-san-mei.html">Ang San Mei</a></li>
+													<li class="list-group-item"><a href="/arang-norit.html">Arang Norit</a></li>
+													<li class="list-group-item"><a href="/angus-thongs-and-perfect-snogging-sinopsis.html">Angus Thongs And Perfect Snogging Sinopsis</a></li>
+													<li class="list-group-item"><a href="/arang-wulu-kucing-artinya.html">Arang Wulu Kucing Artinya</a></li>
+													<li class="list-group-item"><a href="/angb.html">Angb</a></li>
+													<li class="list-group-item"><a href="/anoboyuz.html">Anoboyuz</a></li>
+													<li class="list-group-item"><a href="/angus-taylor-army.html">Angus Taylor Army</a></li>
+													<li class="list-group-item"><a href="/arang-dinamo-stater.html">Arang Dinamo Stater</a></li>
+													<li class="list-group-item"><a href="/angka-keluar-kamboja.html">Angka Keluar Kamboja</a></li>
+													<li class="list-group-item"><a href="/anoboy-zero-one.html">Anoboy Zero One</a></li>
+													<li class="list-group-item"><a href="/arang-dapat-digunakan-untuk-menanam-jenis-tanaman.html">Arang Dapat Digunakan Untuk Menanam Jenis Tanaman</a></li>
+													<li class="list-group-item"><a href="/ar-c.html">Ar C</a></li>
+													<li class="list-group-item"><a href="/angbeen-rishi-ggs.html">Angbeen Rishi Ggs</a></li>
+													<li class="list-group-item"><a href="/angus-julia-stone.html">Angus Julia Stone</a></li>
+													<li class="list-group-item"><a href="/angpao.html">Angpao</a></li>
+													<li class="list-group-item"><a href="/arang-film-korea-sub-indo.html">Arang Film Korea Sub Indo</a></li>
+													<li class="list-group-item"><a href="/apa-artinya-army-bagi-bts.html">Apa Artinya Army Bagi Bts</a></li>
+													<li class="list-group-item"><a href="/arang-tampurung-chordtela.html">Arang Tampurung Chordtela</a></li>
+													<li class="list-group-item"><a href="/angco.html">Angco</a></li>
+													<li class="list-group-item"><a href="/angels-singing-reba-mcentire.html">Angels Singing Reba Mcentire</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

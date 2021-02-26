@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Guard Troops Arrive In Philadelphia - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Guard Troops Arrive In Philadelphia",
+  "datePublished": "2021-02-27",
+  "image": "https://static.independent.co.uk/2021/01/17/19/national-guard-washington.jpg?width=640&amp;auto=webp&amp;quality=75",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+guard+troops+arrive+in+philadelphia",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Guard Troops Arrive In Philadelphia</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Pennsylvania National Guard was deployed to Philadelphia Tuesday as the city braces for a second night of violent riots after tense confrontations between angry. National Guard troops arrive in Philadelphia. All terrorists aka looters rioters should be shot on sight. <br>				
+			</p>
+										<a class="badge badge-dark" href="/army-ranking-salary.html">army ranking salary</a>
+											<a class="badge badge-info" href="/army-ranking-nepal.html">army ranking nepal</a>
+											<a class="badge badge-danger" href="/army-ranks-after-major.html">army ranks after major</a>
+											<a class="badge badge-success" href="/army-ranking-highest-to-lowest.html">army ranking highest to lowest</a>
+											<a class="badge badge-light" href="/army-ranks-by-order.html">army ranks by order</a>
+											<a class="badge badge-dark" href="/army-ranks-corporal.html">army ranks corporal</a>
+											<a class="badge badge-secondary" href="/army-ranking-football.html">army ranking football</a>
+											<a class="badge badge-light" href="/army-ranking.html">army ranking</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to pay a visit to the right site.  Our site provides you with hints for seeing the highest quality video and image content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, therefore we recommend this video that you see.  It is also possible to contribute to supporting this website by sharing videos and graphics that you like on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/-_mQLYvZSBc/maxresdefault.jpg" data-lightbox="roadtrip" data-title="National Guard Troops Arrive In Philadelphia Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/-_mQLYvZSBc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Sbg5AN8QUg_7iVjrgUEzanSod7lS1lypag';" alt="National Guard Troops Arrive In Philadelphia Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Troops Arrive In Philadelphia Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d.newsweek.com/en/full/1663983/national-guard-philadelphia-pennsylvania.jpg?w=1600&amp;h=1600&amp;q=88&amp;f=b1214e915d45e2931d36a4473e5530ab" data-lightbox="roadtrip" data-title="National Guard Deployed Across U S In Case Of Post Election Unrest">
+											<img class="card-img v-image ads-img " src="https://d.newsweek.com/en/full/1663983/national-guard-philadelphia-pennsylvania.jpg?w=1600&amp;h=1600&amp;q=88&amp;f=b1214e915d45e2931d36a4473e5530ab" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4BCJD1VYXJ_phsnVY85aJw2hesIIemkR_3Q';" alt="National Guard Deployed Across U S In Case Of Post Election Unrest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Deployed Across U S In Case Of Post Election Unrest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.bizj.us/view/img/11672176/pennsylvania-national-guard-city-hall*1200xx4032-2274-0-570.jpg" data-lightbox="roadtrip" data-title="National Guard Arrives In Philadelphia Curfew Lifts Philadelphia Business Journal">
+											<img class="card-img v-image ads-img " src="https://media.bizj.us/view/img/11672176/pennsylvania-national-guard-city-hall*1200xx4032-2274-0-570.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL809KjW1yih6oI1mfqqdGLq5Bf06WxglGdQ';" alt="National Guard Arrives In Philadelphia Curfew Lifts Philadelphia Business Journal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Arrives In Philadelphia Curfew Lifts Philadelphia Business Journal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EZacrzdXQAAtHZN.jpg" data-lightbox="roadtrip" data-title="Joe Kaczmarek On Twitter Pa National Guard Troops Arrive In Philly 6 1 2020 Phillyprotest Georgefloyd Panationalguard">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EZacrzdXQAAtHZN.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcXxDfodC9kpmHYPdKNLuclP0SV6YTcc1LOw';" alt="Joe Kaczmarek On Twitter Pa National Guard Troops Arrive In Philly 6 1 2020 Phillyprotest Georgefloyd Panationalguard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Joe Kaczmarek On Twitter Pa National Guard Troops Arrive In Philly 6 1 2020 Phillyprotest Georgefloyd Panationalguard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/Tbobp68j6zRgEvocD.bfgw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTQ3MA--/https://s.yimg.com/uu/api/res/1.2/EU39oypBcNa0tqFiX28rqQ--~B/aD04MDA7dz0xMjAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/military_com_347/acea27f3ff438a815f0bfda1f61aab82" data-lightbox="roadtrip" data-title="National Guard Troops Deploying To Dc Will Come With Lethal Weapons">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/Tbobp68j6zRgEvocD.bfgw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTQ3MA--/https://s.yimg.com/uu/api/res/1.2/EU39oypBcNa0tqFiX28rqQ--~B/aD04MDA7dz0xMjAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/military_com_347/acea27f3ff438a815f0bfda1f61aab82" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwY1ogY3gaaJsoOlQOhdNfK4uzh4uBQyuKOA';" alt="National Guard Troops Deploying To Dc Will Come With Lethal Weapons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Troops Deploying To Dc Will Come With Lethal Weapons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/2Q0vTJOz7pE/maxresdefault.jpg" data-lightbox="roadtrip" data-title="National Guard Troops Arrive In D C Ahead Of Biden S Inauguration Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/2Q0vTJOz7pE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoyklJRnUPbGvB7mdjC-nciqGRjZdKT6kMuw';" alt="National Guard Troops Arrive In D C Ahead Of Biden S Inauguration Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Troops Arrive In D C Ahead Of Biden S Inauguration Youtube</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.ytimg.com/vi/2Q0vTJOz7pE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoyklJRnUPbGvB7mdjC-nciqGRjZdKT6kMuw';" alt="National Guard Troops Arrive In D C Ahead Of Biden S Inauguration Youtube">
+										<div class="card-body">
+						<h3 class="h5"><b>At the direction of Governor Tom Wolf and the Pennsylvania Emergency Management Agency the Pennsylvania National Guard is mobilizing several hundred members in.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National guard troops arrive in philadelphia</strong>. 
+								
+																	Hundreds of protesters took to the streets again last night after police shot and. 
+																	R Police stand off with Walter Wallace Jr. 
+																	PHILADELPHIA NewsNation Now Pennsylvania National Guard troops are heading to Philadelphia Friday as tensions remain high following the fatal shooting of a 27-year-old Black man by police. 
+																	Asks residents to be patient with election result that could take days Illinois Gov. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Wednesday focused on keeping the area safe during the inauguration of Joe Biden the 46th President of the United States. 
+																	With the city nearly empty due to an overnight curfew National Guard troops arrived in Philadelphia early Monday to support police after two days of unrest and looting sparked by protests against. 
+																	Last week the Pennsylvania National Guard was deployed to the Philadelphia metro area amid a couple of nights of social unrest following the police killing of a black man. 
+																	At least 30 cops were injured. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Associated Press has reported the arrival of Pennsylvania National Guard Troops in Philadelphia after days of rioting and looting continue. 
+																	National Guard troops arrive at the Capitol in Washington on Tuesday Feb. 
+																	Guard troops have been since positioned to handle potential unrest come Tuesday night. 
+																	The Pennsylvania National Guard has arrived in Philadelphia following days of protests store break-ins and ATM thefts after a Black man holding a knife was. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PHILADELPHIA CBS Roughly 25000 National Guard troops are in Washington DC. 
+																	National Guard arrives in Philadelphia National Guard troops arrived in Philadelphia Friday after nights of unrest and riots following Walter Wallace Jrs death. 
+																	One of those troops serving his country is 19-year-old Private First Class Isaias Caba from North Philadelphia. 
+																	Moments before he is shot during a confrontation with officers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Guard arrive in Philadelphia and Chicago as Illinois Gov. 
+																	National Guard troops arrive in Philadelphia October 30 2020 136 PM The Pennsylvania National Guard has arrived in Philadelphia following days of protests store break-ins and ATM thefts after a. 
+																	National Guard troops arrive in Philadelphia Outstanding. 
+																	Asks residents to be patient with election result that could take days Illinois Gov. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	L National Guard troops arrive to Philadelphia to quell unrest stemming from anti-police brutality protests. 
+																	National Guard troops arrive in Philadelphia The Pennsylvania National Guard has arrived in Philadelphia following days of protests store break-ins and ATM thefts after a Black man holding a knife. 
+																	Troops roll into the battlegrounds. 
+																	National Guard Troops Arrive in Philadelphia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An overnight curfew in the city was lifted Thursday after days of unrest over the death of Walter Wallace Jr. 
+																	The second impeachment trial of former President Donald Trump is scheduled to begin on Tuesday about a month after he was charged by the House with incitement of insurrection for his role in egging on a violent mob that stormed the Capitol on Jan. 
+																	Finger Lakes Times 10-30. 
+																	National Guard arrive in Philadelphia and Chicago as Illinois Gov. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BLM marches in Washington DC chanting. 
+																	Troops from the Pennsylvania National Guard were mobilized in Philadelphia for a second night. 
+																	JB Pritzker has mobilized the National Guard in Chicago to be on standby for any unrest. 
+																	National Guard troops arrive in Philadelphia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Guard troops patrol Philadelphia and Chicago Troops roll into the battlegrounds. 
+																	The Pennsylvania National Guard has arrived in Philadelphia following days of protests store break-ins and ATM thefts after a Black man holding a knife was shot at 14 times by police killing him. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i0.wp.com/a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/10/640/320/national-guard-arriving-philly-city-hall4.jpg?ssl=1" data-lightbox="roadtrip" data-title="National Guard Arrives In Philadelphia After Nights Of Unrest Following Walter Wallace Jr S Death Granthshala News">
+											<img class="card-img v-image ads-img " src="https://i0.wp.com/a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2020/10/640/320/national-guard-arriving-philly-city-hall4.jpg?ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQn9I0qGFVXdpXNc2IuXHdFbAkr0oqQTa10g';" alt="National Guard Arrives In Philadelphia After Nights Of Unrest Following Walter Wallace Jr S Death Granthshala News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Arrives In Philadelphia After Nights Of Unrest Following Walter Wallace Jr S Death Granthshala News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/4mp0T4a8hrE/maxresdefault.jpg" data-lightbox="roadtrip" data-title="National Guard Brought Into Philadelphia To Help Protect Landmarks Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/4mp0T4a8hrE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuO_nSQYVioW3xJ5DO7PUD5ReX8ygwFaI49g';" alt="National Guard Brought Into Philadelphia To Help Protect Landmarks Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Brought Into Philadelphia To Help Protect Landmarks Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.shorenewsnetwork.com/wp-content/uploads/2020/10/ng-philly.jpg" data-lightbox="roadtrip" data-title="Watch National Guard Troops Arrive In Philadelphia Shore News Network">
+											<img class="card-img v-image ads-img " src="https://www.shorenewsnetwork.com/wp-content/uploads/2020/10/ng-philly.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScBY80UXwIlQkJhMPELKR7Yy7VFVBa_TLASg';" alt="Watch National Guard Troops Arrive In Philadelphia Shore News Network">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch National Guard Troops Arrive In Philadelphia Shore News Network</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.inquirer.com/resizer/viY97tq7grarucJf3KbTRvHX00U=/0x0:6045x4024/1400x932/cloudfront-us-east-1.images.arcpublishing.com/pmn/G3XH36TB5FHHVN53DGQIQ54C5M.jpg" data-lightbox="roadtrip" data-title="Washington D C Locks Down Before Inauguration With National Guard Troops Deployed">
+											<img class="card-img v-image ads-img " src="https://www.inquirer.com/resizer/viY97tq7grarucJf3KbTRvHX00U=/0x0:6045x4024/1400x932/cloudfront-us-east-1.images.arcpublishing.com/pmn/G3XH36TB5FHHVN53DGQIQ54C5M.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHCen1l39cXlIteV6EkO8xwGCXB9B2Jm4Evg';" alt="Washington D C Locks Down Before Inauguration With National Guard Troops Deployed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Washington D C Locks Down Before Inauguration With National Guard Troops Deployed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/5MektbR1vRo/maxresdefault.jpg" data-lightbox="roadtrip" data-title="National Guard Arrives In Philadelphia After Days Of Unrest Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/5MektbR1vRo/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxzCJ3WbIuGYmOXq0hgirbtHOAg1sidiugw';" alt="National Guard Arrives In Philadelphia After Days Of Unrest Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Arrives In Philadelphia After Days Of Unrest Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://whyy.org/wp-content/uploads/2021/01/AP_national_guard_capitol_inauguration_011821-768x512.jpg" data-lightbox="roadtrip" data-title="Fbi Vetting Guard Troops In Dc Amid Fears Of Insider Attack Whyy">
+											<img class="card-img v-image ads-img " src="https://whyy.org/wp-content/uploads/2021/01/AP_national_guard_capitol_inauguration_011821-768x512.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxg2GkFGY6hp9R3O9U4q45gtF0FlSu8cmzCQ';" alt="Fbi Vetting Guard Troops In Dc Amid Fears Of Insider Attack Whyy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fbi Vetting Guard Troops In Dc Amid Fears Of Insider Attack Whyy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.abcotvs.com/dip/images/9686715_011421-wpvi-pa-national-guard-in-dc-11pm-video-CC-vid.jpg" data-lightbox="roadtrip" data-title="National Guard 6abc Philadelphia">
+											<img class="card-img v-image ads-img " src="https://cdn.abcotvs.com/dip/images/9686715_011421-wpvi-pa-national-guard-in-dc-11pm-video-CC-vid.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhhupq0AVcXSFhYw8SNUpybjrdCTQnMo2FA';" alt="National Guard 6abc Philadelphia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard 6abc Philadelphia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.foxtv.com/static.fox29.com/www.fox29.com/content/uploads/2020/06/1280/720/national-guard.jpg?ve=1&amp;tl=1" data-lightbox="roadtrip" data-title="National Guard Arrives In Upper Darby Following Looting Vandalism">
+											<img class="card-img v-image ads-img " src="https://images.foxtv.com/static.fox29.com/www.fox29.com/content/uploads/2020/06/1280/720/national-guard.jpg?ve=1&amp;tl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8G0AQVCzTBBgTLuK2KH_Bgo4d53RcIShH7g';" alt="National Guard Arrives In Upper Darby Following Looting Vandalism">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Arrives In Upper Darby Following Looting Vandalism</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/HE5-ljPJbyw/maxresdefault.jpg" data-lightbox="roadtrip" data-title="National Guard Deployed In Sacramento Curfew In Effect At 8 P M Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/HE5-ljPJbyw/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoCB2TTIVWzTEY1S4Ipkvj0XNhKR2eB7m2g';" alt="National Guard Deployed In Sacramento Curfew In Effect At 8 P M Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Deployed In Sacramento Curfew In Effect At 8 P M Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.independent.co.uk/2021/01/17/19/national-guard-washington.jpg?width=640&amp;auto=webp&amp;quality=75" data-lightbox="roadtrip" data-title="National Guard Latest News Breaking Stories And Comment The Independent">
+											<img class="card-img v-image ads-img " src="https://static.independent.co.uk/2021/01/17/19/national-guard-washington.jpg?width=640&amp;auto=webp&amp;quality=75" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkPy5rfqZnmrgD3IqaQzVG_Vn8PlrChMF94Q';" alt="National Guard Latest News Breaking Stories And Comment The Independent">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Latest News Breaking Stories And Comment The Independent</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/v0Lk17nIxbk_IT2yvBNevw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTQ3MC4xODA3NjkyMzA3Njky/https://s.yimg.com/uu/api/res/1.2/wZoQLoaR8w4RWFd9wM95Wg--~B/aD04Njc7dz0xMzAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/military_com_347/8ec37a36190f30643186cf5c755fdc1f" data-lightbox="roadtrip" data-title="43 National Guard Troops In Dc For Inauguration Test Positive For Covid 19">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/v0Lk17nIxbk_IT2yvBNevw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTQ3MC4xODA3NjkyMzA3Njky/https://s.yimg.com/uu/api/res/1.2/wZoQLoaR8w4RWFd9wM95Wg--~B/aD04Njc7dz0xMzAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/military_com_347/8ec37a36190f30643186cf5c755fdc1f" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0q9Zc6ZAcm-ShyhfM5sMtGarqqvdXJsMRsQ';" alt="43 National Guard Troops In Dc For Inauguration Test Positive For Covid 19">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">43 National Guard Troops In Dc For Inauguration Test Positive For Covid 19</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://triblive.com/wp-content/uploads/2021/01/3406775_web1_3406775-eaf18bdc3fcb4b068716f94828e13c99.jpg" data-lightbox="roadtrip" data-title="Army Head Says National Guard May Be Allowed To Carry Guns In D C Triblive Com">
+											<img class="card-img v-image ads-img " src="https://triblive.com/wp-content/uploads/2021/01/3406775_web1_3406775-eaf18bdc3fcb4b068716f94828e13c99.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkbGDEtpOw5Q3qW43GkBuDR1pPmKP_EraSaQ';" alt="Army Head Says National Guard May Be Allowed To Carry Guns In D C Triblive Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Head Says National Guard May Be Allowed To Carry Guns In D C Triblive Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://philadelphia.cbslocal.com/wp-content/uploads/sites/15116066/2018/04/gettyimages-943893100.jpg?w=640&amp;h=360&amp;crop=1" data-lightbox="roadtrip" data-title="National Guard Cbs Philly">
+											<img class="card-img v-image ads-img " src="https://philadelphia.cbslocal.com/wp-content/uploads/sites/15116066/2018/04/gettyimages-943893100.jpg?w=640&amp;h=360&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxOU1znVJz4v09dEX7uho3IeJiM0P0JGsqow';" alt="National Guard Cbs Philly">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Cbs Philly</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/is-the-army-the-same-as-national-guard.html">Is The Army The Same As National Guard</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-going-to-count-ballots.html">Is National Guard Going To Count Ballots</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-worth-joining.html">Is National Guard Worth Joining</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-income-taxable.html">Is National Guard Income Taxable</a></li>
+													<li class="list-group-item"><a href="/is-soldier-for-life-mandatory.html">Is Soldier For Life Mandatory</a></li>
+													<li class="list-group-item"><a href="/is-the-army-recruiting-2020.html">Is The Army Recruiting 2020</a></li>
+													<li class="list-group-item"><a href="/is-russia-the-strongest-army-in-the-world.html">Is Russia The Strongest Army In The World</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-going-to-capital.html">Is National Guard Going To Capital</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-recognized-on-veterans-day.html">Is National Guard Recognized On Veterans Day</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-deployed.html">Is National Guard Deployed</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-getting-deployed.html">Is National Guard Getting Deployed</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-voluntary.html">Is National Guard Voluntary</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-local.html">Is National Guard Local</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-considered-active-military.html">Is National Guard Considered Active Military</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-same-as-army.html">Is National Guard Same As Army</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-deployed-overseas.html">Is National Guard Deployed Overseas</a></li>
+													<li class="list-group-item"><a href="/is-there-a-difference-between-national-guard-and-army-national-guard.html">Is There A Difference Between National Guard And Army National Guard</a></li>
+													<li class="list-group-item"><a href="/jalwa-jalwa-army-song-video.html">Jalwa Jalwa Army Song Video</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-on-standby.html">Is National Guard On Standby</a></li>
+													<li class="list-group-item"><a href="/is-the-national-guard-in-new-jersey.html">Is The National Guard In New Jersey</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

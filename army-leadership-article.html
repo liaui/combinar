@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Leadership Article - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Leadership Article",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/e7/a7/13/e7a713e4b58779bde0c4fb164b0058de.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+leadership+article",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Leadership Article</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Very insightful article on balancing work and home life and crucially relevant for we military leaderscommanders who typically feel a strong sense of duty to stay engaged at work. Think about the times in your own career when leadership changed or. The Army Leadership Requirements Model is the roadmap of the attributes and competencies expected of US. <br>				
+			</p>
+										<a class="badge badge-success" href="/xtc-kembar-logo.html">xtc kembar logo</a>
+											<a class="badge badge-light" href="/xtc-nonsuch-vinyl.html">xtc nonsuch vinyl</a>
+											<a class="badge badge-secondary" href="/xtc-official-website.html">xtc official website</a>
+											<a class="badge badge-primary" href="/xtc-gbr-cirebon.html">xtc gbr cirebon</a>
+											<a class="badge badge-primary" href="/world-ranking-army-2020.html">world ranking army 2020</a>
+											<a class="badge badge-info" href="/xtc-esport.html">xtc esport</a>
+											<a class="badge badge-info" href="/xtc-bekasi.html">xtc bekasi</a>
+											<a class="badge badge-success" href="/xtc-bendera.html">xtc bendera</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to visit the right blog.  Our website gives you hints for seeing the highest quality video and image content, search and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this video that you view.  It is also possible to contribute to supporting this website by sharing videos and images that you like on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/65/0d/ab650d4b43a1980c92c22551a2556a15.jpg" data-lightbox="roadtrip" data-title="Army Leadership Model Summary Leadership Models Leadership Stress">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/65/0d/ab650d4b43a1980c92c22551a2556a15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP6aBtQg4lorn5BEt-DXNupJowKMM_HNU23A';" alt="Army Leadership Model Summary Leadership Models Leadership Stress">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Leadership Model Summary Leadership Models Leadership Stress</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/04/0b/34040bdc78c475a3c4cdf0929bc96631.jpg" data-lightbox="roadtrip" data-title="9 Leadership Quotes From Great Military Leaders Infographic Military Quotes Military Leadership Quotes Good Leadership Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/04/0b/34040bdc78c475a3c4cdf0929bc96631.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBVJNXO8tKa3E1D3K_gRbtLsp3oKG0Yadqtw';" alt="9 Leadership Quotes From Great Military Leaders Infographic Military Quotes Military Leadership Quotes Good Leadership Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">9 Leadership Quotes From Great Military Leaders Infographic Military Quotes Military Leadership Quotes Good Leadership Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/a7/13/e7a713e4b58779bde0c4fb164b0058de.jpg" data-lightbox="roadtrip" data-title="Us Army Leadership Poster Eagle Available In A Variety Of Sizes All Of Our Military Leadership Post Leadership Quotes Military Leadership Quotes Leadership">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/a7/13/e7a713e4b58779bde0c4fb164b0058de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ3cehsEF6ogp9vz_Bz6toy9OFDAElrqLFKA';" alt="Us Army Leadership Poster Eagle Available In A Variety Of Sizes All Of Our Military Leadership Post Leadership Quotes Military Leadership Quotes Leadership">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Leadership Poster Eagle Available In A Variety Of Sizes All Of Our Military Leadership Post Leadership Quotes Military Leadership Quotes Leadership</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/25/47/16/254716f26c11a914148f76d2d09054a9.jpg" data-lightbox="roadtrip" data-title="Pin On Indian Military History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/25/47/16/254716f26c11a914148f76d2d09054a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY-jM_x7MVkxAFu2VxPdApJwfIs2ryAhFl7Q';" alt="Pin On Indian Military History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Indian Military History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5b/d6/66/5bd666419414483a4e51a3bf8113a0aa.jpg" data-lightbox="roadtrip" data-title="Personal Philosophy Essay Best Of Army Leadership Philosophy Examples Essay Examples Philosophy Essays Essay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5b/d6/66/5bd666419414483a4e51a3bf8113a0aa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr0hjCFeTEQCHCa5IeM7Y1Go9yxtbdmuNTGQ';" alt="Personal Philosophy Essay Best Of Army Leadership Philosophy Examples Essay Examples Philosophy Essays Essay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Personal Philosophy Essay Best Of Army Leadership Philosophy Examples Essay Examples Philosophy Essays Essay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/2c/c3/5a2cc31c3d130d385da8a38b0c8742a8.jpg" data-lightbox="roadtrip" data-title="10 Best Military Leadership Quotes Military Leadership Quotes Military Quotes Leadership Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/2c/c3/5a2cc31c3d130d385da8a38b0c8742a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ112JdR0VbxPjURDP2CJHHYTKtIUhOVUeu-A';" alt="10 Best Military Leadership Quotes Military Leadership Quotes Military Quotes Leadership Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Best Military Leadership Quotes Military Leadership Quotes Military Quotes Leadership Quotes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ab/65/0d/ab650d4b43a1980c92c22551a2556a15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ112JdR0VbxPjURDP2CJHHYTKtIUhOVUeu-A';" alt="10 Best Military Leadership Quotes Military Leadership Quotes Military Quotes Leadership Quotes">
+										<div class="card-body">
+						<h3 class="h5"><b>Military chief and coup leader Min Aung Hlaing is now in charge of the country although former general Myint Swe is acting president.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army leadership article</strong>. 
+								
+																	Army Doctrine Publication 6-22 describes toxic leadership as a complex state which includes elements of self-centered attitudes motivations and behaviors as well as an inflated sense of self-worth and actions that deceive intimidate coerce or unfairly punish others for selfish ends. 
+																	The Centre For Army Leadership CAL exists to champion Army leadership excellence in order to optimise the Armys edge and underpin operational success. 
+																	-- Ethical leadership was the topic of discussion Wednesday as retired Army Gen. 
+																	1 Tactics That Work In The Real World Part of why I love this article so much is because of who didnt write it. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ham president and CEO Association of the United States Army visited US. 
+																	The CAL is the guardian of the Army Leadership Doctrine the codification of our philosophy. 
+																	Most Read Army Leader Articles of the First Year One year ago I launched The Army Leader based on the view that when peers share their leadership experiences and understanding it improves everyones collective leadership ability. 
+																	It ensures coherence he adds and is a common thread of Army leadership for all to follow. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Over the last 12 months the site has had almost 90000 visitors reading 40 articles. 
+																	HBRs article Why Arent You Delegating. 
+																	The Army Leadership Code consists of seven leadership behaviours. 
+																	Field Manual 6-22 Leader Development defines leadership as the process of influencing people by providing purpose direction and motivation to accomplish the mission and improve the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lead by example Encourage thinking Apply reward and discipline Demand high performance Encourage confidence in the team Recognise individual strengths and weaknesses. 
+																	The Roman army was the largest and meanest fighting force in the ancient world. 
+																	The military to its credit has devoted much time and energy to the study of leadership probably much more than the civilian world. 
+																	The Leadership Doctrine The Leadership Doctrine which was published in 2016 is described as a handrail by Major General Paul Nanson commandant of Sandhurst and British Army director of leadership to guide actions and decisions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It has been trying to address the toxic leadership problem for. 
+																	The Armys leadership attributes and competencies provide a useful concrete expectation guide for all officers and NCOs. 
+																	Army Leadership Matters By Lt. 
+																	Attributes provide leaders a path to follow and competencies describe what. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I originally found this article on the military leadership blog From The Green Notebook and its called The Map on the Wall I encourage you to click and read it in full then return here for my break down. 
+																	Our leadership philosophy is values-based and is motivated not by self-interest but in the service of others. 
+																	It conquered a vast empire. 
+																	CAMP HUMPHREYS Republic of Korea The unbreakable spirit of strong and effective leadership defines the role of an Army leader is a vital aspect of the Armys success and provides for Soldiers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Here are ten examples of how military veterans can employ Leadership by Example in their civilian workplaces to improve productivity employee engagement and employee morale. 
+																	Gamble July 22 2020 Leadership matters in all thingsand it can be decisive. 
+																	Top military and medical officials gathered yesterday for a virtual town hall meeting with service members and their families to discuss COVID-19 vaccinations. 
+																	Is powerful advice to help leaders free energy and time by delegating to their teams. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are few topics that are simultaneously as ancient and as modern as the topic of leadership. 
+																	Fort Leonard Wood plays a critical role in instilling these attributes and. 
+																	Among those speaking at the webinar. 
+																	In our Army the elements of effective leadership are infused in much of our training doctrine. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One of the main reasons Rome became so powerful was because of the strength of its army. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/da/50/b0da508899d0110d95999fa5ad40a50b.jpg" data-lightbox="roadtrip" data-title="Warren Wood Military Life Quotes Army Quotes Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/da/50/b0da508899d0110d95999fa5ad40a50b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBkqwoftPCcCyCWa1ltlZqNW_N_aqvIDi_WA';" alt="Warren Wood Military Life Quotes Army Quotes Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Warren Wood Military Life Quotes Army Quotes Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/80/80/31/808031182506e50f1188ba82978951d6.jpg" data-lightbox="roadtrip" data-title="Pin On Quality Pins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/80/80/31/808031182506e50f1188ba82978951d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtLbHPszWEsRYlR7eDdElSU-dsmdovbPYmeg';" alt="Pin On Quality Pins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Quality Pins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/f5/6f/9af56fa09a23d8f765636ea0b3559f17.jpg" data-lightbox="roadtrip" data-title="Brothers In Leadership Army Army Sergeant Patriotic Poems">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/f5/6f/9af56fa09a23d8f765636ea0b3559f17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWqVozAjnC9o0pICD2e7XAgSLJdHXAxMStYQ';" alt="Brothers In Leadership Army Army Sergeant Patriotic Poems">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brothers In Leadership Army Army Sergeant Patriotic Poems</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/95/c1/f395c16eb2637c7ced23bbb4080dabf8.jpg" data-lightbox="roadtrip" data-title="One Soldier S Focus To Become A Leader Was Realized When The U S Army S Most Senior Enlisted Leader Sgt Maj Of The Army Daniel Army Staff Sergeant Sergeant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/95/c1/f395c16eb2637c7ced23bbb4080dabf8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3qbmxbIatgcOsvplUFDmZT1J6rcBAzoOuLQ';" alt="One Soldier S Focus To Become A Leader Was Realized When The U S Army S Most Senior Enlisted Leader Sgt Maj Of The Army Daniel Army Staff Sergeant Sergeant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One Soldier S Focus To Become A Leader Was Realized When The U S Army S Most Senior Enlisted Leader Sgt Maj Of The Army Daniel Army Staff Sergeant Sergeant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/00/86/bd0086ea99246a7553b6724dbc9be2cf.jpg" data-lightbox="roadtrip" data-title="Performance Goals And Expectations Examples Army Awesome Appendix B Counseling U S Army Leadershi Counseling Forms Doctors Note Template Letter Of Employment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/00/86/bd0086ea99246a7553b6724dbc9be2cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMr2VuRAxok4l-7qM1ZSM9PaK7zCMd9FKsfQ';" alt="Performance Goals And Expectations Examples Army Awesome Appendix B Counseling U S Army Leadershi Counseling Forms Doctors Note Template Letter Of Employment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Performance Goals And Expectations Examples Army Awesome Appendix B Counseling U S Army Leadershi Counseling Forms Doctors Note Template Letter Of Employment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/e4/1f/65e41f1aa2bbce0741b4c4069638ddee.jpg" data-lightbox="roadtrip" data-title="23 Habits From The Army That Will Make You A Great Leader Great Leaders Army Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/e4/1f/65e41f1aa2bbce0741b4c4069638ddee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy1e4e5ZlpOiGJxkpfu0pVzCqP1qOYSjAXlQ';" alt="23 Habits From The Army That Will Make You A Great Leader Great Leaders Army Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">23 Habits From The Army That Will Make You A Great Leader Great Leaders Army Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/cd/6f/4fcd6fa863667524d41c2a8a38f3739e.png" data-lightbox="roadtrip" data-title="What It Takes To Become A Leader In The British Army British Army Parachute Regiment British Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/cd/6f/4fcd6fa863667524d41c2a8a38f3739e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiYW9hy0BwlNF2kS31nCjS1Nv6LRLmDdGHsA';" alt="What It Takes To Become A Leader In The British Army British Army Parachute Regiment British Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What It Takes To Become A Leader In The British Army British Army Parachute Regiment British Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/31/c4/2c31c4371aedddee020bfe3a19303fa8.jpg" data-lightbox="roadtrip" data-title="Pin On U S Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/31/c4/2c31c4371aedddee020bfe3a19303fa8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDlzaBcnKhA9Nv3AtdnB6gI2jZT-sAEHWzOA';" alt="Pin On U S Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/58/11/725811e0e4bd7c6fcaf9ad25088792f9.jpg" data-lightbox="roadtrip" data-title="I Graded The Army Staff College And Its Leadership Now A Graduating Officer Grades My Advice Military Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/58/11/725811e0e4bd7c6fcaf9ad25088792f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJKSxeOj_LK0JWlKWoyrfI4sri1G0MnZXkvA';" alt="I Graded The Army Staff College And Its Leadership Now A Graduating Officer Grades My Advice Military Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Graded The Army Staff College And Its Leadership Now A Graduating Officer Grades My Advice Military Education</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/58/cc/f558ccc747c66b346d74da59e359dc59.jpg" data-lightbox="roadtrip" data-title="Dwight D Eisenhower What Every Leader Needs To Know Leadership Lessons Leadership Leadership Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/58/cc/f558ccc747c66b346d74da59e359dc59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ZH8K7Cg0XJeg6kumpuW01AtZJICrbcp7wQ';" alt="Dwight D Eisenhower What Every Leader Needs To Know Leadership Lessons Leadership Leadership Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dwight D Eisenhower What Every Leader Needs To Know Leadership Lessons Leadership Leadership Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/79/9d/ae799d4d2889bc3d8b5f0bb42d04836f.jpg" data-lightbox="roadtrip" data-title="Usa Patriotism Article Army Reservist Pursues Leadership By U S Army Sgt Victor Ayala Joining The Military Army Military News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/79/9d/ae799d4d2889bc3d8b5f0bb42d04836f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsA_IzY7h-ctcjrnpItVEZmtPzZWaO7sp4Gw';" alt="Usa Patriotism Article Army Reservist Pursues Leadership By U S Army Sgt Victor Ayala Joining The Military Army Military News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usa Patriotism Article Army Reservist Pursues Leadership By U S Army Sgt Victor Ayala Joining The Military Army Military News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/6d/e9/9c6de93a034457543c13dd06dd68de89.jpg" data-lightbox="roadtrip" data-title="Female Veteran Business Leaders Share Tips For Success Business Leader Leadership Summit Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/6d/e9/9c6de93a034457543c13dd06dd68de89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1q4XwlegRng6ML0EMYRXpGwef1GXKRdmAcA';" alt="Female Veteran Business Leaders Share Tips For Success Business Leader Leadership Summit Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Female Veteran Business Leaders Share Tips For Success Business Leader Leadership Summit Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/29/7e/2f297e3af1117c816590cbfa32f7fa33.png" data-lightbox="roadtrip" data-title="She Doesn T Play A Soldier On Tv She Is One Article The United States Army Female Soldier United States Army Leadership Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/29/7e/2f297e3af1117c816590cbfa32f7fa33.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJy35TIyV7xBF0xalUoqrtuVHq_K5ZnoFrrg';" alt="She Doesn T Play A Soldier On Tv She Is One Article The United States Army Female Soldier United States Army Leadership Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">She Doesn T Play A Soldier On Tv She Is One Article The United States Army Female Soldier United States Army Leadership Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/rumah-warna-hijau-army.html">Rumah Warna Hijau Army</a></li>
+													<li class="list-group-item"><a href="/salvation-army-orange-hours.html">Salvation Army Orange Hours</a></li>
+													<li class="list-group-item"><a href="/salvation-army-orange-grove-avenue-north-highlands-sacramento-ca.html">Salvation Army Orange Grove Avenue North Highlands Sacramento Ca</a></li>
+													<li class="list-group-item"><a href="/salvation-army-northern-virginia-arc.html">Salvation Army Northern Virginia Arc</a></li>
+													<li class="list-group-item"><a href="/salvation-army-arc-las-vegas.html">Salvation Army Arc Las Vegas</a></li>
+													<li class="list-group-item"><a href="/rong-vang.html">Rong Vang</a></li>
+													<li class="list-group-item"><a href="/rescue-squadron-parajumpers.html">Rescue Squadron Parajumpers</a></li>
+													<li class="list-group-item"><a href="/russian-army-songs-download.html">Russian Army Songs Download</a></li>
+													<li class="list-group-item"><a href="/roman-army-rank-insignia.html">Roman Army Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/reba-mcentire-and-still-video.html">Reba Mcentire And Still Video</a></li>
+													<li class="list-group-item"><a href="/roman-army-art.html">Roman Army Art</a></li>
+													<li class="list-group-item"><a href="/russian-national-guards.html">Russian National Guards</a></li>
+													<li class="list-group-item"><a href="/rfp-in-english.html">Rfp In English</a></li>
+													<li class="list-group-item"><a href="/rsp-national-guard.html">Rsp National Guard</a></li>
+													<li class="list-group-item"><a href="/salvation-army-west-orange-nj.html">Salvation Army West Orange Nj</a></li>
+													<li class="list-group-item"><a href="/rong-v.html">Rong V</a></li>
+													<li class="list-group-item"><a href="/reba-mcentire-and-melissa-peterman.html">Reba Mcentire And Melissa Peterman</a></li>
+													<li class="list-group-item"><a href="/reddit-national-guard-inauguration.html">Reddit National Guard Inauguration</a></li>
+													<li class="list-group-item"><a href="/reba-mcentire-and-shelby-blackstock.html">Reba Mcentire And Shelby Blackstock</a></li>
+													<li class="list-group-item"><a href="/salvation-army-song-book-lyrics.html">Salvation Army Song Book Lyrics</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

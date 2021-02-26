@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Song Chandan Shetty - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Song Chandan Shetty",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/564x/54/e2/fa/54e2fa0348aadb575e4510ce47f42c0f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+song+chandan+shetty",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Song Chandan Shetty</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Several people have also objected to the way the song has been depicted. About Song Party Freak is a song which is sung by Chandan Shetty. Copying and Publishing of this Video is STRICTLY PROHIBITEDAll contents including text graphics images music lyrics video clips and audio clips publish. <br>				
+			</p>
+										<a class="badge badge-success" href="/what-is-the-national-guard-doing-in-michigan.html">what is the national guard doing in michigan</a>
+											<a class="badge badge-danger" href="/what-were-the-ranks-in-ww2.html">what were the ranks in ww2</a>
+											<a class="badge badge-light" href="/what-is-the-most-stolen-vehicle.html">what is the most stolen vehicle</a>
+											<a class="badge badge-dark" href="/which-is-the-strongest-african-army.html">which is the strongest african army</a>
+											<a class="badge badge-info" href="/whats-the-best-car-to-steal-in-gta-5.html">whats the best car to steal in gta 5</a>
+											<a class="badge badge-warning" href="/what-is-the-song-in-the-army-commercial.html">what is the song in the army commercial</a>
+											<a class="badge badge-info" href="/which-military-branch-is-the-best-for-military-police.html">which military branch is the best for military police</a>
+											<a class="badge badge-light" href="/what-is-the-us-army-rangers-motto.html">what is the us army rangers motto</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to pay a visit to the ideal blog.  Our website provides you with hints for seeing the highest quality video and picture content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video for you to see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/0a/81/fa/0a81fa7ce9e282935646681d722cc142.jpg" data-lightbox="roadtrip" data-title="Watch The Latest Song Of Kannada Rapper Chandan Shetty S Jai Jawan Bolo Song Made For Indian Soldiers Indian Army Chandan Shetty Songs Golden Star Rapper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/0a/81/fa/0a81fa7ce9e282935646681d722cc142.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJaG0sD8vIq-L4x3nI_TbkZe0KPQZGFvXSQ';" alt="Watch The Latest Song Of Kannada Rapper Chandan Shetty S Jai Jawan Bolo Song Made For Indian Soldiers Indian Army Chandan Shetty Songs Golden Star Rapper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch The Latest Song Of Kannada Rapper Chandan Shetty S Jai Jawan Bolo Song Made For Indian Soldiers Indian Army Chandan Shetty Songs Golden Star Rapper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b5/30/bd/b530bd7ed768d5144d1ae350de0b63c3.jpg" data-lightbox="roadtrip" data-title="Pogaru Karabuu Telugu Video Song Dhruva Sarja Rashmika Mandanna Nanda Kishore Chandan Shetty Youtube Songs Folk Song Lyrics Dj Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b5/30/bd/b530bd7ed768d5144d1ae350de0b63c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-LzI4fxSlNFI042nd8u2abpsE3WSdGVEgVQ';" alt="Pogaru Karabuu Telugu Video Song Dhruva Sarja Rashmika Mandanna Nanda Kishore Chandan Shetty Youtube Songs Folk Song Lyrics Dj Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pogaru Karabuu Telugu Video Song Dhruva Sarja Rashmika Mandanna Nanda Kishore Chandan Shetty Youtube Songs Folk Song Lyrics Dj Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/16/dc/55/16dc55cfd2d9b0775cfbc0c3c85a438e.jpg" data-lightbox="roadtrip" data-title="3 Peg Kannada Rapper Chandan Shetty Aindrita Ray Ft Vijeth 4k Youtube Dj Remix Songs Rapper Dj Remix">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/16/dc/55/16dc55cfd2d9b0775cfbc0c3c85a438e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSo-xcp8BPel5cTj-loxHMl7-ZGYc1BhVHog';" alt="3 Peg Kannada Rapper Chandan Shetty Aindrita Ray Ft Vijeth 4k Youtube Dj Remix Songs Rapper Dj Remix">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3 Peg Kannada Rapper Chandan Shetty Aindrita Ray Ft Vijeth 4k Youtube Dj Remix Songs Rapper Dj Remix</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/63/bf/a4/63bfa45daf115bb45259f8da911fb9ca.jpg" data-lightbox="roadtrip" data-title="Pogaru 4k Dialogue Trailer Dhruva Sarja Rashmika Mandanna Nanda Kishore Chandan Shetty Youtube Kannada Comedy Movie Records Amazon Prime Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/63/bf/a4/63bfa45daf115bb45259f8da911fb9ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvvRGWE_WW0q0XCV2xytTkg5aUMhQwwUpptw';" alt="Pogaru 4k Dialogue Trailer Dhruva Sarja Rashmika Mandanna Nanda Kishore Chandan Shetty Youtube Kannada Comedy Movie Records Amazon Prime Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pogaru 4k Dialogue Trailer Dhruva Sarja Rashmika Mandanna Nanda Kishore Chandan Shetty Youtube Kannada Comedy Movie Records Amazon Prime Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/8c/53/c98c53c1760df91c320fd57de0ef4d8e.png" data-lightbox="roadtrip" data-title="Jai Jawan Bolo Chandan Shetty Indain Soldier Anthem Kannada Rapper Chandan Shetty Chandan Rapper Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/8c/53/c98c53c1760df91c320fd57de0ef4d8e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrFchy1zc7iw6CZHsYgq-acvJLZbXrYdG4Yg';" alt="Jai Jawan Bolo Chandan Shetty Indain Soldier Anthem Kannada Rapper Chandan Shetty Chandan Rapper Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jai Jawan Bolo Chandan Shetty Indain Soldier Anthem Kannada Rapper Chandan Shetty Chandan Rapper Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/bc/d1/d9/bcd1d94128d58124e6f2aa880524feda.jpg" data-lightbox="roadtrip" data-title="Nachevaada Nannu Mechevaada Latest Folk Song 2020 Jyothi Hit Tv Youtube Folk Song Folk Song Lyrics Dj Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/bc/d1/d9/bcd1d94128d58124e6f2aa880524feda.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjjicSBNRQDwvf_Xu0wcOh86S7xBWmx8PsQ';" alt="Nachevaada Nannu Mechevaada Latest Folk Song 2020 Jyothi Hit Tv Youtube Folk Song Folk Song Lyrics Dj Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nachevaada Nannu Mechevaada Latest Folk Song 2020 Jyothi Hit Tv Youtube Folk Song Folk Song Lyrics Dj Songs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/d2/45/57/d2455714af871b674e3369135073f73a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjjicSBNRQDwvf_Xu0wcOh86S7xBWmx8PsQ';" alt="Nachevaada Nannu Mechevaada Latest Folk Song 2020 Jyothi Hit Tv Youtube Folk Song Folk Song Lyrics Dj Songs">
+										<div class="card-body">
+						<h3 class="h5"><b>The duration of the song is 4 min 0 sec.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army song chandan shetty</strong>. 
+								
+																	A section from the Old Mysuru region has objected to this song claiming that Shetty distorted the very history of Malemadeshwara Swamy to whom the song is dedicated thus hurting their religious sentiments. 
+																	Currently at over 129 million YouTube views this massy number from the Dhruva Sarja starrer is easily the most popular Kannada song by Chandan Shetty till date. 
+																	Composed by Chandan Shetty the songs has become already become chartbuster track with online views. 
+																	Chandan Shetty penned Party freak Lyrics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	United Audio in this youtube channel you can find. 
+																	You can listen to Party Freak song online for free or download the mp3 from the Wynk Music mobile app. 
+																	Dhruva Sarjas recent Karabu song from his upcoming film Pogaru hs created quite a wave online. 
+																	Featuring Aindrita Ray a Kannada film actress crossed 3 million views within a few days of its release and went on to become one of the most-watched videos in the Kannada language. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This playlist was created by Gaana on 21 Mar 2017. 
+																	Chandan has penned more than 30 songs and has voiced over 45 songs in his 5-year-long music career. 
+																	Its the new party song in Kannada ft. 
+																	Chandan Shetty stoked a controversy by presenting his version of the folk song Kolumande Jangamadeva. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Rock Star Chandan Shetty playlist songs are in Kannada language. 
+																	Baaro Pailwaan from the film Pailwaan. 
+																	Album 2018 16 Songs. 
+																	While Chandan is known for several popular Kannada hit songs like Baaro Pailwaan 3 Peg Chocolate Girl Tequila and Shille Hodi among several others his recent song Karabuu from the 2020 film. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some pub owners are under the impression that If Kannada songs are played the pub rating would go down. 
+																	His music video 3PEG a party EDM. 
+																	Chandan Shetty who has shot a video of this incident has shared it on his Instagram. 
+																	Following the controversy over Chandan Shettys new song Kolumande and the rapper-music composers subsequent apology things have taken a new turn now as a complaint has been filed against him for hurting religious sentiments. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ChandanShetty PartyFreak NivedithaGowda NivedithaGowda NishvikaNaiduGet your feet to dance on to Party Freak the biggest party track of the year The pa. 
+																	Chandan Shetty ALLOK Raghu Dixit among artistes demanding Kannada songs in playlists at city hot spots Violinist Ambi Subramaniam all set to tie the knot Fans cannot keep calm as title track of. 
+																	Choreographed by Bajarangi Mohan Produced by Chaitanya Lakamsani Edited Ranjeeth Ra. 
+																	Available with an Apple Music subscription. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chandan Shetty Songs Download- Listen to Chandan Shetty songs MP3 free online. 
+																	Rock Star Chandan Shetty playlist have 25 songs sung by Chandan Shetty Vijay Prakash Kailash Kher. 
+																	Chandan ShettyCS Ashvithi Shetty RashiGovindswamy PresentsIn Association With - HAPPNLyrics - Vocals - Composition - Direc. 
+																	Party freak music is composed and sung by Chandan Shetty. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Copying and Publishing of this Video is STRICTLY PROHIBITEDAll contents including text graphics images music lyrics video clips and audio clips publish. 
+																	Party Freak song Chandan shetty Kannada new rap song new year song 2021. 
+																	Party Freak lyrics in Kannada and English are given below. 
+																	Sa and Musician Coordinator is LV Sudhakar. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	SHOKILALA - Rap Song 2019ft. 
+																	PARTY FREAK Chandan Shetty OFFICIAL MUSIC SONG VIDEO Chandan Shetty New song partyfreaksongparty_freak_chandanshetty party_freaknivethidagowda tre. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/84/3c/96/843c96572bc592da014df5074820f2cf.jpg" data-lightbox="roadtrip" data-title="Alavaikunthapurramuloo Samajavaragamana Full Video Song 4k Allu Arjun Trivikram Thaman S Youtube New Movie Song Songs Devotional Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/84/3c/96/843c96572bc592da014df5074820f2cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN443Kg7M0yNMqO4av2lHp1X0GXZTi5rpsxg';" alt="Alavaikunthapurramuloo Samajavaragamana Full Video Song 4k Allu Arjun Trivikram Thaman S Youtube New Movie Song Songs Devotional Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alavaikunthapurramuloo Samajavaragamana Full Video Song 4k Allu Arjun Trivikram Thaman S Youtube New Movie Song Songs Devotional Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/4a/39/cc4a390e77cc77bbcd4c49ea367f58a9.webp" data-lightbox="roadtrip" data-title="Pin On Vinay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/4a/39/cc4a390e77cc77bbcd4c49ea367f58a9.webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbR6Hz4mUt_IKe-j5vB2PP2Z2qZHw5PCCAQ';" alt="Pin On Vinay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vinay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d2/45/57/d2455714af871b674e3369135073f73a.jpg" data-lightbox="roadtrip" data-title="Amulya Dj Songsaudio Songs Youtube Dj Songs Folk Song Lyrics Emotional Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d2/45/57/d2455714af871b674e3369135073f73a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnP6x5qO1J2d_dxhT3cuBIQ_H4e3Lff0uZSw';" alt="Amulya Dj Songsaudio Songs Youtube Dj Songs Folk Song Lyrics Emotional Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amulya Dj Songsaudio Songs Youtube Dj Songs Folk Song Lyrics Emotional Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/53/65/895365ee49f2be05f8a588b6d2d1636c.jpg" data-lightbox="roadtrip" data-title="Thaaney Vachhindhanaa Full Video Song Krishnarjuna Yudham Songs Bollywood Music Videos Cover Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/53/65/895365ee49f2be05f8a588b6d2d1636c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA_4GUCyZd-Hj_wBjLmNW98ub8xTjEFzcltg';" alt="Thaaney Vachhindhanaa Full Video Song Krishnarjuna Yudham Songs Bollywood Music Videos Cover Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thaaney Vachhindhanaa Full Video Song Krishnarjuna Yudham Songs Bollywood Music Videos Cover Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/98/2e/cd/982ecdc62e4fd6f6c305b7c606488a59.jpg" data-lightbox="roadtrip" data-title="Pin By Stormysultani On Rashmika Mandanna Beautiful Indian Actress Most Beautiful Bollywood Actress Stylish Actresses">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/98/2e/cd/982ecdc62e4fd6f6c305b7c606488a59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaMg0ELib5KzY51znYC1ruh6Nnw2Gs0rRlkQ';" alt="Pin By Stormysultani On Rashmika Mandanna Beautiful Indian Actress Most Beautiful Bollywood Actress Stylish Actresses">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Stormysultani On Rashmika Mandanna Beautiful Indian Actress Most Beautiful Bollywood Actress Stylish Actresses</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/cf/ed/78cfedd436fae56efb5fdf260f973e7a.jpg" data-lightbox="roadtrip" data-title="Pin On Bollywood Music Videos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/cf/ed/78cfedd436fae56efb5fdf260f973e7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgE2LRwOVIcUi0GI8zdx6oTgBmRh1awRHveA';" alt="Pin On Bollywood Music Videos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Bollywood Music Videos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d6/ef/4d/d6ef4de00c0e23609eeb69e08ec1c3f5.jpg" data-lightbox="roadtrip" data-title="Yeme Pilla Latest Folksong 2020 Shirisha Thirupathi Matla Sytv In Youtube Latest Dj Songs Folk Song Lyrics Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d6/ef/4d/d6ef4de00c0e23609eeb69e08ec1c3f5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ70OAq6-0Gia2sL9086TZp0fnVZ8PumTFfgQ';" alt="Yeme Pilla Latest Folksong 2020 Shirisha Thirupathi Matla Sytv In Youtube Latest Dj Songs Folk Song Lyrics Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yeme Pilla Latest Folksong 2020 Shirisha Thirupathi Matla Sytv In Youtube Latest Dj Songs Folk Song Lyrics Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/34/a6/b034a6ea0bf3a759fecc9023cd288598.png" data-lightbox="roadtrip" data-title="Dhruva Sarja Cute Love Songs National Film Awards Crazy Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/34/a6/b034a6ea0bf3a759fecc9023cd288598.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgtpUt5tcfToyZ7WZM7zbNzd26Np8GghfmQg';" alt="Dhruva Sarja Cute Love Songs National Film Awards Crazy Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dhruva Sarja Cute Love Songs National Film Awards Crazy Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e5/3e/ec/e53eec4610849f43e0a80e2f2d1a4476.jpg" data-lightbox="roadtrip" data-title="Belageddu Yaara Mukava Song Lyrics Kirik Party Starting With Rakshit Shetty Samyukta Hegde Rashmika Mandanna In A Leading Role Kirik Party Lyrics Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e5/3e/ec/e53eec4610849f43e0a80e2f2d1a4476.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZBVOF8nN_6HLMX1YI7yl3xpk4DVgb5gCYjA';" alt="Belageddu Yaara Mukava Song Lyrics Kirik Party Starting With Rakshit Shetty Samyukta Hegde Rashmika Mandanna In A Leading Role Kirik Party Lyrics Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Belageddu Yaara Mukava Song Lyrics Kirik Party Starting With Rakshit Shetty Samyukta Hegde Rashmika Mandanna In A Leading Role Kirik Party Lyrics Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8d/a7/a4/8da7a45b71bec779f14d74fa03b8730d.jpg" data-lightbox="roadtrip" data-title="Butta Bomma Song Lyrics Armaan Malik Ala Vaikunthapurramloo Film Mp3 Song Download Dj Songs Mp3 Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8d/a7/a4/8da7a45b71bec779f14d74fa03b8730d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7PDgitbFUDaiFRcQR4_d_ojUZ00Foh_fpog';" alt="Butta Bomma Song Lyrics Armaan Malik Ala Vaikunthapurramloo Film Mp3 Song Download Dj Songs Mp3 Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Butta Bomma Song Lyrics Armaan Malik Ala Vaikunthapurramloo Film Mp3 Song Download Dj Songs Mp3 Song</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/54/e2/fa/54e2fa0348aadb575e4510ce47f42c0f.jpg" data-lightbox="roadtrip" data-title="Pin On Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/54/e2/fa/54e2fa0348aadb575e4510ce47f42c0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHr0zyEt0zgV9QB9z2AnGjBWVVzK0GxcTmdw';" alt="Pin On Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Song</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/71/98/f9/7198f98121b3291a917c84734a02c55e.jpg" data-lightbox="roadtrip" data-title="Youtube Kannada Comedy Kannada Movies Telugu Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/71/98/f9/7198f98121b3291a917c84734a02c55e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnoUxyzqTvwRMfuoybMNbNSqPMYCgnAb5MIw';" alt="Youtube Kannada Comedy Kannada Movies Telugu Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youtube Kannada Comedy Kannada Movies Telugu Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/95/5a/60955a8b68d1f35c85b3dcbdbf0e0bec.jpg" data-lightbox="roadtrip" data-title="Dj Duvvada Jagannadham Video Songs Seeti Maar Full Video Song Allu Songs Dj Video Love Songs Playlist">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/95/5a/60955a8b68d1f35c85b3dcbdbf0e0bec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3XEK0u1tztA3BmN92cVnU3l8bhwCiYVIkPg';" alt="Dj Duvvada Jagannadham Video Songs Seeti Maar Full Video Song Allu Songs Dj Video Love Songs Playlist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dj Duvvada Jagannadham Video Songs Seeti Maar Full Video Song Allu Songs Dj Video Love Songs Playlist</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/jisc-nottingham.html">Jisc Nottingham</a></li>
+													<li class="list-group-item"><a href="/jis-merupakan-standar-industri-jepang-yang-digunakan-di-negaranya-dan-kelompoknya-dengan-sebutan.html">Jis Merupakan Standar Industri Jepang Yang Digunakan Di Negaranya Dan Kelompoknya Dengan Sebutan</a></li>
+													<li class="list-group-item"><a href="/jfhq-sacramento-phone-number.html">Jfhq Sacramento Phone Number</a></li>
+													<li class="list-group-item"><a href="/jisc-infonet.html">Jisc Infonet</a></li>
+													<li class="list-group-item"><a href="/jis-dibuat-oleh-negara.html">Jis Dibuat Oleh Negara</a></li>
+													<li class="list-group-item"><a href="/jfhq-wisconsin.html">Jfhq Wisconsin</a></li>
+													<li class="list-group-item"><a href="/jis-stadium.html">Jis Stadium</a></li>
+													<li class="list-group-item"><a href="/jis-c-1601.html">Jis C 1601</a></li>
+													<li class="list-group-item"><a href="/jgbhj.html">Jgbhj</a></li>
+													<li class="list-group-item"><a href="/jis-k-6741-pdf.html">Jis K 6741 Pdf</a></li>
+													<li class="list-group-item"><a href="/jis-piping.html">Jis Piping</a></li>
+													<li class="list-group-item"><a href="/jis-kalimalang.html">Jis Kalimalang</a></li>
+													<li class="list-group-item"><a href="/jisc-network.html">Jisc Network</a></li>
+													<li class="list-group-item"><a href="/jisoo-x-sehun.html">Jisoo X Sehun</a></li>
+													<li class="list-group-item"><a href="/jisoo-variety-show.html">Jisoo Variety Show</a></li>
+													<li class="list-group-item"><a href="/jis-standard.html">Jis Standard</a></li>
+													<li class="list-group-item"><a href="/jisoo-vogue.html">Jisoo Vogue</a></li>
+													<li class="list-group-item"><a href="/jisc.html">Jisc</a></li>
+													<li class="list-group-item"><a href="/jis-z-2371.html">Jis Z 2371</a></li>
+													<li class="list-group-item"><a href="/jis-flange.html">Jis Flange</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

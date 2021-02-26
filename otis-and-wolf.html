@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Otis And Wolf - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Otis And Wolf",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/7d/e7/6b/7de76b4bf747972ebb0c4c34e13ec2ab.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=otis+and+wolf",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Otis And Wolf</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Otis and the Wolf brings the best of Scandi design for kids under one roof in a curated hand-picked collection. Im Louise former TV producer lover of vintage finds and mama to Otis and Indy. OTIS AND THE WOLF. <br>				
+			</p>
+										<a class="badge badge-primary" href="/otis-and-carrier-utc.html">otis and carrier utc</a>
+											<a class="badge badge-secondary" href="/orange-army-formula-1.html">orange army formula 1</a>
+											<a class="badge badge-success" href="/otis-and-eleanor-bongo-pairing.html">otis and eleanor bongo pairing</a>
+											<a class="badge badge-warning" href="/orange-army-max-verstappen.html">orange army max verstappen</a>
+											<a class="badge badge-info" href="/otis-and-eleanor-bongo-speaker.html">otis and eleanor bongo speaker</a>
+											<a class="badge badge-secondary" href="/oregon-state-national-guard-tuition-assistance.html">oregon state national guard tuition assistance</a>
+											<a class="badge badge-primary" href="/otis-and-henrys-bar-and-grill.html">otis and henrys bar and grill</a>
+											<a class="badge badge-secondary" href="/orange-army-navy-store.html">orange army navy store</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to visit the ideal blog.  Our website gives you hints for viewing the highest quality video and image content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/4f/1c/c94f1c4f18ad08afad248453e320af90.jpg" data-lightbox="roadtrip" data-title="Wolves Do This With Otis And Freckles Wolf Animals Lone Wolf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/4f/1c/c94f1c4f18ad08afad248453e320af90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZR-u5rNMEJIOAzUk6G1KkmEh868dn4A608g';" alt="Wolves Do This With Otis And Freckles Wolf Animals Lone Wolf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wolves Do This With Otis And Freckles Wolf Animals Lone Wolf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/99/80/34998054303576a7ba88a877c15c55c7.jpg" data-lightbox="roadtrip" data-title="Pin On Someday">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/99/80/34998054303576a7ba88a877c15c55c7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0R3wZRZxTA36r8kdTlnl5oeQl-YlnfTyfmA';" alt="Pin On Someday">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Someday</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/f5/e7/bcf5e787fbf57329bb428032a0ec75c0.png" data-lightbox="roadtrip" data-title="The Otis Mini Wolf Head Faux Taxidermy Gold Resin White Faux Taxidermy Faux Taxidermy Gold Wall Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/f5/e7/bcf5e787fbf57329bb428032a0ec75c0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtS-IyWZj598VVVWRNMcdmhUbuD0RyijKjw';" alt="The Otis Mini Wolf Head Faux Taxidermy Gold Resin White Faux Taxidermy Faux Taxidermy Gold Wall Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Otis Mini Wolf Head Faux Taxidermy Gold Resin White Faux Taxidermy Faux Taxidermy Gold Wall Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/47/03/2d470361f776285736ee9e351305ad82.jpg" data-lightbox="roadtrip" data-title="Http 4 Bp Blogspot Com Wziioeuy9po Sc2aatvluri Aaaaaaaayk 0zhfjyhheoe S1600 Wolf 2bmask Jpg Painting Cool Paintings Cool Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/47/03/2d470361f776285736ee9e351305ad82.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvp7nQVFLztImPTFAj2HZLx1UbtMfaSYylpQ';" alt="Http 4 Bp Blogspot Com Wziioeuy9po Sc2aatvluri Aaaaaaaayk 0zhfjyhheoe S1600 Wolf 2bmask Jpg Painting Cool Paintings Cool Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http 4 Bp Blogspot Com Wziioeuy9po Sc2aatvluri Aaaaaaaayk 0zhfjyhheoe S1600 Wolf 2bmask Jpg Painting Cool Paintings Cool Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4d/7a/57/4d7a5720f680dcf59b79a62e59b04f0c.jpg" data-lightbox="roadtrip" data-title="Bunny Baby Pram Shoes Otis And The Wolf Scandi Style For Children Otis And The Wolf In 2020 Cute Baby Shoes Baby Shoes Baby Girl Shoes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4d/7a/57/4d7a5720f680dcf59b79a62e59b04f0c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFyeWBA8KkFhMZNzfEkjMr0yUmrbPDkip7sw';" alt="Bunny Baby Pram Shoes Otis And The Wolf Scandi Style For Children Otis And The Wolf In 2020 Cute Baby Shoes Baby Shoes Baby Girl Shoes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bunny Baby Pram Shoes Otis And The Wolf Scandi Style For Children Otis And The Wolf In 2020 Cute Baby Shoes Baby Shoes Baby Girl Shoes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/24/50/452450886b1b26ab3f1ae11c5ec21f6d.jpg" data-lightbox="roadtrip" data-title="White Christmas Otis Redding Wmv Let The Wolves Run Free Wolf Howling Wolf Love Wolf Artwork">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/24/50/452450886b1b26ab3f1ae11c5ec21f6d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjJlwbhA21aZBFGmzxtYSFiQ7l6VA_RZjlUw';" alt="White Christmas Otis Redding Wmv Let The Wolves Run Free Wolf Howling Wolf Love Wolf Artwork">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">White Christmas Otis Redding Wmv Let The Wolves Run Free Wolf Howling Wolf Love Wolf Artwork</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d4/78/33/d47833f9fbe4ba064ddb3410a4e36ae5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjJlwbhA21aZBFGmzxtYSFiQ7l6VA_RZjlUw';" alt="White Christmas Otis Redding Wmv Let The Wolves Run Free Wolf Howling Wolf Love Wolf Artwork">
+										<div class="card-body">
+						<h3 class="h5"><b>Specialising in beautiful Scandinavian inspired design - from Childrens toys to nursery decor and clothing to baby essentials.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Otis and wolf</strong>. 
+								
+																	Otis and the Wolf - bringing you Scandi style for little ones. 
+																	Perfectly neutral to work with any colour scheme they hit that sweet spot of gorgeous Scandi decor and good fun. 
+																	The mobile is wrapped beautifully with cute ribbons - perfect gift to a babyshower birthday or. 
+																	A curated childrens lifestyle store bringing you Scandi style for little people. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cloud Mobile with Gold Beads. 
+																	WORDS FROM MAMA WOLF. 
+																	Making life with kids beautiful simple and Scandi. 
+																	Otis and the Wolf - a curated lifestyle store for littles one. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	About our Otis And The Wolf coupons Weve found 5 active coupon codes for Otis And The Wolf. 
+																	Ill be taking on childcare for both baby and toddler with his pre-school closed until at least half term and simultaneously running Otis and the Wolf from home - grabbing hours in the very early morning late at night after bedtimes and any moments I can in the day when Indiana is asleep and Otis is occupied with an activity which tends to. 
+																	Otis and the Wolf - making life with kids beautiful simple and Scandi Bring light into your home with this new beautiful table lamp from Danish design house Konges Slojd. 
+																	16 results Sort by. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our best-selling lion heads are back. 
+																	Otis and the Wolf. 
+																	Ture doll baskets from scandi favourites Fabelab have had the sweetest upgrade and now come with a beautiful organic cotton lining - the perfect bed and home for a little ones cuddle dolls buddies or their favourite teddy or doll. 
+																	Swedish Wooden Mobile Holder PRE-ORDER. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With simple wooden toys nursery goods and beautiful brands from Maileg to Fabelab theres everything here to make a calm modern space - making life with kids beautiful simple and Scandi. 
+																	These awesome handmade wall mounts from Gamcha are such a great addition to a little ones room from a newborns nursery to kids bedroom or playroom. 
+																	Otis and the Wolf Yesterday at 1129 PM Our Doll Baskets Just Got Cuter Our best-selling signa. 
+																	Ture doll baskets from scandi favourites Fabelab have had the sweetest upgrade and now come with a beautiful organic cotton lining - the perfect bed and home for a little ones cuddle dolls buddies or their favourite teddy or doll. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Save up to 25 off with our best coupon. 
+																	Otis and the Wolf Curated childrens lifestyle store - Making life with kids beautiful simple Scandi. 
+																	Otis and the Wolf is an online store specialising in beautiful Scandinavian inspired design for kids. 
+																	Otis and the Wolf is inspired by a love of Scandi style and the desire to make modern family life simple and beautiful. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	3496 likes 97 talking about this. 
+																	Otis and the Wolf. 
+																	Everything we sell is inspired by classic Nordic Design perfect for the modern family. 
+																	Jan 17 2019 - Otis and the Wolf brings the best of Scandi design for kids under one roof in a curated hand-picked collection. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With simple wooden toys nursery goods and beautiful brands from Maileg to Fabelab theres everything here to make a calm modern space - making life with kids beautiful simple and Scandi. 
+																	This cotton fabric lamp will look beautiful anywhere in the home including a little ones nursery. 
+																	The most beautiful cloud baby mobile with a gold ring and nine clouds in beige light blue and yellow. 
+																	Otis and the Wolf January 8 at 1129 PM Our Doll Baskets Just Got Cuter Our best-selling signa. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Otis and the Wolf London United Kingdom. 
+																	FREE DELIVERY WHEN YOU SPEND 50 Nordic Winter Nursery. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/e7/6b/7de76b4bf747972ebb0c4c34e13ec2ab.jpg" data-lightbox="roadtrip" data-title="The Otis Mini Wolf Head Faux Taxidermy Gold Resin White Faux Taxidermy Faux Taxidermy Wolf Head">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/e7/6b/7de76b4bf747972ebb0c4c34e13ec2ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT6WlkM1_vy41mqEILHMy_RmegguZ59kI8Ug';" alt="The Otis Mini Wolf Head Faux Taxidermy Gold Resin White Faux Taxidermy Faux Taxidermy Wolf Head">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Otis Mini Wolf Head Faux Taxidermy Gold Resin White Faux Taxidermy Faux Taxidermy Wolf Head</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/3f/64/3e3f6422c15e8fa05fec15446848a63f.png" data-lightbox="roadtrip" data-title="Pin By Otis And The Wolf On Scandi Children S Home Decor Nordic Design Scandi Design Scandinavian Inspired">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/3f/64/3e3f6422c15e8fa05fec15446848a63f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR51_Zl1P8hsNRYBaNa1dfe6pnoulJsC0UEw';" alt="Pin By Otis And The Wolf On Scandi Children S Home Decor Nordic Design Scandi Design Scandinavian Inspired">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Otis And The Wolf On Scandi Children S Home Decor Nordic Design Scandi Design Scandinavian Inspired</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/8c/cf/868ccf2f74e72134769932e86fd2e38a.png" data-lightbox="roadtrip" data-title="Otis And The Wolf On Instagram C L O U D M O B I L E After A Very Long Wait These Beautiful Cloud Mobiles Are Ar Nursery Decor Cloud Mobile Nursery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/8c/cf/868ccf2f74e72134769932e86fd2e38a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDgIL742GMhXb8k_Ba0Suqa-yUmoG8Hg3UMw';" alt="Otis And The Wolf On Instagram C L O U D M O B I L E After A Very Long Wait These Beautiful Cloud Mobiles Are Ar Nursery Decor Cloud Mobile Nursery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otis And The Wolf On Instagram C L O U D M O B I L E After A Very Long Wait These Beautiful Cloud Mobiles Are Ar Nursery Decor Cloud Mobile Nursery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/78/33/d47833f9fbe4ba064ddb3410a4e36ae5.jpg" data-lightbox="roadtrip" data-title="Otis And The Wolf On Instagram Plants And Flowers Everywhere I M Obsessed With Plants And Flowers At The Minute My Hous Flowers Plants Flower Garlands">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/78/33/d47833f9fbe4ba064ddb3410a4e36ae5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTamsvl6RY5mqDxSrE4yRh-K1r5bZJFCASxsA';" alt="Otis And The Wolf On Instagram Plants And Flowers Everywhere I M Obsessed With Plants And Flowers At The Minute My Hous Flowers Plants Flower Garlands">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otis And The Wolf On Instagram Plants And Flowers Everywhere I M Obsessed With Plants And Flowers At The Minute My Hous Flowers Plants Flower Garlands</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/7a/dd/a47addf4ce7a7693eb5307f61d55e38a.jpg" data-lightbox="roadtrip" data-title="Epingle Par Kim Otis Sur Art Wall Art Dessin Chien Dessin De Loup Loup Garou">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/7a/dd/a47addf4ce7a7693eb5307f61d55e38a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUuCbhIFrmIzy_kG5IYlyV_sNiCR4S3sm_-g';" alt="Epingle Par Kim Otis Sur Art Wall Art Dessin Chien Dessin De Loup Loup Garou">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Epingle Par Kim Otis Sur Art Wall Art Dessin Chien Dessin De Loup Loup Garou</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/f7/a9/bcf7a9fde99bd910136954fd7ddc42e2.jpg" data-lightbox="roadtrip" data-title="Otis Edgar Lone Wolf Lone Wolf Indie Rock Otis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/f7/a9/bcf7a9fde99bd910136954fd7ddc42e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXU4fY6GcfIjGviyifcr4MG2L8m9njTJ46_g';" alt="Otis Edgar Lone Wolf Lone Wolf Indie Rock Otis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otis Edgar Lone Wolf Lone Wolf Indie Rock Otis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/ed/d1/a6edd1ea714c348efc1dcadbb6504d72.png" data-lightbox="roadtrip" data-title="Pin By Otis And The Wolf On Scandi Children S Home Decor Fox Stuffed Animal Animal Wall Art Scandinavian Inspired">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/ed/d1/a6edd1ea714c348efc1dcadbb6504d72.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSta6xLIpHfbzcYE8Zvsp78zmTpNxVx5Rlobg';" alt="Pin By Otis And The Wolf On Scandi Children S Home Decor Fox Stuffed Animal Animal Wall Art Scandinavian Inspired">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Otis And The Wolf On Scandi Children S Home Decor Fox Stuffed Animal Animal Wall Art Scandinavian Inspired</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7f/92/99/7f9299bb981916c02449329e5038569d.jpg" data-lightbox="roadtrip" data-title="Pin By Otis And The Wolf On Otis And The Wolf Scandi Design Modern Spaces Scandinavian Inspired">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7f/92/99/7f9299bb981916c02449329e5038569d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Nyf-ceVKObSW89WqD7GNiUu_2QgUXDHE9w';" alt="Pin By Otis And The Wolf On Otis And The Wolf Scandi Design Modern Spaces Scandinavian Inspired">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Otis And The Wolf On Otis And The Wolf Scandi Design Modern Spaces Scandinavian Inspired</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/7b/74/7c7b744c2fd799c8fb0be11dfebd7583.jpg" data-lightbox="roadtrip" data-title="Summer Of The Wolves By Polly Carlson Voiles Click On The Cover To See If The Book S Available At Otis Library Wolf Book Books Wolf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/7b/74/7c7b744c2fd799c8fb0be11dfebd7583.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLhEAoo9VX6LyKXXuJQhLtn5l_HMvzf6VD5Q';" alt="Summer Of The Wolves By Polly Carlson Voiles Click On The Cover To See If The Book S Available At Otis Library Wolf Book Books Wolf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Summer Of The Wolves By Polly Carlson Voiles Click On The Cover To See If The Book S Available At Otis Library Wolf Book Books Wolf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/ba/49/f5ba49bb4df808d3fb5de24f3778e259.jpg" data-lightbox="roadtrip" data-title="Wolf Walk Wolf Beautiful Wolves Wolf Pup">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/ba/49/f5ba49bb4df808d3fb5de24f3778e259.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZPjMVy7fpcI5m22JN7MOxcEPFHsyRAVIUOQ';" alt="Wolf Walk Wolf Beautiful Wolves Wolf Pup">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wolf Walk Wolf Beautiful Wolves Wolf Pup</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/8e/28/8a8e2868df8e2021f1219465ab114ee7.jpg" data-lightbox="roadtrip" data-title="5 Reasons Why You Should Choose A Scandi Style Nursery Minimalist Baby Room Nursery Baby Room Minimal Baby Room">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/8e/28/8a8e2868df8e2021f1219465ab114ee7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7p1Ag1UMIo8IBg9cmLldq9EEpvj6ptAsk8w';" alt="5 Reasons Why You Should Choose A Scandi Style Nursery Minimalist Baby Room Nursery Baby Room Minimal Baby Room">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 Reasons Why You Should Choose A Scandi Style Nursery Minimalist Baby Room Nursery Baby Room Minimal Baby Room</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/60/83/e46083fa64e705b95a299f56d3b773b2.jpg" data-lightbox="roadtrip" data-title="The Wolf By Peter Hartke Horror Storytime With Otis Jiry Horror Otis Story Time">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/60/83/e46083fa64e705b95a299f56d3b773b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ZT0su9w9QzEopn6o_1EO1PcNocFf8Wz-hQ';" alt="The Wolf By Peter Hartke Horror Storytime With Otis Jiry Horror Otis Story Time">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Wolf By Peter Hartke Horror Storytime With Otis Jiry Horror Otis Story Time</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/e1/23/cee123906634f2143bde2c9fc14b671f.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/e1/23/cee123906634f2143bde2c9fc14b671f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJqtglckkxLDeaWz58ghH1AhWEZu-yl_ZpGQ';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-national-guard-medical.html">Army National Guard Medical</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-ocs-regulation.html">Army National Guard Ocs Regulation</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-pcs-regulation.html">Army National Guard Pcs Regulation</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-push-up-requirements.html">Army National Guard Push Up Requirements</a></li>
+													<li class="list-group-item"><a href="/army-national-units.html">Army National Units</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-keepsake-box.html">Army National Guard Keepsake Box</a></li>
+													<li class="list-group-item"><a href="/army-national-signing-day.html">Army National Signing Day</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-medical-discharge.html">Army National Guard Medical Discharge</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-pineville-la.html">Army National Guard Pineville La</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-units-address.html">Army National Guard Units Address</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-ocs-training.html">Army National Guard Ocs Training</a></li>
+													<li class="list-group-item"><a href="/army-navy-coast-guard-marines-air-force.html">Army Navy Coast Guard Marines Air Force</a></li>
+													<li class="list-group-item"><a href="/army-navy-air-force-rank-list.html">Army Navy Air Force Rank List</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-sponsorship-program.html">Army National Guard Sponsorship Program</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-us.html">Army National Guard Us</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-units-in-maine.html">Army National Guard Units In Maine</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-rotc-program.html">Army National Guard Rotc Program</a></li>
+													<li class="list-group-item"><a href="/army-national-stock-number-database.html">Army National Stock Number Database</a></li>
+													<li class="list-group-item"><a href="/army-national-guardcom.html">Army National Guardcom</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-title-10-jobs.html">Army National Guard Title 10 Jobs</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

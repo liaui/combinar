@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Chang E 5 - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Chang E 5",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/46/b2/03/46b203fab3b9a0427c038b01327fd0a8.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=chang+e+5",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Chang E 5</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Change 5 spacecraft fired its main engine at 1258 GMT 758 am. On board are around two kilograms. Change 5 is Chinas first lunar sample return mission and the most ambitious endeavor in the countrys lunar program aiming to introduce completely new technologies and techniques such as a fully automated rendezvous in lunar orbit and sample transfers in between different spacecraft modules. <br>				
+			</p>
+										<a class="badge badge-primary" href="/army-army-ka-song.html">army army ka song</a>
+											<a class="badge badge-success" href="/army-army-song.html">army army song</a>
+											<a class="badge badge-success" href="/army-army-uk.html">army army uk</a>
+											<a class="badge badge-dark" href="/army-art-pictures.html">army art pictures</a>
+											<a class="badge badge-danger" href="/army-arty-centre-nasik.html">army arty centre nasik</a>
+											<a class="badge badge-primary" href="/army-art-and-science-of-training.html">army art and science of training</a>
+											<a class="badge badge-warning" href="/army-art-museum.html">army art museum</a>
+											<a class="badge badge-secondary" href="/army-board-questions-army-leadership.html">army board questions army leadership</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to pay a visit to the right site.  Our site gives you hints for seeing the maximum quality video and image content, hunt and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, therefore we recommend this movie for you to view.  It is also possible to bring about supporting this website by sharing videos and graphics that you like on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f6/42/1e/f6421eac35f9adc97fd4ac476b48ffc9.jpg" data-lightbox="roadtrip" data-title="China S Chang E 5 Mission Sampling The Lunar Surface Space In 2020 Moon Landing The Moon Today Apollo Missions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f6/42/1e/f6421eac35f9adc97fd4ac476b48ffc9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHgSbxPXDgF5cLqYGdPzmuWeVT-E_f0z8itA';" alt="China S Chang E 5 Mission Sampling The Lunar Surface Space In 2020 Moon Landing The Moon Today Apollo Missions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China S Chang E 5 Mission Sampling The Lunar Surface Space In 2020 Moon Landing The Moon Today Apollo Missions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/f3/fe/f4f3fedde060eca7be7e8cb358e6559a.jpg" data-lightbox="roadtrip" data-title="Chang E 5 Orbiter Returner To Go Moon Orbit Separates">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/f3/fe/f4f3fedde060eca7be7e8cb358e6559a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnOGVtyPsSMKiC1ez0yhszv8rZ8LTBCvzLhQ';" alt="Chang E 5 Orbiter Returner To Go Moon Orbit Separates">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chang E 5 Orbiter Returner To Go Moon Orbit Separates</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/b2/03/46b203fab3b9a0427c038b01327fd0a8.png" data-lightbox="roadtrip" data-title="China S Chang E 5 Moon Mission Probe Touches Down Moon Missions Mission Images Colorful Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/b2/03/46b203fab3b9a0427c038b01327fd0a8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pm2L1HfQyNgPGJRHygBSg6RDvLWh1PLTFg';" alt="China S Chang E 5 Moon Mission Probe Touches Down Moon Missions Mission Images Colorful Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China S Chang E 5 Moon Mission Probe Touches Down Moon Missions Mission Images Colorful Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/84/64/f78464ccc33a3e88a922e5655b53c270.png" data-lightbox="roadtrip" data-title="China S Chang E 5 Aces Lunar Orbit Docking Needed To Bring Moon Samples Home Space In 2020 Moon Orbit Orbit Moon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/84/64/f78464ccc33a3e88a922e5655b53c270.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7lX8lno4nzyWOXYplYE_fRNrLqnv7sj6-WA';" alt="China S Chang E 5 Aces Lunar Orbit Docking Needed To Bring Moon Samples Home Space In 2020 Moon Orbit Orbit Moon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China S Chang E 5 Aces Lunar Orbit Docking Needed To Bring Moon Samples Home Space In 2020 Moon Orbit Orbit Moon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/8e/b9/d88eb95d7860dbd80437f3c2c6538c0f.jpg" data-lightbox="roadtrip" data-title="China S Chang E 5 Successfully Lands On Moon Cgtn In 2020 Space Probe Moon China">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/8e/b9/d88eb95d7860dbd80437f3c2c6538c0f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvEZNgMpFOqJ71_9wmYIwLerWfjVNf2szMag';" alt="China S Chang E 5 Successfully Lands On Moon Cgtn In 2020 Space Probe Moon China">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China S Chang E 5 Successfully Lands On Moon Cgtn In 2020 Space Probe Moon China</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/59/d7/de59d7b92150ecc74a9955b487453d1b.jpg" data-lightbox="roadtrip" data-title="Chang E 5 The Long March 5 Launcher Delays The Mission News 2020 Dark Side Of Moon Astronomy Pictures China Moon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/59/d7/de59d7b92150ecc74a9955b487453d1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWwiajPazNaJLVtRMtb_AcqHGdL9d-FDFY3A';" alt="Chang E 5 The Long March 5 Launcher Delays The Mission News 2020 Dark Side Of Moon Astronomy Pictures China Moon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chang E 5 The Long March 5 Launcher Delays The Mission News 2020 Dark Side Of Moon Astronomy Pictures China Moon</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/f6/42/1e/f6421eac35f9adc97fd4ac476b48ffc9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWwiajPazNaJLVtRMtb_AcqHGdL9d-FDFY3A';" alt="Chang E 5 The Long March 5 Launcher Delays The Mission News 2020 Dark Side Of Moon Astronomy Pictures China Moon">
+										<div class="card-body">
+						<h3 class="h5"><b>Chinas unmanned moon probe delivers samples to orbiting spacecraft Successful docking will be followed by orbiter separating and returning lunar material to Earth Chinas Change-5.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Chang e 5</strong>. 
+								
+																	Spending just two days on the moons -173C surface from the 1st to 3rd of. 
+																	Ms Zhou was in charge of the rocket connector system - described as a pivotal role. 
+																	The Change-5 orbiter remains in lunar orbit awaiting a window for trans-Earth injection which would result in a reentry and landing of the reentry capsule at Siziwang Banner Inner Mongolia. 
+																	The Change-5 venture was launched at the end of November. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Change-5 lunar sample return mission has roared into space atop a Long March 5 rocket. 
+																	Change 5-T1 also carries the first commercial payload to the Moon called the 4M mission Manfred Memorial Moon Mission for the German space technology company OHB System in honor of the companys founder Manfred Fuchs who died in 2014. 
+																	Chinas Change-5 spacecraft returned Moon samples to Earth in 2020 hoped to be the youngest returned to Earth. 
+																	Change-5 orbiter-returner separates from ascender waiting to go home. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	23 2020 from Wenchang Space Launch Center in Hainan province atop a Long March 5 rocket. 
+																	The Change-5 mission is Chinas third successful Moon landing in seven years. 
+																	How to avoid a space crash. 
+																	China completes first docking in lunar orbit A Chinese probe carrying lunar samples back to earth for the first time in almost 45 years has docked with a spacecraft orbiting the moon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Space 0714 06-Dec-2020. 
+																	Just 12 billion years old. 
+																	Chinas Change 5 mission to the moon is complete less than a month after blasting off. 
+																	EST for a 17-minute burn to maneuver into an elliptical eight-hour orbit around the moon according to the China National. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A probe comprising several elements was sent into orbit around the Moon. 
+																	Weighing in at 18100 lbs. 
+																	A capsule containing samples of lunar rocks and soil collected from the surface of our natural satellite has. 
+																	Change 5 Chinas first-ever sample-return effort is the sixth and most ambitious mission in the Change program of robotic lunar exploration which is named after a moon goddess in Chinese. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The China National Space Administration has announced the Change 5 returner module is set to land in Mongolia later today. 
+																	The samples will help scientists understand what was happening late in the Moons history as well as how Earth and the solar system evolved. 
+																	Technical management of the 4M mission was performed by LuxSpace. 
+																	8200 kilograms the spacecraft consists. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Change 5 Chinese spacecraft carrying lunar rocks lifts off from moon December 4 2020 1259 PM A Chinese spacecraft lifted off from the moon Thursday night with a load of lunar rocks the first. 
+																	Change-5 mission is the first lunar sample-return mission conducted by humanity in over four decades since the Soviet Union s Luna 24 in 1976. 
+																	Space 1312 06-Dec-2020 Change-5 orbiter-returner separates from ascender waiting to go home. 
+																	The Change 5 probe launched on Nov. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Space 1312 06-Dec-2020 Chinas first lunar orbit docking. 
+																	These elements then separated with one half going down to the. 
+																	Chinas Change 5 spacecraft has brought back lunar rocks to Earth the first sample of moon material since 1976. 
+																	By completing the mission China became the third country to return samples from the Moon after the United States and the Soviet Union. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Change-5 landed on the near side of the Moon near 518 degrees west longitude and 431 degrees north latitude on 1 December 2020 at 1511 UTC. 
+																	If all goes well it will touch down at the Mons Rumker part of the Oceanus Procellarum or Ocean of. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/fb/f9/d9fbf98bd6d12977dca9aaea8f452121.png" data-lightbox="roadtrip" data-title="China S Chang E 5 Probe Successfully Landed On The Moon S Near Side Messagetoeagle Com Moon Landing Probe Moon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/fb/f9/d9fbf98bd6d12977dca9aaea8f452121.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh02D3oTe07e25cf02zmljpxFvHpTnfJ6EpQ';" alt="China S Chang E 5 Probe Successfully Landed On The Moon S Near Side Messagetoeagle Com Moon Landing Probe Moon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China S Chang E 5 Probe Successfully Landed On The Moon S Near Side Messagetoeagle Com Moon Landing Probe Moon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/da/95/c2da953cbe8058c86036118726ef434f.png" data-lightbox="roadtrip" data-title="China Wants A Piece Of The Moon Here S How It Plans To Handle Lunar Samples Space In 2020 Planetary Science Chinese Academy Of Sciences Science And Technology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/da/95/c2da953cbe8058c86036118726ef434f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdviOGGeSZLA8BrbNnywTdHmQlUFA1xmIIDg';" alt="China Wants A Piece Of The Moon Here S How It Plans To Handle Lunar Samples Space In 2020 Planetary Science Chinese Academy Of Sciences Science And Technology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China Wants A Piece Of The Moon Here S How It Plans To Handle Lunar Samples Space In 2020 Planetary Science Chinese Academy Of Sciences Science And Technology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/9a/f3/96/9af3961e438ea21a7b47356019ce3b63.jpg" data-lightbox="roadtrip" data-title="How China S Chang E 5 Spacecraft Will Collect Return Moon Samples Youtube Spacecraft Moon Change">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/9a/f3/96/9af3961e438ea21a7b47356019ce3b63.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzabsUjH30MGy_4Cn2MxRNPlLWSlov-m0v5w';" alt="How China S Chang E 5 Spacecraft Will Collect Return Moon Samples Youtube Spacecraft Moon Change">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How China S Chang E 5 Spacecraft Will Collect Return Moon Samples Youtube Spacecraft Moon Change</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/c9/da/84c9da46c0ac7cfdfb41b5d2de891d55.jpg" data-lightbox="roadtrip" data-title="Chang E 5 Lands On Moon Starts Surface Operations Moon Landing Moon Missions Lunar Lander">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/c9/da/84c9da46c0ac7cfdfb41b5d2de891d55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOn-gT5z4g7K0z3uLWu5ljGZmwZSjMRLAYzw';" alt="Chang E 5 Lands On Moon Starts Surface Operations Moon Landing Moon Missions Lunar Lander">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chang E 5 Lands On Moon Starts Surface Operations Moon Landing Moon Missions Lunar Lander</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/18/a4/48/18a4485c4240506b5f1b1550114cb40c.jpg" data-lightbox="roadtrip" data-title="China S Chang E 5 Spacecraft Sticks Its Landing On The Moon Moon On The Water Moon Dust Moon Missions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/18/a4/48/18a4485c4240506b5f1b1550114cb40c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTShhzlDiTUnY4f2e2pCE--sdmiqfODGkNUUw';" alt="China S Chang E 5 Spacecraft Sticks Its Landing On The Moon Moon On The Water Moon Dust Moon Missions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China S Chang E 5 Spacecraft Sticks Its Landing On The Moon Moon On The Water Moon Dust Moon Missions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c0/2d/50/c02d505ec4b854731d480c762b098117.jpg" data-lightbox="roadtrip" data-title="Chang E 5 Spacecraft Launches In Search Of The Youngest Moon Rocks Youtube In 2020 Spacecraft Moon Rock Program Launch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c0/2d/50/c02d505ec4b854731d480c762b098117.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwrOvaaXDPYD3hrJ6ST62TFROCVSGmNhBZGA';" alt="Chang E 5 Spacecraft Launches In Search Of The Youngest Moon Rocks Youtube In 2020 Spacecraft Moon Rock Program Launch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chang E 5 Spacecraft Launches In Search Of The Youngest Moon Rocks Youtube In 2020 Spacecraft Moon Rock Program Launch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/4c/18/f04c185e1f19f44184d4e75e51acea23.jpg" data-lightbox="roadtrip" data-title="China S Moon Missions Explained Infographic Moon Missions China Moon Missions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/4c/18/f04c185e1f19f44184d4e75e51acea23.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeyjhI6H8-NCZwnIB-_JutKb74OWmlM7qiBw';" alt="China S Moon Missions Explained Infographic Moon Missions China Moon Missions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China S Moon Missions Explained Infographic Moon Missions China Moon Missions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/4d/a0/e4/4da0e429b56fae3c14caa1eba35fab97.jpg" data-lightbox="roadtrip" data-title="Space Instruments Developed By Hong Kong Scientists Complete Lunar Sampling For Chang E 5 Youtube Hong Kong Kong Hong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/4d/a0/e4/4da0e429b56fae3c14caa1eba35fab97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnB96K60w_JHvQ3NOsFvhq2aICVpHUiiESiA';" alt="Space Instruments Developed By Hong Kong Scientists Complete Lunar Sampling For Chang E 5 Youtube Hong Kong Kong Hong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Space Instruments Developed By Hong Kong Scientists Complete Lunar Sampling For Chang E 5 Youtube Hong Kong Kong Hong</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c6/a6/c0/c6a6c00879c69adae40e99237867b7c3.jpg" data-lightbox="roadtrip" data-title="China S Chang E 5 Lands And Collects Moon Samples In Awesome New Footage Youtube Photography Moon Image">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c6/a6/c0/c6a6c00879c69adae40e99237867b7c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHg4wPxwaygB3P8m63e6yVd6r-OSqU2zULcg';" alt="China S Chang E 5 Lands And Collects Moon Samples In Awesome New Footage Youtube Photography Moon Image">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China S Chang E 5 Lands And Collects Moon Samples In Awesome New Footage Youtube Photography Moon Image</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/2f/57/80/2f578089d48db5927dd4b51595ba5767.jpg" data-lightbox="roadtrip" data-title="Chang E 5 On The Way To Earth Youtube Earth Intelligent Design No Way">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/2f/57/80/2f578089d48db5927dd4b51595ba5767.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlzNHHTXARJsEqgTA3osc3idEOs2h-e87Lgw';" alt="Chang E 5 On The Way To Earth Youtube Earth Intelligent Design No Way">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chang E 5 On The Way To Earth Youtube Earth Intelligent Design No Way</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/82/87/a1828742916338fa945babdd886708f7.jpg" data-lightbox="roadtrip" data-title="China S Chang E 5 Blasts Off From Lunar Surface Loaded With Moon Rocks Cnet Spacecraft Lunar Lander Moon Rock">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/82/87/a1828742916338fa945babdd886708f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPjlgbdJbKnu_IH2msa8uCnMQ31vRANJyDiA';" alt="China S Chang E 5 Blasts Off From Lunar Surface Loaded With Moon Rocks Cnet Spacecraft Lunar Lander Moon Rock">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China S Chang E 5 Blasts Off From Lunar Surface Loaded With Moon Rocks Cnet Spacecraft Lunar Lander Moon Rock</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/4d/d0/3a4dd0c0964b1dcf719566888cf34f60.jpg" data-lightbox="roadtrip" data-title="The Chinese Have Launched The Third Phase Of Its Lunar Exploration Program On Thursday Launch Of The Chang E 5 T1 Mission Lunar Mission Lunar Landing Big Moon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/4d/d0/3a4dd0c0964b1dcf719566888cf34f60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSimjEiHfl8SX5ISbOGzu8c69FpUnk9O4Fbw';" alt="The Chinese Have Launched The Third Phase Of Its Lunar Exploration Program On Thursday Launch Of The Chang E 5 T1 Mission Lunar Mission Lunar Landing Big Moon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Chinese Have Launched The Third Phase Of Its Lunar Exploration Program On Thursday Launch Of The Chang E 5 T1 Mission Lunar Mission Lunar Landing Big Moon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/b5/5b/b4b55bb0a6319ea6e7abefc6e836f353.png" data-lightbox="roadtrip" data-title="723 Chang E 5 Will Return Samples From The Moon Youtube Moon Long March 5 Earth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/b5/5b/b4b55bb0a6319ea6e7abefc6e836f353.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROK6z9VRhBpkpVppH9ap0rTXK3C6_CL8ckuQ';" alt="723 Chang E 5 Will Return Samples From The Moon Youtube Moon Long March 5 Earth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">723 Chang E 5 Will Return Samples From The Moon Youtube Moon Long March 5 Earth</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-ranger-movies.html">Army Ranger Movies</a></li>
+													<li class="list-group-item"><a href="/army-ranger-special-forces.html">Army Ranger Special Forces</a></li>
+													<li class="list-group-item"><a href="/army-ranger-hat.html">Army Ranger Hat</a></li>
+													<li class="list-group-item"><a href="/army-ranger-handbook.html">Army Ranger Handbook</a></li>
+													<li class="list-group-item"><a href="/army-ranger-recruiting.html">Army Ranger Recruiting</a></li>
+													<li class="list-group-item"><a href="/army-ranger-yell.html">Army Ranger Yell</a></li>
+													<li class="list-group-item"><a href="/army-ranger-pay.html">Army Ranger Pay</a></li>
+													<li class="list-group-item"><a href="/army-ranger-wing-ireland.html">Army Ranger Wing Ireland</a></li>
+													<li class="list-group-item"><a href="/army-ranger-wing.html">Army Ranger Wing</a></li>
+													<li class="list-group-item"><a href="/army-ranger-graduation.html">Army Ranger Graduation</a></li>
+													<li class="list-group-item"><a href="/army-ranger-or-green-beret.html">Army Ranger Or Green Beret</a></li>
+													<li class="list-group-item"><a href="/army-ranger-medic.html">Army Ranger Medic</a></li>
+													<li class="list-group-item"><a href="/army-ranger-or-navy-seal.html">Army Ranger Or Navy Seal</a></li>
+													<li class="list-group-item"><a href="/army-rangers-font-free.html">Army Rangers Font Free</a></li>
+													<li class="list-group-item"><a href="/army-ranger-it.html">Army Ranger It</a></li>
+													<li class="list-group-item"><a href="/army-ranger-in-congress.html">Army Ranger In Congress</a></li>
+													<li class="list-group-item"><a href="/army-ranger-k9.html">Army Ranger K9</a></li>
+													<li class="list-group-item"><a href="/army-ranger-years.html">Army Ranger Years</a></li>
+													<li class="list-group-item"><a href="/army-ranger-license-plate-frame.html">Army Ranger License Plate Frame</a></li>
+													<li class="list-group-item"><a href="/army-ranger-in-national-guard.html">Army Ranger In National Guard</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

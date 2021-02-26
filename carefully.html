@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Carefully - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Carefully",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/736x/fe/0b/69/fe0b69a25661eb12c9d48caaac061e07.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=carefully",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Carefully</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Conscientiously meticulously scrupulously Antonyms. NI must tread carefully when it comes to easing the coronavirus lockdown and some restrictions may remain in place long term Robin Swann has said. Learn more in the Cambridge English-Chinese traditional Dictionary. <br>				
+			</p>
+										<a class="badge badge-dark" href="/oppo-reno-4-f-harga-dan-spesifikasi.html">oppo reno 4 f harga dan spesifikasi</a>
+											<a class="badge badge-warning" href="/orang-atau-pihak-yang-membeli-atau-mengadakan-barang-dagangan-dari-luar-negeri-dinamakan.html">orang atau pihak yang membeli atau mengadakan barang dagangan dari luar negeri dinamakan</a>
+											<a class="badge badge-dark" href="/ohio-national-guard-soldier.html">ohio national guard soldier</a>
+											<a class="badge badge-success" href="/orang-asing-boleh-menetap-dan-menjadi-penduduk-indonesia-jika.html">orang asing boleh menetap dan menjadi penduduk indonesia jika</a>
+											<a class="badge badge-success" href="/oklahoma-national-guard-recruiting-and-retention.html">oklahoma national guard recruiting and retention</a>
+											<a class="badge badge-success" href="/orang-disuntik.html">orang disuntik</a>
+											<a class="badge badge-secondary" href="/orang-fakir.html">orang fakir</a>
+											<a class="badge badge-warning" href="/orang-gila-2d.html">orang gila 2d</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to pay a visit to the ideal site.  Our website provides you with hints for viewing the maximum quality video and picture content, hunt and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this movie that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/71/12/ea7112a1f7d2afec57f45a0764858f16.jpg" data-lightbox="roadtrip" data-title="Tread Carefully Words Quotes Inspirational Quotes Pictures Quotable Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/71/12/ea7112a1f7d2afec57f45a0764858f16.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJfDl6OOhoshW-ksfpNLwz1-_7gP-rYWZfTA';" alt="Tread Carefully Words Quotes Inspirational Quotes Pictures Quotable Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tread Carefully Words Quotes Inspirational Quotes Pictures Quotable Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/ef/1a/54ef1a035bf5ecf6c7d8e35bdf6370d2.jpg" data-lightbox="roadtrip" data-title="Carefully Adv With Great Concentration Care N Careful Adj Care V Book1 Page 26 Independent Reading Activities Reading Activities Vocabulary Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/ef/1a/54ef1a035bf5ecf6c7d8e35bdf6370d2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbL1A2EHlNpV_WICVOoImnks-H4suQY_rMUA';" alt="Carefully Adv With Great Concentration Care N Careful Adj Care V Book1 Page 26 Independent Reading Activities Reading Activities Vocabulary Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carefully Adv With Great Concentration Care N Careful Adj Care V Book1 Page 26 Independent Reading Activities Reading Activities Vocabulary Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/20/fc/7820fcad0466071e58c5f5877cb1efbb.jpg" data-lightbox="roadtrip" data-title="Volkswagen Drive Carefully The Inspiration Room Advertising Creative Advertising Advertising Campaign">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/20/fc/7820fcad0466071e58c5f5877cb1efbb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu5QoSzltTGO_xGJpTPrb_tpQzyM993Oq3-Q';" alt="Volkswagen Drive Carefully The Inspiration Room Advertising Creative Advertising Advertising Campaign">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Volkswagen Drive Carefully The Inspiration Room Advertising Creative Advertising Advertising Campaign</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/8d/4c/608d4c2c3880c0c06c08286781307551.jpg" data-lightbox="roadtrip" data-title="Choose Your Words Carefully Truth Dating Humor Quotes Funny Quotes Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/8d/4c/608d4c2c3880c0c06c08286781307551.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmx5nkjAfGzWUR3s4W9PJOnKG1z5B5y2IWiw';" alt="Choose Your Words Carefully Truth Dating Humor Quotes Funny Quotes Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Choose Your Words Carefully Truth Dating Humor Quotes Funny Quotes Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/36/ee/2236eedf707b2b79ee40a435af3c0122.png" data-lightbox="roadtrip" data-title="Listen Carefully Character Introduction Figure Vector Png And Cartoon Cartoon Pics Illustration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/36/ee/2236eedf707b2b79ee40a435af3c0122.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHHKId_LXftwvFqtuIiSxe5IGa_EL1ddL4Gg';" alt="Listen Carefully Character Introduction Figure Vector Png And Cartoon Cartoon Pics Illustration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Listen Carefully Character Introduction Figure Vector Png And Cartoon Cartoon Pics Illustration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/48/d2/4348d22ba30b092ba9e9a62189fcce7a.jpg" data-lightbox="roadtrip" data-title="Love Is A Carefully Designed Lie Inspirational Words Conditional Love Funny Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/48/d2/4348d22ba30b092ba9e9a62189fcce7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgWLW4xpFdlhAMKG8_nDbYfkjom57U5OWog';" alt="Love Is A Carefully Designed Lie Inspirational Words Conditional Love Funny Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Love Is A Carefully Designed Lie Inspirational Words Conditional Love Funny Quotes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/dc/14/d3/dc14d3c92ad2667de567b3d283402927.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgWLW4xpFdlhAMKG8_nDbYfkjom57U5OWog';" alt="Love Is A Carefully Designed Lie Inspirational Words Conditional Love Funny Quotes">
+										<div class="card-body">
+						<h3 class="h5"><b>Synonyms for carefully in Free Thesaurus.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Carefully</strong>. 
+								
+																	Attentive to potential danger error or harm. 
+																	If you want to explore more you can also book one of our carefully curated packages with options to start or end your journey in Las Vegas or Salt Lake City. 
+																	Information and translations of carefully in the most comprehensive dictionary definitions resource on the web. 
+																	Thorough and painstaking in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Another word for carefully. 
+																	Carefully pick your time to visit here - See 79 traveller reviews 49 candid photos and great deals for Denver CO at Tripadvisor. 
+																	Careful definition is - marked by wary caution or prudence. 
+																	Each individual piece of hardware is carefully designed to ensure that your finished wholesale cabinets are easily used and make customers happy for years to come. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GAMES BROWSE THESAURUS WORD OF THE DAY WORDS AT PLAY. 
+																	Use our dictionary to check the spelling definitions of words. 
+																	As in meticulously scrupulously. 
+																	This course teaches English spelling rules with interactive exercises and spelling tests helping learners with problems such as dyslexia to improve their English spelling and helping others to learn English as a foreign language. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What does carefully mean. 
+																	Hello GAMES BROWSE THESAURUS WORD OF THE DAY WORDS AT PLAY. 
+																	Was careful when crossing the street. 
+																	What are synonyms for carefully. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Available in SilverLeaf Service this Rocky Mountaineer rail route is filled with highlights best seen by train including Ruby Canyon Mount Logan and crossing the Continental Divide. 
+																	Carefully synonyms carefully pronunciation carefully translation English dictionary definition of carefully. 
+																	How to use careful in a sentence. 
+																	With great attention esp. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Synonyms for carefully include meticulously thoroughly attentively methodically painstakingly unremittingly concentratedly conscientiously delicately and. 
+																	Be careful when you cross the street. 
+																	Synonym Discussion of careful. 
+																	Imprecisely inexactly loosely Find the right word. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can translate the dictionary words into your native language. 
+																	Another word for carefully. 
+																	We take pride in knowing that our wholesale stock cabinets in Denver CO are manufactured with nothing but the highest quality of workmanship. 
+																	Careful definition cautious in ones actions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Durability and reliability are. 
+																	Katie Holmes braves the bone-chilling Big Apple in winter coat and boots as she carefully treks her way through the powder after epic snowstorm. 
+																	The health minister said that despite progress. 
+																	1 synonym for carefully. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Another word for carefully. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/3b/01/833b01b9f35414b9ed4dd66408d88f72.jpg" data-lightbox="roadtrip" data-title="Use Words Carefully Words What Is Meant Sayings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/3b/01/833b01b9f35414b9ed4dd66408d88f72.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUm_Z_aUE4xZ61Zeu49_1nkX5vrgA2kPJieg';" alt="Use Words Carefully Words What Is Meant Sayings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Use Words Carefully Words What Is Meant Sayings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/25/0f/94250f2a47db91c5646cd7f1ee80f0a3.jpg" data-lightbox="roadtrip" data-title="Tread Carefully Quotes Words Meaningful Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/25/0f/94250f2a47db91c5646cd7f1ee80f0a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk8QrgLaxtyo0YgDrpKg5T4VP9pj5kRgtMOA';" alt="Tread Carefully Quotes Words Meaningful Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tread Carefully Quotes Words Meaningful Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/fb/25/21fb25d3dd38a9503e74494048e4a915.jpg" data-lightbox="roadtrip" data-title="Choose Your Words Carefully Mtn Universal Fear Not Be Weird Words Inspirational Words Your Word">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/fb/25/21fb25d3dd38a9503e74494048e4a915.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ4YLfy7QX443zYxgAUlGsfYi7V7Tl7cHbtQ';" alt="Choose Your Words Carefully Mtn Universal Fear Not Be Weird Words Inspirational Words Your Word">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Choose Your Words Carefully Mtn Universal Fear Not Be Weird Words Inspirational Words Your Word</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/4e/f6/064ef6730422e2f943ed0e9945b56e13.png" data-lightbox="roadtrip" data-title="Read The Question Carefully Before You Answer Riddles Education Children School Brain Teasers This Or That Questions Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/4e/f6/064ef6730422e2f943ed0e9945b56e13.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPaEyV5IApYO7Wr-GGaV4egqlB2aNF8YR3Mw';" alt="Read The Question Carefully Before You Answer Riddles Education Children School Brain Teasers This Or That Questions Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Read The Question Carefully Before You Answer Riddles Education Children School Brain Teasers This Or That Questions Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/71/63/917163654f85c57e6eef799da817b8ac.jpg" data-lightbox="roadtrip" data-title="Quote Work On Your Life Carefully It May Have Holes And It May Not More On Purehappylife Com Life Quotes Love Me Quotes Courage Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/71/63/917163654f85c57e6eef799da817b8ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ejLD-QFydIw9z5eQDWNklvn0ZM_1u7l7CQ';" alt="Quote Work On Your Life Carefully It May Have Holes And It May Not More On Purehappylife Com Life Quotes Love Me Quotes Courage Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Quote Work On Your Life Carefully It May Have Holes And It May Not More On Purehappylife Com Life Quotes Love Me Quotes Courage Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e0/48/39/e04839e176fc1163426b0e885884e30e.jpg" data-lightbox="roadtrip" data-title="Choose Your Thoughts Carefully A Motivational Quote From Nishan Panwar To Help You Find Peace Being Used Quotes How To Be A Happy Person Finding Peace">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e0/48/39/e04839e176fc1163426b0e885884e30e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsjnI35EvFaf_EzHWWe5FmXul7lbrd-j4_rg';" alt="Choose Your Thoughts Carefully A Motivational Quote From Nishan Panwar To Help You Find Peace Being Used Quotes How To Be A Happy Person Finding Peace">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Choose Your Thoughts Carefully A Motivational Quote From Nishan Panwar To Help You Find Peace Being Used Quotes How To Be A Happy Person Finding Peace</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/14/d3/dc14d3c92ad2667de567b3d283402927.jpg" data-lightbox="roadtrip" data-title="I Listen Really Carefully With My Eyes Quotes My Eyes Thoughts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/14/d3/dc14d3c92ad2667de567b3d283402927.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4Ed01v7wBtR5usPOpwbJmSKWlO74Kf6sJug';" alt="I Listen Really Carefully With My Eyes Quotes My Eyes Thoughts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Listen Really Carefully With My Eyes Quotes My Eyes Thoughts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/fe/0b/69/fe0b69a25661eb12c9d48caaac061e07.jpg" data-lightbox="roadtrip" data-title="Talk Slowly And Carefully How To Gain Confidence Simple Sentences Sentences">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/fe/0b/69/fe0b69a25661eb12c9d48caaac061e07.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnsg2iTKF-MWOpLTNqtwVCh86YNwMeCq09Ww';" alt="Talk Slowly And Carefully How To Gain Confidence Simple Sentences Sentences">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Talk Slowly And Carefully How To Gain Confidence Simple Sentences Sentences</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/f2/68/fef268a9c0ccd227a8c6db6483534b73.jpg" data-lightbox="roadtrip" data-title="Choose Carefully Who You Allow Into Your Life Relatable Quotes Favorite Quotes Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/f2/68/fef268a9c0ccd227a8c6db6483534b73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDvo5VE7tXqnYIZ7rZm2EAXV2iGhQ4OTNQHA';" alt="Choose Carefully Who You Allow Into Your Life Relatable Quotes Favorite Quotes Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Choose Carefully Who You Allow Into Your Life Relatable Quotes Favorite Quotes Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/ca/6b/bfca6b6253c06785811c4e5b7e958d8d.jpg" data-lightbox="roadtrip" data-title="I Adore Spontaneity Providing It Is Carefully Planned Galaxies Vibes Best Love Quotes How To Plan Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/ca/6b/bfca6b6253c06785811c4e5b7e958d8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtWzpfZE81Pwlr2PAn9TgpBxANvN5dP8kj3w';" alt="I Adore Spontaneity Providing It Is Carefully Planned Galaxies Vibes Best Love Quotes How To Plan Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Adore Spontaneity Providing It Is Carefully Planned Galaxies Vibes Best Love Quotes How To Plan Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/4b/ea/ba4bea9c07160650fdcb0935a44d26a6.jpg" data-lightbox="roadtrip" data-title="Tidy Man Or Do Not Litter Symbols Keep Clean And Dispose Of Carefully And Thoughtfully Signs Keep It Cleaner Tidying Cleaning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/4b/ea/ba4bea9c07160650fdcb0935a44d26a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNlENoEbe43NBcd3vqHZoUE1lb32GX9go1FA';" alt="Tidy Man Or Do Not Litter Symbols Keep Clean And Dispose Of Carefully And Thoughtfully Signs Keep It Cleaner Tidying Cleaning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tidy Man Or Do Not Litter Symbols Keep Clean And Dispose Of Carefully And Thoughtfully Signs Keep It Cleaner Tidying Cleaning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/2e/13/16/2e13161341b79de67ba2ddd79df8f73a.jpg" data-lightbox="roadtrip" data-title="The Sign Can Be Slipped Carefully The Fall Of Man Flat Vector Illustration Ad Carefully Fall Sign In 2020 Vector Illustration The Falling Man Illustration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/2e/13/16/2e13161341b79de67ba2ddd79df8f73a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgaQfub04gIGgbkElnygVc2VzW6wgBvursQw';" alt="The Sign Can Be Slipped Carefully The Fall Of Man Flat Vector Illustration Ad Carefully Fall Sign In 2020 Vector Illustration The Falling Man Illustration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Sign Can Be Slipped Carefully The Fall Of Man Flat Vector Illustration Ad Carefully Fall Sign In 2020 Vector Illustration The Falling Man Illustration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/78/2e/78782ef8934b236325bb69575a1e59ea.jpg" data-lightbox="roadtrip" data-title="Esl Listen Carefully Esl Kids Games Speaking Activities Esl Teaching Listening">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/78/2e/78782ef8934b236325bb69575a1e59ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaoYvWZCTf88zd5lTkV-E6XAFtZRLuTl25Rw';" alt="Esl Listen Carefully Esl Kids Games Speaking Activities Esl Teaching Listening">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Esl Listen Carefully Esl Kids Games Speaking Activities Esl Teaching Listening</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/jfhq-dodin-deputy-commander.html">Jfhq Dodin Deputy Commander</a></li>
+													<li class="list-group-item"><a href="/jfhq-california-national-guard.html">Jfhq California National Guard</a></li>
+													<li class="list-group-item"><a href="/jangan-yang-itu.html">Jangan Yang Itu</a></li>
+													<li class="list-group-item"><a href="/jangan-ngadi-ngadi.html">Jangan Ngadi Ngadi</a></li>
+													<li class="list-group-item"><a href="/jangan-engkau-bersedih-sesungguhnya-allah-bersama-kita.html">Jangan Engkau Bersedih Sesungguhnya Allah Bersama Kita</a></li>
+													<li class="list-group-item"><a href="/jangan-nakal-sayang-lirik.html">Jangan Nakal Sayang Lirik</a></li>
+													<li class="list-group-item"><a href="/japanese-army-rank.html">Japanese Army Rank</a></li>
+													<li class="list-group-item"><a href="/jangan-datang-lagi-cinta.html">Jangan Datang Lagi Cinta</a></li>
+													<li class="list-group-item"><a href="/jfhq-montgomery-al.html">Jfhq Montgomery Al</a></li>
+													<li class="list-group-item"><a href="/jangan-tolong-menolong-dalam-perbuatan-yang.html">Jangan Tolong Menolong Dalam Perbuatan Yang</a></li>
+													<li class="list-group-item"><a href="/jangan-yaiku.html">Jangan Yaiku</a></li>
+													<li class="list-group-item"><a href="/jangan-ada-dusta-diantara-kita-lirik.html">Jangan Ada Dusta Diantara Kita Lirik</a></li>
+													<li class="list-group-item"><a href="/jangan-engkau-tinggalkanku.html">Jangan Engkau Tinggalkanku</a></li>
+													<li class="list-group-item"><a href="/jangan-zalim.html">Jangan Zalim</a></li>
+													<li class="list-group-item"><a href="/jangan-youtube.html">Jangan Youtube</a></li>
+													<li class="list-group-item"><a href="/jangan-mengeluh.html">Jangan Mengeluh</a></li>
+													<li class="list-group-item"><a href="/jangan-kau-tolak-dan-buatku-hancur-chord.html">Jangan Kau Tolak Dan Buatku Hancur Chord</a></li>
+													<li class="list-group-item"><a href="/jangan-datang-lagi-cinta-chord.html">Jangan Datang Lagi Cinta Chord</a></li>
+													<li class="list-group-item"><a href="/jangan-nangis.html">Jangan Nangis</a></li>
+													<li class="list-group-item"><a href="/jangan-foto.html">Jangan Foto</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

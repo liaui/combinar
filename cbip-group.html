@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Cbip Group - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Cbip Group",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/736x/a0/cc/ad/a0ccad6e049e8059253d9d95efe4e46f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cbip+group",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Cbip Group</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Your achievement of the CBIP credential tells the worldincluding current and prospective employersthat you are serious about business intelligence. Keith Aguirre CBIP Colorado Springs Colorado Area Senior Manager at Charles Schwab 500 connections View Keiths homepage profile activity articles. About the company CB Industrial Product Holding Berhad is an investment holding company. <br>				
+			</p>
+										<a class="badge badge-success" href="/army-army-band.html">army army band</a>
+											<a class="badge badge-dark" href="/argus-upcoming-skin.html">argus upcoming skin</a>
+											<a class="badge badge-success" href="/arkansas-national-guard-military-police.html">arkansas national guard military police</a>
+											<a class="badge badge-success" href="/argus-zagreb.html">argus zagreb</a>
+											<a class="badge badge-secondary" href="/argus-rov.html">argus rov</a>
+											<a class="badge badge-info" href="/argus-skin.html">argus skin</a>
+											<a class="badge badge-secondary" href="/arin-golf.html">arin golf</a>
+											<a class="badge badge-primary" href="/argus-wallpaper-3d.html">argus wallpaper 3d</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to visit the right blog.  Our site gives you suggestions for viewing the maximum quality video and image content, search and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this movie that you see.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/3d/61/e73d61e47e6e90b19bba0027b3392d8c.png" data-lightbox="roadtrip" data-title="Is A Certified Business Intelligence Professional Cbip Certification Really Worth 1 200 Business Intelligence Certificate Business">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/3d/61/e73d61e47e6e90b19bba0027b3392d8c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTF5kyykd82rIF7jDZyklKhKHYMMJyhHOYjw';" alt="Is A Certified Business Intelligence Professional Cbip Certification Really Worth 1 200 Business Intelligence Certificate Business">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Is A Certified Business Intelligence Professional Cbip Certification Really Worth 1 200 Business Intelligence Certificate Business</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/29/58/c8295833e3d79abd9e4414b5f5ad9d81.png" data-lightbox="roadtrip" data-title="Assigned To Cbip By Govt Of Bihar And A Leading Psu I E M S Posoco Central Board Of Irrigation And Power Custom Map Pie Chart Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/29/58/c8295833e3d79abd9e4414b5f5ad9d81.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToJk_ey3Gip3WOYNEEdus33EguGYQlK1Tc-g';" alt="Assigned To Cbip By Govt Of Bihar And A Leading Psu I E M S Posoco Central Board Of Irrigation And Power Custom Map Pie Chart Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Assigned To Cbip By Govt Of Bihar And A Leading Psu I E M S Posoco Central Board Of Irrigation And Power Custom Map Pie Chart Map</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8d/b9/02/8db9021f8d0231a3e58620a6a2b86aff.jpg" data-lightbox="roadtrip" data-title="Cbip Manual For Transformer Fire Protection Science Textbook Study Guide Introduction To Psychology">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8d/b9/02/8db9021f8d0231a3e58620a6a2b86aff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4DrwyqFLwQaxl2DIHn9JNJuTsUGa50sRgJw';" alt="Cbip Manual For Transformer Fire Protection Science Textbook Study Guide Introduction To Psychology">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cbip Manual For Transformer Fire Protection Science Textbook Study Guide Introduction To Psychology</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/e8/2c/45e82c4f5629d59e11edd68fca0f8b64.jpg" data-lightbox="roadtrip" data-title="Pin On Management">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/e8/2c/45e82c4f5629d59e11edd68fca0f8b64.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR08CuTv2krWXTr0kGhPx-GfWZ-XXVslqSIkg';" alt="Pin On Management">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Management</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/db/83/3d/db833dd27ac34319ed9d2cfa9b6f7d56.jpg" data-lightbox="roadtrip" data-title="Doble Cbip Manual Power Transformer Transformers Power Manual">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/db/83/3d/db833dd27ac34319ed9d2cfa9b6f7d56.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3n9d8xCw13nc4oKgzcfcBhQ-GHYl40cLUqQ';" alt="Doble Cbip Manual Power Transformer Transformers Power Manual">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Doble Cbip Manual Power Transformer Transformers Power Manual</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/db/68/19db68ad2fede3f2585f75a848e04e06.jpg" data-lightbox="roadtrip" data-title="Pin On Cbip">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/db/68/19db68ad2fede3f2585f75a848e04e06.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdWT3U8pmRvdLkuQnoNkQthiJ-aWFtUDEz-Q';" alt="Pin On Cbip">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cbip</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/a0/cc/ad/a0ccad6e049e8059253d9d95efe4e46f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdWT3U8pmRvdLkuQnoNkQthiJ-aWFtUDEz-Q';" alt="Pin On Cbip">
+										<div class="card-body">
+						<h3 class="h5"><b>View Anna Austin MSBI TOGAF CBIP PMPS profile on LinkedIn the worlds largest professional community.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Cbip group</strong>. 
+								
+																	View Karla Stroud CBIPS profile on LinkedIn the worlds largest professional community. 
+																	View Ken Harris CBIP CDP CCPS professional profile on LinkedIn. 
+																	TDWIs Certified Business Intelligence Professional CBIP credential is the business intelligence and data warehousing industrys most meaningful and credible certification program. 
+																	Construction of the plants in Telok Panglima Garang currently housed as Head Office of CBIPH Group. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Or group of them to each one of the exams. 
+																	View Nik Giachino CBIPS profile on LinkedIn the worlds largest professional community. 
+																	The decrease in the Groups revenue and profit before taxation was mainly due to lower project billings and implementation by the palm oil equipment and engineering. 
+																	In 1985 he was further promoted to Project Director where he headed the project team and managed the Project Division eg. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Thomas Woodruff MSP PMP CBIP CDMP TCTS Engagement Manager at Teradata Saint Johns FL. 
+																	The Companys segments include plantation. 
+																	See the complete profile on LinkedIn and discover Niks. 
+																	The Groups revenue and profit before taxation for the current quarter decreased as compared to preceding quarter. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Brandy Rhodes Senior Consultant at Launch Consulting Group. 
+																	0 SCORE Prospective Profit. 
+																	Since the 1980s CBIP has been equipping palm oil mills in Malaysia and around the world. 
+																	CBIP Mastery Level in Business Analytics Institute for the Certification of Computing Professionals ICCP Issued Feb 2016 Expires Feb 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We would like to show you a description here but the site wont allow us. 
+																	Candidates have 90 minutes to complete a total of 110 questions. 
+																	Passionned Groups CBIP program doesnt just help you bring out the best in yourself it also helps you to capitalize on the opportunities offered by Business Analytics and Data Intelligence in your organization. 
+																	CB Industrial Product Holding Bhd provides palm oil mill equipment and spare parts to various mills around the world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nik has 5 jobs listed on their profile. 
+																	He is currently acts as an advisor for palm oil mill projects and the administration of the factory and Property Division. 
+																	In addition the company developed its patented Continuous Sterilazation palm oil mills which has turned it into a leading provider of turnkey mill services. 
+																	See the complete profile on LinkedIn and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I really hope that this kind of association would clarify better my explanations and help the reader on determining the scope for each subject. 
+																	The Company is engaged in the provision of management services. 
+																	My Road to Certified Business Intelligence Professional CBIP. 
+																	English Native or. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Karla has 7 jobs listed on their profile. 
+																	See the complete profile on LinkedIn and discover Karlas. 
+																	Incorrect answered questions do not count against. 
+																	Anna has 9 jobs listed on their profile. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LinkedIn is the worlds largest business network helping professionals like Ken Harris CBIP CDP CCP discover inside. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/d9/52/6ed952fb297e63e2d95f1a0d9176346b.png" data-lightbox="roadtrip" data-title="Pin On History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/d9/52/6ed952fb297e63e2d95f1a0d9176346b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQpJTJ0S0R5oetQ9K1RyCZ15kPWFZHYIkfyw';" alt="Pin On History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/26/de/8126de2c2d369cc06f21b2a3ce8320c8.png" data-lightbox="roadtrip" data-title="How To Win The Business Intelligence Interview Dating Game Business Intelligence Interview Interview Questions">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/26/de/8126de2c2d369cc06f21b2a3ce8320c8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8OYEhgoSVMisDqjKW7kQ2A2mxPktdACm6hg';" alt="How To Win The Business Intelligence Interview Dating Game Business Intelligence Interview Interview Questions">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Win The Business Intelligence Interview Dating Game Business Intelligence Interview Interview Questions</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/2c/68/7b2c68a24e840c5ca8ae933ecf0e91ab.jpg" data-lightbox="roadtrip" data-title="Grocery Great Whole Foods Market Whole Food Recipes Fresh Food Market Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/2c/68/7b2c68a24e840c5ca8ae933ecf0e91ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmSB1pcDxFy6S9D_WtAeFzJOA210Iq7x0NHA';" alt="Grocery Great Whole Foods Market Whole Food Recipes Fresh Food Market Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grocery Great Whole Foods Market Whole Food Recipes Fresh Food Market Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/55/19/935519837648e1444b0badedf03ec85b.jpg" data-lightbox="roadtrip" data-title="Gluteal Muscles Attachment Nerve Supply Action Gluteal Muscles Muscle Gluteus Medius">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/55/19/935519837648e1444b0badedf03ec85b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKQfsg0C3KK4GCZEAtV0NgvQdvWj-s7zikzA';" alt="Gluteal Muscles Attachment Nerve Supply Action Gluteal Muscles Muscle Gluteus Medius">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gluteal Muscles Attachment Nerve Supply Action Gluteal Muscles Muscle Gluteus Medius</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/8b/ba/da8bbaf2689a244eaadb90e39d9d3521.png" data-lightbox="roadtrip" data-title="What Bi Software Costs Capterra Bi Businessintelligence Business Intelligence Business Software">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/8b/ba/da8bbaf2689a244eaadb90e39d9d3521.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPSkI58MBCvkabiApaLuRBkt0hUiIvBYXZhA';" alt="What Bi Software Costs Capterra Bi Businessintelligence Business Intelligence Business Software">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Bi Software Costs Capterra Bi Businessintelligence Business Intelligence Business Software</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/43/68/da4368970a4a968e023b442acc8006fe.jpg" data-lightbox="roadtrip" data-title="Pin By Montruo On Cartoonies Caricature Caricature Drawing Iron Fist Marvel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/43/68/da4368970a4a968e023b442acc8006fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQSEXJfm-fjObqXYi139zxOwiBzrrhdjWmA';" alt="Pin By Montruo On Cartoonies Caricature Caricature Drawing Iron Fist Marvel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Montruo On Cartoonies Caricature Caricature Drawing Iron Fist Marvel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/a5/9d/eba59d8771d6b22f74970e858f74d91f.jpg" data-lightbox="roadtrip" data-title="Pin On Ui Ux Frame Layout">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/a5/9d/eba59d8771d6b22f74970e858f74d91f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxZO49TyMZSTYFriWh5CuMtpg2rqEypQwEAQ';" alt="Pin On Ui Ux Frame Layout">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ui Ux Frame Layout</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/44/bd/2c/44bd2c80d574282f18bff320c7527339.jpg" data-lightbox="roadtrip" data-title="Uk Investor Innovator Visa In 2020 Start Up Business Innovation Visa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/44/bd/2c/44bd2c80d574282f18bff320c7527339.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMJLZkxiw2IySq7obsqg880O_YyenFdkkfsA';" alt="Uk Investor Innovator Visa In 2020 Start Up Business Innovation Visa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uk Investor Innovator Visa In 2020 Start Up Business Innovation Visa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/cc/31/71cc316fc5ed8907332e38184d489d09.jpg" data-lightbox="roadtrip" data-title="Macd107 Lobesfunctions Of Brain Labelled 20140530 Large Jpg 900 853 Brain Diagram Human Brain Diagram Brain">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/cc/31/71cc316fc5ed8907332e38184d489d09.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2VNzoSzOlVXnNFsiwTQxOAEnsXSXF3KdpaQ';" alt="Macd107 Lobesfunctions Of Brain Labelled 20140530 Large Jpg 900 853 Brain Diagram Human Brain Diagram Brain">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Macd107 Lobesfunctions Of Brain Labelled 20140530 Large Jpg 900 853 Brain Diagram Human Brain Diagram Brain</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/f1/fa/93f1faefd89f0290b419c10222d61723.jpg" data-lightbox="roadtrip" data-title="Limbic System Ask A Biologist Limbic System Music And The Brain Neuroscience">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/f1/fa/93f1faefd89f0290b419c10222d61723.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdDoryGR2zG1IsjGq0xzx-q4m7Cez-j5NLSA';" alt="Limbic System Ask A Biologist Limbic System Music And The Brain Neuroscience">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Limbic System Ask A Biologist Limbic System Music And The Brain Neuroscience</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a0/cc/ad/a0ccad6e049e8059253d9d95efe4e46f.jpg" data-lightbox="roadtrip" data-title="Brain Stem Anatomy Location Function Anatomy Brain Stem Human Body">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a0/cc/ad/a0ccad6e049e8059253d9d95efe4e46f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtKdlOgus86hKzcMGxD034gIGYSlfDwBhv1Q';" alt="Brain Stem Anatomy Location Function Anatomy Brain Stem Human Body">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Brain Stem Anatomy Location Function Anatomy Brain Stem Human Body</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/07/b0/2a07b05e8d78f51823571937f1a69b07.png" data-lightbox="roadtrip" data-title="Payload Para Http Injector Unlimited Hebert Tutoriais Canal Internet Gratis Internet Gratis Vpn Http Injector Configuration Pa Tutoriais Internet Textos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/07/b0/2a07b05e8d78f51823571937f1a69b07.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYNBavi-6IrvpXp2mRGG1yj3Ixk8kfbJ95lw';" alt="Payload Para Http Injector Unlimited Hebert Tutoriais Canal Internet Gratis Internet Gratis Vpn Http Injector Configuration Pa Tutoriais Internet Textos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Payload Para Http Injector Unlimited Hebert Tutoriais Canal Internet Gratis Internet Gratis Vpn Http Injector Configuration Pa Tutoriais Internet Textos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/150x150/1d/cb/a9/1dcba9e4b0c210998128dd63d8c23fd9.jpg" data-lightbox="roadtrip" data-title="Over The Rainbow Poster By Drawmeasong Com And A Great Quote From Judy Garland Song Lyrics Art Rainbow Drawing Lyrics Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/150x150/1d/cb/a9/1dcba9e4b0c210998128dd63d8c23fd9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8cagSyOeQCjp4iiMRztHPoAUsZPQe5BE0NA';" alt="Over The Rainbow Poster By Drawmeasong Com And A Great Quote From Judy Garland Song Lyrics Art Rainbow Drawing Lyrics Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Over The Rainbow Poster By Drawmeasong Com And A Great Quote From Judy Garland Song Lyrics Art Rainbow Drawing Lyrics Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-national-guard-to-air-force-rotc.html">Army National Guard To Air Force Rotc</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-mp-requirements.html">Army National Guard Mp Requirements</a></li>
+													<li class="list-group-item"><a href="/army-national-guard.html">Army National Guard</a></li>
+													<li class="list-group-item"><a href="/army-national-units.html">Army National Units</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-land-component-commander.html">Army National Guard Land Component Commander</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-versus-air-national-guard.html">Army National Guard Versus Air National Guard</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-ocs-regulation.html">Army National Guard Ocs Regulation</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-irr-regulation.html">Army National Guard Irr Regulation</a></li>
+													<li class="list-group-item"><a href="/army-navy-cargo-pants.html">Army Navy Cargo Pants</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-mos-line-scores.html">Army National Guard Mos Line Scores</a></li>
+													<li class="list-group-item"><a href="/army-national-hiring.html">Army National Hiring</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-ocs-age.html">Army National Guard Ocs Age</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-ing-regulation.html">Army National Guard Ing Regulation</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-lincoln-ne.html">Army National Guard Lincoln Ne</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-service-requirements.html">Army National Guard Service Requirements</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-units-in-atlanta-ga.html">Army National Guard Units In Atlanta Ga</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-stem-program.html">Army National Guard Stem Program</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-units-in-maine.html">Army National Guard Units In Maine</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-ocs-options.html">Army National Guard Ocs Options</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-safety-program.html">Army National Guard Safety Program</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

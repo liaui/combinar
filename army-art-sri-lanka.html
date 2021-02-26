@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Art Sri Lanka - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Art Sri Lanka",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/ac/b5/ec/acb5ec8e46fa75c11476371832a7a2fb.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+art+sri+lanka",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Art Sri Lanka</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Explore more on Sri Lanka Army. BTS ArMy sri lanka group. Press alt to open this menu. <br>				
+			</p>
+										<a class="badge badge-dark" href="/orang-israel.html">orang israel</a>
+											<a class="badge badge-secondary" href="/orange-army-boots.html">orange army boots</a>
+											<a class="badge badge-light" href="/orang-hamil-makan-nanas.html">orang hamil makan nanas</a>
+											<a class="badge badge-secondary" href="/orang-ketiga-lirik-hivi.html">orang ketiga lirik hivi</a>
+											<a class="badge badge-warning" href="/orange-7-lyrics.html">orange 7 lyrics</a>
+											<a class="badge badge-info" href="/orang-sengsara-tidak-punya-harta-dan-tempat-tinggal.html">orang sengsara tidak punya harta dan tempat tinggal</a>
+											<a class="badge badge-primary" href="/orang-jawa.html">orang jawa</a>
+											<a class="badge badge-dark" href="/orang-gila-lucu.html">orang gila lucu</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to visit the ideal blog.  Our website gives you suggestions for viewing the maximum quality video and image content, hunt and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this video for you to see.  You can also contribute to supporting this website by sharing videos and images that you like on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6f/96/61/6f9661689a398ac0b6cb8eb48cf62919.jpg" data-lightbox="roadtrip" data-title="Sri Lanka Army Saviors Lka Cartoon Wallpaper Hd Army Wallpaper Marvel Drawings">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6f/96/61/6f9661689a398ac0b6cb8eb48cf62919.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_x4eNtOnSPWDL-mYEkujAdPpicGYmdwgKVQ';" alt="Sri Lanka Army Saviors Lka Cartoon Wallpaper Hd Army Wallpaper Marvel Drawings">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sri Lanka Army Saviors Lka Cartoon Wallpaper Hd Army Wallpaper Marvel Drawings</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/0e/49/c0/0e49c01b919051e27c77d0641208c8e1.jpg" data-lightbox="roadtrip" data-title="Guardians Of Sri Lanka Sri Lanka Army Sri Lanka Art Humanoid Sketch">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/0e/49/c0/0e49c01b919051e27c77d0641208c8e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1f2kOrwufAm1a9A9KiQbDcy0XM-aLj7H8yA';" alt="Guardians Of Sri Lanka Sri Lanka Army Sri Lanka Art Humanoid Sketch">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guardians Of Sri Lanka Sri Lanka Army Sri Lanka Art Humanoid Sketch</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/5a/d9/aa5ad9cc5c6c830bfd33d6005391d447.jpg" data-lightbox="roadtrip" data-title="Sri Lanka And Its Long War War Heroes Sri Lanka War Crime">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/5a/d9/aa5ad9cc5c6c830bfd33d6005391d447.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSgnZ9WJaG-rJRzD3tL-sjyhlg6nVHyMbYNA';" alt="Sri Lanka And Its Long War War Heroes Sri Lanka War Crime">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sri Lanka And Its Long War War Heroes Sri Lanka War Crime</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/93/a8/0d93a8cb1de5674707aacf027881cb5a.jpg" data-lightbox="roadtrip" data-title="Sri Lankan Army Besieging A Portuguese Fort In Ceylon Warrior Paint Painting War Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/93/a8/0d93a8cb1de5674707aacf027881cb5a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH61HC0UVrXtxfIvJKb3csObWaa2mQpT9hgw';" alt="Sri Lankan Army Besieging A Portuguese Fort In Ceylon Warrior Paint Painting War Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sri Lankan Army Besieging A Portuguese Fort In Ceylon Warrior Paint Painting War Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/2f/0b/802f0bca68b5ea5a5b8851b5909722c6.jpg" data-lightbox="roadtrip" data-title="The Jungle Warriors Sri Lanka Army Special Forces Regiment Fighter Planes Art Jungle Warriors Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/2f/0b/802f0bca68b5ea5a5b8851b5909722c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIXRnc32BwsN2uyFVhb3l6038IC6gpo5IO-Q';" alt="The Jungle Warriors Sri Lanka Army Special Forces Regiment Fighter Planes Art Jungle Warriors Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Jungle Warriors Sri Lanka Army Special Forces Regiment Fighter Planes Art Jungle Warriors Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/3b/c5/b53bc562d1ab8c3bd7a796e578bd47b7.jpg" data-lightbox="roadtrip" data-title="Sri Lankan Heros Hero Painting Comic Book Cover">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/3b/c5/b53bc562d1ab8c3bd7a796e578bd47b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR_NDuxRn8qQS4dHd6gtBNt1vOc6QpEXQdLw';" alt="Sri Lankan Heros Hero Painting Comic Book Cover">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sri Lankan Heros Hero Painting Comic Book Cover</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/74/4b/f0/744bf03386549a79db354e2855b31f50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR_NDuxRn8qQS4dHd6gtBNt1vOc6QpEXQdLw';" alt="Sri Lankan Heros Hero Painting Comic Book Cover">
+										<div class="card-body">
+						<h3 class="h5"><b>The following tables present the military ranks and insignia of the Sri Lanka ArmyThese ranks generally correspond with those of Western or Commonwealth Nations militaries and reflect those of the British Warrant Officer Non-Commissioned Officer and ordninary soldier ranks and the Commissioned officer ranksThe highest attainable rank in the Sri Lanka Army is a lieutenant general which is.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army art sri lanka</strong>. 
+								
+																	Sri Lanka Army Seva Vanitha Unit conducts various welfare projects such as Viru Kekulu pre-schools day care centres welfare shops bakeries and salons with the committed contribution of the dedicated membership. 
+																	Please register your interest here for travel packages for our next trip to this spectacular destination. 
+																	Discover and save your own Pins on Pinterest. 
+																	706 likes 1558 talking about this. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Headquarters Sri Lanka Army Volunteer Force Salawa Kosgama Sri Lanka 94 362255362 hqslavfarmylk. 
+																	Sections of this page. 
+																	Sri Lanka Army by establishing the countrys first ever Angampora Experiment Institute and Training Centre AEITC at Panagoda Army Cantonment with state patronage added a new chapter to the field of Army sports on Tuesday 4 during an induction Kala Elimangalya display of Army Angampora players. 
+																	A key component of angampora is the namesake angam which incorporates hand-to-hand fighting and illangam involving the use of indigenous weapons such as the ethunu kaduwa staves knives and swords. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It was introduced to Sri Lanka in 1996 and the Sri Lankan Army is at the forefront of this martial art producing a large number of sportsmen and women of national and international standards. 
+																	Find Sri Lanka Army Latest News Videos Pictures on Sri Lanka Army and see latest updates news information from NDTVCOM. 
+																	The course will be conducted by a team of well experienced and qualified Army instructors along with one of the veteran martial art instructors in Sri Lanka Renshi Clement De Zoysa Black Belt 8th Dan as the chief instructor of the course. 
+																	Construction of houses giving away of educational scholarships and assisting in times of natural disasters are done at both organizational and Regimental levels. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Was coordinated with the internationally recognized brand name Dreamron in collaboration with Dreamron College of Art and Beauty. 
+																	BTS ARMY SRI LANKA. 
+																	Construction of houses giving away of educational scholarships and assisting in times of natural disasters are done at both organizational and Regimental levels. 
+																	Institutionalizing Angampora Army Gives New Lease of Life to Age-old Local Martial Art. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Art creation by mahesh Sri lanka art Army Art creation by mahesh Sri lanka art. 
+																	Sri Lanka Army Seva Vanitha Unit conducts various welfare projects such as Viru Kekulu pre-schools day care centres welfare shops bakeries and salons with the committed contribution of the dedicated membership. 
+																	BTS ArMy sri lanka. 
+																	68 likes 45 talking about this. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	World famous KPOP Idol group 방탄소년단 BTS knows our countryJin oppa thank you. 
+																	Michelle Bachelet accused Sri Lanka of reneging on promises to ensure justice for thousands of civilians killed in the final stages of the 37-year separatist war that ended a decade ago. 
+																	Lt Gen N U M M W Senanayake RWP RSP VSV USP USACGSC Commander of the Sri Lanka Army granted approval to commence the project in. 
+																	Discover colourful temples palm-fringed beaches. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Another component known as maya angam which uses spells and incantations. 
+																	Sri Lanka Army General Service Corps declared opened a well equipped Four Wings Beauty Salon and Vocational Training Centre. 
+																	Sri Lanka Art posted a video to playlist feeling positive at Home. 
+																	Following the official announcement from the ECB Englands cricket tour to Sri Lanka due to be to take place between the 1st 29th May 2020 will now take place behind closed doors in January 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Angampora is a Sri Lankan martial art that combines combat techniques self-defense sport exercise and meditation. 
+																	Barmy Army Tour to Sri Lanka DATES TBC. 
+																	Nov 21 2013 - This Pin was discovered by Carolyn Flack. 
+																	Over 8000 members of the Army have followed the taekwondo course to date. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	June 19 2020 Army Art creation by mahesh Sri lanka art. 
+																	The United States said Friday it would refuse entry to Sri Lankas army chief over credible evidence of human rights violations in the bloody 2009 finale to the civil war. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/a3/2d/a3a32dd4cbc12e47b658ce01fb8df776.jpg" data-lightbox="roadtrip" data-title="Sri Lanka Army Special Forces Regiment Sniper Special Forces Armed Forces Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/a3/2d/a3a32dd4cbc12e47b658ce01fb8df776.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS384M5ZG_pak1PAljGsSc7N38V03zl2WJpWg';" alt="Sri Lanka Army Special Forces Regiment Sniper Special Forces Armed Forces Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sri Lanka Army Special Forces Regiment Sniper Special Forces Armed Forces Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/aa/a8/caaaa8203ae38e4b204927164b120954.jpg" data-lightbox="roadtrip" data-title="Prasanna Weerakkody Paintings Ancient War Painting Warrior Paint">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/aa/a8/caaaa8203ae38e4b204927164b120954.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwVqVg_NSICm0yPhWoFeAeMZexz83BbR0Iog';" alt="Prasanna Weerakkody Paintings Ancient War Painting Warrior Paint">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Prasanna Weerakkody Paintings Ancient War Painting Warrior Paint</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/80/ed/6780ed6b9e562e95c448207703e295d5.jpg" data-lightbox="roadtrip" data-title="Supun Wirajith Sri Lanka Army Week May 12 To May 18 Army Wallpaper Army Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/80/ed/6780ed6b9e562e95c448207703e295d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg_P1mHT7qzNafiWaMISBjyd4m54omgKTaig';" alt="Supun Wirajith Sri Lanka Army Week May 12 To May 18 Army Wallpaper Army Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Supun Wirajith Sri Lanka Army Week May 12 To May 18 Army Wallpaper Army Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/cc/f8/b1ccf8d6078d2216d06c3b937a237c9f.jpg" data-lightbox="roadtrip" data-title="I Love You My Hero Sri Lankan Army Army Wife Life Military Relationships Army Couple Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/cc/f8/b1ccf8d6078d2216d06c3b937a237c9f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTovFDRN8K_T_FUm3JCt9FlUPVhBBJ0AJWE2A';" alt="I Love You My Hero Sri Lankan Army Army Wife Life Military Relationships Army Couple Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Love You My Hero Sri Lankan Army Army Wife Life Military Relationships Army Couple Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/c3/21/53c3214bc8da8304a7ab883d214d19c3.jpg" data-lightbox="roadtrip" data-title="Commando Regiment War Heroes Army Soldier Sri Lanka">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/c3/21/53c3214bc8da8304a7ab883d214d19c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlNKh_pvgZuE_takXxOL4QZ2rZG5PLHvZOaw';" alt="Commando Regiment War Heroes Army Soldier Sri Lanka">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Commando Regiment War Heroes Army Soldier Sri Lanka</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/28/24/cb2824a5041901f36576ab98691e7146.jpg" data-lightbox="roadtrip" data-title="Pin By Seba Roldan On 1 Military Art Soldiers 1900 Now Military Artwork Soldier Drawing Army Poster">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/28/24/cb2824a5041901f36576ab98691e7146.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq7WQITrlQ-hDfqO9_FF5DMYdZxLUoUbUSJQ';" alt="Pin By Seba Roldan On 1 Military Art Soldiers 1900 Now Military Artwork Soldier Drawing Army Poster">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Seba Roldan On 1 Military Art Soldiers 1900 Now Military Artwork Soldier Drawing Army Poster</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/4e/78/f4/4e78f4ab22b86304ad1b85185e8af7e2.jpg" data-lightbox="roadtrip" data-title="Anuradhapura Era Cavalrysoldier With Head Dress Sri Lanka Art Artist Prasanna Weerakkody Warrior Paint Hinduism Art South Asian Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/4e/78/f4/4e78f4ab22b86304ad1b85185e8af7e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfw1AD_VVrHB986zhkIrKFqyMgpOUBesgOzg';" alt="Anuradhapura Era Cavalrysoldier With Head Dress Sri Lanka Art Artist Prasanna Weerakkody Warrior Paint Hinduism Art South Asian Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anuradhapura Era Cavalrysoldier With Head Dress Sri Lanka Art Artist Prasanna Weerakkody Warrior Paint Hinduism Art South Asian Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/b5/ec/acb5ec8e46fa75c11476371832a7a2fb.jpg" data-lightbox="roadtrip" data-title="Military Army Wallpaper Special Forces Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/b5/ec/acb5ec8e46fa75c11476371832a7a2fb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ldg1Zk58YLxOPVRtoMSu5y9aCb5eRV7KxA';" alt="Military Army Wallpaper Special Forces Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Army Wallpaper Special Forces Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/73/69/767369cfdbe420420a194996ae5da5bf.jpg" data-lightbox="roadtrip" data-title="Portuguese Armies Decimated By The Sinhala Armies Lead By Prince Tikiri Sri Lanka Art Artist Prasanna Weerakko Warrior Paint Painting Historical Painting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/73/69/767369cfdbe420420a194996ae5da5bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyT-YOaVI5gxignUQJsn1A5J2iWGxMZg-9pg';" alt="Portuguese Armies Decimated By The Sinhala Armies Lead By Prince Tikiri Sri Lanka Art Artist Prasanna Weerakko Warrior Paint Painting Historical Painting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Portuguese Armies Decimated By The Sinhala Armies Lead By Prince Tikiri Sri Lanka Art Artist Prasanna Weerakko Warrior Paint Painting Historical Painting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/1c/c5/971cc59b791d3cfc18705768d8776d4b.jpg" data-lightbox="roadtrip" data-title="Sri Lankan Commando Regiment Soldiers Military Heroes Special Forces Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/1c/c5/971cc59b791d3cfc18705768d8776d4b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf_eKDhBlJDa6R2eAt5dI0NznedL9lIdQOfw';" alt="Sri Lankan Commando Regiment Soldiers Military Heroes Special Forces Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sri Lankan Commando Regiment Soldiers Military Heroes Special Forces Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/55/62/ee5562f3415bf9e936216f1922732657.jpg" data-lightbox="roadtrip" data-title="Flickriver Photoset Sri Lanka By World Armies Army Armed Forces Sri Lankan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/55/62/ee5562f3415bf9e936216f1922732657.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAvFDrz9GDmUL4cuKO_pYQg96vJTaT1O8ssg';" alt="Flickriver Photoset Sri Lanka By World Armies Army Armed Forces Sri Lankan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flickriver Photoset Sri Lanka By World Armies Army Armed Forces Sri Lankan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/4b/f0/744bf03386549a79db354e2855b31f50.jpg" data-lightbox="roadtrip" data-title="Pin On Paratroopers Soldate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/4b/f0/744bf03386549a79db354e2855b31f50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6HXVdFzvjnqn1zOsE4hXxF_fVAthQj5-pEQ';" alt="Pin On Paratroopers Soldate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Paratroopers Soldate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/4d/95/254d95d66016bf779e9875d3c0f89a55.jpg" data-lightbox="roadtrip" data-title="Pin On To Read Face Without Judgement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/4d/95/254d95d66016bf779e9875d3c0f89a55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX207yeAtO8nnjlJG5qqTI-c1y8Bri8U1_1g';" alt="Pin On To Read Face Without Judgement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On To Read Face Without Judgement</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/netguard-local-vpn.html">Netguard Local Vpn</a></li>
+													<li class="list-group-item"><a href="/netguard-firewall.html">Netguard Firewall</a></li>
+													<li class="list-group-item"><a href="/netguard-blacklist.html">Netguard Blacklist</a></li>
+													<li class="list-group-item"><a href="/nb-590v4-review.html">Nb 590v4 Review</a></li>
+													<li class="list-group-item"><a href="/netguard-im-zugriffsbeschraenkung-modus-erlauben.html">Netguard Im Zugriffsbeschraenkung Modus Erlauben</a></li>
+													<li class="list-group-item"><a href="/netguard-https.html">Netguard Https</a></li>
+													<li class="list-group-item"><a href="/nb-dc-590-bat.html">Nb Dc 590 Bat</a></li>
+													<li class="list-group-item"><a href="/nepal-army-rank-list.html">Nepal Army Rank List</a></li>
+													<li class="list-group-item"><a href="/nc-national-guard-military-ball-2019.html">Nc National Guard Military Ball 2019</a></li>
+													<li class="list-group-item"><a href="/netguard-mod-apk.html">Netguard Mod Apk</a></li>
+													<li class="list-group-item"><a href="/navy-drill-weekend-schedule-2020.html">Navy Drill Weekend Schedule 2020</a></li>
+													<li class="list-group-item"><a href="/national-soldiers-memorial.html">National Soldiers Memorial</a></li>
+													<li class="list-group-item"><a href="/nationwide-army-national-guard-agr-jobs.html">Nationwide Army National Guard Agr Jobs</a></li>
+													<li class="list-group-item"><a href="/netguard-ios.html">Netguard Ios</a></li>
+													<li class="list-group-item"><a href="/netguard-ecologique.html">Netguard Ecologique</a></li>
+													<li class="list-group-item"><a href="/nb-mt590.html">Nb Mt590</a></li>
+													<li class="list-group-item"><a href="/netguard-gboard.html">Netguard Gboard</a></li>
+													<li class="list-group-item"><a href="/nc-army-national-guard-agr-jobs.html">Nc Army National Guard Agr Jobs</a></li>
+													<li class="list-group-item"><a href="/netguard-apk-github.html">Netguard Apk Github</a></li>
+													<li class="list-group-item"><a href="/netguard-ios-alternative.html">Netguard Ios Alternative</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

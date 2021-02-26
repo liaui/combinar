@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Salvation Army Crf - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Salvation Army Crf",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/bb/d8/e1/bbd8e1b2439d4646890cb5c3f14c07bc.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=salvation+army+crf",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Salvation Army Crf</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">They can be forced to work in the sex trade. Modern Slavery and Human Trafficking in the UK. Professional counselors and social workers give advice life skills and supervision to men as they prepare for a second chance at life. <br>				
+			</p>
+										<a class="badge badge-warning" href="/mud-guard-xenia-2014.html">mud guard xenia 2014</a>
+											<a class="badge badge-info" href="/mp-in-the-army-national-guard.html">mp in the army national guard</a>
+											<a class="badge badge-warning" href="/military-orange-county.html">military orange county</a>
+											<a class="badge badge-light" href="/military-ranks-youtube.html">military ranks youtube</a>
+											<a class="badge badge-light" href="/military-drill-weekend-pay.html">military drill weekend pay</a>
+											<a class="badge badge-success" href="/military-rank-buy-insignia.html">military rank buy insignia</a>
+											<a class="badge badge-danger" href="/military-ranks-in-national-guard.html">military ranks in national guard</a>
+											<a class="badge badge-success" href="/misaeng-incomplete-life-sub-indo.html">misaeng incomplete life sub indo</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to pay a visit to the ideal site.  Our site gives you hints for seeing the maximum quality video and picture content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this video for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/94/38/8d94388dbd317b5a714ca3cbed747fa0.jpg" data-lightbox="roadtrip" data-title="Pin On Random Cool Stuff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/94/38/8d94388dbd317b5a714ca3cbed747fa0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJg7UF827cezs-l21VbxAA5IEkFu2T9jTIHQ';" alt="Pin On Random Cool Stuff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Random Cool Stuff</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/00/f1/02/00f1026a9654c11f025d258af62f2810.jpg" data-lightbox="roadtrip" data-title="Manuals For A 383 Chrysler Engine Chrysler Manual Engineering">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/00/f1/02/00f1026a9654c11f025d258af62f2810.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu2KUmryms0y1o5FsRgGv7fbIcx3J453Pbcg';" alt="Manuals For A 383 Chrysler Engine Chrysler Manual Engineering">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Manuals For A 383 Chrysler Engine Chrysler Manual Engineering</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ad/10/20/ad1020a4285e872a4e8ab9fe2caf26f8.jpg" data-lightbox="roadtrip" data-title="Jason Penopolis Home Movies Movies Photo Caption">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ad/10/20/ad1020a4285e872a4e8ab9fe2caf26f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1icYDwSvOGvyBaKwC7azgJ2f5s57v1W26Og';" alt="Jason Penopolis Home Movies Movies Photo Caption">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jason Penopolis Home Movies Movies Photo Caption</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://halfwayhouses.ca/uploads/Salvation_Army_CRF_Victoria_1323964683_profile.jpg" data-lightbox="roadtrip" data-title="Rhha Victoria Salvation Army Crf">
+											<img class="card-img v-image ads-img " src="http://halfwayhouses.ca/uploads/Salvation_Army_CRF_Victoria_1323964683_profile.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3LBneoTY2m76rUQHB4rfrr-nch8z4-T9iGg';" alt="Rhha Victoria Salvation Army Crf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rhha Victoria Salvation Army Crf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/d1/6a/91d16add9f295df56a13edd69484e1fe.jpg" data-lightbox="roadtrip" data-title="Pin On Truth">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/d1/6a/91d16add9f295df56a13edd69484e1fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCaKR_Wzt83R8VbAfJeUttkStmuEjC8jUHlg';" alt="Pin On Truth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Truth</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/27/b5/f3/27b5f34c0ed8c7d374cf6f893b96a2a0.jpg" data-lightbox="roadtrip" data-title="Unitek Models 125 Manual Manual Yukon Slt Marketing Letters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/27/b5/f3/27b5f34c0ed8c7d374cf6f893b96a2a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIcFG6zfK4nNh-eWOub7WxWr4Ex1t9nXl8A';" alt="Unitek Models 125 Manual Manual Yukon Slt Marketing Letters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unitek Models 125 Manual Manual Yukon Slt Marketing Letters</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/00/f1/02/00f1026a9654c11f025d258af62f2810.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREIcFG6zfK4nNh-eWOub7WxWr4Ex1t9nXl8A';" alt="Unitek Models 125 Manual Manual Yukon Slt Marketing Letters">
+										<div class="card-body">
+						<h3 class="h5"><b>Belkin House provides a home to the homeless and those who are risk of homelessness.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Salvation army crf</strong>. 
+								
+																	Details Provided by Opportunity closing date 22 June 2020 Opportunity publication date 06 June 2020 Value of contract to be confirmed Your guide to exporting Canada. 
+																	The Salvation Army is committed to preventing identifying and responding to the abuse of children and adults. 
+																	The Salvation Armys recycling initiatives actually have their origins in a scheme started in 1985 by Salvation Army officer Terry Pattinson. 
+																	For more information about our Community Residential Facility please contact our CRF Manager. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To Qualify for the Emergency Housing Assistance Program EHAP. 
+																	Conscientiously observes the confidential nature of the ARCs service to its clients and all residents of the CRF. 
+																	The Salvation Army is a worldwide evangelical Christian church. 
+																	The Salvation Army Addiction Rehabilitation Centre has stood in this City since 1918 and continues to be THE safe place for men to heal address and defy dependencies and Transform lives. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Salvation Army gives hope and support to vulnerable people today and everyday in 400 communities across Canada and more than 128 countries around the world. 
+																	If you have concerns relating to past or present incidents please do not hesitate to contact the Safeguarding Unit. 
+																	Performs CRF Intake Counsellor role. 
+																	Our confidential Referral Helpline 0800 808 3733 is available 247. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CRF COVID-19 SUPPORT SERVICES. 
+																	The organisation reports a worldwide membership of over 17 million consisting of soldiers officers and adherents collectively known as Salvationists. 
+																	In the UK there are over 800 Salvation Army parishes known as corps over. 
+																	At the time Terry was in charge of Mountbatten House in Southampton a 106-bed Salvation Army centre that cared for older people and also provided detoxification services. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Canada - Community Residential Facility CRF - The Governing Council of the Salvation Army in Canada - Ellen Osler House 21120-21-3543048 For more information and to make a bid you will need to go to the third party website. 
+																	Bunton Lodge Bunton Lodge is a 43 Bed Community Residential Facility CRF operated by The Salvation Army serving Communities of Ontario with services and supports that assist men and their families while improving Public Safety. 
+																	The Salvation Army is a Protestant denomination of the Christian Church with over 16 million members in 109 countries. 
+																	Mental Health Recovery Wellness cont Metro Crisis Services National Suicide Prevention Chefs with Issues Hope for the Day Food Banks and Pantries The Trevor Project AspenRidge Recovery Available Jobs and Job Boards Safeway King Soopers U S Postal Service Swire Coca Cola CRA Job Board Amazon Pepsi CO. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Salvation Army TSA is a Christian church and an international charitable organisation. 
+																	You were unable to pay your rent mortgage or mobile home lot rent because you experienced financial need due to COVID-19. 
+																	Inspired by a clothing collection scheme he saw in action whilst visiting. 
+																	The Salvation Armys CRF has 47 beds set aside for men aged 19-75 who are in need of such help. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our mission is based on our faith in Jesus Christ who wants everyone to experience life in all its fullness. 
+																	Target Walmart UPS FedEx Sams Club Food Banks and. 
+																	Average salaries for The Salvation Army Crf Caseworker. 
+																	The Salvation Army provides specialist support for all survivors of modern slavery in England and Wales. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Must have an intimate working knowledge of The Salvation Army ARC and CRF policies and procedures with all actions based on strict adherence to same. 
+																	Harbour Lights Community Residential Facility CRF is uniquely equipped to provide support to up to 44 clients including men seeking recovery from addiction andor living with mental health diagnoses and men with long-term or high-risk supervision needs. 
+																	Centuries after slavery was officially abolished thousands of people are still being exploited and sold as slaves across the UK. 
+																	The Salvation Army salary trends based on salaries posted anonymously by The Salvation Army employees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Within our state-of-the-art purposed built facility we house men women and children within a blend of residential programs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/2e/4c/f22e4cd4a4ddb7679bc7b688e34341df.jpg" data-lightbox="roadtrip" data-title="Paradigm Reference Signature S2 V 3 Cift Audio Amplifier Audiophile Speakers Hifi Audio">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/2e/4c/f22e4cd4a4ddb7679bc7b688e34341df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjsUpUQtdcIF9eOSzO1iHAAW4MGG7T6MGilw';" alt="Paradigm Reference Signature S2 V 3 Cift Audio Amplifier Audiophile Speakers Hifi Audio">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paradigm Reference Signature S2 V 3 Cift Audio Amplifier Audiophile Speakers Hifi Audio</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7d/62/35/7d6235f6262d8fece70c760eab5c5284.jpg" data-lightbox="roadtrip" data-title="Page Not Found Lake Country Family Fun Holiday Craft Fair Guide Via Lakecountryfamily The Effective Picture In 2020 Fun Holiday Crafts Craft Fairs Holiday Crafts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7d/62/35/7d6235f6262d8fece70c760eab5c5284.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIcS7sEWJUstI6dUIXRknBZKbpXvuU8fKqxw';" alt="Page Not Found Lake Country Family Fun Holiday Craft Fair Guide Via Lakecountryfamily The Effective Picture In 2020 Fun Holiday Crafts Craft Fairs Holiday Crafts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Page Not Found Lake Country Family Fun Holiday Craft Fair Guide Via Lakecountryfamily The Effective Picture In 2020 Fun Holiday Crafts Craft Fairs Holiday Crafts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/45/84/7a45849cff839b7ea248538ff1c46493.jpg" data-lightbox="roadtrip" data-title="What Foods To Avoid For Pets With Struvite Crystals In Their Urine Ehow Dog Food Recipes Diy Cat Food Food">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/45/84/7a45849cff839b7ea248538ff1c46493.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfS0UomheOuwjHPmRoVC_sOBO3doxTJTNcGw';" alt="What Foods To Avoid For Pets With Struvite Crystals In Their Urine Ehow Dog Food Recipes Diy Cat Food Food">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Foods To Avoid For Pets With Struvite Crystals In Their Urine Ehow Dog Food Recipes Diy Cat Food Food</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/a7/62/08a762c76aa6c34fb17c8d66762a72c7.jpg" data-lightbox="roadtrip" data-title="Salvation Army Gravity Tank Salvation Army Gravity Tank Water Tank">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/a7/62/08a762c76aa6c34fb17c8d66762a72c7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQreMKFVvP-YIJi1KDbjQ2xv2DZB9HrpKNZ9Q';" alt="Salvation Army Gravity Tank Salvation Army Gravity Tank Water Tank">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salvation Army Gravity Tank Salvation Army Gravity Tank Water Tank</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/2a/ae/142aae714ffc7ee6eb3f7cf804d2e5f3.jpg" data-lightbox="roadtrip" data-title="Carol Concert 2020 The Salvation Army Youtube Salvation Army Army Christmas Christmas Albums">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/2a/ae/142aae714ffc7ee6eb3f7cf804d2e5f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ821Nd5T33RO8tDGA5Orq8D7MDMJezdY1bYA';" alt="Carol Concert 2020 The Salvation Army Youtube Salvation Army Army Christmas Christmas Albums">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Carol Concert 2020 The Salvation Army Youtube Salvation Army Army Christmas Christmas Albums</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/57/07/0457070cc6325b66d3ed04710adbffb2.jpg" data-lightbox="roadtrip" data-title="Pin On Military Missiles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/57/07/0457070cc6325b66d3ed04710adbffb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoPjhE8gBblMwSUGq6hNjxNQ6MWt0x1dH-8w';" alt="Pin On Military Missiles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Missiles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/00/4e/38004ec4284aeddaa08bfa9052bd9489.png" data-lightbox="roadtrip" data-title="1963 Harley Davidson Duo Glide Motorcycle In 2020 Harley Davidson Custom Motorcycle Harley">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/00/4e/38004ec4284aeddaa08bfa9052bd9489.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHlc9J-jdE287KNMKmZ3PoV5n3nFySAmfdjQ';" alt="1963 Harley Davidson Duo Glide Motorcycle In 2020 Harley Davidson Custom Motorcycle Harley">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1963 Harley Davidson Duo Glide Motorcycle In 2020 Harley Davidson Custom Motorcycle Harley</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/a5/92/6aa592513d054ac73204ed0b7e2921d6.png" data-lightbox="roadtrip" data-title="Eva Burrows Quote Quotes Army Quotes Salvation Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/a5/92/6aa592513d054ac73204ed0b7e2921d6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz8XVKU-LorukYZV0V2Upo-jVMSGawzlPIzw';" alt="Eva Burrows Quote Quotes Army Quotes Salvation Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Eva Burrows Quote Quotes Army Quotes Salvation Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/14/75/a11475cebb206a502a94e6b11ead3184.png" data-lightbox="roadtrip" data-title="This Quote Shows The True Love That A Military Fiance Wife Feels Everyday That Her Man Either Leaves Home F Military Love Quotes Soldier Quotes Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/14/75/a11475cebb206a502a94e6b11ead3184.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqTNWRix9d-VZV6eN4lAOh1Lb-3UN3Y06YOw';" alt="This Quote Shows The True Love That A Military Fiance Wife Feels Everyday That Her Man Either Leaves Home F Military Love Quotes Soldier Quotes Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Quote Shows The True Love That A Military Fiance Wife Feels Everyday That Her Man Either Leaves Home F Military Love Quotes Soldier Quotes Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/09/ed/f3/09edf32e31cc66a9b3e68a1d8848c469.jpg" data-lightbox="roadtrip" data-title="Poverty Should Not Be A Life Sentence The Inspiration Room Salvation Army Army Poster Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/09/ed/f3/09edf32e31cc66a9b3e68a1d8848c469.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnkct67Im3SNvyQlDV6XjM0XcstrZmmZ29Vw';" alt="Poverty Should Not Be A Life Sentence The Inspiration Room Salvation Army Army Poster Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Poverty Should Not Be A Life Sentence The Inspiration Room Salvation Army Army Poster Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/d8/e1/bbd8e1b2439d4646890cb5c3f14c07bc.jpg" data-lightbox="roadtrip" data-title="Guilt Tactics That Work In This Campaign From The Salvation Army Poverty Salvation Army Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/d8/e1/bbd8e1b2439d4646890cb5c3f14c07bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkrU3yN6QHxMgblUwbmaaH2YvSBRqvgq0esw';" alt="Guilt Tactics That Work In This Campaign From The Salvation Army Poverty Salvation Army Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guilt Tactics That Work In This Campaign From The Salvation Army Poverty Salvation Army Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/11/e3/ce11e39c6fc283ac39903b611b0a478f.jpg" data-lightbox="roadtrip" data-title="Salvage Job Maria Motorcycles Rescues A Bmw R100 Rs Motorcycle Bmw Motorcycle Style">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/11/e3/ce11e39c6fc283ac39903b611b0a478f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSL0RUB8VoABNSVHoBeZX9uAk4hzxtnBkyw';" alt="Salvage Job Maria Motorcycles Rescues A Bmw R100 Rs Motorcycle Bmw Motorcycle Style">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Salvage Job Maria Motorcycles Rescues A Bmw R100 Rs Motorcycle Bmw Motorcycle Style</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/a3/66/93a366bad01453a3589516c2732ac563.png" data-lightbox="roadtrip" data-title="The Salvation Army Founder S Day Salvation Army Army Quotes Founders Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/a3/66/93a366bad01453a3589516c2732ac563.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjqaUuIPju96_mKTHe3gbUAjs8vTJsNhQh7A';" alt="The Salvation Army Founder S Day Salvation Army Army Quotes Founders Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Salvation Army Founder S Day Salvation Army Army Quotes Founders Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-song-zameen-o-asman.html">Army Song Zameen O Asman</a></li>
+													<li class="list-group-item"><a href="/army-song-zameen-jagti-hai.html">Army Song Zameen Jagti Hai</a></li>
+													<li class="list-group-item"><a href="/army-songs-download.html">Army Songs Download</a></li>
+													<li class="list-group-item"><a href="/army-song-sumit-dj.html">Army Song Sumit Dj</a></li>
+													<li class="list-group-item"><a href="/army-songs-mp3-downloading.html">Army Songs Mp3 Downloading</a></li>
+													<li class="list-group-item"><a href="/army-songs-bts.html">Army Songs Bts</a></li>
+													<li class="list-group-item"><a href="/army-songs-dj-telugu.html">Army Songs Dj Telugu</a></li>
+													<li class="list-group-item"><a href="/army-songs-movie.html">Army Songs Movie</a></li>
+													<li class="list-group-item"><a href="/army-song-please.html">Army Song Please</a></li>
+													<li class="list-group-item"><a href="/army-songs-download-now.html">Army Songs Download Now</a></li>
+													<li class="list-group-item"><a href="/army-song-of-bts.html">Army Song Of Bts</a></li>
+													<li class="list-group-item"><a href="/army-song-sri-lanka-mp3.html">Army Song Sri Lanka Mp3</a></li>
+													<li class="list-group-item"><a href="/army-songs-mp3-free-download.html">Army Songs Mp3 Free Download</a></li>
+													<li class="list-group-item"><a href="/army-song-sapna-chaudhari-song.html">Army Song Sapna Chaudhari Song</a></li>
+													<li class="list-group-item"><a href="/army-song-on-monster-hunter.html">Army Song On Monster Hunter</a></li>
+													<li class="list-group-item"><a href="/army-songs-download-mp3-in-telugu.html">Army Songs Download Mp3 In Telugu</a></li>
+													<li class="list-group-item"><a href="/army-songs-in-tamil.html">Army Songs In Tamil</a></li>
+													<li class="list-group-item"><a href="/army-song-over-there.html">Army Song Over There</a></li>
+													<li class="list-group-item"><a href="/army-song-written.html">Army Song Written</a></li>
+													<li class="list-group-item"><a href="/army-song-of-india.html">Army Song Of India</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

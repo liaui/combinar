@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Ki Fan Yara Army - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Ki Fan Yara Army",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/736x/d4/d8/35/d4d835ea5d16473ed3a3848007a0539b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+ki+fan+yara+army",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Ki Fan Yara Army</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Army Ki Fan Yara New Indian Army WhatsApp Status Status Video Song Free Download Army Ki Fan Yara New Indian Army WhatsApp Status Mp4 short videos for whatsapp status Best 30 seconds Whatsapp Instagram and Facebook status HD Mp4 videos. Army fan ki video The official video. Dosto indian army ki teyari ki tips ke liaa follow kero. <br>				
+			</p>
+										<a class="badge badge-info" href="/army-rating-regulation.html">army rating regulation</a>
+											<a class="badge badge-success" href="/army-ranks-lance-corporal.html">army ranks lance corporal</a>
+											<a class="badge badge-primary" href="/army-ranks-quiz.html">army ranks quiz</a>
+											<a class="badge badge-secondary" href="/army-ranks-pak.html">army ranks pak</a>
+											<a class="badge badge-info" href="/army-ranks-uk-2020.html">army ranks uk 2020</a>
+											<a class="badge badge-info" href="/army-ranks-ghana.html">army ranks ghana</a>
+											<a class="badge badge-success" href="/army-ranks-us.html">army ranks us</a>
+											<a class="badge badge-secondary" href="/army-ranks-with-symbols.html">army ranks with symbols</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the ideal site.  Our website gives you suggestions for viewing the maximum quality video and picture content, hunt and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this video that you view.  You can also bring about supporting this site by sharing videos and graphics that you enjoy on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/2f/94/b72f94bc758dd8f717ceff787b2f255d.jpg" data-lightbox="roadtrip" data-title="Proud Indian Army Quotes Army Quotes Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/2f/94/b72f94bc758dd8f717ceff787b2f255d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTACl5Io-c6zsJ6HXMvGpXSK-LHr1iH9kn57A';" alt="Proud Indian Army Quotes Army Quotes Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Proud Indian Army Quotes Army Quotes Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/30/73/6d/30736da2723081d20516444227a33130.jpg" data-lightbox="roadtrip" data-title="Instagram Photo By Pakistan Army Girls M I A Dec 13 2019 At 5 00 Pm Pak Army Soldiers Pakistan Army Army Girl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/30/73/6d/30736da2723081d20516444227a33130.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKRYMJIcJ2klyoGrGXtOlJkD3OvKWeBDFRAA';" alt="Instagram Photo By Pakistan Army Girls M I A Dec 13 2019 At 5 00 Pm Pak Army Soldiers Pakistan Army Army Girl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Instagram Photo By Pakistan Army Girls M I A Dec 13 2019 At 5 00 Pm Pak Army Soldiers Pakistan Army Army Girl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/36/66/fa3666f4dab3b768482813f3cab3f6c3.jpg" data-lightbox="roadtrip" data-title="My Dream Army Quotes Indian Army Quotes Army Girlfriend Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/36/66/fa3666f4dab3b768482813f3cab3f6c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf8wtXg9qS8MW8A2NoAW8UhXp1TFyt6IzJPQ';" alt="My Dream Army Quotes Indian Army Quotes Army Girlfriend Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Dream Army Quotes Indian Army Quotes Army Girlfriend Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/90/a2/a4/90a2a4741e527dc1b34020423d9df0fc.jpg" data-lightbox="roadtrip" data-title="Indian Army Motivation Thoughts No Motivation Thoughts Indian Army Thoughts Indian Army Quotes Love Quote Indian Army Quotes Army Quotes Warrior Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/90/a2/a4/90a2a4741e527dc1b34020423d9df0fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ2BIDE09IQPT5eDNfg1INtOsjTldOMJIWdg';" alt="Indian Army Motivation Thoughts No Motivation Thoughts Indian Army Thoughts Indian Army Quotes Love Quote Indian Army Quotes Army Quotes Warrior Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Motivation Thoughts No Motivation Thoughts Indian Army Thoughts Indian Army Quotes Love Quote Indian Army Quotes Army Quotes Warrior Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/07/4c/d6/074cd6f0552dd5ff39a5b19e8eeeabb0.jpg" data-lightbox="roadtrip" data-title="Best Indian Army Dp Images 2020 Free Download Indian Army Wallpapers Indian Army Army Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/07/4c/d6/074cd6f0552dd5ff39a5b19e8eeeabb0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ya_16jb7RflE3Thqe0C1WuLgMLi_Y7yooQ';" alt="Best Indian Army Dp Images 2020 Free Download Indian Army Wallpapers Indian Army Army Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Indian Army Dp Images 2020 Free Download Indian Army Wallpapers Indian Army Army Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/58/ae/6558aec79637b86dfcaa3902c9bfc67d.jpg" data-lightbox="roadtrip" data-title="Armay Bhi Kamal K Hote Army Quotes Indian Army Quotes Army Girlfriend Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/58/ae/6558aec79637b86dfcaa3902c9bfc67d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbJBZEfjYJ9sqyFCHejU9Mg1ELWp1zqGyxvg';" alt="Armay Bhi Kamal K Hote Army Quotes Indian Army Quotes Army Girlfriend Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armay Bhi Kamal K Hote Army Quotes Indian Army Quotes Army Girlfriend Pictures</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/fa/36/66/fa3666f4dab3b768482813f3cab3f6c3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbJBZEfjYJ9sqyFCHejU9Mg1ELWp1zqGyxvg';" alt="Armay Bhi Kamal K Hote Army Quotes Indian Army Quotes Army Girlfriend Pictures">
+										<div class="card-body">
+						<h3 class="h5"><b>Indian Army motivation videosSubscribe my TA Army ChannelSubscribe my channel and press the bell iconThanks for watching.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army ki fan yara army</strong>. 
+								
+																	Army fan ki video The official video. 
+																	Army ki baat kana koi mjak nahi. 
+																	Army ki fan yara ki army song 2020 army ki fan yaara ki ya army song 2020 Sumit goswami Duration. 
+																	BRAND SingerLyricsComposer - Sumit Goswami Music - Khatri Director - Deepesh Goyal MixMaster - D Chandu Music Label Copyrig. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In this page we published the forceses jobs and pictures or many more things plz donot forget the like and share the page. 
+																	 
+																	Sumitgoswami brandsumitgoswami brandsong army ki fan yara ki army song 2020 army ki fan yaara ki ya army song 2020 Sumit goswami Sumit Goswami. 
+																	In Future State Yara is leader of the Amazon army Joelle Jones explains. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By the year 2050 Yara Flor is already established as the new Wonder Woman - but she has a very different role in the Amazonian community to Diana. 
+																	ARMY ki baat hai Jay hind. 
+																	Army fans like Share and subscribe. 
+																	If You Are Eligible for Indian Army Rally Bharti So you Can Apply before the last date of Online Registration for Indian Army Rally Bharti for the JCO Posts like Soldier GD Soldier Clerk Store Keeper Technical Posts Nursing Posts Religious Teacher Posts Technical Avenue and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This video is unavailable. 
+																	Sections of this page. 
+																	46 views January 9. 
+																	Army boyz sifujisauryabharadwaj Army fauji. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sections of this page. 
+																	623 MB - Bitrate. 
+																	Army Ki Fan Yara Teri Yari 16 34 super new sad osm Download Army Ki Fan Yara Yara Ne 15 95 super new osm Download Army ka fan yaara ki ya army 29 372 brand army ka fan yaara ki ya army Download Army Ka Fan Army Ka Fan Yaara Di Ya Army Indian Army 27 114. 
+																	Press alt to open this menu. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	578 likes 1 talking about this. 
+																	Press alt to open this menu. 
+																	46 views January 9. 
+																	November 8 2020 ARMY ki baat hai Jay hind. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army ki fan yara ki army song 2020 army ki fan yara ki army song 2020 sumit goswamilike share and subscribe. 
+																	The song Lie is a music single from BTS Wings that was released in 2016. 
+																	November 18 2020 Army ki baat kana koi mjak nahi. 
+																	Army fan Ghanshyam about the money for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ni-Ki released the dance cover version on 24th January 2021 and surprised his fans along with the BTS ARMY. 
+																	Army ki fan yara ki ya army khun grm age atharvi ArmyArmystatus2021Armyloverharyanvi. 
+																	She is still fairly new to the role so neither she nor the Amazons know the depth of her power yet. 
+																	Army fan Ghanshyam about the money for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Indian Army Rally Bharti Schedule 2020-21 - All India Open Rally Bharti Schedule for month of Dec to Jan 2021. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b1/7f/73/b17f735786bacba6037f143b0581dc13.jpg" data-lightbox="roadtrip" data-title="Captain Furqan Pak Army Soldiers Pakistan Army Army Dress">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b1/7f/73/b17f735786bacba6037f143b0581dc13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9QIH07q2EZQvxEjuemv0PD6g-tB4Tdd6R3g';" alt="Captain Furqan Pak Army Soldiers Pakistan Army Army Dress">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Captain Furqan Pak Army Soldiers Pakistan Army Army Dress</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/fb/ae/77/fbae77c372e0688c2d1fb77e0012b4bb.jpg" data-lightbox="roadtrip" data-title="1000 New Trending Indian Army Amazing Collection Profile Picture 2019 Inofy Indian Army Indian Army Quotes Indian Army Wallpapers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/fb/ae/77/fbae77c372e0688c2d1fb77e0012b4bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC3wHWe9Wr6SJq9KjxIPOgu9bdr0jtZ0vPug';" alt="1000 New Trending Indian Army Amazing Collection Profile Picture 2019 Inofy Indian Army Indian Army Quotes Indian Army Wallpapers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1000 New Trending Indian Army Amazing Collection Profile Picture 2019 Inofy Indian Army Indian Army Quotes Indian Army Wallpapers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/47/84/47478415c3763fd8d5f873ee9f12e52c.jpg" data-lightbox="roadtrip" data-title="Pin On Husnain">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/47/84/47478415c3763fd8d5f873ee9f12e52c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXemgNDcYQ5mX9CwvAuAXr0wJ2hkD4LT2t5g';" alt="Pin On Husnain">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Husnain</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/01/59/790159dd170a5ed858130baa43d42dce.jpg" data-lightbox="roadtrip" data-title="Hahaha That S True Army Quotes Pak Army Quotes Quotes From Novels">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/01/59/790159dd170a5ed858130baa43d42dce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQK2d4j3hKY7BT4dwBxasvJUqM1CKCqi3zlA';" alt="Hahaha That S True Army Quotes Pak Army Quotes Quotes From Novels">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hahaha That S True Army Quotes Pak Army Quotes Quotes From Novels</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d4/d8/35/d4d835ea5d16473ed3a3848007a0539b.jpg" data-lightbox="roadtrip" data-title="Pin By Angry Bird102 On Pakistan Army Turkish Army Pakistan Army Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d4/d8/35/d4d835ea5d16473ed3a3848007a0539b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh1SWEcOJ0IB8k6qDjbJrPTQQGzRB684A6gQ';" alt="Pin By Angry Bird102 On Pakistan Army Turkish Army Pakistan Army Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Angry Bird102 On Pakistan Army Turkish Army Pakistan Army Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/4b/68/6b4b6831fba69dc64821409b79d5f29c.jpg" data-lightbox="roadtrip" data-title="Jai Hind Indian Army Quotes Army Quotes Indian Army Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/4b/68/6b4b6831fba69dc64821409b79d5f29c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYd7fVODM_K7y4UWscbMimbdWIn357j_tRAw';" alt="Jai Hind Indian Army Quotes Army Quotes Indian Army Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jai Hind Indian Army Quotes Army Quotes Indian Army Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/66/fa/d566fa192ea29abc7e340b41cb368c69.jpg" data-lightbox="roadtrip" data-title="Pin By نورے شاہ On Army Pak Army Quotes Army Quotes Army Poetry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/66/fa/d566fa192ea29abc7e340b41cb368c69.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTigVHpFNIhHTRaIXv7k6cmAso1gHLWkZkqRg';" alt="Pin By نورے شاہ On Army Pak Army Quotes Army Quotes Army Poetry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By نورے شاہ On Army Pak Army Quotes Army Quotes Army Poetry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/04/41/1c/04411c0e560a1bbce8eeac9b4be0543f.jpg" data-lightbox="roadtrip" data-title="Pin By Jyoti Shah On Army Love Army Love Indian Army Army Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/04/41/1c/04411c0e560a1bbce8eeac9b4be0543f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgW-v_HpBYFCe-axPjLY79Ld2EohgpJ5kEA';" alt="Pin By Jyoti Shah On Army Love Army Love Indian Army Army Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jyoti Shah On Army Love Army Love Indian Army Army Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/eb/6e/15eb6e539148e1c0843c08e42035fc1b.jpg" data-lightbox="roadtrip" data-title="Couple Whatsapp Dp Army Couple Pictures Army Couple Photography Army Couple">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/eb/6e/15eb6e539148e1c0843c08e42035fc1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJADHB8V-vnfWOUdyXmpAAZ8TXb-5n5L90Xg';" alt="Couple Whatsapp Dp Army Couple Pictures Army Couple Photography Army Couple">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Couple Whatsapp Dp Army Couple Pictures Army Couple Photography Army Couple</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/55/d9/ea/55d9ea0c8b3956d032d267c7dc245f9b.jpg" data-lightbox="roadtrip" data-title="Jai Hind Indian Army Wallpapers Indian Army Quotes Army Couple Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/55/d9/ea/55d9ea0c8b3956d032d267c7dc245f9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAwhcCxGyvLW0tdSKVUg9EyDga_iUvVPNZ6Q';" alt="Jai Hind Indian Army Wallpapers Indian Army Quotes Army Couple Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jai Hind Indian Army Wallpapers Indian Army Quotes Army Couple Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/b7/71/2ab77119ef56faf1129d9f14f5ff482e.jpg" data-lightbox="roadtrip" data-title="Pin On Army Wife">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/b7/71/2ab77119ef56faf1129d9f14f5ff482e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-XU4gkWLoJ0tnElCdIlZ2rDKZ1GyKK4KrJQ';" alt="Pin On Army Wife">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army Wife</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3f/08/46/3f084673afd2505d68c5626bba76e066.jpg" data-lightbox="roadtrip" data-title="Sumit Goswami Army Gangwar 2 Shanky Goswami New Haryanvi Songs Haryanavi 2019 Sonotek Youtube Songs News Songs Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3f/08/46/3f084673afd2505d68c5626bba76e066.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCADBgsvHvx84irBzrCkI0RkX1VQJRSkpKzA';" alt="Sumit Goswami Army Gangwar 2 Shanky Goswami New Haryanvi Songs Haryanavi 2019 Sonotek Youtube Songs News Songs Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sumit Goswami Army Gangwar 2 Shanky Goswami New Haryanvi Songs Haryanavi 2019 Sonotek Youtube Songs News Songs Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/1d/7f/731d7f176f49a029c1b29e891e8d44f6.jpg" data-lightbox="roadtrip" data-title="Sarrainodu Indian Army Wallpapers Army Images Army Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/1d/7f/731d7f176f49a029c1b29e891e8d44f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb4M5rggZV-MNqCKp8PANnCGPcLl4j8NiLHw';" alt="Sarrainodu Indian Army Wallpapers Army Images Army Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sarrainodu Indian Army Wallpapers Army Images Army Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/homeland-security-preparing-to-mobilize-national-guard.html">Homeland Security Preparing To Mobilize National Guard</a></li>
+													<li class="list-group-item"><a href="/how-much-does-a-canadian-soldier-get-paid.html">How Much Does A Canadian Soldier Get Paid</a></li>
+													<li class="list-group-item"><a href="/hitung-zakat-perdagangan.html">Hitung Zakat Perdagangan</a></li>
+													<li class="list-group-item"><a href="/hitung-zakat-gaji.html">Hitung Zakat Gaji</a></li>
+													<li class="list-group-item"><a href="/hitung-zakat.html">Hitung Zakat</a></li>
+													<li class="list-group-item"><a href="/how-much-does-army-active-duty-get-paid-a-month.html">How Much Does Army Active Duty Get Paid A Month</a></li>
+													<li class="list-group-item"><a href="/how-does-air-national-guard-retirement-work.html">How Does Air National Guard Retirement Work</a></li>
+													<li class="list-group-item"><a href="/how-much-do-agr-soldiers-make.html">How Much Do Agr Soldiers Make</a></li>
+													<li class="list-group-item"><a href="/homeland-security-and-national-guard.html">Homeland Security And National Guard</a></li>
+													<li class="list-group-item"><a href="/how-many-hours-is-a-drill-weekend.html">How Many Hours Is A Drill Weekend</a></li>
+													<li class="list-group-item"><a href="/how-much-does-a-soldier-earn-in-india.html">How Much Does A Soldier Earn In India</a></li>
+													<li class="list-group-item"><a href="/homeland-security-deploying-national-guard.html">Homeland Security Deploying National Guard</a></li>
+													<li class="list-group-item"><a href="/how-often-do-the-national-guard-get-deployed.html">How Often Do The National Guard Get Deployed</a></li>
+													<li class="list-group-item"><a href="/how-does-air-national-guard-work.html">How Does Air National Guard Work</a></li>
+													<li class="list-group-item"><a href="/hitung-zodiak.html">Hitung Zodiak</a></li>
+													<li class="list-group-item"><a href="/how-much-does-soldier-earn-per-month.html">How Much Does Soldier Earn Per Month</a></li>
+													<li class="list-group-item"><a href="/how-long-is-weekend-drill.html">How Long Is Weekend Drill</a></li>
+													<li class="list-group-item"><a href="/how-much-does-military-police-get-paid.html">How Much Does Military Police Get Paid</a></li>
+													<li class="list-group-item"><a href="/how-to-be-a-paratrooper-in-the-army.html">How To Be A Paratrooper In The Army</a></li>
+													<li class="list-group-item"><a href="/how-much-does-a-soldier-earn-uk.html">How Much Does A Soldier Earn Uk</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

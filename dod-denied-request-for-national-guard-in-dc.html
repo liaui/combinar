@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dod Denied Request For National Guard In Dc - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dod Denied Request For National Guard In Dc",
+  "datePublished": "2021-02-27",
+  "image": "https://media.npr.org/assets/img/2021/01/13/ap_21013516623514-85622d1aa03ca1cdcb814ee2fe1db37127f44152-s800-c85.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dod+denied+request+for+national+guard+in+dc",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dod Denied Request For National Guard In Dc</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Washington CNN Acting Defense Secretary Christopher Miller on Monday approved a request from the mayor of Washington to deploy DC National Guard forces to the city to support local authorities. This video file cannot be played. Today the Department of Defense denied a request by Mayor Muriel Bowser to expand the responsibilities of the District of Columbia National Guard so that they would be authorized to protect and restore order at the Capitol Building. <br>				
+			</p>
+										<a class="badge badge-dark" href="/otis-and-the-cat.html">otis and the cat</a>
+											<a class="badge badge-success" href="/pa-national-guard-tuition-assistance.html">pa national guard tuition assistance</a>
+											<a class="badge badge-info" href="/otis-kanye-and-jay-z-lyrics.html">otis kanye and jay z lyrics</a>
+											<a class="badge badge-success" href="/otis-elevator-and-utc.html">otis elevator and utc</a>
+											<a class="badge badge-secondary" href="/outfit-warna-hijau-army.html">outfit warna hijau army</a>
+											<a class="badge badge-dark" href="/otis-and-maeve-full-movie.html">otis and maeve full movie</a>
+											<a class="badge badge-danger" href="/otis-and-spunkmeyer.html">otis and spunkmeyer</a>
+											<a class="badge badge-danger" href="/otis-and-ola.html">otis and ola</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you have come to pay a visit to the right site.  Our site provides you with hints for viewing the maximum quality video and image content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video for you to view.  You can also bring about supporting this site by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.armytimes.com/resizer/MCZkI8qYfsv9e_4Wquid0PRFQ5A=/1200x0/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/mco/SYRP2I6GHBA5NI5Q5FHRYO6UEI.jpg" data-lightbox="roadtrip" data-title="This Is Why The National Guard Didn T Respond To The Attack On The Capitol">
+											<img class="card-img v-image ads-img " src="https://www.armytimes.com/resizer/MCZkI8qYfsv9e_4Wquid0PRFQ5A=/1200x0/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/mco/SYRP2I6GHBA5NI5Q5FHRYO6UEI.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL9BINMit-u9mNJamCPx-njm9mKJi7P_BH7g';" alt="This Is Why The National Guard Didn T Respond To The Attack On The Capitol">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is Why The National Guard Didn T Respond To The Attack On The Capitol</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images02.military.com/sites/default/files/styles/full/public/2021-01/mil-jersey-national-guard-capitol-2-1800.jpg?itok=JVMlgkke" data-lightbox="roadtrip" data-title="Army Will Not Screen All National Guardsmen Deploying To Dc For Extremist Sympathies Military Com">
+											<img class="card-img v-image ads-img " src="https://images02.military.com/sites/default/files/styles/full/public/2021-01/mil-jersey-national-guard-capitol-2-1800.jpg?itok=JVMlgkke" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD_s5S7ZDEA4lmaZn8oAUl25sC3Vy8taiO4g';" alt="Army Will Not Screen All National Guardsmen Deploying To Dc For Extremist Sympathies Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Will Not Screen All National Guardsmen Deploying To Dc For Extremist Sympathies Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wamu.org/wp-content/uploads/2021/01/WhatsApp-Image-2020-06-06-at-16.29.50-1-1500x999.jpeg" data-lightbox="roadtrip" data-title="Your Questions About How The National Guard Works In Dc Answered">
+											<img class="card-img v-image ads-img " src="https://wamu.org/wp-content/uploads/2021/01/WhatsApp-Image-2020-06-06-at-16.29.50-1-1500x999.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaga3Bao2vic34eqk-1qmxVz7i-f8reob9Fg';" alt="Your Questions About How The National Guard Works In Dc Answered">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Questions About How The National Guard Works In Dc Answered</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.659504.1611338902!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="Video Of National Guard Troops In Dc Shows Protocol Not Protest U S Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.659504.1611338902!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZwKOg-bJQ8XnpjHuzvXeL4-wKUwKoA5AeEQ';" alt="Video Of National Guard Troops In Dc Shows Protocol Not Protest U S Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Video Of National Guard Troops In Dc Shows Protocol Not Protest U S Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.npr.org/assets/img/2021/01/13/ap_21013516623514-85622d1aa03ca1cdcb814ee2fe1db37127f44152-s800-c85.jpg" data-lightbox="roadtrip" data-title="About 20 000 National Guard Members To Deploy For Inauguration Officials Say Capitol Insurrection Updates Npr">
+											<img class="card-img v-image ads-img " src="https://media.npr.org/assets/img/2021/01/13/ap_21013516623514-85622d1aa03ca1cdcb814ee2fe1db37127f44152-s800-c85.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaW2XjNfkeP6amVkHzqAXTWmRVJQN2m2-t4A';" alt="About 20 000 National Guard Members To Deploy For Inauguration Officials Say Capitol Insurrection Updates Npr">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About 20 000 National Guard Members To Deploy For Inauguration Officials Say Capitol Insurrection Updates Npr</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.toledoblade.com/image/2021/01/16/1140x_a10-7_cTC/Capitol-Breach-25.jpg" data-lightbox="roadtrip" data-title="D C Bulks Up Security With National Guard The Blade">
+											<img class="card-img v-image ads-img " src="https://www.toledoblade.com/image/2021/01/16/1140x_a10-7_cTC/Capitol-Breach-25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRchxZeWSij_1YEhoipQCPEpXYm8c-D-nufxQ';" alt="D C Bulks Up Security With National Guard The Blade">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">D C Bulks Up Security With National Guard The Blade</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.armytimes.com/resizer/MCZkI8qYfsv9e_4Wquid0PRFQ5A=/1200x0/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/mco/SYRP2I6GHBA5NI5Q5FHRYO6UEI.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRchxZeWSij_1YEhoipQCPEpXYm8c-D-nufxQ';" alt="D C Bulks Up Security With National Guard The Blade">
+										<div class="card-body">
+						<h3 class="h5"><b>Mayor Muriel Bowser for the National Guard to be deployed to Capital Hill after supporters of outgoing President Donald Trump breached the building and clashed with police according to a report on Twitter by a Washington Post reporter.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dod denied request for national guard in dc</strong>. 
+								
+																	Capitol building and gunshots were fired inside. 
+																	Former White House chief of staff Mark Meadows was interviewed on Sunday Morning Futures which is a Fox News segment and stated although Trump had been an advocate about offering Capitol Police and National Guard presence at the Capitol several times last month his offer was censured every time. 
+																	The Pentagon disputed reports that it denied or delayed requests claiming that Miller immediately called up 1100 members of the DC. 
+																	Today the Department of Defense denied a request by Mayor Muriel Bowser to expand the responsibilities of the District of Columbia National Guard so that they would be authorized to protect and. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DC Council Statement on the Department of Defenses Denial of DCs National Guard Deployment Request. 
+																	Taking to social media Stefanik responded to a Fox News. 
+																	Wed Jan 6 2021 0302 PM. 
+																	Officials to deploy the National Guard at the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Washington Post reporter Aaron Davis reported that a source said the Defense Department has just denied a request by DC officials to deploy the National Guard to the US Capitol This content was. 
+																	Defense Department has just denied a request by DC officials to deploy the National Guard - Democratic Underground. 
+																	Caroline Brehman CQ Roll Call via AP Images Steven Sund former. 
+																	The DoD has denied a request made by DC officials to deploy the National Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As Trump supporters broke into the US. 
+																	That request was DENIED REFUSED by the DoD Department of Defense. 
+																	According to the Department of Defense once the protest turned more violent Bowser requested more assistance and Secretary Miller immediately called up 1200 members of the DC. 
+																	National Guard troops deployed to DC to quell riots after initial request for help was denied National Guard troops are being deployed in DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sund said he asked House and Senate security officials for permission to request that the National Guard be placed on standby. 
+																	Remember that just a couple months ago Trump flushed the Pentagon with a litany of loyalists. 
+																	I am asking for everyone at the US. 
+																	That request was denied It continued to state that the Council is in full support of the Mayors request. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WASHINGTON DC The District of Columbia Council issued the following statement today. 
+																	The Department of Defense initially denied a request by DC. 
+																	Guard after receiving a call from Bowser at 2 pm. 
+																	The request coming amid reports that the National Guard will maintain a presence of at least 5000 troops on Capitol Hill through mid-March. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Today the Department of Defense denied a request by Mayor Muriel Bowser to expand the responsibilities of the District of Columbia National Guard so that they would be authorized to protect and restore order at the Capitol Building. 
+																	The Capitol Police rejected multiple offers for help from federal law enforcement ahead of Wednesdays events and according to The Post DC Mayor Muriel Bowser had requested only 340 guardsmen. 
+																	Mayor Bowser had requested 200 more National Guardsman to help control the chaos on the Capitol but that request was denied per DC city council. 
+																	Capitol to remain peaceful. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A source tells me The Defense Department has just denied a request by DC officials to deploy the National Guard to the US Capitol. 
+																	The Pentagon has requested additional National Guard troops from Delaware New Jersey New York Ohio and Utah who are either already in Washington or on their way a senior defense official told. 
+																	This video file cannot be played. 
+																	Defense Department on Wednesday refused a request by Washington DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hogan said House Majority Leader Steny Hoyer begged him to send Marylands National Guard to the Capitol but DOJ initially denied the request. 
+																	Capitol as it was breached by a pro-Trump mob seeking to prevent the certification of. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.king5.com/assets/WUSA/images/edd03dcb-b253-483d-91fc-93f176b1dfdf/edd03dcb-b253-483d-91fc-93f176b1dfdf_1140x641.jpg" data-lightbox="roadtrip" data-title="Maryland National Guard Denied Who Deploys The National Guard King5 Com">
+											<img class="card-img v-image ads-img " src="https://media.king5.com/assets/WUSA/images/edd03dcb-b253-483d-91fc-93f176b1dfdf/edd03dcb-b253-483d-91fc-93f176b1dfdf_1140x641.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST0Cd2PzUwrqqec03IDiL_Bk3QJQ6jPfDgPw';" alt="Maryland National Guard Denied Who Deploys The National Guard King5 Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Maryland National Guard Denied Who Deploys The National Guard King5 Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kpbs.media.clients.ellingtoncms.com/assets/img/2020/06/07/national-guard-6-7-20-ap_20158708848869_wide-31399f2537f56d202fef1ffde2a58857992ecd1d.jpg" data-lightbox="roadtrip" data-title="Trump Orders National Guard To Pull Out Of Washington Kpbs">
+											<img class="card-img v-image ads-img " src="https://kpbs.media.clients.ellingtoncms.com/assets/img/2020/06/07/national-guard-6-7-20-ap_20158708848869_wide-31399f2537f56d202fef1ffde2a58857992ecd1d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNu6iCrivV_QRfDpDpNlhh5AHxRlbZb-jKSA';" alt="Trump Orders National Guard To Pull Out Of Washington Kpbs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Orders National Guard To Pull Out Of Washington Kpbs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.insider.com/5ff7d9a46d61c10019cce4ab?width=700" data-lightbox="roadtrip" data-title="Pentagon Hindered Dc National Guard Response To Insurrection Attempt Report">
+											<img class="card-img v-image ads-img " src="https://i.insider.com/5ff7d9a46d61c10019cce4ab?width=700" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZIbZN7wunOP7NWYw_ZpexxFu-JVpYcVPE3w';" alt="Pentagon Hindered Dc National Guard Response To Insurrection Attempt Report">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pentagon Hindered Dc National Guard Response To Insurrection Attempt Report</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.659838.1611611110!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="5 000 National Guard Troops Will Remain In Dc Beyond Mid March U S Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.659838.1611611110!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-gewILQ5xKDdy1dAPQrzkgy-u0Rh8CXL53A';" alt="5 000 National Guard Troops Will Remain In Dc Beyond Mid March U S Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 000 National Guard Troops Will Remain In Dc Beyond Mid March U S Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/0d/0f/6c0d0f4ee21a4c8a471c2afdc91f5925.jpg" data-lightbox="roadtrip" data-title="Pin On Yes Geez">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/0d/0f/6c0d0f4ee21a4c8a471c2afdc91f5925.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThPC4CH_nYsu3Hoa_AcyEgeAP0c2LcEXCAwA';" alt="Pin On Yes Geez">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Yes Geez</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/Tbobp68j6zRgEvocD.bfgw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTQ3MA--/https://s.yimg.com/uu/api/res/1.2/EU39oypBcNa0tqFiX28rqQ--~B/aD04MDA7dz0xMjAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/military_com_347/acea27f3ff438a815f0bfda1f61aab82" data-lightbox="roadtrip" data-title="National Guard Troops Deploying To Dc Will Come With Lethal Weapons">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/Tbobp68j6zRgEvocD.bfgw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTQ3MA--/https://s.yimg.com/uu/api/res/1.2/EU39oypBcNa0tqFiX28rqQ--~B/aD04MDA7dz0xMjAwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/military_com_347/acea27f3ff438a815f0bfda1f61aab82" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwY1ogY3gaaJsoOlQOhdNfK4uzh4uBQyuKOA';" alt="National Guard Troops Deploying To Dc Will Come With Lethal Weapons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Troops Deploying To Dc Will Come With Lethal Weapons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/ErE3qVrXAAcbUTd.jpg" data-lightbox="roadtrip" data-title="Council Of Dc On Twitter Statement From The Dc Council On The Department Of Defense S Denial Of Dc S National Guard Deployment Request">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/ErE3qVrXAAcbUTd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTu_UPtFUzTHOs35iX8YsTll0X0Bs5gwZrZg';" alt="Council Of Dc On Twitter Statement From The Dc Council On The Department Of Defense S Denial Of Dc S National Guard Deployment Request">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Council Of Dc On Twitter Statement From The Dc Council On The Department Of Defense S Denial Of Dc S National Guard Deployment Request</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106819717-16099363762021-01-06t032347z_646434692_rc232l960ltu_rtrmadp_0_global-race-usa-wisconsin.jpeg?v=1609936437&amp;w=1910&amp;h=1000" data-lightbox="roadtrip" data-title="National Guard Heads To Capitol After Rioters Overrun It">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106819717-16099363762021-01-06t032347z_646434692_rc232l960ltu_rtrmadp_0_global-race-usa-wisconsin.jpeg?v=1609936437&amp;w=1910&amp;h=1000" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-A6IOvwlZ-PBJ1ySZ4EY9eY0MU_R7NrPsyg';" alt="National Guard Heads To Capitol After Rioters Overrun It">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Heads To Capitol After Rioters Overrun It</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media4.s-nbcnews.com/j/newscms/2021_01/3440870/210108-sipa-national-guard-dc-ew-445p_db214f83c8802e0340d9392cd80311d3.fit-760w.jpg" data-lightbox="roadtrip" data-title="Pentagon D C Officials Point Fingers At Each Other Over Capitol Riot Response">
+											<img class="card-img v-image ads-img " src="https://media4.s-nbcnews.com/j/newscms/2021_01/3440870/210108-sipa-national-guard-dc-ew-445p_db214f83c8802e0340d9392cd80311d3.fit-760w.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakrPofJxKGXki7c_W6R84Cl4Z_KCN3A6s6w';" alt="Pentagon D C Officials Point Fingers At Each Other Over Capitol Riot Response">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pentagon D C Officials Point Fingers At Each Other Over Capitol Riot Response</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images02.military.com/sites/default/files/styles/full/public/2021-01/newscred%20National%20Guard-Unemployment%20Benefits%201800x1200.jpeg.jpg?itok=KjXY5APK" data-lightbox="roadtrip" data-title="Gov Inslee Calls Up National Guard As Protests Planned For Start Of Washington Legislature Military Com">
+											<img class="card-img v-image ads-img " src="https://images02.military.com/sites/default/files/styles/full/public/2021-01/newscred%20National%20Guard-Unemployment%20Benefits%201800x1200.jpeg.jpg?itok=KjXY5APK" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ2kr--IoMm6rCTIpDJAODCYGMGFd_4SgW2w';" alt="Gov Inslee Calls Up National Guard As Protests Planned For Start Of Washington Legislature Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gov Inslee Calls Up National Guard As Protests Planned For Start Of Washington Legislature Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d3i6fh83elv35t.cloudfront.net/static/2020/06/2020-06-02T194325Z_515501876_RC261H93TMG8_RTRMADP_3_MINNEAPOLIS-POLICE-WASHINGTONDC-1024x724.jpg" data-lightbox="roadtrip" data-title="How Governors Are Responding To Trump S Request To Send National Guard Troops To D C Pbs Newshour">
+											<img class="card-img v-image ads-img " src="https://d3i6fh83elv35t.cloudfront.net/static/2020/06/2020-06-02T194325Z_515501876_RC261H93TMG8_RTRMADP_3_MINNEAPOLIS-POLICE-WASHINGTONDC-1024x724.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvPh8i_Pz6ba0JyWiM10qk9_AqLMD-niBh2w';" alt="How Governors Are Responding To Trump S Request To Send National Guard Troops To D C Pbs Newshour">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Governors Are Responding To Trump S Request To Send National Guard Troops To D C Pbs Newshour</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dcist.com/wp-content/uploads/sites/3/2020/06/AP_20157743017832-1500x999.jpg" data-lightbox="roadtrip" data-title="Pentagon Orders Review Of National Guard S Role In Protests Dcist">
+											<img class="card-img v-image ads-img " src="https://dcist.com/wp-content/uploads/sites/3/2020/06/AP_20157743017832-1500x999.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfnyab1pC98W5xWwF5PXR9buDME2u-smM9iA';" alt="Pentagon Orders Review Of National Guard S Role In Protests Dcist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pentagon Orders Review Of National Guard S Role In Protests Dcist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.baltimoresun.com/resizer/B01J2fl3honK86HczWxldP8-rBs=/415x280/top/cloudfront-us-east-1.images.arcpublishing.com/tronc/F6TDSVUO6ZAPXBC5UI7JJIA3VY.jpg" data-lightbox="roadtrip" data-title="Hogan Was Wrong To Dispatch National Guard To D C Reader Commentary Baltimore Sun">
+											<img class="card-img v-image ads-img " src="https://www.baltimoresun.com/resizer/B01J2fl3honK86HczWxldP8-rBs=/415x280/top/cloudfront-us-east-1.images.arcpublishing.com/tronc/F6TDSVUO6ZAPXBC5UI7JJIA3VY.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVRlxOrDQI7YXGeb5fg81NUSVaHJdGL0vWgw';" alt="Hogan Was Wrong To Dispatch National Guard To D C Reader Commentary Baltimore Sun">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hogan Was Wrong To Dispatch National Guard To D C Reader Commentary Baltimore Sun</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/are-marines-better-than-the-army.html">Are Marines Better Than The Army</a></li>
+													<li class="list-group-item"><a href="/argus-fanart.html">Argus Fanart</a></li>
+													<li class="list-group-item"><a href="/argus-gt-pod.html">Argus Gt Pod</a></li>
+													<li class="list-group-item"><a href="/argus-fitch.html">Argus Fitch</a></li>
+													<li class="list-group-item"><a href="/argus-ml-build.html">Argus Ml Build</a></li>
+													<li class="list-group-item"><a href="/area-v-kering.html">Area V Kering</a></li>
+													<li class="list-group-item"><a href="/argus-ii-implant.html">Argus Ii Implant</a></li>
+													<li class="list-group-item"><a href="/argus-network-monitoring.html">Argus Network Monitoring</a></li>
+													<li class="list-group-item"><a href="/argus-mlbb.html">Argus Mlbb</a></li>
+													<li class="list-group-item"><a href="/argus-rda.html">Argus Rda</a></li>
+													<li class="list-group-item"><a href="/argus-chibi.html">Argus Chibi</a></li>
+													<li class="list-group-item"><a href="/argos-hdmi-cable.html">Argos Hdmi Cable</a></li>
+													<li class="list-group-item"><a href="/argus-pro-spesifikasi.html">Argus Pro Spesifikasi</a></li>
+													<li class="list-group-item"><a href="/argus-quotes-mlbb.html">Argus Quotes Mlbb</a></li>
+													<li class="list-group-item"><a href="/area-ventrogluteal.html">Area Ventrogluteal</a></li>
+													<li class="list-group-item"><a href="/argus-elite.html">Argus Elite</a></li>
+													<li class="list-group-item"><a href="/argan-oil-untuk-rambut.html">Argan Oil Untuk Rambut</a></li>
+													<li class="list-group-item"><a href="/argus-engine.html">Argus Engine</a></li>
+													<li class="list-group-item"><a href="/area-volte-telkomsel.html">Area Volte Telkomsel</a></li>
+													<li class="list-group-item"><a href="/argus-epic-skin.html">Argus Epic Skin</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

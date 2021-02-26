@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Guard Sierra Vista Az - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Guard Sierra Vista Az",
+  "datePublished": "2021-02-27",
+  "image": "https://s3.amazonaws.com/uploads.knightlab.com/storymapjs/e2d9568055293e2053060519659e835f/civil-asset-forfeiture/_images/IMG_7235.JPG",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+guard+sierra+vista+az",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Guard Sierra Vista Az</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Sierra Vista Newsie We keep you current with Sierra Vista Arizona news people and events by curating feeds of all kinds. 2021 United States National Guard ELIGIBILITY. Brandon and Krystal are the best realtors in Sierra Vista. <br>				
+			</p>
+										<a class="badge badge-warning" href="/what-is-the-national-guards-job.html">what is the national guards job</a>
+											<a class="badge badge-danger" href="/what-is-the-retired-reserve-army.html">what is the retired reserve army</a>
+											<a class="badge badge-light" href="/who-has-the-strongest-military-in-2020.html">who has the strongest military in 2020</a>
+											<a class="badge badge-info" href="/what-is-the-difference-between-the-national-guard-and-the-air-national-guard.html">what is the difference between the national guard and the air national guard</a>
+											<a class="badge badge-success" href="/where-do-soldiers-keep-their-weapons.html">where do soldiers keep their weapons</a>
+											<a class="badge badge-dark" href="/what-is-the-difference-between-the-army-reserves-and-national-guard.html">what is the difference between the army reserves and national guard</a>
+											<a class="badge badge-dark" href="/what-is-the-toughest-military-unit.html">what is the toughest military unit</a>
+											<a class="badge badge-dark" href="/what-military-bases-are-in-utah.html">what military bases are in utah</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to pay a visit to the right blog.  Our website provides you with suggestions for viewing the maximum quality video and picture content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video for you to view.  You can also contribute to supporting this site by sharing videos and graphics that you like on this blog on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybases.com/wp-content/uploads/2010/07/luke-afb-350x300.jpg" data-lightbox="roadtrip" data-title="Arizona Military Bases 7 Bases Militarybases Com">
+											<img class="card-img v-image ads-img " src="https://militarybases.com/wp-content/uploads/2010/07/luke-afb-350x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSOGM47JvgRh1a0IVFWFORA8TIQFFeSToQqg';" alt="Arizona Military Bases 7 Bases Militarybases Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arizona Military Bases 7 Bases Militarybases Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://visit.sierravistaaz.gov/wp-content/uploads/2017/01/Fort-Huachuca-Historic-Officers-Quarters.jpg" data-lightbox="roadtrip" data-title="Fort Huachuca National Historic Landmark Visit Sierra Vista Arizona">
+											<img class="card-img v-image ads-img " src="http://visit.sierravistaaz.gov/wp-content/uploads/2017/01/Fort-Huachuca-Historic-Officers-Quarters.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFp1vBlK_eDPrQD8cGRuRO9h897PYoCkeStg';" alt="Fort Huachuca National Historic Landmark Visit Sierra Vista Arizona">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fort Huachuca National Historic Landmark Visit Sierra Vista Arizona</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sierravistaaz.gov/wp-content/uploads/2020/10/Fry-Pioneer-Cemetery-1-1024x683.jpg" data-lightbox="roadtrip" data-title="Fry Pioneer Cemetery Opens To The Public On Nov 2 Sierra Vista Arizona">
+											<img class="card-img v-image ads-img " src="https://www.sierravistaaz.gov/wp-content/uploads/2020/10/Fry-Pioneer-Cemetery-1-1024x683.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgTg3lQb5CcUHS-aybb52yZXmzwD2qmJFcww';" alt="Fry Pioneer Cemetery Opens To The Public On Nov 2 Sierra Vista Arizona">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fry Pioneer Cemetery Opens To The Public On Nov 2 Sierra Vista Arizona</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/myheraldreview.com/content/tncms/assets/v3/editorial/7/70/77044626-1967-11eb-8bd2-cb6d384fec97/5f99e76d66d1b.image.jpg" data-lightbox="roadtrip" data-title="Sierra Vista Paramedic Utilizes Strengths To Support Community Community Myheraldreview Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/myheraldreview.com/content/tncms/assets/v3/editorial/7/70/77044626-1967-11eb-8bd2-cb6d384fec97/5f99e76d66d1b.image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdmYGpF-XciJi9iC2i90Q37_V1hVfDdzv5JA';" alt="Sierra Vista Paramedic Utilizes Strengths To Support Community Community Myheraldreview Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sierra Vista Paramedic Utilizes Strengths To Support Community Community Myheraldreview Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/19/86/b01986f49c69730881093be9122f0629.jpg" data-lightbox="roadtrip" data-title="We Enjoyed A Great Visit Here Too Fort Huachuca Sierra Vista Arizona Sierra Vista Arizona Fort Huachuca Sierra Vista">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/19/86/b01986f49c69730881093be9122f0629.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQtiJkEsSeFVoJ0oCU8kYxu62xymw5-BYndA';" alt="We Enjoyed A Great Visit Here Too Fort Huachuca Sierra Vista Arizona Sierra Vista Arizona Fort Huachuca Sierra Vista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Enjoyed A Great Visit Here Too Fort Huachuca Sierra Vista Arizona Sierra Vista Arizona Fort Huachuca Sierra Vista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/myheraldreview.com/content/tncms/assets/v3/editorial/a/62/a62abbfa-7351-11e9-a835-7fbffe8a4dca/5cd5c334dba85.image.jpg?resize=1200%2C959" data-lightbox="roadtrip" data-title="Meet Your Chief Brian Jones Named Sv Fire Chief Community Myheraldreview Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/myheraldreview.com/content/tncms/assets/v3/editorial/a/62/a62abbfa-7351-11e9-a835-7fbffe8a4dca/5cd5c334dba85.image.jpg?resize=1200%2C959" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr9Ypxzh7iiTVHRrS_lPvPZKRGq-cH0PulZw';" alt="Meet Your Chief Brian Jones Named Sv Fire Chief Community Myheraldreview Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Meet Your Chief Brian Jones Named Sv Fire Chief Community Myheraldreview Com</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b6/dc/79/b6dc7990a03395263222ac21a690a90b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr9Ypxzh7iiTVHRrS_lPvPZKRGq-cH0PulZw';" alt="Meet Your Chief Brian Jones Named Sv Fire Chief Community Myheraldreview Com">
+										<div class="card-body">
+						<h3 class="h5"><b>FHU a joint-use civil-military airport which shares facilities with Libby Army Airfield is located on Fort Huachuca in Sierra Vista a city and US.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National guard sierra vista az</strong>. 
+								
+																	We can help with that. 
+																	Sierra Vista AZ 85635. 
+																	Things to Do in Sierra Vista. 
+																	Their customer service attention to detail and thoughtful. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sierra Vista which is Spanish for Mountain View is located 75 miles 121 km southeast. 
+																	San Pedro Riparian National Conservation Area. 
+																	Stop by the recruiting station or give us a call if you are interested in getting out of your hometown. 
+																	Find National Guard jobs in Sierra Vista AZ. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He is a graduate from the Colegio National de Educacion. 
+																	See reviews photos directions phone numbers and more for the best National Guard in Sierra Vista AZ. 
+																	Provided by Tucson Sierra Vista KOLD KOLD On Tuesday Jan. 
+																	Doug Ducey about his plan for tax cuts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In addition to curating the best local feeds the team at Sierra Vista Newsie reports daily on Sierra Vista. 
+																	Related Article Military Bases In Florida. 
+																	Fort Huachuca a US. 
+																	5 the Arizona National Guard announced they have been conducting refresher training for the first wave of Arizona residents who have. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	3666 Support Maintenance Company is located on Papago Park Military Reservation at the Petty Crew Armory. 
+																	Sierra Vista is a city in Cochise County Arizona United StatesAs of the 2010 census the population of the city was 43888. 
+																	Arizona Army National Guard Recruiting is a business providing services in the field of National Guard. 
+																	Need a change of scenery. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is the official page of the United States Army Recruiting Center in Sierra Vista AZ. 
+																	362nd Ordnance Company EOD 819th Engineer Company Sapper 856th Military Police Company. 
+																	Their telephone number is 1 520 459-3633. 
+																	Life Care Center of Sierra Vista in Sierra Vista. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	8 Operating as usual. 
+																	KOLD News 13 - On Monday Jan 4 the Arizona National Guard began conducting refresher training to the first wave of residents who have volunteered to support vaccination sites in. 
+																	Senate Republicans have a message to Gov. 
+																	Sierra Vista Municipal Airport IATA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army National Guard also performs training exercises at and around the base. 
+																	See reviews photos directions phone numbers and more for the best National Guard in Sierra Vista AZ. 
+																	Find over 27 million businesses in the United States on The Official Yellow Pages Directory website. 
+																	Arizona State Government is listed in the categories State Government National Guard Government Offices State and National Security. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	3666 Support Maintenance Company employed at echelons above division EAD within a corps area of operations andor in the division support area DSA to support corps units operating in the DSA and also provide support to divisional units in automotive armament ground support and. 
+																	San Pedro Riparian National Conservation Area. 
+																	Search for full time or part time employment opportunities on Jobs2Careers. 
+																	National Guard troops deployed to fight COVID eligible for VA loans. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The business is located in Sierra Vista Arizona United States. 
+																	Find homes for sale in Sierra Vista AZ with top local Realtors. 
+																	Brandon Krystal Winters will help you in buying or selling your home today. 
+																	Arizona State Government - National Guard Arizona in Bisbee AZ - Cochise County is a government agency specialized in Government. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	GOP legislators want more tax cuts than Gov. 
+																	An Arizona Army National Guard UG-60 Blackhawk crew was able to hoist the hikers and the rescue teams from the site Tuesday Life Care Center of Sierra Vista. 
+																	Find trusted reliable customer reviews on contractors restaurants doctors. 
+																	10 Other Attractions within 5 miles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army installation in Cochise County Arizona United StatesThe airport has three runways and one helipadIt is mostly used for military aviation for the surrounding military base. 
+																	The city is part of the Sierra Vista-Douglas Metropolitan Area with a 2010 population of 131346. 
+																	19 Restaurants within 5 miles. 
+																	Army post is located in the northwest part of the city. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find national guard in Sierra Vista AZ on Yellowbook. 
+																	174 Reviews 1 of 26 things to do in Sierra Vista. 
+																	Pizzeria Mimosa 383. 
+																	This is a list of the National Register of Historic Places listings in Cochise County ArizonaIt is intended to be a complete list of the properties and districts on the National Register of Historic Places in Cochise County Arizona United StatesThe locations of National Register properties and districts for which the latitude and longitude coordinates are included below may be seen in a map. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get reviews and contact details for each business including videos opening hours and more. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.amazonaws.com/uploads.knightlab.com/storymapjs/e2d9568055293e2053060519659e835f/civil-asset-forfeiture/_images/IMG_7235.JPG" data-lightbox="roadtrip" data-title="Seized Assets Mean Big Money For Az Law Enforcement">
+											<img class="card-img v-image ads-img " src="https://s3.amazonaws.com/uploads.knightlab.com/storymapjs/e2d9568055293e2053060519659e835f/civil-asset-forfeiture/_images/IMG_7235.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT64AkO9huiA6XHIlBGYvYuZ387xWDD5FJk4A';" alt="Seized Assets Mean Big Money For Az Law Enforcement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seized Assets Mean Big Money For Az Law Enforcement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/65/3a/1e653a44811349a87128e13b7c88ac2e.jpg" data-lightbox="roadtrip" data-title="Pin By Jack Frost On All Things Military Esp U S Navy Sierra Vista Arizona Wreaths Across America Sierra Vista">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/65/3a/1e653a44811349a87128e13b7c88ac2e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTokA-ZRtJYEDkuGYqyCiAYSr5sgA7K32t4Ow';" alt="Pin By Jack Frost On All Things Military Esp U S Navy Sierra Vista Arizona Wreaths Across America Sierra Vista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jack Frost On All Things Military Esp U S Navy Sierra Vista Arizona Wreaths Across America Sierra Vista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://tdy123.com/wp-content/uploads/2015/10/bisbee_az_stock.jpg" data-lightbox="roadtrip" data-title="About Cochise County And Sierra Vista Arizona">
+											<img class="card-img v-image ads-img " src="https://tdy123.com/wp-content/uploads/2015/10/bisbee_az_stock.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSZu-rOpJKul-mEsnz6VpxSSduVvUi4Q05Yw';" alt="About Cochise County And Sierra Vista Arizona">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About Cochise County And Sierra Vista Arizona</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://c8.alamy.com/comp/PXMRGR/second-lt-brian-martin-from-sierra-vista-arizona-spc-justin-francis-from-newcastle-and-master-sgt-michael-smith-from-colorado-springs-colorado-assigned-to-the-115h-field-artillery-brigade-prepare-on-the-cpof-for-upcoming-rehearsal-battle-drills-at-the-units-new-tactical-operations-center-fielded-at-camp-guernsey-more-than-1000-wyoming-army-national-guard-soldiers-are-converging-on-camp-guernsey-joint-training-center-this-month-for-their-two-week-annual-training-commitment-and-the-public-affairs-office-will-feature-daily-social-media-posts-of-our-soldiers-honing-their-skills-throug-PXMRGR.jpg" data-lightbox="roadtrip" data-title="Arizona Army National Guard Spc High Resolution Stock Photography And Images Alamy">
+											<img class="card-img v-image ads-img " src="https://c8.alamy.com/comp/PXMRGR/second-lt-brian-martin-from-sierra-vista-arizona-spc-justin-francis-from-newcastle-and-master-sgt-michael-smith-from-colorado-springs-colorado-assigned-to-the-115h-field-artillery-brigade-prepare-on-the-cpof-for-upcoming-rehearsal-battle-drills-at-the-units-new-tactical-operations-center-fielded-at-camp-guernsey-more-than-1000-wyoming-army-national-guard-soldiers-are-converging-on-camp-guernsey-joint-training-center-this-month-for-their-two-week-annual-training-commitment-and-the-public-affairs-office-will-feature-daily-social-media-posts-of-our-soldiers-honing-their-skills-throug-PXMRGR.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNDfSdMjFTRmEj7UTkvhi7eBYSyhmysxpIwQ';" alt="Arizona Army National Guard Spc High Resolution Stock Photography And Images Alamy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arizona Army National Guard Spc High Resolution Stock Photography And Images Alamy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.bradsnyder.com/myimages/map_az_se_quad_sierra_vista.gif" data-lightbox="roadtrip" data-title="About Cochise County Brad Snyder Sierra Vista Realty Sierra Vista Real Estate Agent">
+											<img class="card-img v-image ads-img " src="https://www.bradsnyder.com/myimages/map_az_se_quad_sierra_vista.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Q7T-tXpu2PnJwo4kYUxRuH90pMkQvrKNBg';" alt="About Cochise County Brad Snyder Sierra Vista Realty Sierra Vista Real Estate Agent">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">About Cochise County Brad Snyder Sierra Vista Realty Sierra Vista Real Estate Agent</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/59/41/32/594132d3b98b71e9963ef9ead0f3e9ea.jpg" data-lightbox="roadtrip" data-title="Sierra Vista Az History Early 60s Sierra Vista Arizona Arizona History Sierra Vista">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/59/41/32/594132d3b98b71e9963ef9ead0f3e9ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEqiYXYDKNCC-q2lKehwwjmXVUZsziU7KeFA';" alt="Sierra Vista Az History Early 60s Sierra Vista Arizona Arizona History Sierra Vista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sierra Vista Az History Early 60s Sierra Vista Arizona Arizona History Sierra Vista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images1.apartments.com/i2/6qDQQJlO9QTSR7jaxamZKnbNBVaMoPwyz39spEDVW_8/111/265-w-busby-dr-sierra-vista-az-primary-photo.jpg" data-lightbox="roadtrip" data-title="265 W Busby Dr Sierra Vista Az 85635 House For Rent In Sierra Vista Az Apartments Com">
+											<img class="card-img v-image ads-img " src="https://images1.apartments.com/i2/6qDQQJlO9QTSR7jaxamZKnbNBVaMoPwyz39spEDVW_8/111/265-w-busby-dr-sierra-vista-az-primary-photo.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEAYhyDXPEDM7Q_ugl-9YlVBMc5x3P8kYPCA';" alt="265 W Busby Dr Sierra Vista Az 85635 House For Rent In Sierra Vista Az Apartments Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">265 W Busby Dr Sierra Vista Az 85635 House For Rent In Sierra Vista Az Apartments Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/36/b1/2436b17da3ac8c0fae0ad753e5403b91.jpg" data-lightbox="roadtrip" data-title="Pin By Karen Glez On Catholic And Proud Our Lady Of America Sierra Vista Sierra">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/36/b1/2436b17da3ac8c0fae0ad753e5403b91.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxOz90XjL1c_5m4JVhkUe3s4EFckdhr69Jfg';" alt="Pin By Karen Glez On Catholic And Proud Our Lady Of America Sierra Vista Sierra">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Karen Glez On Catholic And Proud Our Lady Of America Sierra Vista Sierra</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/f5/4d/72f54dedb08b546f27680aea2af1ae60.jpg" data-lightbox="roadtrip" data-title="The Drive From Fort Huachuca Into Sierra Vista Az Visited Daughter Who Was In The Military And Her Family Sierra Vista Arizona Sierra Vista Fort Huachuca">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/f5/4d/72f54dedb08b546f27680aea2af1ae60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlAo1sH_-c-B2iGDnE3kVNjnwYeMcnPpS58g';" alt="The Drive From Fort Huachuca Into Sierra Vista Az Visited Daughter Who Was In The Military And Her Family Sierra Vista Arizona Sierra Vista Fort Huachuca">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Drive From Fort Huachuca Into Sierra Vista Az Visited Daughter Who Was In The Military And Her Family Sierra Vista Arizona Sierra Vista Fort Huachuca</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/dc/79/b6dc7990a03395263222ac21a690a90b.jpg" data-lightbox="roadtrip" data-title="Visiting Kitt Peak National Observatory Az 386 Sierra Vista Az Observatory National Sierra Vista">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/dc/79/b6dc7990a03395263222ac21a690a90b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA9NsDBHTTOSnRMfSU98ORopnQ2n4NKXZgVw';" alt="Visiting Kitt Peak National Observatory Az 386 Sierra Vista Az Observatory National Sierra Vista">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Visiting Kitt Peak National Observatory Az 386 Sierra Vista Az Observatory National Sierra Vista</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images1.apartments.com/i2/amBcA0Wf-903VGxuY1hf2l5HppA-Yf_rB13V6XWlRX4/111/18-brockbank-pl-sierra-vista-az-primary-photo.jpg" data-lightbox="roadtrip" data-title="18 Brockbank Pl Sierra Vista Az 85635 House For Rent In Sierra Vista Az Apartments Com">
+											<img class="card-img v-image ads-img " src="https://images1.apartments.com/i2/amBcA0Wf-903VGxuY1hf2l5HppA-Yf_rB13V6XWlRX4/111/18-brockbank-pl-sierra-vista-az-primary-photo.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6MhX89YJ-X5EjZrc3annF45nUK6fgsjzkmg';" alt="18 Brockbank Pl Sierra Vista Az 85635 House For Rent In Sierra Vista Az Apartments Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">18 Brockbank Pl Sierra Vista Az 85635 House For Rent In Sierra Vista Az Apartments Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/0b/fb/b90bfbf73869137e11aaca35707c4bf3.jpg" data-lightbox="roadtrip" data-title="The Most Affordable Cities In Each State Apartmentguide Com Sierra Vista Arizona Sierra Vista Lake Havasu City">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/0b/fb/b90bfbf73869137e11aaca35707c4bf3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVPi3grjgik1JVmMmQvuOA5CCF6CA1aUDJ1A';" alt="The Most Affordable Cities In Each State Apartmentguide Com Sierra Vista Arizona Sierra Vista Lake Havasu City">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Most Affordable Cities In Each State Apartmentguide Com Sierra Vista Arizona Sierra Vista Lake Havasu City</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images1.apartments.com/i2/evKN11sXWRRj0XzsxbgAH1dGb9HZXueBmI_ewRtDej8/111/casa-sierra-bella-sierra-vista-az-main-swimming-pool.jpg" data-lightbox="roadtrip" data-title="Casa Sierra Bella Apartments Sierra Vista Az Apartments Com">
+											<img class="card-img v-image ads-img " src="https://images1.apartments.com/i2/evKN11sXWRRj0XzsxbgAH1dGb9HZXueBmI_ewRtDej8/111/casa-sierra-bella-sierra-vista-az-main-swimming-pool.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXcNu6REtevATBCog8BRQlT6juBFbMYyAcnA';" alt="Casa Sierra Bella Apartments Sierra Vista Az Apartments Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Casa Sierra Bella Apartments Sierra Vista Az Apartments Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/can-national-guard-soldiers-apply-for-unemployment.html">Can National Guard Soldiers Apply For Unemployment</a></li>
+													<li class="list-group-item"><a href="/can-national-guard-have-military-funeral.html">Can National Guard Have Military Funeral</a></li>
+													<li class="list-group-item"><a href="/can-you-have-a-beard-in-the-army-national-guard.html">Can You Have A Beard In The Army National Guard</a></li>
+													<li class="list-group-item"><a href="/can-you-serve-in-the-national-guard-full-time.html">Can You Serve In The National Guard Full Time</a></li>
+													<li class="list-group-item"><a href="/can-you-be-a-paratrooper-in-the-army-national-guard.html">Can You Be A Paratrooper In The Army National Guard</a></li>
+													<li class="list-group-item"><a href="/can-you-be-active-duty-in-the-air-national-guard.html">Can You Be Active Duty In The Air National Guard</a></li>
+													<li class="list-group-item"><a href="/car-quotes.html">Car Quotes</a></li>
+													<li class="list-group-item"><a href="/can-you-go-active-duty-in-the-army-national-guard.html">Can You Go Active Duty In The Army National Guard</a></li>
+													<li class="list-group-item"><a href="/california-army-national-guard-drill-attendance-ribbon.html">California Army National Guard Drill Attendance Ribbon</a></li>
+													<li class="list-group-item"><a href="/can-you-be-in-the-army-and-national-guard.html">Can You Be In The Army And National Guard</a></li>
+													<li class="list-group-item"><a href="/can-you-be-in-the-army-and-national-guard-at-the-same-time.html">Can You Be In The Army And National Guard At The Same Time</a></li>
+													<li class="list-group-item"><a href="/california-army-national-guard-awards-regulation.html">California Army National Guard Awards Regulation</a></li>
+													<li class="list-group-item"><a href="/can-you-move-from-national-guard-to-army.html">Can You Move From National Guard To Army</a></li>
+													<li class="list-group-item"><a href="/can-you-have-tattoos-in-the-army-national-guard.html">Can You Have Tattoos In The Army National Guard</a></li>
+													<li class="list-group-item"><a href="/cara-mengubah-kuota-belajar-menjadi-kuota-utama.html">Cara Mengubah Kuota Belajar Menjadi Kuota Utama</a></li>
+													<li class="list-group-item"><a href="/can-national-guard-do-rasp.html">Can National Guard Do Rasp</a></li>
+													<li class="list-group-item"><a href="/can-you-change-your-mos-in-the-national-guard.html">Can You Change Your Mos In The National Guard</a></li>
+													<li class="list-group-item"><a href="/can-i-join-army-reserves-at-45.html">Can I Join Army Reserves At 45</a></li>
+													<li class="list-group-item"><a href="/car-q.html">Car Q</a></li>
+													<li class="list-group-item"><a href="/can-you-work-full-time-in-the-national-guard.html">Can You Work Full Time In The National Guard</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

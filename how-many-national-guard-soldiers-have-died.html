@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Many National Guard Soldiers Have Died - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Many National Guard Soldiers Have Died",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/45/82/a2/4582a2c2e83cae5e8111e645c6226386.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+many+national+guard+soldiers+have+died",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Many National Guard Soldiers Have Died</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Those entries have since been corrected. The governor says he is very. Service member who has died as a result of the wars in Iraq and Afghanistan in Operation Iraqi Freedom Operation New Dawn and Operation Enduring Freedom. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/can-you-go-from-active-army-to-air-national-guard.html">can you go from active army to air national guard</a>
+											<a class="badge badge-success" href="/carefully.html">carefully</a>
+											<a class="badge badge-warning" href="/can-you-be-a-drill-sergeant-in-the-national-guard.html">can you be a drill sergeant in the national guard</a>
+											<a class="badge badge-warning" href="/car-q-kalbe.html">car q kalbe</a>
+											<a class="badge badge-info" href="/can-national-guard-do-rasp.html">can national guard do rasp</a>
+											<a class="badge badge-danger" href="/can-you-do-national-guard-part-time.html">can you do national guard part time</a>
+											<a class="badge badge-primary" href="/car-quiz.html">car quiz</a>
+											<a class="badge badge-dark" href="/can-you-join-the-guard-after-retiring-from-active-duty.html">can you join the guard after retiring from active duty</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to visit the right site.  Our site provides you with suggestions for viewing the maximum quality video and image content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie that you view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/f6/39/edf6395f9ce0ce6936c58d35dd98bdb2.jpg" data-lightbox="roadtrip" data-title="Pin On American Soldiers Killed In Action">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/f6/39/edf6395f9ce0ce6936c58d35dd98bdb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKPKCpnyx07Lji7Ak_dbsbqkBZAdIqzesKaA';" alt="Pin On American Soldiers Killed In Action">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On American Soldiers Killed In Action</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images04.military.com/sites/default/files/styles/full/public/2021-01/mil-carolina-guard-inauguration-1800.jpg?itok=7B3jGZSt" data-lightbox="roadtrip" data-title="Thousands Of National Guard Troops To Begin Leaving Dc This Weekend Military Com">
+											<img class="card-img v-image ads-img " src="https://images04.military.com/sites/default/files/styles/full/public/2021-01/mil-carolina-guard-inauguration-1800.jpg?itok=7B3jGZSt" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMAJVIfz7_5rdyrKcjubIBBNl2D7VjB5vVw';" alt="Thousands Of National Guard Troops To Begin Leaving Dc This Weekend Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thousands Of National Guard Troops To Begin Leaving Dc This Weekend Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images05.military.com/sites/default/files/styles/full/public/2021-01/mil-virginia-national-guard-inauguration-1800.jpg?itok=i8cz7uk-" data-lightbox="roadtrip" data-title="National Guard Plans To Ask Thousands Of Troops To Remain In Dc Until Mid March Military Com">
+											<img class="card-img v-image ads-img " src="https://images05.military.com/sites/default/files/styles/full/public/2021-01/mil-virginia-national-guard-inauguration-1800.jpg?itok=i8cz7uk-" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxSzysnbmbVXSTuNegBPPh97bqUNG2cUvEzA';" alt="National Guard Plans To Ask Thousands Of Troops To Remain In Dc Until Mid March Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Plans To Ask Thousands Of Troops To Remain In Dc Until Mid March Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.659560.1611354536!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="Thousands Of National Guard Troops Could Remain In Dc Into March U S Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.659560.1611354536!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38no4riGdlC4ca8bCFcnQ7ahFoJoq8ONK9w';" alt="Thousands Of National Guard Troops Could Remain In Dc Into March U S Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thousands Of National Guard Troops Could Remain In Dc Into March U S Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/2d/b8/092db843ded8b6d9c13307364ba8013a.jpg" data-lightbox="roadtrip" data-title="Pin On Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/2d/b8/092db843ded8b6d9c13307364ba8013a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9t3j3OxA5ndnZHtp6thSdZNhyaDa_tpWNSA';" alt="Pin On Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images04.military.com/sites/default/files/styles/full/public/2021-01/newscrednationalguardcapitolpatroldc1800.jpeg.jpg?itok=3baNGKGg" data-lightbox="roadtrip" data-title="Military Pledges Proper Housing For Troops In Dc As National Guard Force Grows To 25 000 Military Com">
+											<img class="card-img v-image ads-img " src="https://images04.military.com/sites/default/files/styles/full/public/2021-01/newscrednationalguardcapitolpatroldc1800.jpeg.jpg?itok=3baNGKGg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9sOvuaGlJ7aUBtYTL9JfdX0afAQOhPG5S5w';" alt="Military Pledges Proper Housing For Troops In Dc As National Guard Force Grows To 25 000 Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Pledges Proper Housing For Troops In Dc As National Guard Force Grows To 25 000 Military Com</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://images05.military.com/sites/default/files/styles/full/public/2021-01/mil-virginia-national-guard-inauguration-1800.jpg?itok=i8cz7uk-" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9sOvuaGlJ7aUBtYTL9JfdX0afAQOhPG5S5w';" alt="Military Pledges Proper Housing For Troops In Dc As National Guard Force Grows To 25 000 Military Com">
+										<div class="card-body">
+						<h3 class="h5"><b>Local and federal security officials expect about 20000 National Guard members to be involved in securing Washington DC for President-elect Joe Bidens inauguration next.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How many national guard soldiers have died</strong>. 
+								
+																	In this status they operate similar to a state. 
+																	The National Guard will always hold a special place in the hearts of all the Bidens she said noting that their son Beau who died in 2015 was a member of the Delaware Army National Guard. 
+																	NASHVILLE TN Tennessee Gov. 
+																	Guard commander said he. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2021-01-23T134136Z The letter F. 
+																	Bill Lee is welcoming home Tennessee National Guard soldiers and airmen Friday after their mission in DC at the US. 
+																	All 12 members have been sent home Pentagon. 
+																	Right now I am stuck in Germany where he was stationed for the next 15 months. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He is now serving he 2nd deployment in 4 years. 
+																	The soldiers belonged to the Nevada Army National Guards 1st Battalion 221st Cavalry Regiment of Las Vegas. 
+																	Faces of the Fallen is a collection of information about each US. 
+																	My husband joined about 4 years ago he started in the Florida National Guard and then went active duty Army last March. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 19-year-old Minnesota Army National Guard Soldier. 
+																	If you plan to be a military spouse get used to. 
+																	There were two processions on Thursday as the bodies of the three National Guard soldiers who died in Wednesdays helicopter crash were taken from Mendon to the Medical Examiners office. 
+																	The helicopter was a UH-60 medical evacuation helicopter based at the Army Aviation Support Facility at. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is the third death of a soldier at Fort Jackson in the past six months. 
+																	WWNY National Guard soldiers fight war on COVID in Potsdam By Keith Benman January 27 2021 at 504 PM EST - Updated January 27 at 624 PM POTSDAM NY. 
+																	Walker also confirmed news reports that about 200 National Guard soldiers many from out of state had tested positive in recent days for the coronavirus. 
+																	QAnon members have discussed posing as National Guard soldiers main believing that it would be easy for them to infiltrate secure areas a security briefing reads. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The first was in Kabul Afghanistan for 12 months and now he is in Iraq for 15 months. 
+																	National Guard is the only National Guard unit out of all of the 54 states and territories which reports only to the President. 
+																	48 Presidential Unit Citations were awarded to National Guard units and National Guard soldiers received 14 Medals of Honor 50 Distinguished Service Crosses 48 Distinguished Flying Crosses and more than 500 Silver Stars. 
+																	The Idaho National Guard released the names of the three soldiers killed Tuesday night after their UH-60 Black Hawk helicopter crashed during a routine training flight. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 1-221st is part of the 116th Cavalry Brigade Combat Team which is headquartered. 
+																	Nearly 62000 National Guard soldiers and airmen were deployed to protests in 24 states plus the District of Columbia according to a statement by the National Guard via Newsweek. 
+																	National Guard units participated in all combat theaters and took part in 34 separate campaigns and seven assault landings sustaining 175000 casualties killed and wounded. 
+																	Three National Guard soldiers were killed Wednesday evening when the helicopter they were in crashed along West Bloomfield Road near Cheese Factory Road in Mendon. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The aircraft was on a routine training mission according to a statement from the state Division of Military Naval Affairs. 
+																	The other 10 National Guard members were removed for a wide variety of issues criminal investigations domestic abuse or outstanding complaints. 
+																	WWNY - The troops have landed in Potsdam. 
+																	Biden apologizes to National Guard chief after 5000 soldiers had to reportedly sleep in a DC parking garage with only one bathroom. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The riot is inset. 
+																	8 according to Fort Jackson. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.632583.1591372843!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="South Carolina National Guard Troops In Dc Hospitalized After Lightning Strike U S Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.632583.1591372843!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDL4NymGwL2E68gRdjKynRMh9uV5bHbxX9JQ';" alt="South Carolina National Guard Troops In Dc Hospitalized After Lightning Strike U S Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">South Carolina National Guard Troops In Dc Hospitalized After Lightning Strike U S Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.632060.1591043167!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="National Guard Involved In At Least Two Shootings One Fatal In Response To Protests Throughout Us U S Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.632060.1591043167!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH3DvejJAmr4bBPzTnBV1_APmUwwoRJQq5iA';" alt="National Guard Involved In At Least Two Shootings One Fatal In Response To Protests Throughout Us U S Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Involved In At Least Two Shootings One Fatal In Response To Protests Throughout Us U S Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/af/04/aeaf04109664f7016c7390f6ab859faf.jpg" data-lightbox="roadtrip" data-title="Pin On U S Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/af/04/aeaf04109664f7016c7390f6ab859faf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9rpTeO6OGaqfNjhLZqLdi8oANA4BJxkig1A';" alt="Pin On U S Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/8c/48/198c48b175dc6a6b2cd803c0893de2da.jpg" data-lightbox="roadtrip" data-title="Pin On My Soldier My Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/8c/48/198c48b175dc6a6b2cd803c0893de2da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtwbvH6oTmBuzXw8N740DBkJ3SUqnpjYuqQ';" alt="Pin On My Soldier My Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Soldier My Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/ee/f5/beeef5e504b2549df1c87c399c2f4e97.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Careers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/ee/f5/beeef5e504b2549df1c87c399c2f4e97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIAamexschjE2-GJhIOVgbeczZSu1HQt_GdA';" alt="Pin On Guard Careers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Careers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/28/84/11/288411c0e2931e805e6a852ebac8ed8f.jpg" data-lightbox="roadtrip" data-title="Pin On North Ogden Brent Taylor Who Stepped Down As North Ogden Mayor To Deploy To Afghanistan With The Utah Army National Guard Died In Afghan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/28/84/11/288411c0e2931e805e6a852ebac8ed8f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrlVh4XIJgjYlGst9yJ5vWi9dVtKc1_02R4g';" alt="Pin On North Ogden Brent Taylor Who Stepped Down As North Ogden Mayor To Deploy To Afghanistan With The Utah Army National Guard Died In Afghan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On North Ogden Brent Taylor Who Stepped Down As North Ogden Mayor To Deploy To Afghanistan With The Utah Army National Guard Died In Afghan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://resize.hswstatic.com/w_796/gif/national-guard.jpg" data-lightbox="roadtrip" data-title="How Is The National Guard Different From The Regular Army Howstuffworks">
+											<img class="card-img v-image ads-img " src="https://resize.hswstatic.com/w_796/gif/national-guard.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9onbVor3GGE1Hojnho_VVy1e07-8YXVbfqQ';" alt="How Is The National Guard Different From The Regular Army Howstuffworks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Is The National Guard Different From The Regular Army Howstuffworks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/00/20/b6/0020b622344dd9bd2e9e56e6f680c3f8.jpg" data-lightbox="roadtrip" data-title="Pin On Inspiration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/00/20/b6/0020b622344dd9bd2e9e56e6f680c3f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKc6uHi27417hRi-L_o-cedDRXVtnXA59rlQ';" alt="Pin On Inspiration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Inspiration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/5b/33/bd5b339525d19daa08bc8fe6f0e04ee6.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Strong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/5b/33/bd5b339525d19daa08bc8fe6f0e04ee6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsGUviIRLT1eP3p1NX601cCF7-kGGda72uNQ';" alt="Pin On Guard Strong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Strong</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/82/a2/4582a2c2e83cae5e8111e645c6226386.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/82/a2/4582a2c2e83cae5e8111e645c6226386.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwh9v6mb6aT7B2IDXx9CpexqzJK3djrBnLfA';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sandboxx.us/wp-content/uploads/2018/08/1599px-Citizen-Soldiers_and_Airmen_of_the_Oregon_National_Guard_stand_in_formation_in_front_of_the_Oregon_state_capitol-1140x558.jpg" data-lightbox="roadtrip" data-title="10 National Guard Benefits You Might Not Know About Sandboxx">
+											<img class="card-img v-image ads-img " src="https://www.sandboxx.us/wp-content/uploads/2018/08/1599px-Citizen-Soldiers_and_Airmen_of_the_Oregon_National_Guard_stand_in_formation_in_front_of_the_Oregon_state_capitol-1140x558.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUr3Zi7hi3cVmL-9pJDtiufg7AUxERAhByiw';" alt="10 National Guard Benefits You Might Not Know About Sandboxx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 National Guard Benefits You Might Not Know About Sandboxx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images03.military.com/sites/default/files/styles/full/public/2021-01/matt-Eric-Kuper-DC-National-Guard-Capitol-1200.jpg?itok=sP646gmD" data-lightbox="roadtrip" data-title="This Is What I Took An Oath For Guard Troops Shore Up Dc In Wake Of Violent Siege Military Com">
+											<img class="card-img v-image ads-img " src="https://images03.military.com/sites/default/files/styles/full/public/2021-01/matt-Eric-Kuper-DC-National-Guard-Capitol-1200.jpg?itok=sP646gmD" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw7ImdFww85woqjUDFzUtCkfoioykVnF6PbQ';" alt="This Is What I Took An Oath For Guard Troops Shore Up Dc In Wake Of Violent Siege Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is What I Took An Oath For Guard Troops Shore Up Dc In Wake Of Violent Siege Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106820916-1610051616280-gettyimages-1295091200-2o4a4213_20210107101354161.jpeg?v=1610051683&amp;w=1600&amp;h=900" data-lightbox="roadtrip" data-title="National Guard Mobilized For 30 Days Including Biden Inauguration">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106820916-1610051616280-gettyimages-1295091200-2o4a4213_20210107101354161.jpeg?v=1610051683&amp;w=1600&amp;h=900" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCbKLyD37PszfPnUa5Etw1PA_GdYzD3iVuoQ';" alt="National Guard Mobilized For 30 Days Including Biden Inauguration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Mobilized For 30 Days Including Biden Inauguration</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/title-32-status-for-national-guard.html">Title 32 Status For National Guard</a></li>
+													<li class="list-group-item"><a href="/turkey-army-rank-in-world.html">Turkey Army Rank In World</a></li>
+													<li class="list-group-item"><a href="/transfer-from-army-national-guard-to-army-reserve.html">Transfer From Army National Guard To Army Reserve</a></li>
+													<li class="list-group-item"><a href="/turkey-army-world-rank.html">Turkey Army World Rank</a></li>
+													<li class="list-group-item"><a href="/tng-ewallet-customer-service.html">Tng Ewallet Customer Service</a></li>
+													<li class="list-group-item"><a href="/trang-yeu-thich.html">Trang Yeu Thich</a></li>
+													<li class="list-group-item"><a href="/ufo-vpn-premium.html">Ufo Vpn Premium</a></li>
+													<li class="list-group-item"><a href="/title-32-chapter-20-arizona-revised-statutes.html">Title 32 Chapter 20 Arizona Revised Statutes</a></li>
+													<li class="list-group-item"><a href="/txt-members.html">Txt Members</a></li>
+													<li class="list-group-item"><a href="/ufo-vpn-premium-pc.html">Ufo Vpn Premium Pc</a></li>
+													<li class="list-group-item"><a href="/topi-warna-hijau-army.html">Topi Warna Hijau Army</a></li>
+													<li class="list-group-item"><a href="/torguard-extension.html">Torguard Extension</a></li>
+													<li class="list-group-item"><a href="/txt-mv.html">Txt Mv</a></li>
+													<li class="list-group-item"><a href="/trang-yeu-thich-dja-luu.html">Trang Yeu Thich Dja Luu</a></li>
+													<li class="list-group-item"><a href="/toy-army-cargo-truck.html">Toy Army Cargo Truck</a></li>
+													<li class="list-group-item"><a href="/ufo-vpn-mod-vip.html">Ufo Vpn Mod Vip</a></li>
+													<li class="list-group-item"><a href="/title-32-activation.html">Title 32 Activation</a></li>
+													<li class="list-group-item"><a href="/trang-an-08-vessel.html">Trang An 08 Vessel</a></li>
+													<li class="list-group-item"><a href="/title-32-part-2002-code-of-federal-regulations.html">Title 32 Part 2002 Code Of Federal Regulations</a></li>
+													<li class="list-group-item"><a href="/title-32-pay-and-allowances.html">Title 32 Pay And Allowances</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

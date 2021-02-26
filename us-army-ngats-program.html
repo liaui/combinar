@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Ngats Program - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Ngats Program",
+  "datePublished": "2021-02-27",
+  "image": "https://www.leonardodrs.com/media/10028/msd_with_accessories.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+ngats+program",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Ngats Program</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">NGATS is a mobile rapidly deployable and reconfigurable general purpose Automatic Test System suite. For over 35 years Army weapon systems have relied on automatic test systems to diagnose and isolate platform failures. ROLLING MEADOWS Ill Feb. <br>				
+			</p>
+										<a class="badge badge-info" href="/ang-stat-tour.html">ang stat tour</a>
+											<a class="badge badge-dark" href="/arang-tampurung-lirik.html">arang tampurung lirik</a>
+											<a class="badge badge-warning" href="/app-cng-stations.html">app cng stations</a>
+											<a class="badge badge-light" href="/angka-keluar-kamboja.html">angka keluar kamboja</a>
+											<a class="badge badge-warning" href="/ang-sio-hie-bien.html">ang sio hie bien</a>
+											<a class="badge badge-success" href="/arang-bakar.html">arang bakar</a>
+											<a class="badge badge-success" href="/ang-san-mei.html">ang san mei</a>
+											<a class="badge badge-primary" href="/arang-film-korea-sub-indo.html">arang film korea sub indo</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to pay a visit to the ideal site.  Our site gives you suggestions for seeing the highest quality video and picture content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this video that you see.  It is also possible to contribute to supporting this website by sharing videos and images that you like on this blog on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://electromet.com/wp-content/uploads/2015/10/NGATS-1.jpg" data-lightbox="roadtrip" data-title="Ngats Archives Electromet">
+											<img class="card-img v-image ads-img " src="https://electromet.com/wp-content/uploads/2015/10/NGATS-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4fT7bdEqbndr5gbc_Ji34i4MRgHTGTXARvA';" alt="Ngats Archives Electromet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ngats Archives Electromet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2020/08/17/25bf78be/original.jpg" data-lightbox="roadtrip" data-title="Mobile Army Weapons Diagnostic Maintenance Support System Being Tested Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2020/08/17/25bf78be/original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRol1hrYvUvRHudNCLat_D2irc6qg-3Nk4LmQ';" alt="Mobile Army Weapons Diagnostic Maintenance Support System Being Tested Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mobile Army Weapons Diagnostic Maintenance Support System Being Tested Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://cms.ipressroom.com.s3.amazonaws.com/295/files/201607/221062.jpg" data-lightbox="roadtrip" data-title="Photo Release Northrop Grumman Delivers Next Generation Automatic Test System To The U S Army Northrop Grumman">
+											<img class="card-img v-image ads-img " src="http://cms.ipressroom.com.s3.amazonaws.com/295/files/201607/221062.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSugZq5wF7LCIbGxBCY-htl-KpvuleeQhvvnA';" alt="Photo Release Northrop Grumman Delivers Next Generation Automatic Test System To The U S Army Northrop Grumman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photo Release Northrop Grumman Delivers Next Generation Automatic Test System To The U S Army Northrop Grumman</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2016/02/10/423076/max1200.jpg" data-lightbox="roadtrip" data-title="Modernizing Automatic Test Systems For Force 2025 And Beyond Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2016/02/10/423076/max1200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaAFHnE8JAKHQr6PhTpscJpXMw0os16gEKHw';" alt="Modernizing Automatic Test Systems For Force 2025 And Beyond Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Modernizing Automatic Test Systems For Force 2025 And Beyond Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2019/11/12/570359/max1200.jpg" data-lightbox="roadtrip" data-title="New Advanced Test System Enhancing Army S Readiness In Korea Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2019/11/12/570359/max1200.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimvPIDZKeDa2JhJRyPB7KkqvU1BReqT7bwA';" alt="New Advanced Test System Enhancing Army S Readiness In Korea Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Advanced Test System Enhancing Army S Readiness In Korea Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://electromet.com/wp-content/uploads/2015/10/NGATS-2.jpg" data-lightbox="roadtrip" data-title="Electromet Supports Ngats Consoles For Teradyne">
+											<img class="card-img v-image ads-img " src="https://electromet.com/wp-content/uploads/2015/10/NGATS-2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuhHiDlMmw1BOKSNLQ-HaW8MwJfCm5gfIIhg';" alt="Electromet Supports Ngats Consoles For Teradyne">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Electromet Supports Ngats Consoles For Teradyne</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="http://mjlm.com/wp-content/uploads/2016/05/NGATS-Station-150x150.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuhHiDlMmw1BOKSNLQ-HaW8MwJfCm5gfIIhg';" alt="Electromet Supports Ngats Consoles For Teradyne">
+										<div class="card-body">
+						<h3 class="h5"><b>A mobile rapidly deployable and reconfigurable general purpose Automatic Test System suite NGATS provides unit-level through depot-level maintenance testing and screening.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army ngats program</strong>. 
+								
+																	AAR Mobility Systems has secured a contract to support the US Armys next-generation automatic test system NGATS shelters. 
+																	Army electro-optical E-O devices as well as being expandable to address the requirements of future Navy Marine Corps and Air Force E-O systems. 
+																	Northrop Grumman made the announcement in a 7 February 2012 company statement. 
+																	The device easily attaches to a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Replacement for the Armys Gold Dot Standard pin specification in IEEE 15051 Common pin map for each DoD Service. 
+																	NGATS abbreviation stands for New-Generation Army Targetry System. 
+																	Next Generation Automatic Test System NGATS. 
+																	MAC Panel was awarded the contract to provide the IEEE 1505 compliant Common Test Interface CTI and a production-ready Self Test Adapter STA to the primary defense contractor for the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Future E-O FEO program was established to develop a flexible modular automated test capability as part of the Next Generation Automatic Test System NGATS program to support the test and diagnostic needs of currently fielded US. 
+																	What does NGATS stand for. 
+																	It consists of a camouflaged waterproof breathable bivy cover a lightweight patrol sleeping bag and an intermediate cold-weather sleeping bag note that the color differs depending on the vintage of. 
+																	Since several of the NGATS systems and associated STAs were to be deployed throughout the globe often times in harsh environments effective STA depot-level maintenance and repair capability was needed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The company will provide an automatic test equipment ATE shelter which will be used to house the actual test system and the NGATS storage shelter which will store hardware for testing system components. 
+																	NGATS is a diagnostic test set used to troubleshoot line replaceable units in the field and is a mounted system that allows Army maintainers to fix forward on the battlefield. 
+																	The Non-Appropriated Fund Instrumentality Program NAFI is operated by the Army for Department of Defense agencies and MWR programs are established maintained and disestablished under sole authority of Army Regulation AR215-1. 
+																	The NGATS is the follow-on reconfigurable rapidly deployable expeditionary interoperable tester and screener that supports joint operations by. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Northrop Grumman has announced that together with DRS Technologies it has delivered the first Next Generation Automatic Test System NGATS to the US Army. 
+																	CADILLAC Michigan March 14 2016 AAR NYSE. 
+																	The delivery follows a low rate initial production LRIP contract awarded by the US Armys Program Executive Office for Combat Support Combat Service Support to Northrop-led team in 2010 for a total of eight LRIP configuration NGATS including spares. 
+																	The Modular Sleep System MSS is a sleeping bag kit part of the Extended Cold Weather Clothing System Gen I to Gen III used by the United States Army and manufactured by Tennier Industries. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The US Army has received the first next generation automatic test system NGATS delivered by Northrop Grumman in partnership with DRS Technologies. 
+																	Two kinds of systems at-platform automatic test systems APATS and. 
+																	A mobile rapidly deployable and reconfigurable general purpose Automatic Test System suite NGATS provides unit-level through depot-level maintenance testing and screening of complex electronic and electro-optical weapon systems. 
+																	This flexible testing platform will finally standardize and reduce the quantity of the Armys ATE systems to one modern tester and improve weapon system availability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army Demonstrated Logistician Program is administered by a partnership of the US Army Logistics University and SOLE the International Society of Logistics. 
+																	NGATS standards in use IEEE 1505 Common Test Interface Way to specifically define interface. 
+																	What is the abbreviation for New-Generation Army Targetry System. 
+																	Northrop Grumman Corporations Next Generation Automatic Test Station NGATS program passed a key milestone with the successful conclusion of the US Armys formal Product Verification Test PVT. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	AIR has been awarded a contract for United States Army Next Generation Automatic Test System NGATS Shelters with a total contract ceiling valued at 49 million over five years. 
+																	NGATS is a reconfigurable general-purpose mobile deployable automatic test system designed to provide sustainment support to all Army weapon systems. 
+																	The Aim Control Enhancer or ACE is being evaluated by the US Army for its Next Generation Squad Weapon NGSW Program which fast-tracks cutting-edge firearms. 
+																	7 2012 -- Northrop Grumman Corporation NYSENOC together with DRS Technologies today announced the delivery of the first Next Generation Automatic Test System NGATS to the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Under the terms of the 49m contract the company will design test and produce two types of 20ft ISO shelters for the NGATS. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2020/11/20/3b58cd6f/original.jpg" data-lightbox="roadtrip" data-title="Black Jack Brigade Becomes First Unit Equipped With Next Generation Automatic Testing System Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2020/11/20/3b58cd6f/original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7h6id_hCHJXYZ-NvGfsr4Gsk7XFgM1JWFQw';" alt="Black Jack Brigade Becomes First Unit Equipped With Next Generation Automatic Testing System Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Black Jack Brigade Becomes First Unit Equipped With Next Generation Automatic Testing System Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="eX_jygNGg0UbtM" data-lightbox="roadtrip" data-title="Http Mjlm Com Wp Content Uploads 2019 01 Mjlm Capabilities Overview Ngats Profile Pdf">
+											<img class="card-img v-image ads-img " src="eX_jygNGg0UbtM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvk-BkTxCb50YuRwTuJ0eExsqHIckRHkkZ5g';" alt="Http Mjlm Com Wp Content Uploads 2019 01 Mjlm Capabilities Overview Ngats Profile Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Mjlm Com Wp Content Uploads 2019 01 Mjlm Capabilities Overview Ngats Profile Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://1xuc8z2ejmm84fcapp3j33uv-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/Patriot-Missile-Launcher_Full-Image-1024x683.jpg" data-lightbox="roadtrip" data-title="Defense Aerospace Customers And Programs Teradyne">
+											<img class="card-img v-image ads-img " src="https://1xuc8z2ejmm84fcapp3j33uv-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/Patriot-Missile-Launcher_Full-Image-1024x683.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrM-c479_VDkb5AH_DhkLCeQ-poZRZvNhqJA';" alt="Defense Aerospace Customers And Programs Teradyne">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defense Aerospace Customers And Programs Teradyne</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="JyHaTscMjLW31M" data-lightbox="roadtrip" data-title="Https Content Ndia Org Media Sites Ndia Divisions Systems Engineering Div Meeting Presentations September 2018 03 Ndia Atc Army 2018 9 16 Final Ashx">
+											<img class="card-img v-image ads-img " src="JyHaTscMjLW31M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdtv6G_p7AHtfPamrO7TswdIdE2Niz5u1MPA';" alt="Https Content Ndia Org Media Sites Ndia Divisions Systems Engineering Div Meeting Presentations September 2018 03 Ndia Atc Army 2018 9 16 Final Ashx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Content Ndia Org Media Sites Ndia Divisions Systems Engineering Div Meeting Presentations September 2018 03 Ndia Atc Army 2018 9 16 Final Ashx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="Bm1tQxa0nFPgyM" data-lightbox="roadtrip" data-title="Https Fas Org Man Dod 101 Sys Land Wsh2010 Wsh2010 Pdf">
+											<img class="card-img v-image ads-img " src="Bm1tQxa0nFPgyM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSfdbx7c2z-SzKO0XN_5qtMs1AW-HnYNjUfA';" alt="Https Fas Org Man Dod 101 Sys Land Wsh2010 Wsh2010 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Fas Org Man Dod 101 Sys Land Wsh2010 Wsh2010 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.vimeocdn.com/video/948265144.webp?mw=1700&amp;mh=1482&amp;q=70" data-lightbox="roadtrip" data-title="Cascom Forward">
+											<img class="card-img v-image ads-img " src="https://i.vimeocdn.com/video/948265144.webp?mw=1700&amp;mh=1482&amp;q=70" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcUDuDqL4yLQZmPp-wSzfu3Sk1CWHfKDai3g';" alt="Cascom Forward">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cascom Forward</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.leonardodrs.com/media/10028/msd_with_accessories.jpg" data-lightbox="roadtrip" data-title="Leonardo Drs Partners With Dell To Launch Two Versions Of Army Maintenance Support Devices Sitrep">
+											<img class="card-img v-image ads-img " src="https://www.leonardodrs.com/media/10028/msd_with_accessories.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJmGdzC37CZf2-uZborJ7meJtsxmRF7R6bnw';" alt="Leonardo Drs Partners With Dell To Launch Two Versions Of Army Maintenance Support Devices Sitrep">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Leonardo Drs Partners With Dell To Launch Two Versions Of Army Maintenance Support Devices Sitrep</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://mjlm.com/wp-content/uploads/2016/05/NGATS-Station-150x150.jpg" data-lightbox="roadtrip" data-title="Supported Programs Mjlm Federal Services For Government Organizations">
+											<img class="card-img v-image ads-img " src="http://mjlm.com/wp-content/uploads/2016/05/NGATS-Station-150x150.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRCzNYHYXEUmtQ-upXnJNyddQzrA15grgQCw';" alt="Supported Programs Mjlm Federal Services For Government Organizations">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Supported Programs Mjlm Federal Services For Government Organizations</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://slideplayer.com/slide/3357138/12/images/3/TMDE+Today+thru+2018+FY05+FY06+FY07+FY08+FY09+FY10+FY11+FY12+FY13+FY14.jpg" data-lightbox="roadtrip" data-title="Pm Tmde Program Overview Ppt Video Online Download">
+											<img class="card-img v-image ads-img " src="https://slideplayer.com/slide/3357138/12/images/3/TMDE+Today+thru+2018+FY05+FY06+FY07+FY08+FY09+FY10+FY11+FY12+FY13+FY14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxGRPRUB5vpQejCaVwCCYQ4ch2qwLRtUaA0g';" alt="Pm Tmde Program Overview Ppt Video Online Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pm Tmde Program Overview Ppt Video Online Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="BqiNEfyrNYlDmM" data-lightbox="roadtrip" data-title="Https Www Ndia Org Media Sites Ndia Divisions Systems Engineering Se Automatic Test Committee March 2019 Meeting 04 Armyndiaatc2019 3 26finalreva Ashx">
+											<img class="card-img v-image ads-img " src="BqiNEfyrNYlDmM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ720QfzRiViRFF0A0s6gguzuGkfSwSXZfWVg';" alt="Https Www Ndia Org Media Sites Ndia Divisions Systems Engineering Se Automatic Test Committee March 2019 Meeting 04 Armyndiaatc2019 3 26finalreva Ashx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Ndia Org Media Sites Ndia Divisions Systems Engineering Se Automatic Test Committee March 2019 Meeting 04 Armyndiaatc2019 3 26finalreva Ashx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="OmJCBNuqtjYU-M" data-lightbox="roadtrip" data-title="Https Ieeexplore Ieee Org Iel5 4062300 4062301 04062391 Pdf">
+											<img class="card-img v-image ads-img " src="OmJCBNuqtjYU-M" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhIBoJfWPjvvWNhDlMv_cmIz9kgi1U0H-V4Q';" alt="Https Ieeexplore Ieee Org Iel5 4062300 4062301 04062391 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Ieeexplore Ieee Org Iel5 4062300 4062301 04062391 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="yV19i2rSOGjnbM" data-lightbox="roadtrip" data-title="Http Mjlm Com Wp Content Uploads 2019 01 Mjlm Capabilities Overview 2018 Fullv1 Pdf">
+											<img class="card-img v-image ads-img " src="yV19i2rSOGjnbM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Tlo9YI1C0tQU6oeJsvLS-qwJgLWduSjbHw';" alt="Http Mjlm Com Wp Content Uploads 2019 01 Mjlm Capabilities Overview 2018 Fullv1 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Mjlm Com Wp Content Uploads 2019 01 Mjlm Capabilities Overview 2018 Fullv1 Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.slideserve.com/418439/slide5-n.jpg" data-lightbox="roadtrip" data-title="Ppt Pm Tmde Program Overview Powerpoint Presentation Free Download Id 418439">
+											<img class="card-img v-image ads-img " src="https://image.slideserve.com/418439/slide5-n.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9dR8epnpg4TEV7s-V4pTwtHFp78WrPkUYag';" alt="Ppt Pm Tmde Program Overview Powerpoint Presentation Free Download Id 418439">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ppt Pm Tmde Program Overview Powerpoint Presentation Free Download Id 418439</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/utah-army-national-guard-agr.html">Utah Army National Guard Agr</a></li>
+													<li class="list-group-item"><a href="/vespa-warna-army.html">Vespa Warna Army</a></li>
+													<li class="list-group-item"><a href="/uspfo-montgomery-al.html">Uspfo Montgomery Al</a></li>
+													<li class="list-group-item"><a href="/uspto-patent-grants.html">Uspto Patent Grants</a></li>
+													<li class="list-group-item"><a href="/uspto-update.html">Uspto Update</a></li>
+													<li class="list-group-item"><a href="/usp-food-fraud.html">Usp Food Fraud</a></li>
+													<li class="list-group-item"><a href="/uspto-utility-patent.html">Uspto Utility Patent</a></li>
+													<li class="list-group-item"><a href="/usptogov-login.html">Usptogov Login</a></li>
+													<li class="list-group-item"><a href="/ving-organic-vodka.html">Ving Organic Vodka</a></li>
+													<li class="list-group-item"><a href="/usaf-rank-and-insignia.html">Usaf Rank And Insignia</a></li>
+													<li class="list-group-item"><a href="/usp-bud.html">Usp Bud</a></li>
+													<li class="list-group-item"><a href="/uspto-notice-of-appeal-fee.html">Uspto Notice Of Appeal Fee</a></li>
+													<li class="list-group-item"><a href="/uspto-interference.html">Uspto Interference</a></li>
+													<li class="list-group-item"><a href="/usptogov-website.html">Usptogov Website</a></li>
+													<li class="list-group-item"><a href="/vessel-documentation-center.html">Vessel Documentation Center</a></li>
+													<li class="list-group-item"><a href="/uscg-vessel-documentation-center.html">Uscg Vessel Documentation Center</a></li>
+													<li class="list-group-item"><a href="/usaf-in-colorado.html">Usaf In Colorado</a></li>
+													<li class="list-group-item"><a href="/uspto-copyright-search.html">Uspto Copyright Search</a></li>
+													<li class="list-group-item"><a href="/uspto-issue-fee.html">Uspto Issue Fee</a></li>
+													<li class="list-group-item"><a href="/usaf-prop-and-wings.html">Usaf Prop And Wings</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Guard Rosa Parks - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Guard Rosa Parks",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/4a/ca/c1/4acac19c43db1d9a9d93013e4cfe8d11.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+guard+rosa+parks",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Guard Rosa Parks</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">2021 United States National Guard ELIGIBILITY. Log in or sign up to leave a comment Log In Sign Up. National Guardsmen posing with Rosa Parks statue while protecting Capitol against MAGA terrorists. <br>				
+			</p>
+										<a class="badge badge-info" href="/orang-cacat.html">orang cacat</a>
+											<a class="badge badge-success" href="/oppo-keluaran-baru.html">oppo keluaran baru</a>
+											<a class="badge badge-success" href="/orang-gila-baru.html">orang gila baru</a>
+											<a class="badge badge-info" href="/orang-asing-boleh-menetap-dan-menjadi-penduduk-indonesia-jika.html">orang asing boleh menetap dan menjadi penduduk indonesia jika</a>
+											<a class="badge badge-danger" href="/oppo-joy-3.html">oppo joy 3</a>
+											<a class="badge badge-dark" href="/ny-army-national-guard-logo.html">ny army national guard logo</a>
+											<a class="badge badge-danger" href="/orang-dapat-menolak-perubahan-karena.html">orang dapat menolak perubahan karena</a>
+											<a class="badge badge-warning" href="/oppo-y53.html">oppo y53</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to pay a visit to the right blog.  Our site provides you with suggestions for seeing the maximum quality video and picture content, hunt and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/12/ff/0212ff2754a8c76ede0abf2b2982a788.jpg" data-lightbox="roadtrip" data-title="Rosa Parks The Misdemeanor That Sparked A Movement Rosa Parks Rosa Parks Arrest Rosa Parks Story">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/12/ff/0212ff2754a8c76ede0abf2b2982a788.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc7rfK2JdDeb2zWR7wJ9-V7c6q25Z4WQSL6g';" alt="Rosa Parks The Misdemeanor That Sparked A Movement Rosa Parks Rosa Parks Arrest Rosa Parks Story">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rosa Parks The Misdemeanor That Sparked A Movement Rosa Parks Rosa Parks Arrest Rosa Parks Story</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/ff/cd/d5ffcdde97198f57814b4d30c0160262.jpg" data-lightbox="roadtrip" data-title="Pin On War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/ff/cd/d5ffcdde97198f57814b4d30c0160262.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqBqaPhmkBECwKpTeHM30zsgjxWTIqr-kMeg';" alt="Pin On War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/0e/33/d50e33b84a473c512a201f8ae2748807.jpg" data-lightbox="roadtrip" data-title="Rosa Parks Rosa Parks Rosa Parks Pictures Women In History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/0e/33/d50e33b84a473c512a201f8ae2748807.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzIsy1nWxzMs4JjBuEIPuZTsKd_yVQpwzVBg';" alt="Rosa Parks Rosa Parks Rosa Parks Pictures Women In History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rosa Parks Rosa Parks Rosa Parks Pictures Women In History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/6d/e3/346de39754381dd5c833e5d6e8c64ee8.jpg" data-lightbox="roadtrip" data-title="Rosa Parks Mug Shot Glossy Poster Picture Photo Mugshot Bus Civil Rights 1717 Women In History Rosa Parks Powerful Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/6d/e3/346de39754381dd5c833e5d6e8c64ee8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmzYdezBFFiTUTZcjYeN0xhlfJuAXswbRLNg';" alt="Rosa Parks Mug Shot Glossy Poster Picture Photo Mugshot Bus Civil Rights 1717 Women In History Rosa Parks Powerful Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rosa Parks Mug Shot Glossy Poster Picture Photo Mugshot Bus Civil Rights 1717 Women In History Rosa Parks Powerful Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/04/e1/40/04e140fef880109018522a05adda9461.jpg" data-lightbox="roadtrip" data-title="Pin On Civil Rights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/04/e1/40/04e140fef880109018522a05adda9461.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYAZfCAV3HUBRZHiiLz0_rTRc2NmDY7asWTQ';" alt="Pin On Civil Rights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Civil Rights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/80/19/0580193e1a03f9085cba5e29c6c9dfce.jpg" data-lightbox="roadtrip" data-title="Galleries Vintage Rosa Parks Clapping Rosa Parks Civil Rights Civil Rights Activists">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/80/19/0580193e1a03f9085cba5e29c6c9dfce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQufPq-aujGpdKfTiA27pbynHM77QC4KeiVTA';" alt="Galleries Vintage Rosa Parks Clapping Rosa Parks Civil Rights Civil Rights Activists">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Galleries Vintage Rosa Parks Clapping Rosa Parks Civil Rights Civil Rights Activists</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/26/fa/48/26fa48cb696b97ac8e0bfe32beec045f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQufPq-aujGpdKfTiA27pbynHM77QC4KeiVTA';" alt="Galleries Vintage Rosa Parks Clapping Rosa Parks Civil Rights Civil Rights Activists">
+										<div class="card-body">
+						<h3 class="h5"><b>Rosa Parks Fingerprinted in Montgomery Alabama On December 1 1955 Rosa Parks forty-three was arrested for disorderly conducted for refusing to give up her bus seat to a white passenger.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National guard rosa parks</strong>. 
+								
+																	Her arrest and fourteen dollar fine for violating city ordinance led African American bus riders and others to boycott the Montgomery city buses. 
+																	National Guardsmen called up to defend the US Capitol paused for a photo with a statue of a civil rights icon only a week after a pro-Trump mob desecrated its halls. 
+																	The United States Congress has called her the first lady of civil rights and the mother of the freedom movement. 
+																	District of Columbia National Guard The DCNG Honor Guardsmen and Airmen were the first to be selected by Congresswoman Eleanor Holmes Norton to support the funeral viewing of Rosa Parkscivil rights activist held October 30-31 2005 at the US Capitol Rotunda building in Washington DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Wright Museum of African American History on October 31 2005 in Detroit Michigan. 
+																	Parks 92 died Oct. 
+																	Wednesday August 26 2020 SANTA ROSA Calif. 
+																	24 lay in honor in the Capitol Rotunda during the final two days of October prior to her funeral today in Detroit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Mother of the Civil Rights Movement. 
+																	Rosa Parks refuses to give up her seat on the bus thus putting the Montgomery Bus Boycott into action 1958 - Little Rock Desegregation President Eisenhower sends the National Guard to Little Rocks Central High School to protect nine African American students as they desegregate the schools. 
+																	On 1st December 1955 Rosa Parks a middle-aged tailors assistant from Montgomery Alabama who was tired after a hard days work refused to give up her seat to a white man. 
+																	11205 Washington Eleven members of the District of Columbia National Guard helped the nation pay tribute Oct. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	30-31 to the late Rosa Parks acclaimed as the mother of the civil rights movement. 
+																	View discussions in 8 other communities. 
+																	AS A VETERAN ACTIVIST Rosa Parks earned a major role in a Communist production entitled The Civil Rights Movement She played her part convincingly for fifty years from 1955 to her death in 2005. 
+																	National Guard medical workers have been sent to Santa Rosa Memorial Hospital. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On December 1 1955 in Montgomery Alabama Parks rejected bus driver James F. 
+																	Rosa Louise McCauley Parks February 4 1913 October 24 2005 was an American activist in the civil rights movement best known for her pivotal role in the Montgomery bus boycott. 
+																	National Guard member poses for a picture with a statue of the civil rights activist Rosa Parks as Democrats debate one article of impeachment against US. 
+																	President Donald Trump at the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Guard troops pose for photos in front of the Rosa Parks statue in the Capitol as the House convenes today January 13 2021. 
+																	Parks the woman who. 
+																	The tribute to Rosa Parks who. 
+																	KGO -- After a busy year deploying to COVID-19 and civil unrest missions the National Guard is now poised to fight the LNU Complex Fire burning in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Black people risking their lives to save white people from themselves. 
+																	Emily Cochrane The New York Times. 
+																	Members of the Michigan National Guard carry the casket of Rosa Parks into the Charles H. 
+																	Rosa Parks took a historic stand against racial segregation when she refused to give up her bus seat to a white man in Montgomery Ala. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After her arrest Martin Luther King a pastor at the local Baptist Church helped organize protests against bus segregation. 
+																	National Guard medical teams are assisting staff at Santa Rosa Memorial Hospital because of a severe worker shortage caused by the ongoing coronavirus pandemic and wildfires hospital officials. 
+																	That of the courageous little seamstress who refused to relinquish her bus seat to a White man. 
+																	Officials confirmed to the Press Democrat yesterday that the workers were sent because of the worker shortage caused. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Guard troops pose with a statue of Rosa Parks inside the US. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/2e/6d/d62e6d5d775007ecdac0e7ed88ec40ce.jpg" data-lightbox="roadtrip" data-title="Rosa Parks Was Arrested For Second Time On This Date In 1956 Rosa Parks Rosa Parks Story Rosa Parks Arrest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/2e/6d/d62e6d5d775007ecdac0e7ed88ec40ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCnRCCS9tBGl7vVlddCmS-FlxvEjDkY_hjXg';" alt="Rosa Parks Was Arrested For Second Time On This Date In 1956 Rosa Parks Rosa Parks Story Rosa Parks Arrest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rosa Parks Was Arrested For Second Time On This Date In 1956 Rosa Parks Rosa Parks Story Rosa Parks Arrest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cc/11/51/cc1151ddf86e5f7053dee39f4384b676.jpg" data-lightbox="roadtrip" data-title="Today We Celebrate Rosaparks The First Lady Of Civil Rights Blackhistorymonth African American History Month African American History Rosa Parks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cc/11/51/cc1151ddf86e5f7053dee39f4384b676.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnKOhM_pDFNQudXjYIZWF1Gekk9LGWDKbMag';" alt="Today We Celebrate Rosaparks The First Lady Of Civil Rights Blackhistorymonth African American History Month African American History Rosa Parks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Today We Celebrate Rosaparks The First Lady Of Civil Rights Blackhistorymonth African American History Month African American History Rosa Parks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/43/d0/4443d07fe59c58fa1d806981bdb9119e.jpg" data-lightbox="roadtrip" data-title="Pin By John T Xanthopoulos On History Rosa Parks Civil Rights Montgomery Bus Boycott">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/43/d0/4443d07fe59c58fa1d806981bdb9119e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTirCNZGRJVCWIkKQL4EEDiJU1zw9n-dVaXfQ';" alt="Pin By John T Xanthopoulos On History Rosa Parks Civil Rights Montgomery Bus Boycott">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By John T Xanthopoulos On History Rosa Parks Civil Rights Montgomery Bus Boycott</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/3f/47/773f47f2e6532b5b47615ebd1ba5cb52.jpg" data-lightbox="roadtrip" data-title="Rosa Parks Pioneer Of Civil Rights 1955 Rosa Parks Women In History Rosa Parks Biography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/3f/47/773f47f2e6532b5b47615ebd1ba5cb52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq0jAj-lhKn1Io2CbGL8pLzahOzobkM9cVHw';" alt="Rosa Parks Pioneer Of Civil Rights 1955 Rosa Parks Women In History Rosa Parks Biography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rosa Parks Pioneer Of Civil Rights 1955 Rosa Parks Women In History Rosa Parks Biography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/f2/67/7ef267cec4a7595675972feb1a1521bd.jpg" data-lightbox="roadtrip" data-title="The Boycott That Changed The South Forever Montgomery Bus Boycott Bus Boycott Rosa Parks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/f2/67/7ef267cec4a7595675972feb1a1521bd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiVrcUkZYBtifWE4qvEULh7PqxMps_kxFZBg';" alt="The Boycott That Changed The South Forever Montgomery Bus Boycott Bus Boycott Rosa Parks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Boycott That Changed The South Forever Montgomery Bus Boycott Bus Boycott Rosa Parks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/fa/48/26fa48cb696b97ac8e0bfe32beec045f.jpg" data-lightbox="roadtrip" data-title="Pin By Blythe Grossberg On Civil Rights Movement Montgomery Bus Boycott Bus Boycott Rosa Parks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/fa/48/26fa48cb696b97ac8e0bfe32beec045f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfwoZgoNQI68eIMlstAiDl7UGpTBLB57NUJw';" alt="Pin By Blythe Grossberg On Civil Rights Movement Montgomery Bus Boycott Bus Boycott Rosa Parks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Blythe Grossberg On Civil Rights Movement Montgomery Bus Boycott Bus Boycott Rosa Parks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a3/55/fd/a355fd761c5f4b676b4a28fd00db63b7.jpg" data-lightbox="roadtrip" data-title="Pin On Black History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a3/55/fd/a355fd761c5f4b676b4a28fd00db63b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh-XzTBUVKE68rd_msPkaBM6asmwWCwl2JqA';" alt="Pin On Black History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Black History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/ca/c1/4acac19c43db1d9a9d93013e4cfe8d11.jpg" data-lightbox="roadtrip" data-title="Pin On Civil Rights Movement In Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/ca/c1/4acac19c43db1d9a9d93013e4cfe8d11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjlBvBGmi1prghNLNx6If3BnGO8tjLQx4sAg';" alt="Pin On Civil Rights Movement In Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Civil Rights Movement In Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/61/17/9461171e7ac2e08ec5b0831694aa8743.jpg" data-lightbox="roadtrip" data-title="Http Zinnedproject Org Wp Content Uploads 2009 10 Politics Of Childrens Lit Jpg Black History Month Pictures Montgomery Bus Boycott Rosa Parks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/61/17/9461171e7ac2e08ec5b0831694aa8743.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYgEnN0gqknPid8lpQEoIkVjMSsbRJnHbNRA';" alt="Http Zinnedproject Org Wp Content Uploads 2009 10 Politics Of Childrens Lit Jpg Black History Month Pictures Montgomery Bus Boycott Rosa Parks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Zinnedproject Org Wp Content Uploads 2009 10 Politics Of Childrens Lit Jpg Black History Month Pictures Montgomery Bus Boycott Rosa Parks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/31/8f/b1/318fb16e8a931148bf4ce13faf68218e--bus-boycott-montgomery-alabama.jpg" data-lightbox="roadtrip" data-title="Rosa Parks She Refused To Give Up Her Seat On A Bus To Spark The Civil Rights Movement Women In History Rosa Parks Inspirational People">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/31/8f/b1/318fb16e8a931148bf4ce13faf68218e--bus-boycott-montgomery-alabama.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuvRL1-_hfGNmqPY2bzxraf3H35pRKzc34Qg';" alt="Rosa Parks She Refused To Give Up Her Seat On A Bus To Spark The Civil Rights Movement Women In History Rosa Parks Inspirational People">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rosa Parks She Refused To Give Up Her Seat On A Bus To Spark The Civil Rights Movement Women In History Rosa Parks Inspirational People</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/bf/c9/a8bfc9625729434bb55ef8e32a50551c.jpg" data-lightbox="roadtrip" data-title="The New York Public Library Rosa Parks Martin Luther King Jr Martin Luther King">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/bf/c9/a8bfc9625729434bb55ef8e32a50551c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrUR_KInU2kL-VhPREi8sH9b4wTQl-tgGdbA';" alt="The New York Public Library Rosa Parks Martin Luther King Jr Martin Luther King">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The New York Public Library Rosa Parks Martin Luther King Jr Martin Luther King</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/19/96/3d1996ebb232fe4c677ec89ba6b85974.jpg" data-lightbox="roadtrip" data-title="To Kill A Mockingbird Southern Reaction 1960 Bus Boycott Montgomery Bus Boycott Rosa Parks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/19/96/3d1996ebb232fe4c677ec89ba6b85974.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaM9U5h4HRV6qoZB2_b5DssCpec_6Wkawung';" alt="To Kill A Mockingbird Southern Reaction 1960 Bus Boycott Montgomery Bus Boycott Rosa Parks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To Kill A Mockingbird Southern Reaction 1960 Bus Boycott Montgomery Bus Boycott Rosa Parks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/5f/03/5e5f037d2c66a83b259a84373d0199f2.jpg" data-lightbox="roadtrip" data-title="Pin On 1950 S I Was Born">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/5f/03/5e5f037d2c66a83b259a84373d0199f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBAKqjlkivOUNh0dsCxNr4KkGSphZo2YngLg';" alt="Pin On 1950 S I Was Born">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 1950 S I Was Born</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/reba-mcentire-and-vicki-lawrence.html">Reba Mcentire And Vicki Lawrence</a></li>
+													<li class="list-group-item"><a href="/reba-mcentire-and-vince-gill.html">Reba Mcentire And Vince Gill</a></li>
+													<li class="list-group-item"><a href="/salvation-army-jobs-orange-county-ca.html">Salvation Army Jobs Orange County Ca</a></li>
+													<li class="list-group-item"><a href="/rfp-indonesia.html">Rfp Indonesia</a></li>
+													<li class="list-group-item"><a href="/rong-vang-ostrava.html">Rong Vang Ostrava</a></li>
+													<li class="list-group-item"><a href="/salvation-army-orange-hours.html">Salvation Army Orange Hours</a></li>
+													<li class="list-group-item"><a href="/red-army-cargo-pants.html">Red Army Cargo Pants</a></li>
+													<li class="list-group-item"><a href="/salvation-army-crf.html">Salvation Army Crf</a></li>
+													<li class="list-group-item"><a href="/sa-army-songs-download.html">Sa Army Songs Download</a></li>
+													<li class="list-group-item"><a href="/salvation-army-arc-richmond-va.html">Salvation Army Arc Richmond Va</a></li>
+													<li class="list-group-item"><a href="/salvation-army-orange-tx.html">Salvation Army Orange Tx</a></li>
+													<li class="list-group-item"><a href="/russian-national-guard.html">Russian National Guard</a></li>
+													<li class="list-group-item"><a href="/reba-mcentire-and-taylor-swift.html">Reba Mcentire And Taylor Swift</a></li>
+													<li class="list-group-item"><a href="/salvation-army-rehab-center-alexandria-va.html">Salvation Army Rehab Center Alexandria Va</a></li>
+													<li class="list-group-item"><a href="/rickenbacker-ang.html">Rickenbacker Ang</a></li>
+													<li class="list-group-item"><a href="/salvation-army-rehab-richmond-va.html">Salvation Army Rehab Richmond Va</a></li>
+													<li class="list-group-item"><a href="/salvation-army-commercial-song.html">Salvation Army Commercial Song</a></li>
+													<li class="list-group-item"><a href="/rumah-cong-api.html">Rumah Cong Api</a></li>
+													<li class="list-group-item"><a href="/salvation-army-orange-grove.html">Salvation Army Orange Grove</a></li>
+													<li class="list-group-item"><a href="/reba-mcentire-and-leann-rimes.html">Reba Mcentire And Leann Rimes</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

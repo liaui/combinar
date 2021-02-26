@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>What Is National Guard Kicker - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "What Is National Guard Kicker",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/04/de/e0/04dee0107c4144ad2fe808f4810a0b3a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=what+is+national+guard+kicker",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>What Is National Guard Kicker</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Founded in 1636 as a citizen force the US. The GI Bill Kicker can increase monthly GI Bill payments by as much as 950. 50 or higher on ASVAB enlist in a critical skillunit. <br>				
+			</p>
+										<a class="badge badge-primary" href="/dc-national-guard-history.html">dc national guard history</a>
+											<a class="badge badge-warning" href="/delaware-national-guard-military-ball.html">delaware national guard military ball</a>
+											<a class="badge badge-success" href="/difference-between-air-force-and-air-national-guard.html">difference between air force and air national guard</a>
+											<a class="badge badge-primary" href="/creep-grain-size.html">creep grain size</a>
+											<a class="badge badge-light" href="/crf-l-2020.html">crf l 2020</a>
+											<a class="badge badge-warning" href="/dc-coast-guard.html">dc coast guard</a>
+											<a class="badge badge-info" href="/creep-genre.html">creep genre</a>
+											<a class="badge badge-warning" href="/cypriot-national-guard-equipment.html">cypriot national guard equipment</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to pay a visit to the right blog.  Our website provides you with hints for seeing the maximum quality video and picture content, search and locate more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, particularly Youtube, so we recommend this video that you see.  It is also possible to contribute to supporting this website by sharing videos and graphics that you like on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/b5/1a/f5b51a5e5bee32ccb24126ffeb5e0877.jpg" data-lightbox="roadtrip" data-title="Pin On New Recruits">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/b5/1a/f5b51a5e5bee32ccb24126ffeb5e0877.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbG46AKoi2dsqrpblYxS1xFv4-TobzVdwcA';" alt="Pin On New Recruits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On New Recruits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/1b/ba/871bbad9963563a11398459995c2e8be.png" data-lightbox="roadtrip" data-title="Pin On South Dakota Army National Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/1b/ba/871bbad9963563a11398459995c2e8be.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm8U6oGTGzZNfIfbnZ_KXzjJdj1F0PcjrSHg';" alt="Pin On South Dakota Army National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On South Dakota Army National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/18/28/b3/1828b358c89fbbbd832827455f270e86--army-football-football-players.jpg" data-lightbox="roadtrip" data-title="Pin On Sportsmen">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/18/28/b3/1828b358c89fbbbd832827455f270e86--army-football-football-players.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpKCP2r9kc7wiCViyCmB-ve2doi5pQzJ8SUg';" alt="Pin On Sportsmen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sportsmen</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/65/4d/05654dd0ad475a88008ac867c9117d8b.jpg" data-lightbox="roadtrip" data-title="Respect Door Kicker Inc Military Humor Military Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/65/4d/05654dd0ad475a88008ac867c9117d8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMCi1CJDTMZy89NBdGkSZr3jgWYz2gZe6UbQ';" alt="Respect Door Kicker Inc Military Humor Military Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Respect Door Kicker Inc Military Humor Military Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/f1/d2/6bf1d2c5aa8b9b65018bbf1434109a00.jpg" data-lightbox="roadtrip" data-title="Us Army Reserve Pay Major League Door Kicker Unisex T Shirt All Over Print24 99 In 2020 Army Patches Army Combat Uniform Us Army Jacket">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/f1/d2/6bf1d2c5aa8b9b65018bbf1434109a00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXu3Tq-ZCSOSpN115pJLIjXQkTXIK7Gm-v4Q';" alt="Us Army Reserve Pay Major League Door Kicker Unisex T Shirt All Over Print24 99 In 2020 Army Patches Army Combat Uniform Us Army Jacket">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Reserve Pay Major League Door Kicker Unisex T Shirt All Over Print24 99 In 2020 Army Patches Army Combat Uniform Us Army Jacket</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/88/a6/eb88a669a8c6cf31e767488aa256076d.jpg" data-lightbox="roadtrip" data-title="Pin On The Twilight Zone">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/88/a6/eb88a669a8c6cf31e767488aa256076d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9EwZTTdwpHZnIMZgd8RW_OXQsk8N5grThrA';" alt="Pin On The Twilight Zone">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On The Twilight Zone</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/bd/c1/e1/bdc1e189eed6169bbb365b52bc3bb227.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9EwZTTdwpHZnIMZgd8RW_OXQsk8N5grThrA';" alt="Pin On The Twilight Zone">
+										<div class="card-body">
+						<h3 class="h5"><b>Soldiers may be eligible to receive additional GI Bill benefits through the Army National Guard MGIB-SR Kicker program.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>What is national guard kicker</strong>. 
+								
+																	Soldiers may be eligible to receive additional GI Bill benefits through the Army National Guard Kicker program. 
+																	The Kicker program is not an entitlement and Soldiers must meet the eligibility requirements and sign a valid Kicker contract in order to qualify. 
+																	It should be noted that you first need to qualify then apply for the Army National Guard Kicker. 
+																	Non-prior service applicants enlisted only. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army National Guard Montgomery GI Bill Kicker program encourages qualified applicants and Soldiers to enlist into critical military jobs and units. 
+																	The kicker can last as long as 36 months and cover as much as 12600. 
+																	The Kicker incentive is an additional education payment to attract Soldiers to specific units skills or positions to meet and sustain ARNG readiness requirements Reference. 
+																	The United States National Guard is part of the reserve components of the United States Army and the United States Air ForceIt is a military reserve force composed of National Guard military members or units of each state and the territories of Guam the Virgin Islands and Puerto Rico and the District of Columbia for a total of 54 separate organizations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The GI Bill allocates funds through the Department of Defense to help American military service members further their education at colleges and trade schools. 
+																	How do I qualify. 
+																	The GI Bill Kicker also known as the College Fund is a supplement or bonus to the standard GI Bill. 
+																	Payments are pro-rated for part-time study. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Montgomery GI Bill-Selected Reserve MGIB-SR Kicker. 
+																	Army National Guard Kicker. 
+																	The Kicker is an incentive given upon enlistmentreenlistment that adds an additional education payment to attract Soldiers to specific units skills or positions to meet and sustain ARNG readiness requirements. 
+																	E-Mail Address Password Remember Me Login Forgot Your Password. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The GI Bill Kicker is an incentive given upon enlistmentreenlistment that adds an additional education payment to attract Soldiers to specific units skills or positions to meet and sustain ARNG readiness requirements. 
+																	WASHINGTON -- Officials released new guidance Tuesday on the Armys Selective Retention Bonus Program which includes first-ever bonuses up to 52000 for those who reenlist for critical Security. 
+																	How Do I Qualify. 
+																	National Guard is a ready reserve group of 450000 men and women voluntarily serving in all 50 states and four US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Payments are pro-rated for part-time study. 
+																	The Kicker is an incentive given upon enlistmentreenlistment that adds an additional education payment to attract Soldiers to specific units skills or positions to meet and sustain ARNG readiness requirements. 
+																	The Kicker program is not an entitlement and Soldiers must meet the eligibility requirements and sign a valid Kicker contract in order to qualify. 
+																	The 2018 OAB is 10000 and the WOAB is 20000. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The OAB and WOAB are offered to newly commissioned officers and newly appointed warrant officers who serve in a traditional status in the Army National Guard. 
+																	KSARNG FOOTER Call 785 646-3600 or Text GUARD to GOARMY 462769. 
+																	The GI Bill Kicker -- also known as the Army Navy or Marine Corps College Funds -- is offered by the DoD through each service branch as part of an enlistment or reenlistment contract or for. 
+																	A kicker is an enlistment or reenlistment education incentive that certain Selected Reserve members can use to increase the amount of money they receive when using their Montgomery GI Bill-Selected Reserve MGIB-SR to go to school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Guard GI Bill Kicker The ARNG GI Bill Kicker is not an entitlement but an additional benefit to the Montgomery GI Bill Selected Reserve MGIBSR Chapter 1606 or Montgomery GI Bill Active. 
+																	Army National Guard Kicker. 
+																	For the latest information please contact your local Kansas Army National Guard Recruiter. 
+																	This program applies only to specific critical Military Occupational Specialties MOSs and certain deployable units. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army National Guard Kicker In addition to the Montgomery GI Bill the Army National Guard Kicker pays up to 350 per month on living expenses. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/ea/f6/cbeaf69bf7e781097d46fcad19108e1c.jpg" data-lightbox="roadtrip" data-title="Circa 1960 S Quarterback Kicker George Blanda 16 Of The Houston Oilers Drops Back To Pass Behind Guard Bob Football Vikings Football American Football League">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/ea/f6/cbeaf69bf7e781097d46fcad19108e1c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1jjEFr14tZ6mxGjrmkystLU6fEIP6Ug6Xxg';" alt="Circa 1960 S Quarterback Kicker George Blanda 16 Of The Houston Oilers Drops Back To Pass Behind Guard Bob Football Vikings Football American Football League">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Circa 1960 S Quarterback Kicker George Blanda 16 Of The Houston Oilers Drops Back To Pass Behind Guard Bob Football Vikings Football American Football League</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/03/d4/4203d45e57f0ff7f6f4d4ae94e733b5d.jpg" data-lightbox="roadtrip" data-title="Pin On Us Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/03/d4/4203d45e57f0ff7f6f4d4ae94e733b5d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKxv252xOg5ouziArx1cB4LF_Ta6qhqeeHOQ';" alt="Pin On Us Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Us Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/e0/5c/c0e05cc0d6f93fd3079b2f1003ae99ef.jpg" data-lightbox="roadtrip" data-title="Stung By Love Former Georgia Tech Kicker Scott Blair And Former Softball Centerfielder Christy Jones Are Getting Mar Georgia Tech Love Connection Soccer Field">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/e0/5c/c0e05cc0d6f93fd3079b2f1003ae99ef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTAVHUZ5g7Az6GdQWH3J_7sGz7f4n7_cc6pg';" alt="Stung By Love Former Georgia Tech Kicker Scott Blair And Former Softball Centerfielder Christy Jones Are Getting Mar Georgia Tech Love Connection Soccer Field">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stung By Love Former Georgia Tech Kicker Scott Blair And Former Softball Centerfielder Christy Jones Are Getting Mar Georgia Tech Love Connection Soccer Field</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/40/ef/5a/40ef5ad553748b12f706d7b9f77eb587.jpg" data-lightbox="roadtrip" data-title="Right Guard Paul Howard 60 Congratulates Kicker Rich Karlis 3 After Scoring A Field Goal Septe Nfl Denver Broncos Denver Broncos Football Broncos Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/40/ef/5a/40ef5ad553748b12f706d7b9f77eb587.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRXHlv-1SQG_DJRUoqiw7q8Cr8xXQU0kIcSA';" alt="Right Guard Paul Howard 60 Congratulates Kicker Rich Karlis 3 After Scoring A Field Goal Septe Nfl Denver Broncos Denver Broncos Football Broncos Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Right Guard Paul Howard 60 Congratulates Kicker Rich Karlis 3 After Scoring A Field Goal Septe Nfl Denver Broncos Denver Broncos Football Broncos Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/ac/7a/35ac7af6c84d1aaacc0168bb55e9458b.jpg" data-lightbox="roadtrip" data-title="Kicker Of Elves Dyeing Used Clothing In Kabul National Clothes Line Kabul Bohemian Style Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/ac/7a/35ac7af6c84d1aaacc0168bb55e9458b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMzZXJyeQ4MPUz7aGBEkT8xuDBOkMgkMlpgg';" alt="Kicker Of Elves Dyeing Used Clothing In Kabul National Clothes Line Kabul Bohemian Style Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kicker Of Elves Dyeing Used Clothing In Kabul National Clothes Line Kabul Bohemian Style Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/0b/c1/e90bc1c2ad848efe47bcd843314fd549.jpg" data-lightbox="roadtrip" data-title="Major League Door Kicker T Shirt Zazzle Com In 2020 Door Kicker Kicker T Shirt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/0b/c1/e90bc1c2ad848efe47bcd843314fd549.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDhW8t9d8NGwDeSlhFE2CZ_V7ybIG8wzUc5Q';" alt="Major League Door Kicker T Shirt Zazzle Com In 2020 Door Kicker Kicker T Shirt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Major League Door Kicker T Shirt Zazzle Com In 2020 Door Kicker Kicker T Shirt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/70/e7/ad70e70700fb95e122a7364ebe80e61f.jpg" data-lightbox="roadtrip" data-title="To Any Young Men And Women Job Training Veterans Benefits Trenton">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/70/e7/ad70e70700fb95e122a7364ebe80e61f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNMksVTU6u6Jr64OSbK62IQ0ywjOoPaLerRQ';" alt="To Any Young Men And Women Job Training Veterans Benefits Trenton">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To Any Young Men And Women Job Training Veterans Benefits Trenton</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/67/f6/3c67f663fb31a6198271e976b2ccc5bc.jpg" data-lightbox="roadtrip" data-title="Nfl Week 7 In Photos Steelers Girl Nfl Steelers Win">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/67/f6/3c67f663fb31a6198271e976b2ccc5bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVE_WGo5v7OwKtUfyIkwc9WjKKNr1e8m2G4Q';" alt="Nfl Week 7 In Photos Steelers Girl Nfl Steelers Win">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nfl Week 7 In Photos Steelers Girl Nfl Steelers Win</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/de/e0/04dee0107c4144ad2fe808f4810a0b3a.jpg" data-lightbox="roadtrip" data-title="Pin By Brian Gridley On Ncaa Fighting Irish Football Irish Football Vintage Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/de/e0/04dee0107c4144ad2fe808f4810a0b3a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS70mswuF_PTWtgo5PiInx-UbSA8yq1fU8uVw';" alt="Pin By Brian Gridley On Ncaa Fighting Irish Football Irish Football Vintage Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Brian Gridley On Ncaa Fighting Irish Football Irish Football Vintage Football</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/fd/1a/4cfd1aac5c58fae48055c898d603fa7c.jpg" data-lightbox="roadtrip" data-title="Alabama Won The 1964 National Championship Featuring Joe Namath From The 2016 Alabama Football Alabama Crimson Tide Football Alabama Crimson Tide Joe Namath">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/fd/1a/4cfd1aac5c58fae48055c898d603fa7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEuQ0U33_ZZrtzBa5zvK7nr5PU6r7my0MtgA';" alt="Alabama Won The 1964 National Championship Featuring Joe Namath From The 2016 Alabama Football Alabama Crimson Tide Football Alabama Crimson Tide Joe Namath">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alabama Won The 1964 National Championship Featuring Joe Namath From The 2016 Alabama Football Alabama Crimson Tide Football Alabama Crimson Tide Joe Namath</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f1/b3/45/f1b345e592e6a5ae8db0f2f3d9f5970c.jpg" data-lightbox="roadtrip" data-title="Place Kicker Doug Brien Of The New York Jets Watches And Reacts As New York Jets Kicker New York">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f1/b3/45/f1b345e592e6a5ae8db0f2f3d9f5970c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzUoWiHSmQz2c3KzGOtAV9iZVNOU7RRB1cVA';" alt="Place Kicker Doug Brien Of The New York Jets Watches And Reacts As New York Jets Kicker New York">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Place Kicker Doug Brien Of The New York Jets Watches And Reacts As New York Jets Kicker New York</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/c1/e1/bdc1e189eed6169bbb365b52bc3bb227.jpg" data-lightbox="roadtrip" data-title="Pin By Jared Carter On Love The Military Marine United States Marine Corps Marines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/c1/e1/bdc1e189eed6169bbb365b52bc3bb227.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiDcV4g-jx_FcgPSJrf1iI8SWqo2Wfuzg_TA';" alt="Pin By Jared Carter On Love The Military Marine United States Marine Corps Marines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jared Carter On Love The Military Marine United States Marine Corps Marines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/0b/5f/ae0b5f4df10cf04fe5a87a5323d7874a.jpg" data-lightbox="roadtrip" data-title="63 Yard Field Goal By Kicker Tom Dempsey Nfl Record New Orleans Saints Nfl League Who Dat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/0b/5f/ae0b5f4df10cf04fe5a87a5323d7874a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJWTVZaNVCSxCIedvIpHtHSrSmlCPh3Zhcdg';" alt="63 Yard Field Goal By Kicker Tom Dempsey Nfl Record New Orleans Saints Nfl League Who Dat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">63 Yard Field Goal By Kicker Tom Dempsey Nfl Record New Orleans Saints Nfl League Who Dat</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/netguard-nokia.html">Netguard Nokia</a></li>
+													<li class="list-group-item"><a href="/netguard-faq.html">Netguard Faq</a></li>
+													<li class="list-group-item"><a href="/netguard-ios.html">Netguard Ios</a></li>
+													<li class="list-group-item"><a href="/navy-national-guard.html">Navy National Guard</a></li>
+													<li class="list-group-item"><a href="/netguard-block-connections-without-vpn.html">Netguard Block Connections Without Vpn</a></li>
+													<li class="list-group-item"><a href="/nationwide-army-national-guard-agr-jobs.html">Nationwide Army National Guard Agr Jobs</a></li>
+													<li class="list-group-item"><a href="/netguard-block-system-apps.html">Netguard Block System Apps</a></li>
+													<li class="list-group-item"><a href="/netguard-lineageos.html">Netguard Lineageos</a></li>
+													<li class="list-group-item"><a href="/netguard-iphone-app.html">Netguard Iphone App</a></li>
+													<li class="list-group-item"><a href="/nebraska-army-national-guard-recruiter.html">Nebraska Army National Guard Recruiter</a></li>
+													<li class="list-group-item"><a href="/ncbi-report.html">Ncbi Report</a></li>
+													<li class="list-group-item"><a href="/netguard-apk-github.html">Netguard Apk Github</a></li>
+													<li class="list-group-item"><a href="/netguard-exe.html">Netguard Exe</a></li>
+													<li class="list-group-item"><a href="/neguard.html">Neguard</a></li>
+													<li class="list-group-item"><a href="/ncbi-carpal-tunnel-syndrome.html">Ncbi Carpal Tunnel Syndrome</a></li>
+													<li class="list-group-item"><a href="/ncbi-respiratory-failure.html">Ncbi Respiratory Failure</a></li>
+													<li class="list-group-item"><a href="/nebraska-army-national-guard-drill-schedule.html">Nebraska Army National Guard Drill Schedule</a></li>
+													<li class="list-group-item"><a href="/netguard-ios-alternative.html">Netguard Ios Alternative</a></li>
+													<li class="list-group-item"><a href="/netguard-cctv.html">Netguard Cctv</a></li>
+													<li class="list-group-item"><a href="/netguard-block-ads.html">Netguard Block Ads</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

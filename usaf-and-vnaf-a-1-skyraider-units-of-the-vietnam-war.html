@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/db/ff/89/dbff89c3338ac634ffeceaeaa7eefd2f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=usaf+and+vnaf+a+1+skyraider+units+of+the+vietnam+war",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Royal australian air force raaf mirage iiid mikoyan gurevich mig-21d. USAF and VNAF A-1 Skyraider Units of the Vietnam War Byron Hukee Jim Laurier USAF Skyraider units were originally tasked to serve as quasi-training units for the fledgling VNAF. Eventually no fewer than four USAF and seven VNAF Skyraider units saw service in Vietnam. <br>				
+			</p>
+										<a class="badge badge-success" href="/jisico-j-300s.html">jisico j 300s</a>
+											<a class="badge badge-warning" href="/jis-a-5908.html">jis a 5908</a>
+											<a class="badge badge-danger" href="/jict-adalah.html">jict adalah</a>
+											<a class="badge badge-light" href="/jict-tracking.html">jict tracking</a>
+											<a class="badge badge-danger" href="/jilbab-hijau-army-cocok-baju-warna-apa.html">jilbab hijau army cocok baju warna apa</a>
+											<a class="badge badge-light" href="/jis-c-1601.html">jis c 1601</a>
+											<a class="badge badge-primary" href="/jisoo-blackpink-wallpaper.html">jisoo blackpink wallpaper</a>
+											<a class="badge badge-dark" href="/jgbhj.html">jgbhj</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to visit the right blog.  Our site provides you with hints for viewing the highest quality video and image content, search and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, so we recommend this video that you view.  It is also possible to bring about supporting this website by sharing videos and graphics that you enjoy on this site on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/ff/89/dbff89c3338ac634ffeceaeaa7eefd2f.jpg" data-lightbox="roadtrip" data-title="Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War Paperback Overstock Com Shopping The Best Deals On Military History Vietnam War Usaf Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/ff/89/dbff89c3338ac634ffeceaeaa7eefd2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBJunWCMmwVQZdmgw1htlyhbxQ9vjPbsutLw';" alt="Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War Paperback Overstock Com Shopping The Best Deals On Military History Vietnam War Usaf Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War Paperback Overstock Com Shopping The Best Deals On Military History Vietnam War Usaf Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/a5/c9/62a5c9676367d879bce65d08ccd6da20.jpg" data-lightbox="roadtrip" data-title="Xgtfghnthnhngyujkykyui Vintage Aircraft Military Aircraft Military Airplane">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/a5/c9/62a5c9676367d879bce65d08ccd6da20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZZWp6edL3_g7WNpul37bfYeNZrPA4srciAw';" alt="Xgtfghnthnhngyujkykyui Vintage Aircraft Military Aircraft Military Airplane">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xgtfghnthnhngyujkykyui Vintage Aircraft Military Aircraft Military Airplane</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/fa/3e/d9fa3ef09efe84d58e68cbfafbf9dbd5.jpg" data-lightbox="roadtrip" data-title="Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War Byron E Hukee Google Livres Livre">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/fa/3e/d9fa3ef09efe84d58e68cbfafbf9dbd5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUSDWKYt91lf6ViyDukeQvlXdsTSqro4EP8g';" alt="Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War Byron E Hukee Google Livres Livre">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War Byron E Hukee Google Livres Livre</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/db/ff/89/dbff89c3338ac634ffeceaeaa7eefd2f.jpg" data-lightbox="roadtrip" data-title="Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War Paperback Overstock Com Shopping The Best Deals On Military History Vietnam War Usaf Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/db/ff/89/dbff89c3338ac634ffeceaeaa7eefd2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX4rwfPyKLoQ3VSCnqgy6ndMwVZvlSOUGN3Q';" alt="Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War Paperback Overstock Com Shopping The Best Deals On Military History Vietnam War Usaf Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War Paperback Overstock Com Shopping The Best Deals On Military History Vietnam War Usaf Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/d7/0a/4cd70a58a89a2ae06592541e5f9ca7a5.jpg" data-lightbox="roadtrip" data-title="Pin On Air Supremacy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/d7/0a/4cd70a58a89a2ae06592541e5f9ca7a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi0GOnBV-IDqOmSryl6is-WNKAp0chuDTWgw';" alt="Pin On Air Supremacy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Air Supremacy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/f7/6b/faf76b97285bac7593eeeb5dea4b1aaa.jpg" data-lightbox="roadtrip" data-title="Ad Skyraider Units Of The Korean War Paperback Overstock Com Shopping The Best Deals On Military History Aircraft Vietnam War Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/f7/6b/faf76b97285bac7593eeeb5dea4b1aaa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpUfsSmFo3SmBnTIWb1z0sumTe0bqa5lavkA';" alt="Ad Skyraider Units Of The Korean War Paperback Overstock Com Shopping The Best Deals On Military History Aircraft Vietnam War Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ad Skyraider Units Of The Korean War Paperback Overstock Com Shopping The Best Deals On Military History Aircraft Vietnam War Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/600x315/b5/3d/eb/b53debe82053efb1b8ed68729c494c48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpUfsSmFo3SmBnTIWb1z0sumTe0bqa5lavkA';" alt="Ad Skyraider Units Of The Korean War Paperback Overstock Com Shopping The Best Deals On Military History Aircraft Vietnam War Vietnam">
+										<div class="card-body">
+						<h3 class="h5"><b>USAF and VNAF A-1 Skyraider Units of the Vietnam War.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Usaf and vnaf a 1 skyraider units of the vietnam war</strong>. 
+								
+																	Additionally one A-1 training squadron flew from Hurlburt Field Florida throughout the Vietnam War era. 
+																	USAF and VNAF A-1 Skyraider Units of the Vietnam War Combat Aircraft Book 97 eBook. 
+																	Hukee February 2013 by Jim Laurier ISBN. 
+																	Free delivery on qualified orders. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Eventually no fewer than four USAF and seven VNAF Skyraider units saw service in Vietnam. 
+																	Read USAF and VNAF A-1 Skyraider Units of the Vietnam War Combat Aircraft book reviews author details and more at Amazonin. 
+																	Hukee Byron E Laurier Jim. 
+																	Fast and free shipping free returns cash on delivery available on eligible purchase. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	8601406235335 from Amazons Book Store. 
+																	Equipped only with the two-seat models of the Skyraider American pilots were required to have VNAF observers in the aircraft for every mission. 
+																	Hukee Published by Osprey Publishing 2013 by Byron E. 
+																	Amazonin - Buy USAF and VNAF A-1 Skyraider Units of the Vietnam War Combat Aircraft book online at best prices in India on Amazonin. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hukee USAF and VNAF A-1 Skyraider Units of the Vietnam War Combat Aircraft by Byron E. 
+																	Buy USAF and VNAF A-1 Skyraider Units of the Vietnam War Illustrated by Jim Laurier By author Byron E. 
+																	From Amazons Book Store. 
+																	Buy USAF and VNAF A-1 Skyraider Units of the Vietnam War by Hukee Byron E Laurier Jim online on Amazonae at best prices. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Everyday low prices and free delivery on eligible orders. 
+																	In the ten years that this squadron was active nearly 1000 USAF and 300 VNAF pilots were trained in the Skyraider. 
+																	Following a short introduction and acknowledgements Huckee recaps the Skyraiders lovingly christened Spad by its pilots design development history and ordnance options. 
+																	Buy By Byron E. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Usaf vietnam northrop f-5a freedom fighter skoshi tiger tfw mcdonnell rf-101 voodoo trs trw douglas a-1h skyraider vnaf helio u-10b super courier ww2 japan ijn aichi m6a1 seiran floatplane special attack photo gallery. 
+																	Hukee Byron E Laurier Jim. 
+																	Kindle Store Select Your Cookie Preferences We use cookies and similar tools to enhance your shopping experience to provide our services understand how customers use our services so we can make improvements and display ads. 
+																	USAF and VNAF A-1 Skyraider Units of the Vietnam War Combat Aircraft Book 97 English Edition eBook. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Everyday low prices and free delivery on eligible orders. 
+																	Huckee himself an A-1 pilot in southeast Asia highlights the units tasked with flying propeller-driven Douglas fighter-bomber. 
+																	Everyday low prices and free delivery on eligible orders. 
+																	Additionally one A-1 training squadron flew from Hurlburt Field Florida throughout the Vietnam War era. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In Ospreys USAF and VNAF A-1 Skyraider Units of the Vietnam War author Byron E. 
+																	Hukee Byron E Laurier Jim. 
+																	USAF and VNAF A-1 Skyraider Units of the Vietnam War Combat Aircraft Byron E. 
+																	In the ten years that this squadron was active nearly 1000 USAF and 300 VNAF pilots were trained in the Skyraider. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	From Amazons Book Store. 
+																	Buy USAF and VNAF A-1 Skyraider Units of the Vietnam War Combat Aircraft by Byron E. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/df/29/cddf295a4918a8bb35ce5cf475dd5988.jpg" data-lightbox="roadtrip" data-title="Douglas A 1h Skyraider Tamiya 1 48 Scale By Juan Villegas Castro Us Navy Vietnam War Scale Model Warbirds Aeropla Model Airplanes Model Aircraft Warbirds">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/df/29/cddf295a4918a8bb35ce5cf475dd5988.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd2XWC20bk_fOjX5Is8et1HdPSfLA4HY0WIQ';" alt="Douglas A 1h Skyraider Tamiya 1 48 Scale By Juan Villegas Castro Us Navy Vietnam War Scale Model Warbirds Aeropla Model Airplanes Model Aircraft Warbirds">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Douglas A 1h Skyraider Tamiya 1 48 Scale By Juan Villegas Castro Us Navy Vietnam War Scale Model Warbirds Aeropla Model Airplanes Model Aircraft Warbirds</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/1b/a2/52/1ba252a0b51df8bce682806597b1288e.jpg" data-lightbox="roadtrip" data-title="An A 1h Skyraider Of The Vnaf 516th Fighter Squadron Being Loaded With Napalm At Da Nang Air Base In 1967 Wikiped Air America Fighter Aircraft Fighter Jets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/1b/a2/52/1ba252a0b51df8bce682806597b1288e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUGqVkdM-vke-UMtBM2YA5zi_YSUFA0mIIBw';" alt="An A 1h Skyraider Of The Vnaf 516th Fighter Squadron Being Loaded With Napalm At Da Nang Air Base In 1967 Wikiped Air America Fighter Aircraft Fighter Jets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">An A 1h Skyraider Of The Vnaf 516th Fighter Squadron Being Loaded With Napalm At Da Nang Air Base In 1967 Wikiped Air America Fighter Aircraft Fighter Jets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/150x150/0d/8d/12/0d8d126e002867fd320e7d7d7dfe8743.jpg" data-lightbox="roadtrip" data-title="Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War Paperback Overstock Com Shopping The Best Deals On Military History Vietnam War Usaf Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/150x150/0d/8d/12/0d8d126e002867fd320e7d7d7dfe8743.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc8TnLF3Vxkp29wosfhsucBrqpzJpS7PooxA';" alt="Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War Paperback Overstock Com Shopping The Best Deals On Military History Vietnam War Usaf Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usaf And Vnaf A 1 Skyraider Units Of The Vietnam War Paperback Overstock Com Shopping The Best Deals On Military History Vietnam War Usaf Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/04/e3/ab04e3dc714d4a1112fe6dea291a437b.jpg" data-lightbox="roadtrip" data-title="Pin By Vivtoralfredogelsi On Aviation Art In 2020 Aircraft Art Aviation Art Vintage Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/04/e3/ab04e3dc714d4a1112fe6dea291a437b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSegeqe_OqCiWnO7gdIvwmJKo0SUNGrB-C6A';" alt="Pin By Vivtoralfredogelsi On Aviation Art In 2020 Aircraft Art Aviation Art Vintage Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Vivtoralfredogelsi On Aviation Art In 2020 Aircraft Art Aviation Art Vintage Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/10/f7/1a10f78c58e4017bec512f0700d2a532.jpg" data-lightbox="roadtrip" data-title="T 23 Douglas A 26c Invader N9161z Butler Aircraft Co Air Tanker 1968 Aircraft Wildland Fire Warplane">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/10/f7/1a10f78c58e4017bec512f0700d2a532.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAtAwt54R3aqtSXjr37cLphqSFtVgRcpE1gw';" alt="T 23 Douglas A 26c Invader N9161z Butler Aircraft Co Air Tanker 1968 Aircraft Wildland Fire Warplane">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">T 23 Douglas A 26c Invader N9161z Butler Aircraft Co Air Tanker 1968 Aircraft Wildland Fire Warplane</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/04/33/f00433e4963a449cfe2eb465d5c5550b.jpg" data-lightbox="roadtrip" data-title="Chico The Gunfighter Art Print By Wade Meyers Vietnam War Aircraft Art Aviation Geek">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/04/33/f00433e4963a449cfe2eb465d5c5550b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRcP2X3hdx-MxbhhiBHliwzpzeFS9GF-skgQ';" alt="Chico The Gunfighter Art Print By Wade Meyers Vietnam War Aircraft Art Aviation Geek">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chico The Gunfighter Art Print By Wade Meyers Vietnam War Aircraft Art Aviation Geek</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/06/67/fe06672f878f0ca28a3a89e56187d334.jpg" data-lightbox="roadtrip" data-title="F 111 Aardvark Airplane Art Aircraft Art Aviation Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/06/67/fe06672f878f0ca28a3a89e56187d334.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF0g_fVz7E7bktZcIOeJ_PjwlVtBCkx-kBpQ';" alt="F 111 Aardvark Airplane Art Aircraft Art Aviation Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">F 111 Aardvark Airplane Art Aircraft Art Aviation Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/b5/3d/eb/b53debe82053efb1b8ed68729c494c48.jpg" data-lightbox="roadtrip" data-title="Vietnam War The Prolonged Struggle Between The United States And Vietnam Has Had Numerous Dreadful Chapters One Of Them Was Vietnam War Agent Orange Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/b5/3d/eb/b53debe82053efb1b8ed68729c494c48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI6F7xEVJQSApPv2I6Lkbr7H_GrT8fZa9brg';" alt="Vietnam War The Prolonged Struggle Between The United States And Vietnam Has Had Numerous Dreadful Chapters One Of Them Was Vietnam War Agent Orange Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam War The Prolonged Struggle Between The United States And Vietnam Has Had Numerous Dreadful Chapters One Of Them Was Vietnam War Agent Orange Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/12/0b/d0120bf8593f663db27bd66a1e02f55b.jpg" data-lightbox="roadtrip" data-title="Italeri 0153 Fairchild Ac 119k Gunship Jpg 560 365 Gunship Aircraft Art Fighter Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/12/0b/d0120bf8593f663db27bd66a1e02f55b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHMUU5MwcDBg7X-PJYf8wpPWKrLqHv0hZoCA';" alt="Italeri 0153 Fairchild Ac 119k Gunship Jpg 560 365 Gunship Aircraft Art Fighter Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Italeri 0153 Fairchild Ac 119k Gunship Jpg 560 365 Gunship Aircraft Art Fighter Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/02/da/f402da8be23764f527229306f15603d9.jpg" data-lightbox="roadtrip" data-title="O 1 Bird Dog Art Ecklund 10 Jpg 600 431 Vietnam Vietnam War Cessna">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/02/da/f402da8be23764f527229306f15603d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1EC571aVKLPoZp1vcRvMA5xeBC-sm00bPgw';" alt="O 1 Bird Dog Art Ecklund 10 Jpg 600 431 Vietnam Vietnam War Cessna">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">O 1 Bird Dog Art Ecklund 10 Jpg 600 431 Vietnam Vietnam War Cessna</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/d1/c3/4b/d1c34b1a8cf5706bf7f127bca6d49022.jpg" data-lightbox="roadtrip" data-title="F 4 Phantoms Google Search While I Was Stationed At Cam Rahn Bay Airbase 1969 1970 Provided Security Perimeter Guard Duty For The 12th Tactical Figh Aviones">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/d1/c3/4b/d1c34b1a8cf5706bf7f127bca6d49022.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIdzrZwvStjoXNiF7WMZiFV7ZoMx58XPhe5A';" alt="F 4 Phantoms Google Search While I Was Stationed At Cam Rahn Bay Airbase 1969 1970 Provided Security Perimeter Guard Duty For The 12th Tactical Figh Aviones">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">F 4 Phantoms Google Search While I Was Stationed At Cam Rahn Bay Airbase 1969 1970 Provided Security Perimeter Guard Duty For The 12th Tactical Figh Aviones</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/db/b5/3edbb55513d89e3c503388d9108b433b.jpg" data-lightbox="roadtrip" data-title="Pin On Products">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/db/b5/3edbb55513d89e3c503388d9108b433b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyuXAgqS0N6B5r84gO2kFFitoKWHozGKzwPA';" alt="Pin On Products">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Products</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/e4/09/d5/e409d57bad681e97965bacd1d6bcb99e.jpg" data-lightbox="roadtrip" data-title="Milspec Decal Ms 72 009 1 72 Scale F 14b Tomcat Vf 143 Pukin Dogs Ebay Dogs Decals Movie Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/e4/09/d5/e409d57bad681e97965bacd1d6bcb99e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2TrXeMtdFwB8WRADTPKVnS07PnrHAXospeA';" alt="Milspec Decal Ms 72 009 1 72 Scale F 14b Tomcat Vf 143 Pukin Dogs Ebay Dogs Decals Movie Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Milspec Decal Ms 72 009 1 72 Scale F 14b Tomcat Vf 143 Pukin Dogs Ebay Dogs Decals Movie Posters</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/sarung-jari-ff.html">Sarung Jari Ff</a></li>
+													<li class="list-group-item"><a href="/samsung-s6-edge.html">Samsung S6 Edge</a></li>
+													<li class="list-group-item"><a href="/samsung-s9.html">Samsung S9</a></li>
+													<li class="list-group-item"><a href="/sarung-mahda-pekalongan.html">Sarung Mahda Pekalongan</a></li>
+													<li class="list-group-item"><a href="/sarang-family.html">Sarang Family</a></li>
+													<li class="list-group-item"><a href="/sarang-burung-manyar.html">Sarang Burung Manyar</a></li>
+													<li class="list-group-item"><a href="/samsung-vs-oppo.html">Samsung Vs Oppo</a></li>
+													<li class="list-group-item"><a href="/sarangiran.html">Sarangiran</a></li>
+													<li class="list-group-item"><a href="/sarung-raja-mulia.html">Sarung Raja Mulia</a></li>
+													<li class="list-group-item"><a href="/sarung-tangan-yang-dipakai-penjaga-belakang-disebut.html">Sarung Tangan Yang Dipakai Penjaga Belakang Disebut</a></li>
+													<li class="list-group-item"><a href="/sarung-hp-kulit.html">Sarung Hp Kulit</a></li>
+													<li class="list-group-item"><a href="/samsung-s20.html">Samsung S20</a></li>
+													<li class="list-group-item"><a href="/sarung-helm.html">Sarung Helm</a></li>
+													<li class="list-group-item"><a href="/sarung-celana-wadimor.html">Sarung Celana Wadimor</a></li>
+													<li class="list-group-item"><a href="/sarung-hp.html">Sarung Hp</a></li>
+													<li class="list-group-item"><a href="/sarung-lukis.html">Sarung Lukis</a></li>
+													<li class="list-group-item"><a href="/sarangingayo-lyrics.html">Sarangingayo Lyrics</a></li>
+													<li class="list-group-item"><a href="/sarang-first-church.html">Sarang First Church</a></li>
+													<li class="list-group-item"><a href="/samsung-z-fold-2-harga-indonesia.html">Samsung Z Fold 2 Harga Indonesia</a></li>
+													<li class="list-group-item"><a href="/sarang-you.html">Sarang You</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

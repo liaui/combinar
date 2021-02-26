@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Song Dj Share Chat - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Song Dj Share Chat",
+  "datePublished": "2021-02-27",
+  "image": "https://cdn-cf.sharechat.com/a1151d4e-8a20-4f54-8b05-1b1ae12b9314-2cd851c0-1f45-4e76-8d55-b667bcc7c4a3_compressed_thumb.jpeg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+song+dj+share+chat",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Song Dj Share Chat</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Share Funny Romantic Videos Shayari.  Starring with SUMIT GOSWAMI SHANKY GOSWAMI And Song Is Directed by Deepesh Goyal Music Lab. <br>				
+			</p>
+										<a class="badge badge-info" href="/ellie-goulding-army-mp3-songs-free-download.html">ellie goulding army mp3 songs free download</a>
+											<a class="badge badge-light" href="/dr-ang-tacoma.html">dr ang tacoma</a>
+											<a class="badge badge-info" href="/download-songs-of-gods-army.html">download songs of gods army</a>
+											<a class="badge badge-info" href="/does-national-guard-count-as-active-duty.html">does national guard count as active duty</a>
+											<a class="badge badge-info" href="/download-video-jangan-bertengkar-lagi.html">download video jangan bertengkar lagi</a>
+											<a class="badge badge-warning" href="/difference-in-army-and-national-guard.html">difference in army and national guard</a>
+											<a class="badge badge-primary" href="/do-military-spouses-get-benefits.html">do military spouses get benefits</a>
+											<a class="badge badge-info" href="/dod-denied-request-for-national-guard-in-dc.html">dod denied request for national guard in dc</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to pay a visit to the ideal blog.  Our site provides you with hints for viewing the maximum quality video and picture content, search and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to view.  It is also possible to contribute to supporting this site by sharing videos and graphics that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/b0/51/c3b05181b69c206d77567323f577a125.jpg" data-lightbox="roadtrip" data-title="Captain Author On Sharechat Funny Romantic Videos Shayaris Quotes Galaxy Pictures Allu Arjun Images Prabhas Pics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/b0/51/c3b05181b69c206d77567323f577a125.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxPMMEefXMF1iG-JlN377GdF36GBNansroaA';" alt="Captain Author On Sharechat Funny Romantic Videos Shayaris Quotes Galaxy Pictures Allu Arjun Images Prabhas Pics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Captain Author On Sharechat Funny Romantic Videos Shayaris Quotes Galaxy Pictures Allu Arjun Images Prabhas Pics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn-cf.sharechat.com/1da8bb54_1590925880186_03.jpg" data-lightbox="roadtrip" data-title="100 Best Images Videos 2021 Dj Remix Songs Whatsapp Group Facebook Group Telegram Group">
+											<img class="card-img v-image ads-img " src="https://cdn-cf.sharechat.com/1da8bb54_1590925880186_03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx9MgrU6kqZAavl9wFLK8h7OjHnbos8l8vlQ';" alt="100 Best Images Videos 2021 Dj Remix Songs Whatsapp Group Facebook Group Telegram Group">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Best Images Videos 2021 Dj Remix Songs Whatsapp Group Facebook Group Telegram Group</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c0/f1/c4/c0f1c4a02c0ba517aeed1653a0da05db.jpg" data-lightbox="roadtrip" data-title="Life Changing Quotes Chandu 9966686481 Sharechat Life Quotes Pictures Telugu Inspirational Quotes Lesson Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c0/f1/c4/c0f1c4a02c0ba517aeed1653a0da05db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6JsLJthpKvBG3DfI6yFMOiZ8zNuTn7OJuig';" alt="Life Changing Quotes Chandu 9966686481 Sharechat Life Quotes Pictures Telugu Inspirational Quotes Lesson Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Life Changing Quotes Chandu 9966686481 Sharechat Life Quotes Pictures Telugu Inspirational Quotes Lesson Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/13/26/fe13261973c9ebc5958d3fb4a6523b1f.png" data-lightbox="roadtrip" data-title="Khyaal Rakhya Kar Song Status Video Download Song Status New Song Download Latest Bollywood Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/13/26/fe13261973c9ebc5958d3fb4a6523b1f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpPXWv59T-ST3diqSH_kswA9nJI9hPpvLAHg';" alt="Khyaal Rakhya Kar Song Status Video Download Song Status New Song Download Latest Bollywood Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Khyaal Rakhya Kar Song Status Video Download Song Status New Song Download Latest Bollywood Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c0/6a/f1/c06af1208804bb3e37f99200d2d0dca8.jpg" data-lightbox="roadtrip" data-title="Pin By Kiran Velagati On Dj Mix Songs In 2021 Folk Song Dj Songs List Folk Song Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c0/6a/f1/c06af1208804bb3e37f99200d2d0dca8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFTkEJc7ipAM4Ul7-MIbVJjDF1oanAwsb_zw';" alt="Pin By Kiran Velagati On Dj Mix Songs In 2021 Folk Song Dj Songs List Folk Song Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Kiran Velagati On Dj Mix Songs In 2021 Folk Song Dj Songs List Folk Song Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b7/d3/01/b7d3018414fb83acb5a171f5550787e0.jpg" data-lightbox="roadtrip" data-title="Feeling Proud Indian Army Sumit Goswami Parmish Verma New Haryanvi Songs Haryanavi 2019 Youtube Original Song Dj Songs Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b7/d3/01/b7d3018414fb83acb5a171f5550787e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRES1UtH6S5iWjrsn2e2nTW9FDsLCLpDmXoiA';" alt="Feeling Proud Indian Army Sumit Goswami Parmish Verma New Haryanvi Songs Haryanavi 2019 Youtube Original Song Dj Songs Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Feeling Proud Indian Army Sumit Goswami Parmish Verma New Haryanvi Songs Haryanavi 2019 Youtube Original Song Dj Songs Songs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/86/b3/fe/86b3fed60652c13ed6ebff45b218a9dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRES1UtH6S5iWjrsn2e2nTW9FDsLCLpDmXoiA';" alt="Feeling Proud Indian Army Sumit Goswami Parmish Verma New Haryanvi Songs Haryanavi 2019 Youtube Original Song Dj Songs Songs">
+										<div class="card-body">
+						<h3 class="h5"><b>Bhojpuri MP3 2018 Hit Songs.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army song dj share chat</strong>. 
+								
+																	 
+																	ARMY GANGWAR 2 New Most Popular Haryanvi Songs Haryanavi 2019. 
+																	My Instagram id. 
+																	DJ రమకస సగస romantic shayari on love. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sound Music High-quality jaishriramdjsong jaishriramjaishreeramdjsongjaishreeramdjmixpakistan15augustsongs independencedaysongsdeshbhaktisong 26re. 
+																	Romantic love song whatsapp video. 
+																	Follow Our Official Channel. 
+																	DJ remix songs DJ remix songs சனம tamil remix songs 2018 tamil dj songs 2018 tamil dj kuthu songs tamil dj remix songs free download 2015 tamil dj songs mp3 download tamil dj remix songs download masstamilan tamil remix kuthu songs tamil dj songs 2018 download Install ShareChat from Google Play Store for FREE. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Resmi Youtube Kanalimizi Takip EdinFollow DJ ARMAGAN ORUC. 
+																	Hear this songsuper remix. 
+																	Available in Tamil Telugu Hindi Punjabi Gujarati Bengali Kannada Malayalam Odia Marathi Assamese Bhojpuri. 
+																	Best Kittycat Song feat. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hi welcome to our channel. 
+																	WhatsApp सटटस सगस લવ લટર ગજરત. 
+																	Share Funny Romantic Videos Shayari Quotes on WhatsApp. 
+																	New Dj Remix Song 2019New Dj Remix Song 2019 _ JBL Pawar Hard Bass 2019 _ 2019 JBL Song WhatsApp गरप म जडन क लए. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	DJ Songs Remix Songs 13 44. 
+																	Sad pic for whatsapp. 
+																	Velmuruka Haro Hara EXTENDED MIX DJ SHINE RJ MEDIA COMING SOON. 
+																	LIKE COMMENT and SHARE. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Grumpy CatAlways remember grumpy with this shirt. 
+																	 
+																	Share Chat on Indias own social network. 
+																	DJ రమకస సగస romantic shayari on love. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bhojpuri MP3 2018 Hit Songs. 
+																	Melody song melody song ஷரசட டரணடங melody songs in tamil 2015 melody songs tamil audio tamil melody songs video melody songs tamil 2017 melody songs tamil 2016 latest tamil melody video songs tamil melody songs audio download ilayaraja tamil melody songs Install ShareChat from Google Play Store for FREE. 
+																	Punjabi status video song download. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WhatsApp सटटस सगस લવ સયર. 
+																	Download RozDhan App Now - httpsylinkcceR8FCUse My Invite Code To Get Rs50 Instantly - 005GTH- - - - - - - - - - - - - - - - - - -. 
+																	Download 100 Top WhatsApp Images Videos - dj songs - Join ShareChat Group WhatsApp Group Facebook Group Telegram Group. 
+																	 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	 
+																	Bhojpuri MP3 2018 Hit Songs. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1e/16/c2/1e16c233a49e7ab3a15c127cea488026.jpg" data-lightbox="roadtrip" data-title="Stylish Army Man Indian Army Wallpapers Army Images Army Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1e/16/c2/1e16c233a49e7ab3a15c127cea488026.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTexWU_hOtptGDTO7n_AZ38rVcR7Zgx235_KA';" alt="Stylish Army Man Indian Army Wallpapers Army Images Army Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stylish Army Man Indian Army Wallpapers Army Images Army Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn-cf.sharechat.com/a56ed839-fddd-48b3-b371-bb6d91cad7fd-fafc4524-5083-4b5b-924d-256265f36866_compressed_thumb.jpeg" data-lightbox="roadtrip" data-title="100 Best Images Videos 2021 Happy Father S Day Whatsapp Group Facebook Group Telegram Group">
+											<img class="card-img v-image ads-img " src="https://cdn-cf.sharechat.com/a56ed839-fddd-48b3-b371-bb6d91cad7fd-fafc4524-5083-4b5b-924d-256265f36866_compressed_thumb.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY4syU1DVdlkLbQPq-V7xowkyks_M3_8Tl0A';" alt="100 Best Images Videos 2021 Happy Father S Day Whatsapp Group Facebook Group Telegram Group">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">100 Best Images Videos 2021 Happy Father S Day Whatsapp Group Facebook Group Telegram Group</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c2/d8/1a/c2d81af2bf9526206ac82709593a771d.jpg" data-lightbox="roadtrip" data-title="New Indian Army Whatsapp Status Video 2019 Indian Army Status Indian Army One Man Army Youtube Indian Army Army Indian">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c2/d8/1a/c2d81af2bf9526206ac82709593a771d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZo7zHN3lXM87oNCoLVW9FaVXdecDN3VUtow';" alt="New Indian Army Whatsapp Status Video 2019 Indian Army Status Indian Army One Man Army Youtube Indian Army Army Indian">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Indian Army Whatsapp Status Video 2019 Indian Army Status Indian Army One Man Army Youtube Indian Army Army Indian</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/af/3e/bf/af3ebf4beb188775b0f50e1a3f382ff1.jpg" data-lightbox="roadtrip" data-title="Letters Indian Flag Wallpaper Indian Flag India Flag">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/af/3e/bf/af3ebf4beb188775b0f50e1a3f382ff1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyXJKIxXM2nQi7OpyNJ3k1rBqdTFCeb_gjZQ';" alt="Letters Indian Flag Wallpaper Indian Flag India Flag">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Letters Indian Flag Wallpaper Indian Flag India Flag</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn-cf.sharechat.com/a1151d4e-8a20-4f54-8b05-1b1ae12b9314-2cd851c0-1f45-4e76-8d55-b667bcc7c4a3_compressed_thumb.jpeg" data-lightbox="roadtrip" data-title="Status Committed Song Dj Snack Video Chance Sharechat Funny Romantic Videos Shayari Quotes">
+											<img class="card-img v-image ads-img " src="https://cdn-cf.sharechat.com/a1151d4e-8a20-4f54-8b05-1b1ae12b9314-2cd851c0-1f45-4e76-8d55-b667bcc7c4a3_compressed_thumb.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaK4YhYchT0BVsnbky39V17Ll9BFN9X9dvUQ';" alt="Status Committed Song Dj Snack Video Chance Sharechat Funny Romantic Videos Shayari Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Status Committed Song Dj Snack Video Chance Sharechat Funny Romantic Videos Shayari Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/5d/77/425d7700234e3d069f27161b84954b7c.jpg" data-lightbox="roadtrip" data-title="Uri Box Office Collection Day 1 Army Girlfriend Pictures Army Girlfriend Bollywood Celebrities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/5d/77/425d7700234e3d069f27161b84954b7c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSboQBxlMHWaT0lNjWRrZfbqMPV6WnL6FB2xg';" alt="Uri Box Office Collection Day 1 Army Girlfriend Pictures Army Girlfriend Bollywood Celebrities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uri Box Office Collection Day 1 Army Girlfriend Pictures Army Girlfriend Bollywood Celebrities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cf/9a/04/cf9a04e652239011825eec143147a1f0.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cf/9a/04/cf9a04e652239011825eec143147a1f0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_s7J7gfnXRaWSsgsgo2L8nEwZGuzkTdxy_g';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5d/7a/7d/5d7a7d9d7fc9de10e675a2a002942a7a.jpg" data-lightbox="roadtrip" data-title="Pin On Dhanush">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5d/7a/7d/5d7a7d9d7fc9de10e675a2a002942a7a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpkoRkgx3VtMMdjg7GWQJFC3lTYIu7EAtVxA';" alt="Pin On Dhanush">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Dhanush</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4b/39/36/4b39369108279293272edb7199d4782e.jpg" data-lightbox="roadtrip" data-title="Feeling Proud Indian Army Ringtone New Tik Tok Ringtones 2019 Famous Ringtone Youtube Videos Funny Song Hindi Indian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4b/39/36/4b39369108279293272edb7199d4782e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmL8kRe85HmiFtZTt8bMe_XBVYc3W6jVEVA';" alt="Feeling Proud Indian Army Ringtone New Tik Tok Ringtones 2019 Famous Ringtone Youtube Videos Funny Song Hindi Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Feeling Proud Indian Army Ringtone New Tik Tok Ringtones 2019 Famous Ringtone Youtube Videos Funny Song Hindi Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/93/27/549327e4adda72af0310ea2b5fde1bfc.jpg" data-lightbox="roadtrip" data-title="Love Songs Tamil Sharechat Tamil Youtube Love Songs Album Songs Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/93/27/549327e4adda72af0310ea2b5fde1bfc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReI0EAORSz74wL4ohXMS6r3Rwyv7QrYVEV6Q';" alt="Love Songs Tamil Sharechat Tamil Youtube Love Songs Album Songs Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Love Songs Tamil Sharechat Tamil Youtube Love Songs Album Songs Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/33/05/fa3305771579ca4314fb4a77794872f9.jpg" data-lightbox="roadtrip" data-title="Avanish Chaurasiya Happy Independence Day India Indian Flag Wallpaper Independence Day India">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/33/05/fa3305771579ca4314fb4a77794872f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiGxd6eTnRYOovRAQb_0FWYRdmAYiOCGO7NA';" alt="Avanish Chaurasiya Happy Independence Day India Indian Flag Wallpaper Independence Day India">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Avanish Chaurasiya Happy Independence Day India Indian Flag Wallpaper Independence Day India</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/6c/d3/95/6cd395abd725a4594efc15ae94a333b7.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/6c/d3/95/6cd395abd725a4594efc15ae94a333b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaT_eVwqLVpaQC6RtxiyvTlJMj17LmZtEdpA';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/86/b3/fe/86b3fed60652c13ed6ebff45b218a9dc.jpg" data-lightbox="roadtrip" data-title="Sarileru Neekevvaru Movie Images Hd Wallpapers Mahesh Babu Looks Mahesh Babu Wallpapers Mahesh Babu Samantha Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/86/b3/fe/86b3fed60652c13ed6ebff45b218a9dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxEe7IWCSyBgyp7f1ExLVi-hSVmtWMH9Q5Kg';" alt="Sarileru Neekevvaru Movie Images Hd Wallpapers Mahesh Babu Looks Mahesh Babu Wallpapers Mahesh Babu Samantha Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sarileru Neekevvaru Movie Images Hd Wallpapers Mahesh Babu Looks Mahesh Babu Wallpapers Mahesh Babu Samantha Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-coast-guard-in-south-china-sea.html">Us Coast Guard In South China Sea</a></li>
+													<li class="list-group-item"><a href="/us-coast-guard-inspection.html">Us Coast Guard Inspection</a></li>
+													<li class="list-group-item"><a href="/us-guards.html">Us Guards</a></li>
+													<li class="list-group-item"><a href="/us-coast-guard-military.html">Us Coast Guard Military</a></li>
+													<li class="list-group-item"><a href="/us-military-transport-plane-crashes-in-afghanistan.html">Us Military Transport Plane Crashes In Afghanistan</a></li>
+													<li class="list-group-item"><a href="/us-coast-guard-budget.html">Us Coast Guard Budget</a></li>
+													<li class="list-group-item"><a href="/us-security-guard-jobs.html">Us Security Guard Jobs</a></li>
+													<li class="list-group-item"><a href="/us-military-cargo-planes.html">Us Military Cargo Planes</a></li>
+													<li class="list-group-item"><a href="/us-coast-guard-it.html">Us Coast Guard It</a></li>
+													<li class="list-group-item"><a href="/us-national-guard-deployed.html">Us National Guard Deployed</a></li>
+													<li class="list-group-item"><a href="/us-military-cargo-plane-largest.html">Us Military Cargo Plane Largest</a></li>
+													<li class="list-group-item"><a href="/us-coast-to-coast-race.html">Us Coast To Coast Race</a></li>
+													<li class="list-group-item"><a href="/us-coast-guard-hawaii.html">Us Coast Guard Hawaii</a></li>
+													<li class="list-group-item"><a href="/us-coast-guard-badges.html">Us Coast Guard Badges</a></li>
+													<li class="list-group-item"><a href="/us-coast-guard-airplane.html">Us Coast Guard Airplane</a></li>
+													<li class="list-group-item"><a href="/us-guard.html">Us Guard</a></li>
+													<li class="list-group-item"><a href="/us-coast-guard-detroit.html">Us Coast Guard Detroit</a></li>
+													<li class="list-group-item"><a href="/us-coast-guard-telephone-number.html">Us Coast Guard Telephone Number</a></li>
+													<li class="list-group-item"><a href="/us-coast-guardorg.html">Us Coast Guardorg</a></li>
+													<li class="list-group-item"><a href="/us-coast-guard-regulations.html">Us Coast Guard Regulations</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

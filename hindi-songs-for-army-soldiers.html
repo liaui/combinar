@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Hindi Songs For Army Soldiers - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Hindi Songs For Army Soldiers",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/24/4f/50/244f50d1b2e46badf433bbaa37402451.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=hindi+songs+for+army+soldiers",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Hindi Songs For Army Soldiers</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The name of this song is Unke Kaaj Na Bhulo Sadho. The song is dedicated to Rifleman Badluram who fought war against the Japanese forces in World War II. Indian army sad song video indian army sad song video download. <br>				
+			</p>
+										<a class="badge badge-danger" href="/title-32-us-code-army-reserve.html">title 32 us code army reserve</a>
+											<a class="badge badge-danger" href="/trimmer-without-guard.html">trimmer without guard</a>
+											<a class="badge badge-danger" href="/tn-army-national-guard-chain-of-command.html">tn army national guard chain of command</a>
+											<a class="badge badge-warning" href="/top-army-ranking-in-the-world-2020.html">top army ranking in the world 2020</a>
+											<a class="badge badge-warning" href="/title-32-va-disability.html">title 32 va disability</a>
+											<a class="badge badge-light" href="/top-wing-rescue-academy.html">top wing rescue academy</a>
+											<a class="badge badge-secondary" href="/trang-yeu-thich-dja-luu.html">trang yeu thich dja luu</a>
+											<a class="badge badge-success" href="/trang-anh.html">trang anh</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the right site.  Our website provides you with hints for seeing the maximum quality video and picture content, hunt and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this video that you see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/bb/16/abbb16c4d672a6848a10784049e70c64.jpg" data-lightbox="roadtrip" data-title="Pin By Dishi Bora On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Indian Army Quotes Indian Army Special Forces Army Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/bb/16/abbb16c4d672a6848a10784049e70c64.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2kdR6AHDXy5fdkAqWd1k8tEHVJBMBhiG6jg';" alt="Pin By Dishi Bora On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Indian Army Quotes Indian Army Special Forces Army Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Dishi Bora On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Indian Army Quotes Indian Army Special Forces Army Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/25/2c/b6252c4d5da65b75a68dce86941a51b5.gif" data-lightbox="roadtrip" data-title="Badhe Chalo Badhe Chalo Geeta Kavita Com Poem Badhe Chalo Badhe Chalo Hindi Poem Best Poems Of Hindi Poems For Kids Patriotic Poems Hindi Poems On Teachers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/25/2c/b6252c4d5da65b75a68dce86941a51b5.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjJdcUQdNsFrFmhnoEoJx1yHmucNgKBzCG4Q';" alt="Badhe Chalo Badhe Chalo Geeta Kavita Com Poem Badhe Chalo Badhe Chalo Hindi Poem Best Poems Of Hindi Poems For Kids Patriotic Poems Hindi Poems On Teachers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Badhe Chalo Badhe Chalo Geeta Kavita Com Poem Badhe Chalo Badhe Chalo Hindi Poem Best Poems Of Hindi Poems For Kids Patriotic Poems Hindi Poems On Teachers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/69/e8/2569e8bc93678e3d764ff98e05025e3d.jpg" data-lightbox="roadtrip" data-title="Top 20 Best Hindi Patriotic Songs Desh Bhakti Songs List Bhakti Song Song Hindi Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/69/e8/2569e8bc93678e3d764ff98e05025e3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBOR0aQKy3BlWnhVX9gaDYBOWwhraDZR_FJQ';" alt="Top 20 Best Hindi Patriotic Songs Desh Bhakti Songs List Bhakti Song Song Hindi Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 20 Best Hindi Patriotic Songs Desh Bhakti Songs List Bhakti Song Song Hindi Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/58/ae/6558aec79637b86dfcaa3902c9bfc67d.jpg" data-lightbox="roadtrip" data-title="Armay Bhi Kamal K Hote Army Quotes Indian Army Quotes Army Girlfriend Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/58/ae/6558aec79637b86dfcaa3902c9bfc67d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbJBZEfjYJ9sqyFCHejU9Mg1ELWp1zqGyxvg';" alt="Armay Bhi Kamal K Hote Army Quotes Indian Army Quotes Army Girlfriend Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armay Bhi Kamal K Hote Army Quotes Indian Army Quotes Army Girlfriend Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7f/3c/e8/7f3ce8489ce8ff30e0ed316fc3e4b0c6.jpg" data-lightbox="roadtrip" data-title="Indian Army Motivation Thoughts Indian Army Quotes Army Quotes Warrior Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7f/3c/e8/7f3ce8489ce8ff30e0ed316fc3e4b0c6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQClvObSvbaqU4pLRXEm_ylAnsbxCmRT-SxNQ';" alt="Indian Army Motivation Thoughts Indian Army Quotes Army Quotes Warrior Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Motivation Thoughts Indian Army Quotes Army Quotes Warrior Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/e8/70/b6e87012907baf7edad3c7cf6811ff70.jpg" data-lightbox="roadtrip" data-title="Thanks Army Quotes Indian Army Quotes Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/e8/70/b6e87012907baf7edad3c7cf6811ff70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNfxHSSRubskJ_XHcHnqHeYF9UaZVGkIOqsQ';" alt="Thanks Army Quotes Indian Army Quotes Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thanks Army Quotes Indian Army Quotes Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ab/bb/16/abbb16c4d672a6848a10784049e70c64.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNfxHSSRubskJ_XHcHnqHeYF9UaZVGkIOqsQ';" alt="Thanks Army Quotes Indian Army Quotes Military Quotes">
+										<div class="card-body">
+						<h3 class="h5"><b>The story of the film is based on the court-martial of an Indian army Muslim Officer accused of executing his commanding officer.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Hindi songs for army soldiers</strong>. 
+								
+																	Jai Jawan - A Salute to Indian Army. 
+																	You can start with any relative who you think was in the Army Navy or RAFPerhaps you had a grandfather in one of the World Wars. 
+																	A video from the training programme where the Indian and American soldiers are singing Badluram ka badan zameen ke neeche hai the marching song of Indian armys Assam Regiment has gone viral on. 
+																	Indian Army soldiers carried a woman and her child in heavy snow in Jammu and Kashmir. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Relatives and Jaswinder Kaur centre wife of Indian Army soldier Satnam Singh mourn at a village Bhojraj Credit. 
+																	The soldiers broke into a dance while singing the popular marching song of Assam Rifles. 
+																	Actor Vineet Kumar Singh of the film Boxer has composed a sentimental song paying tribute to the soldiers of the Indian Army on the occasion of Republic Day. 
+																	Prime Minister Narendra Modi on Friday greeted soldiers on Army Day and praised the Indian Army saying it is strong brave and resolute. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	China Repeating 1962 Tactics In A Bid To Demoralise Indian Soldiers by Swarajya Staff - Sep 20 2020 0352 AM. 
+																	Here is the Special Song on Indian Army. 
+																	Recently soldiers of Indian and American Army came together and sang the song Badluram Ka Badan Zameen Ka Neeche Hai during a joint military exercise in the US. 
+																	He was martyred while fighting against the Japanese army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military records reveal the extraordinary deeds of your bravest ancestors. 
+																	After Badlurams death one officer forgot to report Badlurams death to the. 
+																	Protesters call for a ban on Chinese goods in India Credit. 
+																	Filling Proud Indian Army Dj Remix Song Sumit Goswami Best TikTok Famous Song 2019Filling Proud Indian Army Ringtone Best TikTok Famous Ringtone 201. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Discover war heroes in military records. 
+																	This is not just restricted to the borders but the. 
+																	In it he wrote A small tribute to the soldiers of the army. 
+																	Blasting Punjabi Songs Propaganda In Chaste Hindi. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	From Asia-Pacific tensions to conflict in Europe and Africa an understanding of military developments is key to fully comprehending foreign relations and politics today. 
+																	Tribute to indian army the ima indin military academy the ima a video about indian military academyits a song from brothers movi video of ima tran. 
+																	In a tweet he said Indian soldiers have made the country. 
+																	The soldiers of the Indian Army brave extreme conditions to protect the citizens of the country from the enemies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Amid Tensions Chinese Army Plays Punjabi Songs On Loudspeaker Along LAC. 
+																	Shaurya is a Bollywood military film directed by Samar Khan. 
+																	United States About Blog Military Watch is a provider of reliable and insightful analysis into military and military related affairs across the world. 
+																	For More Heart Touching and Motivational Songs Stay Tuned to Nivistudio and Su. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bollywood celebrities reacted in delight and saluted the jawans. 
+																	LIKECMNTSUBSCRIBEFOR MORE Follow me on Instagram imdhiraj1. 
+																	The film stars Rahul Bose Kay Kay Menon Javed Jaffrey and Minissha Lamba. 
+																	Vineet has shared the video of the song on Instagram. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to sources the post at which the Chinese Army has put up loudspeakers is under 24x7 constant watch by Indian soldiers and it is possible that the Chinese might be indulging in such drama to distract our troops or perhaps just relieve the pressureIndia and China had a recent incident near Finger 4 where more than 100 rounds were fired between the troops of the two sides on September 8. 
+																	Know About PLAs Propaganda Trick At Border Though psychological warfare is an old trick of Indias northern neighbour and the army is well acquainted to PLAs tactics India too has installed loudspeakers to counter the Chinese propaganda bid sources have said. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/44/2c/e7/442ce7fe5e16143d9db3d8421d253129.jpg" data-lightbox="roadtrip" data-title="Pin By David Raut On Salute To The Indian Army Indian Army Quotes Army Quotes Indian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/44/2c/e7/442ce7fe5e16143d9db3d8421d253129.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvHUnatlFQaMZ7z_UU_5TSNCpYs8nOQk-MQ';" alt="Pin By David Raut On Salute To The Indian Army Indian Army Quotes Army Quotes Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By David Raut On Salute To The Indian Army Indian Army Quotes Army Quotes Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/48/81/884881ec5fb6ece577c4acf904d4271a.jpg" data-lightbox="roadtrip" data-title="Pin By Dishi Bora On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Indian Army Quotes Army Quotes Army Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/48/81/884881ec5fb6ece577c4acf904d4271a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIf9Sc9yhlM0eqIfaWMiCZucdZFOg84Ank8Q';" alt="Pin By Dishi Bora On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Indian Army Quotes Army Quotes Army Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Dishi Bora On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Indian Army Quotes Army Quotes Army Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/c7/1b/c8c71b8deee64d6bf6d52a63ce4b4b35.jpg" data-lightbox="roadtrip" data-title="Indian Army Quotes In Hindi Indian Army Quotes Army Quotes Indian Army Wallpapers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/c7/1b/c8c71b8deee64d6bf6d52a63ce4b4b35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-4D7Qhq1fVQAp8BLIlKg2istiM9zhuhhKcw';" alt="Indian Army Quotes In Hindi Indian Army Quotes Army Quotes Indian Army Wallpapers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Quotes In Hindi Indian Army Quotes Army Quotes Indian Army Wallpapers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/86/6f/cd866fa5572ba429f2a30659109e30b6.jpg" data-lightbox="roadtrip" data-title="Bollywood Indian Army Quotes Army Quotes Navy Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/86/6f/cd866fa5572ba429f2a30659109e30b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSckcTwiSo9_ysgx7kXFHpZH8TYuX2AO55BFw';" alt="Bollywood Indian Army Quotes Army Quotes Navy Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bollywood Indian Army Quotes Army Quotes Navy Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/63/6b/7b636b5e62490c9d80680b4d87b492cf.jpg" data-lightbox="roadtrip" data-title="50 Bollywood Romantic Dialogues That Will Make You Fall In Love All Over Again Bollywood Love Quotes Romantic Dialogues Bollywood Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/63/6b/7b636b5e62490c9d80680b4d87b492cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm8nR_7kON-IjL64CeGECE3gAooDWZInqbpA';" alt="50 Bollywood Romantic Dialogues That Will Make You Fall In Love All Over Again Bollywood Love Quotes Romantic Dialogues Bollywood Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">50 Bollywood Romantic Dialogues That Will Make You Fall In Love All Over Again Bollywood Love Quotes Romantic Dialogues Bollywood Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/8c/b0/a28cb0f09e97edfc50420f0090330941.jpg" data-lightbox="roadtrip" data-title="Pin By Dishi Bora On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Soldier Love Romantic Songs Video Indian Army Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/8c/b0/a28cb0f09e97edfc50420f0090330941.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Q0s4pv8zxo15IJ7RtdtkqIlt_aAeH6d0QQ';" alt="Pin By Dishi Bora On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Soldier Love Romantic Songs Video Indian Army Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Dishi Bora On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Soldier Love Romantic Songs Video Indian Army Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/fb/10/35fb101cc88f021446bc0d79c1b53075.jpg" data-lightbox="roadtrip" data-title="Quotes On Indian Army In Hindi Indian Army Quotes Army Quotes Soldier Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/fb/10/35fb101cc88f021446bc0d79c1b53075.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDAJQswPhb5cYIeO8yLS9wnfmSZhtGRBGeSA';" alt="Quotes On Indian Army In Hindi Indian Army Quotes Army Quotes Soldier Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Quotes On Indian Army In Hindi Indian Army Quotes Army Quotes Soldier Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/ef/a3/5defa3e3d5057ce369b6064ce6d7d6f6.jpg" data-lightbox="roadtrip" data-title="Pin By Sunil Thakur On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Army Quotes Indian Army Quotes Army Pics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/ef/a3/5defa3e3d5057ce369b6064ce6d7d6f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqgYdqVnEb3sY9vPJJTUdP8-x4j56_2bOzzQ';" alt="Pin By Sunil Thakur On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Army Quotes Indian Army Quotes Army Pics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sunil Thakur On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Army Quotes Indian Army Quotes Army Pics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/c4/de/46c4de5cf6b3440ead50870df6b38ce5.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/c4/de/46c4de5cf6b3440ead50870df6b38ce5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg5pZhyBx80QNjph9pbPnzkIH4NyeoLVzCCw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/04/5f/54045fdff714e87acfa9a887ef5e65cd.jpg" data-lightbox="roadtrip" data-title="Rashikaprajapat Gmail Com Indian Army Quotes Army Quotes Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/04/5f/54045fdff714e87acfa9a887ef5e65cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAE3WDGiCYfWytRsPiDbKXx93Ts58q3RTJWQ';" alt="Rashikaprajapat Gmail Com Indian Army Quotes Army Quotes Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rashikaprajapat Gmail Com Indian Army Quotes Army Quotes Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f2/47/24/f2472462f6b7896bb02e604595f74b80.jpg" data-lightbox="roadtrip" data-title="Indian Army Status In Hindi Army Quotes Indian Army Status Hindi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f2/47/24/f2472462f6b7896bb02e604595f74b80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_061VWskw35B6ixqbubwl4H03Gsr25NUkJA';" alt="Indian Army Status In Hindi Army Quotes Indian Army Status Hindi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Status In Hindi Army Quotes Indian Army Status Hindi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/62/60/1f6260c0d35ed698ee63bba5cc648f1c.jpg" data-lightbox="roadtrip" data-title="Pin By Soni Halfengineer On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Indian Army Quotes Army Quotes Army Women Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/62/60/1f6260c0d35ed698ee63bba5cc648f1c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1xs5hYotA8-CABdh7Ic6hA5YGqWH0HGzxbQ';" alt="Pin By Soni Halfengineer On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Indian Army Quotes Army Quotes Army Women Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Soni Halfengineer On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Indian Army Quotes Army Quotes Army Women Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/4f/50/244f50d1b2e46badf433bbaa37402451.jpg" data-lightbox="roadtrip" data-title="Pin By Suresh Choudhary On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Indian Army Quotes Army Quotes Warrior Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/4f/50/244f50d1b2e46badf433bbaa37402451.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4nEZhtRf9Os-m8E4Z0lZMjEfaFfFr13jBnA';" alt="Pin By Suresh Choudhary On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Indian Army Quotes Army Quotes Warrior Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Suresh Choudhary On Fauji Dil Ki Baatein Thoughts On A Soldier S Life Indian Army Quotes Army Quotes Warrior Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/tgb-pubg-pc.html">Tgb Pubg Pc</a></li>
+													<li class="list-group-item"><a href="/tiang-listrik-besi.html">Tiang Listrik Besi</a></li>
+													<li class="list-group-item"><a href="/tgb-pubg-lite.html">Tgb Pubg Lite</a></li>
+													<li class="list-group-item"><a href="/the-national-guard-was-deployed-to-12-states-to-help-with-election.html">The National Guard Was Deployed To 12 States To Help With Election</a></li>
+													<li class="list-group-item"><a href="/tgb-emulator-pubg-download.html">Tgb Emulator Pubg Download</a></li>
+													<li class="list-group-item"><a href="/the-forgotten-army-song-lyrics.html">The Forgotten Army Song Lyrics</a></li>
+													<li class="list-group-item"><a href="/texas-army-national-guard-medical-command.html">Texas Army National Guard Medical Command</a></li>
+													<li class="list-group-item"><a href="/tg-roof-decking.html">Tg Roof Decking</a></li>
+													<li class="list-group-item"><a href="/tattoo-policy-for-army-national-guard.html">Tattoo Policy For Army National Guard</a></li>
+													<li class="list-group-item"><a href="/texas-national-guard-numbers.html">Texas National Guard Numbers</a></li>
+													<li class="list-group-item"><a href="/the-united-states-coast-guard-operates-in.html">The United States Coast Guard Operates In</a></li>
+													<li class="list-group-item"><a href="/the-ohio-national-guard-killed-four-student-protests-in-1970-at.html">The Ohio National Guard Killed Four Student Protests In 1970 At</a></li>
+													<li class="list-group-item"><a href="/tas-warna-hijau-army.html">Tas Warna Hijau Army</a></li>
+													<li class="list-group-item"><a href="/tg-router-bits.html">Tg Router Bits</a></li>
+													<li class="list-group-item"><a href="/texas-army-national-guard-vs-texas-state-guard.html">Texas Army National Guard Vs Texas State Guard</a></li>
+													<li class="list-group-item"><a href="/the-vermont-national-guard.html">The Vermont National Guard</a></li>
+													<li class="list-group-item"><a href="/tennessee-army-national-guard-state-headquarters.html">Tennessee Army National Guard State Headquarters</a></li>
+													<li class="list-group-item"><a href="/texas-national-guard-ngb-22.html">Texas National Guard Ngb 22</a></li>
+													<li class="list-group-item"><a href="/texas-national-guard-vs-texas-state-guard.html">Texas National Guard Vs Texas State Guard</a></li>
+													<li class="list-group-item"><a href="/the-army-ranger-wing-irish-defence-forces.html">The Army Ranger Wing Irish Defence Forces</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Honor Guard Rifle - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Honor Guard Rifle",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/91/dc/49/91dc4903949e2b5cd7030447ec52d947.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+honor+guard+rifle",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Honor Guard Rifle</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A rifle detail is a ritual that has its origins in Europe where it was customary to call a cease-fire for dead and injured soldiers to be safely removed from the battlefield. The 3rd United States Infantry Regiment is a regiment of the United States ArmyIt currently has three active battalions and is readily identified by its nickname The Old Guard as well as Escort to the PresidentThe regimental motto is Noli Me Tangere from Latin. It is also widely used by civilians for hunting target shooting and as a military collectible. <br>				
+			</p>
+										<a class="badge badge-primary" href="/stang-yang-cocok-untuk-cb150r.html">stang yang cocok untuk cb150r</a>
+											<a class="badge badge-secondary" href="/stang-yamaha-x-ride.html">stang yamaha x ride</a>
+											<a class="badge badge-danger" href="/stout-field-national-guard.html">stout field national guard</a>
+											<a class="badge badge-primary" href="/switching-from-army-national-guard-to-air-force.html">switching from army national guard to air force</a>
+											<a class="badge badge-secondary" href="/tang-potong-kawat.html">tang potong kawat</a>
+											<a class="badge badge-light" href="/tang-jumput.html">tang jumput</a>
+											<a class="badge badge-danger" href="/strong-woman-do-bong-soon-viu.html">strong woman do bong soon viu</a>
+											<a class="badge badge-success" href="/stang-w175.html">stang w175</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you've come to pay a visit to the ideal blog.  Our site provides you with suggestions for seeing the maximum quality video and picture content, search and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, so we recommend this video that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/5c/0e/135c0e1c83b9e154265868aa3609cc10.jpg" data-lightbox="roadtrip" data-title="Pin By Jason Harding On The Proud Peacocks Infantry Honor Guard American Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/5c/0e/135c0e1c83b9e154265868aa3609cc10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3KrPnYMSodmzo081YesMiATI_lFkOgqJfbg';" alt="Pin By Jason Harding On The Proud Peacocks Infantry Honor Guard American Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Jason Harding On The Proud Peacocks Infantry Honor Guard American Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/8f/c5/ba8fc5bf953f46e9b0691aad84432877.jpg" data-lightbox="roadtrip" data-title="Guarding The Tomb Of The Unknown Soldier Honor Guard Unknown Soldier Military Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/8f/c5/ba8fc5bf953f46e9b0691aad84432877.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzOXAemerAP71W4j9hREh0n5npDz2gJChXLQ';" alt="Guarding The Tomb Of The Unknown Soldier Honor Guard Unknown Soldier Military Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guarding The Tomb Of The Unknown Soldier Honor Guard Unknown Soldier Military Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/08/83/87/088387291916558d560f4910efcdc8cc.jpg" data-lightbox="roadtrip" data-title="Pin On U S Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/08/83/87/088387291916558d560f4910efcdc8cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsVH1ePl-JrEhqaOp_u9a92bopCMtOdNUpvw';" alt="Pin On U S Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/c3/4b/9dc34bdd7c92ec2426942b7295bbaff1.jpg" data-lightbox="roadtrip" data-title="3d U S Infantry Regiment The Old Guard Military Heroes Men In Uniform Military Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/c3/4b/9dc34bdd7c92ec2426942b7295bbaff1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYntRFqJ_lhwc1Gytk_XRvqDxEENZHdsaxxg';" alt="3d U S Infantry Regiment The Old Guard Military Heroes Men In Uniform Military Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">3d U S Infantry Regiment The Old Guard Military Heroes Men In Uniform Military Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/9f/44/229f44b1c1904e6983e61c0772c93dab.jpg" data-lightbox="roadtrip" data-title="Tomb Of The Unknown Soldier Honor Guard Honor Guard Military Love Unknown Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/9f/44/229f44b1c1904e6983e61c0772c93dab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuCx-h2xjrVj1Y_Uw24E2cvl9URIM5GAV1bg';" alt="Tomb Of The Unknown Soldier Honor Guard Honor Guard Military Love Unknown Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tomb Of The Unknown Soldier Honor Guard Honor Guard Military Love Unknown Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/ef/b5/ceefb5805f23c003c11d85d77101b33e.jpg" data-lightbox="roadtrip" data-title="Us Air Force Honor Guard United States Air Force Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/ef/b5/ceefb5805f23c003c11d85d77101b33e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSq316IOcPje4EFGNr2n4t0Z_WkqRv618nGQ';" alt="Us Air Force Honor Guard United States Air Force Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Air Force Honor Guard United States Air Force Air Force</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ce/ef/b5/ceefb5805f23c003c11d85d77101b33e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSq316IOcPje4EFGNr2n4t0Z_WkqRv618nGQ';" alt="Us Air Force Honor Guard United States Air Force Air Force">
+										<div class="card-body">
+						<h3 class="h5"><b>The weapon remains the property of the United States Government and cannot be loaned sold transferred or given to anyone else.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army honor guard rifle</strong>. 
+								
+																	The uncut and full version of the performance of the US Navy Presidential Ceremonial Honor Guard Drill Team at Norway. 
+																	The changes in weapons reflect the changes in the Army including the M1903 Springfield rifle M1 Garand and M14 rifles and the M1911 M9 and M17 pistols. 
+																	It was the first standard-issue semi-automatic military rifle. 
+																	We carry genuine Mil-Spec Ceremonial Honor Guard equipment and accessories such as belts aiguillettescaps swords berets and much more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Garand is still used by drill teams and military honor guards. 
+																	Video by Senior Airman Daniel Burkhardt 11th Wing Public Affairs AiirSource covers military events and missions fro. 
+																	Made from tghe finest leathers and fabrics these products are sure to perform as well as they look. 
+																	Infantry Regiment The Old Guard Presidential Salute Battery fires cannon salutes in honor of the President of the United States visiting foreign dignitaries and official guests of the Unites States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	To be distributed in accordance To be distributed in accordance with the initial distribution number 110178 requirements for FM 3-215. 
+																	Often theyll fold up the flag with an expended bullet shell during the honor guard. 
+																	Saw this coming by on a site and I could not resist adding totally fitting sounds to it. 
+																	M16A2 55645mm NATO USAF USCG and US Army TrainingReserveNational Guard M27 IAR Infantry Automatic Rifle 55645mm NATO USMC Automatic Rifleman M38 SDMR Squad Designated Marksman Rifle 55645mm NATO USMC Designated Marksmen. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Under the provisions of Title 10 United States Code USC 4683 the Secretary of the Army under regulations prescribed may conditionally lend or donate excess M-1 rifles not more than 15 slings and cartridge belts to any eligible organization for use by that organization for funeral ceremonies of a member or former member of the armed forces and for other ceremonial purposes. 
+																	The ceremonial rifle and ammunition program is conducted in accordance with Title 10 United States Code 4683 as implemented by Army Regulation 700-131. 
+																	US Army TACOM Life Cycle Management Command. 
+																	Tomb guards currently carry M14 rifles which are affixed to ceremonial rifle stocks. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The battery also fires in support of memorial affairs for all military services in Arlington National Cemetery. 
+																	By most accounts the M1 rifle performed well. 
+																	Presidential Salute Battery - Equipped with ten M5 75mm antitank cannons mounted on the M6 howitzer carriage the 3rd US. 
+																	Active Army Army National Guard and United States Army Reserve. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An impeccably uniformed relief commander appears on the plaza to announce the Changing of the Guard at Arlington National Cemetery. 
+																	The 1st Battalion of the 3rd United States Infantry Regiment The Old Guard in the Military District of Washington is the sole remaining regular United States Army combat field unit where the M14 is still issued as the standard rifle along with a chromed bayonet and an extra wooden stock with white sling for military funerals parades and other ceremonies. 
+																	Mail the completed package to. 
+																	Touch Me NotThe regiment is a major unit of the Military District of Washington MDW. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Video of the US Air Force Honor Guard. 
+																	By Joseph Lacdan Army News Service December 1 2020. 
+																	The only rifle available for ceremonial use is the M1 Garand equipped with blank firing adapters which is issued conditionally. 
+																	After tragedy former Honor Guard members dedicate docuseries in mentors memory. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By law an honor guard detail for the burial of an eligible veteran consists of at least two members of the US. 
+																	The M1 rifle was named after its Canadian-American designer John Garand. 
+																	In military organizations a colour guard or color guard is a detachment of soldiers assigned to the protection of regimental coloursThis duty is so prestigious that the colour is generally carried by a young officer while experienced non-commissioned officers colour sergeants are assigned to the protection of the flagThese NCOs accompanied sometimes by warrant officers as is the. 
+																	Soon the new sentinel lea. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Armed forces and at least one member of the detail must be a representative from. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/a5/50/83a550c5c7793a979bd615bbcecc4de9.jpg" data-lightbox="roadtrip" data-title="The U S Air Force Honor Guard Drill Team From Joint Base Anacostia Bolling Washington D C Performs At The Opening Of The Thi Air Force Honor Guard Air Show">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/a5/50/83a550c5c7793a979bd615bbcecc4de9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Jh9zETIshdm_u_eS0nifbYSEkgy9oh0ltg';" alt="The U S Air Force Honor Guard Drill Team From Joint Base Anacostia Bolling Washington D C Performs At The Opening Of The Thi Air Force Honor Guard Air Show">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The U S Air Force Honor Guard Drill Team From Joint Base Anacostia Bolling Washington D C Performs At The Opening Of The Thi Air Force Honor Guard Air Show</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c8/36/7b/c8367b6fe6cc8fa59f5beaaa8e498e32.jpg" data-lightbox="roadtrip" data-title="The Prestigious Military Honor Guards Military Honor Honor Guard Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c8/36/7b/c8367b6fe6cc8fa59f5beaaa8e498e32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa9A-7E4mmdo5xwYIJi-kXyDZaBG9UgroMCw';" alt="The Prestigious Military Honor Guards Military Honor Honor Guard Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Prestigious Military Honor Guards Military Honor Honor Guard Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/be/9e/66/be9e6693ace726b12ebb38ae0ba85cfe.jpg" data-lightbox="roadtrip" data-title="Risultati Immagini Per Army Honor Guard Uniforms Honor Guard Army Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/be/9e/66/be9e6693ace726b12ebb38ae0ba85cfe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAal37CvVpNZ3uqzYD2sFtFwInIYWJQIS46Q';" alt="Risultati Immagini Per Army Honor Guard Uniforms Honor Guard Army Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Risultati Immagini Per Army Honor Guard Uniforms Honor Guard Army Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/ea/b1/faeab1a5b00d272a962c3d756027deec.jpg" data-lightbox="roadtrip" data-title="Sentinels Assigned To The Tomb Of The Unknown Soldier 3rd U S Infantry Regiment The Old Guard Conduct A Chan Tomb Of Unknown Soldier Soldier Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/ea/b1/faeab1a5b00d272a962c3d756027deec.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT0s7HDEWQ5Dola_1PmyPlDuu03CiOWnSUew';" alt="Sentinels Assigned To The Tomb Of The Unknown Soldier 3rd U S Infantry Regiment The Old Guard Conduct A Chan Tomb Of Unknown Soldier Soldier Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sentinels Assigned To The Tomb Of The Unknown Soldier 3rd U S Infantry Regiment The Old Guard Conduct A Chan Tomb Of Unknown Soldier Soldier Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/8f/bd/268fbdc9b0ce414eb18bed4eceab021b.jpg" data-lightbox="roadtrip" data-title="Pin On Ref Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/8f/bd/268fbdc9b0ce414eb18bed4eceab021b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Dc4mA3jY7UODypX9CS16pCNY6um-qyXr2Q';" alt="Pin On Ref Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ref Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/f8/b1/38f8b1851f9bc48c1e7ec533ec9c75e7.jpg" data-lightbox="roadtrip" data-title="1980 Tomb Sentinel In Snow Unknown Soldier Military Photos Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/f8/b1/38f8b1851f9bc48c1e7ec533ec9c75e7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWHr6dkBTGuVgH7QphWRAG82D8_OOJWzIqoA';" alt="1980 Tomb Sentinel In Snow Unknown Soldier Military Photos Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1980 Tomb Sentinel In Snow Unknown Soldier Military Photos Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/05/01/1c0501cec8cfd040793e68f35c1b6667.jpg" data-lightbox="roadtrip" data-title="With Amazing Displays Of Discipline Through Unified Movement In Formation And Shocking Catches Of Bayonet Tipped 1903 Sp Army Day American Soldiers Honor Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/05/01/1c0501cec8cfd040793e68f35c1b6667.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuapuUqKFGawVG9z-YBInhhe1YLwrEjzEUSw';" alt="With Amazing Displays Of Discipline Through Unified Movement In Formation And Shocking Catches Of Bayonet Tipped 1903 Sp Army Day American Soldiers Honor Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">With Amazing Displays Of Discipline Through Unified Movement In Formation And Shocking Catches Of Bayonet Tipped 1903 Sp Army Day American Soldiers Honor Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1f/c5/38/1fc538275a092438ac8bb648028b4075.jpg" data-lightbox="roadtrip" data-title="Pin On Enjoyable">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1f/c5/38/1fc538275a092438ac8bb648028b4075.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPyPacqo4tYGofwSA2emMf6pCSImOYm6KNKQ';" alt="Pin On Enjoyable">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Enjoyable</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/79/f4/b379f4cc24a7340e45062f9a11ac5c5b.jpg" data-lightbox="roadtrip" data-title="Pin On U S Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/79/f4/b379f4cc24a7340e45062f9a11ac5c5b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoloaTByeJGnqWx59dq1hhrLEvRVjJlNVSvQ';" alt="Pin On U S Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/dc/49/91dc4903949e2b5cd7030447ec52d947.jpg" data-lightbox="roadtrip" data-title="Crossed Rifles Honor Guard Insignia Honor Guard Guard Honor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/dc/49/91dc4903949e2b5cd7030447ec52d947.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3LLtY1whu9yrEu5vCC9xw1IzZyA5QBxTIfw';" alt="Crossed Rifles Honor Guard Insignia Honor Guard Guard Honor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Crossed Rifles Honor Guard Insignia Honor Guard Guard Honor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/6e/8a/0a6e8ac3bcd2803aef735f0978d02538.jpg" data-lightbox="roadtrip" data-title="Soldier Turning Tomb Of The Unknown Soldier Arlington National Cemetery 2012 Arlington National Cemetery Unknown Soldier National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/6e/8a/0a6e8ac3bcd2803aef735f0978d02538.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfGLceWGEA_ma2qILZHsfgzkd82ml1Qlq2iA';" alt="Soldier Turning Tomb Of The Unknown Soldier Arlington National Cemetery 2012 Arlington National Cemetery Unknown Soldier National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier Turning Tomb Of The Unknown Soldier Arlington National Cemetery 2012 Arlington National Cemetery Unknown Soldier National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1d/67/35/1d6735983c3d5c44b118c34a7400c523.jpg" data-lightbox="roadtrip" data-title="190416 A Mp101 0010 With Images Military Honor Tomb Guard Honor Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1d/67/35/1d6735983c3d5c44b118c34a7400c523.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzzR-s4KZWvcpA8jtHCYeHN00T7oVqe2S88A';" alt="190416 A Mp101 0010 With Images Military Honor Tomb Guard Honor Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">190416 A Mp101 0010 With Images Military Honor Tomb Guard Honor Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/3d/bf/013dbf48f420c34aee1664e3517280ed.jpg" data-lightbox="roadtrip" data-title="2007 Musikschau Der Nationen A Guardsman Of The Russian Army Honor Guard Drill Team Spinning Dual Rifles Men In Uniform Honor Guard Military Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/3d/bf/013dbf48f420c34aee1664e3517280ed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0wFMmMG4hp7Je_k9q9-XNh29hi-_6sebUyg';" alt="2007 Musikschau Der Nationen A Guardsman Of The Russian Army Honor Guard Drill Team Spinning Dual Rifles Men In Uniform Honor Guard Military Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2007 Musikschau Der Nationen A Guardsman Of The Russian Army Honor Guard Drill Team Spinning Dual Rifles Men In Uniform Honor Guard Military Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/highest-army-rankinsignia.html">Highest Army Rankinsignia</a></li>
+													<li class="list-group-item"><a href="/geaux-guard.html">Geaux Guard</a></li>
+													<li class="list-group-item"><a href="/guard-army-guard.html">Guard Army Guard</a></li>
+													<li class="list-group-item"><a href="/great-corolla.html">Great Corolla</a></li>
+													<li class="list-group-item"><a href="/gp-23ae-datasheet.html">Gp 23ae Datasheet</a></li>
+													<li class="list-group-item"><a href="/global-army-song-for-bts.html">Global Army Song For Bts</a></li>
+													<li class="list-group-item"><a href="/guard-national-us.html">Guard National Us</a></li>
+													<li class="list-group-item"><a href="/heaviest-military-cargo-plane-blue-whale.html">Heaviest Military Cargo Plane Blue Whale</a></li>
+													<li class="list-group-item"><a href="/german-army-rank-list.html">German Army Rank List</a></li>
+													<li class="list-group-item"><a href="/going-from-army-reserve-to-national-guard.html">Going From Army Reserve To National Guard</a></li>
+													<li class="list-group-item"><a href="/hijau-army-cocok-dengan-warna-apa.html">Hijau Army Cocok Dengan Warna Apa</a></li>
+													<li class="list-group-item"><a href="/gods-army-songs-mp3-download-2019.html">Gods Army Songs Mp3 Download 2019</a></li>
+													<li class="list-group-item"><a href="/ghost-army-artwork.html">Ghost Army Artwork</a></li>
+													<li class="list-group-item"><a href="/gb-whatsapp-terbaru.html">Gb Whatsapp Terbaru</a></li>
+													<li class="list-group-item"><a href="/harga-jaket-army-usa.html">Harga Jaket Army Usa</a></li>
+													<li class="list-group-item"><a href="/harga-jam-tangan-us-army.html">Harga Jam Tangan Us Army</a></li>
+													<li class="list-group-item"><a href="/ground-indian-army-jung-ke-maidan-mein-song.html">Ground Indian Army Jung Ke Maidan Mein Song</a></li>
+													<li class="list-group-item"><a href="/guard-reserve.html">Guard Reserve</a></li>
+													<li class="list-group-item"><a href="/hawaii-national-guard-adjutant-general.html">Hawaii National Guard Adjutant General</a></li>
+													<li class="list-group-item"><a href="/hand-tattoos-army-national-guard.html">Hand Tattoos Army National Guard</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

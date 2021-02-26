@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Buffalo Soldier Day - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Buffalo Soldier Day",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/736x/95/29/f6/9529f67ada756984ad6a6f898e822547.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+buffalo+soldier+day",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Buffalo Soldier Day</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Buffalo Soldiers Motorcycle Club Mile High Chapter BSMCMHC was established for the purpose of fostering unity and community education of the role. Medal of Honor recipients SGT Emanuel Stance CO F 9th Cavalry and SGT George Jordan CO K 9th Cavalry are buried in Section F Graves 1040 and 1131 respectively. Or if you have any information about Buffalo Soldiers Day or maybe you want to create your own. <br>				
+			</p>
+										<a class="badge badge-warning" href="/army-uniforms-army-navy.html">army uniforms army navy</a>
+											<a class="badge badge-dark" href="/army-to-air-guard-transfer.html">army to air guard transfer</a>
+											<a class="badge badge-danger" href="/army-warno-example.html">army warno example</a>
+											<a class="badge badge-dark" href="/arnies-army-headcover.html">arnies army headcover</a>
+											<a class="badge badge-success" href="/army-tank-art.html">army tank art</a>
+											<a class="badge badge-info" href="/army-watch-army-watch.html">army watch army watch</a>
+											<a class="badge badge-success" href="/army-special-forces-crf.html">army special forces crf</a>
+											<a class="badge badge-secondary" href="/army-yang-paling-beruntung.html">army yang paling beruntung</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you have come to visit the right blog.  Our website gives you hints for viewing the maximum quality video and picture content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie for you to view.  It is also possible to bring about supporting this website by sharing videos and graphics that you like on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/9e/01/0e9e014b13af0e40f3e53a94c01c9c0d.png" data-lightbox="roadtrip" data-title="Pin On National Awareness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/9e/01/0e9e014b13af0e40f3e53a94c01c9c0d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlPDMK1McyNutWfa5ryn5Y9tjuJsjDQzeicA';" alt="Pin On National Awareness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On National Awareness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/b8/6f/c6b86f5bed0a57ca0b845e9f07e08ef3.png" data-lightbox="roadtrip" data-title="Pin On It S Buffalo Soldiers Day 7 28">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/b8/6f/c6b86f5bed0a57ca0b845e9f07e08ef3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5F1JtL0JNUVZm2ALeNJLWbibSGOTjRE_RHw';" alt="Pin On It S Buffalo Soldiers Day 7 28">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On It S Buffalo Soldiers Day 7 28</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/da/22/ffda229fb52e996190af28d221903152.jpg" data-lightbox="roadtrip" data-title="Pin On It S Buffalo Soldiers Day 7 28">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/da/22/ffda229fb52e996190af28d221903152.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbCw7u0GV0YCiJ8g20LKmYn6dSayGrAR1nMg';" alt="Pin On It S Buffalo Soldiers Day 7 28">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On It S Buffalo Soldiers Day 7 28</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8a/23/67/8a2367610dd8c33571613e3dbc131d55.jpg" data-lightbox="roadtrip" data-title="Pin On Ideas For The House">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8a/23/67/8a2367610dd8c33571613e3dbc131d55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcEc6eA2WWNddTkCKWFUbHpV17OsrCgdgowQ';" alt="Pin On Ideas For The House">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ideas For The House</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/84/d9/f684d90827199a3b8b1348e967733034.jpg" data-lightbox="roadtrip" data-title="Pin On National Day Of">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/84/d9/f684d90827199a3b8b1348e967733034.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHUbza4E2RUCtXRm7aif7tg79ti0yKjvvdzg';" alt="Pin On National Day Of">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On National Day Of</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/1d/0d/ec1d0df00bc470f11724a4acb5e3bb05.jpg" data-lightbox="roadtrip" data-title="Pin On Who What When Where How Why">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/1d/0d/ec1d0df00bc470f11724a4acb5e3bb05.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShv5D1eZaV9i8RvqzGx4_R6SN6slLijxyHrA';" alt="Pin On Who What When Where How Why">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Who What When Where How Why</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/600x315/55/5c/04/555c04142d5ef372227daadb9aa5c3b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShv5D1eZaV9i8RvqzGx4_R6SN6slLijxyHrA';" alt="Pin On Who What When Where How Why">
+										<div class="card-body">
+						<h3 class="h5"><b>These troops served on the Western frontier after the Civil War.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National buffalo soldier day</strong>. 
+								
+																	In such a rough-and-tumble place where unknown natural dangers and thieves abounded the buffalo soldiers had extremely low desertion rates. 
+																	WICHITA FALLS Texas TNN - Congress passed an act 154 years ago that allowed the African American soldiers to serve in the peacetime army. 
+																	While the Buffalo Soldiers legacy began on the vast Western frontier during the Indian Wars the home to the National Park Services Buffalo Soldiers story stands on a small parcel of land in west-central Ohio. 
+																	This nickname was given to the Black Cavalry by Native American tribes who fought in the Indian Wars. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Buffalo Soldiers originally were members of the 10th Cavalry Regiment of the United States Army formed on September 21 1866 at Fort Leavenworth Kansas. 
+																	July 28th is National Buffalo Soldiers Day the holiday celebrating the contributions of some of the earliest African-American troops in the United States military. 
+																	National Buffalo Solider Day organizers hope to bring light to many other soldiers. 
+																	These brave men of the 9th and 10th Cavalry Regiments were inexplicably named. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lindsey who moved to Wichita Falls in 1893. 
+																	National Buffalo Soldiers Day. 
+																	In honor of National Buffalo Soldier day Wichita Falls wants. 
+																	They got their nickname from Cheyenne warriors who likened their dark curly hair to that of buffalo hides. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Buffalo Soldiers Day 10th Cavalry in Cuba Buffalo Soldiers Day was proclaimed in 1992 by President George Bush as a day to honor the all-black Army regiments for an outstanding legacy of service On this day in 1866 the first regular Army regiments comprising African-American soldiers were formed. 
+																	How Is The Date For Buffalo Soldiers Day Calculated. 
+																	The San Angelo NAACP and Fort Concho will be commemorating the 154th National Buffalo Soldier Day Tuesday. 
+																	In honor of National Buffalo Soldier Day the community is shining a light on Felix L. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The first peacetime all-Black army regiment which we honor on Buffalo Soldiers Day July 28th each year was formed mainly to keep order in the Wild West after the Civil War. 
+																	Membership is open to all ethnic groups and genders. 
+																	Buffalo Soldiers Day 2019 is observed on Sunday July 28 2019 Buffalo Soldiers Day 2020 is observed on Tuesday July 28 2020 Wondering where we find all of these Days or if theyre even real. 
+																	According to the Wichita County Historical Commission Lindsey was. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Buffalo Soldier Day A 2 day event - starting where Buffalo Soldiers camped while building the Presidio of Monterey taking a walking tour of the Lower Presidio where they held Field Days and traveling their route the next day to Sequoia National Park. 
+																	The Mile High Chapter was established on July 20 2007 in Denver Colorado and is a chartered member of the National Association of Buffalo Soldiers and Troopers Motorcycle Club NABSTMC. 
+																	They served in a variety of ways including security law enforcement and other frontier-specific activities. 
+																	July 28th commemorates the formation of the first regular Army regiments of African American soldiers in 1866. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click here for more details May 15 16 2 020. 
+																	According to the National Park Service buffalo soldiers billeted at the Presidio army post in San Francisco during the winter and served as park rangers in the Sierra Nevada in the summer. 
+																	That act made those soldiers the first professional African American soldiers in the United States Military. 
+																	Although it may seem insignificant at first upon closer examination this relatively small site bursts at the seams with African American history. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Celebrated on July 28 every year the day is to remember the courage the strength and the sacrifice of Buffalo soldiers. 
+																	Today on National Buffalo Soldier Day- a day we celebrate the contributions of African American men who fought bled and died for this nation we experienced racism hate and vandalism. 
+																	Soon the name became a synonym for all black soldiers serving in the Army. 
+																	A grand two-story home. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After Fort Robinson was deactivated the bodies of 3 Buffalo Soldiers of the 9th and 10th Cavalry were relocated to Fort McPherson National Cemetery in 1947. 
+																	Our building was defaced with what appears to be a swastika symbol and a statement that seems to reads Sucks Democratic Party For 19 years we have educated the Houston surrounding communities and the. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/f8/06/c7f8060887dce3521b0bbceff16e3104.jpg" data-lightbox="roadtrip" data-title="Pin On H Is For Holidarts 2013">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/f8/06/c7f8060887dce3521b0bbceff16e3104.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKsNa0hYVXgw-mpNoZrRZnI_0WhgXepYR1pQ';" alt="Pin On H Is For Holidarts 2013">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On H Is For Holidarts 2013</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/09/2e/49092e597261e00e53878f14d1824b35.jpg" data-lightbox="roadtrip" data-title="Pin On What S Happening Today">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/09/2e/49092e597261e00e53878f14d1824b35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReAEbLEn_cvlG084aeA6QS-SlV_QZzD-hIsw';" alt="Pin On What S Happening Today">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On What S Happening Today</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/1e/de/3a1edef0dfcde33567630cfa7d8eba60.jpg" data-lightbox="roadtrip" data-title="Pin On It S Buffalo Soldiers Day 7 28">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/1e/de/3a1edef0dfcde33567630cfa7d8eba60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv2_49Vez3yJc17ChEvToCjYVqUh0fPgfgwg';" alt="Pin On It S Buffalo Soldiers Day 7 28">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On It S Buffalo Soldiers Day 7 28</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e6/5b/8e/e65b8efe966e7a6251ab9c5af83a4412.jpg" data-lightbox="roadtrip" data-title="Pin On Buffalo Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e6/5b/8e/e65b8efe966e7a6251ab9c5af83a4412.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4e7BH8-fIPKQBTWX1tR8JWKcnsHJtXmmN3w';" alt="Pin On Buffalo Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Buffalo Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/95/29/f6/9529f67ada756984ad6a6f898e822547.jpg" data-lightbox="roadtrip" data-title="Pin On History Facts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/95/29/f6/9529f67ada756984ad6a6f898e822547.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyhggQohUyUvAahdHQy6FYk87AMrfIMX2TYg';" alt="Pin On History Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On History Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/79/1b/90791b5f1fe20c244dec90598135a028.jpg" data-lightbox="roadtrip" data-title="Pin On It S Buffalo Soldiers Day 7 28">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/79/1b/90791b5f1fe20c244dec90598135a028.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4xp9XIBGJe54_qCCoeeMFTEsqMpHCr0x4XQ';" alt="Pin On It S Buffalo Soldiers Day 7 28">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On It S Buffalo Soldiers Day 7 28</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/71/aa/ba/71aabaa29bafd2c432c568bfac30a6d7.jpg" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/71/aa/ba/71aabaa29bafd2c432c568bfac30a6d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2D326TNY-cEdxSSmaYUPAexAN4CNzsdrkJA';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5c/e9/f3/5ce9f3f28880c5c8c90f7d21e16b4570.jpg" data-lightbox="roadtrip" data-title="Pin On Buffalo Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5c/e9/f3/5ce9f3f28880c5c8c90f7d21e16b4570.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAGfUa5hVX-A9Is7RgiyozMC7TmWF_XzZK3g';" alt="Pin On Buffalo Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Buffalo Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/2b/64/a82b648d7aa2040037b20c2b9ac75009.jpg" data-lightbox="roadtrip" data-title="Pin On Super Heroes Sci Fi And Pop Culture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/2b/64/a82b648d7aa2040037b20c2b9ac75009.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSxQ6TR_qgL8vL1yGU3BjHMYvI8nxwK8nd5Q';" alt="Pin On Super Heroes Sci Fi And Pop Culture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Super Heroes Sci Fi And Pop Culture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/55/5c/04/555c04142d5ef372227daadb9aa5c3b4.jpg" data-lightbox="roadtrip" data-title="Pin On Black Through The Years">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/55/5c/04/555c04142d5ef372227daadb9aa5c3b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF4aLCi3S62wAFXTSWCIKt17e4LZwxn83Y7A';" alt="Pin On Black Through The Years">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Black Through The Years</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/c9/73/95c97306faa2425b7079a9c116418286.jpg" data-lightbox="roadtrip" data-title="Pin On History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/c9/73/95c97306faa2425b7079a9c116418286.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuqd61UyPK8hFsneyIzqhu_pOj_-9ojpdQzw';" alt="Pin On History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/00/12/100012c050d5668464a28b060081f3eb.jpg" data-lightbox="roadtrip" data-title="Pin On Apush Period 7 1900 1945">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/00/12/100012c050d5668464a28b060081f3eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT596tVLghWAh5fGl5AE6DkF_s640zzy7g8lQ';" alt="Pin On Apush Period 7 1900 1945">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Apush Period 7 1900 1945</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/fe/81/f9/fe81f98d6d9e7cb7981ecf668489ea0a.jpg" data-lightbox="roadtrip" data-title="Buffalo Soldiers Who Fought In Cuba During The Spanish American War The Spanish American War American History American War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/fe/81/f9/fe81f98d6d9e7cb7981ecf668489ea0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHuBme2pDMxjMYQrC4oVd5DHrZJcSbDOOAIQ';" alt="Buffalo Soldiers Who Fought In Cuba During The Spanish American War The Spanish American War American History American War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buffalo Soldiers Who Fought In Cuba During The Spanish American War The Spanish American War American History American War</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-song-to-download.html">Army Song To Download</a></li>
+													<li class="list-group-item"><a href="/army-songs-rap.html">Army Songs Rap</a></li>
+													<li class="list-group-item"><a href="/army-song-ringtone.html">Army Song Ringtone</a></li>
+													<li class="list-group-item"><a href="/army-song-old.html">Army Song Old</a></li>
+													<li class="list-group-item"><a href="/army-songs-latest.html">Army Songs Latest</a></li>
+													<li class="list-group-item"><a href="/army-song-zameen-o-asman.html">Army Song Zameen O Asman</a></li>
+													<li class="list-group-item"><a href="/army-song-zameen-jagti-hai.html">Army Song Zameen Jagti Hai</a></li>
+													<li class="list-group-item"><a href="/army-songs-mp3-download.html">Army Songs Mp3 Download</a></li>
+													<li class="list-group-item"><a href="/army-songs-in-kannada.html">Army Songs In Kannada</a></li>
+													<li class="list-group-item"><a href="/army-songs-download-dj.html">Army Songs Download Dj</a></li>
+													<li class="list-group-item"><a href="/army-songs-downloading.html">Army Songs Downloading</a></li>
+													<li class="list-group-item"><a href="/army-song-open.html">Army Song Open</a></li>
+													<li class="list-group-item"><a href="/army-songs-goswami.html">Army Songs Goswami</a></li>
+													<li class="list-group-item"><a href="/army-song-status.html">Army Song Status</a></li>
+													<li class="list-group-item"><a href="/army-song-tamil-mp3.html">Army Song Tamil Mp3</a></li>
+													<li class="list-group-item"><a href="/army-song-sri-lanka-mp3.html">Army Song Sri Lanka Mp3</a></li>
+													<li class="list-group-item"><a href="/army-songs-for-download.html">Army Songs For Download</a></li>
+													<li class="list-group-item"><a href="/army-song-remix-download.html">Army Song Remix Download</a></li>
+													<li class="list-group-item"><a href="/army-songs-free-download.html">Army Songs Free Download</a></li>
+													<li class="list-group-item"><a href="/army-song-ringtone-hindi.html">Army Song Ringtone Hindi</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

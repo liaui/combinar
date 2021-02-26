@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Coast Guard Kodiak Ak - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Coast Guard Kodiak Ak",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/db/51/31/db5131b7410e374c5aaf1e2fed3cac86.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+coast+guard+kodiak+ak",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Coast Guard Kodiak Ak</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Based in Juneau Anchorage and Kodiak Alaska. 425 100 shipping. The largest Coast Guard Base based on acreage being 23000 acres. <br>				
+			</p>
+										<a class="badge badge-info" href="/army-ranks-specialist.html">army ranks specialist</a>
+											<a class="badge badge-warning" href="/army-ranks-game.html">army ranks game</a>
+											<a class="badge badge-secondary" href="/army-reserve-and-national-guard-difference.html">army reserve and national guard difference</a>
+											<a class="badge badge-secondary" href="/army-ranks-requirements.html">army ranks requirements</a>
+											<a class="badge badge-secondary" href="/army-related-paintings.html">army related paintings</a>
+											<a class="badge badge-light" href="/army-related-hindi-songs.html">army related hindi songs</a>
+											<a class="badge badge-warning" href="/army-ranks-medieval.html">army ranks medieval</a>
+											<a class="badge badge-primary" href="/army-ranks-nato.html">army ranks nato</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the ideal blog.  Our site gives you suggestions for seeing the highest quality video and image content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie that you see.  It is also possible to bring about supporting this site by sharing videos and graphics that you like on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/6e/69/196e6946ad64d249c725674823857f3f.jpg" data-lightbox="roadtrip" data-title="Uscg Base Kodiak Alaska Fingers Crossed This Will Be Our Home Next Year For The Following Three Years Top Of O North To Alaska Kodiak Alaska Alaska Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/6e/69/196e6946ad64d249c725674823857f3f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC07iuSW5MchUj1vkLVLLCgjmHzVDpSAmaKA';" alt="Uscg Base Kodiak Alaska Fingers Crossed This Will Be Our Home Next Year For The Following Three Years Top Of O North To Alaska Kodiak Alaska Alaska Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uscg Base Kodiak Alaska Fingers Crossed This Will Be Our Home Next Year For The Following Three Years Top Of O North To Alaska Kodiak Alaska Alaska Travel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/ef/85/f0ef85bf488332471511a4e06818ef73.jpg" data-lightbox="roadtrip" data-title="Uscg Bases In Kodiak Alaska Kodiak Alaska Kodiak Island Kodiak">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/ef/85/f0ef85bf488332471511a4e06818ef73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6uRkWGJG0THfZmc-eEDzFD0pqNAlnYVwZgA';" alt="Uscg Bases In Kodiak Alaska Kodiak Alaska Kodiak Island Kodiak">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uscg Bases In Kodiak Alaska Kodiak Alaska Kodiak Island Kodiak</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/c3/89/31c389b6e32ccb9c163bce80d4c90448.jpg" data-lightbox="roadtrip" data-title="U S Coast Guard Air Station Kodiak Coast Guard Rescue Coast Guard Ships Us Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/c3/89/31c389b6e32ccb9c163bce80d4c90448.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkDkkLtHXKZSfhpNbbz-erYMLEZcJnqxLF3Q';" alt="U S Coast Guard Air Station Kodiak Coast Guard Rescue Coast Guard Ships Us Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Coast Guard Air Station Kodiak Coast Guard Rescue Coast Guard Ships Us Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/13/3a/b9133af92cea37b71ac174f29de5eb2f.jpg" data-lightbox="roadtrip" data-title="Kodiak Island Alaska Us Coast Guard Base North To Alaska Alaska Travel Coast Guard Bases">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/13/3a/b9133af92cea37b71ac174f29de5eb2f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9sKSEy6bC6ws7WbCTDl7YrrUe9cB3MYlCg';" alt="Kodiak Island Alaska Us Coast Guard Base North To Alaska Alaska Travel Coast Guard Bases">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kodiak Island Alaska Us Coast Guard Base North To Alaska Alaska Travel Coast Guard Bases</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/ca/21/33ca217cabe74740c90f5392d0475b31.jpg" data-lightbox="roadtrip" data-title="So Proud Of The Coast Guard This Cutter Is In Alaska Kodiak Alaska Alaska Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/ca/21/33ca217cabe74740c90f5392d0475b31.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpRYqFGlml_0hMSouquMARQmfo2weyXiykiA';" alt="So Proud Of The Coast Guard This Cutter Is In Alaska Kodiak Alaska Alaska Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">So Proud Of The Coast Guard This Cutter Is In Alaska Kodiak Alaska Alaska Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/51/31/db5131b7410e374c5aaf1e2fed3cac86.jpg" data-lightbox="roadtrip" data-title="Us Coast Guard Kodiak Base Barometer Mountain Kodiak Island Alaska Kodiak Island Kodiak Alaska Alaska Travel">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/51/31/db5131b7410e374c5aaf1e2fed3cac86.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQirakt8eT9BQJZWTL3j6e-Ub0THRuoLO_pAw';" alt="Us Coast Guard Kodiak Base Barometer Mountain Kodiak Island Alaska Kodiak Island Kodiak Alaska Alaska Travel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Coast Guard Kodiak Base Barometer Mountain Kodiak Island Alaska Kodiak Island Kodiak Alaska Alaska Travel</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/a8/d8/ee/a8d8ee968957e8582b35447255ceb7d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQirakt8eT9BQJZWTL3j6e-Ub0THRuoLO_pAw';" alt="Us Coast Guard Kodiak Base Barometer Mountain Kodiak Island Alaska Kodiak Island Kodiak Alaska Alaska Travel">
+										<div class="card-body">
+						<h3 class="h5"><b>Coast Guard employee convicted of shooting two co-workers to death at a remote Kodiak Island communications station two years ago was sentenced to four.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us coast guard kodiak ak</strong>. 
+								
+																	Vintage US Coast Guard Patch Large Red Anchor. 
+																	356 100 shipping. 
+																	Coast Guard issues commercial fishing violation near Kodiak Island Alaska Image 1 of 2 AK UNITED STATES 02042021 Courtesy Photo US. 
+																	For more information about the 17th District visit our homepage at wwwuscgmild17. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kodiak also known as the Emerald Island is located approximately 250 miles southwest of Anchorage and is the second largest island belonging to the United States. 
+																	L The Kodiak MWR Guest House a non-smoking hotel was completely re-outfitted with new furniture providing patrons with an Alaskan Log Cabin theme. 
+																	Coast Guard Base in Kodiak Alaska is one of the largest in the world with over 3500 active duty retired military DHS civilians and family members in the area. 
+																	The Command Religious Program for USCG Base Kodiak delivers a continually improving selection of ministry worship religious education pastoral care counseling and fellowship opportunities for single and married youth adults and families in our island community. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Coast Guard Chief Petty Officers Association CPOA was chartered on April 7 1969. 
+																	The largest in the services Pacific Area with a crew of 85 officers and 517 enlisted personnel. 
+																	750 100 shipping. 
+																	We serve and safeguard the public protect the environment and its resources and defend the Nations interests in the Alaskan maritime region. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	JUNEAU Alaska Reuters - A former US. 
+																	A boarding team. 
+																	Coast Guard Base Kodiaks official page. 
+																	Vintage US Coast Guard Patch Midgett WHEC 726 San Francisco Bay. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Directions both mobile and traditional are available below along with their phone number. 
+																	PADET Kodiak is a sub-office of the Coast Guards 17th District Headquarters in Juneau. 
+																	100 100. 
+																	Welcome to the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vintage US Coast Guard Patch 17th District. 
+																	Latest PADET Kodiak News Photo Release. 
+																	Welcome to the OFFICIAL US. 
+																	The largest tenant unit on the base is Air Station Kodiak. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Their address is Po Box 195002 in Kodiak Alaska 99619. 
+																	It is also the home port for several cutters. 
+																	The Air Station was commissioned as an Air Detachment April 17 1947 with one PBY Catalina aircraft seven pilots and 30 crewmen. 
+																	USCG Kodiak CPOA Kodiak CPOA Chapter raises funds to support Coast Guard personnel Project Healing Waters and our local community the island of Kodiak AK. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our Coast Guard Base in Kodiak Alaska is one of the largest in the world with over 3500 active duty retired military DHS civilians and family members in the area. 
+																	Kodiak MWR Guest House Reservations. 
+																	Coast Guard Air Station Kodiak is an Air Station of the United States Coast Guard located in Kodiak Alaska. 
+																	Historic elements that it includes are the Kodiak Naval Operating Base Fort Greely and Fort Abercrombie. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coast Guard District 17 Subscribe. 
+																	The lobby has been outfitted with elegant leather furniture transforming the entrance into an inviting and warm location for guests to relax. 
+																	Nations sole heavy icebreaker arrives in Dutch Harbor Alaska for first visit since 2013. 
+																	Coast Guard Air Station Kodiak is a Seventeenth Coast Guard District D17 unit on beautiful Kodiak Island approximately 250 miles southwest of Anchorage Alaska. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	During an average month in the 17th District the Coast Guard. 
+																	Coast Guard Base Kodiak is a major shore installation of the United States Coast Guard located in Kodiak Alaska. 
+																	The 327 foot cutters were capable of carrying an aircraft. 
+																	Kodiak also known as the Emerald Island is located approximately 250 miles southwest of Anchorage and is the second largest island belonging to the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Latest 17th District News. 
+																	We serve and safeguard the public protect the environment and its resources and defend the Nations interests in the Alaskan maritime region. 
+																	Coast Guard Base Kodiak Kodiak Alaska. 
+																	Coast Guard Base Kodiak Facebook page. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Vintage US Coast Guard Patch Training Center Alameda. 
+																	If youre looking for the official source of information about the United States Coast Guard Any links provided to a US. 
+																	Vintage US Coast Guard Air Station Search and Rescue Kodiak Alaska Patch. 
+																	1947 Coast Guard Air Detachment Kodiak Alaska Established The USCGC Spencer a newly commissioned 327 foot Treasury Class cutter was enroute to Cordova Alaska where it would be based. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	125 100 shipping. 
+																	10881 likes 73 talking about this 4988 were here. 
+																	Coast Guard presence on other third party sites is for your reference only. 
+																	Base Kodiak is the home of Rock Solid Support We serve as the senior Mission Support touchstone for Coast Guard operations within the 17th Coast Guard District across Alaska standing shoulder-to-shoulder with our operational partners to ensure the delivery of professional responsive and cost-effective services to the American public. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to the Coast Guards Public Affairs Detachment Kodiak. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/57/45/85574552caaeb034ef33a910530a8459.jpg" data-lightbox="roadtrip" data-title="Pin On Alaska Yukon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/57/45/85574552caaeb034ef33a910530a8459.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKrearUCv8kc0e3KmP2Q9DROTxgbmxabOM5Q';" alt="Pin On Alaska Yukon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Alaska Yukon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/c8/7e/d4c87eadb235ced9371a25e5b9a7bbd8.jpg" data-lightbox="roadtrip" data-title="Aug 10 Kodiak 054 Coast Guard Stations Kodiak Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/c8/7e/d4c87eadb235ced9371a25e5b9a7bbd8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa7SvU1BTftOdQP84oyYbFcza6vba3tkEMjg';" alt="Aug 10 Kodiak 054 Coast Guard Stations Kodiak Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aug 10 Kodiak 054 Coast Guard Stations Kodiak Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/aa/09/c9aa0927209164aca207e4b574780d38.jpg" data-lightbox="roadtrip" data-title="Uscg Kodiak Base Kodiak Alaska Kodiak Natural Landmarks Alaska">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/aa/09/c9aa0927209164aca207e4b574780d38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuHxS5Z6qgnriq13xXIa6-ToF1bnbgTgx8ZQ';" alt="Uscg Kodiak Base Kodiak Alaska Kodiak Natural Landmarks Alaska">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uscg Kodiak Base Kodiak Alaska Kodiak Natural Landmarks Alaska</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/8d/f0/f58df0cbdb3f250ee6d895e8993adb6a.jpg" data-lightbox="roadtrip" data-title="Kodiak Alaska United States Coast Guard Base Coast Guard Bases Kodiak Alaska Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/8d/f0/f58df0cbdb3f250ee6d895e8993adb6a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS593mHrJnHfS8vg0b1lE7hh7OCE-2qwUwm0w';" alt="Kodiak Alaska United States Coast Guard Base Coast Guard Bases Kodiak Alaska Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kodiak Alaska United States Coast Guard Base Coast Guard Bases Kodiak Alaska Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/bd/d8/64bdd8f4cdb4b2c7c2297fdfefb9de29.jpg" data-lightbox="roadtrip" data-title="Pin On Coast Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/bd/d8/64bdd8f4cdb4b2c7c2297fdfefb9de29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR86UqY4Q4dvc26m5Dmhk8Y7yQE9v5AGuLkjw';" alt="Pin On Coast Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Coast Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/66/a4/6e66a4f645c1629262e6a7ee0c0cf473.jpg" data-lightbox="roadtrip" data-title="Lockheed Hc 130h Hercules 1711 U S C G Air Station Kodiak Alaska Originally Usaf 84 0480 Usaf Kodiak Lockheed">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/66/a4/6e66a4f645c1629262e6a7ee0c0cf473.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThYG3kioew7RIHnqHN1EV0hGawc9eQQy-T4A';" alt="Lockheed Hc 130h Hercules 1711 U S C G Air Station Kodiak Alaska Originally Usaf 84 0480 Usaf Kodiak Lockheed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lockheed Hc 130h Hercules 1711 U S C G Air Station Kodiak Alaska Originally Usaf 84 0480 Usaf Kodiak Lockheed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/ae/47/deae4786c7c71cf4d20cafa7ab9690ac.jpg" data-lightbox="roadtrip" data-title="Coast Guard Air Station Kodiak Coast Guard Coast Guard Cutter Coast Guard Boats">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/ae/47/deae4786c7c71cf4d20cafa7ab9690ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToe6IRiSoS3OIt1AC9lZGQJpdsfDudiUaTNQ';" alt="Coast Guard Air Station Kodiak Coast Guard Coast Guard Cutter Coast Guard Boats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coast Guard Air Station Kodiak Coast Guard Coast Guard Cutter Coast Guard Boats</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/75/79/bf7579952b464f8911ac123484802226.jpg" data-lightbox="roadtrip" data-title="Uscg Kodiak Base Kodiak Alaska Kodiak Coast Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/75/79/bf7579952b464f8911ac123484802226.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSae8qMInNfXt_wjRdRa8ffTJKzNoZkJCHKPA';" alt="Uscg Kodiak Base Kodiak Alaska Kodiak Coast Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uscg Kodiak Base Kodiak Alaska Kodiak Coast Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/06/e2/1406e2dbf07d99f7faaf82aeaf98adad.jpg" data-lightbox="roadtrip" data-title="Timeline Photos Emergency Medical Services Flight Safety Network Facebook Coast Guard Helicopter Coast Guard Us Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/06/e2/1406e2dbf07d99f7faaf82aeaf98adad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Dj9pbhDcntrk5LozgQ0RnVgbcyOf5RWijg';" alt="Timeline Photos Emergency Medical Services Flight Safety Network Facebook Coast Guard Helicopter Coast Guard Us Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Timeline Photos Emergency Medical Services Flight Safety Network Facebook Coast Guard Helicopter Coast Guard Us Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/d8/ee/a8d8ee968957e8582b35447255ceb7d7.jpg" data-lightbox="roadtrip" data-title="Pin On Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/d8/ee/a8d8ee968957e8582b35447255ceb7d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8uYF7OGMA-c3mj3NXqHVymNyo1fbkp3L7-A';" alt="Pin On Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/76/d1/ab76d177b3e215c2487c613d0ceb601a.jpg" data-lightbox="roadtrip" data-title="Kodiak Alaska The Four Mh 60 Jayhawk Rescue Helicopters Attached To Air Station Kodiak Taxi Down The C Coast Guard Helicopter Military Helicopter Helicopter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/76/d1/ab76d177b3e215c2487c613d0ceb601a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmEO8lApRXadCXrhTf85zBGWWVQZAulxJ5Ag';" alt="Kodiak Alaska The Four Mh 60 Jayhawk Rescue Helicopters Attached To Air Station Kodiak Taxi Down The C Coast Guard Helicopter Military Helicopter Helicopter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kodiak Alaska The Four Mh 60 Jayhawk Rescue Helicopters Attached To Air Station Kodiak Taxi Down The C Coast Guard Helicopter Military Helicopter Helicopter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/d6/fb/0ed6fbcaa21e40997f38a49853c2fb98.jpg" data-lightbox="roadtrip" data-title="Pin On Aviation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/d6/fb/0ed6fbcaa21e40997f38a49853c2fb98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkyDVo_mPOZOA4RqCU_BP-bbezJtrlNhARzw';" alt="Pin On Aviation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Aviation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e6/6c/c9/e66cc9a182834f9d055c698959512417.jpg" data-lightbox="roadtrip" data-title="Pin On Just Plain Awesome">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e6/6c/c9/e66cc9a182834f9d055c698959512417.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWKbtjX3NvSKVTsuMX1uzvRBzIssair68JDw';" alt="Pin On Just Plain Awesome">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Just Plain Awesome</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/active-duty-army-national-guard-pay.html">Active Duty Army National Guard Pay</a></li>
+													<li class="list-group-item"><a href="/91d-national-guard.html">91d National Guard</a></li>
+													<li class="list-group-item"><a href="/ados-national-guard.html">Ados National Guard</a></li>
+													<li class="list-group-item"><a href="/25b-reclass-national-guard.html">25b Reclass National Guard</a></li>
+													<li class="list-group-item"><a href="/active-to-guard-army.html">Active To Guard Army</a></li>
+													<li class="list-group-item"><a href="/53rd-ibct.html">53rd Ibct</a></li>
+													<li class="list-group-item"><a href="/air-guard-security-forces.html">Air Guard Security Forces</a></li>
+													<li class="list-group-item"><a href="/a-national-guard-recruiter.html">A National Guard Recruiter</a></li>
+													<li class="list-group-item"><a href="/air-guard-or-army-guard.html">Air Guard Or Army Guard</a></li>
+													<li class="list-group-item"><a href="/air-force-national-guard-recruiter.html">Air Force National Guard Recruiter</a></li>
+													<li class="list-group-item"><a href="/abg-hco3.html">Abg Hco3</a></li>
+													<li class="list-group-item"><a href="/active-army-guard-jobs.html">Active Army Guard Jobs</a></li>
+													<li class="list-group-item"><a href="/29th-infantry-division-squad.html">29th Infantry Division Squad</a></li>
+													<li class="list-group-item"><a href="/91c-national-guard.html">91c National Guard</a></li>
+													<li class="list-group-item"><a href="/about-national-security-guard.html">About National Security Guard</a></li>
+													<li class="list-group-item"><a href="/2020-football-recruit-rankings.html">2020 Football Recruit Rankings</a></li>
+													<li class="list-group-item"><a href="/active-guard-reserve.html">Active Guard Reserve</a></li>
+													<li class="list-group-item"><a href="/9800-goethe-road.html">9800 Goethe Road</a></li>
+													<li class="list-group-item"><a href="/about-the-air-national-guard.html">About The Air National Guard</a></li>
+													<li class="list-group-item"><a href="/abg-values-chart.html">Abg Values Chart</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

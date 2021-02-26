@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Songs Rap - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Songs Rap",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/9a/5c/87/9a5c872d48207d8e1a01560c9b05a1c9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+songs+rap",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Songs Rap</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Alright you maggots get it up Do you love me I cant hear you Pick em up and put em down youre in the army now Well make a man of you and then a soldier too. Want to use this track. My son even carefully selected for me rap he thought Id like and he generally was right. <br>				
+			</p>
+										<a class="badge badge-success" href="/otis-and-the-cat.html">otis and the cat</a>
+											<a class="badge badge-dark" href="/otis-and-pearl.html">otis and pearl</a>
+											<a class="badge badge-warning" href="/painting-army-camo.html">painting army camo</a>
+											<a class="badge badge-warning" href="/otis-and-kate.html">otis and kate</a>
+											<a class="badge badge-warning" href="/otis-and-vinnys-los-angeles-modern-family.html">otis and vinnys los angeles modern family</a>
+											<a class="badge badge-info" href="/otis-and-ruby-reddit.html">otis and ruby reddit</a>
+											<a class="badge badge-danger" href="/otis-and-olivers.html">otis and olivers</a>
+											<a class="badge badge-warning" href="/otis-and-johnson-attorneys.html">otis and johnson attorneys</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to visit the ideal blog.  Our site provides you with suggestions for viewing the highest quality video and image content, hunt and locate more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie that you see.  You can also contribute to supporting this website by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/0a/a9/010aa943b0f5c34fc574e59ac37d383f.jpg" data-lightbox="roadtrip" data-title="Rap Bts Army Song Mv Keblin Ovalles Album Bts Rap Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/0a/a9/010aa943b0f5c34fc574e59ac37d383f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgVaQ7C_-mMg4jYabXXffjOOCYabn_Htfj5w';" alt="Rap Bts Army Song Mv Keblin Ovalles Album Bts Rap Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rap Bts Army Song Mv Keblin Ovalles Album Bts Rap Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/d6/83/41d683c5aec7e12cf3e2532caedb1d23.jpg" data-lightbox="roadtrip" data-title="Pin By Sugabiased Army On Canciones Rap Youtube Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/d6/83/41d683c5aec7e12cf3e2532caedb1d23.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtXzO5q8vQ9PxM7tTJkmeCj2XI9Q7BTmy16g';" alt="Pin By Sugabiased Army On Canciones Rap Youtube Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sugabiased Army On Canciones Rap Youtube Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/14/8b/7e/148b7e5ccf10eeba41c04ae8c7c0e326.jpg" data-lightbox="roadtrip" data-title="Bts Rap Bts Army Song Keblin Ovalles Letra Fmv Bts Youtube Songs Bts Army Rap">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/14/8b/7e/148b7e5ccf10eeba41c04ae8c7c0e326.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Z6Z0zR_MiUmwlmvXZ3kiHIpiiXALQalzZQ';" alt="Bts Rap Bts Army Song Keblin Ovalles Letra Fmv Bts Youtube Songs Bts Army Rap">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bts Rap Bts Army Song Keblin Ovalles Letra Fmv Bts Youtube Songs Bts Army Rap</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/8e/ba/ed8eba668136b0474874cede9f7ca833.jpg" data-lightbox="roadtrip" data-title="The Military Rap Rap Music Videos Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/8e/ba/ed8eba668136b0474874cede9f7ca833.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG0jLrzC2hfO_S29Om3YTsCsNs3gRkUfKPwQ';" alt="The Military Rap Rap Music Videos Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Military Rap Rap Music Videos Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/f1/d7/75f1d7fb2c7cf3d9a66e57b449997ab9.jpg" data-lightbox="roadtrip" data-title="Fauj Da Jawan Pakistan Army Song Punjabi Rap Kaz Pakistan Army Army Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/f1/d7/75f1d7fb2c7cf3d9a66e57b449997ab9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVYgT_3hGx-KxEb_Iot2wIJiBSpqLLwEoifw';" alt="Fauj Da Jawan Pakistan Army Song Punjabi Rap Kaz Pakistan Army Army Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fauj Da Jawan Pakistan Army Song Punjabi Rap Kaz Pakistan Army Army Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/5c/87/9a5c872d48207d8e1a01560c9b05a1c9.jpg" data-lightbox="roadtrip" data-title="Bts 30 Days Music Challenge Music Challenge 30 Day Music Challenge 30 Day Song Challenge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/5c/87/9a5c872d48207d8e1a01560c9b05a1c9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTgT9IftlpjGmHzSXRdc_M2rPYPRUipGb8Ww';" alt="Bts 30 Days Music Challenge Music Challenge 30 Day Music Challenge 30 Day Song Challenge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bts 30 Days Music Challenge Music Challenge 30 Day Music Challenge 30 Day Song Challenge</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/6d/bb/7e/6dbb7e7d11a643b250facbe6934160b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTgT9IftlpjGmHzSXRdc_M2rPYPRUipGb8Ww';" alt="Bts 30 Days Music Challenge Music Challenge 30 Day Music Challenge 30 Day Song Challenge">
+										<div class="card-body">
+						<h3 class="h5"><b>1993 Ne en 17 a Leidenstadt Jean-Jacques Goldman.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army songs rap</strong>. 
+								
+																	Military Bands on AllMusic. 
+																	ARMY GANGWAR 2 New Most Popular Haryanvi Songs Haryanavi 2019. 
+																	Download the best New Rap songs mp3. 
+																	1971 Military Madness Graham Nash. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When I expressed surprise that an Army major would like the band he said Hey. 
+																	Soldier Rap Beats - Fing Beats Indian Army Song Free Beats 2021 Best Rap Beats_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ If You Like Thi. 
+																	2005 MIA Avenged Sevenfold. 
+																	1st Class Arlondo Sutton and Jason. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	HttpsgoogldciULv Click On The Bell Turn On Notifications. 
+																	1986 Method to Your Madness Metal Church. 
+																	The Army reported that Sgts. 
+																	Rap has become the music of modern young men and women and now the Army is using the popular art form to recruit new enlistees. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Indian army rap sameer sikdar rapsongs. 
+																	Download RozDhan App Now - httpsylinkcceR8FCUse My Invite Code To Get Rs50 Instantly - 005GTH- - - - - - - - - - - - - - - - - - -. 
+																	From Roddy Ricch to Future to Megan Thee Stallion check out Billboards best rap songs of 2020. 
+																	Laugh cry be inspired and enjoy the top 10 best songs for military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1961 Miss Gueguerre Leo Ferre. 
+																	Starring with SUMIT GOSWAMI SHANKY GOSWAMI And Song Is Directed by Deepesh Goyal Music Lab. 
+																	Lyrics to Military Rap by Blondie. 
+																	Army has a new music video that features two full-time recruiters rapping about the types of Army jobs that are open to young people in Generation Z. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1967 Dont Put Your Boys In The Army Mrs Ward The Idle Race. 
+																	Mercenary Song Steve Earle. 
+																	This is a song I wrote about my experiences in the US. 
+																	Get popular Rap songs and new Rap songs download albums new song download at your Hungama account. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Say what you will about the simple lyrics to mindless pop songs but there is definitely an art to sneaking adult themes into hits that everyone from 8-80 will sing along to. 
+																	Lots of songs. 
+																	18071814 Mrs McGrath folk music. 
+																	MP3 Song - Listen top Rap mp3 songs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Not your first thought for a military song but these colors dont run is a metal ballad for soldiers. 
+																	Find album reviews stream songs credits and award information for 50 American Patriotic Military Songs - US. 
+																	Watch the official music video for Seven Nation Army by The White Stripes directed by Alex MartinListen to The White Stripes. 
+																	These Colors Dont Run Iron Maiden. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Get Access to unlimited free mp3 songs download new mp3 song download movies videos streaming new song download video songs short films TV shows and much more at Hungama. 
+																	The songs we chose for the top 10 best military songs are no different. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/bf/ee/eabfeed36cf1328a364e7a1f57165918.jpg" data-lightbox="roadtrip" data-title="Pubg Hindi Rap Song Ft Shreeman Legend Live Shreeman Legend Sniping Rap Songs Rap Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/bf/ee/eabfeed36cf1328a364e7a1f57165918.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAIiHNyJUPvLR2aCc4MlORYF7EYH1OMbgUmA';" alt="Pubg Hindi Rap Song Ft Shreeman Legend Live Shreeman Legend Sniping Rap Songs Rap Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pubg Hindi Rap Song Ft Shreeman Legend Live Shreeman Legend Sniping Rap Songs Rap Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/ec/06/fbec066e489e4747a2eefe76eb426da9.jpg" data-lightbox="roadtrip" data-title="Army Song Page One Songs Chorus Verse">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/ec/06/fbec066e489e4747a2eefe76eb426da9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPSJ1zr9uUG0Ju11mTuHRD-66YchqoUm_GQ';" alt="Army Song Page One Songs Chorus Verse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Song Page One Songs Chorus Verse</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/1c/1c/fd1c1cc91381ae687776a7edeaba2e73.jpg" data-lightbox="roadtrip" data-title="Pin By Music Fulcrum On Indian Music Scene Whats New Rap Songs Songs Indian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/1c/1c/fd1c1cc91381ae687776a7edeaba2e73.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWFk_KLglgTOb0x89lWkHPyFt2DJnnTpQzaQ';" alt="Pin By Music Fulcrum On Indian Music Scene Whats New Rap Songs Songs Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Music Fulcrum On Indian Music Scene Whats New Rap Songs Songs Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/5e/5f/b9/5e5fb96785aec9480280cc3084ec778f.jpg" data-lightbox="roadtrip" data-title="Indian Army Results 2019 Junior Commissioned Officer Posts Indian Army Wallpapers Army Images Army Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/5e/5f/b9/5e5fb96785aec9480280cc3084ec778f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBgzJTxK0_2jvK8BoPZ-Y0MR8p_6IU16eKwg';" alt="Indian Army Results 2019 Junior Commissioned Officer Posts Indian Army Wallpapers Army Images Army Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Results 2019 Junior Commissioned Officer Posts Indian Army Wallpapers Army Images Army Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/34/5f/ff/345fff6300ccec84558a6c29fb91bfbc.jpg" data-lightbox="roadtrip" data-title="Indian Army Status Whatsapp Video Army Status Video Army Feeling Proud Status Army Lover Whatsapp Youtube Army Indian Army Romantic Status">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/34/5f/ff/345fff6300ccec84558a6c29fb91bfbc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6fwbgzmypALBkoeDkjGHCSVOFZGz03Vi5bQ';" alt="Indian Army Status Whatsapp Video Army Status Video Army Feeling Proud Status Army Lover Whatsapp Youtube Army Indian Army Romantic Status">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Status Whatsapp Video Army Status Video Army Feeling Proud Status Army Lover Whatsapp Youtube Army Indian Army Romantic Status</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/a3/40/a2a34002fdb5ecfda6a4914520ee9306.png" data-lightbox="roadtrip" data-title="Gibraltar Raps I Am An Army An Apex Legends Song Prod Xtreme Beats Youtube In 2020 Legend Songs Rap Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/a3/40/a2a34002fdb5ecfda6a4914520ee9306.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmLf0R9oUHVeExMXdCAWCW4a5L9dy4IQxVCQ';" alt="Gibraltar Raps I Am An Army An Apex Legends Song Prod Xtreme Beats Youtube In 2020 Legend Songs Rap Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gibraltar Raps I Am An Army An Apex Legends Song Prod Xtreme Beats Youtube In 2020 Legend Songs Rap Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/e1/1e/b4e11e946868758cd8eefb6b91441bf9.jpg" data-lightbox="roadtrip" data-title="Opanka Anigye Ft Bosom P Yung In 2021 Hip Hop Songs Dj Mixtape Rap Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/e1/1e/b4e11e946868758cd8eefb6b91441bf9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8dTaXPRE-Y4iYAVmVLhsb7tiFWXmmrWDh4w';" alt="Opanka Anigye Ft Bosom P Yung In 2021 Hip Hop Songs Dj Mixtape Rap Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Opanka Anigye Ft Bosom P Yung In 2021 Hip Hop Songs Dj Mixtape Rap Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/80/c1/af/80c1af916a7a42913dcfd44c1b8496b4.jpg" data-lightbox="roadtrip" data-title="Army Of Trust Ii By Trust Army On Spotify In 2020 Rap Songs Planet Asia Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/80/c1/af/80c1af916a7a42913dcfd44c1b8496b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt1HkkyxZGmigyWe-AfPbuzB1lPGviui4rkA';" alt="Army Of Trust Ii By Trust Army On Spotify In 2020 Rap Songs Planet Asia Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Of Trust Ii By Trust Army On Spotify In 2020 Rap Songs Planet Asia Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/bc/53/b8bc530337d9ed7417589d27cd773309.jpg" data-lightbox="roadtrip" data-title="Pin On Eminem">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/bc/53/b8bc530337d9ed7417589d27cd773309.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1nGknWCn1lK3Fw6TUdh6b1kA-9KipOrQ1zw';" alt="Pin On Eminem">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Eminem</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/85/75/72857500d48019c0858fd4419194ff24.png" data-lightbox="roadtrip" data-title="Api Gewana Jeewithe Lyrics Lyrics Rap Artists Rap Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/85/75/72857500d48019c0858fd4419194ff24.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgND--p8-Oz-qJcwk8_HH9KNuW3hD1pOXAwA';" alt="Api Gewana Jeewithe Lyrics Lyrics Rap Artists Rap Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Api Gewana Jeewithe Lyrics Lyrics Rap Artists Rap Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/b2/7e/e3/b27ee37d8c517f031502ba8bdd6082e6.jpg" data-lightbox="roadtrip" data-title="New Army Pls Appreciate Don T Forget The Most Beautiful Moment In Life Love Is Not Over Outro Do You Think It Makes Bts Funny Bts Fans Bts Boys">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/b2/7e/e3/b27ee37d8c517f031502ba8bdd6082e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9NDos5FrKHG4jq05a-oQq8uNAfyN9CUHelA';" alt="New Army Pls Appreciate Don T Forget The Most Beautiful Moment In Life Love Is Not Over Outro Do You Think It Makes Bts Funny Bts Fans Bts Boys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Army Pls Appreciate Don T Forget The Most Beautiful Moment In Life Love Is Not Over Outro Do You Think It Makes Bts Funny Bts Fans Bts Boys</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/bb/7e/6dbb7e7d11a643b250facbe6934160b0.jpg" data-lightbox="roadtrip" data-title="Pin On Sound">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/bb/7e/6dbb7e7d11a643b250facbe6934160b0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvCH0m_ti9L3lb2z3KshyorwLTFrO9unsdlw';" alt="Pin On Sound">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sound</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/32/aa/3032aa2d6f18ca1fd24cb7ee064d68df.jpg" data-lightbox="roadtrip" data-title="Rap Song On Tdp Chandrababu Naidu Thank You Dear Cm Song Cbn Anthem 2019 Rap Songs Songs Rap">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/32/aa/3032aa2d6f18ca1fd24cb7ee064d68df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpMB0R1sVO_9bnSm5mSrWihMhou4Q5HdhsuA';" alt="Rap Song On Tdp Chandrababu Naidu Thank You Dear Cm Song Cbn Anthem 2019 Rap Songs Songs Rap">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rap Song On Tdp Chandrababu Naidu Thank You Dear Cm Song Cbn Anthem 2019 Rap Songs Songs Rap</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/argus-vs-sun.html">Argus Vs Sun</a></li>
+													<li class="list-group-item"><a href="/army-army-email.html">Army Army Email</a></li>
+													<li class="list-group-item"><a href="/army-ants-artinya.html">Army Ants Artinya</a></li>
+													<li class="list-group-item"><a href="/army-army-army-army.html">Army Army Army Army</a></li>
+													<li class="list-group-item"><a href="/army-army-cadets.html">Army Army Cadets</a></li>
+													<li class="list-group-item"><a href="/argus-world-of-warcraft.html">Argus World Of Warcraft</a></li>
+													<li class="list-group-item"><a href="/argus-youtube.html">Argus Youtube</a></li>
+													<li class="list-group-item"><a href="/army-army-gear.html">Army Army Gear</a></li>
+													<li class="list-group-item"><a href="/army-army-game-khelbo.html">Army Army Game Khelbo</a></li>
+													<li class="list-group-item"><a href="/argus-war-of-light-and-shadow.html">Argus War Of Light And Shadow</a></li>
+													<li class="list-group-item"><a href="/arkansas-national-guard-military-police.html">Arkansas National Guard Military Police</a></li>
+													<li class="list-group-item"><a href="/army-army-dj-song.html">Army Army Dj Song</a></li>
+													<li class="list-group-item"><a href="/argus-ymca.html">Argus Ymca</a></li>
+													<li class="list-group-item"><a href="/argus-wow.html">Argus Wow</a></li>
+													<li class="list-group-item"><a href="/army-and-army-law.html">Army And Army Law</a></li>
+													<li class="list-group-item"><a href="/arkansas-army-national-guard-agr.html">Arkansas Army National Guard Agr</a></li>
+													<li class="list-group-item"><a href="/army-apakah-itu.html">Army Apakah Itu</a></li>
+													<li class="list-group-item"><a href="/army-army-depot.html">Army Army Depot</a></li>
+													<li class="list-group-item"><a href="/argusfx-forex-peace-army.html">Argusfx Forex Peace Army</a></li>
+													<li class="list-group-item"><a href="/army-army-car.html">Army Army Car</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

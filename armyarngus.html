@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Armyarngus - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Armyarngus",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/90/fb/bc/90fbbc80d37724ff0c227a91b498d889.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=armyarngus",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Armyarngus</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It applies only to the ARNGUS and USAR. The STRAC training strategies apply to the Active Component AC the Army National Guard ARNG and the US. US ArmyARNGUS X Company filter Results. <br>				
+			</p>
+										<a class="badge badge-warning" href="/jisoo-x-dior.html">jisoo x dior</a>
+											<a class="badge badge-info" href="/jisico-j-300m-manual.html">jisico j 300m manual</a>
+											<a class="badge badge-primary" href="/jict-tracking.html">jict tracking</a>
+											<a class="badge badge-secondary" href="/jis-z-2371.html">jis z 2371</a>
+											<a class="badge badge-dark" href="/jisoo-blackpink-wallpaper.html">jisoo blackpink wallpaper</a>
+											<a class="badge badge-primary" href="/jisco-company.html">jisco company</a>
+											<a class="badge badge-light" href="/jict-adalah.html">jict adalah</a>
+											<a class="badge badge-secondary" href="/jis-connector.html">jis connector</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the right blog.  Our site provides you with hints for seeing the maximum quality video and picture content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video for you to see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/1b/20/e11b20d9f5e80c3ce63d247f6ffbb0fc.jpg" data-lightbox="roadtrip" data-title="Pin On National Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/1b/20/e11b20d9f5e80c3ce63d247f6ffbb0fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmADB7zl-uE7rrk6rN0UgbOKXBpGnMOfy2wA&amp;ec=45774421';" alt="Pin On National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/d1/69/7bd169cff71fa90274fa6803705ae8fd.jpg" data-lightbox="roadtrip" data-title="Pin On Military Memorabilia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/d1/69/7bd169cff71fa90274fa6803705ae8fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA0dcboCodQ2aZx052WI5rF9o6NXP0ZecnXQ&amp;ec=45774421';" alt="Pin On Military Memorabilia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Memorabilia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/dd/7a/84dd7af62608624fe095a0a628605d06.jpg" data-lightbox="roadtrip" data-title="Pin On Military Memorabilia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/dd/7a/84dd7af62608624fe095a0a628605d06.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLgKHgb-qa-DGBKJszXOvIVb852fjijjX3Rw&amp;ec=45774421';" alt="Pin On Military Memorabilia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Memorabilia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/fb/86/bafb86546a8f05735902e68325fa5b35.jpg" data-lightbox="roadtrip" data-title="Pin On Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/fb/86/bafb86546a8f05735902e68325fa5b35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe_wA6Wh3jVDBqEdgpwhPgdpzktoQIGsLA_A&amp;ec=45774421';" alt="Pin On Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/2a/4e/ce2a4e66b5491d76189d079d564d2c44.jpg" data-lightbox="roadtrip" data-title="U S Army Reserve Merlingold 39mm Challenge Coin Meach S Military Memorabilia More Army Reserve Army Challenge Coins Challenge Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/2a/4e/ce2a4e66b5491d76189d079d564d2c44.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ36r9u6MJFR7BEKxSfbai0ftOBaHqzjY4OZA&amp;ec=45774421';" alt="U S Army Reserve Merlingold 39mm Challenge Coin Meach S Military Memorabilia More Army Reserve Army Challenge Coins Challenge Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Reserve Merlingold 39mm Challenge Coin Meach S Military Memorabilia More Army Reserve Army Challenge Coins Challenge Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/1b/61/dc1b6152b8a2cb9390d1f6e54ab88a49.jpg" data-lightbox="roadtrip" data-title="Pin On Military Memorabilia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/1b/61/dc1b6152b8a2cb9390d1f6e54ab88a49.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYerGymag0TklCEWXOCm0sCOwOhSa4O6VKOw&amp;ec=45774421';" alt="Pin On Military Memorabilia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Memorabilia</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/0e/e6/dd/0ee6dd4c2efe8fc611e33cc30abe9ebd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYerGymag0TklCEWXOCm0sCOwOhSa4O6VKOw&amp;ec=45774421';" alt="Pin On Military Memorabilia">
+										<div class="card-body">
+						<h3 class="h5"><b>Contents Listed by paragraph and page number Chapter 1 Introduction page 1 Section I Information page 1 Purpose 11 page 1 References 12 page 1 Explanation of abbreviations and terms 13 page 1 Responsibilities 14 page 1 Manpower resources 15 page 2 Levels of work 16 page 2 ARNGUS-AGR title 10 and.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Armyarngus</strong>. 
+								
+																	It provides guidance for commanders and career counselors. 
+																	Incentive programs include the Selected Reserve Incentive Program SRIP which offers enlistment. 
+																	2 Act on behalf of the SECARMY in reviewing and approving or disapproving the findings and recommendations of boards of officers convened under the provisions of NGR 635. 
+																	Army Reserve USAR unless otherwise indicated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The number of deployed troop-years reached its peak in 2009 at just over 180000 from all components but declined to just over 100000 in 2012. 
+																	AR 140-111 - US. 
+																	From the table above you can view all meanings of ARNGUS. 
+																	25000 USD Per Year Hours per week. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 Serve the principal advisor to the SECARMY on matters relating to Army National Guard of the United States ARNGUS officer separations. 
+																	Members of the Army National Guard who are also Reserves of the Army. 
+																	MILPER MESSAGE 20-118 AMENDMENT TO FISCAL YEAR 2020 FY20 RESERVE COMPONENT RC ARMY RESERVE ACTIVE GUARD RESERVE AR AGR ARMY RESERVE NON-ACTIVE GUARD RESERVE AR NON-AGR AND ARMY RESERVE NATIONAL GUARD OF THE UNITED STATES ARNGUS CAPTAIN CPT ARMY PROMOTION LIST APL COMPETITIVE CATEGORIES PROMOTION SELECTION BOARDS PSB ZONES OF CONSIDERATION ISSUED. 
+																	For the administration of the Army National Guard ARNGUS and the United States Army Reserve USAR incentive programs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army National Guard of the United States ARNGUS and the US. 
+																	Army ARNGUS USAR Peak reached in 2009 2001 2012 Annual number of deployed troop-years by component The Army has continued to provide signi cant troop-years of deployment. 
+																	ARNGUS stands for Army National Guard of the United States. 
+																	Arngus Army National Guard of the United States Ministry Of Defence Government Soldiery. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Purpose This pamphlet provides commanders with the training. 
+																	ARNGUS and the US. 
+																	Maintenance Mechanics General Utility Worked as a general maintenance mechanic by. 
+																	The Armys Reserve Components RC consist of the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army National Guard of the United States. 
+																	Looking for the definition of ARNGUS. 
+																	What does ARNGUS stand for in text In sum ARNGUS is an acronym or abbreviation word that is defined in simple language. 
+																	Army National Guard of the United States ARNGUS A Reserve component of the Army all of whose members are members of the Army National Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army National Guard of the United States is one option -- get in to view more The Webs largest and most authoritative acronyms and abbreviations resource. 
+																	Army Reserve headquar- ters commands agencies and units having Active Guard Reserve Soldiers. 
+																	What does ARNGUS stand for. 
+																	This decline would. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Reserve USAR and the Army National Guard of the United States ARNGUS. 
+																	Update to Army regulation AR 27-55 notarial services. 
+																	Sign up to receive our newsletter regarding Veterans Reunions Military Veteran Benefits Military Pictures Jokes Military History Military Catalog Sales Discounts more. 
+																	4272020 82526 AM. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Indeed Training Specialist II Timestamp. 
+																	19K Armor Crewman Start Date. 
+																	However the yearly total has decreased in recent years. 
+																	NFL NASA PSP HIPAArandom Words in meaning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ARNGUS is defined as Army National Guard of the United States frequently. 
+																	This page illustrates how ARNGUS is used in messaging and chat forums in addition to social networking software like VK Instagram Whatsapp and Snapchat. 
+																	Federally recognized units and organizations of the Army National Guard and b. 
+																	It does not apply to the Active Army or the Delayed Entry Program of the Regular Army which are addressed under another Army regulation. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Reserve USAR1As recent operations in Iraq Afghanistan and elsewhere have shown the Army employs forces and capabilities from all three components to fulfill operational demands. 
+																	Army Reserve Reenlistment Program Published by ARMY on March 2 2018 Purpose This regulation prescribes policies responsibilities and procedures for the US. 
+																	ARNGUS abbreviation stands for Army National Guard of the United States. 
+																	Army comprises the Regular Army and two reserve components RCs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	M i l i t a r y Academy cadets and the following cate- gories of the Army National Guard of the United States ARNGUS and the US. 
+																	Cameron NC BAE Systems Indeed. 
+																	Loading please wait X. 
+																	Chat global warming Postal codes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Reserve USAR Reenlistment Program. 
+																	It also applies to the Army National GuardArmy National Guard of the United States and US. 
+																	What is the abbreviation for Army National Guard of the United States. 
+																	1 USAR units are combat service or combat service support type units whereas ARNGUS units are typically combat or combat support type units. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Spec 4 Fort Hood Texas US Salary. 
+																	At I explaining that the regulation applies to Active Army The Army National Guard ARNG The Army National Guard of the United States ARNGUS The US. 
+																	The ARNGUS consists of a. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/46/65/6b466514109c94bbf56ef3c96641735d.jpg" data-lightbox="roadtrip" data-title="Armor Of God Marines Challenge Coin Meach S Military Memorabilia More Armor Of God Challenge Coins Coast Guard Challenge Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/46/65/6b466514109c94bbf56ef3c96641735d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2CpK00xaH_qgwObSwt_3wZTH2K-hk-68skg&amp;ec=45774421';" alt="Armor Of God Marines Challenge Coin Meach S Military Memorabilia More Armor Of God Challenge Coins Coast Guard Challenge Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armor Of God Marines Challenge Coin Meach S Military Memorabilia More Armor Of God Challenge Coins Coast Guard Challenge Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/54/70/23547089dc835853e7e8e5ff30fac5de.jpg" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/54/70/23547089dc835853e7e8e5ff30fac5de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4uLEtr0hUCNW8c8_4iDYKhIBc4Sr2saJNqg&amp;ec=45774421';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/5c/ef/e2/5cefe208daf7ab7150f5f087ac9c081f.jpg" data-lightbox="roadtrip" data-title="Vintage Military Rotc Pins American Ligion Award Medals Torch Lot Of 7 Ebay Vintage Military American Legions Rotc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/5c/ef/e2/5cefe208daf7ab7150f5f087ac9c081f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVv36Ctr4AhSBbh8UvO1epe8wrjT8rN25nBA&amp;ec=45774421';" alt="Vintage Military Rotc Pins American Ligion Award Medals Torch Lot Of 7 Ebay Vintage Military American Legions Rotc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vintage Military Rotc Pins American Ligion Award Medals Torch Lot Of 7 Ebay Vintage Military American Legions Rotc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0e/e6/dd/0ee6dd4c2efe8fc611e33cc30abe9ebd.jpg" data-lightbox="roadtrip" data-title="Vtg Gemsco Us Army Embroidered Gold Silver Bullion Thread Shoulder Strap Boards Ebay Silver Bullion Bullion Silver Gold">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0e/e6/dd/0ee6dd4c2efe8fc611e33cc30abe9ebd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7T94X4yUTmyflmfv7oI5wMvJ3s8J1Efsnjg&amp;ec=45774421';" alt="Vtg Gemsco Us Army Embroidered Gold Silver Bullion Thread Shoulder Strap Boards Ebay Silver Bullion Bullion Silver Gold">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vtg Gemsco Us Army Embroidered Gold Silver Bullion Thread Shoulder Strap Boards Ebay Silver Bullion Bullion Silver Gold</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/af/23/65af2368d418588e4579311f2e10c294.jpg" data-lightbox="roadtrip" data-title="Pin On Reserve National Guard Us Army Challenge Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/af/23/65af2368d418588e4579311f2e10c294.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz8Gd9rKjCVoBf91fvprXFkeDhPA055FpwfA&amp;ec=45774421';" alt="Pin On Reserve National Guard Us Army Challenge Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Reserve National Guard Us Army Challenge Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/c7/8c/47c78c2bf4bfb75b01f5dd27342f966c.jpg" data-lightbox="roadtrip" data-title="Pin On Hopelessly Devoted To You Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/c7/8c/47c78c2bf4bfb75b01f5dd27342f966c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyResE2aaaILF4xUMUYGjFSgti7RACeV6VrA&amp;ec=45774421';" alt="Pin On Hopelessly Devoted To You Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hopelessly Devoted To You Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/fb/bc/90fbbc80d37724ff0c227a91b498d889.png" data-lightbox="roadtrip" data-title="Coin Lot 3 Knights Tenplar Coins Mercari In 2020 Coins Coin Collecting Challenge Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/fb/bc/90fbbc80d37724ff0c227a91b498d889.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhh9Es85v2YjbAH-59RgrvJgTJXAPFMrfjnw&amp;ec=45774421';" alt="Coin Lot 3 Knights Tenplar Coins Mercari In 2020 Coins Coin Collecting Challenge Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coin Lot 3 Knights Tenplar Coins Mercari In 2020 Coins Coin Collecting Challenge Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a2/f3/b6/a2f3b69567620bad2229ad8e8fe6cb3a.jpg" data-lightbox="roadtrip" data-title="Copy New Marine Corps Challenge Coin Authentic Challenge Coins Coins Marine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a2/f3/b6/a2f3b69567620bad2229ad8e8fe6cb3a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRueW4u3vDdNvyvK79rBE5VJE1dO4giho8EuQ&amp;ec=45774421';" alt="Copy New Marine Corps Challenge Coin Authentic Challenge Coins Coins Marine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Copy New Marine Corps Challenge Coin Authentic Challenge Coins Coins Marine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/5f/ee/8f/5fee8f4c2d408e0d864105aa0de758fe.jpg" data-lightbox="roadtrip" data-title="Lav Crewman 0313 Marine Corps Mos Challenge Coin Marine Corps Coins Usmc War Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/5f/ee/8f/5fee8f4c2d408e0d864105aa0de758fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqP1xUY1jqsw2GGReGvDfgA5hvueJsBkNwaw&amp;ec=45774421';" alt="Lav Crewman 0313 Marine Corps Mos Challenge Coin Marine Corps Coins Usmc War Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lav Crewman 0313 Marine Corps Mos Challenge Coin Marine Corps Coins Usmc War Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/5c/f8/c45cf8a569e9b68d9192abaf3b89967d.jpg" data-lightbox="roadtrip" data-title="Short C 23b Sherpa 330 200 Usa Army Aviation Photo 1290767 Feuerwehr">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/5c/f8/c45cf8a569e9b68d9192abaf3b89967d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR88pyIpiZWitw8NYeYO3x1ytYzlVi4hdQXIw&amp;ec=45774421';" alt="Short C 23b Sherpa 330 200 Usa Army Aviation Photo 1290767 Feuerwehr">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Short C 23b Sherpa 330 200 Usa Army Aviation Photo 1290767 Feuerwehr</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/a1/5d/55a15d581cbfb3bd75530dae2c3298ea.jpg" data-lightbox="roadtrip" data-title="E Flight Timber Nature Travel Mountains">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/a1/5d/55a15d581cbfb3bd75530dae2c3298ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeNn4pq_uuit_qnjFDAUa6AM5rx2oKkibrJg&amp;ec=45774421';" alt="E Flight Timber Nature Travel Mountains">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">E Flight Timber Nature Travel Mountains</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/hitung-zodiak.html">Hitung Zodiak</a></li>
+													<li class="list-group-item"><a href="/how-often-do-national-guard-pilots-fly.html">How Often Do National Guard Pilots Fly</a></li>
+													<li class="list-group-item"><a href="/how-many-army-rangers-die-a-year.html">How Many Army Rangers Die A Year</a></li>
+													<li class="list-group-item"><a href="/how-long-does-military-police-training-take.html">How Long Does Military Police Training Take</a></li>
+													<li class="list-group-item"><a href="/how-many-ranks-are-there-in-army.html">How Many Ranks Are There In Army</a></li>
+													<li class="list-group-item"><a href="/how-long-can-your-hair-be-in-the-national-guard.html">How Long Can Your Hair Be In The National Guard</a></li>
+													<li class="list-group-item"><a href="/how-much-does-a-canadian-soldier-get-paid.html">How Much Does A Canadian Soldier Get Paid</a></li>
+													<li class="list-group-item"><a href="/how-much-does-a-basic-soldier-get-paid.html">How Much Does A Basic Soldier Get Paid</a></li>
+													<li class="list-group-item"><a href="/how-many-national-guard-does-washington-state-have.html">How Many National Guard Does Washington State Have</a></li>
+													<li class="list-group-item"><a href="/homeland-security-and-national-guard.html">Homeland Security And National Guard</a></li>
+													<li class="list-group-item"><a href="/how-many-years-do-you-have-to-serve-in-the-air-national-guard.html">How Many Years Do You Have To Serve In The Air National Guard</a></li>
+													<li class="list-group-item"><a href="/how-much-does-a-soldier-in-canada-make.html">How Much Does A Soldier In Canada Make</a></li>
+													<li class="list-group-item"><a href="/how-long-is-army-national-guard-ocs.html">How Long Is Army National Guard Ocs</a></li>
+													<li class="list-group-item"><a href="/how-much-does-a-soldier-earn-uk.html">How Much Does A Soldier Earn Uk</a></li>
+													<li class="list-group-item"><a href="/how-much-does-a-drill-weekend-pay.html">How Much Does A Drill Weekend Pay</a></li>
+													<li class="list-group-item"><a href="/hitung-zakat-perdagangan.html">Hitung Zakat Perdagangan</a></li>
+													<li class="list-group-item"><a href="/how-many-5-star-football-recruits-are-there-in-2020.html">How Many 5 Star Football Recruits Are There In 2020</a></li>
+													<li class="list-group-item"><a href="/how-long-does-it-take-to-transfer-from-national-guard-to-active-duty.html">How Long Does It Take To Transfer From National Guard To Active Duty</a></li>
+													<li class="list-group-item"><a href="/how-do-i-access-my-orb-army.html">How Do I Access My Orb Army</a></li>
+													<li class="list-group-item"><a href="/how-long-is-ait-national-guard.html">How Long Is Ait National Guard</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

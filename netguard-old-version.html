@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Netguard Old Version - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Netguard Old Version",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/75/2a/b9/752ab9036bcaf28bef7cfa57b0a0d4dc.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=netguard+old+version",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Netguard Old Version</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Logs show log screen log internet access and IP filtering. NetGuard is an open-source app to block Internet access for any app installed on your device. You can redistribute it andor modify it under the terms of the GNU General Public License as published by the Free Software Foundation either version 3 of the License or at your discretion any later version. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/salvation-army-east-orange-nj.html">salvation army east orange nj</a>
+											<a class="badge badge-primary" href="/salvation-army-songs-zim.html">salvation army songs zim</a>
+											<a class="badge badge-dark" href="/reba-mcentire-and-lauren-daigle.html">reba mcentire and lauren daigle</a>
+											<a class="badge badge-danger" href="/salute-in-air-force.html">salute in air force</a>
+											<a class="badge badge-primary" href="/salvation-army-arc-program-richmond-va.html">salvation army arc program richmond va</a>
+											<a class="badge badge-secondary" href="/salvation-army-rehab-in-richmond-va.html">salvation army rehab in richmond va</a>
+											<a class="badge badge-primary" href="/reba-mcentire-and-leann-rimes.html">reba mcentire and leann rimes</a>
+											<a class="badge badge-success" href="/rong-v.html">rong v</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you have come to visit the right site.  Our site gives you hints for viewing the maximum quality video and image content, hunt and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from various sources, especially Youtube, therefore we recommend this video for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/d0/96/7ad096876fd1e60bcb0088dcec53bbf1.jpg" data-lightbox="roadtrip" data-title="Netguard No Root Firewall Pro V2 Apk Mod 2017 Download Netguard No Root Firewall Pro V2 100 Cracked Mod Apk Unloc Light App Cell Phone Game Android Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/d0/96/7ad096876fd1e60bcb0088dcec53bbf1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUnSLdRM6fDeDsNfeEoiTDzl_n4CwSnVBO_A';" alt="Netguard No Root Firewall Pro V2 Apk Mod 2017 Download Netguard No Root Firewall Pro V2 100 Cracked Mod Apk Unloc Light App Cell Phone Game Android Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Netguard No Root Firewall Pro V2 Apk Mod 2017 Download Netguard No Root Firewall Pro V2 100 Cracked Mod Apk Unloc Light App Cell Phone Game Android Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/d4/f9/6dd4f9776039f8909614fe31290005c7.png" data-lightbox="roadtrip" data-title="Download Setup Netguard Pro Apk Cracked Netguard Pro Cracked Apk Is The Name Of The New And Powerful Application To Prev In 2020 App Support Android How To Be Outgoing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/d4/f9/6dd4f9776039f8909614fe31290005c7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZXi18d-AfzCR2lvjox_1Ea4KUOicYDYi7-Q';" alt="Download Setup Netguard Pro Apk Cracked Netguard Pro Cracked Apk Is The Name Of The New And Powerful Application To Prev In 2020 App Support Android How To Be Outgoing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Setup Netguard Pro Apk Cracked Netguard Pro Cracked Apk Is The Name Of The New And Powerful Application To Prev In 2020 App Support Android How To Be Outgoing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/6e/87/656e87fd566cffb67e91ba13ec915fbf.jpg" data-lightbox="roadtrip" data-title="Download Netguard No Root Firewall Pro 2 196 Apk Full Version">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/6e/87/656e87fd566cffb67e91ba13ec915fbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJFrKBxKybiqjJrXahnE9e-L1EMALGGA6XpQ';" alt="Download Netguard No Root Firewall Pro 2 196 Apk Full Version">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Netguard No Root Firewall Pro 2 196 Apk Full Version</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/e1/3b/1fe13b4edb84c83851d059dde3ab0b66.jpg" data-lightbox="roadtrip" data-title="محدود کردن دسترسی برنامه ها به اینترنت Netguard No Root Firewall اندروید Light App Cell Phone Game Android Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/e1/3b/1fe13b4edb84c83851d059dde3ab0b66.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTISvuViUBdwGeSBRwo-lSjbPr3JbS3h4131Q';" alt="محدود کردن دسترسی برنامه ها به اینترنت Netguard No Root Firewall اندروید Light App Cell Phone Game Android Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">محدود کردن دسترسی برنامه ها به اینترنت Netguard No Root Firewall اندروید Light App Cell Phone Game Android Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/a4/0d/b2/a40db2d6b4c49ab43eb2353b5f3703a0.jpg" data-lightbox="roadtrip" data-title="Pin By Abaidullah Javeed On Free Download How To Be Outgoing Application Settings Application Android">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/a4/0d/b2/a40db2d6b4c49ab43eb2353b5f3703a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoq9QgsavEELMmUeMUnNhe2gYP1B7U6goWaw';" alt="Pin By Abaidullah Javeed On Free Download How To Be Outgoing Application Settings Application Android">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Abaidullah Javeed On Free Download How To Be Outgoing Application Settings Application Android</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/fe/f7/36fef7d9b2a5ccdbd721220493b851d2.png" data-lightbox="roadtrip" data-title="Download Full Android Apk For You Free Games Apps Best Android Apps Android Download Netguard No Root Firewa Mobile Data Application Android Image Apps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/fe/f7/36fef7d9b2a5ccdbd721220493b851d2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwIu62olRsKs8ZPP8DdNHVoeqeQfcVxf0AqQ';" alt="Download Full Android Apk For You Free Games Apps Best Android Apps Android Download Netguard No Root Firewa Mobile Data Application Android Image Apps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Full Android Apk For You Free Games Apps Best Android Apps Android Download Netguard No Root Firewa Mobile Data Application Android Image Apps</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c7/bf/8a/c7bf8ae17a16122cc962aa95904a6d4c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwIu62olRsKs8ZPP8DdNHVoeqeQfcVxf0AqQ';" alt="Download Full Android Apk For You Free Games Apps Best Android Apps Android Download Netguard No Root Firewa Mobile Data Application Android Image Apps">
+										<div class="card-body">
+						<h3 class="h5"><b>I am happy to look into problems but youll need to provide details which at least include the steps to reproduce.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Netguard old version</strong>. 
+								
+																	Read more about NetGuard Powerful firewall solutions usually require root access to Android devices and thats not always possible. 
+																	A BBS dumpfile reveals the same issue. 
+																	NetGuard is a firewall application that gives users the tools they require to filter out the network traffic without the need to have root access. 
+																	While the developer is fixing the problem try using an older version. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some older Android versions especially Samsungs Android versions have a buggy VPN implementation which results in Android refusing to start the VPN service in certain circumstances like when there is no internet connectivity yet when starting up your device or when incorrectly requiring manual approval of the VPN service again when starting up your device. 
+																	Other NetGuard APK versions 75. 
+																	In case you are having any trouble downloading the NetGuard PC version you can always reach us through the comments. 
+																	All previous versions of NetGuard are virus-free and free to download at Uptodown. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NetGuard 10 can be downloaded from our software library for free. 
+																	If you need the previous version of NetGuard check out the apps version history which includes all versions available to download. 
+																	Follow the on-screen instructions to start using the NetGuard for PC. 
+																	The default filenames for the programs installer are NetGuardexe or NetGuard2exe etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download NetGuard old versions Android APK or update to NetGuard latest version. 
+																	All previous versions of NetGuard are virus-free and free to download at Uptodown. 
+																	A simple way to block access to the internet per app - M66BNetGuard. 
+																	I enabled several features that might result in extra battery drain. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The actual developer of the free software is NG Systems. 
+																	Download prior versions of NetGuard for Android. 
+																	Since the latest beta versions have fixes to address problems like this I will not look into problem reports of older NetGuard versions or problem reports which do not include a NetGuard version number to prevent wasting of time. 
+																	Some older Android versions especially Samsungs Android versions have a buggy VPN implementation which results in Android refusing to start the VPN service in certain circumstances like when there is no internet connectivity yet when starting up your device or when incorrectly requiring manual approval of the VPN service again when starting up your device. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Download prior versions of NetGuard for Android. 
+																	Support development - support ongoing development like adding new features improving existing features fixing bugs and adapting NetGuard to new Android versions. 
+																	If you need the previous version of NetGuard check out the apps version history which includes all versions available to download. 
+																	While the developer is fixing the problem try using an older version. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 Exports are in the popular PCAP format which can be opened in for example Wireshark. 
+																	NetGuard keeps my device awake as you can see in the screenshot. 
+																	NetGuard is included in Internet Network Tools. 
+																	I have a huge and abnormal wakelock with Netguard 211 maybe the same applies to the last versions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Review NetGuard release date changelog and more. 
+																	So this is all that you need to do to install NetGuard for PC and I hope that you find this guide helpful and easy to understand. 
+																	You can set up this free PC program on Windows XPVista7 32-bit. 
+																	NetGuard is free software. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With it you can lower your data usage save battery life and of course protect your privacy. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/ae/05/30ae050bfed8d7282d2ef956ecccd0ed.png" data-lightbox="roadtrip" data-title="محدود كردن دسترسي برنامه ها به اينترنت Netguard No Root Firewall اندرويد App Google Play Store Android Apps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/ae/05/30ae050bfed8d7282d2ef956ecccd0ed.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZJ3pJwPUHrBagZbm6CbJ0uYnK2-_c0HyCzg';" alt="محدود كردن دسترسي برنامه ها به اينترنت Netguard No Root Firewall اندرويد App Google Play Store Android Apps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">محدود كردن دسترسي برنامه ها به اينترنت Netguard No Root Firewall اندرويد App Google Play Store Android Apps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/ac/8e/47ac8e709df93f75c2bea2187784dfec.png" data-lightbox="roadtrip" data-title="تحميل تطبيق منع البرامج من استخدام الانترنت لأندرويد Netguard عالم Apk Android Google Play Store Phone Apps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/ac/8e/47ac8e709df93f75c2bea2187784dfec.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqkxWTTuRNi77F5oTur36Qgnos_UqcBgzNKg';" alt="تحميل تطبيق منع البرامج من استخدام الانترنت لأندرويد Netguard عالم Apk Android Google Play Store Phone Apps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">تحميل تطبيق منع البرامج من استخدام الانترنت لأندرويد Netguard عالم Apk Android Google Play Store Phone Apps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/09/33/26/09332613355bf1ac5a2c6338ddd97e19.jpg" data-lightbox="roadtrip" data-title="دانلود برنامه محدود كردن دسترسي برنامه ها به اينترنت Netguard No Root Firewall اندرويد Mobile Game Education Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/09/33/26/09332613355bf1ac5a2c6338ddd97e19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR6SP8qZwSizy0L-lWO3rKcd1FiugI3ZGoUw';" alt="دانلود برنامه محدود كردن دسترسي برنامه ها به اينترنت Netguard No Root Firewall اندرويد Mobile Game Education Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">دانلود برنامه محدود كردن دسترسي برنامه ها به اينترنت Netguard No Root Firewall اندرويد Mobile Game Education Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ad/6f/2a/ad6f2acbeb9bb50877e0e73be7937489.jpg" data-lightbox="roadtrip" data-title="Pin On Sehrpc Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ad/6f/2a/ad6f2acbeb9bb50877e0e73be7937489.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvBT1--Itzr9gINdnwCMLo_jPiXumyaP67pQ';" alt="Pin On Sehrpc Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sehrpc Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/ed/be/55edbece7fc48a5f416c6b6a0771d474.jpg" data-lightbox="roadtrip" data-title="Pin On Binarydose">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/ed/be/55edbece7fc48a5f416c6b6a0771d474.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyRxxqT65ydavQ66HneF7Xtwe2r6SxfLsLuA';" alt="Pin On Binarydose">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Binarydose</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/5f/42/325f42179642d636e0d4322e6d13a684.jpg" data-lightbox="roadtrip" data-title="Pin On Mobiles Software">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/5f/42/325f42179642d636e0d4322e6d13a684.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7inVAvS7TNxxXWdFrQRqz07COg0bRNVlHA';" alt="Pin On Mobiles Software">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mobiles Software</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/d0/1c/5fd01caa294d6f67206e27d5025a9a93.png" data-lightbox="roadtrip" data-title="Adguard Premium V3 3 227ƞ Nightly Mod Lite Latest Ad App App Video Ads">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/d0/1c/5fd01caa294d6f67206e27d5025a9a93.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFbPFLkf1IyNzap2EjMFq6FbAVMjISxwJYUg';" alt="Adguard Premium V3 3 227ƞ Nightly Mod Lite Latest Ad App App Video Ads">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adguard Premium V3 3 227ƞ Nightly Mod Lite Latest Ad App App Video Ads</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/2a/b9/752ab9036bcaf28bef7cfa57b0a0d4dc.jpg" data-lightbox="roadtrip" data-title="Zarchiver Apk For Android Mod Apk Free Download For Android Mobile Games Hack Obb Data Full Version In 2020 Download Free Movies Online Android Android Mobile Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/2a/b9/752ab9036bcaf28bef7cfa57b0a0d4dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzoimYgtdxC47Yz7QzIuZ6p1MzGnTb4YMRaw';" alt="Zarchiver Apk For Android Mod Apk Free Download For Android Mobile Games Hack Obb Data Full Version In 2020 Download Free Movies Online Android Android Mobile Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Zarchiver Apk For Android Mod Apk Free Download For Android Mobile Games Hack Obb Data Full Version In 2020 Download Free Movies Online Android Android Mobile Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/56/85/995685c7b7dafc936ed4cd873b525378.png" data-lightbox="roadtrip" data-title="Pin On Android Apps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/56/85/995685c7b7dafc936ed4cd873b525378.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwBD42pk36aozKdpGl8hOnDLyyrIplTUaVvg';" alt="Pin On Android Apps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Android Apps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/bd/c5/2f/bdc52f85eb391f9a2d23c4f0721bb775.jpg" data-lightbox="roadtrip" data-title="دانلود زندر نرم افزار انتقال فایل بین گوشی برای اندروید Mobile Data Android Apps Free Music Apps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/bd/c5/2f/bdc52f85eb391f9a2d23c4f0721bb775.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROg61qQbMHzF98xa2fziG2EJc41JdVTZK9Eg';" alt="دانلود زندر نرم افزار انتقال فایل بین گوشی برای اندروید Mobile Data Android Apps Free Music Apps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">دانلود زندر نرم افزار انتقال فایل بین گوشی برای اندروید Mobile Data Android Apps Free Music Apps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/34/a7/9b/34a79b672cc37d36f33e7ba78c31b667.jpg" data-lightbox="roadtrip" data-title="Pin On Hack">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/34/a7/9b/34a79b672cc37d36f33e7ba78c31b667.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaXfAcK_me1aRF8do6ZP38zSkfY2_FzDKldg';" alt="Pin On Hack">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hack</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/c7/08/dfc708e461563a800a87edc31e3a79fe.png" data-lightbox="roadtrip" data-title="Wifi Analyzer V3 5 Mod Ad Free Best Wifi Wifi Wifi Signal">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/c7/08/dfc708e461563a800a87edc31e3a79fe.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_2S4uV44SAcbgnfPxzrqOiNroi4wDE8v3Sw';" alt="Wifi Analyzer V3 5 Mod Ad Free Best Wifi Wifi Wifi Signal">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wifi Analyzer V3 5 Mod Ad Free Best Wifi Wifi Wifi Signal</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/bf/8a/c7bf8ae17a16122cc962aa95904a6d4c.png" data-lightbox="roadtrip" data-title="Pin On Procracksoftwaresfull">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/bf/8a/c7bf8ae17a16122cc962aa95904a6d4c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcCijeyv3SdJM9ZQ138eu-q18xaFAeBFuXSw';" alt="Pin On Procracksoftwaresfull">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Procracksoftwaresfull</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-army-jacket.html">Army Army Jacket</a></li>
+													<li class="list-group-item"><a href="/argus-yaris.html">Argus Yaris</a></li>
+													<li class="list-group-item"><a href="/argus-vs-sun.html">Argus Vs Sun</a></li>
+													<li class="list-group-item"><a href="/army-army-hospital.html">Army Army Hospital</a></li>
+													<li class="list-group-item"><a href="/army-army-dj-song.html">Army Army Dj Song</a></li>
+													<li class="list-group-item"><a href="/army-1996-mp3-songs-free-download.html">Army 1996 Mp3 Songs Free Download</a></li>
+													<li class="list-group-item"><a href="/army-army-academy.html">Army Army Academy</a></li>
+													<li class="list-group-item"><a href="/army-and-army-law.html">Army And Army Law</a></li>
+													<li class="list-group-item"><a href="/argus-sword.html">Argus Sword</a></li>
+													<li class="list-group-item"><a href="/armed-by-artinya.html">Armed By Artinya</a></li>
+													<li class="list-group-item"><a href="/arlington-cemetery-changing-guard.html">Arlington Cemetery Changing Guard</a></li>
+													<li class="list-group-item"><a href="/argus-upcoming-skin.html">Argus Upcoming Skin</a></li>
+													<li class="list-group-item"><a href="/arlington-national-cemetery-guard.html">Arlington National Cemetery Guard</a></li>
+													<li class="list-group-item"><a href="/armed-runner-artinya.html">Armed Runner Artinya</a></li>
+													<li class="list-group-item"><a href="/army-army-fit.html">Army Army Fit</a></li>
+													<li class="list-group-item"><a href="/army-apakah-itu.html">Army Apakah Itu</a></li>
+													<li class="list-group-item"><a href="/argus-voopoo-40w.html">Argus Voopoo 40w</a></li>
+													<li class="list-group-item"><a href="/arizona-national-guard-military-police.html">Arizona National Guard Military Police</a></li>
+													<li class="list-group-item"><a href="/argus-starlight-skin.html">Argus Starlight Skin</a></li>
+													<li class="list-group-item"><a href="/argus-ultimate-skill.html">Argus Ultimate Skill</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

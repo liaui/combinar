@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Ncbi Respiratory Failure - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Ncbi Respiratory Failure",
+  "datePublished": "2021-02-27",
+  "image": "https://www.ncbi.nlm.nih.gov/books/NBK525165/table/ch2.sec5.table3/?report=thumb",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=ncbi+respiratory+failure",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Ncbi Respiratory Failure</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">We should intervene appropriately and positively to avoid progression from interface respiratory failure to the real respiratory failure stage and this avoidance means a higher survival rate and a lower medical expense. Respiratory distress is usually observed in patients with acute hypoxemic respiratory failure type 1 respiratory failure. June 11 2014 Respiratory Distress Syndrome. <br>				
+			</p>
+										<a class="badge badge-info" href="/military-cargo-plane-with-4-jet-engines.html">military cargo plane with 4 jet engines</a>
+											<a class="badge badge-secondary" href="/menang-v.html">menang v</a>
+											<a class="badge badge-danger" href="/menang-tanpo-bolo.html">menang tanpo bolo</a>
+											<a class="badge badge-warning" href="/military-cargo-plane-that-hovers.html">military cargo plane that hovers</a>
+											<a class="badge badge-primary" href="/military-cargo-plane-speed.html">military cargo plane speed</a>
+											<a class="badge badge-info" href="/menang-mcl-dapat-apa.html">menang mcl dapat apa</a>
+											<a class="badge badge-dark" href="/menang-walikota-manado.html">menang walikota manado</a>
+											<a class="badge badge-info" href="/michigan-national-guard-military-ball.html">michigan national guard military ball</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to pay a visit to the ideal blog.  Our website gives you suggestions for seeing the highest quality video and image content, hunt and locate more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video that you see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/books/NBK538311/bin/ARDS1.jpg" data-lightbox="roadtrip" data-title="Figure Acute Respiratory Distress Syndrome Image Courtesy S Bhimji Md Statpearls Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/books/NBK538311/bin/ARDS1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtghLSBqZ4FVNm-Yz7FqXp6NWLn90gHI8C2Q';" alt="Figure Acute Respiratory Distress Syndrome Image Courtesy S Bhimji Md Statpearls Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Figure Acute Respiratory Distress Syndrome Image Courtesy S Bhimji Md Statpearls Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/books/NBK278927/bin/thyroid-storm-Image002.jpg" data-lightbox="roadtrip" data-title="Thyroid Storm Endotext Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/books/NBK278927/bin/thyroid-storm-Image002.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHfbAvnNGvlDh-iiJAH-WsE2ZCnQjxNww9mw';" alt="Thyroid Storm Endotext Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thyroid Storm Endotext Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/books/NBK554776/bin/Clinical__Presentations__of__Patients__with__Covid-19.jpg" data-lightbox="roadtrip" data-title="Figure Clinical Presentation Of Patients With Statpearls Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/books/NBK554776/bin/Clinical__Presentations__of__Patients__with__Covid-19.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIYkkEzITi448n-kyKFtYRvbq_ky_EDL2vgQ';" alt="Figure Clinical Presentation Of Patients With Statpearls Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Figure Clinical Presentation Of Patients With Statpearls Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/books/NBK545153/bin/Stat__Pears__Media.jpg" data-lightbox="roadtrip" data-title="Figure Hypoxemia Causes Contributed By Paris Hantzidiamantis Statpearls Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/books/NBK545153/bin/Stat__Pears__Media.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX9h3UMu7Lf9c5Bgj4JTIL7OSMihykTD3J5w';" alt="Figure Hypoxemia Causes Contributed By Paris Hantzidiamantis Statpearls Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Figure Hypoxemia Causes Contributed By Paris Hantzidiamantis Statpearls Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/books/NBK525226/bin/WB.978-1-4648-0522-6.ch8.sec2.fig1.jpg" data-lightbox="roadtrip" data-title="Figure 8 1 Impacts Of Climate Change On Human Health Injury Prevention And Environmental Health Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/books/NBK525226/bin/WB.978-1-4648-0522-6.ch8.sec2.fig1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm7jvQiLeLqmLe2N3AqV4DXg5HqZHvAwRx9Q';" alt="Figure 8 1 Impacts Of Climate Change On Human Health Injury Prevention And Environmental Health Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Figure 8 1 Impacts Of Climate Change On Human Health Injury Prevention And Environmental Health Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.rgstatic.net/publication/319018886_Acute_Respiratory_Distress_Syndrome_ARDS/links/598b5f45458515c333a334e6/largepreview.png" data-lightbox="roadtrip" data-title="Pdf Acute Respiratory Distress Syndrome Ards">
+											<img class="card-img v-image ads-img " src="https://i1.rgstatic.net/publication/319018886_Acute_Respiratory_Distress_Syndrome_ARDS/links/598b5f45458515c333a334e6/largepreview.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBnOVRvZBcDsJIHEz_oPpMdDkWB3FwDCTgtA';" alt="Pdf Acute Respiratory Distress Syndrome Ards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pdf Acute Respiratory Distress Syndrome Ards</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/bookshelf/thumbs/th-cer163-lrg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBnOVRvZBcDsJIHEz_oPpMdDkWB3FwDCTgtA';" alt="Pdf Acute Respiratory Distress Syndrome Ards">
+										<div class="card-body">
+						<h3 class="h5"><b>Beneficial physiological effects of NHF have also been reported in patients with chronic respiratory failure suggesting a possible indication in acute hypercapnic respiratory failure.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Ncbi respiratory failure</strong>. 
+								
+																	Although respiratory failure has many causes it may be due to a condition known as acute respiratory distress syndrome ARDS. 
+																	To study the relationship between OSA and risk of COVID-19 infection and disease severity identified by the need for hospitalization and progression to respiratory failure. 
+																	The National Center for Biotechnology Information advances science and health by providing access to biomedical and genomic information. 
+																	Discriminating between CPAP success and failure in COVID-19 patients with severe respiratory failure Intensive Care Med. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Authors Pietro Arina 1. 
+																	Online ahead of print. 
+																	Type 1 Respiratory Failure hypoxemic. 
+																	The pathophysiological mechanisms responsible for chronic carbon dioxide retention are not yet clear. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Signs of this include tachypnea respiratory rate 24 breaths per minute in adults use of accessory breathing muscles and cyanosis. 
+																	Respiratory failure is a serious condition that develops when the lungs cant get enough oxygen into the blood. 
+																	Buildup of carbon dioxide can also damage the tissues and organs and further impair oxygenation of blood and as a result slow oxygen delivery to the tissues. 
+																	Respiratory failure is a syndrome in which the respiratory system fails in one or both of its gas exchange functions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This term describes a condition in which both of the lungs have become injured and inflamed from one of various causes and they do not work as they normally would to provide oxygen to and remove carbon dioxide from the body. 
+																	However the remaining normal lung is still sufficient to excrete carbon dioxide. 
+																	Acute respiratory failure is a common condition amongst adults admitted to intensive care units ICUs worldwide. 
+																	Acute hypercapnic respiratory failure is usually caused by defects in the central nervous system impairment of neuromuscular transmission mechanical defect of the ribcage and fatigue of the respiratory muscles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Respiratory failure is a clinical condition that happens when the respiratory system fails to maintain its main function which is gas exchange in which PaO2 lower than 60 mmHg andor PaCO2 higher than 50 mmHg. 
+																	Funded by Stein Erik Hagen and others. 
+																	Respiratory failure happens when the capillaries or tiny blood vessels surrounding your air sacs cant properly exchange carbon dioxide for oxygen. 
+																	Oxygenation and carbon dioxide elimination. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We queried the electronic medical record system for an integrated health system of 10 hospitals in the Chicago metropolitan area to identify cases of COVID-19. 
+																	The definition of interface respiratory failure is scientific direct and its width is appropriate. 
+																	The condition can be acute or chronic. 
+																	Is associated with damage to lung tissue which prevents adequate oxygenation of the blood. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We identified a 3p2131 gene cluster as a genetic susceptibility locus in patients with Covid-19 with respiratory failure and confirmed a potential involvement of the ABO blood-group system. 
+																	Respiratory failure is classified according to blood gases abnormalities into type 1 and type 2. 
+																	The pathophysiological mechanisms responsible for chronic carbon dioxide retention are not yet clear. 
+																	In practice it may be. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	When intubation is required NHF can be used to pre-oxygenate patients either alone or in combination with non-invasive ventilation NIV. 
+																	Diseases and Conditions - Updated. 
+																	Respiratory failure is a condition in which not enough oxygen passes from your lungs into your blood. 
+																	Acute respiratory failure happens quickly and without much warning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Acute hypercapnic respiratory failure is usually caused by defects in the central nervous system impairment of neuromuscular transmission mechanical defect of the ribcage and fatigue of the respiratory muscles. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/books/NBK279083/bin/adren-insufficiency_Adrenal-Insufficiency-ENDOTEXT-Fig-1.jpg" data-lightbox="roadtrip" data-title="Adrenal Insufficiency Endotext Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/books/NBK279083/bin/adren-insufficiency_Adrenal-Insufficiency-ENDOTEXT-Fig-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRUFHI3wxNmJep-2oa2ti-ardaDyJ9agxgiQ';" alt="Adrenal Insufficiency Endotext Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Adrenal Insufficiency Endotext Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/bookshelf/thumbs/th-rc0958-lrg.png" data-lightbox="roadtrip" data-title="Airway Pressure Release Ventilation For Acute Respiratory Distress Syndrome Clinical Effectiveness And Guidelines Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/bookshelf/thumbs/th-rc0958-lrg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlX_Ev9ifWnZqM5Fq7uk1RNiO_euniB9gn2A';" alt="Airway Pressure Release Ventilation For Acute Respiratory Distress Syndrome Clinical Effectiveness And Guidelines Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Airway Pressure Release Ventilation For Acute Respiratory Distress Syndrome Clinical Effectiveness And Guidelines Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/books/NBK553857/table/ch11.Tab4/?report=thumb" data-lightbox="roadtrip" data-title="Pulmonary Manifestations Of Systemic Diseases Diseases Of The Chest Breast Heart And Vessels 2019 2022 Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/books/NBK553857/table/ch11.Tab4/?report=thumb" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimI54id-SFD49qJhoa5lLaOrueh5NDI0Pfg';" alt="Pulmonary Manifestations Of Systemic Diseases Diseases Of The Chest Breast Heart And Vessels 2019 2022 Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pulmonary Manifestations Of Systemic Diseases Diseases Of The Chest Breast Heart And Vessels 2019 2022 Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/bookshelf/thumbs/th-cer163-lrg.png" data-lightbox="roadtrip" data-title="Improving Antibiotic Prescribing For Uncomplicated Acute Respiratory Tract Infections Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/corehtml/pmc/pmcgifs/bookshelf/thumbs/th-cer163-lrg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRWiFVDnfIFmt_lGCPo5qB8De-XpmohvSPVw';" alt="Improving Antibiotic Prescribing For Uncomplicated Acute Respiratory Tract Infections Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Improving Antibiotic Prescribing For Uncomplicated Acute Respiratory Tract Infections Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/books/NBK7282/bin/ch1e2.jpg" data-lightbox="roadtrip" data-title="Journals Citing Medicine Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/books/NBK7282/bin/ch1e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrV9HxDT2Bq8BYyH3luempiCUEGfHmBcY_lA';" alt="Journals Citing Medicine Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Journals Citing Medicine Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/a8/73/95a873405a948cd3800c0dc74679eecd.png" data-lightbox="roadtrip" data-title="Pin On Gut Feeling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/a8/73/95a873405a948cd3800c0dc74679eecd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW1gG7KnWiG10q3lNsIjR9aD_4cBqXIFa4eA';" alt="Pin On Gut Feeling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gut Feeling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/47/6e/de476ebfac299c9db901fb59f59977e5.jpg" data-lightbox="roadtrip" data-title="Acute Respiratory Distress Syndrome Respiratory Distress Syndrome Acute Respiratory Distress Syndrome Respiratory Health">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/47/6e/de476ebfac299c9db901fb59f59977e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_s64Cwr-37rAWRcm1n0x5bZIdbFL2INRbDA';" alt="Acute Respiratory Distress Syndrome Respiratory Distress Syndrome Acute Respiratory Distress Syndrome Respiratory Health">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Acute Respiratory Distress Syndrome Respiratory Distress Syndrome Acute Respiratory Distress Syndrome Respiratory Health</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EUVJbfMXQAYOrEp.png" data-lightbox="roadtrip" data-title="A Thread From Bbroderickmd 1 21 After Caring For Patients In The Icu With Covid For The Last Week The Time Seems Right For A">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EUVJbfMXQAYOrEp.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt4DFDsyfb-1-am4X4bjEWLvJP5hORzreNEg';" alt="A Thread From Bbroderickmd 1 21 After Caring For Patients In The Icu With Covid For The Last Week The Time Seems Right For A">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Thread From Bbroderickmd 1 21 After Caring For Patients In The Icu With Covid For The Last Week The Time Seems Right For A</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/books/NBK553873/bin/467793_1_En_10_Fig3_HTML.jpg" data-lightbox="roadtrip" data-title="Fig 10 3 A 13 Month Old Girl With Congenital Diseases Of The Chest Breast Heart And Vessels 2019 2022 Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/books/NBK553873/bin/467793_1_En_10_Fig3_HTML.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIU9BzygBGiDSVVoNhkUhYpx1eKs9SkszRBA';" alt="Fig 10 3 A 13 Month Old Girl With Congenital Diseases Of The Chest Breast Heart And Vessels 2019 2022 Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fig 10 3 A 13 Month Old Girl With Congenital Diseases Of The Chest Breast Heart And Vessels 2019 2022 Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/books/NBK279052/bin/hyperglycm-dka-hhs_figure2.JPG.jpg" data-lightbox="roadtrip" data-title="Hyperglycemic Crises Diabetic Ketoacidosis Dka And Hyperglycemic Hyperosmolar State Hhs Endotext Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/books/NBK279052/bin/hyperglycm-dka-hhs_figure2.JPG.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOWc9FGDtECD0pvIk4y82MPHYOOuQTbuOSaw';" alt="Hyperglycemic Crises Diabetic Ketoacidosis Dka And Hyperglycemic Hyperosmolar State Hhs Endotext Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hyperglycemic Crises Diabetic Ketoacidosis Dka And Hyperglycemic Hyperosmolar State Hhs Endotext Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/books/NBK519842/bin/neuroendo_hypophysi-Image003.jpg" data-lightbox="roadtrip" data-title="Hypophysitis Endotext Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/books/NBK519842/bin/neuroendo_hypophysi-Image003.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8GQeicLkuveN-_hT8yS9KtjZLZ3MSkEK-w';" alt="Hypophysitis Endotext Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hypophysitis Endotext Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.ncbi.nlm.nih.gov/books/NBK525165/table/ch2.sec5.table3/?report=thumb" data-lightbox="roadtrip" data-title="Relationships Among Major Risk Factors And The Burden Of Cardiovascular Diseases Diabetes And Chronic Lung Disease Cardiovascular Respiratory And Related Disorders Ncbi Bookshelf">
+											<img class="card-img v-image ads-img " src="https://www.ncbi.nlm.nih.gov/books/NBK525165/table/ch2.sec5.table3/?report=thumb" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScG1nPWykYhshO9hEpESaIVtsdz1h__DSiVQ';" alt="Relationships Among Major Risk Factors And The Burden Of Cardiovascular Diseases Diabetes And Chronic Lung Disease Cardiovascular Respiratory And Related Disorders Ncbi Bookshelf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Relationships Among Major Risk Factors And The Burden Of Cardiovascular Diseases Diabetes And Chronic Lung Disease Cardiovascular Respiratory And Related Disorders Ncbi Bookshelf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/5e/7b/d05e7b18e5c4e039c7c10f21e2290fa6.jpg" data-lightbox="roadtrip" data-title="Copd Chronic Obstructive Pulmonary Disorder Chronic Obstructive Pulmonary Dise Respiratory Diseases Chronic Obstructive Pulmonary Disease Acute Bronchitis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/5e/7b/d05e7b18e5c4e039c7c10f21e2290fa6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdAz8KTS2IYOZJ_clSfxix2Uml6hy_mneaYw';" alt="Copd Chronic Obstructive Pulmonary Disorder Chronic Obstructive Pulmonary Dise Respiratory Diseases Chronic Obstructive Pulmonary Disease Acute Bronchitis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Copd Chronic Obstructive Pulmonary Disorder Chronic Obstructive Pulmonary Dise Respiratory Diseases Chronic Obstructive Pulmonary Disease Acute Bronchitis</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/air-national-guard-nd.html">Air National Guard Nd</a></li>
+													<li class="list-group-item"><a href="/air-national-guard-jacksonville-fl.html">Air National Guard Jacksonville Fl</a></li>
+													<li class="list-group-item"><a href="/air-national-guard-in-colorado.html">Air National Guard In Colorado</a></li>
+													<li class="list-group-item"><a href="/american-army-nco-ranks.html">American Army Nco Ranks</a></li>
+													<li class="list-group-item"><a href="/amg-gtr.html">Amg Gtr</a></li>
+													<li class="list-group-item"><a href="/alaska-army-national-guard-agr.html">Alaska Army National Guard Agr</a></li>
+													<li class="list-group-item"><a href="/anb-c.html">Anb C</a></li>
+													<li class="list-group-item"><a href="/anb-cephalometric.html">Anb Cephalometric</a></li>
+													<li class="list-group-item"><a href="/air-national-guard-recruiter-colorado-springs.html">Air National Guard Recruiter Colorado Springs</a></li>
+													<li class="list-group-item"><a href="/air-national-guard-in-arizona.html">Air National Guard In Arizona</a></li>
+													<li class="list-group-item"><a href="/air-national-guard-rotc.html">Air National Guard Rotc</a></li>
+													<li class="list-group-item"><a href="/air-national-guard-base.html">Air National Guard Base</a></li>
+													<li class="list-group-item"><a href="/ang-kong-yen.html">Ang Kong Yen</a></li>
+													<li class="list-group-item"><a href="/anb-komplemen.html">Anb Komplemen</a></li>
+													<li class="list-group-item"><a href="/air-national-guard-puerto-rico.html">Air National Guard Puerto Rico</a></li>
+													<li class="list-group-item"><a href="/alaska-army-national-guard-chain-of-command.html">Alaska Army National Guard Chain Of Command</a></li>
+													<li class="list-group-item"><a href="/air-national-guard-recruiter-va.html">Air National Guard Recruiter Va</a></li>
+													<li class="list-group-item"><a href="/air-national-guard-associates-degree.html">Air National Guard Associates Degree</a></li>
+													<li class="list-group-item"><a href="/ang-khak.html">Ang Khak</a></li>
+													<li class="list-group-item"><a href="/air-national-guard-plane.html">Air National Guard Plane</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

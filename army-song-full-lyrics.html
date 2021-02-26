@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Song Full Lyrics - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Song Full Lyrics",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/564x/b0/e2/0c/b0e20cb1575d58e33784b6c3d0cef03a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+song+full+lyrics",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Song Full Lyrics</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The song was originally written by field artillery First Lieutenant later Brigadier General Edmund L. The song was transformed into a march by John Philip Sousa in 1917 and renamed The Field Artillery Song It was adopted in 1952 as the official song of the Army and retitled The Army Goes. An index of published Salvation Army music. <br>				
+			</p>
+										<a class="badge badge-dark" href="/uspto-usajobs.html">uspto usajobs</a>
+											<a class="badge badge-dark" href="/utah-national-guard-pay-chart.html">utah national guard pay chart</a>
+											<a class="badge badge-warning" href="/usaf-guardian-angel.html">usaf guardian angel</a>
+											<a class="badge badge-primary" href="/usp-food-grade-mineral-oil.html">usp food grade mineral oil</a>
+											<a class="badge badge-light" href="/vespa-warna-army.html">vespa warna army</a>
+											<a class="badge badge-success" href="/utah-air-national-guard-recruiter.html">utah air national guard recruiter</a>
+											<a class="badge badge-dark" href="/usaf-los-angeles.html">usaf los angeles</a>
+											<a class="badge badge-dark" href="/vangjel-tavo.html">vangjel tavo</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to visit the right blog.  Our website gives you hints for seeing the maximum quality video and picture content, search and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video for you to see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/0b/dd/560bdd71a414dc784e765dd24ef9c956.jpg" data-lightbox="roadtrip" data-title="The Army Song With Lyrics Performed By The United States Army Band W Scrolling Army Band United States Army Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/0b/dd/560bdd71a414dc784e765dd24ef9c956.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH6y4ZD2PQXCMbw_hIFQsNv-6XBW_zS9VI3g';" alt="The Army Song With Lyrics Performed By The United States Army Band W Scrolling Army Band United States Army Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Army Song With Lyrics Performed By The United States Army Band W Scrolling Army Band United States Army Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/c3/c1/b3c3c1e7eecbf0c5a3d58c9d1f6a9aa1.jpg" data-lightbox="roadtrip" data-title="Im In The Lords Army Lyrics Bible Songs For Kids Sunday School Songs Bible Lessons For Kids">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/c3/c1/b3c3c1e7eecbf0c5a3d58c9d1f6a9aa1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qwiuEJv-Mpen4Qpfd8COl_ESp1jBJtl1jw';" alt="Im In The Lords Army Lyrics Bible Songs For Kids Sunday School Songs Bible Lessons For Kids">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Im In The Lords Army Lyrics Bible Songs For Kids Sunday School Songs Bible Lessons For Kids</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/56pZ7mS4quQ/maxresdefault.jpg" data-lightbox="roadtrip" data-title="The Army Goes Rolling Along Song And Lyrics Played By Pershing S Own U Songs Army Band Army">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/56pZ7mS4quQ/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6TFnGOJ_mvQSOvPAG3behXpC6sTKosrVMxw';" alt="The Army Goes Rolling Along Song And Lyrics Played By Pershing S Own U Songs Army Band Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Army Goes Rolling Along Song And Lyrics Played By Pershing S Own U Songs Army Band Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/dc/26/9bdc26bd029b262bdc914bf416d38ec0.jpg" data-lightbox="roadtrip" data-title="Tiger Army Afterworld Lyrics Lyrics Where Have You Gone Music Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/dc/26/9bdc26bd029b262bdc914bf416d38ec0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBfmD-ve2FtAa4v7GDEOhxZFCxPJgPt_BP0A';" alt="Tiger Army Afterworld Lyrics Lyrics Where Have You Gone Music Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tiger Army Afterworld Lyrics Lyrics Where Have You Gone Music Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/30/6a/f4306a5bb56edfcdc26e35def7f63044.gif" data-lightbox="roadtrip" data-title="I M In The Lord S Army Sunday School Songs Bible Songs For Kids Bible School Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/30/6a/f4306a5bb56edfcdc26e35def7f63044.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0e_RnQhm52vPN2zSjC1arNsDVcPTvTfCkzQ';" alt="I M In The Lord S Army Sunday School Songs Bible Songs For Kids Bible School Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I M In The Lord S Army Sunday School Songs Bible Songs For Kids Bible School Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/6e/de/466ede1e70d652b028b7a30017b06536.png" data-lightbox="roadtrip" data-title="Christian Chlidrens Song I M In The Lord S Army Crd Lyrics Chords Ukulele Chords Songs Ukulele Songs Christian Ukulele Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/6e/de/466ede1e70d652b028b7a30017b06536.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnDBbsOJQI2ZTzBxv_TvHlY-Vr-e3jgw-HDg';" alt="Christian Chlidrens Song I M In The Lord S Army Crd Lyrics Chords Ukulele Chords Songs Ukulele Songs Christian Ukulele Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Christian Chlidrens Song I M In The Lord S Army Crd Lyrics Chords Ukulele Chords Songs Ukulele Songs Christian Ukulele Songs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f4/30/6a/f4306a5bb56edfcdc26e35def7f63044.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnDBbsOJQI2ZTzBxv_TvHlY-Vr-e3jgw-HDg';" alt="Christian Chlidrens Song I M In The Lord S Army Crd Lyrics Chords Ukulele Chords Songs Ukulele Songs Christian Ukulele Songs">
+										<div class="card-body">
+						<h3 class="h5"><b>Listen to Army by Ellie Goulding 616338 Shazams featuring on Pop Throwback and Pop Replay Apple Music playlists.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army song full lyrics</strong>. 
+								
+																	Sousas version proved a chart-topper becoming the Armys most popular melody. 
+																	The motivational words and lyrics of this glorious Patriotic song begin with And did those feet in ancient time Walk upon Englands mountain green as the first line of the hymn. 
+																	The words and lyrics of this Jerusalem song were written by its English author William Blake. 
+																	March along sing our song with the Army of the free Count the brave count the true who have fought to victory Were the Army and proud of our name Were the Army and proudly proclaim. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gruber while stationed in the Philippines in 1908 as the Caisson Song The original lyrics reflect routine activities in a horse-drawn field artillery battery. 
+																	In Collaboration with SPS. 
+																	Connect to Apple Music to play songs in full within Shazam. 
+																	Flanagan was famous as a wartime entertainer and his achievements were recognised when he was awarded the Officer of the Most Excellent Order of the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	March along sing our song with the Army of the free Count the brave count the true who have fought to victory Were the Army and proud of our name Were the Army and proudly proclaim. 
+																	The United States Army Field Band performs The Army Goes Rolling Along the official song of The United States Army. 
+																	Sing to the Lord Mixed Voices Volume 01 Part 1. 
+																	The author of the hymn William Blake was born on November 28 1757 and died on August 12. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nai BrXX Celeina Ann Army Of Two 歌詞 Weve been around the sun Carried each other to hell and back Into our brand new. 
+																	Philip Coutts Richard Phillips. 
+																	Check out our army song lyrics selection for the very best in unique or custom handmade pieces from our shops. 
+																	Brass Vocal About Contact. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is played at the conclusion of every Army ceremony and all soldiers are expected to stand and. 
+																	Besomorph Arcando Lyrics Army feat. 
+																	The US-Army SongGod bless the USA and our Troops. 
+																	Bud Flanagan born Chaim Reuben Weintrop 14 October 1896 20 October 1968 was a popular British music hall and vaudeville entertainer and comedian and later a television and film actor. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Neoni Seeing monsters Out your window I know you cant sleep You pretend though You dont have to Play the hero Cause I got you Like you got me When the earth shakes When the bombs scream Till our last breath Every heartbeat Ohhh You know Ill come running Ohhh If you go to war then Im going with you Pick up my sword Yeah theres. 
+																	In 1956 the song with revised lyrics was adopted as the official song of the Army. 
+																	Jerusalem Lyrics and Music. 
+																	March along sing our song with the Army of the free Count the brave count the true who have fought to victory Were the Army and proud of our name Were the Army and proudly proclaim. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He was best known as a double act with Chesney Allen. 
+																	Discovered using Shazam the music discovery app. 
+																	Lyricist Composer Arranger. 
+																	Henry Francis Lyte Christopher Priest. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	John Philip Sousa 18541932 was asked to transform the song into a march. 
+																	Army Of Two Lyrics. 
+																	PLAY FULL SONG. 
+																	The song was transformed into a march by John Philip Sousa in 1917 and renamed The Field Artillery Song. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I couldnt find a video that gave the lyrics to my satisfaction so i made one myself. 
+																	Download RozDhan App Now - httpsylinkcceR8FCUse My Invite Code To Get Rs50 Instantly - 005GTH- - - - - - - - - - - - - - - - - - -. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/22/56/2422563bfc3fb91ee2dc913df77b6990.jpg" data-lightbox="roadtrip" data-title="Besomorph Arcando Neoni Army Lyrics Lyrics Beautiful Songs Music Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/22/56/2422563bfc3fb91ee2dc913df77b6990.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS96vnwQSS1LYoror-FcBNjbx57aOdalvUTgw';" alt="Besomorph Arcando Neoni Army Lyrics Lyrics Beautiful Songs Music Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Besomorph Arcando Neoni Army Lyrics Lyrics Beautiful Songs Music Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/ba/89/79ba89d106c0e55265f0db70d68fdbe7.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/ba/89/79ba89d106c0e55265f0db70d68fdbe7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVIZxLg6_AohAuVERu4h_Rw8n0PLiimYrXHg';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/c6/26/6cc62699312a60643b8635ffc9067921.jpg" data-lightbox="roadtrip" data-title="Seven Nation Army By The White Stripes Music Quotes Lyrics Seven Nation Army Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/c6/26/6cc62699312a60643b8635ffc9067921.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7tJkOet0HyeG34KLBQcsmkgHoJL6HLPiFLw';" alt="Seven Nation Army By The White Stripes Music Quotes Lyrics Seven Nation Army Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seven Nation Army By The White Stripes Music Quotes Lyrics Seven Nation Army Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8b/45/12/8b4512a053cf9c786b06b78cde8a76a2.jpg" data-lightbox="roadtrip" data-title="To New Army Don T Forgot To Listen To I Need U Acoustic Cover I Recommended You All Bts Playlist Bts Lyric Bts Theory">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8b/45/12/8b4512a053cf9c786b06b78cde8a76a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIaoBwUbbGJaHA-8e8X9uPd8HFsR5vzxRJpQ';" alt="To New Army Don T Forgot To Listen To I Need U Acoustic Cover I Recommended You All Bts Playlist Bts Lyric Bts Theory">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">To New Army Don T Forgot To Listen To I Need U Acoustic Cover I Recommended You All Bts Playlist Bts Lyric Bts Theory</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/46/41/c746416ad3cc4996dd6eb05ea88440cb.jpg" data-lightbox="roadtrip" data-title="Im In The Lords Army Lyrics Army Sunday School Songs Lord">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/46/41/c746416ad3cc4996dd6eb05ea88440cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_cLrCk2wFId4i4eVbQ_Ysc80Ck-xNTEJkQ';" alt="Im In The Lords Army Lyrics Army Sunday School Songs Lord">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Im In The Lords Army Lyrics Army Sunday School Songs Lord</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/39/31/4839315264f718d499b6958c1b5e1263.jpg" data-lightbox="roadtrip" data-title="The Army Goes Rolling Along Ukulele Chords Songs Ukulele Songs Guitar Lessons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/39/31/4839315264f718d499b6958c1b5e1263.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOjfxEn2H1vLCkKHz9uQb2qzegfwEQM9SzqQ';" alt="The Army Goes Rolling Along Ukulele Chords Songs Ukulele Songs Guitar Lessons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Army Goes Rolling Along Ukulele Chords Songs Ukulele Songs Guitar Lessons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/11/7f/22/117f22b0b4db821e23303c238673a1f2.jpg" data-lightbox="roadtrip" data-title="English Version 2020 Global Army Song 7 Reasons Official Lyric Video Gracie Ranan Youtube Songs Lyrics Army Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/11/7f/22/117f22b0b4db821e23303c238673a1f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfD8fIl9amoO3vpLcdo0dDR_PeRgn3NCrYQ';" alt="English Version 2020 Global Army Song 7 Reasons Official Lyric Video Gracie Ranan Youtube Songs Lyrics Army Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">English Version 2020 Global Army Song 7 Reasons Official Lyric Video Gracie Ranan Youtube Songs Lyrics Army Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/95/4d/8e954df7a6ac866ecbe7e23e87cd6417.jpg" data-lightbox="roadtrip" data-title="Hello Army We Are Ahc Army Help Centre Dedicated To All Of You That Need Someone To Talk With We Want To Let You K Bts Quotes Bts Lyrics Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/95/4d/8e954df7a6ac866ecbe7e23e87cd6417.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-fkfCbQQPgjXU25BHaG_F0hnV155paeQGw';" alt="Hello Army We Are Ahc Army Help Centre Dedicated To All Of You That Need Someone To Talk With We Want To Let You K Bts Quotes Bts Lyrics Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hello Army We Are Ahc Army Help Centre Dedicated To All Of You That Need Someone To Talk With We Want To Let You K Bts Quotes Bts Lyrics Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/b0/bc/e2b0bc4ff5e34804cf3ba68d50db3b94.jpg" data-lightbox="roadtrip" data-title="Pin By Shelly Bakelman On Song Lyrics Country Song Lyrics American Soldiers Country Music Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/b0/bc/e2b0bc4ff5e34804cf3ba68d50db3b94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOFqIrAlqfuvE6ctjTcQBEvnurZNEFK4gItw';" alt="Pin By Shelly Bakelman On Song Lyrics Country Song Lyrics American Soldiers Country Music Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Shelly Bakelman On Song Lyrics Country Song Lyrics American Soldiers Country Music Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/b8/42/89b8429bea5a355a16d44e429273b854.jpg" data-lightbox="roadtrip" data-title="Traditional Kids Songs Sunday School Songs Kids Church Songs Bible Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/b8/42/89b8429bea5a355a16d44e429273b854.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmnnv2eQhBZzIBFH56d5y-b849t5GtvMBAFw';" alt="Traditional Kids Songs Sunday School Songs Kids Church Songs Bible Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Traditional Kids Songs Sunday School Songs Kids Church Songs Bible Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b0/e2/0c/b0e20cb1575d58e33784b6c3d0cef03a.jpg" data-lightbox="roadtrip" data-title="Pin On Lil Bangtan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b0/e2/0c/b0e20cb1575d58e33784b6c3d0cef03a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVVyOzMoTRX2_iRotipE_lc4gD7l81nJE4Hg';" alt="Pin On Lil Bangtan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Lil Bangtan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f8/30/08/f83008ebf03ef154d70f24c297679489.jpg" data-lightbox="roadtrip" data-title="Army By Ellie Goulding Her Best Song So Far Meaningful Lyrics Favorite Lyrics Music Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f8/30/08/f83008ebf03ef154d70f24c297679489.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNQ4KvQPu9C-hfmA6sXilFjhfVhSl8Hz1WXg';" alt="Army By Ellie Goulding Her Best Song So Far Meaningful Lyrics Favorite Lyrics Music Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army By Ellie Goulding Her Best Song So Far Meaningful Lyrics Favorite Lyrics Music Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/da/b0/06dab03c18368d3b18844b0f4cea7528.jpg" data-lightbox="roadtrip" data-title="U S Army Engineer Song With Lyrics Army Corps Of Engineers Military Quotes Army Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/da/b0/06dab03c18368d3b18844b0f4cea7528.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV1ZTO3yNC6L_TRA5Qpn2V9QDN2sl3K0PjqQ';" alt="U S Army Engineer Song With Lyrics Army Corps Of Engineers Military Quotes Army Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Engineer Song With Lyrics Army Corps Of Engineers Military Quotes Army Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/indian-army-song-jalwa-jalwa.html">Indian Army Song Jalwa Jalwa</a></li>
+													<li class="list-group-item"><a href="/irish-army-ranger-wing-east-timor.html">Irish Army Ranger Wing East Timor</a></li>
+													<li class="list-group-item"><a href="/irish-army-ranger-wing-training.html">Irish Army Ranger Wing Training</a></li>
+													<li class="list-group-item"><a href="/indian-army-songs-mp3-free-download.html">Indian Army Songs Mp3 Free Download</a></li>
+													<li class="list-group-item"><a href="/irish-army-ranger-wing-pay.html">Irish Army Ranger Wing Pay</a></li>
+													<li class="list-group-item"><a href="/indian-army-song-jung-ke-maidan-mein-keh-dena.html">Indian Army Song Jung Ke Maidan Mein Keh Dena</a></li>
+													<li class="list-group-item"><a href="/is-a-6-year-reservist-considered-a-veteran.html">Is A 6 Year Reservist Considered A Veteran</a></li>
+													<li class="list-group-item"><a href="/irish-army-ranger-wing-sniper-competition.html">Irish Army Ranger Wing Sniper Competition</a></li>
+													<li class="list-group-item"><a href="/indian-army-song-download-bestwap.html">Indian Army Song Download Bestwap</a></li>
+													<li class="list-group-item"><a href="/individual-ready-reserves.html">Individual Ready Reserves</a></li>
+													<li class="list-group-item"><a href="/indian-army-song-jung-ke-maidan-mein.html">Indian Army Song Jung Ke Maidan Mein</a></li>
+													<li class="list-group-item"><a href="/is-army-ranger-equivalent-to-navy-seal.html">Is Army Ranger Equivalent To Navy Seal</a></li>
+													<li class="list-group-item"><a href="/infantryman-in-the-national-guard.html">Infantryman In The National Guard</a></li>
+													<li class="list-group-item"><a href="/indian-army-song-jung-ke-maidan-mein-indian-army-song.html">Indian Army Song Jung Ke Maidan Mein Indian Army Song</a></li>
+													<li class="list-group-item"><a href="/indian-army-rank-world.html">Indian Army Rank World</a></li>
+													<li class="list-group-item"><a href="/indian-army-ranks-list-lowest-to-highest.html">Indian Army Ranks List Lowest To Highest</a></li>
+													<li class="list-group-item"><a href="/infantryman-salary.html">Infantryman Salary</a></li>
+													<li class="list-group-item"><a href="/is-6-years-in-army-national-guard-considered-a-veteran.html">Is 6 Years In Army National Guard Considered A Veteran</a></li>
+													<li class="list-group-item"><a href="/is-army-rank-insignia.html">Is Army Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/is-joining-the-national-guard-worth-it.html">Is Joining The National Guard Worth It</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

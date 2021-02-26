@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Border Song - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Border Song",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/2a/2f/cf/2a2fcfaee4996ac1b188bda78a6552f7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+border+song",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Border Song</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Sandese Aate Hai - HD Video Border Independence Day Special Sunny Deol Suniel Shetty Akshaye Khanna Jackie Shroff Best Patriotic Hindi Song Singe. This comes in the wake of Indian troops setting up an around the clock observation at the dominating. Entered the Brazilian territory and attacked a small Brazilian Army border contingent the response was immediate and the then Special Forces Battalion held in conjunction with other units retaliation operation Operation Traira and the result was 12 dead guerrillas captured numerous most of the weapons and equipment recovered. <br>				
+			</p>
+										<a class="badge badge-light" href="/united-states-air-guard.html">united states air guard</a>
+											<a class="badge badge-danger" href="/us-army-in-europe-news.html">us army in europe news</a>
+											<a class="badge badge-danger" href="/united-states-army-reserve-national-scholarathlete-award.html">united states army reserve national scholarathlete award</a>
+											<a class="badge badge-danger" href="/unknown-soldier-tomb-guards.html">unknown soldier tomb guards</a>
+											<a class="badge badge-secondary" href="/united-states-coast-to-coast-distance.html">united states coast to coast distance</a>
+											<a class="badge badge-warning" href="/us-army-images-art.html">us army images art</a>
+											<a class="badge badge-primary" href="/ups-downtown.html">ups downtown</a>
+											<a class="badge badge-success" href="/us-army-acft-news.html">us army acft news</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you have come to pay a visit to the right blog.  Our website gives you hints for viewing the maximum quality video and picture content, search and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/6b/6e/78/6b6e784f15fb3a4b42e2d2257ac34af7.jpg" data-lightbox="roadtrip" data-title="Indian Army Special Song Border Te Diwali Mangal Mangi Yamla Youtube Indian Army Army Special">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/6b/6e/78/6b6e784f15fb3a4b42e2d2257ac34af7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBsp2BIdLL4BkR_acYbCoTpTCsO41pggU9VA';" alt="Indian Army Special Song Border Te Diwali Mangal Mangi Yamla Youtube Indian Army Army Special">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Special Song Border Te Diwali Mangal Mangi Yamla Youtube Indian Army Army Special</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/bc/6d/51/bc6d51adfd03962c18bb0a3791649537.jpg" data-lightbox="roadtrip" data-title="Border Lyrics Gulzaar Chhaniwala India Army Song Lyrics Songs Border">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/bc/6d/51/bc6d51adfd03962c18bb0a3791649537.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdvUzFpi8wn24HOcjnZa_J3Nnya30OBzqXtA';" alt="Border Lyrics Gulzaar Chhaniwala India Army Song Lyrics Songs Border">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Border Lyrics Gulzaar Chhaniwala India Army Song Lyrics Songs Border</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/86/43/9f8643843f7b33388437213338e30710.jpg" data-lightbox="roadtrip" data-title="Ke Ghar Ab Aaoge Sandese Aate Hain Full Song Border 1997 Bollywood Songs Bollywood Music Indian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/86/43/9f8643843f7b33388437213338e30710.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3euHfkkZHzP8t4saJqtpeuzQhe2yQDyFx7g';" alt="Ke Ghar Ab Aaoge Sandese Aate Hain Full Song Border 1997 Bollywood Songs Bollywood Music Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ke Ghar Ab Aaoge Sandese Aate Hain Full Song Border 1997 Bollywood Songs Bollywood Music Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/f7/a8/e8f7a803cfa9243ea7e4c01745fd2923.jpg" data-lightbox="roadtrip" data-title="Pin On That Pakistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/f7/a8/e8f7a803cfa9243ea7e4c01745fd2923.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtdFMQEBHpS-yIE6BeGI-1AVIHzcLeHgh-Lg';" alt="Pin On That Pakistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On That Pakistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ad/44/17/ad441713b3634231d1d45e48db3f8966.jpg" data-lightbox="roadtrip" data-title="Youtube Youtube Songs Singh">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ad/44/17/ad441713b3634231d1d45e48db3f8966.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScDBdsTFb2CiTAawwk7iR11-JBepoUUPArZw';" alt="Youtube Youtube Songs Singh">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youtube Youtube Songs Singh</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a7/b8/3b/a7b83bd86be45d2aac17493ec7c8398d.jpg" data-lightbox="roadtrip" data-title="Whatsapp Status Song 2018 Ll 15 August Independence Whatsapp Status Song 2018 Ll 15 August Independence Independenceday Pakistan Army Indian Army News India">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a7/b8/3b/a7b83bd86be45d2aac17493ec7c8398d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3TEJkIBf2eycQT9tMkZFD1eRb1oO2dkAmw';" alt="Whatsapp Status Song 2018 Ll 15 August Independence Whatsapp Status Song 2018 Ll 15 August Independence Independenceday Pakistan Army Indian Army News India">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Whatsapp Status Song 2018 Ll 15 August Independence Whatsapp Status Song 2018 Ll 15 August Independence Independenceday Pakistan Army Indian Army News India</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/b7/4e/60/b74e60b7f542791b76eab66f56cff497.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3TEJkIBf2eycQT9tMkZFD1eRb1oO2dkAmw';" alt="Whatsapp Status Song 2018 Ll 15 August Independence Whatsapp Status Song 2018 Ll 15 August Independence Independenceday Pakistan Army Indian Army News India">
+										<div class="card-body">
+						<h3 class="h5"><b>Both these are celebrated as army days with decennial anniversaries treated as major celebrations except from 1978 to 2014 when only the 1932.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army border song</strong>. 
+								
+																	There are a total of 5 songs from the Border movie which are composed by Anu Malik. 
+																	Indian army BSF border song shorts. 
+																	The next video is starting stop. 
+																	Border 1997 Hindi 720p. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chinese troops have set up loudspeakers that belt out Punjabi numbers at their forward posts. 
+																	Sampson Low Marston Co. 
+																	Ot kraya i do kraya. 
+																	Seeley Service 1956Sphere 1972. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Brightlight Production and Peddler Media Present this Song for hundreds of Indian who angry for Pulwama attack. 
+																	Digby Planck The Shiny Seventh. 
+																	Money Barnes The Uniforms and History of the Scottish Regiments London. 
+																	Naval Military 2003 ISBN 1-843426-19-6. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Recently under the aegis of the. 
+																	Httpbitly2bFeNNMEnjoy Bollywood Best Music. 
+																	Latest Army Song Border Ka Root Ajay Star Sunil Uchana Sargam Studio Haryanvi SongAjay_Star Border_Ka_Root SongSong A New Latest Most Popu. 
+																	Enjoy Bollywood 90s Evergreen Songs Collection. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Bangladesh Army Bengali. 
+																	We present to you BRIGHTLIGHT PEDDLER MED. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+																	Anon A War Record of the 21st London Regiment First Surrey Rifles 19141919 1927Uckfield. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Original owner of this video is 92 News HD Channel 92 News HD Channel is very famous Paki. 
+																	Kim Il-sungs anti-Japanese guerrilla army the Korean Peoples Revolutionary Army was established on 25 April 1932This revolutionary army was transformed into the regular army on 8 February 1948. 
+																	All these songs are from the movie Border a Hindi-language war drama film starring an ensemble cast of Sunny Deol Sunil Shetty Akshaye Khanna Jackie Shroff Sudesh Berry Puneet Issar and Kulbhushan Kharbanda. 
+																	Video By 92 News HD ChannelI am not the owner of this video. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Ot kraya i do kraya Ot morya i do morya B. 
+																	Httpbitly2aFLgWCEnjoy The Bollywood Blockbuster Songs. 
+																	Httpbitly2bKVEXYFor Bollywood Romantic Songs Collection. 
+																	 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Httpbitly2cdGZcaFor Bollywood Romantic Unforgettable. 
+																	The song Mere Dushman Mere Bhai was sung by Hariharan. 
+																	Korean Peoples Revolutionary Army 19321948. 
+																	Old hindi songs old hindi movie songs old hindi songs online old hindi hit songs old hindi romantic songs old hindi love songs old hindi album songs ol. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Enjoy 90s Evergreen Songs. 
+																	The film was released worldwide on 13 June 1997 with positive reviews from critics and garnered critical acclaim for its story showing of the battle direction screenplay performances and soundtrack. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/2f/cf/2a2fcfaee4996ac1b188bda78a6552f7.jpg" data-lightbox="roadtrip" data-title="Sandese Aate Hai Full Video Song Border Sunny Deol Sunil Shetty Bollywood Music Videos Evergreen Songs Mp3 Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/2f/cf/2a2fcfaee4996ac1b188bda78a6552f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8JiL7DoP2rB76aZxmMrS8gXeafVfFx8jzlw';" alt="Sandese Aate Hai Full Video Song Border Sunny Deol Sunil Shetty Bollywood Music Videos Evergreen Songs Mp3 Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sandese Aate Hai Full Video Song Border Sunny Deol Sunil Shetty Bollywood Music Videos Evergreen Songs Mp3 Song</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/fa/54/e9/fa54e90a924404aa63d26cdbbd57dba4.jpg" data-lightbox="roadtrip" data-title="Pin On Military Warfare">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/fa/54/e9/fa54e90a924404aa63d26cdbbd57dba4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHB8r07TljPBjRmRaFMBdopKNl_U1nufGepQ';" alt="Pin On Military Warfare">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Warfare</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/95/18/eb/9518ebffb3d9f27a16bf52c8207419e1.jpg" data-lightbox="roadtrip" data-title="Sandese Aate Hai Song Border Paul S Dance Station L Patriotic Dance L Tribute To Army Youtube Songs Dance Tribute">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/95/18/eb/9518ebffb3d9f27a16bf52c8207419e1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIMTsYRMqxC84x3nYYCBXpCcYVTOorIiGKbA';" alt="Sandese Aate Hai Song Border Paul S Dance Station L Patriotic Dance L Tribute To Army Youtube Songs Dance Tribute">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sandese Aate Hai Song Border Paul S Dance Station L Patriotic Dance L Tribute To Army Youtube Songs Dance Tribute</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/90/f4/3790f44dda6286579f960c1f245c9888.jpg" data-lightbox="roadtrip" data-title="Ke Ghar Ab Aaoge Sandese Aate Hain Full Song Border 1997 Songs Lyrics Border">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/90/f4/3790f44dda6286579f960c1f245c9888.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6QTXkFlkyUWmo6upCIrd3irGGV-Sr_KXKRQ';" alt="Ke Ghar Ab Aaoge Sandese Aate Hain Full Song Border 1997 Songs Lyrics Border">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ke Ghar Ab Aaoge Sandese Aate Hain Full Song Border 1997 Songs Lyrics Border</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/aa/40/d7aa402b391935da755c91a6ec445812.jpg" data-lightbox="roadtrip" data-title="Top 10 War Movies From Hollywood Bollywood Etc Film Song Border Movie Song Hindi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/aa/40/d7aa402b391935da755c91a6ec445812.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4LD6xH5Iptq-DoKr5XSLFcfMPoRh6pesphQ';" alt="Top 10 War Movies From Hollywood Bollywood Etc Film Song Border Movie Song Hindi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 10 War Movies From Hollywood Bollywood Etc Film Song Border Movie Song Hindi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/52/f9/d3/52f9d37174ec1263688c8b092fb17537.jpg" data-lightbox="roadtrip" data-title="Sandese Aate Hai By Sonu Nigam Roop Kumar Rathod Songs Border Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/52/f9/d3/52f9d37174ec1263688c8b092fb17537.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQXanytu9L6N66pRxClZsa-nA6AW7rHDe25g';" alt="Sandese Aate Hai By Sonu Nigam Roop Kumar Rathod Songs Border Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sandese Aate Hai By Sonu Nigam Roop Kumar Rathod Songs Border Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/44/1b/9c441be1a0a7206ba751af0db6684129.jpg" data-lightbox="roadtrip" data-title="Pakistan Army Song Allah Ho Akbar 06 September Defense Day 2016 Youtube National Songs Pakistan Song Pakistani Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/44/1b/9c441be1a0a7206ba751af0db6684129.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdXD5ulsR2WP-X_OdvNZORHMQvmMRKJ6YrCg';" alt="Pakistan Army Song Allah Ho Akbar 06 September Defense Day 2016 Youtube National Songs Pakistan Song Pakistani Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistan Army Song Allah Ho Akbar 06 September Defense Day 2016 Youtube National Songs Pakistan Song Pakistani Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/04/85/ff/0485ff789e14b4abd058e9395da25f34.jpg" data-lightbox="roadtrip" data-title="Best Patriotic Song 2019 Indian Army Song Download Link In The Description Youtube Songs Reality Quotes Patriotic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/04/85/ff/0485ff789e14b4abd058e9395da25f34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzqiwAVdLHSBkQy8c2NVwe4ZVRSEa_QRXx2w';" alt="Best Patriotic Song 2019 Indian Army Song Download Link In The Description Youtube Songs Reality Quotes Patriotic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Best Patriotic Song 2019 Indian Army Song Download Link In The Description Youtube Songs Reality Quotes Patriotic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/4e/60/b74e60b7f542791b76eab66f56cff497.jpg" data-lightbox="roadtrip" data-title="Sandese Aate Hai Full Video Song Border Sunny Deol Sunil Shetty Akshaye Khanna Youtube Evergreen Songs Best Songs Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/4e/60/b74e60b7f542791b76eab66f56cff497.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmo1jaQQjeatb58uLRE0J_ofkVHRsCMiw1fw';" alt="Sandese Aate Hai Full Video Song Border Sunny Deol Sunil Shetty Akshaye Khanna Youtube Evergreen Songs Best Songs Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sandese Aate Hai Full Video Song Border Sunny Deol Sunil Shetty Akshaye Khanna Youtube Evergreen Songs Best Songs Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/9c/e0/7c9ce0d42c2132b4753b2da1f5f90508.jpg" data-lightbox="roadtrip" data-title="Pin On Desh Bhakti Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/9c/e0/7c9ce0d42c2132b4753b2da1f5f90508.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkddaD2ggsarECzMK-jPo_9NWiO75JZBvARQ';" alt="Pin On Desh Bhakti Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Desh Bhakti Song</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/71/ea/7271ea1e8502826814a610f646a9726a.jpg" data-lightbox="roadtrip" data-title="Pin On Bollywood">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/71/ea/7271ea1e8502826814a610f646a9726a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREStCTEeRMjpXZh6tcrl0UoFNKaQK6iZatcw';" alt="Pin On Bollywood">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Bollywood</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/fb/19/25/fb1925119863a40e8176a3cdcf298006.jpg" data-lightbox="roadtrip" data-title="Pin On Video Downloader App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/fb/19/25/fb1925119863a40e8176a3cdcf298006.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRgXuwtEUxKM70VDubFw0Uezo6nY_4q2NviQ';" alt="Pin On Video Downloader App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Video Downloader App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/83/0e/01830e04eee535210f1a4c4c6b0db16c.jpg" data-lightbox="roadtrip" data-title="Pin By Fantasy Fantasy On Pak Army Pakistan Army Army Soldier Pakistan Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/83/0e/01830e04eee535210f1a4c4c6b0db16c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-fxMOefwXgfyBKy1650dEAh2II74ijhtYLg';" alt="Pin By Fantasy Fantasy On Pak Army Pakistan Army Army Soldier Pakistan Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Fantasy Fantasy On Pak Army Pakistan Army Army Soldier Pakistan Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-rank-kernel.html">Army Rank Kernel</a></li>
+													<li class="list-group-item"><a href="/army-rank-gnr.html">Army Rank Gnr</a></li>
+													<li class="list-group-item"><a href="/army-rank-grade.html">Army Rank Grade</a></li>
+													<li class="list-group-item"><a href="/army-rank-list-country.html">Army Rank List Country</a></li>
+													<li class="list-group-item"><a href="/army-rank-dvr.html">Army Rank Dvr</a></li>
+													<li class="list-group-item"><a href="/army-rank-insignia-black-circle.html">Army Rank Insignia Black Circle</a></li>
+													<li class="list-group-item"><a href="/army-rank-hierarchy.html">Army Rank Hierarchy</a></li>
+													<li class="list-group-item"><a href="/army-rank-epaulettes.html">Army Rank Epaulettes</a></li>
+													<li class="list-group-item"><a href="/army-rank-insignia-ww2.html">Army Rank Insignia Ww2</a></li>
+													<li class="list-group-item"><a href="/army-rank-korea.html">Army Rank Korea</a></li>
+													<li class="list-group-item"><a href="/army-rank-in-america.html">Army Rank In America</a></li>
+													<li class="list-group-item"><a href="/army-rank-insignia-world-war-2.html">Army Rank Insignia World War 2</a></li>
+													<li class="list-group-item"><a href="/army-rank-and-pay.html">Army Rank And Pay</a></li>
+													<li class="list-group-item"><a href="/army-rank-bd.html">Army Rank Bd</a></li>
+													<li class="list-group-item"><a href="/army-rank-e7.html">Army Rank E7</a></li>
+													<li class="list-group-item"><a href="/army-rank-corporal.html">Army Rank Corporal</a></li>
+													<li class="list-group-item"><a href="/army-rank-cfn.html">Army Rank Cfn</a></li>
+													<li class="list-group-item"><a href="/army-rank-kuwait.html">Army Rank Kuwait</a></li>
+													<li class="list-group-item"><a href="/army-rank-equivalent-to-police.html">Army Rank Equivalent To Police</a></li>
+													<li class="list-group-item"><a href="/army-rank-from-lowest-to-highest.html">Army Rank From Lowest To Highest</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

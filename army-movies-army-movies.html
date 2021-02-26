@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Movies Army Movies - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Movies Army Movies",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/736x/ce/80/c0/ce80c0d32755a02a01ec6117f62b00b8.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+movies+army+movies",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Movies Army Movies</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Featuring war movies movies about soldiers and military films this list of the greatest army movies includes Saving Private Ryan Black Hawk Down and Apocalypse Now. Army 1996 Army. He is behind a collegian Anjali who happens to be the daughter of Viz. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/army-orange-report.html">army orange report</a>
+											<a class="badge badge-danger" href="/army-navy-marines-air-force-coast-guard-song.html">army navy marines air force coast guard song</a>
+											<a class="badge badge-light" href="/army-of-orange.html">army of orange</a>
+											<a class="badge badge-light" href="/army-ranger-documentary.html">army ranger documentary</a>
+											<a class="badge badge-secondary" href="/army-orange-pants.html">army orange pants</a>
+											<a class="badge badge-light" href="/army-ranger-cycling-jersey.html">army ranger cycling jersey</a>
+											<a class="badge badge-danger" href="/army-ranger-graduation-2019.html">army ranger graduation 2019</a>
+											<a class="badge badge-success" href="/army-orange-vector.html">army orange vector</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to visit the right site.  Our website provides you with suggestions for viewing the maximum quality video and image content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, especially Youtube, so we recommend this movie that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/5e/fe/ab/5efeab975929f8790c59c0e3fea48fcf.jpg" data-lightbox="roadtrip" data-title="Army King 2020 New Released Full Hindi Dubbed Movie Hollywood Movies In Hindi Dubbed 2020 Youtube Movie Blog Movies Hollywood">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/5e/fe/ab/5efeab975929f8790c59c0e3fea48fcf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1sQ7bcOb9zaILB4duWaiA-UU6BR_OmQlfEA';" alt="Army King 2020 New Released Full Hindi Dubbed Movie Hollywood Movies In Hindi Dubbed 2020 Youtube Movie Blog Movies Hollywood">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army King 2020 New Released Full Hindi Dubbed Movie Hollywood Movies In Hindi Dubbed 2020 Youtube Movie Blog Movies Hollywood</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cd/1a/d1/cd1ad1a76dc72949a7c3f01a32fb0c01.jpg" data-lightbox="roadtrip" data-title="New Action Movies 2020 Latest Army Movies Full Hd Youtube Mejores Peliculas De Accion Peliculas Peliculas De Accion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cd/1a/d1/cd1ad1a76dc72949a7c3f01a32fb0c01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTexvLn3XEgPaIa1CdSHLPZPqT4pXeSySYzkQ';" alt="New Action Movies 2020 Latest Army Movies Full Hd Youtube Mejores Peliculas De Accion Peliculas Peliculas De Accion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Action Movies 2020 Latest Army Movies Full Hd Youtube Mejores Peliculas De Accion Peliculas Peliculas De Accion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/1a/de/821ade39ec29158e721b9428efe0979a.jpg" data-lightbox="roadtrip" data-title="Top 5 Best Indian Army Movies In Hindi List Portal Indian Army Movies Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/1a/de/821ade39ec29158e721b9428efe0979a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaKTHyvPzxZTp-VuGdQweZm9uQonlo4v8_RA';" alt="Top 5 Best Indian Army Movies In Hindi List Portal Indian Army Movies Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 5 Best Indian Army Movies In Hindi List Portal Indian Army Movies Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/2a/a0/a12aa06292470d1dd53a6d5828ccb217.jpg" data-lightbox="roadtrip" data-title="Bharat Army 2019 New Released Full Hindi Dubbed Movie New Movies 201 Free Movies Online Download Free Movies Online Hindi Movie Film">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/2a/a0/a12aa06292470d1dd53a6d5828ccb217.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQog5RbMFlO3wBMhm3J6_xpPG4jgbqxoKxjjQ';" alt="Bharat Army 2019 New Released Full Hindi Dubbed Movie New Movies 201 Free Movies Online Download Free Movies Online Hindi Movie Film">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bharat Army 2019 New Released Full Hindi Dubbed Movie New Movies 201 Free Movies Online Download Free Movies Online Hindi Movie Film</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/8a/79/71/8a7971deee098c698ef191acdfea0446.jpg" data-lightbox="roadtrip" data-title="Indian Army Movies To Watch Online Telugu Movies Download Movie Ringtones">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/8a/79/71/8a7971deee098c698ef191acdfea0446.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScVB_zOzite2TokOXeviIN0cbj5bBM5qEvtg';" alt="Indian Army Movies To Watch Online Telugu Movies Download Movie Ringtones">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Movies To Watch Online Telugu Movies Download Movie Ringtones</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/76/34/f1763412d4cbed9f4426f41b6bbbbd6a.jpg" data-lightbox="roadtrip" data-title="Movies Pakistan Army Movies Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/76/34/f1763412d4cbed9f4426f41b6bbbbd6a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwR-1JZDWj5d6rZ6FutjvAAQqBuOqCxTHFA';" alt="Movies Pakistan Army Movies Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Movies Pakistan Army Movies Army</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/8b/1d/11/8b1d114f9323516ce829973d3858c61a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwR-1JZDWj5d6rZ6FutjvAAQqBuOqCxTHFA';" alt="Movies Pakistan Army Movies Army">
+										<div class="card-body">
+						<h3 class="h5"><b>Jane 1997R 125 min Action Drama.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army movies army movies</strong>. 
+								
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+																	Originally written by American Songwriting Legend Irvi. 
+																	What are the best military movies. 
+																	In September of 2019 word came out that Bridesmaids and Spy director Paul Feig would be writing and directing Dark Army a film which included original characters as well as characters from. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army is a 1996 Indian Hindi action film directed by Raam Shetty. 
+																	The movie story deals with Mass an orphan who bonds well with his landlords son Adi. 
+																	They Shall Not Grow Old II 2018 R 99 min Documentary History War. 
+																	It released on 28 June 1996. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Paths of Glory 1957 5. 
+																	Not Rated 2h 33min Action Drama 28 June 1996 India Arjun an army man who is newly-wed is brutally killed by a gangster Nagraj. 
+																	The Dirty Dozen 1967. 
+																	Da 5 Bloods 2020 3. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The movie was reported to be inspired by Sholay. 
+																	The 20 Best ArmyMilitaryNavy Movies by dano-c-333-351992 created - 04 Sep 2012 updated - 04 Sep 2012 Public Refine See titles to watch instantly titles you havent rated etc. 
+																	You might also be interested in Vietnam War movies and World War I films. 
+																	First Blood 1982R 93 min Action. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While not all of these films feature war they all use the army as a central theme and feature some of the best soldier moves ever depicted on film. 
+																	Vidya Balan to attend Indian Armys Gulmarg Winter Festival Celebs and fans wish Gautham Vasudev Menon for 20 years of Minnale Simbu to do a film for producers association headed by his mom. 
+																	The film a feature-length version of the classic TV sitcom is. 
+																	The Siege 1998R 116 min Action. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Scott Eastwood and Orlando. 
+																	Director and Army veteran Rod Lurie tells the story of the Afghanistan Wars 2009 Battle of Kamdesh at Combat Outpost Keating in a movie that deserved a wider audience. 
+																	My Top Military Movies. 
+																	The film stars Sridevi. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Platoon 1986R 120 min Drama. 
+																	Whether they include great stories very quotable lines intense combat or all of the above these 16 movies are what wed pick as the best military movies. 
+																	French Foreign Legion Army Movies. 
+																	Release Calendar DVD Blu-ray Releases Top Rated Movies Most Popular Movies Browse Movies by Genre Top Box Office Showtimes Tickets Showtimes Tickets In Theaters Coming Soon Coming Soon Movie News India Movie Spotlight. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Columbia Pictures The BBC has added a warning of discriminatory language to the 1971 movie of Dads Army. 
+																	This is the Army is a story about the biggest and best-known morale-boosting show of World War II. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+																	His wife who is determined to avenge her husband raises an army of dedicated young men to kill the gangster. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The fallout from the 2020 pandemic continues as the 78th annual Golden Globes nominations were just announced about a month after the ceremonys originally scheduled date. 
+																	Movies and TV shows that focus on military spec-ops Navy SEALs Delta Force Marine Force Recon British SAS etc No titles featuring Army Special Forces made the list however. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/d8/b7/28/d8b728be377202b23a47ab9144818e10.jpg" data-lightbox="roadtrip" data-title="Pin On Movies Series افلام و مسلسلات عربية واجنبية">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/d8/b7/28/d8b728be377202b23a47ab9144818e10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-Bt0KEXHoXaaYXVHCA-WIns52NAuCU862mw';" alt="Pin On Movies Series افلام و مسلسلات عربية واجنبية">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Movies Series افلام و مسلسلات عربية واجنبية</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/f4/fb/39f4fb07332e55de9aec3876f1c04803.jpg" data-lightbox="roadtrip" data-title="15 Best South Indian Army Movies In Hindi Dubbed List Vijay Allu Arju Indian Action Movies Kannada Movies Indian Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/f4/fb/39f4fb07332e55de9aec3876f1c04803.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLanM4jIBgBo8WRkfffMjsH_6AolFJYjvBqA';" alt="15 Best South Indian Army Movies In Hindi Dubbed List Vijay Allu Arju Indian Action Movies Kannada Movies Indian Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Best South Indian Army Movies In Hindi Dubbed List Vijay Allu Arju Indian Action Movies Kannada Movies Indian Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/f0/da/fff0da0b90fa5348c51231b0da8d89f7.jpg" data-lightbox="roadtrip" data-title="Army Daze Full Movies Online Full Movies Movies Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/f0/da/fff0da0b90fa5348c51231b0da8d89f7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4rKZAPyVm6NAx2eZS8kSexsrNznt5kC9wgg';" alt="Army Daze Full Movies Online Full Movies Movies Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Daze Full Movies Online Full Movies Movies Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ce/80/c0/ce80c0d32755a02a01ec6117f62b00b8.jpg" data-lightbox="roadtrip" data-title="Indian Army Movies Online Free Film Telugu Movies Online Free Hd Movies Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ce/80/c0/ce80c0d32755a02a01ec6117f62b00b8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsaEMGobacnNhTnPKrHi63ek2hbUrhOFRiQQ';" alt="Indian Army Movies Online Free Film Telugu Movies Online Free Hd Movies Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Movies Online Free Film Telugu Movies Online Free Hd Movies Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/d8/6f/7ad86f51b5280404fac77c1a6e30d33a.jpg" data-lightbox="roadtrip" data-title="Pin On October Movie List">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/d8/6f/7ad86f51b5280404fac77c1a6e30d33a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc-OL_AEqWdQ_AIx77ZEtEE8Cfj5fdBhPytg';" alt="Pin On October Movie List">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On October Movie List</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/bd/20/61bd20e64acc98b251e421c027c67c9f.jpg" data-lightbox="roadtrip" data-title="Mahesh Babu 2020 New Tamil Hindi Dubbed Blockbuster Movie South Hindi Dubbed Movies Bollywood Movies Movies Hindi Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/bd/20/61bd20e64acc98b251e421c027c67c9f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaPGPoRHB7UJFOO0KFFa2SeHjYRnO6597YIA';" alt="Mahesh Babu 2020 New Tamil Hindi Dubbed Blockbuster Movie South Hindi Dubbed Movies Bollywood Movies Movies Hindi Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mahesh Babu 2020 New Tamil Hindi Dubbed Blockbuster Movie South Hindi Dubbed Movies Bollywood Movies Movies Hindi Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/68/a2/b268a240f06f124fc6e81bb5a06b7635.jpg" data-lightbox="roadtrip" data-title="Dad S Army Movie Poster 5 Dad S Army Movie Posters Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/68/a2/b268a240f06f124fc6e81bb5a06b7635.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSapQYcCOvEhyNBY_8kgtrsVoDIWZDuIPODQg';" alt="Dad S Army Movie Poster 5 Dad S Army Movie Posters Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dad S Army Movie Poster 5 Dad S Army Movie Posters Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/1d/11/8b1d114f9323516ce829973d3858c61a.jpg" data-lightbox="roadtrip" data-title="Major Movie Star Megan Valentine Jessica Simpson Army Uniform Jacket Pants And T Shirt Movie Stars Army Uniform Jessica Simpson">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/1d/11/8b1d114f9323516ce829973d3858c61a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXuy-vb0B1Wh-vm6ApP_Yjqy3_B9NNj7f78w';" alt="Major Movie Star Megan Valentine Jessica Simpson Army Uniform Jacket Pants And T Shirt Movie Stars Army Uniform Jessica Simpson">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Major Movie Star Megan Valentine Jessica Simpson Army Uniform Jacket Pants And T Shirt Movie Stars Army Uniform Jessica Simpson</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/f0/da/2df0da7bd821d2bd17c79e63b8896a00.jpg" data-lightbox="roadtrip" data-title="When Army Patrol Duty Turns Into A Horror Movie Freak Out Film Courage Horror Movies Horror Film">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/f0/da/2df0da7bd821d2bd17c79e63b8896a00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0jrt0cmydCXwOF59EIcNvNNrZL1eiNk52sA';" alt="When Army Patrol Duty Turns Into A Horror Movie Freak Out Film Courage Horror Movies Horror Film">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When Army Patrol Duty Turns Into A Horror Movie Freak Out Film Courage Horror Movies Horror Film</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a2/9f/31/a29f318b6233a01ce0058fb41f6e29db.jpg" data-lightbox="roadtrip" data-title="Watch Sher Dil Movie 2019 Now Pakistan Army Movie Force Movie Movies 2019 Old Facebook">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a2/9f/31/a29f318b6233a01ce0058fb41f6e29db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPhRzi_WAlW9OYksoehMDcPKFDVyqk1KoUTg';" alt="Watch Sher Dil Movie 2019 Now Pakistan Army Movie Force Movie Movies 2019 Old Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch Sher Dil Movie 2019 Now Pakistan Army Movie Force Movie Movies 2019 Old Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/00/7d/c8007d5fef871fe1921295c7df02bec5.jpg" data-lightbox="roadtrip" data-title="Shah Rukh Khan And Sridevi Army 1996 Hindi Movies Online Movies To Watch Hindi Hindi Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/00/7d/c8007d5fef871fe1921295c7df02bec5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sFCQ4gIollS8WSP4i_8DGAVtcdjI9nOfCQ';" alt="Shah Rukh Khan And Sridevi Army 1996 Hindi Movies Online Movies To Watch Hindi Hindi Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shah Rukh Khan And Sridevi Army 1996 Hindi Movies Online Movies To Watch Hindi Hindi Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/6a/06/1d6a0658beb697cb93188cd405cf85ca.jpg" data-lightbox="roadtrip" data-title="Dad S Army Movie Poster 2 Dad S Army Army Poster Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/6a/06/1d6a0658beb697cb93188cd405cf85ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfcJJzQfEYwe8VPHU34ELxMmiJzOI1v1wSkQ';" alt="Dad S Army Movie Poster 2 Dad S Army Army Poster Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dad S Army Movie Poster 2 Dad S Army Army Poster Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/48/25/364825056b19a2f32fbf14849b9929fd.jpg" data-lightbox="roadtrip" data-title="15 Greatest War Movies Dialogues Movie Dialogues War Movies Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/48/25/364825056b19a2f32fbf14849b9929fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGFbH44iSmc8cQfHccCxTJt62kYssB1kXntA';" alt="15 Greatest War Movies Dialogues Movie Dialogues War Movies Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Greatest War Movies Dialogues Movie Dialogues War Movies Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-army-rank-nsn.html">Us Army Rank Nsn</a></li>
+													<li class="list-group-item"><a href="/us-army-standard-issue-rifle-scope.html">Us Army Standard Issue Rifle Scope</a></li>
+													<li class="list-group-item"><a href="/us-army-star-logo-png.html">Us Army Star Logo Png</a></li>
+													<li class="list-group-item"><a href="/us-army-transport-helicopters.html">Us Army Transport Helicopters</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-and-years.html">Us Army Rank And Years</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-wiki.html">Us Army Rank Wiki</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-and-logo.html">Us Army Rank And Logo</a></li>
+													<li class="list-group-item"><a href="/us-army-standard-issue-rifle-2018.html">Us Army Standard Issue Rifle 2018</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-grade.html">Us Army Rank Grade</a></li>
+													<li class="list-group-item"><a href="/us-army-sniper-rifle-2020.html">Us Army Sniper Rifle 2020</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-insignia-ww1.html">Us Army Rank Insignia Ww1</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-nato.html">Us Army Rank Nato</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-nicknames.html">Us Army Rank Nicknames</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-progression.html">Us Army Rank Progression</a></li>
+													<li class="list-group-item"><a href="/us-army-song-caissons-go-rolling-along.html">Us Army Song Caissons Go Rolling Along</a></li>
+													<li class="list-group-item"><a href="/us-army-soldier-salary.html">Us Army Soldier Salary</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-in-order.html">Us Army Rank In Order</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-badge.html">Us Army Rank Badge</a></li>
+													<li class="list-group-item"><a href="/us-army-submachine-gun-trials.html">Us Army Submachine Gun Trials</a></li>
+													<li class="list-group-item"><a href="/us-army-super-gun.html">Us Army Super Gun</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

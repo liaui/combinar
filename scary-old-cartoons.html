@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Scary Old Cartoons - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Scary Old Cartoons",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/f0/0c/21/f00c210eed680ef4c4c88a1102df8fe4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=scary+old+cartoons",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Scary Old Cartoons</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">These cartoons are also termed as dark cartoons. One of the earliest though Popeyes 13th short fittingly enough was Shiver Me Timbers an exercise in old school Fleischer Brothers animation of the surrealist variety. Autodale is a happy magical place modeled after stereotypical 1950s suburban life and old cartoons. <br>				
+			</p>
+										<a class="badge badge-success" href="/warna-army-hijau.html">warna army hijau</a>
+											<a class="badge badge-primary" href="/warna-brown-army.html">warna brown army</a>
+											<a class="badge badge-secondary" href="/what-are-the-duties-of-an-infantryman.html">what are the duties of an infantryman</a>
+											<a class="badge badge-dark" href="/warna-kaos-army.html">warna kaos army</a>
+											<a class="badge badge-secondary" href="/warna-army-dan-hijau-botol.html">warna army dan hijau botol</a>
+											<a class="badge badge-secondary" href="/warna-jaket-army.html">warna jaket army</a>
+											<a class="badge badge-primary" href="/what-are-army-rangers-known-for.html">what are army rangers known for</a>
+											<a class="badge badge-warning" href="/warna-army-untuk-kulit-sawo-matang.html">warna army untuk kulit sawo matang</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to visit the right site.  Our site gives you suggestions for seeing the maximum quality video and picture content, search and locate more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video for you to view.  You can also bring about supporting this website by sharing videos and graphics that you enjoy on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/99/e5/9499e50bbf400aa17c61cc2c766aa2d7.gif" data-lightbox="roadtrip" data-title="Black And White 90s Vintage Cartoon Creepy Cartoon Art Cartoon Tattoos Vintage Cartoon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/99/e5/9499e50bbf400aa17c61cc2c766aa2d7.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGl5ydxJf5VsLDVO-J61OqKDjJNctgEaK-eg';" alt="Black And White 90s Vintage Cartoon Creepy Cartoon Art Cartoon Tattoos Vintage Cartoon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Black And White 90s Vintage Cartoon Creepy Cartoon Art Cartoon Tattoos Vintage Cartoon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/48/83/a84883b7e104361ff3d35738d096f8cb.jpg" data-lightbox="roadtrip" data-title="Pin On Old Cartoons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/48/83/a84883b7e104361ff3d35738d096f8cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH7a747I0lgFTc4s9nvQ2WlgJgtNOB7aO04w';" alt="Pin On Old Cartoons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Old Cartoons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/0c/21/f00c210eed680ef4c4c88a1102df8fe4.jpg" data-lightbox="roadtrip" data-title="The Skeleton Dance Disney 1929 Vintage Cartoon Retro Halloween Halloween Cartoons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/0c/21/f00c210eed680ef4c4c88a1102df8fe4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKHAitAC3l1Plt74NRTxTiPUqGS9YqSs1yXQ';" alt="The Skeleton Dance Disney 1929 Vintage Cartoon Retro Halloween Halloween Cartoons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Skeleton Dance Disney 1929 Vintage Cartoon Retro Halloween Halloween Cartoons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/1c/41/791c41c396423ea40dff6bbe2c0fa1bb.gif" data-lightbox="roadtrip" data-title="Pin By Chris Conlee On Vintage Disney Disneyland Creepy Disney Mickey Mouse Cartoon Scary Gif">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/1c/41/791c41c396423ea40dff6bbe2c0fa1bb.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO8JU7wNsej0q0aP5GGO5bWdvtdnuSy6fbBg';" alt="Pin By Chris Conlee On Vintage Disney Disneyland Creepy Disney Mickey Mouse Cartoon Scary Gif">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Chris Conlee On Vintage Disney Disneyland Creepy Disney Mickey Mouse Cartoon Scary Gif</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/f6/bc/89f6bc92daa1cd22f5f7caff502c615a.png" data-lightbox="roadtrip" data-title="Ghostemane Character Google Search Vintage Cartoon Scary Art Black And White Cartoon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/f6/bc/89f6bc92daa1cd22f5f7caff502c615a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTokvQeFST1eItZibxpY6LSVDhzxT70FIdnYg';" alt="Ghostemane Character Google Search Vintage Cartoon Scary Art Black And White Cartoon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ghostemane Character Google Search Vintage Cartoon Scary Art Black And White Cartoon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/6a/5c/696a5c3b2011fdd9febcaf0d4f8a5b3e.png" data-lightbox="roadtrip" data-title="Spooks Vintage Cartoon Old Cartoon Characters Cartoon Styles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/6a/5c/696a5c3b2011fdd9febcaf0d4f8a5b3e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6RZq0fs5DxOfkRpt1HhF2aVf72B-DHoqKzA';" alt="Spooks Vintage Cartoon Old Cartoon Characters Cartoon Styles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spooks Vintage Cartoon Old Cartoon Characters Cartoon Styles</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/3d/c2/4d/3dc24d13a6907532bb8a4f1013bd5b71.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6RZq0fs5DxOfkRpt1HhF2aVf72B-DHoqKzA';" alt="Spooks Vintage Cartoon Old Cartoon Characters Cartoon Styles">
+										<div class="card-body">
+						<h3 class="h5"><b>Aug 26 2019 - 15788 points 158 comments - Scary childhoods.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Scary old cartoons</strong>. 
+								
+																	The cartoon is notable for its surreal dark and sometimes even abst. 
+																	The British cranked out this hilarious classic horror-themed childrens cartoon that played on the classic vampire tropes while creating something entirely new. 
+																	During a reincarnation ritual a mistake is made which brings Count Duckula back into the world as a good-natured duck who prefers broccoli sandwiches over blood. 
+																	This 1931 Columbia Pictures cartoon created by Dick. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	4The Little Pest 1931 -- A Baby Gets Beaten and Drowned. 
+																	All the way back in 1988 Tim Burton made a horror comedy about newly dead people who needed to get a dopey family out of their house and called on a Bio-Exorcist to do it. 
+																	10 Most Disturbing Cartoons That You Should Not Never Let Your Kids See Parametric Expression 2013 Wakfu 2012 The Sad Tale of Bad Breath Joe 2010 Pikadon 2010 Alma 2009 Crooked Rot 2008. 
+																	Pluto is forced to watch as his shadows corpse hangs limply from the ends of a fork as if half of his soul is now dead. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The best scary movies. 
+																	Pale wizened and draped in a tattered cloak Mumm-Ra voiced by Earl Hammond lurks from within the Black Pyramid among the ruins of an ancient civilization. 
+																	Is a 1930 animated cartoon short directed by the Fleischer Brothers. 
+																	Thats pretty creepy for a Saturday morning cartoon villain but the thing about Mumm-Ra is. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The story follows Bimbo the dog a forgotten. 
+																	Old School Cartoons Old Cartoons Classic Cartoons Funny Cartoons. 
+																	In one of the more surreal sequences of horror in the history of cartoons the Mad Doctor hangs Pluto on a hook and cuts his shadow in half with a pair of scissors. 
+																	Saved by Susan Williamson. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	TV Autodale Horror The short film series Autodale was created by David Armsby and take place in the dystopian city of Autodale. 
+																	Creepy Old Cartoons That Will Give You Nightmares. 
+																	We cannot really blame the kids for watching such cartoons because kids are not aware of the negative impacts that a cartoon can have on their life which is why we should. 
+																	CHECK OUT OUR OTHER ORIGINAL CARTOONSThe Very Short career of Mr. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	World-famous animators pick the best animated movies ever including Disney and Pixar movies cult movies kids movies stop-motion anime and more. 
+																	If you thought the cartoons from the 90s and aughts were twisted and creepy just wait until you see the freaky weird cartoons that came out of the first half of the 1900s. 
+																	When Popeye Olive Oyl and Wimpy decide to investigate a creepy ghost ship the vessel springs to life and whisks them across dangerous seas. 
+																	Today on blameitonjorge we take a look at some old-school cartoons and animations that were too creepy for mainstream viewers. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gertie the Dinosaur 1914 Fantasmagorie 1908 Betty Boop in Snow White 1933 Steamboat Willie 1927 The Skeleton Dance 1929 Humorous Phases of Fu. 
+																	Only a year later. 
+																	- 9GAG has the best funny pics gifs videos gaming anime manga movie tv cosplay sport food. 
+																	From a weird massive pig to the most scary house ever there has been creepy footage since the very dawn of the development of video technologyMORE LISTS ht. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 100 best animated movies. 
+																	Updated December 12 2019 39k votes 11k voters 1135k views13 items. 
+																	Some cartoons are very scary from a kids point of view and they can generate a feeling of fear and false imagination. 
+																	Thats his casual everyday form. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	5 Old Childrens Cartoons Way Darker Than Most Horror Movies 5Bimbos Initiation 1931 -- Torture Sexual Insanity and Betty Boop. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/2b/90/7e2b90ce7eaf39b325adbc915d098302.jpg" data-lightbox="roadtrip" data-title="31 Days Of Halloween Vintage Halloween Cartoons Halloween Cartoons Vintage Halloween Vintage Cartoon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/2b/90/7e2b90ce7eaf39b325adbc915d098302.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcrwItb67NbIvox3kLnu-A5b8j6Ezj9Ufig';" alt="31 Days Of Halloween Vintage Halloween Cartoons Halloween Cartoons Vintage Halloween Vintage Cartoon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">31 Days Of Halloween Vintage Halloween Cartoons Halloween Cartoons Vintage Halloween Vintage Cartoon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/8f/d2/018fd24d0a91e500b37deb912c6121e2.jpg" data-lightbox="roadtrip" data-title="11 Disturbing Vintage Cartoons That Were Too Dark To Be Cuphead Bosses Think The Designs For Cupheads Bo Vintage Cartoon Old Cartoon Characters Creepy Vintage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/8f/d2/018fd24d0a91e500b37deb912c6121e2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCSwjPxrCKdLaGweR8gS1_Hu8IthK12PJn1Q';" alt="11 Disturbing Vintage Cartoons That Were Too Dark To Be Cuphead Bosses Think The Designs For Cupheads Bo Vintage Cartoon Old Cartoon Characters Creepy Vintage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 Disturbing Vintage Cartoons That Were Too Dark To Be Cuphead Bosses Think The Designs For Cupheads Bo Vintage Cartoon Old Cartoon Characters Creepy Vintage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/0e/f8/710ef838ced724c12b693146d47721f3.jpg" data-lightbox="roadtrip" data-title="Scary Monsters And Super Creeps From The Betty Boop Cartoons Old Cartoons Betty Boop Tattoos Ghost Tattoo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/0e/f8/710ef838ced724c12b693146d47721f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvn7LNoXroHdT5dzKfTZhbcEkV2dQy2KGLOg';" alt="Scary Monsters And Super Creeps From The Betty Boop Cartoons Old Cartoons Betty Boop Tattoos Ghost Tattoo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scary Monsters And Super Creeps From The Betty Boop Cartoons Old Cartoons Betty Boop Tattoos Ghost Tattoo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/2c/81/532c810d29a04b6f8fec8b6992db8f31.jpg" data-lightbox="roadtrip" data-title="Spooky4 Jpeg 400 304 Classic Cartoons Creepy Vintage Vintage Cartoon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/2c/81/532c810d29a04b6f8fec8b6992db8f31.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbAlfjveJsNBAfFtkk0qqlyFeAEQ-t9Jbvtw';" alt="Spooky4 Jpeg 400 304 Classic Cartoons Creepy Vintage Vintage Cartoon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Spooky4 Jpeg 400 304 Classic Cartoons Creepy Vintage Vintage Cartoon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/bd/85/1d/bd851dd096b16dd4ac6b64c0b1a6a915.jpg" data-lightbox="roadtrip" data-title="7 Eerily Disturbing Old Cartoons Animations Blameitonjorge Youtube Old Cartoons Cartoon Animation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/bd/85/1d/bd851dd096b16dd4ac6b64c0b1a6a915.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaejX81VdM_OsyUHsWngrliTbgmhati_Oceg';" alt="7 Eerily Disturbing Old Cartoons Animations Blameitonjorge Youtube Old Cartoons Cartoon Animation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7 Eerily Disturbing Old Cartoons Animations Blameitonjorge Youtube Old Cartoons Cartoon Animation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/99/80/679980f22136b85e22970cb1e8e0a02d.jpg" data-lightbox="roadtrip" data-title="Scary Monsters And Super Creeps From The Betty Boop Cartoons Betty Boop Cartoon Betty Boop Classic Cartoons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/99/80/679980f22136b85e22970cb1e8e0a02d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnMincP3otNxVH6mUnRIp8eGnq0RzuZbQfoA';" alt="Scary Monsters And Super Creeps From The Betty Boop Cartoons Betty Boop Cartoon Betty Boop Classic Cartoons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Scary Monsters And Super Creeps From The Betty Boop Cartoons Betty Boop Cartoon Betty Boop Classic Cartoons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/c2/4d/3dc24d13a6907532bb8a4f1013bd5b71.png" data-lightbox="roadtrip" data-title="The Scariest Thing Is That The Giant Red Monster From The Looney Tunes His Name Is Gossamer Vintage Cartoon Halloween Cartoons Mickey Mouse Cartoon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/c2/4d/3dc24d13a6907532bb8a4f1013bd5b71.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtYt_eISvhTvkeBwC8Ezy0wcNv_g6z7RhfKQ';" alt="The Scariest Thing Is That The Giant Red Monster From The Looney Tunes His Name Is Gossamer Vintage Cartoon Halloween Cartoons Mickey Mouse Cartoon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Scariest Thing Is That The Giant Red Monster From The Looney Tunes His Name Is Gossamer Vintage Cartoon Halloween Cartoons Mickey Mouse Cartoon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/dd/86/19dd8681a5a11a58584195b0a14796d0.gif" data-lightbox="roadtrip" data-title="Tim Burton S Creations Creepy Horror Creepy Vintage Old Cartoons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/dd/86/19dd8681a5a11a58584195b0a14796d0.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpj9HsFKRSZBGK5OSuEAIqmPThkjREa6NDw';" alt="Tim Burton S Creations Creepy Horror Creepy Vintage Old Cartoons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tim Burton S Creations Creepy Horror Creepy Vintage Old Cartoons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/2b/f4/dd2bf44db57001224b1ec5dabfac7e41.gif" data-lightbox="roadtrip" data-title="Grinning George Melies Vintage Cartoon Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/2b/f4/dd2bf44db57001224b1ec5dabfac7e41.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN9FqHi7PZvuBG2wrQwug2lw0Cv6DUskKKMQ';" alt="Grinning George Melies Vintage Cartoon Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Grinning George Melies Vintage Cartoon Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/95/ba/f795ba56d34e4bfbb2cbff1edb962ea1.gif" data-lightbox="roadtrip" data-title="From A Spook Show Trailer C 1950s Scary Gif Halloween Gif Horror Cartoon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/95/ba/f795ba56d34e4bfbb2cbff1edb962ea1.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-9mh5Tyjersw_IPs-S3k6GbtTJRi1yCidw';" alt="From A Spook Show Trailer C 1950s Scary Gif Halloween Gif Horror Cartoon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">From A Spook Show Trailer C 1950s Scary Gif Halloween Gif Horror Cartoon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/64/94/c4649443064537cf2b0a035aa2dc7c53.jpg" data-lightbox="roadtrip" data-title="13 Flip The Frog Ub Iwerks Spooks 1931 Vintage Cartoon 1930s Cartoons Creepy Vintage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/64/94/c4649443064537cf2b0a035aa2dc7c53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcPxkQqkiwLF9vg-FsUXxxAzfSNIhvjMdqUQ';" alt="13 Flip The Frog Ub Iwerks Spooks 1931 Vintage Cartoon 1930s Cartoons Creepy Vintage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">13 Flip The Frog Ub Iwerks Spooks 1931 Vintage Cartoon 1930s Cartoons Creepy Vintage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/88/52/9e8852aead78c14d02c7e4550ae58a70.jpg" data-lightbox="roadtrip" data-title="10 Classic Halloween Cartoons You Can Watch Right Now Halloween Cartoons Skeleton Dance Vintage Halloween">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/88/52/9e8852aead78c14d02c7e4550ae58a70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3hxIuQUXSw3URkv-sLWMO4rooY3Xs0LT-mg';" alt="10 Classic Halloween Cartoons You Can Watch Right Now Halloween Cartoons Skeleton Dance Vintage Halloween">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Classic Halloween Cartoons You Can Watch Right Now Halloween Cartoons Skeleton Dance Vintage Halloween</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/b2/90/d4b290e6970f8f7884eea2dbce8a285e.gif" data-lightbox="roadtrip" data-title="Log In Tumblr Cartoon Art Vintage Cartoon Black And White Cartoon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/b2/90/d4b290e6970f8f7884eea2dbce8a285e.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNssM0yXq3DMhoFloQov6ydvg5pHlRX1HdZA';" alt="Log In Tumblr Cartoon Art Vintage Cartoon Black And White Cartoon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Log In Tumblr Cartoon Art Vintage Cartoon Black And White Cartoon</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/misaeng-incomplete-life-sub-indo.html">Misaeng Incomplete Life Sub Indo</a></li>
+													<li class="list-group-item"><a href="/msarng.html">Msarng</a></li>
+													<li class="list-group-item"><a href="/military-rank-insignia-chart.html">Military Rank Insignia Chart</a></li>
+													<li class="list-group-item"><a href="/minister-national-guard-saudi-arabia.html">Minister National Guard Saudi Arabia</a></li>
+													<li class="list-group-item"><a href="/musang-bali-x-jawa.html">Musang Bali X Jawa</a></li>
+													<li class="list-group-item"><a href="/military-rank-insignia-clipart.html">Military Rank Insignia Clipart</a></li>
+													<li class="list-group-item"><a href="/mn-nmls.html">Mn Nmls</a></li>
+													<li class="list-group-item"><a href="/minnesota-national-guard-soldier.html">Minnesota National Guard Soldier</a></li>
+													<li class="list-group-item"><a href="/military-ranks-youtube.html">Military Ranks Youtube</a></li>
+													<li class="list-group-item"><a href="/missouri-army-national-guard.html">Missouri Army National Guard</a></li>
+													<li class="list-group-item"><a href="/mud-guard-x-ride.html">Mud Guard X Ride</a></li>
+													<li class="list-group-item"><a href="/mn-nm-mnm.html">Mn Nm Mnm</a></li>
+													<li class="list-group-item"><a href="/military-intelligence-in-army-national-guard.html">Military Intelligence In Army National Guard</a></li>
+													<li class="list-group-item"><a href="/military-leave-for-national-guard-training.html">Military Leave For National Guard Training</a></li>
+													<li class="list-group-item"><a href="/military-ranks-yugoslavia.html">Military Ranks Yugoslavia</a></li>
+													<li class="list-group-item"><a href="/mnangagwa-news.html">Mnangagwa News</a></li>
+													<li class="list-group-item"><a href="/military-reserve-drill-pay-chart-for-2020.html">Military Reserve Drill Pay Chart For 2020</a></li>
+													<li class="list-group-item"><a href="/military-rank-insignia-encyclopedia.html">Military Rank Insignia Encyclopedia</a></li>
+													<li class="list-group-item"><a href="/military-rank-badges-for-sale.html">Military Rank Badges For Sale</a></li>
+													<li class="list-group-item"><a href="/mn-nmr.html">Mn Nmr</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

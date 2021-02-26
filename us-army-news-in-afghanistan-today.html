@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army News In Afghanistan Today - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army News In Afghanistan Today",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/91/a4/15/91a4157802874e5f11001d3eefa6821d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+news+in+afghanistan+today",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army News In Afghanistan Today</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Closed five military bases in Afghanistan as part of an agreement signed with the Taliban more than four months ago a US. Militarys independent news source featuring exclusive reports from Afghanistan Europe and the Far East. United States down to 2500 troops in Afghanistan as ordered by Donald Trump 15 Jan 2021 0102 PM IST. <br>				
+			</p>
+										<a class="badge badge-primary" href="/army-song-remix.html">army song remix</a>
+											<a class="badge badge-info" href="/army-song-tune-download.html">army song tune download</a>
+											<a class="badge badge-warning" href="/army-songs-download-dj.html">army songs download dj</a>
+											<a class="badge badge-light" href="/army-songs-download-in-hindi.html">army songs download in hindi</a>
+											<a class="badge badge-light" href="/army-songs-in-hindi.html">army songs in hindi</a>
+											<a class="badge badge-success" href="/army-songs-hindi.html">army songs hindi</a>
+											<a class="badge badge-danger" href="/army-songs-pak.html">army songs pak</a>
+											<a class="badge badge-light" href="/army-songs-download-mp3-hindi.html">army songs download mp3 hindi</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to pay a visit to the right site.  Our website gives you hints for seeing the highest quality video and image content, search and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie for you to see.  It is also possible to bring about supporting this site by sharing videos and images that you enjoy on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/a4/15/91a4157802874e5f11001d3eefa6821d.jpg" data-lightbox="roadtrip" data-title="Onesixthscalepictures Very Hot Us Army Afghanistan Latest Product News For 1 6 Scale Figures 12 Inch Colle Military Action Figures Us Army Military Figures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/a4/15/91a4157802874e5f11001d3eefa6821d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO8Z4P8xXlSpDIcln8jF2_AfU10l8iqaHs5w';" alt="Onesixthscalepictures Very Hot Us Army Afghanistan Latest Product News For 1 6 Scale Figures 12 Inch Colle Military Action Figures Us Army Military Figures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Onesixthscalepictures Very Hot Us Army Afghanistan Latest Product News For 1 6 Scale Figures 12 Inch Colle Military Action Figures Us Army Military Figures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/15/a8/8815a8aa19b32a025318802bb929f1a6.jpg" data-lightbox="roadtrip" data-title="Us Marines In Afghanistan Photos Troops Continue Afghanistan Operations Military Heroes Afghanistan War Military Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/15/a8/8815a8aa19b32a025318802bb929f1a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrMUNMkZm2EO3i1DEmdkoVkdJ6CinwhpYyzQ';" alt="Us Marines In Afghanistan Photos Troops Continue Afghanistan Operations Military Heroes Afghanistan War Military Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Marines In Afghanistan Photos Troops Continue Afghanistan Operations Military Heroes Afghanistan War Military Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/35/59/17355930f6bb58787cfbe82398f690bc.jpg" data-lightbox="roadtrip" data-title="Onesixthscalepictures Very Hot Us Army Afghanistan Latest Product News For 1 6 Scale Figures 12 Inch Collectibl Military Action Figures Special Forces Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/35/59/17355930f6bb58787cfbe82398f690bc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeIYnbMN1puI09eLGeQ2YPZzdlhr-xRrnqVw';" alt="Onesixthscalepictures Very Hot Us Army Afghanistan Latest Product News For 1 6 Scale Figures 12 Inch Collectibl Military Action Figures Special Forces Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Onesixthscalepictures Very Hot Us Army Afghanistan Latest Product News For 1 6 Scale Figures 12 Inch Collectibl Military Action Figures Special Forces Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/78/01/ea7801813409734aaf5e1d3d191702c2.jpg" data-lightbox="roadtrip" data-title="New Us Trainers Arrives To Afghanistan Afghanistan War Marines In Combat War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/78/01/ea7801813409734aaf5e1d3d191702c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXN4e_25WGJ65_oGZEMisItS4a0P1XnHdO-A';" alt="New Us Trainers Arrives To Afghanistan Afghanistan War Marines In Combat War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Us Trainers Arrives To Afghanistan Afghanistan War Marines In Combat War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/86/55/00865514e21b6092e580d18dc8d35901.jpg" data-lightbox="roadtrip" data-title="Very Hot Us Army Afghanistan Latest Product News For 1 6 Scale Figures 12 Inch Collectibles Military Action Figures Military Figures Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/86/55/00865514e21b6092e580d18dc8d35901.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX2CTRvmyQ7zkP2tBF7Rc6vK1DPDQSeffscQ';" alt="Very Hot Us Army Afghanistan Latest Product News For 1 6 Scale Figures 12 Inch Collectibles Military Action Figures Military Figures Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Very Hot Us Army Afghanistan Latest Product News For 1 6 Scale Figures 12 Inch Collectibles Military Action Figures Military Figures Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/c4/56/c8c45618076f49c93f6634f4a6407c24.jpg" data-lightbox="roadtrip" data-title="Onesixthscalepictures Very Hot Us Army Afghanistan Latest Product News For 1 6 Scale Figures 12 Military Action Figures Military Figures Military Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/c4/56/c8c45618076f49c93f6634f4a6407c24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1LhQ_97jrXTCdUDXcMbEAGT7WajXWKj8w4A';" alt="Onesixthscalepictures Very Hot Us Army Afghanistan Latest Product News For 1 6 Scale Figures 12 Military Action Figures Military Figures Military Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Onesixthscalepictures Very Hot Us Army Afghanistan Latest Product News For 1 6 Scale Figures 12 Military Action Figures Military Figures Military Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c8/c4/56/c8c45618076f49c93f6634f4a6407c24.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1LhQ_97jrXTCdUDXcMbEAGT7WajXWKj8w4A';" alt="Onesixthscalepictures Very Hot Us Army Afghanistan Latest Product News For 1 6 Scale Figures 12 Military Action Figures Military Figures Military Soldiers">
+										<div class="card-body">
+						<h3 class="h5"><b>Russia working with Taliban to force US out of Afghanistan.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army news in afghanistan today</strong>. 
+								
+																	Get breaking news alerts when you download the ABC News App and subscribe to Afghanistan notifications. 
+																	See in mobile app. 
+																	US Army to fire and suspend officers and soldiers at Fort Hood base. 
+																	Afghanistan as a way to ensure that extremist groups like al-Qaida are unable to launch attacks on the United States faces a number of questions on Afghanistan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Stay on top of Afghanistan latest developments on the ground with Al Jazeeras fact-based news exclusive video footage photos and updated maps. 
+																	9 Killed Outlook India 1640 9-Feb-21 Church rights groups demand halt to deportations to Afghanistan InfoMigrants 1637 9-Feb-21. 
+																	Official confirmed to Fox News. 
+																	One is how and whether to proceed with further troop cuts. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Colonel Dave Butler the official spokesperson for American military forces in Afghanistan no Americans were killed. 
+																	WASHINGTON AP The United States is on track to meet its commitment to the Taliban to withdraw several thousand troops from Afghanistan by summer even as violence flares the peace process is. 
+																	Gunmen Open Fire At Government Officials. 
+																	News about the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WASHINGTON AP The US. 
+																	Military has met its goal of reducing the number of troops in Afghanistan to about 2500 by Friday a drawdown that may have violated a last-minute congressional. 
+																	Afghan intel agency says it killed council member in battle By RAHIM FAIEZ January 14 2021. 
+																	Latest US military DOD civilian deaths in Afghanistan Iraq November 23 2020 November 19 2020 Army to reconsider thousands of discharge cases of veterans of Iraq and Afghanistan wars era. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	US Army veteran who served two tours in Afghanistan deported to Mexico. 
+																	Follow the latest Afghanistan news stories and headlines. 
+																	The latest news and information from the US. 
+																	The latest breaking news. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army covering the Americas Middle East Europe Asia and Pacific and more. 
+																	US military truck filmed ramming Russian jeep off the road in Syria. 
+																	Daily news updates from the military community and abroad including military gear and equipment breaking news international news and more. 
+																	US goes year without combat death in Afghanistan for first time in two decades Fox News 1710 9-Feb-21 Afghanistan. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Nine people were injured in the attack in Nangarhar province on Saturday. 
+																	The Afghan National Security Forces said in a statement that the attackers have now been defeated and Afghan soldiers are clearing the camp to ensure there are no fighters left hiding in the sprawling base. 
+																	The latest breaking news. 
+																	Army Air Force Navy and Marine Corps. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Two US troops as well as an Afghan soldier have been killed in an attack in eastern Afghanistan. 
+																	US goes year without combat death in Afghanistan for first time in two decades Fox News 1710 9-Feb-21 Why the repeal of the trans military ban is facing mixed reactions from the queer community GCN 1705 9-Feb-21. 
+																	WASHINGTON Acting Pentagon chief Christopher Miller said Tuesday that the United States will reduce its military presence in Afghanistan to 2500 troops and 2500 troops in Iraq by Jan. 
+																	US President Donald Trumps denial of media reports that he was briefed by intelligence officials of an alleged conspiracy between Russia and the Taliban over the killing of US troops in. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The deal promised to withdraw. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/d6/93/f6d69377f81597b83f74c92c493d6064.jpg" data-lightbox="roadtrip" data-title="Crazy Dummy Us Army Saw Gunner In Afghanistan Latest Product News For 1 6 Scale Figures 12 Inch Collectibles From Side Military Action Figures Army Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/d6/93/f6d69377f81597b83f74c92c493d6064.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn4bFSsSmHMKIbFgeAzDHtA_mY-nj2TSqjiA';" alt="Crazy Dummy Us Army Saw Gunner In Afghanistan Latest Product News For 1 6 Scale Figures 12 Inch Collectibles From Side Military Action Figures Army Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Crazy Dummy Us Army Saw Gunner In Afghanistan Latest Product News For 1 6 Scale Figures 12 Inch Collectibles From Side Military Action Figures Army Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/10/58/a01058511cb5ba31252bd5730ede8ac7.jpg" data-lightbox="roadtrip" data-title="Onesixthscalepictures Soldier Story Us Army In Afghanistan Latest Product News For 1 6 Scale Figure Military Action Figures Military Figures Us Army Rangers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/10/58/a01058511cb5ba31252bd5730ede8ac7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR50zjcrY9hxxyVdK_kLV7A4_KAdZGxTb17Cg';" alt="Onesixthscalepictures Soldier Story Us Army In Afghanistan Latest Product News For 1 6 Scale Figure Military Action Figures Military Figures Us Army Rangers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Onesixthscalepictures Soldier Story Us Army In Afghanistan Latest Product News For 1 6 Scale Figure Military Action Figures Military Figures Us Army Rangers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e6/5d/08/e65d0899064beaf00330a386d58f396d.jpg" data-lightbox="roadtrip" data-title="Middle East Tensions Erupt As Two Us Military Killed In Afghanistan Nato Confirm At Least Two Us Service Members Have Be Afghanistan Troops American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e6/5d/08/e65d0899064beaf00330a386d58f396d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRybmQEFCRufCsxkt8zYaM5qZSTAjPs6wjlTg';" alt="Middle East Tensions Erupt As Two Us Military Killed In Afghanistan Nato Confirm At Least Two Us Service Members Have Be Afghanistan Troops American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Middle East Tensions Erupt As Two Us Military Killed In Afghanistan Nato Confirm At Least Two Us Service Members Have Be Afghanistan Troops American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/44/5b/f9445b4d89053cad14e1b9bc22f87fc4.jpg" data-lightbox="roadtrip" data-title="Onesixthscalepictures Soldier Story Us Army In Afghanistan China Model Military Figures Military Action Figures Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/44/5b/f9445b4d89053cad14e1b9bc22f87fc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIIJHbycNP_zydApQ4vkbmgpQ-8bU3ny9ong';" alt="Onesixthscalepictures Soldier Story Us Army In Afghanistan China Model Military Figures Military Action Figures Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Onesixthscalepictures Soldier Story Us Army In Afghanistan China Model Military Figures Military Action Figures Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/de/3c/cbde3cfdb0b43362c344cd97a7d2e142.jpg" data-lightbox="roadtrip" data-title="Toyhaven Incoming Soldier Story 1 6th Scale U S Army In Afghanistan 12 Inch Isaf Military Figure Military Figures Military Action Figures Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/de/3c/cbde3cfdb0b43362c344cd97a7d2e142.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0g5AOyMoB2gLxfbu6v0RqRmoODFuUwSZROQ';" alt="Toyhaven Incoming Soldier Story 1 6th Scale U S Army In Afghanistan 12 Inch Isaf Military Figure Military Figures Military Action Figures Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Toyhaven Incoming Soldier Story 1 6th Scale U S Army In Afghanistan 12 Inch Isaf Military Figure Military Figures Military Action Figures Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/54/a9/8654a9353ea6cf285ecd7c70cc977da1.jpg" data-lightbox="roadtrip" data-title="Us Army Soldiers Combat Footage In Afghanistan Firefights With Taliban Afghanistan War Us Army Soldier Afghanistan War Army Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/54/a9/8654a9353ea6cf285ecd7c70cc977da1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt3o_bBCeCWnf9TVG5nklG8n8UE2QMPGOycw';" alt="Us Army Soldiers Combat Footage In Afghanistan Firefights With Taliban Afghanistan War Us Army Soldier Afghanistan War Army Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Soldiers Combat Footage In Afghanistan Firefights With Taliban Afghanistan War Us Army Soldier Afghanistan War Army Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/81/b0/c0/81b0c0230dd45f57ec5737d71d5652ad.jpg" data-lightbox="roadtrip" data-title="Us Closes 5 Military Bases In Afghanistan As Part Of Taliban Peace Deal In 2020 Afghanistan War Afghanistan Refugee Crisis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/81/b0/c0/81b0c0230dd45f57ec5737d71d5652ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh3f8Y68rbCNDurxzahBda3SytNb6Hn8hc_Q';" alt="Us Closes 5 Military Bases In Afghanistan As Part Of Taliban Peace Deal In 2020 Afghanistan War Afghanistan Refugee Crisis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Closes 5 Military Bases In Afghanistan As Part Of Taliban Peace Deal In 2020 Afghanistan War Afghanistan Refugee Crisis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/92/e1/a592e1b68a21dc8492c723d7a028f581.jpg" data-lightbox="roadtrip" data-title="Afghanistan Insider Attack Leaves 2 Us Soldiers Dead 6 Wounded Afghanistan War Afghanistan Casualty">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/92/e1/a592e1b68a21dc8492c723d7a028f581.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMF8RYgKB1cTQeOFDYrHlgr2AZtlj2CoughA';" alt="Afghanistan Insider Attack Leaves 2 Us Soldiers Dead 6 Wounded Afghanistan War Afghanistan Casualty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afghanistan Insider Attack Leaves 2 Us Soldiers Dead 6 Wounded Afghanistan War Afghanistan Casualty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/23/1a/f0231a33bfd6889bfa961d8dcbbfc9c0.jpg" data-lightbox="roadtrip" data-title="U S Leaflet Calls Taliban Dogs Muslims Outraged Dr Rich Swier Afghan War Afghanistan War Afghanistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/23/1a/f0231a33bfd6889bfa961d8dcbbfc9c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr7Q6Z3WBZGlYroHAmd7X67w5tAgsC-98vNA';" alt="U S Leaflet Calls Taliban Dogs Muslims Outraged Dr Rich Swier Afghan War Afghanistan War Afghanistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Leaflet Calls Taliban Dogs Muslims Outraged Dr Rich Swier Afghan War Afghanistan War Afghanistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/c6/b6/3bc6b653c107bdf765f73f9a07abf756.jpg" data-lightbox="roadtrip" data-title="Us Army Afghanistan 1 6 Scale One Sixth Scale Military Action Figures Military Figures American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/c6/b6/3bc6b653c107bdf765f73f9a07abf756.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyo0uZyhjW4hkO4sb3ejwp-7sN8lF3oG094A';" alt="Us Army Afghanistan 1 6 Scale One Sixth Scale Military Action Figures Military Figures American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Afghanistan 1 6 Scale One Sixth Scale Military Action Figures Military Figures American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/86/7a/d5/867ad59fe619ae2e2ed10793373647bf.jpg" data-lightbox="roadtrip" data-title="Preview Crazy Dummy 1 6 Scale U S Army Isaf Soldier In Afghanistan 12 Inch Military Figure King Of Toys Game">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/86/7a/d5/867ad59fe619ae2e2ed10793373647bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRLDbSdwb-iO7TGSuIsdy03m_FO9Rzf3XyRg';" alt="Preview Crazy Dummy 1 6 Scale U S Army Isaf Soldier In Afghanistan 12 Inch Military Figure King Of Toys Game">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Preview Crazy Dummy 1 6 Scale U S Army Isaf Soldier In Afghanistan 12 Inch Military Figure King Of Toys Game</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/60/e0/1b60e0047bddb0d7e1b9ede18cc942ab.jpg" data-lightbox="roadtrip" data-title="News Two German Soldiers Killed And Eight Wounded By An Afghani Afghanistan War American War Afghanistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/60/e0/1b60e0047bddb0d7e1b9ede18cc942ab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9vq27y3U0p3vv9JAjNgFXZlTWhmE9lBStzQ';" alt="News Two German Soldiers Killed And Eight Wounded By An Afghani Afghanistan War American War Afghanistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">News Two German Soldiers Killed And Eight Wounded By An Afghani Afghanistan War American War Afghanistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/0e/85/b00e856fdbce5e5886419b00369c5503.jpg" data-lightbox="roadtrip" data-title="Pin On Tac Toys">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/0e/85/b00e856fdbce5e5886419b00369c5503.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6UPiV3bJ0QIp-XdqXvtHglt8rJ0aBLMRw4Q';" alt="Pin On Tac Toys">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Tac Toys</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/national-guard-do.html">National Guard Do</a></li>
+													<li class="list-group-item"><a href="/national-guard-fallout-4.html">National Guard Fallout 4</a></li>
+													<li class="list-group-item"><a href="/national-guard-in-tracy-ca.html">National Guard In Tracy Ca</a></li>
+													<li class="list-group-item"><a href="/national-guard-ga.html">National Guard Ga</a></li>
+													<li class="list-group-item"><a href="/national-guard-depot-location-fallout-3.html">National Guard Depot Location Fallout 3</a></li>
+													<li class="list-group-item"><a href="/national-guard-infantryman-salary.html">National Guard Infantryman Salary</a></li>
+													<li class="list-group-item"><a href="/national-guard-chain-of-command.html">National Guard Chain Of Command</a></li>
+													<li class="list-group-item"><a href="/national-guard-information.html">National Guard Information</a></li>
+													<li class="list-group-item"><a href="/national-guard-deploy-in-ny.html">National Guard Deploy In Ny</a></li>
+													<li class="list-group-item"><a href="/national-guard-full-time-pay.html">National Guard Full Time Pay</a></li>
+													<li class="list-group-item"><a href="/national-guard-in-indianapolis.html">National Guard In Indianapolis</a></li>
+													<li class="list-group-item"><a href="/national-guard-green-berets.html">National Guard Green Berets</a></li>
+													<li class="list-group-item"><a href="/national-guard-jag-benefits.html">National Guard Jag Benefits</a></li>
+													<li class="list-group-item"><a href="/national-guard-distress-signal-fallout-4.html">National Guard Distress Signal Fallout 4</a></li>
+													<li class="list-group-item"><a href="/national-guard-in-west-virginia.html">National Guard In West Virginia</a></li>
+													<li class="list-group-item"><a href="/national-guard-in-san-diego.html">National Guard In San Diego</a></li>
+													<li class="list-group-item"><a href="/national-guard-insignia.html">National Guard Insignia</a></li>
+													<li class="list-group-item"><a href="/national-guard-deployed-to-airports.html">National Guard Deployed To Airports</a></li>
+													<li class="list-group-item"><a href="/national-guard-deployed-to-pasadena-gardena-la-nursing-homes.html">National Guard Deployed To Pasadena Gardena La Nursing Homes</a></li>
+													<li class="list-group-item"><a href="/national-guard-jag-requirements.html">National Guard Jag Requirements</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

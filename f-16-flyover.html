@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>F 16 Flyover - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "F 16 Flyover",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/7b/03/a1/7b03a1988b2c50bffde1244f7e784d75.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=f+16+flyover",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>F 16 Flyover</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Sections of this page. 187th Fighter Wing holds Mobile. Used GoPro Hero7 Black. <br>				
+			</p>
+										<a class="badge badge-danger" href="/yaar-army-song-mp3-download.html">yaar army song mp3 download</a>
+											<a class="badge badge-light" href="/xtc-us-xpress-inc.html">xtc us xpress inc</a>
+											<a class="badge badge-primary" href="/xtc.html">xtc</a>
+											<a class="badge badge-warning" href="/yongbi-appearance-in-gosu.html">yongbi appearance in gosu</a>
+											<a class="badge badge-danger" href="/zim-army-songs.html">zim army songs</a>
+											<a class="badge badge-secondary" href="/xtc-pusat.html">xtc pusat</a>
+											<a class="badge badge-light" href="/xtc-vector.html">xtc vector</a>
+											<a class="badge badge-dark" href="/xtc-vs-m2r.html">xtc vs m2r</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to visit the right site.  Our site provides you with suggestions for seeing the maximum quality video and picture content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, especially Youtube, therefore we recommend this video that you see.  You can also contribute to supporting this website by sharing videos and images that you enjoy on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/79/74/497974f446b8fa17868b5fc3fd5b9242.jpg" data-lightbox="roadtrip" data-title="Formation Of 4 F 16 S Flyover Before Landing At Leeuwarden Air Force Base During The Massive Nato Air Live Exercise Frisian Red Flag Air Force Bases Leeuwarden">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/79/74/497974f446b8fa17868b5fc3fd5b9242.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJPk1x-MsvZrtrVi1WeG_XjdB7vsqkLqWYKA';" alt="Formation Of 4 F 16 S Flyover Before Landing At Leeuwarden Air Force Base During The Massive Nato Air Live Exercise Frisian Red Flag Air Force Bases Leeuwarden">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Formation Of 4 F 16 S Flyover Before Landing At Leeuwarden Air Force Base During The Massive Nato Air Live Exercise Frisian Red Flag Air Force Bases Leeuwarden</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/ac/d5/2facd56f7d4dc2123c18d7ae323ab83b.jpg" data-lightbox="roadtrip" data-title="Pin By Lukas Pixa On Aircraft Air Force Air Force Bomber Fighter Jets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/ac/d5/2facd56f7d4dc2123c18d7ae323ab83b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNeONGMtV64Ava8sBOF2O_4JIOeoYh20837g';" alt="Pin By Lukas Pixa On Aircraft Air Force Air Force Bomber Fighter Jets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Lukas Pixa On Aircraft Air Force Air Force Bomber Fighter Jets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/89/0b/3f890b466107a647f102efea9f21ef8a.jpg" data-lightbox="roadtrip" data-title="A Formation Of Seven F 16 Fighting Falcons Performs A Flyover April 30 2012 At Luke Air Force Base These Airc Luke Air Force Base F 16 Fighting Falcon Fighter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/89/0b/3f890b466107a647f102efea9f21ef8a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj1Qty63mHWZYG6oUZt-f_1Zbql82JLvNnUg';" alt="A Formation Of Seven F 16 Fighting Falcons Performs A Flyover April 30 2012 At Luke Air Force Base These Airc Luke Air Force Base F 16 Fighting Falcon Fighter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Formation Of Seven F 16 Fighting Falcons Performs A Flyover April 30 2012 At Luke Air Force Base These Airc Luke Air Force Base F 16 Fighting Falcon Fighter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/95/b8/ac95b8ca15c509a6046ad094b3657015.jpg" data-lightbox="roadtrip" data-title="Search Results For Five Military Jets Fly Over Lady Liberty Fighter Jets Military Jets Military Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/95/b8/ac95b8ca15c509a6046ad094b3657015.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnuE_FyHmdWvcp8iUFWGL1QkylulRm4tTqzw';" alt="Search Results For Five Military Jets Fly Over Lady Liberty Fighter Jets Military Jets Military Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Search Results For Five Military Jets Fly Over Lady Liberty Fighter Jets Military Jets Military Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e0/d6/e4/e0d6e469ebde34deb69ea4b578487fa8.jpg" data-lightbox="roadtrip" data-title="Air Force Thunderbirds Flyover By Morgan Wright Usaf Thunderbirds Air Force Thunderbird">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e0/d6/e4/e0d6e469ebde34deb69ea4b578487fa8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSg0fGXVATFjcVE8QSBVvCKIVBUHw6J8Xmrg';" alt="Air Force Thunderbirds Flyover By Morgan Wright Usaf Thunderbirds Air Force Thunderbird">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Thunderbirds Flyover By Morgan Wright Usaf Thunderbirds Air Force Thunderbird</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/81/3b/01/813b0143921135824aaf767ca7ea8622.jpg" data-lightbox="roadtrip" data-title="Massive 17 Ship Fighter Formation Luke Afb F 16 F 35 Kc 135 Flyover Us Navy Blue Angels Fighter Air Fair">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/81/3b/01/813b0143921135824aaf767ca7ea8622.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8_b4plqZ2r56xwMI5PnRCXCbyas2Fktx7YA';" alt="Massive 17 Ship Fighter Formation Luke Afb F 16 F 35 Kc 135 Flyover Us Navy Blue Angels Fighter Air Fair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Massive 17 Ship Fighter Formation Luke Afb F 16 F 35 Kc 135 Flyover Us Navy Blue Angels Fighter Air Fair</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e3/54/4e/e3544e8484f9fbd9be443d23179c499c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8_b4plqZ2r56xwMI5PnRCXCbyas2Fktx7YA';" alt="Massive 17 Ship Fighter Formation Luke Afb F 16 F 35 Kc 135 Flyover Us Navy Blue Angels Fighter Air Fair">
+										<div class="card-body">
+						<h3 class="h5"><b>Jeff Wiswell of Mayo in La Crosse talks with us about strokes.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>F 16 flyover</strong>. 
+								
+																	National anthem fighter jets air show us national anthem anthem. 
+																	This flight will include healthcare facilities in. 
+																	The Texas Air National Guards F-16 until performed a flyover above Laredo Medical Center on Monday afternoon. 
+																	187th Fighter Wing holds Mobile flyover for health care workers first responders. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Four F-16 Fighting Falcons part of the 115th Fighter Wing will be featured in the flyovers with locations including Wausau Marshfield Waupaca and Appleton. 
+																	F-16 Fighting Falcons make a STUNNING STADIUM FLYOVER. 
+																	Wisconsin Air National Guard pilots will perform the flyovers. 
+																	This was a flyover over Boulder Colorado and the reason why the planes were so loud was because of the afterburners. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	F-16 flyover route Four F-16s from the 482nd Fighter Wing at Homestead Air Reserve Base will honor frontline COVID-19 responders and essential workers with a formation flight over many South Florida hospitals May 23. 
+																	The flyover was a support to healthcare workers during the. 
+																	Contains high quality discussions and has a gentle but strict moderation. 
+																	Four F-16 fighter jets from the 115th Fighter Wing Wisconsin Air National Guard flew over hospitals and medical centers across Wisconsin as a tribute to C. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	187th Fighter Wing holds Mobile flyover for health care workers first responders. 
+																	The group flew north to south over the Laredo hospital between Bustamante Street and. 
+																	Full Size 147 MB. 
+																	Designed as an air superiority day fighter it evolved into a successful all-weather multirole aircraft. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	F-16 flyover in a salute to veterans at my first Packers game on November 6 2016. 
+																	The Iraqi Air Forces F-16 Fleet Is On The Brink Of Collapse Despite Showy Flybys A high-profile 23 F-16 flyover may only have served to paper over the cracks in what is an increasingly precarious. 
+																	The Colorado Air National Guards 140th Wing will conduct a second F-16 Fighting Falcon flyover on Friday May 15 from 11 am. 
+																	Unfortunately the Pack lost to the Colts 26-3The national anthem was play. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Saint Francis South Hospital. 
+																	Published on Apr 27 2020 Quick video of the F-16 flyover by the South Carolina Air National Guard on April 27 2020 right at 1100 am. 
+																	Veterans Day Honored in Loveland Colorado With Bell-Ringing Ceremony F-16 Flyover 11 November 2020 1151 am Veterans groups in Loveland Colorado paid tribute to former and current members of. 
+																	Military aviation forum mainly focusing on the F-16 F-35 and F-22 jet fighters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Air Force graphic by Tech. 
+																	Captain Leslie Westmont with the 115th Fighter Wing talks about the four F-16s flying over La Crosse as part of training and a tribute to health careessential workers. 
+																	Press alt to open this menu. 
+																	Lionel Castellano Download Image. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Also May is National Stroke Month and Dr. 
+																	125th Fighter Squadron F-16 Flyover. 
+																	The General Dynamics F-16 Fighting Falcon is a single-engine supersonic multirole fighter aircraft originally developed by General Dynamics for the United States Air Force USAF. 
+																	The 115th Fighter Wing will perform a flyover with four F-16 Fighting Falcons over the skies of Wisconsin on Tuesday May 12. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tulsa 4-30-20 - YouTube Filmed on 4-30-2020 1501 Hours. 
+																	Most shocking fighter jets low flyoverflyby moments Compilation. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/2f/84/762f84b1b4661f994c8f90834d5646eb.jpg" data-lightbox="roadtrip" data-title="Pin On Stealth Bomber">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/2f/84/762f84b1b4661f994c8f90834d5646eb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEQ7rKlwBIghg75XCqyVx54B4O0fSRJ4r-UQ';" alt="Pin On Stealth Bomber">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Stealth Bomber</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/fb/67/b5fb67999f978ebc92d6dfdeaa56346d.jpg" data-lightbox="roadtrip" data-title="New Link Fighter Fighter Jets Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/fb/67/b5fb67999f978ebc92d6dfdeaa56346d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq5ENxmyALG7hQNCmWURIBr6LnNY5Dxxj9sA';" alt="New Link Fighter Fighter Jets Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Link Fighter Fighter Jets Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/7c/b8/867cb8ca726f7972381555fe73aaa228.jpg" data-lightbox="roadtrip" data-title="Helicopter Trails Huge American Flag During 16 Plane Air Show Flyover Awesome Us Navy Aircraft Navy Aircraft Air Show">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/7c/b8/867cb8ca726f7972381555fe73aaa228.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC5HaA4Dse4lxy59xcNgwKJ5bw0KoCWpA4NQ';" alt="Helicopter Trails Huge American Flag During 16 Plane Air Show Flyover Awesome Us Navy Aircraft Navy Aircraft Air Show">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helicopter Trails Huge American Flag During 16 Plane Air Show Flyover Awesome Us Navy Aircraft Navy Aircraft Air Show</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/54/4e/e3544e8484f9fbd9be443d23179c499c.jpg" data-lightbox="roadtrip" data-title="A Four Ship Formation Performs A Flyover During The Air Force Memorial S 10th Anniversary Ceremony In Arlington Va Air Force Memorial Air Force Air">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/54/4e/e3544e8484f9fbd9be443d23179c499c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvN_zKd3ENTuMrhLfL3GNt0mxLenh4STDqbA';" alt="A Four Ship Formation Performs A Flyover During The Air Force Memorial S 10th Anniversary Ceremony In Arlington Va Air Force Memorial Air Force Air">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Four Ship Formation Performs A Flyover During The Air Force Memorial S 10th Anniversary Ceremony In Arlington Va Air Force Memorial Air Force Air</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/62/f0/f562f01749d3f204e2e500fc6b429fc4.jpg" data-lightbox="roadtrip" data-title="Pakistan F 16 Fighter Jet Crashes In Capital Fighter Jets Fighter Aircraft Carrier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/62/f0/f562f01749d3f204e2e500fc6b429fc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF1ZfOtHkG2OGSRNbVTmRzQDdeRpin7D1bQQ';" alt="Pakistan F 16 Fighter Jet Crashes In Capital Fighter Jets Fighter Aircraft Carrier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistan F 16 Fighter Jet Crashes In Capital Fighter Jets Fighter Aircraft Carrier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/06/04/ff0604c46b1827b6f8204bee0042008e.jpg" data-lightbox="roadtrip" data-title="Pin By Magic Tiger On Aircraft Jet Fly Fighter Jets Military Jets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/06/04/ff0604c46b1827b6f8204bee0042008e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLzY7mOwaZmbej-sIGzlGpw_3f2wGDCI7Jw';" alt="Pin By Magic Tiger On Aircraft Jet Fly Fighter Jets Military Jets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Magic Tiger On Aircraft Jet Fly Fighter Jets Military Jets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/11/4a/96114a49872f4d2351fba0bfef483615.jpg" data-lightbox="roadtrip" data-title="Pin On Beautifulplanes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/11/4a/96114a49872f4d2351fba0bfef483615.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oexgzkndwJ8M_kYGu8T7gAQZlQjdeQAMAw';" alt="Pin On Beautifulplanes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Beautifulplanes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/91/66/b5/9166b5aaab4f5c1fd9ae7dbf956e7078.jpg" data-lightbox="roadtrip" data-title="F 16 Cockpit Video Of Super Bowl Lii Flyover 2018 Youtube Cockpit Super Bowl Model Railroad">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/91/66/b5/9166b5aaab4f5c1fd9ae7dbf956e7078.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdP3Z-8rg9x1OXmRPSIfmK8wnnJd6BGT1MIQ';" alt="F 16 Cockpit Video Of Super Bowl Lii Flyover 2018 Youtube Cockpit Super Bowl Model Railroad">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">F 16 Cockpit Video Of Super Bowl Lii Flyover 2018 Youtube Cockpit Super Bowl Model Railroad</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/76/d9/e376d96a25a5b310f75e1a01bfd95a3e.jpg" data-lightbox="roadtrip" data-title="A Couple Of F 16 Fighter Jets On Their Way To A Flyover At The Eagles Vs Cowboy S Game On 12 22 19 Delaware River Eagles Vs Critter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/76/d9/e376d96a25a5b310f75e1a01bfd95a3e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrGsUxpPS4IbMkh7-hXfiv9e7-Lq4HYfwy7g';" alt="A Couple Of F 16 Fighter Jets On Their Way To A Flyover At The Eagles Vs Cowboy S Game On 12 22 19 Delaware River Eagles Vs Critter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Couple Of F 16 Fighter Jets On Their Way To A Flyover At The Eagles Vs Cowboy S Game On 12 22 19 Delaware River Eagles Vs Critter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b2/b5/b5/b2b5b5b793580f8d1b30be1963bd5855.jpg" data-lightbox="roadtrip" data-title="Amazing F 16 Fighter Jet Super Bowl Lii Flyover 2018 Cockpit View Youtube">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b2/b5/b5/b2b5b5b793580f8d1b30be1963bd5855.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo-w6pFLnmba5wh0Hqgh9tb_Ta3rBb4l0fhA';" alt="Amazing F 16 Fighter Jet Super Bowl Lii Flyover 2018 Cockpit View Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Amazing F 16 Fighter Jet Super Bowl Lii Flyover 2018 Cockpit View Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/06/ab/6a06ab63bab08750072bb067517d31a4.jpg" data-lightbox="roadtrip" data-title="Plane Leaving The Formation This Is The Missing Man They Flew The Missing Man For My Father At His Funeral Missing Man Formation Cool Stuff A Good Man">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/06/ab/6a06ab63bab08750072bb067517d31a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVcbcK8hTwMvNvN4ezCiKhNfLTo2AxQukBFw';" alt="Plane Leaving The Formation This Is The Missing Man They Flew The Missing Man For My Father At His Funeral Missing Man Formation Cool Stuff A Good Man">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Plane Leaving The Formation This Is The Missing Man They Flew The Missing Man For My Father At His Funeral Missing Man Formation Cool Stuff A Good Man</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/d3/69/36d3699577e817f8f1ddfdfbac879898.jpg" data-lightbox="roadtrip" data-title="Pin On Us Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/d3/69/36d3699577e817f8f1ddfdfbac879898.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwfUoziZkJmFWhS19hFd2EdghawHCK2LGFTw';" alt="Pin On Us Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Us Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/03/a1/7b03a1988b2c50bffde1244f7e784d75.jpg" data-lightbox="roadtrip" data-title="Four Air Force Fighter Jets Practice For The Inauguration Flyover At Joint Base Langley Eustis Va Jan 19 2017 The Formation Is Comprised Of Two Fourth Ge">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/03/a1/7b03a1988b2c50bffde1244f7e784d75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0DTvzxv2YhrIvrh8stV4M7q7gyiZJICOGcg';" alt="Four Air Force Fighter Jets Practice For The Inauguration Flyover At Joint Base Langley Eustis Va Jan 19 2017 The Formation Is Comprised Of Two Fourth Ge">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Four Air Force Fighter Jets Practice For The Inauguration Flyover At Joint Base Langley Eustis Va Jan 19 2017 The Formation Is Comprised Of Two Fourth Ge</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-bomb-art.html">Army Bomb Art</a></li>
+													<li class="list-group-item"><a href="/army-cadence-song-hard-work.html">Army Cadence Song Hard Work</a></li>
+													<li class="list-group-item"><a href="/army-army-officer.html">Army Army Officer</a></li>
+													<li class="list-group-item"><a href="/army-art-photo.html">Army Art Photo</a></li>
+													<li class="list-group-item"><a href="/army-army-rally.html">Army Army Rally</a></li>
+													<li class="list-group-item"><a href="/army-arty.html">Army Arty</a></li>
+													<li class="list-group-item"><a href="/army-artis-indonesia.html">Army Artis Indonesia</a></li>
+													<li class="list-group-item"><a href="/army-artinya-apa-ya.html">Army Artinya Apa Ya</a></li>
+													<li class="list-group-item"><a href="/army-army-uk.html">Army Army Uk</a></li>
+													<li class="list-group-item"><a href="/army-art-show.html">Army Art Show</a></li>
+													<li class="list-group-item"><a href="/army-army-knowledge-online.html">Army Army Knowledge Online</a></li>
+													<li class="list-group-item"><a href="/army-art-acronym.html">Army Art Acronym</a></li>
+													<li class="list-group-item"><a href="/army-artwork.html">Army Artwork</a></li>
+													<li class="list-group-item"><a href="/army-board-questions-army-command-policy.html">Army Board Questions Army Command Policy</a></li>
+													<li class="list-group-item"><a href="/army-artinya-dalam-bahasa-indonesia.html">Army Artinya Dalam Bahasa Indonesia</a></li>
+													<li class="list-group-item"><a href="/army-army-military-police.html">Army Army Military Police</a></li>
+													<li class="list-group-item"><a href="/army-base-west-orange-nj.html">Army Base West Orange Nj</a></li>
+													<li class="list-group-item"><a href="/army-army-police.html">Army Army Police</a></li>
+													<li class="list-group-item"><a href="/army-army-movie.html">Army Army Movie</a></li>
+													<li class="list-group-item"><a href="/army-army-ringtone.html">Army Army Ringtone</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

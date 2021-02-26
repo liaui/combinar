@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Jangan Ada Dusta Diantara Kita - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Jangan Ada Dusta Diantara Kita",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/8a/bf/ad/8abfadfe0828251c2cc558c9ad418363.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=jangan+ada+dusta+diantara+kita",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Jangan Ada Dusta Diantara Kita</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Lagu Pop Denada Feat. Jangan Ada Dusta Diantara Kita Kau Bukan Kasihku Lagi Yang Lalu Biarlah Berlalu. Listen to Jangan Ada Dusta Diantara Kita by Various Artists on Deezer. <br>				
+			</p>
+										<a class="badge badge-dark" href="/saudi-arabia-army-rank-in-world.html">saudi arabia army rank in world</a>
+											<a class="badge badge-warning" href="/scaring-a-cat.html">scaring a cat</a>
+											<a class="badge badge-secondary" href="/scar-kuning.html">scar kuning</a>
+											<a class="badge badge-dark" href="/scary-teacher-3d-mod-apk-unlock-all-chapter.html">scary teacher 3d mod apk unlock all chapter</a>
+											<a class="badge badge-info" href="/scaling-gigi-bpjs.html">scaling gigi bpjs</a>
+											<a class="badge badge-primary" href="/scar-l-asli.html">scar l asli</a>
+											<a class="badge badge-warning" href="/seat-cng-app.html">seat cng app</a>
+											<a class="badge badge-light" href="/scary-teacher-halloween.html">scary teacher halloween</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the keyword you've come to visit the ideal blog.  Our website provides you with hints for viewing the highest quality video and picture content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this video for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/bf/ad/8abfadfe0828251c2cc558c9ad418363.jpg" data-lightbox="roadtrip" data-title="Jangan Ada Dusta Diatara Kita">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/bf/ad/8abfadfe0828251c2cc558c9ad418363.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKmMB84qFZiYfj_z9OPz-wwqu7tI643Uqa5Q';" alt="Jangan Ada Dusta Diatara Kita">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jangan Ada Dusta Diatara Kita</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/44/02/1c4402f4ebf44a9f815c6530052170f9.png" data-lightbox="roadtrip" data-title="Jangan Ada Dusta Diantara Kita Motivasi Bijak Gambar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/44/02/1c4402f4ebf44a9f815c6530052170f9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqt4ZIHqROTg-J9Bl1pynxuhbUcuTkixCtsg';" alt="Jangan Ada Dusta Diantara Kita Motivasi Bijak Gambar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jangan Ada Dusta Diantara Kita Motivasi Bijak Gambar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/aa/a5/be/aaa5be516c34565a790bda52bbd240af.png" data-lightbox="roadtrip" data-title="Chord Kunci Gitar Jangan Ada Dusta Di Antara Kita Angkasa Db Chord Adalah Blog Informasi Seputar Lirik Dan Kunci Gitar Terlengkap 1 Gitar Kunci Gitar Lirik">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/aa/a5/be/aaa5be516c34565a790bda52bbd240af.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsjYAaU16JWdNocqGBx5shUjP-0_zRycOtvQ';" alt="Chord Kunci Gitar Jangan Ada Dusta Di Antara Kita Angkasa Db Chord Adalah Blog Informasi Seputar Lirik Dan Kunci Gitar Terlengkap 1 Gitar Kunci Gitar Lirik">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chord Kunci Gitar Jangan Ada Dusta Di Antara Kita Angkasa Db Chord Adalah Blog Informasi Seputar Lirik Dan Kunci Gitar Terlengkap 1 Gitar Kunci Gitar Lirik</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/70/c3/f4/70c3f4bfba98afe618849affe056ab62.jpg" data-lightbox="roadtrip" data-title="Broery Marantika Dewi Yull Jangan Ada Dusta Di Antara Kita Official Music Video Youtube Dewi Video Youtube">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/70/c3/f4/70c3f4bfba98afe618849affe056ab62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSypiKYXkT5bjkM9yBWozXJhC8kzQ2lSpm9eQ';" alt="Broery Marantika Dewi Yull Jangan Ada Dusta Di Antara Kita Official Music Video Youtube Dewi Video Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Broery Marantika Dewi Yull Jangan Ada Dusta Di Antara Kita Official Music Video Youtube Dewi Video Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/40/6a/7b/406a7b33048cee5755b72333c3e1741b.jpg" data-lightbox="roadtrip" data-title="Dj Jangan Ada Dusta Diantara Kita Broery Marantika Remix Terbaru Imam Rmx Full Bass Youtube Dj Imam Musik Baru">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/40/6a/7b/406a7b33048cee5755b72333c3e1741b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIPysM3JtQ_CiG0rgx5Sw-zzTC47l0u0msNg';" alt="Dj Jangan Ada Dusta Diantara Kita Broery Marantika Remix Terbaru Imam Rmx Full Bass Youtube Dj Imam Musik Baru">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dj Jangan Ada Dusta Diantara Kita Broery Marantika Remix Terbaru Imam Rmx Full Bass Youtube Dj Imam Musik Baru</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/e0/5e/7ee05e57749622c9b66b336caa074e25.jpg" data-lightbox="roadtrip" data-title="Hindari Dan Jauhkan Dusta Islamic Quotes Learn Islam Self Reminder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/e0/5e/7ee05e57749622c9b66b336caa074e25.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKJRfUcntapWbP_4xuU17-ghlbjZimrI9B2g';" alt="Hindari Dan Jauhkan Dusta Islamic Quotes Learn Islam Self Reminder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hindari Dan Jauhkan Dusta Islamic Quotes Learn Islam Self Reminder</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/aa/a5/be/aaa5be516c34565a790bda52bbd240af.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKJRfUcntapWbP_4xuU17-ghlbjZimrI9B2g';" alt="Hindari Dan Jauhkan Dusta Islamic Quotes Learn Islam Self Reminder">
+										<div class="card-body">
+						<h3 class="h5"><b>Wabah ini adalah soal kemanusiaan bukan urusan politik lagi.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Jangan ada dusta diantara kita</strong>. 
+								
+																	May 31 2018 at 338 AM. 
+																	Mari syukuri tahun yang telah berlaludan jangan lupa terus perbaiki kesalahan yang telah kita lakukan Jadikan hati kita bahagia dan senantiasa bersyukur. 
+																	February 11 2020 at 709 PM. 
+																	Dan katakan padaku jangan ada dusta di antara kita Memang kau bukan yang pertama bagiku pernah satu hati mengisi hidupku dulu dan kini semua kau katakan padaku huuu jangan ada dusta di antara kita kasih Semua terserah padamu aku begini adanya ku hormati keputusanmu apapun yang akan kau katakan kau katakan sebelum terlanjur sebelum terlanjur kita jauh melangkah kau katakan saja huuu uuuu. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jangan Ada Dusta Diantara. 
+																	D A Bm Fm G A D AC Bm A Ketika pertama ku jumpa denganmu G DF Em A Bukankah pernah ku tanyakan padamu kasih D AC Bm A Takkan kecewakah kau pada diriku G DF Em A Bm G Takkan menyesalkah kau hidup denganku nanti Bm G A hoo kasih D AC Bm A Memang kau bukan yang pertama bagiku G DF Em A Pernah satu hati mengisi hidupku dulu D AC Bm A Dan kini semua kau katakan padaku G DF. 
+																	Chanel ini adalah tempat video karaoke untuk anda. 
+																	Saya menemukan rekaman keren dari JANGAN ADA DUSTA KITA di Smule. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Broery Marantika Dewi Yull - Jangan Ada Dusta Di Antara KitaMUAT TURUN NADA DERINGMaxis CallerRingtones -- Dial 13182567 tekan CallHantarDiGi CallerTun. 
+																	Ihsan Tarore - Jangan Ada Dusta Diantara Kita Official Music VideoPara fansnya Denada dan Ihsan Idol yuk cek lagu duet mereka nih be. 
+																	HttpslnktoAdD7yFOSBuat kalian yang suka lagu Mel. 
+																	Kunci Gitar Jangan Ada Dusta di Antara Kita - Broery Marantika ft Dewi Yull. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	JANGAN ADA DUSTA DIANTARA KITA Brory M - TIYA SYAHRIL Cover Pop Indonesia Menampilkan Cover Pop Indonesia Judul. 
+																	See more of JANGAN ADA DUSTA DIANTARA KITA on Facebook. 
+																	JANGAN ADA DUSTA DIANTARA KITA BROERY MARANTIKA FELIX IRWAN TAMI AULIA COVER cover by Tami Aulia Live AcousticHaaaiii semuanya terimakasih buat temen2 y. 
+																	Jangan Ada Dusta di Antara Kita merupakan album musik utama karya Broery Marantika dan Dewi YullDirilis tahun 1992Lagu andalan dalam album ini ialah Jangan Ada Dusta di Antara KitaLagu ini pada 2009 digubah ulang oleh Angkasa Band dan dijadikan single. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jangan ada dusta Di antara kita Memang kau bukan yang pertama bagiku Pernah satu hati mengisi hidupku dulu Dan kini semua kau katakan padaku Jangan ada dusta di antara kita kasih kasih Semua terserah padamu aku begini adanya Kuhormati keputusanmu Apa pun yang akan kau katakan kukatakan Sebelum terlanjur kita jauh melangkah Kau katakan saja. 
+																	Jangan Ada Dusta di Antara Kita versi 1. 
+																	Para epidemiolog dokter ahli para ahli kesehatan ahli ekonomi ahli kebijakan publik dan lain-lain tentu akan siap membantu pemerintah. 
+																	Yang Suka Lagu Broery Marantika - Jangan Ada Dusta Diantara Kita Lo-Fi Version By Masiyoo Yok Like Komen dan Share Dan Jangan Lupa Disubscribe buat Yang S. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Semua harus sama-sama terbuka. 
+																	Jangan ada dusta diantara kita Lyrics. 
+																	Lagu Melayu Angkasa - Jangan Ada Dusta Diantara Kita Official Music VideoDengarkan Juga Lagu ini di. 
+																	Jangan Ada Dusta di Antara Kita - Broery Marantika ft Dewi Yull. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See more of JANGAN ADA DUSTA DIANTARA KITA on Facebook. 
+																	Memang kau bukan yang pertama bagiku Pernah satu hati mengisi hidupku dulu Dan kini semua kau katakan padaku Jangan ada dusta di antara kita kasih Semua terserah padamu Aku begini adanya Kuhormati keputusanmu Apa pun yang akan kau katakan Sebelum terlanjur kita jauh melangkah Kau katakan saja Kasih Apa pun adanya dirimu Aku akan selalu sayang padamu Memang kau bukan yang pertama. 
+																	Sayup-sayup terdengar lagu yang dinyanyikan Broery Marantika dan Dewi Yull berjudul Jangan Ada. 
+																	Ketika pertama kujumpa denganmu Bukankah pernah kutanyakan padamu kasih Takkan kecewakah kau pada diriku Takkan menyesalkah kau hidup denganku nanti. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Karaoke tanpa vokal broery marantika jangan ada dusta diantara kita. 
+																	C G Am G-F G C F-G-C G-F-C C G Am Ketika pertama kujumpa denganmu F Em Dm G Bukankah pernah kutanyakan padamu kasih C. 
+																	July 25 2018 at 105 AM. 
+																	Mulai sekarang jangan ada dusta diantara kita. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jangan ada dusta diantara kita. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/4a/be/c8/4abec87f4c589293a5566b3afd871168.jpg" data-lightbox="roadtrip" data-title="Broery Marantika Dewi Yull Jangan Ada Dusta Diantara Kita Hq Audio Mp4 Youtube Youtube Lyrics Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/4a/be/c8/4abec87f4c589293a5566b3afd871168.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROOzifY43N6IANGPn5Hy0t7bqkR1C64rDJtg';" alt="Broery Marantika Dewi Yull Jangan Ada Dusta Diantara Kita Hq Audio Mp4 Youtube Youtube Lyrics Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Broery Marantika Dewi Yull Jangan Ada Dusta Diantara Kita Hq Audio Mp4 Youtube Youtube Lyrics Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/4b/60/544b6038c77dc2c103e7227ba5544d58.jpg" data-lightbox="roadtrip" data-title="Rossa Feat Broery Marantika Jangan Ada Dusta Diantara Kita Official Lagu Penyanyi Dunia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/4b/60/544b6038c77dc2c103e7227ba5544d58.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-UtRKV9O9d-gMuvzM7ULHLgJoMHbdPNSo0g';" alt="Rossa Feat Broery Marantika Jangan Ada Dusta Diantara Kita Official Lagu Penyanyi Dunia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rossa Feat Broery Marantika Jangan Ada Dusta Diantara Kita Official Lagu Penyanyi Dunia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/a0/b0/46/a0b0464bffd8eb71f164a50d40c251fd.jpg" data-lightbox="roadtrip" data-title="Anscoll Just Sang The Song Jangan Ada Dusta Di Antara Kita How Can The Voice Be So Amazing In 2020 Songs Singing The Voice">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/a0/b0/46/a0b0464bffd8eb71f164a50d40c251fd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyakzMQc3aOuW-Ryl3BLqawPxQWqFTgqAxJQ';" alt="Anscoll Just Sang The Song Jangan Ada Dusta Di Antara Kita How Can The Voice Be So Amazing In 2020 Songs Singing The Voice">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anscoll Just Sang The Song Jangan Ada Dusta Di Antara Kita How Can The Voice Be So Amazing In 2020 Songs Singing The Voice</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/bd/16/e8bd16a63b3809c2ae4f053e8cc37a3d.jpg" data-lightbox="roadtrip" data-title="Broery Marantika Dewi Yull Jangan Ada Dusta Di Antara Kita Official Music Video Lagu Lirik Lagu Dewi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/bd/16/e8bd16a63b3809c2ae4f053e8cc37a3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzodDaUTw-g3oQ9n8z0i4kI82dKA9rSLw6CA';" alt="Broery Marantika Dewi Yull Jangan Ada Dusta Di Antara Kita Official Music Video Lagu Lirik Lagu Dewi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Broery Marantika Dewi Yull Jangan Ada Dusta Di Antara Kita Official Music Video Lagu Lirik Lagu Dewi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e7/26/9e/e7269e4a0edf6f325fc78df2337bde1b.jpg" data-lightbox="roadtrip" data-title="Pin Di Selayar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e7/26/9e/e7269e4a0edf6f325fc78df2337bde1b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu8FBcWivV8fThq2uhHTDIbxwd45AdA-AFKQ';" alt="Pin Di Selayar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Selayar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/5e/f9/4c5ef99b9cfd646ee47d4addb91514a4.png" data-lightbox="roadtrip" data-title="Kata Kata Bijak Persahabatan Katabijak Quotes Motivasi Inspirasi Motivasidiri Motivasihidup Quotespersahabatan Motivasipersa Motivasi Sahabat Bijak">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/5e/f9/4c5ef99b9cfd646ee47d4addb91514a4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdaXSzelUmzIw1DJTRZGqWxsSer0uKPeWTJA';" alt="Kata Kata Bijak Persahabatan Katabijak Quotes Motivasi Inspirasi Motivasidiri Motivasihidup Quotespersahabatan Motivasipersa Motivasi Sahabat Bijak">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kata Kata Bijak Persahabatan Katabijak Quotes Motivasi Inspirasi Motivasidiri Motivasihidup Quotespersahabatan Motivasipersa Motivasi Sahabat Bijak</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/95/bb/7495bb0e3c7cbb86fe58c04238856fd0.jpg" data-lightbox="roadtrip" data-title="Jangan Ada Dusta Di Antara Kita Broery Marantika Lagu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/95/bb/7495bb0e3c7cbb86fe58c04238856fd0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd5e7ambEisayeogH_t10O7LltAjM4Ko7g6Q';" alt="Jangan Ada Dusta Di Antara Kita Broery Marantika Lagu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jangan Ada Dusta Di Antara Kita Broery Marantika Lagu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/26/5f/db/265fdbb32d111b20b3e5cdba2c43d1a0.jpg" data-lightbox="roadtrip" data-title="Broery Marantika Karaoke Youtube In 2020 Karaoke Lyrics Musik">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/26/5f/db/265fdbb32d111b20b3e5cdba2c43d1a0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSag0puhliN5wNBQCgtLUxSz5VvCo8pbVfoDw';" alt="Broery Marantika Karaoke Youtube In 2020 Karaoke Lyrics Musik">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Broery Marantika Karaoke Youtube In 2020 Karaoke Lyrics Musik</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/fa/c4/aa/fac4aac11c2fd1cc5f261d9ba241e317.jpg" data-lightbox="roadtrip" data-title="Pin On Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/fa/c4/aa/fac4aac11c2fd1cc5f261d9ba241e317.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtdSZitWNpZAuJXjTLC3vLZXMrdR5ZaHM7SA';" alt="Pin On Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/c0/66/1f/c0661fbaf1f89fe890bdf3e8028af871.jpg" data-lightbox="roadtrip" data-title="Jangan Ada Dusta Di Antara Kita Broery Marantika Gascoustic Ft Mega Live Akustik Cover Youtube Akustik Youtube">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/c0/66/1f/c0661fbaf1f89fe890bdf3e8028af871.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWBf3gFp4SIfpQonahPzrl9eOoW3so3qrDdg';" alt="Jangan Ada Dusta Di Antara Kita Broery Marantika Gascoustic Ft Mega Live Akustik Cover Youtube Akustik Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jangan Ada Dusta Di Antara Kita Broery Marantika Gascoustic Ft Mega Live Akustik Cover Youtube Akustik Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b3/09/a5/b309a5a4d8984a7a033a5dec10f71e52.jpg" data-lightbox="roadtrip" data-title="Jangan Ada Dusta Diantara Kitajangan Ada Dusta Diantara Kita Jangan Ada Dusta Diantara Kita Recorded By Bellaasoffaa And Fullkusuma O">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b3/09/a5/b309a5a4d8984a7a033a5dec10f71e52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Cz7q7xCvcDmjFQSEQ0xzQMorTSaWrKvVYQ';" alt="Jangan Ada Dusta Diantara Kitajangan Ada Dusta Diantara Kita Jangan Ada Dusta Diantara Kita Recorded By Bellaasoffaa And Fullkusuma O">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jangan Ada Dusta Diantara Kitajangan Ada Dusta Diantara Kita Jangan Ada Dusta Diantara Kita Recorded By Bellaasoffaa And Fullkusuma O</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/d8/8c/6ed88c7dfae41059f192be40ff4c40ac.png" data-lightbox="roadtrip" data-title="Anscoll Menyanyikan Lagu Seandainya Aku Punya Sayap Dari Rinto Harahap Suaranya Sangat Merdu Dalam Starmaker Songs Me Me Me Song Singing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/d8/8c/6ed88c7dfae41059f192be40ff4c40ac.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQCeIqaw2-4vccsjmoboJ3FR-Ca0KeJNK7uA';" alt="Anscoll Menyanyikan Lagu Seandainya Aku Punya Sayap Dari Rinto Harahap Suaranya Sangat Merdu Dalam Starmaker Songs Me Me Me Song Singing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Anscoll Menyanyikan Lagu Seandainya Aku Punya Sayap Dari Rinto Harahap Suaranya Sangat Merdu Dalam Starmaker Songs Me Me Me Song Singing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/5b/5b/2a/5b5b2abf45635c4202029256e4b6d132.jpg" data-lightbox="roadtrip" data-title="Jangan Ada Dusta Diantara Kita Youtube Di 2020 Lagu Terbaik Kenangan Lagu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/5b/5b/2a/5b5b2abf45635c4202029256e4b6d132.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNA81ojMm-INgTIKyWxBfi-ygrzGzjfHEyZg';" alt="Jangan Ada Dusta Diantara Kita Youtube Di 2020 Lagu Terbaik Kenangan Lagu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jangan Ada Dusta Diantara Kita Youtube Di 2020 Lagu Terbaik Kenangan Lagu</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/jfhq-tn-army-national-guard.html">Jfhq Tn Army National Guard</a></li>
+													<li class="list-group-item"><a href="/jis-l-1096.html">Jis L 1096</a></li>
+													<li class="list-group-item"><a href="/jis-a-5908.html">Jis A 5908</a></li>
+													<li class="list-group-item"><a href="/jis-f.html">Jis F</a></li>
+													<li class="list-group-item"><a href="/jisc-network-status.html">Jisc Network Status</a></li>
+													<li class="list-group-item"><a href="/jgbg.html">Jgbg</a></li>
+													<li class="list-group-item"><a href="/jgbm.html">Jgbm</a></li>
+													<li class="list-group-item"><a href="/jisco-company.html">Jisco Company</a></li>
+													<li class="list-group-item"><a href="/jis-z-2201.html">Jis Z 2201</a></li>
+													<li class="list-group-item"><a href="/jisc-network.html">Jisc Network</a></li>
+													<li class="list-group-item"><a href="/jfhq-nevada.html">Jfhq Nevada</a></li>
+													<li class="list-group-item"><a href="/jis-pkp.html">Jis Pkp</a></li>
+													<li class="list-group-item"><a href="/jis-depok.html">Jis Depok</a></li>
+													<li class="list-group-item"><a href="/jict.html">Jict</a></li>
+													<li class="list-group-item"><a href="/jis-q-20000.html">Jis Q 20000</a></li>
+													<li class="list-group-item"><a href="/jis-cilandak.html">Jis Cilandak</a></li>
+													<li class="list-group-item"><a href="/jghg.html">Jghg</a></li>
+													<li class="list-group-item"><a href="/jisoo-blackpink-wallpaper.html">Jisoo Blackpink Wallpaper</a></li>
+													<li class="list-group-item"><a href="/jis-merupakan-standar-industri-jepang-yang-digunakan-di-negaranya-dan-kelompoknya-dengan-sebutan.html">Jis Merupakan Standar Industri Jepang Yang Digunakan Di Negaranya Dan Kelompoknya Dengan Sebutan</a></li>
+													<li class="list-group-item"><a href="/jisc-insights.html">Jisc Insights</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

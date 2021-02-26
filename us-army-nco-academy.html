@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Nco Academy - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Nco Academy",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/2e/83/5c/2e835c95a532002c626a139e3ba1a802.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+nco+academy",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Nco Academy</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In contrast commissioned officers usually enter directly from a military academy Officer Candidate School OCS or Officer Training School OTS after receiving a post-secondary degree. NCO Academy Mission The XVIII Airborne Corps and Fort Bragg NCO Academy will provide professional military education that develops enlisted leaders who are fit disciplined and well-educated. Lightning Academy Mission Statement Lightning Academy LA develops agile adaptive and expeditionary Leaders through austere realistic and demanding training in vicinity of Schofield Barracks. <br>				
+			</p>
+										<a class="badge badge-info" href="/x-empire-tanjong-karang.html">x empire tanjong karang</a>
+											<a class="badge badge-dark" href="/xiboba-muara-karang.html">xiboba muara karang</a>
+											<a class="badge badge-danger" href="/xtc-legaliseren.html">xtc legaliseren</a>
+											<a class="badge badge-dark" href="/x-ray-batu-karang.html">x ray batu karang</a>
+											<a class="badge badge-primary" href="/wisconsin-army-national-guard-medical.html">wisconsin army national guard medical</a>
+											<a class="badge badge-dark" href="/xtc-images.html">xtc images</a>
+											<a class="badge badge-success" href="/xtc-orgen-trillen.html">xtc orgen trillen</a>
+											<a class="badge badge-dark" href="/xe-mustang.html">xe mustang</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to pay a visit to the ideal blog.  Our website gives you hints for seeing the highest quality video and image content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you view.  You can also bring about supporting this site by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/01/a0/3401a0f22ffd4d44cbd4d32fb24378f1.jpg" data-lightbox="roadtrip" data-title="Seventh Army Nco Academy Bad Tolz Nco Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/01/a0/3401a0f22ffd4d44cbd4d32fb24378f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwj08uUMib9kLqVFhLl1LvBgfN3vgM6r_Cwg';" alt="Seventh Army Nco Academy Bad Tolz Nco Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seventh Army Nco Academy Bad Tolz Nco Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/170x/89/3f/05/893f05906c064e01feadd5a3e73d7589--army-germany.jpg" data-lightbox="roadtrip" data-title="7th Army Nco Academy Bad Tolz Germany Bad Tolz Army Day Germany">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/170x/89/3f/05/893f05906c064e01feadd5a3e73d7589--army-germany.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qWoffXmDqg9piD_SNAjSYGQj3hjvLNFeTw';" alt="7th Army Nco Academy Bad Tolz Germany Bad Tolz Army Day Germany">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">7th Army Nco Academy Bad Tolz Germany Bad Tolz Army Day Germany</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/4e/f7/774ef7f749ed6e202ce345ac8ad9e0c5.jpg" data-lightbox="roadtrip" data-title="Ultima United States Army Sergeants Major Academy Usasma Army Sergeant Army Sergeant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/4e/f7/774ef7f749ed6e202ce345ac8ad9e0c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHQJvcgvJBNtMs-UJID-HcknSK_xToJsefYw';" alt="Ultima United States Army Sergeants Major Academy Usasma Army Sergeant Army Sergeant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ultima United States Army Sergeants Major Academy Usasma Army Sergeant Army Sergeant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/83/5c/2e835c95a532002c626a139e3ba1a802.jpg" data-lightbox="roadtrip" data-title="James M Wightman Nco Academy United States Army Lot Of 5 Yearbooks 1973 1974 United States Army Nco Yearbook">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/83/5c/2e835c95a532002c626a139e3ba1a802.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbxdkSkKXRbj_4XxQJBh0J_n1mrqeY7fPunw';" alt="James M Wightman Nco Academy United States Army Lot Of 5 Yearbooks 1973 1974 United States Army Nco Yearbook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">James M Wightman Nco Academy United States Army Lot Of 5 Yearbooks 1973 1974 United States Army Nco Yearbook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/d4/c5/72d4c53a05bc16801e88660bb1210ae0.jpg" data-lightbox="roadtrip" data-title="Pin On Things And Places I Ve Experienced Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/d4/c5/72d4c53a05bc16801e88660bb1210ae0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvnvlyCDQkGCVZQWHPc2Oy_aC0WqNvJRSltg';" alt="Pin On Things And Places I Ve Experienced Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Things And Places I Ve Experienced Air Force</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/4c/7f/0b4c7f60b4feb243fe2b3dfaf40365f8.jpg" data-lightbox="roadtrip" data-title="Flint Kaserne From The Air To The North You Can See Some Of The Family Housing Where I Lived Aerial Photo Bad Tolz Germany">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/4c/7f/0b4c7f60b4feb243fe2b3dfaf40365f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpvo6-eDuUa138v2AiTEJngIk7gPV_qjOeFA';" alt="Flint Kaserne From The Air To The North You Can See Some Of The Family Housing Where I Lived Aerial Photo Bad Tolz Germany">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flint Kaserne From The Air To The North You Can See Some Of The Family Housing Where I Lived Aerial Photo Bad Tolz Germany</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/f1/6e/d6/f16ed6f527c559c047357fcceaab8f1d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpvo6-eDuUa138v2AiTEJngIk7gPV_qjOeFA';" alt="Flint Kaserne From The Air To The North You Can See Some Of The Family Housing Where I Lived Aerial Photo Bad Tolz Germany">
+										<div class="card-body">
+						<h3 class="h5"><b>Coming in from Ft.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army nco academy</strong>. 
+								
+																	Carson CO CSM Houston states that he looks forward to not only Leading the Academy but exploring the Island as well. 
+																	A Noncommissioned Officer Professional Development Ribbon is an award presented by the United States Army and Air Force to recognize those noncommissioned officers who have completed a prescribed leadership course at an NCO training school. 
+																	His awards and decorations include. 
+																	Senior Non-Commissioned Officer Academy SNCOA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCO corps usually includes many grades of enlisted corporal and sergeant. 
+																	CSM Houston will be serving as our New Commandant and we at the Academy look forward to supporting him in the future. 
+																	Bronze Star Medal 2 nd Award Meritorious. 
+																	This course provides tools to develop critical reasoning creative. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Make Army Community Service your first stop when you arrive at Fort Bragg. 
+																	Sexual Assault Hotline 910 584-4267. 
+																	The 7th Army NCO Academy mission is to train and develop future leaders who are adaptive disciplined and ready to lead effectively at the squad and team levels. 
+																	Welcome to the US Army NCO Academy of Hawaii CSM Charles Houston and His Family. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The NCO Academy performs the functions associated with a battalion-size unit. 
+																	Jay Raymond administers the oath of enlistment to 73 officer and enlisted space professionals selected to. 
+																	SNCOA is an advanced professional military education program that prepares select NCOs for greater responsibilities by expanding their leadership and managerial capabilities and their perspective of the military profession. 
+																	The NCO Leadership Center of Excellence and the Sergeants Major Academy created a new way for senior spouses to receive resources through the Spouse Leadership Development Course by releasing a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States Army s Noncommissioned Officer Candidate Course NCOCC originally located at Fort Benning Georgia was created to fill the Armys critical shortage of junior noncommissioned officers with the best qualified and best trained men available. 
+																	The Benavidez NCO Academy teaches three courses. 
+																	5363 likes 132 talking about this 418 were here. 
+																	XVIII Airborne Corps and Fort Bragg NCO Academy Fort Bragg NC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 7th Army NCO Academy earned the recognition as an Institute of Excellence during three consecutive Accreditations from the United States Army Sergeants Major Academy and TRADOC with the most recent being in September of 2015. 
+																	The official Facebook page of the XVIII Airborne Corps and Fort Bragg NCO. 
+																	In 2003 the NCO Academy started receiving International Military Students IMS and has since trained over 1000 of our European and African allies. 
+																	Our NCO Academy has the distinction of being the only institution of its kind in the United States Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This includes administrative operations training supply and security with responsibility for the health welfare. 
+																	The Eighth Army Wightman NCO Academy will deliver Professional Military Education to Junior Leaders IOT develop fit disciplined and well-educated NCOs capable of leading tomorrows Army. 
+																	We inspire Soldiers to be creative. 
+																	CSM Price is now serving as the Commandant Fort Stewart Noncommissioned Officer Academy Fort Stewart Georgia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our core competency is leader development. 
+																	US Space Force Is Getting Its Own NCO Academy Chief of Space Operations Gen. 
+																	In some countries warrant officers also carry out the duties of NCOs. 
+																	DoD Safe Helpline 1 877 995-5247 Military One Source 1 800 342-9647. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Description The Armys culminating enlisted Professional Military Education PME institution is the Sergeants Major Academy. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f1/6e/d6/f16ed6f527c559c047357fcceaab8f1d.jpg" data-lightbox="roadtrip" data-title="Military Rank United States Army Enlisted Rank Insignia Sergeant Png Academy American Vector Army Military Training Military Military Ranks Army Sergeant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f1/6e/d6/f16ed6f527c559c047357fcceaab8f1d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRzPStExDNBLyCIVq3mfrZFf7_krzPEuqUZQ';" alt="Military Rank United States Army Enlisted Rank Insignia Sergeant Png Academy American Vector Army Military Training Military Military Ranks Army Sergeant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Rank United States Army Enlisted Rank Insignia Sergeant Png Academy American Vector Army Military Training Military Military Ranks Army Sergeant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/8f/37/4f8f37dedfbe7aa249f7a9f4feb2620d.jpg" data-lightbox="roadtrip" data-title="Pin On Great American Military Rings By G A A Inc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/8f/37/4f8f37dedfbe7aa249f7a9f4feb2620d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXj6iw2WEnPpeAJVNBUWVUYrXvd63x7tcHjQ';" alt="Pin On Great American Military Rings By G A A Inc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Great American Military Rings By G A A Inc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/6d/62/ca6d62c033b68ffa434fc5ca2a931245.jpg" data-lightbox="roadtrip" data-title="Signal Regimental Nco Academy Fort Gordon Ga Coin Nco Regiment Fort">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/6d/62/ca6d62c033b68ffa434fc5ca2a931245.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS59Tl9PdNPZKWxmkAbcKn2aktZEY2I0W6yTg';" alt="Signal Regimental Nco Academy Fort Gordon Ga Coin Nco Regiment Fort">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Signal Regimental Nco Academy Fort Gordon Ga Coin Nco Regiment Fort</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/9b/69/9e9b69fe371a53dec851ca705bbfff59.jpg" data-lightbox="roadtrip" data-title="Shamelessly Proud Of Our Son This Photo Was Used At The Nco Academy As The Perfect Example Of What A Good Professional Photo Sh Professional Photo Photo Hero">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/9b/69/9e9b69fe371a53dec851ca705bbfff59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_oNR_99sgsBKs6Kae8kBD_MollraYIMLdsw';" alt="Shamelessly Proud Of Our Son This Photo Was Used At The Nco Academy As The Perfect Example Of What A Good Professional Photo Sh Professional Photo Photo Hero">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shamelessly Proud Of Our Son This Photo Was Used At The Nco Academy As The Perfect Example Of What A Good Professional Photo Sh Professional Photo Photo Hero</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/21/e4/3b21e431d5e7ac0d4835bbf62336495e.jpg" data-lightbox="roadtrip" data-title="Academy Commandant We Are Adapting Nco Development Adaptations United States Army Nco">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/21/e4/3b21e431d5e7ac0d4835bbf62336495e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-G5AQ-AL3V9uvqoXqSzCKx3KMYlTI6wQdyg';" alt="Academy Commandant We Are Adapting Nco Development Adaptations United States Army Nco">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Academy Commandant We Are Adapting Nco Development Adaptations United States Army Nco</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/45/5f/b5455f96062eaf2f15958b39d64243f6.jpg" data-lightbox="roadtrip" data-title="Class 01 12 Us Army Drill Sergeant Drill School Fort Jackson Sc Graduation Ceremony Military Men Graduation Ceremony Drill">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/45/5f/b5455f96062eaf2f15958b39d64243f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqPbjOQnYdh5YH1LKpyQlJBuQBIChe-Kbdig';" alt="Class 01 12 Us Army Drill Sergeant Drill School Fort Jackson Sc Graduation Ceremony Military Men Graduation Ceremony Drill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Class 01 12 Us Army Drill Sergeant Drill School Fort Jackson Sc Graduation Ceremony Military Men Graduation Ceremony Drill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/e3/2f/6fe32f1ffce762953334ef0496884dab.jpg" data-lightbox="roadtrip" data-title="United States Army Ranks United States Army Officer Ranks United States Army Non Commission Officer R Army Ranks United States Army Non Commissioned Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/e3/2f/6fe32f1ffce762953334ef0496884dab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST5mr_0EUnRnCPVHIVzOd8GBinAdae7_P8-w';" alt="United States Army Ranks United States Army Officer Ranks United States Army Non Commission Officer R Army Ranks United States Army Non Commissioned Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Army Ranks United States Army Officer Ranks United States Army Non Commission Officer R Army Ranks United States Army Non Commissioned Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a1/f9/69/a1f969641301d9f174ac4c8ea10ad702.jpg" data-lightbox="roadtrip" data-title="General Stephen J Townsend Commanding General Of The U S Army Training And Doctrine Command Visits The U S Ar Army Training Army United States Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a1/f9/69/a1f969641301d9f174ac4c8ea10ad702.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy63vHk0sDiUfMz0Q-0M1uMxMEIuGLimsrXg';" alt="General Stephen J Townsend Commanding General Of The U S Army Training And Doctrine Command Visits The U S Ar Army Training Army United States Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">General Stephen J Townsend Commanding General Of The U S Army Training And Doctrine Command Visits The U S Ar Army Training Army United States Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/0d/39/0c0d39d97c262cf1f31d5e3cc66cd996.jpg" data-lightbox="roadtrip" data-title="Pin On U S Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/0d/39/0c0d39d97c262cf1f31d5e3cc66cd996.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvMLQ9eMQUDTfM6ojarjnV5ciQ4bAZGAvQDg';" alt="Pin On U S Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/27/a4/a8/27a4a826efb2e772f78ce7201387d001.jpg" data-lightbox="roadtrip" data-title="Us Army Enlisted Class A Uniform 1960s Us Army Uniforms Military Dress Uniform Army Dress Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/27/a4/a8/27a4a826efb2e772f78ce7201387d001.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWYrIH2ug8MrZPhtIk46II1HdwtNz1KUxKlQ';" alt="Us Army Enlisted Class A Uniform 1960s Us Army Uniforms Military Dress Uniform Army Dress Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Enlisted Class A Uniform 1960s Us Army Uniforms Military Dress Uniform Army Dress Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/1e/36/5e1e36a0b06581b68ad19eba490b6c23.jpg" data-lightbox="roadtrip" data-title="Pin On I Love The Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/1e/36/5e1e36a0b06581b68ad19eba490b6c23.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT8YuNI9RO2_FMV33xdOhnZ-mByeEJIndeIw';" alt="Pin On I Love The Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On I Love The Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/16/b3/98/16b3986978863437c6760e34fbc761e4.jpg" data-lightbox="roadtrip" data-title="Germany 1967 7th Us Ncos Academy Army Day Army Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/16/b3/98/16b3986978863437c6760e34fbc761e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDxaz7q-_hITWpn4fE3f9pilkXeLiEq58D9g';" alt="Germany 1967 7th Us Ncos Academy Army Day Army Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Germany 1967 7th Us Ncos Academy Army Day Army Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/81/f1/e981f1dc168ea80187f74d2afac4918b.jpg" data-lightbox="roadtrip" data-title="Army Drill Sergeants Work On Being More Effective Leaders Army United States Armed Forces Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/81/f1/e981f1dc168ea80187f74d2afac4918b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF-d2qcm6xOyW59_kDkBVjUpTx5UT7pZTAMQ';" alt="Army Drill Sergeants Work On Being More Effective Leaders Army United States Armed Forces Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Drill Sergeants Work On Being More Effective Leaders Army United States Armed Forces Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-song-lyrics-tagalog.html">Army Song Lyrics Tagalog</a></li>
+													<li class="list-group-item"><a href="/army-song-jayasrilanka.html">Army Song Jayasrilanka</a></li>
+													<li class="list-group-item"><a href="/army-song-download-in-jio-phone.html">Army Song Download In Jio Phone</a></li>
+													<li class="list-group-item"><a href="/army-song-ke-gane.html">Army Song Ke Gane</a></li>
+													<li class="list-group-item"><a href="/army-song-download-naa-songs.html">Army Song Download Naa Songs</a></li>
+													<li class="list-group-item"><a href="/army-song-download-mp3wale.html">Army Song Download Mp3wale</a></li>
+													<li class="list-group-item"><a href="/army-song-download-wapwon-live.html">Army Song Download Wapwon Live</a></li>
+													<li class="list-group-item"><a href="/army-song-english-download.html">Army Song English Download</a></li>
+													<li class="list-group-item"><a href="/army-song-full-dj.html">Army Song Full Dj</a></li>
+													<li class="list-group-item"><a href="/army-song-download-mp3-khasa-aala-chahar.html">Army Song Download Mp3 Khasa Aala Chahar</a></li>
+													<li class="list-group-item"><a href="/army-song-mp3-wapwon.html">Army Song Mp3 Wapwon</a></li>
+													<li class="list-group-item"><a href="/army-song-mp3-bestwap.html">Army Song Mp3 Bestwap</a></li>
+													<li class="list-group-item"><a href="/army-song-download-wapking.html">Army Song Download Wapking</a></li>
+													<li class="list-group-item"><a href="/army-song-mp3com.html">Army Song Mp3com</a></li>
+													<li class="list-group-item"><a href="/army-song-mp3-downloadcom.html">Army Song Mp3 Downloadcom</a></li>
+													<li class="list-group-item"><a href="/army-song-mp3-audio.html">Army Song Mp3 Audio</a></li>
+													<li class="list-group-item"><a href="/army-song-i-dont-know-what-i-been-told-lyrics.html">Army Song I Dont Know What I Been Told Lyrics</a></li>
+													<li class="list-group-item"><a href="/army-song-jung-ke-maidan-mein.html">Army Song Jung Ke Maidan Mein</a></li>
+													<li class="list-group-item"><a href="/army-song-lyrics-zayde-wolf.html">Army Song Lyrics Zayde Wolf</a></li>
+													<li class="list-group-item"><a href="/army-song-jalwa-jalwa.html">Army Song Jalwa Jalwa</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

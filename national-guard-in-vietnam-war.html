@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Guard In Vietnam War - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Guard In Vietnam War",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/37/77/8a/37778a98dc2573291dcfd2462ae32f16.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+guard+in+vietnam+war",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Guard In Vietnam War</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Remembering Vietnam is an exhibit at the National Archives in Washington DC on display from November 10 2017 through February 28 2019 featuring records related to 12 critical episodes in the Vietnam War. During that conflict joining the guard was seen as a way to avoid the draft. The battalion was part of the Selective Reserve Force SRF. <br>				
+			</p>
+										<a class="badge badge-info" href="/national-guard-doctors.html">national guard doctors</a>
+											<a class="badge badge-warning" href="/national-guard-job.html">national guard job</a>
+											<a class="badge badge-secondary" href="/national-guard-ga.html">national guard ga</a>
+											<a class="badge badge-primary" href="/national-guard-jobs-tn.html">national guard jobs tn</a>
+											<a class="badge badge-primary" href="/national-guard-dc-activated.html">national guard dc activated</a>
+											<a class="badge badge-success" href="/national-guard-in-atlanta-dancing.html">national guard in atlanta dancing</a>
+											<a class="badge badge-light" href="/national-guard-in-atlanta-georgia.html">national guard in atlanta georgia</a>
+											<a class="badge badge-info" href="/national-guard-in-minnesota.html">national guard in minnesota</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the right site.  Our website provides you with suggestions for viewing the maximum quality video and image content, hunt and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to view.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this site on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/a0/bf/9fa0bffd4f62bc16d350fd960f56f4c1.png" data-lightbox="roadtrip" data-title="Pin On Black White">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/a0/bf/9fa0bffd4f62bc16d350fd960f56f4c1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE86-SNGmr71EuNKX1V_Yf9f5Bvexx9pKQcA';" alt="Pin On Black White">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Black White</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/db/2a/95db2a1aa976f666208751dda2b17eae.jpg" data-lightbox="roadtrip" data-title="Colin Powell Vietnam Vietnam War Vietnam My War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/db/2a/95db2a1aa976f666208751dda2b17eae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdpcTeDr84749vWzilot5C1HPXNPyALjUMKw';" alt="Colin Powell Vietnam Vietnam War Vietnam My War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Colin Powell Vietnam Vietnam War Vietnam My War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/fe/f2/73fef2540fec2a21eb268b3681ec3c55.jpg" data-lightbox="roadtrip" data-title="Pin On Free To Be You And Me">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/fe/f2/73fef2540fec2a21eb268b3681ec3c55.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHvXedsxPxUuC1r1X8Mu5H5ul_Ygw28X3THA';" alt="Pin On Free To Be You And Me">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Free To Be You And Me</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/dd/55/e4dd5518d092787b1f81b253f2efaf42.jpg" data-lightbox="roadtrip" data-title="Pin On Black White Photography I Like">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/dd/55/e4dd5518d092787b1f81b253f2efaf42.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTYTrb8g47NPcwNykgmiX5ezku82_bwn8tMA';" alt="Pin On Black White Photography I Like">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Black White Photography I Like</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/77/8a/37778a98dc2573291dcfd2462ae32f16.jpg" data-lightbox="roadtrip" data-title="Pin On World Wars Korea Vietnam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/77/8a/37778a98dc2573291dcfd2462ae32f16.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7QyArxlp4KLSKcedCP7P-12cTRG-qna4fug';" alt="Pin On World Wars Korea Vietnam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On World Wars Korea Vietnam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/c9/8b/f6c98b0b40b4453d7f80908fcd682dcd.jpg" data-lightbox="roadtrip" data-title="Pin On Vietnam War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/c9/8b/f6c98b0b40b4453d7f80908fcd682dcd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqnSBcbNyXcIukeedijCkx5ET4wDEC6VyNyw';" alt="Pin On Vietnam War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vietnam War</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/95/db/2a/95db2a1aa976f666208751dda2b17eae.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqnSBcbNyXcIukeedijCkx5ET4wDEC6VyNyw';" alt="Pin On Vietnam War">
+										<div class="card-body">
+						<h3 class="h5"><b>During the Vietnam War many old timers in the National Guard and reserves said there was an influx of recruits who had no interest in quality performance.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National guard in vietnam war</strong>. 
+								
+																	The fact that the Guard and other reserve components werent given a larger role in theater by President Johnson is a topic for another possibly political history. 
+																	The Vietnam War changed the National Guard. 
+																	After Vietnam President Gerald Ford abolished the draft entirely in 1975 but President Carter established the draft system in place today as a response to the potential threat posed by the Soviet invasion of Afghanistan. 
+																	The experience of the Indiana Rangers along with other National Guard units mobilized during the Vietnam War paved the way for more interaction between the reserve components and active duty forces as demonstrated during the recent conflicts in Iraq and Afghanistan and carried on the proud legacy of the Army National Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The height of the Army National Guards participation in the Vietnam War was 1969. 
+																	Many joined because they were faced with. 
+																	Fifty years ago today Monday May 4 1970 the Ohio National Guard opened fire on students protesting the Vietnam War on the campus of Kent State University. 
+																	Boasting a service record predating the Revolutionary War and extending through every American military conflict the National Guard served with distinction and honor in Vietnam. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WWII Era Korean War Vietnam US Army Air Corps US Air Force NJ Air National Guard September 6 2017. 
+																	In addition to the 2729 soldiers that deployed in 1968 approximately 4000 soldiers from the 29th Infantry Brigade from Hawaii and the 69th Infantry Brigade from Kansas deployed as individual augmentees. 
+																	Too often the National Guard is criticized for its lack of participation during the Vietnam War but these two units show that if needed the National Guard could have served in theater with honor. 
+																	McIntire The Register of the Kentucky Historical Society VOL 90 NO 2 Spring 1992 Kentucky Vietnam Veterans Bonus After Action Report 1992. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Under the leadership of the US. 
+																	Only 8700 of these servicemen were ordered to South Vietnam a tiny 03 of the total American military personnel who actually. 
+																	The Kentucky National Guard in Vietnam. 
+																	Experience in the Vietnam conflict. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	THE Kent State shootings saw four unarmed college students killed during a protest over the Vietnam War and became a defining moment in US history. 
+																	In just 13 seconds four students were. 
+																	Today marks 50 years since the Ohio National Guar. 
+																	Secretary of Defense the National Guard Bureau has partnered with The United States of America Vietnam War Commemoration to honor the veterans of the Vietnam War their families and the organizations that supported the Armed Forces during the war. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	William Schroeder Allison Krause Jeffrey Miller and Sandra Lee Scheuer L-R were the four Kent State University students killed on campus by the Ohio National Guard during a Vietnam War. 
+																	The Story of Bardstowns Battery C at War By Anthony A. 
+																	The 2 nd Battalion 133 rd Infantry Mechanized Iowa Army National Guard was also mobilized during the Vietnam War. 
+																	The National Archives has a wealth of records and information documenting the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	During Americas recent wars the guard and reserve made up nearly half the. 
+																	182 183 Several Army National Guard units were deployed to Southeast Asia and served in Vietnam including. 
+																	During the Vietnam War serving in the Army and Air National Guard or the military Reserve components was generally regarded as a guaranteed way to avoid the dangers of combat. 
+																	The battalion was part of the Selective Reserve Force SRF. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For the National Guard Bureau and the National Guard this remembrance also means paying tribute to those Guardsmen who served in theater and at home in support of the war effort. 
+																	During the Vietnam War 76 Army National Guard units were called up to active duty it is estimated that 13000 Army National Guard members were mobilized during this time. 
+																	Between the end of WWII and the Korean War men could just be drafted to serve regardless of the demands of a national emergency. 
+																	Although National Guard and Reserve units had been called to active duty in every war since they were founded the risk was extremely low in the late 1960s and early 1970s. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Guardsmen repeatedly faced the perils of combat with courage and determination. 
+																	The announcement roused furious protests across a country already rent asunder by the politics of the Vietnam War and just a few days later at a demonstration on an Ohio university campus four. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/7a/57/c97a57124bc83c433d9d664542ce820d.jpg" data-lightbox="roadtrip" data-title="Natguard Jpg 129408 Bytes Used Against American Citizens Protesting Vietnam War Vietnam Vietnam War Photos Vietnam War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/7a/57/c97a57124bc83c433d9d664542ce820d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT79m8BEPfkS6-4mopTs4cXjvTl7XQBlHqS3g';" alt="Natguard Jpg 129408 Bytes Used Against American Citizens Protesting Vietnam War Vietnam Vietnam War Photos Vietnam War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Natguard Jpg 129408 Bytes Used Against American Citizens Protesting Vietnam War Vietnam Vietnam War Photos Vietnam War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/3d/e6/b63de68794e57e392912d9d889e38172.jpg" data-lightbox="roadtrip" data-title="Pin On The 70s">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/3d/e6/b63de68794e57e392912d9d889e38172.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3kWMU-uo-L4sXQjyk3pNvsGbk6BSdzCZnQg';" alt="Pin On The 70s">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On The 70s</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/58/4a/ac584a3fbcf81ed42af024d64a9c479b.jpg" data-lightbox="roadtrip" data-title="The Famous Standoff Vietnam Protests History Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/58/4a/ac584a3fbcf81ed42af024d64a9c479b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPu4_0azA6gZXK1mg9b7n_L2NogOokmtJkcA';" alt="The Famous Standoff Vietnam Protests History Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Famous Standoff Vietnam Protests History Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/fd/d3/ddfdd38140b375077da36c3a60067614.jpg" data-lightbox="roadtrip" data-title="May 1970 The News That Richard Nixon Was Sending Troops To Cambodia Caused A Chain Of Protests In The U S Colleges At Kent State The Vietnamkrieg Before Us">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/fd/d3/ddfdd38140b375077da36c3a60067614.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiq3Wisv-pSHV-J4Kuz67yyN2ijqFXBkrthA';" alt="May 1970 The News That Richard Nixon Was Sending Troops To Cambodia Caused A Chain Of Protests In The U S Colleges At Kent State The Vietnamkrieg Before Us">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">May 1970 The News That Richard Nixon Was Sending Troops To Cambodia Caused A Chain Of Protests In The U S Colleges At Kent State The Vietnamkrieg Before Us</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/de/62/89de6226797292ce10ca43459a42ec0c.jpg" data-lightbox="roadtrip" data-title="Pin On Historical Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/de/62/89de6226797292ce10ca43459a42ec0c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkYZ2wseJrIpTAmuUrfXeKEszxQpCQVUCGdQ';" alt="Pin On Historical Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Historical Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/67/b7/8c67b77d7d20a4386c3ebb81479835ad.png" data-lightbox="roadtrip" data-title="Pin On Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/67/b7/8c67b77d7d20a4386c3ebb81479835ad.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk6_RC54IlgAdUzreSRIzZ3729f9GiRFwUgg';" alt="Pin On Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e0/61/19/e061190cf98a64a9dc2cee60a102926b.jpg" data-lightbox="roadtrip" data-title="Images From Vietnam Page 36 Vietnam War Veterans Vietnam War Vietnam War Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e0/61/19/e061190cf98a64a9dc2cee60a102926b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpnPEyivVUH2-953dshBmDoQNVdwTehl5Tw';" alt="Images From Vietnam Page 36 Vietnam War Veterans Vietnam War Vietnam War Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Images From Vietnam Page 36 Vietnam War Veterans Vietnam War Vietnam War Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/84/4f/5a844f7d31df854c7bd97667afb8bab8.jpg" data-lightbox="roadtrip" data-title="Http Www Pophistorydig Com Tag Kent State Shootings Kent State Shootings Kent State University Business History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/84/4f/5a844f7d31df854c7bd97667afb8bab8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT211wHZ6n0kFS0xaAR5ezVhQhdufm2vnhEPA';" alt="Http Www Pophistorydig Com Tag Kent State Shootings Kent State Shootings Kent State University Business History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Pophistorydig Com Tag Kent State Shootings Kent State Shootings Kent State University Business History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c2/84/50/c28450ac58bb207f8345aeed195eab49.jpg" data-lightbox="roadtrip" data-title="Behind The Image Protesting The Vietnam War With A Flower Marc Riboud Magnum Photos Marc Riboud War Photography Iconic Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c2/84/50/c28450ac58bb207f8345aeed195eab49.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0bPsecrvGZKaYxw8eD9KReohr0vi_p2YGw';" alt="Behind The Image Protesting The Vietnam War With A Flower Marc Riboud Magnum Photos Marc Riboud War Photography Iconic Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Behind The Image Protesting The Vietnam War With A Flower Marc Riboud Magnum Photos Marc Riboud War Photography Iconic Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/7a/c4/b47ac44159f5a864595251b601099a1f.jpg" data-lightbox="roadtrip" data-title="Whq Forum Navy Seals Navy Seals Vietnam War Photos Us Navy Seals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/7a/c4/b47ac44159f5a864595251b601099a1f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT-sHpARbpICDzzDoy_sEiYxl8ncUKVwYrdg';" alt="Whq Forum Navy Seals Navy Seals Vietnam War Photos Us Navy Seals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Whq Forum Navy Seals Navy Seals Vietnam War Photos Us Navy Seals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/3d/44/243d447b1f61abed65c0a618a70501a7.jpg" data-lightbox="roadtrip" data-title="The Vietnam War Era Vietnam War History War Vietnam History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/3d/44/243d447b1f61abed65c0a618a70501a7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbszwNzp8VFZh8fOAdewM3EvOfJO0PLS2v9Q';" alt="The Vietnam War Era Vietnam War History War Vietnam History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Vietnam War Era Vietnam War History War Vietnam History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/9f/83/979f83cb1ad76b99186c9a9618f4b08f.png" data-lightbox="roadtrip" data-title="Pin On Catch The Emotion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/9f/83/979f83cb1ad76b99186c9a9618f4b08f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn7_5JNHeUGwx0zI6y1e2iW0tiTNwvXz0Xbw';" alt="Pin On Catch The Emotion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Catch The Emotion</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/83/75/bb837536867a15f9876b9a77dfb162e3.jpg" data-lightbox="roadtrip" data-title="Afbeeldingsresultaat Voor M48a3 Tank Vietnam War Vietnam War Vietnam War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/83/75/bb837536867a15f9876b9a77dfb162e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiw3vpF_K8xIh-6igUGx6btv8qhCLVo50S8A';" alt="Afbeeldingsresultaat Voor M48a3 Tank Vietnam War Vietnam War Vietnam War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afbeeldingsresultaat Voor M48a3 Tank Vietnam War Vietnam War Vietnam War</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/jangan-dzikir-sembarangan.html">Jangan Dzikir Sembarangan</a></li>
+													<li class="list-group-item"><a href="/jangan-pake-yang-garnier-light-complete.html">Jangan Pake Yang Garnier Light Complete</a></li>
+													<li class="list-group-item"><a href="/jangan-kau-salah-menilaiku.html">Jangan Kau Salah Menilaiku</a></li>
+													<li class="list-group-item"><a href="/jangan-underestimate.html">Jangan Underestimate</a></li>
+													<li class="list-group-item"><a href="/jangan-urusi-urusan-orang-lain.html">Jangan Urusi Urusan Orang Lain</a></li>
+													<li class="list-group-item"><a href="/jangan-yaiku.html">Jangan Yaiku</a></li>
+													<li class="list-group-item"><a href="/jangan-nangis.html">Jangan Nangis</a></li>
+													<li class="list-group-item"><a href="/japan-army-rank-in-world.html">Japan Army Rank In World</a></li>
+													<li class="list-group-item"><a href="/jfhq-cyber-army.html">Jfhq Cyber Army</a></li>
+													<li class="list-group-item"><a href="/jangan-jadi-pelangi-untuk-orang-yang-buta-warna.html">Jangan Jadi Pelangi Untuk Orang Yang Buta Warna</a></li>
+													<li class="list-group-item"><a href="/jb-hi-fi.html">Jb Hi Fi</a></li>
+													<li class="list-group-item"><a href="/jangan-mengeluh.html">Jangan Mengeluh</a></li>
+													<li class="list-group-item"><a href="/jfhq-c-navy.html">Jfhq C Navy</a></li>
+													<li class="list-group-item"><a href="/jangan-terlalu-berharap.html">Jangan Terlalu Berharap</a></li>
+													<li class="list-group-item"><a href="/japanese-army-rank-insignia-ww2.html">Japanese Army Rank Insignia Ww2</a></li>
+													<li class="list-group-item"><a href="/jangan-jauh-dari-hati.html">Jangan Jauh Dari Hati</a></li>
+													<li class="list-group-item"><a href="/jfhq-california-national-guard.html">Jfhq California National Guard</a></li>
+													<li class="list-group-item"><a href="/jangan-ganggu-bahasa-inggris.html">Jangan Ganggu Bahasa Inggris</a></li>
+													<li class="list-group-item"><a href="/jangan-angkat-batu.html">Jangan Angkat Batu</a></li>
+													<li class="list-group-item"><a href="/jangan-dibuka-nanti-lemot.html">Jangan Dibuka Nanti Lemot</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

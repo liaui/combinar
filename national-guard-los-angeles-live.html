@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Guard Los Angeles Live - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Guard Los Angeles Live",
+  "datePublished": "2021-02-27",
+  "image": "https://inthesetimes.com/imager/s3_us-east-2_amazonaws_com/itt-images/militarism_policing_01c8ac7cc3b849e525e370bc51344120.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+guard+los+angeles+live",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Guard Los Angeles Live</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Their temporary neighbors dont have to live on the militarys packaged meals. Nearly 25000 National Guard troops are in Washington to provide security. Three Idaho Army National Guard personnel were killed after their UH-60 Black Hawk helicopter crashed south of Lucky Peak near Boise shortly after 8 pm. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/xtc-vs-m2r.html">xtc vs m2r</a>
+											<a class="badge badge-info" href="/xtc-tawuran.html">xtc tawuran</a>
+											<a class="badge badge-warning" href="/yang-membedakan-penilaian-acua-norma-pan-degan-penilaian-acua-patokan-pap.html">yang membedakan penilaian acua norma pan degan penilaian acua patokan pap</a>
+											<a class="badge badge-light" href="/xtc-zondag-met-lubach.html">xtc zondag met lubach</a>
+											<a class="badge badge-danger" href="/xtc-tool.html">xtc tool</a>
+											<a class="badge badge-primary" href="/xtc-yang-bergerak-melawan-angin.html">xtc yang bergerak melawan angin</a>
+											<a class="badge badge-info" href="/xtc-tiktok.html">xtc tiktok</a>
+											<a class="badge badge-info" href="/xtc-quotes.html">xtc quotes</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the ideal blog.  Our website gives you hints for seeing the maximum quality video and image content, hunt and locate more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video for you to see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://as01.epimg.net/en/imagenes/2020/05/31/other_sports/1590946227_232479_1590946311_noticia_normal_recorte1.jpg" data-lightbox="roadtrip" data-title="George Floyd National Guard Arrives In Los Angeles To Control Protestors And Stop Looters As Com">
+											<img class="card-img v-image ads-img " src="https://as01.epimg.net/en/imagenes/2020/05/31/other_sports/1590946227_232479_1590946311_noticia_normal_recorte1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4y1MG701wjTsWImjTdVmuR_TX_w27AGun0A';" alt="George Floyd National Guard Arrives In Los Angeles To Control Protestors And Stop Looters As Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">George Floyd National Guard Arrives In Los Angeles To Control Protestors And Stop Looters As Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/wcYIxQ2_g90/maxresdefault.jpg" data-lightbox="roadtrip" data-title="4k National Guard Arrives In Los Angeles To Curb Mayhem Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/wcYIxQ2_g90/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBLD0Bf2hjORgQ7QgY9yGw5JOcKwh6fWDMtA';" alt="4k National Guard Arrives In Los Angeles To Curb Mayhem Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">4k National Guard Arrives In Los Angeles To Curb Mayhem Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/_tXeZ6QJN-w/hqdefault.jpg" data-lightbox="roadtrip" data-title="U S National Guard Troops Kneel With Protesters In La Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/_tXeZ6QJN-w/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAuLPRsZmteCesaxup2R1C7uJcfTYtYm40Ag';" alt="U S National Guard Troops Kneel With Protesters In La Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S National Guard Troops Kneel With Protesters In La Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.mercurynews.com/wp-content/uploads/2020/05/LDN-L-DAYPROTEST-LAPACIFIC-0531-08c.jpg?w=539" data-lightbox="roadtrip" data-title="8 P M Curfew Announced As 4th Day Of La Protests Turns Violent">
+											<img class="card-img v-image ads-img " src="https://www.mercurynews.com/wp-content/uploads/2020/05/LDN-L-DAYPROTEST-LAPACIFIC-0531-08c.jpg?w=539" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTZenkb0h9840DPJwXLxEWnPw0MCod_2lmmQ';" alt="8 P M Curfew Announced As 4th Day Of La Protests Turns Violent">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8 P M Curfew Announced As 4th Day Of La Protests Turns Violent</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ktla.com/wp-content/uploads/sites/4/2020/06/GettyImages-1244351600.jpg?w=2560&amp;h=1440&amp;crop=1" data-lightbox="roadtrip" data-title="Newsom Says California Cities Should End Use Of National Guard Against Protests Ktla">
+											<img class="card-img v-image ads-img " src="https://ktla.com/wp-content/uploads/sites/4/2020/06/GettyImages-1244351600.jpg?w=2560&amp;h=1440&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3A6NuJYAMaeB9k5pMgMaJlC2ZdZpkgGuWeQ';" alt="Newsom Says California Cities Should End Use Of National Guard Against Protests Ktla">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Newsom Says California Cities Should End Use Of National Guard Against Protests Ktla</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://inthesetimes.com/imager/s3_us-east-2_amazonaws_com/itt-images/GettyImages-1237882534_01c8ac7cc3b849e525e370bc51344120.jpg" data-lightbox="roadtrip" data-title="The National Guard Crushes Protests Just Like The Military Does In These Times">
+											<img class="card-img v-image ads-img " src="https://inthesetimes.com/imager/s3_us-east-2_amazonaws_com/itt-images/GettyImages-1237882534_01c8ac7cc3b849e525e370bc51344120.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7FgMF24H2ln4ueVeQRSH0YxNenIcAC8idCw';" alt="The National Guard Crushes Protests Just Like The Military Does In These Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The National Guard Crushes Protests Just Like The Military Does In These Times</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://ktla.com/wp-content/uploads/sites/4/2020/06/GettyImages-1244351600.jpg?w=2560&amp;h=1440&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7FgMF24H2ln4ueVeQRSH0YxNenIcAC8idCw';" alt="The National Guard Crushes Protests Just Like The Military Does In These Times">
+										<div class="card-body">
+						<h3 class="h5"><b>FBI Los Angeles FBILosAngeles January 20 2021 Anyone with information about the person or group responsible for the theft is urged to call the FBIs Los Angeles Field Office at 310 477-6565.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National guard los angeles live</strong>. 
+								
+																	The California National Guard is being deployed to Los Angeles overnight to support our local response to maintain peace and safety on the streets of our city. 
+																	Newsom Activates National Guard Ahead Of Inauguration - Los Angeles CA - The governor called on more 1000 guardsmen to help keep the peace amid threats of violence leading up to the. 
+																	The Humvee which the FBI said is worth about. 
+																	Newsom has called up 4500 National Guard troops to supplement overwhelmed police in Sacramento San Francisco Los Angeles Long Beach and Santa Monica following a weekend of violence that. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As hospitals are slammed by waves of COVID-19 patients the California National Guard is lending a hand. 
+																	Gavin Newsom for 500 to 700 members of the Guard to assist the 10000 Los Angeles Police Department officers. 
+																	Tuesday officials said in a news release. 
+																	Guard troops are stationed at 13 medical facilities in the state including Adventist Health. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	KABC -- The FBI announced a search Saturday for an armored military Humvee that was stolen from a National Guard facility in Bell. 
+																	Would he bring in the California National Guard to. 
+																	And thousands of protesters marching through Hollywood had arrived at Sunset Boulevard and Vine Street where they came across National Guard troops and police. 
+																	The National Guard has been called into Los Angeles which had violence protests for a fourth day By STEFANIE DAZIO JOHN ANTCZAK and DAISY NGUYEN Associated Press May 31 2020 751 AM. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Content from the Los Angeles. 
+																	Mayor Eric Garcetti said Saturday he asked Gov. 
+																	The National Guard has been activated in three states to dramatically ramp up US response to the coronavirus. 
+																	It was 1 pm. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LOS ANGELES AP A fourth day of violence in Los Angeles prompted the mayor to impose a rare citywide curfew and call in the National Guard after demonstrators clashed repeatedly with officers. 
+																	The theft of the 120000 military vehicle occurred. 
+																	The situation has grown so dire in Los Angeles a sprawling city with a population of nearly 4 million that the National Guard has been called in to move bodies into storage at the LA County Department of the Medical Examiner-Coroner. 
+																	Gavin Newsom is mobilizing 1000 members of the National Guard over concerns of civil unrest ahead of President Donald Trump leaving office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	MayorOfLA MayorOfLA May 31 2020. 
+																	Some in the crowd. 
+																	The Guard members were expected to. 
+																	Live look at SoCal. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	CNS - A military Humvee stolen from the National Guard Armory in Bell four days ago was recovered Wednesday the FBI announced. 
+																	Big Bear Santa. 
+																	LOS ANGELES AP Armed National Guard soldiers lined the steps of Los Angeles City Hall and cities across California declared curfews Sunday to head off more violence after unruly demonstrators. 
+																	The late-night announcement came just as Californias governor Gavin Newsom declared a state of emergency in Los Angeles where police have been attempting to enforce a curfew on protesters. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	People who were loved and will be missed. 
+																	Los Angeles Mayor Eric Garcetti was asked the question around 4 pm. 
+																	The Navy hospital ship Mercy has been ordered to sail for Los Angeles and the. 
+																	Every10Minutes someone dies of COVID-19 in LA County. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Saturday as television stations carried feeds of burning police cars. 
+																	National Guard Combat Humvee Stolen Prompting 10K Reward - Los Angeles CA - The FBI is asking for help finding an armored combat vehicle that was stolen from the National Guard in Bell Friday. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://img.huffingtonpost.com/asset/5efe45d91f00003904337697.png?cache=ekxilgia9g&amp;ops=crop_9_9_1166_1181,scalefit_630_noupscale" data-lightbox="roadtrip" data-title="A National Guardsman Sent To La Protests Is Under Investigation For Ties To Proud Boys Huffpost">
+											<img class="card-img v-image ads-img " src="https://img.huffingtonpost.com/asset/5efe45d91f00003904337697.png?cache=ekxilgia9g&amp;ops=crop_9_9_1166_1181,scalefit_630_noupscale" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqgh87dJLb5dNeUhkq4RZMQ8mFhvvpa0QZaA';" alt="A National Guardsman Sent To La Protests Is Under Investigation For Ties To Proud Boys Huffpost">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A National Guardsman Sent To La Protests Is Under Investigation For Ties To Proud Boys Huffpost</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.insider.com/5ed1824e4dca6837d4362466?width=1100&amp;format=jpeg&amp;auto=webp" data-lightbox="roadtrip" data-title="Trump Suggests National Guard Troops May Shoot Looters Business Insider">
+											<img class="card-img v-image ads-img " src="https://i.insider.com/5ed1824e4dca6837d4362466?width=1100&amp;format=jpeg&amp;auto=webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT19xJfICZ9U88S4ArxhjK2x7tAmYpDGd6UQg';" alt="Trump Suggests National Guard Troops May Shoot Looters Business Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Suggests National Guard Troops May Shoot Looters Business Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://im-media.voltron.voanews.com/Drupal/01live-166/styles/sourced/s3/ap-images/2020/05/8a0e98539c6e2b2a3496ec89d097eb4e.jpg?itok=Ulp8QMv5" data-lightbox="roadtrip" data-title="National Guard Called Up In 11 States To Handle Protests Voice Of America English">
+											<img class="card-img v-image ads-img " src="https://im-media.voltron.voanews.com/Drupal/01live-166/styles/sourced/s3/ap-images/2020/05/8a0e98539c6e2b2a3496ec89d097eb4e.jpg?itok=Ulp8QMv5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG8wgCvdQgXSG5J7-uUQfO8p4V9wbX6Vq25g';" alt="National Guard Called Up In 11 States To Handle Protests Voice Of America English">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Called Up In 11 States To Handle Protests Voice Of America English</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://inthesetimes.com/imager/s3_us-east-2_amazonaws_com/itt-images/militarism_policing_01c8ac7cc3b849e525e370bc51344120.jpg" data-lightbox="roadtrip" data-title="How Our Bloated Military Strengthens The Police State In These Times">
+											<img class="card-img v-image ads-img " src="https://inthesetimes.com/imager/s3_us-east-2_amazonaws_com/itt-images/militarism_policing_01c8ac7cc3b849e525e370bc51344120.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG9mR7TkNuX92uTlxVbWAtY_0f7P86h7aWqA';" alt="How Our Bloated Military Strengthens The Police State In These Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Our Bloated Military Strengthens The Police State In These Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ktla.com/wp-content/uploads/sites/4/2021/01/GettyImages-1230467464.jpg" data-lightbox="roadtrip" data-title="15 000 National Guard Troops To Deploy To D C Ahead Of Biden Inauguration Ktla">
+											<img class="card-img v-image ads-img " src="https://ktla.com/wp-content/uploads/sites/4/2021/01/GettyImages-1230467464.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9MwvC17U8ZStedQDYZoLpvQ_VCjIX5hla8g';" alt="15 000 National Guard Troops To Deploy To D C Ahead Of Biden Inauguration Ktla">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 000 National Guard Troops To Deploy To D C Ahead Of Biden Inauguration Ktla</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kpbs.media.clients.ellingtoncms.com/assets/img/2020/05/31/ap_20152167756767_wide-fd40b8ec8befeb29dfc4536071f6817a376ca981_t800.jpg?90232451fbcadccc64a17de7521d859a8f88077d" data-lightbox="roadtrip" data-title="National Guard Patrols Los Angeles After Night Of Violence Kpbs">
+											<img class="card-img v-image ads-img " src="https://kpbs.media.clients.ellingtoncms.com/assets/img/2020/05/31/ap_20152167756767_wide-fd40b8ec8befeb29dfc4536071f6817a376ca981_t800.jpg?90232451fbcadccc64a17de7521d859a8f88077d" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh22c27oqGPQOjFJYlE3ny9avkMu_Y19TX4w';" alt="National Guard Patrols Los Angeles After Night Of Violence Kpbs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Patrols Los Angeles After Night Of Violence Kpbs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/19437069/origin.jpg" data-lightbox="roadtrip" data-title="Marines Stole The Spotlight From The National Guard In The La Riots We Are The Mighty">
+											<img class="card-img v-image ads-img " src="https://www.wearethemighty.com/app/uploads/legacy/assets.rbl.ms/19437069/origin.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Obu3bJ-J1m-161kP08lfHDlSaaYogfRnUQ';" alt="Marines Stole The Spotlight From The National Guard In The La Riots We Are The Mighty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Marines Stole The Spotlight From The National Guard In The La Riots We Are The Mighty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mk0laprensalatice12d.kinstacdn.com/wp-content/uploads/2020/05/16565227w-780x470.jpg" data-lightbox="roadtrip" data-title="Protests Riots Sweep Us With Curfews National Guard Deployed La Prensa Latina Media">
+											<img class="card-img v-image ads-img " src="https://mk0laprensalatice12d.kinstacdn.com/wp-content/uploads/2020/05/16565227w-780x470.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjI6HZEXDuDHmlY8xJ4mXD5q1J7WL-7HjQew';" alt="Protests Riots Sweep Us With Curfews National Guard Deployed La Prensa Latina Media">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Protests Riots Sweep Us With Curfews National Guard Deployed La Prensa Latina Media</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.cnn.com/cnnnext/dam/assets/120617041058-la-riots-7-live-video.jpg" data-lightbox="roadtrip" data-title="Los Angeles Riots Fast Facts">
+											<img class="card-img v-image ads-img " src="https://cdn.cnn.com/cnnnext/dam/assets/120617041058-la-riots-7-live-video.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcIM4GqpCLJEzEJeUfvxRTxt30WiJc-9v4Gw';" alt="Los Angeles Riots Fast Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Los Angeles Riots Fast Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/a1/d1/2fa1d1fe719e1f19b41bc8d565b822bc.png" data-lightbox="roadtrip" data-title="Pin On Los Angeles Riots 1992">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/a1/d1/2fa1d1fe719e1f19b41bc8d565b822bc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjLghMOfj7xvBj1n-8PaTf_Ul2uQys-UOtAg';" alt="Pin On Los Angeles Riots 1992">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Los Angeles Riots 1992</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.cnbcfm.com/api/v1/image/106558473-1590896200399gettyimages-1236712287.jpeg?v=1590896346" data-lightbox="roadtrip" data-title="George Floyd Protest Updates Cities Impose Curfews">
+											<img class="card-img v-image ads-img " src="https://image.cnbcfm.com/api/v1/image/106558473-1590896200399gettyimages-1236712287.jpeg?v=1590896346" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmL9b_ENEp6uC_wDlRsuaTqeQYwNIbjKD5tA';" alt="George Floyd Protest Updates Cities Impose Curfews">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">George Floyd Protest Updates Cities Impose Curfews</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/94/5e/82945ec546e205b468f2b27bdc6f7328.jpg" data-lightbox="roadtrip" data-title="Pin On Let S Get Real Politics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/94/5e/82945ec546e205b468f2b27bdc6f7328.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVeVnFAcUQzqXjdu0Vq81vBQovKsEeuau1ow';" alt="Pin On Let S Get Real Politics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Let S Get Real Politics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c8/b1/15/c8b1150514e9a1a5ca4926474e54f452.jpg" data-lightbox="roadtrip" data-title="Kabc News Live Streaming Video Abc7 Los Angeles In 2020 Live Video Streaming Santa Monica Video Streaming">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c8/b1/15/c8b1150514e9a1a5ca4926474e54f452.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx-2QAn7n2boAOmXp-ILVcIVHGZ0X22KXCNw';" alt="Kabc News Live Streaming Video Abc7 Los Angeles In 2020 Live Video Streaming Santa Monica Video Streaming">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kabc News Live Streaming Video Abc7 Los Angeles In 2020 Live Video Streaming Santa Monica Video Streaming</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-army-alaska-nco-academy-facebook.html">Us Army Alaska Nco Academy Facebook</a></li>
+													<li class="list-group-item"><a href="/us-army-in-kabul-today.html">Us Army In Kabul Today</a></li>
+													<li class="list-group-item"><a href="/us-army-in-europe-news.html">Us Army In Europe News</a></li>
+													<li class="list-group-item"><a href="/us-army-in-syria-news.html">Us Army In Syria News</a></li>
+													<li class="list-group-item"><a href="/united-states-coast-guard-uniform-manual.html">United States Coast Guard Uniform Manual</a></li>
+													<li class="list-group-item"><a href="/urea-n.html">Urea N</a></li>
+													<li class="list-group-item"><a href="/us-army-army-10-knife.html">Us Army Army 10 Knife</a></li>
+													<li class="list-group-item"><a href="/united-states-coast-guard-academy-library.html">United States Coast Guard Academy Library</a></li>
+													<li class="list-group-item"><a href="/us-army-deployment-news.html">Us Army Deployment News</a></li>
+													<li class="list-group-item"><a href="/united-states-army-picatinny-arsenal.html">United States Army Picatinny Arsenal</a></li>
+													<li class="list-group-item"><a href="/us-army-crf.html">Us Army Crf</a></li>
+													<li class="list-group-item"><a href="/us-army-artillery-news.html">Us Army Artillery News</a></li>
+													<li class="list-group-item"><a href="/united-states-coast.html">United States Coast</a></li>
+													<li class="list-group-item"><a href="/united-states-coast-guard-academy-alumni-association.html">United States Coast Guard Academy Alumni Association</a></li>
+													<li class="list-group-item"><a href="/us-army-infantry-news.html">Us Army Infantry News</a></li>
+													<li class="list-group-item"><a href="/ups-downtown.html">Ups Downtown</a></li>
+													<li class="list-group-item"><a href="/unknown-soldier-tomb-guard-requirements.html">Unknown Soldier Tomb Guard Requirements</a></li>
+													<li class="list-group-item"><a href="/us-army-angel-of-death.html">Us Army Angel Of Death</a></li>
+													<li class="list-group-item"><a href="/us-army-ardec-picatinny-arsenal.html">Us Army Ardec Picatinny Arsenal</a></li>
+													<li class="list-group-item"><a href="/united-states-coast-guard-svg.html">United States Coast Guard Svg</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

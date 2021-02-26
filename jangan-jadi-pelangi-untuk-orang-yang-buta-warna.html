@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Jangan Jadi Pelangi Untuk Orang Yang Buta Warna - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Jangan Jadi Pelangi Untuk Orang Yang Buta Warna",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/videos/thumbnails/originals/8d/a7/2c/8da72cfd741c0b7899b8af7061d3bedf.0000001.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=jangan+jadi+pelangi+untuk+orang+yang+buta+warna",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Jangan Jadi Pelangi Untuk Orang Yang Buta Warna</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Evanescent__ has created a short video on TikTok with music Hilmira. Mencintaimu adalah seni menyakiti diri kata ilham. Jangan jadi pelangi untuk orang yang buta warna kata ilham. <br>				
+			</p>
+										<a class="badge badge-dark" href="/fanart-army.html">fanart army</a>
+											<a class="badge badge-light" href="/fallout-4-dc-guard-overhaul.html">fallout 4 dc guard overhaul</a>
+											<a class="badge badge-dark" href="/gb-sneakers-website.html">gb sneakers website</a>
+											<a class="badge badge-dark" href="/gb-council-website.html">gb council website</a>
+											<a class="badge badge-danger" href="/gamis-warna-hijau-army.html">gamis warna hijau army</a>
+											<a class="badge badge-secondary" href="/french-army-martial-art.html">french army martial art</a>
+											<a class="badge badge-primary" href="/fallout-3-national-guard-depot-door.html">fallout 3 national guard depot door</a>
+											<a class="badge badge-warning" href="/gana-sanjay-army-song.html">gana sanjay army song</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you've come to pay a visit to the right blog.  Our site gives you suggestions for viewing the maximum quality video and picture content, hunt and locate more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, so we recommend this movie for you to see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/videos/thumbnails/originals/c3/4c/79/c34c79a0465bcb14a5354e9469a4659b.0000001.jpg" data-lightbox="roadtrip" data-title="Video Jangan Jadi Pelangi Untuk Orang Yang Buta Warna Orang Warna Pelangi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/videos/thumbnails/originals/c3/4c/79/c34c79a0465bcb14a5354e9469a4659b.0000001.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXGN0zS5gm2W5rld-oKEIrRVhLqoGeomD8aQ';" alt="Video Jangan Jadi Pelangi Untuk Orang Yang Buta Warna Orang Warna Pelangi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Video Jangan Jadi Pelangi Untuk Orang Yang Buta Warna Orang Warna Pelangi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/videos/thumbnails/originals/8d/a7/2c/8da72cfd741c0b7899b8af7061d3bedf.0000001.jpg" data-lightbox="roadtrip" data-title="Video Jangan Pernah Jadi Pelangi Buat Mereka Yg Buta Warna Pelangi Warna">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/videos/thumbnails/originals/8d/a7/2c/8da72cfd741c0b7899b8af7061d3bedf.0000001.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwLVbcJpDOha5AFB-4yTBCXeGVdKTZ6KWJLg';" alt="Video Jangan Pernah Jadi Pelangi Buat Mereka Yg Buta Warna Pelangi Warna">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Video Jangan Pernah Jadi Pelangi Buat Mereka Yg Buta Warna Pelangi Warna</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/48/05/2c480581bf9ef8d8ecedf37160e0d358.jpg" data-lightbox="roadtrip" data-title="Sia Sia Kata Kata Indah Motivasi Kutipan Pelajaran Hidup">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/48/05/2c480581bf9ef8d8ecedf37160e0d358.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi41qqbnMtEMnKHV30LNcOkyI8fVLLyNIB3A';" alt="Sia Sia Kata Kata Indah Motivasi Kutipan Pelajaran Hidup">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sia Sia Kata Kata Indah Motivasi Kutipan Pelajaran Hidup</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b0/2e/44/b02e443ccdd98fb1618c4b5e83373a92.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Kim Syarifa Di Kutipan Motivasi Kutipan Motivasi Orang Motivasi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b0/2e/44/b02e443ccdd98fb1618c4b5e83373a92.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH7uaR3hc4fDpizU2z_loJEKl0ZN-vCgVKug';" alt="Pin Oleh Kim Syarifa Di Kutipan Motivasi Kutipan Motivasi Orang Motivasi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Kim Syarifa Di Kutipan Motivasi Kutipan Motivasi Orang Motivasi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/18/2e/69182eec1f1f0769a96021afb86ee16f.jpg" data-lightbox="roadtrip" data-title="Pin On Bullet Loop">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/18/2e/69182eec1f1f0769a96021afb86ee16f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKF4sNaMJkE5G_Ui1RjcS87HFzDklOkKAUOg';" alt="Pin On Bullet Loop">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Bullet Loop</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/60/96/db609669ba3935a3a8575dbc7dc72ff0.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Alifah Marda Di Random Kata Kata Indah Ungkapan Lucu Kutipan Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/60/96/db609669ba3935a3a8575dbc7dc72ff0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuT4V9f1j8w9Ir-8HzhWmf3P2jlxcxGlzIAg';" alt="Pin Oleh Alifah Marda Di Random Kata Kata Indah Ungkapan Lucu Kutipan Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Alifah Marda Di Random Kata Kata Indah Ungkapan Lucu Kutipan Humor</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/ee/41/2d/ee412d13c1bc60ebbccab76dec781a3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuT4V9f1j8w9Ir-8HzhWmf3P2jlxcxGlzIAg';" alt="Pin Oleh Alifah Marda Di Random Kata Kata Indah Ungkapan Lucu Kutipan Humor">
+										<div class="card-body">
+						<h3 class="h5"><b>Dari sekian banyaknya jangan Kalian pernah jadi apa.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Jangan jadi pelangi untuk orang yang buta warna</strong>. 
+								
+																	Jangan jadi pelangi untuk orang yang buta warna. 
+																	Jangan pernah jadi pelangi untuk orang yang buta warna. 
+																	Jangan lupa likecomenshare dan subscribe. 
+																	Keadilan sosial hanya berlaku bagi warna negara yang good looking - kata ilham Jangan jadi pelangi untuk orang yang buta warna - kata ilham Dia yang tertidur nyenyak setelah mematahkan hatimu tidak pantas untuk kamu ingat - kata ilham. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Untuk itu orang. 
+																	Monokuro ruangliterasi. 
+																	Event henna for desii2009 makeupsyari makeupindo makeupweddingmurah makeupwedding makeuppengantin makeupwisuda makeuplamaran makeupmurah dekorasibogor makeupbogor beautyclass henna hennabogor hennamurah MUA. 
+																	Jangan menjadi pelangi untuk dia yang buta warna repost instagram pshtjatim. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dia yang tertidur nyenyak setelah mematahkan hatimu tidak pantas untuk kamu ingat kata ilham. 
+																	Dan Jangan juga kamu menjadi PELANGI untuk Orang yang BUTA WARNA. 
+																	N a i l a 50 jangan pernah jadi pelangi untuk orang yang buta warna Posts Tagged. 
+																	SubscribeLike And Share----Follow IgEditorivnhdiprstyo_Follow Juga1Fahrudin_912dann_10323pciyak21_. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jangan lupa subscribe like and komen. 
+																	Dia gak jahat bapermu aja yang salah tempat. 
+																	Jangan lupa subscribe ya guys. 
+																	Sebenarnya ilham itu siapa sih Dia cuman bercanda harusnya kamu ketawa bukan malah jatuh cinta - kata ilham. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Buta warna pada dasarnya hanya kondisi yang membuat seseorang sulit mengenali warna. 
+																	Dia cuman bercanda harusnya kamu ketawa bukan malah jatuh cinta kata ilham. 
+																	Kata orang Jangan pernah menjadi rumah untuk dia yang masih keluyuran. 
+																	December 22 2020 at 336 PM Jangan Pernah Jadi Pelangi Untuk Orang Yang Buta Warna Related Pages See All. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For info silahkan DMWa. 
+																	Don t - People say Never be a. 
+																	Jangan lupa subscribe likedan nya agar saya makin semangat lagi membuat vidio nya. 
+																	Jangan Pernah Jadi Pelangi Untuk Orang Yang Buta Warna Jangan Pernah Jadi Pelangi Untuk Orang Yang Buta Warna Jump to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jangan menjadi pelangi untuk dia yang buta warna. 
+																	Fypage foryou xyzbca fypシ foryourpage fyp. 
+																	Jangan Pernah Menjadi NADA DERING untuk Orang yang menyukai KEHENINGAN. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sections of this page. 
+																	Mencintaimu adalah. 
+																	Jangan jadi payung untuk dia yang suka hujan Jangan menjadi bahu untuk dia yang suka bersandar di Tembok Dan masih banyak jangan lagii. 
+																	Namun pada beberapa kondisi yang serius buta warna dapat mengganggu penglihatan seseorang. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Press alt to open this menu. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/35/7e/60357e40f5ffd19159b1aa078c0be7e9.png" data-lightbox="roadtrip" data-title="Bucinn Kata Kata Indah Moto Kehidupan Kutipan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/35/7e/60357e40f5ffd19159b1aa078c0be7e9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCBb1_kIDQj_bWFAM7a1fMvudpUL9MlltIiA';" alt="Bucinn Kata Kata Indah Moto Kehidupan Kutipan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bucinn Kata Kata Indah Moto Kehidupan Kutipan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/97/04/859704e39abaa47db2b04774bec4c7ac.jpg" data-lightbox="roadtrip" data-title="Pelangi Pelangi Motivasi Inspirasi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/97/04/859704e39abaa47db2b04774bec4c7ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx0JiTN02vYKtGUEV2V7tgFELpnCMPXrsOvA';" alt="Pelangi Pelangi Motivasi Inspirasi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pelangi Pelangi Motivasi Inspirasi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/52/ee/f452eeb8506d860ed16a9a0322d0fb18.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Erlangga Serrel Di Bucin Kutipan Instagram Lucu Ungkapan Romantis Kata Kata Motivasi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/52/ee/f452eeb8506d860ed16a9a0322d0fb18.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeLF3o_zK5MIMOojCODf_2QeahTu01Yh8asA';" alt="Pin Oleh Erlangga Serrel Di Bucin Kutipan Instagram Lucu Ungkapan Romantis Kata Kata Motivasi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Erlangga Serrel Di Bucin Kutipan Instagram Lucu Ungkapan Romantis Kata Kata Motivasi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b0/3d/53/b03d53d6fc765dedec3a0eb171f71e35.jpg" data-lightbox="roadtrip" data-title="Be Happy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b0/3d/53/b03d53d6fc765dedec3a0eb171f71e35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0NjzTb4_zZ406xdUQhxNoH9BcuaH7coyf6A';" alt="Be Happy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Be Happy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/19/b2/db/19b2db01f16719e9c8bef862b325dd01.jpg" data-lightbox="roadtrip" data-title="Teruntuk Kalian Sajak Pelangi Penyair">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/19/b2/db/19b2db01f16719e9c8bef862b325dd01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu1dPtiZUczNpsuAvMaDnpGP2KlvAYRoxASA';" alt="Teruntuk Kalian Sajak Pelangi Penyair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Teruntuk Kalian Sajak Pelangi Penyair</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/7a/6f/0d7a6fda999fdac17c682cb62c99d319.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Sellaa Di Quetos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/7a/6f/0d7a6fda999fdac17c682cb62c99d319.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkdWC7S4tPWd5UrnkZjuIxffwN9LXeZpPlRQ';" alt="Pin Oleh Sellaa Di Quetos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Sellaa Di Quetos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/e3/55/ce/e355cee4390d2efa1cca9af6774fc09b.jpg" data-lightbox="roadtrip" data-title="Pelangi Di 2020 Pelangi Warna Orang">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/e3/55/ce/e355cee4390d2efa1cca9af6774fc09b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDUtcuOV4oJTXJeKUVNJojLGkKT3mvw93yMg';" alt="Pelangi Di 2020 Pelangi Warna Orang">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pelangi Di 2020 Pelangi Warna Orang</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/58/35/4a/58354a9c9f75ff77565a290acbd75a38.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Nyy Di Q U O T E S">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/58/35/4a/58354a9c9f75ff77565a290acbd75a38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVopAH9-0ee9Q4Agin2UeJi6rayAoSqiY75w';" alt="Pin Oleh Nyy Di Q U O T E S">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Nyy Di Q U O T E S</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0a/63/f1/0a63f15594ed5e5c1fd6e87522122e39.jpg" data-lightbox="roadtrip" data-title="Mungkin Saya Saja Yang Terlalu Bodoh Berusaha Menjadi Pelangi Bagi Orang Yang Buta Warna Tonton Sampai Habis In 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0a/63/f1/0a63f15594ed5e5c1fd6e87522122e39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyC3rPMl7t0K5OyejJvnzItR_LMsDFByPH3w';" alt="Mungkin Saya Saja Yang Terlalu Bodoh Berusaha Menjadi Pelangi Bagi Orang Yang Buta Warna Tonton Sampai Habis In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mungkin Saya Saja Yang Terlalu Bodoh Berusaha Menjadi Pelangi Bagi Orang Yang Buta Warna Tonton Sampai Habis In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ee/41/2d/ee412d13c1bc60ebbccab76dec781a3d.jpg" data-lightbox="roadtrip" data-title="Tebak Tebakan Lucu Warna Buat Hidupmu Lebih Menyenangkan Yedepe Com Lucu Tebak Tebakan Warna">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ee/41/2d/ee412d13c1bc60ebbccab76dec781a3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtoXtO1V_sSshg3AJYiewZvqZ5MJd1vpy5Sw';" alt="Tebak Tebakan Lucu Warna Buat Hidupmu Lebih Menyenangkan Yedepe Com Lucu Tebak Tebakan Warna">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tebak Tebakan Lucu Warna Buat Hidupmu Lebih Menyenangkan Yedepe Com Lucu Tebak Tebakan Warna</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/a4/24/75/a424759fe70b9c68aa8f088f55793c59.jpg" data-lightbox="roadtrip" data-title="Video In 2021">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/a4/24/75/a424759fe70b9c68aa8f088f55793c59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIVjBpiZ1EnotGJROV0qaK7U3FZvrfColbyA';" alt="Video In 2021">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Video In 2021</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/videos/thumbnails/originals/07/20/95/072095360d29b913dc2e869e33c7c43a.0000001.jpg" data-lightbox="roadtrip" data-title="Pin Di Tik Tok">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/videos/thumbnails/originals/07/20/95/072095360d29b913dc2e869e33c7c43a.0000001.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJDEDJQgHjCCcINPntAp0rTEBkkiPI8kLSVg';" alt="Pin Di Tik Tok">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Tik Tok</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/9f/75/c79f75a4ee33e4de9a64cf1383ef4c67.jpg" data-lightbox="roadtrip" data-title="Pin Di Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/9f/75/c79f75a4ee33e4de9a64cf1383ef4c67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlI3vWfs8QEzGG55FosiptekKxFE4tD8oSNA';" alt="Pin Di Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/caring-for-life.html">Caring For Life</a></li>
+													<li class="list-group-item"><a href="/celana-warna-army-cocok-dengan-warna-apa.html">Celana Warna Army Cocok Dengan Warna Apa</a></li>
+													<li class="list-group-item"><a href="/caring-jobs-near-me.html">Caring Jobs Near Me</a></li>
+													<li class="list-group-item"><a href="/caring-bahasa-jawa.html">Caring Bahasa Jawa</a></li>
+													<li class="list-group-item"><a href="/cbis-fe.html">Cbis Fe</a></li>
+													<li class="list-group-item"><a href="/cargo-pants-army-pants.html">Cargo Pants Army Pants</a></li>
+													<li class="list-group-item"><a href="/caring-behavior-adalah.html">Caring Behavior Adalah</a></li>
+													<li class="list-group-item"><a href="/cerdo-y-colesterol.html">Cerdo Y Colesterol</a></li>
+													<li class="list-group-item"><a href="/cargo.html">Cargo</a></li>
+													<li class="list-group-item"><a href="/caring-artinya.html">Caring Artinya</a></li>
+													<li class="list-group-item"><a href="/cerdik-adalah.html">Cerdik Adalah</a></li>
+													<li class="list-group-item"><a href="/catering-harian.html">Catering Harian</a></li>
+													<li class="list-group-item"><a href="/cer-diet.html">Cer Diet</a></li>
+													<li class="list-group-item"><a href="/cbgb-t-shirt-uk.html">Cbgb T Shirt Uk</a></li>
+													<li class="list-group-item"><a href="/cerdo-yorkshire.html">Cerdo Yorkshire</a></li>
+													<li class="list-group-item"><a href="/caring-xmas-quotes.html">Caring Xmas Quotes</a></li>
+													<li class="list-group-item"><a href="/caring-for-plants.html">Caring For Plants</a></li>
+													<li class="list-group-item"><a href="/cemetery-guard.html">Cemetery Guard</a></li>
+													<li class="list-group-item"><a href="/cendekiawan.html">Cendekiawan</a></li>
+													<li class="list-group-item"><a href="/caring-fair-white-moisturizer.html">Caring Fair White Moisturizer</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Guard Dc Unarmed - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Guard Dc Unarmed",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/474x/7a/ed/1f/7aed1ffdc24dc2899c71e460d174a909.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+guard+dc+unarmed",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Guard Dc Unarmed</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Almost a month after violent. The District of Columbia National Guard is responding to a request to support law enforcement officials and has dispatched unarmed personnel with others on standby National Guard spokesman Major Robert Perino said in a statement to CNN. Capitol in the wake of the deadly Jan. <br>				
+			</p>
+										<a class="badge badge-light" href="/salvation-army-commercial-song.html">salvation army commercial song</a>
+											<a class="badge badge-warning" href="/rfp-indonesia.html">rfp indonesia</a>
+											<a class="badge badge-secondary" href="/reba-mcentire-and-twin.html">reba mcentire and twin</a>
+											<a class="badge badge-info" href="/ri-national-guard-military-ball.html">ri national guard military ball</a>
+											<a class="badge badge-warning" href="/sa-army-songs-download.html">sa army songs download</a>
+											<a class="badge badge-dark" href="/rickenbacker-los-angeles.html">rickenbacker los angeles</a>
+											<a class="badge badge-success" href="/rsp-national-guard.html">rsp national guard</a>
+											<a class="badge badge-danger" href="/rickenbacker-ang-oh.html">rickenbacker ang oh</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to visit the right site.  Our website provides you with suggestions for viewing the maximum quality video and image content, search and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie for you to see.  You can also contribute to supporting this site by sharing videos and graphics that you like on this site on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ae/8e/93/ae8e93c651b0acecdd069b98cf88098b.jpg" data-lightbox="roadtrip" data-title="Pin On News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ae/8e/93/ae8e93c651b0acecdd069b98cf88098b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE91nFL8rev3P9qHkhIl8_uBjDu8-f2aCb64zE_P0J0UjsUCt8to245f-XNK4n7jxvAnWXeNQ1jM3FbRjp76o&amp;ec=45774424';" alt="Pin On News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/80/8d/83808dca1c17c9d6edfb462c44fc6b36.png" data-lightbox="roadtrip" data-title="No One Should Be Leaving Their House Headed Toward A Business Or Event And Hoping They Make It Home Event Security Armed Security Guard Security Guard Services">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/80/8d/83808dca1c17c9d6edfb462c44fc6b36.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSovBbzuvkvI5tOc5QSPqx8oIphNOD3WvW3Z_3xFe_lfpe_NAx_eQy3mTmg27hcJDlY7Bd1PPX7KiT2ODAiGQE&amp;ec=45774424';" alt="No One Should Be Leaving Their House Headed Toward A Business Or Event And Hoping They Make It Home Event Security Armed Security Guard Security Guard Services">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">No One Should Be Leaving Their House Headed Toward A Business Or Event And Hoping They Make It Home Event Security Armed Security Guard Security Guard Services</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/52/99/cb5299b051417ea09545062d9cc1469b.jpg" data-lightbox="roadtrip" data-title="Pin On Word">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/52/99/cb5299b051417ea09545062d9cc1469b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJsBph9lHXC5Nii136BYtb3a-0BtfNzlmgnfSha3czwlRZIJ7CFLtnFH4JMVM1HyNcgdRANYEeh_khRKlEbbc&amp;ec=45774424';" alt="Pin On Word">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Word</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/de/62/89de6226797292ce10ca43459a42ec0c.jpg" data-lightbox="roadtrip" data-title="Pin On Historical Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/de/62/89de6226797292ce10ca43459a42ec0c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5VqWoaL95ztBI2nmn5mGqq2AY7uhvpLTR_Qi7A5cTnHc1tIwqwmPlz2svCx5RO14gLOMgRS9r4WtSQpgEvKM&amp;ec=45774424';" alt="Pin On Historical Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Historical Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bf/8f/d3/bf8fd3d250c43a88297165aaff149036.jpg" data-lightbox="roadtrip" data-title="The Main Aim Behind Developing This Informative Blog Is To Make You Aware About Several Security G Security Guard Jobs Security Guard Services Security Service">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bf/8f/d3/bf8fd3d250c43a88297165aaff149036.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREmnRAOxEowQa3KPKteVHoJbDKTTbeFbCKuqdr0zEVBMaaz2JYNK_X0ic91axWjiX9opVL3A0VTPALDgIAxb0&amp;ec=45774424';" alt="The Main Aim Behind Developing This Informative Blog Is To Make You Aware About Several Security G Security Guard Jobs Security Guard Services Security Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Main Aim Behind Developing This Informative Blog Is To Make You Aware About Several Security G Security Guard Jobs Security Guard Services Security Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/d0/08/21d00881d036f2161e4f179a4a252343.jpg" data-lightbox="roadtrip" data-title="2013 Air Force Nationals Unarmed Champions Washington D C Soccer Field Air Force Champion">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/d0/08/21d00881d036f2161e4f179a4a252343.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUzxmjbruEr6eRQSWKe29NP35-HQnVjowiutv7OhWxpeiFgA9f6_fDMdNA3uDrf1PtuItgq_f8AAM6YDylmWA&amp;ec=45774424';" alt="2013 Air Force Nationals Unarmed Champions Washington D C Soccer Field Air Force Champion">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2013 Air Force Nationals Unarmed Champions Washington D C Soccer Field Air Force Champion</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/2d/96/47/2d96471c79562139b069818e3d30794e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUzxmjbruEr6eRQSWKe29NP35-HQnVjowiutv7OhWxpeiFgA9f6_fDMdNA3uDrf1PtuItgq_f8AAM6YDylmWA&amp;ec=45774424';" alt="2013 Air Force Nationals Unarmed Champions Washington D C Soccer Field Air Force Champion">
+										<div class="card-body">
+						<h3 class="h5"><b>The deployment of the National Guard in Washington DC since the riots at the US Capitol on January 6 has already cost a staggering 438 million 319 million.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National guard dc unarmed</strong>. 
+								
+																	Park Police in securing Washingtons national monuments. 
+																	National Guard troops were activated and on standby to assist law enforcement personnel with protecting some historical monuments US. 
+																	National Guard stand on the steps of the Lincoln Memorial as demonstrators participate in a peaceful protest against police brutality and the death of George Floyd on June 2. 
+																	Military officials said Thursday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The District of Columbia National Guard is responding to a request to support law enforcement officials and has dispatched unarmed personnel with others on stand-by National Guard spokesman Major Robert Perino told CNN in a statement. 
+																	The request comes as President Trump and other administration officials. 
+																	Trump Offered to Deploy 10000 National Guard Troops in DC on Jan 6. 
+																	In the face of severe criticism for its response to the George Floyd protests in June the District of Columbia National Guard will be unarmed in the nations capital to support local law. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He added Activated Guardsmen are expected to provide security for local monuments and critical infrastructure The guard units will be expected to remain in Washington DC through July 4. 
+																	The National Guard said in response to a query Guardsmen supporting the civil disturbance are unarmed The move comes a day before there are expected to be hundreds of thousands of protesters taking part in demonstrations in Washington DC on Saturday. 
+																	Activated Guardsmen are expected to provide security for local monuments and critical infrastructure. 
+																	Woman shot DEAD by Capitol Police inside the Capitol Building. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Guard has agreed to send unarmed members to assist US. 
+																	WASHINGTON Reuters - Hundreds of unarmed Washington DC. 
+																	Through the weekend 6200 National Guard personnel will deploy to the nations capital and remain in the region for a minimum of 30 days. 
+																	By Idrees Ali WASHINGTON Reuters - Hundreds of unarmed Washington DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The video footage released by InfoWars shows the unarmed Trump supporter donning a Trump flag climb up to windows near the Senate floor she was then shot by DC Police and falls back towards to the crowd bleeding heavily. 
+																	HOMELAND SECURITY Following the violent riot in the US. 
+																	The District of Columbia National Guard is responding to a request to support law enforcement officials and has dispatched unarmed personnel with others on stand-by National Guard spokesman. 
+																	Mark Meadows By Roman Balmakov February 10 2021 Updated. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Washington CNN Acting Defense Secretary Christopher Miller on Monday approved a request from the mayor of Washington to deploy DC National Guard forces to the city to support local authorities. 
+																	Activated Guardsmen are expected to provide security for local monuments and critical infrastructure. 
+																	National Guard troops reinforce the security zone on Capitol Hill in Washington Tuesday Jan. 
+																	19 2021 before President-elect Joe Biden is sworn in as the 46th president on Wednesday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WASHINGTON The cost of deploying about 26000 National Guard troops to secure the US. 
+																	National Guard troops were activated and on standby to assist law enforcement personnel with protecting some historical. 
+																	The troops who are unarmed will monitor traffic control. 
+																	6 riot is nearly 500 million US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Violent BLM riots had raged unhindered in Washington for weeks in the summer of 2020 but the left-wing mayor Muriel Bowser called in the National Guard against Trump supporters and white supremacists after protesters massed at the Capitol building on Wednesday during the Save America Rally. 
+																	Members of the DC. 
+																	However unlike prior deployments where the Guard was unarmed and used mostly for presence and crowd and traffic control some of these troops are now armed and ready. 
+																	6 the National Guard from several states have been mobilized and deployed to Washington DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The District of Columbia National Guard is responding to a request to support law enforcement officials and has dispatched unarmed personnel with others on stand-by Perino said. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/94/0d/12940d942194b8867278348fda1fe3d8.png" data-lightbox="roadtrip" data-title="Pin On Historical Events In America">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/94/0d/12940d942194b8867278348fda1fe3d8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQParKYkucapGJgMtfAcn2XVVRon4yWfgrf0rme0S1CyNEFJFj32p6TMYDzFezMDGAm6EHgqglA-oKfFuDT0ZU&amp;ec=45774424';" alt="Pin On Historical Events In America">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Historical Events In America</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5b/90/bb/5b90bbc7cd41eb2d31be06f94bbeea58.jpg" data-lightbox="roadtrip" data-title="Pin On George Floyd Death">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5b/90/bb/5b90bbc7cd41eb2d31be06f94bbeea58.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXTCwlcfBNKfcUc2If_3by2q2JL30A4TCgHqH06U2XBs4zLHnmLhvmMlv5RBIPTdGLjK5vhHCItGwZLhVcdG8&amp;ec=45774424';" alt="Pin On George Floyd Death">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On George Floyd Death</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/0a/50/42/0a504253872ecf316716dbba3d8201bf.jpg" data-lightbox="roadtrip" data-title="Reasons For Hiring Security Patrol Service For Your Business In 2020 Security Guard Security Guard Companies Security Service">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/0a/50/42/0a504253872ecf316716dbba3d8201bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSREF1raXYIsXYRyX6nDr1HObgORh55XnKk5pu9xWoQp0f7WVYT8tYR57RE5-i9U2upkUoxlXNgNf8kXdrco34&amp;ec=45774424';" alt="Reasons For Hiring Security Patrol Service For Your Business In 2020 Security Guard Security Guard Companies Security Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reasons For Hiring Security Patrol Service For Your Business In 2020 Security Guard Security Guard Companies Security Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/dc/f9/39dcf94c25e6c0c06e732fdadda37825.jpg" data-lightbox="roadtrip" data-title="Pin On Arctic Tough">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/dc/f9/39dcf94c25e6c0c06e732fdadda37825.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfWpYgG7J0SvJgSvy7a1MuY_DxbLyvjgguP44U-mlMMm0jiHFLR58nINnPV2Ij3a45uE1aKMstnDX6i_urZoc&amp;ec=45774424';" alt="Pin On Arctic Tough">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Arctic Tough</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/96/47/2d96471c79562139b069818e3d30794e.jpg" data-lightbox="roadtrip" data-title="Security Guard Responsibilities Fyrewall Inc Security Guard Services Security Guard Security Service">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/96/47/2d96471c79562139b069818e3d30794e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1xR94gFvyqqOXCSMXPIlendUJJxfEt99hJe9gUoY12ERLCJz2oq2NDNjiqEwPcv5YMhGGfuBlst6MkIVK1Pw&amp;ec=45774424';" alt="Security Guard Responsibilities Fyrewall Inc Security Guard Services Security Guard Security Service">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Security Guard Responsibilities Fyrewall Inc Security Guard Services Security Guard Security Service</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6e/3c/41/6e3c411dd56b08dca8b747a2bd77dea7.png" data-lightbox="roadtrip" data-title="Discover All About Hiring Of A Security Guard Securabilityprotection In 2020 Security Guard Services Security Guard Retail Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6e/3c/41/6e3c411dd56b08dca8b747a2bd77dea7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIz4O73BIIebj5xmtONEheGwhZqf6VjsrlaMYa1aTFQiWNeVDsjoA4Qn40CFzS2Fr-JD8ZlZnJu4D9PxRZPr8&amp;ec=45774424';" alt="Discover All About Hiring Of A Security Guard Securabilityprotection In 2020 Security Guard Services Security Guard Retail Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Discover All About Hiring Of A Security Guard Securabilityprotection In 2020 Security Guard Services Security Guard Retail Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/7a/ed/1f/7aed1ffdc24dc2899c71e460d174a909.jpg" data-lightbox="roadtrip" data-title="We Pavan Hans Security Services Is One Of The Foremost Companies Highly Indulged Providing Security Services T Security Guard Security Guard Services Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/7a/ed/1f/7aed1ffdc24dc2899c71e460d174a909.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7lR_P8BfUQJXXDgYsv0p7yHeTmK6iMdqgfzykE986P8Pejf-3VLCEW4R2QI9HpB9xZfdvvBoCT6LpM42s3k&amp;ec=45774424';" alt="We Pavan Hans Security Services Is One Of The Foremost Companies Highly Indulged Providing Security Services T Security Guard Security Guard Services Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Pavan Hans Security Services Is One Of The Foremost Companies Highly Indulged Providing Security Services T Security Guard Security Guard Services Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ac/98/bb/ac98bba09b8b59f00e3b1f1193ca5df9.jpg" data-lightbox="roadtrip" data-title="Our Guide On Starting A Security Guard Company Covers All The Essential Information To Help You Security Guard Criminal Justice Major Security Guard Companies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ac/98/bb/ac98bba09b8b59f00e3b1f1193ca5df9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPMTIMQ92_qyg9jQbDezH0DKyEFWhwpee6gG2Sej9QE3cHSWGZGbQ451TB8pAp6Wvvy0a0ncyq7sOtTLzt2rc&amp;ec=45774424';" alt="Our Guide On Starting A Security Guard Company Covers All The Essential Information To Help You Security Guard Criminal Justice Major Security Guard Companies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our Guide On Starting A Security Guard Company Covers All The Essential Information To Help You Security Guard Criminal Justice Major Security Guard Companies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/50/08/f2/5008f2ec063a7ba01a9a7e5c62db0650.png" data-lightbox="roadtrip" data-title="Armed Guards In Lynchburg And Fredericksburg Va Event Security Arm Guard Private Investigator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/50/08/f2/5008f2ec063a7ba01a9a7e5c62db0650.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5Ra6BM2yb_PbsozahO-9iC6u4wGKDYRcgvVtML8OJtYG6AfoeNtMTb54hdmG8OGaOtjGBUjtR313gpEOcl4&amp;ec=45774424';" alt="Armed Guards In Lynchburg And Fredericksburg Va Event Security Arm Guard Private Investigator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armed Guards In Lynchburg And Fredericksburg Va Event Security Arm Guard Private Investigator</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/09/bf/bc09bf693e6f092efa6712d700b80311.jpg" data-lightbox="roadtrip" data-title="Pin On Memories From There To Here">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/09/bf/bc09bf693e6f092efa6712d700b80311.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC8pqeXGHn34C1_-OcHpat5B3ebLEPEfcGC193Gch0XuYXHdB9UomAfzb9OpNvgG-AcOIPB1TMR1H0FXSwbOs&amp;ec=45774424';" alt="Pin On Memories From There To Here">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Memories From There To Here</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/b2/ab/43/b2ab43e8c1c64036b3952fea62b24b78.jpg" data-lightbox="roadtrip" data-title="Pin Auf Latest News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/b2/ab/43/b2ab43e8c1c64036b3952fea62b24b78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCJBEPIjlktX2wMuKvyuUWYG2TdxoeFtuGJ0DvVe6jCv818MWfQ_C7HKo16buTQMy4qPVLL816ULltPAc-uRA&amp;ec=45774424';" alt="Pin Auf Latest News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Auf Latest News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3b/34/ce/3b34cefd31512270276d5cfaebe2666f.jpg" data-lightbox="roadtrip" data-title="Auto Theft Subject Wanted In The Eighth District By Nopd In 2020 Baltimore County Police Metropolitan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3b/34/ce/3b34cefd31512270276d5cfaebe2666f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSplg1a_zpNUomDRjjmCc2jCvCFdtSzia5-9eozu5Ed1JtyoTY9N0y2otkO-YSXevmBEPBNeSr-NNLNyrhV998&amp;ec=45774424';" alt="Auto Theft Subject Wanted In The Eighth District By Nopd In 2020 Baltimore County Police Metropolitan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Auto Theft Subject Wanted In The Eighth District By Nopd In 2020 Baltimore County Police Metropolitan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/b5/c8/45b5c870f69328d6bae1c780130cefaf.jpg" data-lightbox="roadtrip" data-title="Security Guard A Security Guard Stands At The Office Spon Guard Security Security Office Security Guard Security Guard Services Security Consultant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/b5/c8/45b5c870f69328d6bae1c780130cefaf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSerR_5sxlibB_ytjsiRiljdeSlHlR54aRcWZSgs6v2KMdjfPNfQS8408yYa-n6Iv4m1ZyO5L1xbNxn92a-stM&amp;ec=45774424';" alt="Security Guard A Security Guard Stands At The Office Spon Guard Security Security Office Security Guard Security Guard Services Security Consultant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Security Guard A Security Guard Stands At The Office Spon Guard Security Security Office Security Guard Security Guard Services Security Consultant</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/cal-state-guard.html">Cal State Guard</a></li>
+													<li class="list-group-item"><a href="/baju-warna-hijau-army-cocok-dengan-warna-apa.html">Baju Warna Hijau Army Cocok Dengan Warna Apa</a></li>
+													<li class="list-group-item"><a href="/bts-army-songs-mp3-download.html">Bts Army Songs Mp3 Download</a></li>
+													<li class="list-group-item"><a href="/batang-logam-yang-sama-ukurannya-tetapi-terbuat-dari-logam-yang-berbeda-digabung-seperti-pada-gambar.html">Batang Logam Yang Sama Ukurannya Tetapi Terbuat Dari Logam Yang Berbeda Digabung Seperti Pada Gambar</a></li>
+													<li class="list-group-item"><a href="/batang-logam-dengan-panjang-2-m-memiliki-luas-penampang-20cm2.html">Batang Logam Dengan Panjang 2 M Memiliki Luas Penampang 20cm2</a></li>
+													<li class="list-group-item"><a href="/baju-warna-army-cocok-dengan-jilbab.html">Baju Warna Army Cocok Dengan Jilbab</a></li>
+													<li class="list-group-item"><a href="/baju-rajut-warna-army.html">Baju Rajut Warna Army</a></li>
+													<li class="list-group-item"><a href="/bah-calculator-army-national-guard.html">Bah Calculator Army National Guard</a></li>
+													<li class="list-group-item"><a href="/bts-songs-for-new-army.html">Bts Songs For New Army</a></li>
+													<li class="list-group-item"><a href="/body-fat-percentage-national-guard.html">Body Fat Percentage National Guard</a></li>
+													<li class="list-group-item"><a href="/average-military-rank-by-age.html">Average Military Rank By Age</a></li>
+													<li class="list-group-item"><a href="/arnold-us-army.html">Arnold Us Army</a></li>
+													<li class="list-group-item"><a href="/best-army-war-movies-of-all-time.html">Best Army War Movies Of All Time</a></li>
+													<li class="list-group-item"><a href="/best-army-songs-hindi.html">Best Army Songs Hindi</a></li>
+													<li class="list-group-item"><a href="/benefits-of-joining-the-national-guard.html">Benefits Of Joining The National Guard</a></li>
+													<li class="list-group-item"><a href="/artis-indonesia-yang-army.html">Artis Indonesia Yang Army</a></li>
+													<li class="list-group-item"><a href="/buffalo-soldier-national-museum.html">Buffalo Soldier National Museum</a></li>
+													<li class="list-group-item"><a href="/barmy-army-songs-lyrics.html">Barmy Army Songs Lyrics</a></li>
+													<li class="list-group-item"><a href="/benefits-for-joining-the-national-guard.html">Benefits For Joining The National Guard</a></li>
+													<li class="list-group-item"><a href="/british-soldier-guard.html">British Soldier Guard</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Are Soldiers Allowed To Keep Their Weapons - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Are Soldiers Allowed To Keep Their Weapons",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/ab/7a/6c/ab7a6c527c05eb9a39b76d56f5e1e999.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=are+soldiers+allowed+to+keep+their+weapons",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Are Soldiers Allowed To Keep Their Weapons</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The House of Representatives on Thursday followed the Senate in backing a motion that will allow around 2000 specialist troops such as those guarding airports. Serving and former soldiers have been allowed to keep their weapons at home since World War II. Kate Garraway main leads the stars taking part in a 60-second video encouraging people to play their part in helping bring an end to the pandemic. <br>				
+			</p>
+										<a class="badge badge-info" href="/army-orange-pt-belt.html">army orange pt belt</a>
+											<a class="badge badge-dark" href="/army-orange-unit.html">army orange unit</a>
+											<a class="badge badge-info" href="/army-orange-vector.html">army orange vector</a>
+											<a class="badge badge-dark" href="/army-ranger-equivalent.html">army ranger equivalent</a>
+											<a class="badge badge-warning" href="/army-ranger-emblem.html">army ranger emblem</a>
+											<a class="badge badge-danger" href="/army-pants-cargo-jeans.html">army pants cargo jeans</a>
+											<a class="badge badge-success" href="/army-ranger-gear.html">army ranger gear</a>
+											<a class="badge badge-danger" href="/army-quartermaster-insignia.html">army quartermaster insignia</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to pay a visit to the ideal site.  Our site provides you with hints for seeing the maximum quality video and picture content, search and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this movie that you view.  It is also possible to contribute to supporting this website by sharing videos and graphics that you enjoy on this blog on your social networking accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ff/13/7a/ff137a379eac56328f3e87b1f719ec98.jpg" data-lightbox="roadtrip" data-title="Hands In Pockets Military Humor Special Forces Military Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ff/13/7a/ff137a379eac56328f3e87b1f719ec98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeJBBHM5GSmLsE23vZW8mumjB_jhMtyRUNDw&amp;ec=45774421';" alt="Hands In Pockets Military Humor Special Forces Military Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hands In Pockets Military Humor Special Forces Military Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/7a/6c/ab7a6c527c05eb9a39b76d56f5e1e999.jpg" data-lightbox="roadtrip" data-title="Pin On The Truth Be Told">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/7a/6c/ab7a6c527c05eb9a39b76d56f5e1e999.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5noxOzx2NEGcI1HlZbYX6VUVLlD4BN78ypQ&amp;ec=45774421';" alt="Pin On The Truth Be Told">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On The Truth Be Told</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/b3/a3/56b3a34985aab8af523403e2d023915b.jpg" data-lightbox="roadtrip" data-title="Check Out Our New Apparels And Beard Care Products Beardedmoney And Follow Beardedmoney Www Beard Military Special Forces Military Soldiers Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/b3/a3/56b3a34985aab8af523403e2d023915b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTooyi9f0B_sbpkr8H9OuQ0JcHeRZXwTpb7RA&amp;ec=45774421';" alt="Check Out Our New Apparels And Beard Care Products Beardedmoney And Follow Beardedmoney Www Beard Military Special Forces Military Soldiers Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Check Out Our New Apparels And Beard Care Products Beardedmoney And Follow Beardedmoney Www Beard Military Special Forces Military Soldiers Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/2a/94/062a94bafde7aae917d69c42a01520cc.jpg" data-lightbox="roadtrip" data-title="Israeli Guns On The Beach Idf Women Female Soldier Girl Guns">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/2a/94/062a94bafde7aae917d69c42a01520cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtyCB2V21hPRDFB87t-mjJ_kCLvvmLvQ0fEQ&amp;ec=45774421';" alt="Israeli Guns On The Beach Idf Women Female Soldier Girl Guns">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Israeli Guns On The Beach Idf Women Female Soldier Girl Guns</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bd/b0/21/bdb0216b5de52f74909bc0170c22e395.jpg" data-lightbox="roadtrip" data-title="Every Friday Wear The Shirt Everyday Keep Them In Your Thoughts Military Photos Military Infantry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bd/b0/21/bdb0216b5de52f74909bc0170c22e395.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAtyhq9JwSaKMeZbKsBquvFbFXlAkS1oDGcg&amp;ec=45774421';" alt="Every Friday Wear The Shirt Everyday Keep Them In Your Thoughts Military Photos Military Infantry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Every Friday Wear The Shirt Everyday Keep Them In Your Thoughts Military Photos Military Infantry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/e6/5b/64e65b7cb85d53422e3eced1be3d144a.jpg" data-lightbox="roadtrip" data-title="Keep The Kids Safe By Letting Them Understand Firearms Guns Firearms Training Guns Safety">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/e6/5b/64e65b7cb85d53422e3eced1be3d144a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Xlup7_bxhe7kD8j-YGpZ6tSpupmWCE6hSg&amp;ec=45774421';" alt="Keep The Kids Safe By Letting Them Understand Firearms Guns Firearms Training Guns Safety">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Keep The Kids Safe By Letting Them Understand Firearms Guns Firearms Training Guns Safety</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/62/78/93/627893dee11e4e554c4ef1810d29dda4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Xlup7_bxhe7kD8j-YGpZ6tSpupmWCE6hSg&amp;ec=45774421';" alt="Keep The Kids Safe By Letting Them Understand Firearms Guns Firearms Training Guns Safety">
+										<div class="card-body">
+						<h3 class="h5"><b>Today it is only a third of that size but until recently most former soldiers used to keep their guns after they.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Are soldiers allowed to keep their weapons</strong>. 
+								
+																	Permits for concealed carrying in public are issued sparingly. 
+																	20000 speeches were given by military spokesmen. 
+																	A reason is not required to own a gun unless the reason is other than sport-shooting hunting or collecting. 
+																	According to the terms of the surrender of Lees army at the end of the Civil War Confederate soldiers were allowed to keep their. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By the end of 1914 1186337 men had enlisted. 
+																	Pride Horses and some Weapons. 
+																	Then he looked toward Lee and his eyes seemed to be resting on the handsome sword that hung at that. 
+																	Also pleading with the country to stay home. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army guns can still be kept at home. 
+																	The proposal to end that custom was backed by a coalition of doctors womens groups and police. 
+																	The militarys official position is to keep the ban on personal firearms. 
+																	In the first weekend of the war 100 men an hour 3000 a day signed up to join the armed forces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	No they are government property and are normally issued to another soldier after you return it. 
+																	There are some cases where you pay for a weapon and then can keep it but thats not common. 
+																	Twenty years ago the Swiss militia was a sizeable force of around 600000 soldiers. 
+																	Weapons must be registered on base and either kept in the home or stored in the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	No one is allowed to have a concealed carry permit on a military installation the military doesnt even issue them. 
+																	The acquisition of fully automatic weapons suppressors and target lasers requires special permits issued by the cantonal firearms office. 
+																	Steve Warren said that the cost of training and certification requirements would be prohibitive. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/62/78/93/627893dee11e4e554c4ef1810d29dda4.jpg" data-lightbox="roadtrip" data-title="Pin On 2ww">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/62/78/93/627893dee11e4e554c4ef1810d29dda4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOYi0rWlIEtlALoFfuvFQUHqf0_ULAj1Yfjg&amp;ec=45774421';" alt="Pin On 2ww">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 2ww</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/f9/49/93f9497e7ab5cf3788572a7ff8338c69.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/f9/49/93f9497e7ab5cf3788572a7ff8338c69.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSriRkPNeLTkbPFtRfk0hDeR3MyT3bwOuHsow&amp;ec=45774421';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/7c/51/157c51e4f705c48ed75a7d95dc250ded.jpg" data-lightbox="roadtrip" data-title="Pin En Guns And Knives">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/7c/51/157c51e4f705c48ed75a7d95dc250ded.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLk-ZHwUosoIh8KmW4n1JXPj9coil3MnsrSw&amp;ec=45774421';" alt="Pin En Guns And Knives">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin En Guns And Knives</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/df/e1/8ddfe10d82331e8e7949abc0db18c1cc.png" data-lightbox="roadtrip" data-title="257 Why Do Special Forces Soldiers Keep Their Hands In Their Pockets Quora Military Jokes Army Humor Military Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/df/e1/8ddfe10d82331e8e7949abc0db18c1cc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFkJTZuyNkAB7pAnw8CKaaddO5v_CdXgBjzw&amp;ec=45774421';" alt="257 Why Do Special Forces Soldiers Keep Their Hands In Their Pockets Quora Military Jokes Army Humor Military Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">257 Why Do Special Forces Soldiers Keep Their Hands In Their Pockets Quora Military Jokes Army Humor Military Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/1f/af/a41faf92aa34a89f52033ce0705403ea.jpg" data-lightbox="roadtrip" data-title="Soldier For Life Continuing To Serve Via The Army Reserve Via Soldiers Live The Army Reserve Offers Active Duty Soldiers And Prior Service Veterans The Oppo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/1f/af/a41faf92aa34a89f52033ce0705403ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNlHvWwq0EoE6sn6HVVJJHrtNqvp9BrY4Q0g&amp;ec=45774421';" alt="Soldier For Life Continuing To Serve Via The Army Reserve Via Soldiers Live The Army Reserve Offers Active Duty Soldiers And Prior Service Veterans The Oppo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier For Life Continuing To Serve Via The Army Reserve Via Soldiers Live The Army Reserve Offers Active Duty Soldiers And Prior Service Veterans The Oppo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/99/b8/c799b8f44ab120ee4ed4b6eaf90c9692.jpg" data-lightbox="roadtrip" data-title="Pin On 3 Gun">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/99/b8/c799b8f44ab120ee4ed4b6eaf90c9692.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtB33IL__0wMJQbPPZ0UofgiU1tcb74lHLSQ&amp;ec=45774421';" alt="Pin On 3 Gun">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 3 Gun</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/4f/03/ca4f03fc31a3f4d1c2b650dd5a8fce10.jpg" data-lightbox="roadtrip" data-title="Pin On Weird West Weapons Gear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/4f/03/ca4f03fc31a3f4d1c2b650dd5a8fce10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuXD3Ao_NwWG7hziaD4N24Ei4057Ha6UzL7w&amp;ec=45774421';" alt="Pin On Weird West Weapons Gear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Weird West Weapons Gear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/53/fc/b553fcc474fa4c9b67bdf4c2303a7e6b.jpg" data-lightbox="roadtrip" data-title="Ukrainian Servicemen Put Their Dogs Under The Jackets To Keep Them Warm In Mariupol Ukraine Militaryworking Ukraine Military Working Dogs Military Conflict">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/53/fc/b553fcc474fa4c9b67bdf4c2303a7e6b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSKgv99ynyxqgOj1dIjoIFuYuEmljJ4_ZjkQ&amp;ec=45774421';" alt="Ukrainian Servicemen Put Their Dogs Under The Jackets To Keep Them Warm In Mariupol Ukraine Militaryworking Ukraine Military Working Dogs Military Conflict">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ukrainian Servicemen Put Their Dogs Under The Jackets To Keep Them Warm In Mariupol Ukraine Militaryworking Ukraine Military Working Dogs Military Conflict</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/74/07/827407eefb9006b3d2f1c610e61c2e39.jpg" data-lightbox="roadtrip" data-title="Pin On Rifle Scopes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/74/07/827407eefb9006b3d2f1c610e61c2e39.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwoXU6en_eLVG27GO36LImfV3d_hu4jIe65g&amp;ec=45774421';" alt="Pin On Rifle Scopes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Rifle Scopes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/3d/43/f0/3d43f0f039ccc65749b598cf0966c77d.jpg" data-lightbox="roadtrip" data-title="How To Play Airsoft Like A Pro Military Girl Army Girl Military Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/3d/43/f0/3d43f0f039ccc65749b598cf0966c77d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuDrZ1DFePGYoVRqvbeqpnejxHMCkHrTAGFQ&amp;ec=45774421';" alt="How To Play Airsoft Like A Pro Military Girl Army Girl Military Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How To Play Airsoft Like A Pro Military Girl Army Girl Military Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/3b/27/c53b275297f69cdf95f93beba1e82b5f.jpg" data-lightbox="roadtrip" data-title="Service Members Board A C 17 Globemaster Iii At Bagram Airfield Afghanistan The Airfield Management Office Coordin Military Heroes American Soldiers Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/3b/27/c53b275297f69cdf95f93beba1e82b5f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyQQGoQZaH7MJrMnPtL52BoEH1nLvi9HrdNg&amp;ec=45774421';" alt="Service Members Board A C 17 Globemaster Iii At Bagram Airfield Afghanistan The Airfield Management Office Coordin Military Heroes American Soldiers Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Service Members Board A C 17 Globemaster Iii At Bagram Airfield Afghanistan The Airfield Management Office Coordin Military Heroes American Soldiers Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/ec/f3/48ecf320d5efa0573ac8be996fa62636.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/ec/f3/48ecf320d5efa0573ac8be996fa62636.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9r5gFy61x9H99DF1U8SHRv8WegnjYzCGzgQ&amp;ec=45774421';" alt="Pin On Guard Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/56/bf/f656bf40985c3d184fed685ae7443f09.jpg" data-lightbox="roadtrip" data-title="This Is A Tool I Am The Weapon Motivation America Military Military Life Quotes Soldier Quotes Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/56/bf/f656bf40985c3d184fed685ae7443f09.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh7aYHtj4_6-GxLoqXySalScKMpWexyd8vQ&amp;ec=45774421';" alt="This Is A Tool I Am The Weapon Motivation America Military Military Life Quotes Soldier Quotes Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is A Tool I Am The Weapon Motivation America Military Military Life Quotes Soldier Quotes Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-national-guard-fitness-requirements.html">Army National Guard Fitness Requirements</a></li>
+													<li class="list-group-item"><a href="/army-look-artinya.html">Army Look Artinya</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-drill-attendance-regulation.html">Army National Guard Drill Attendance Regulation</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-aircraft-mechanic.html">Army National Guard Aircraft Mechanic</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-in-combat.html">Army National Guard In Combat</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-drill-pay-2021.html">Army National Guard Drill Pay 2021</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-agr-positions.html">Army National Guard Agr Positions</a></li>
+													<li class="list-group-item"><a href="/army-metal-art.html">Army Metal Art</a></li>
+													<li class="list-group-item"><a href="/army-mask-art.html">Army Mask Art</a></li>
+													<li class="list-group-item"><a href="/army-military-pay-grade.html">Army Military Pay Grade</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-drill-schedule-2021.html">Army National Guard Drill Schedule 2021</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-ait.html">Army National Guard Ait</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-extension-regulation.html">Army National Guard Extension Regulation</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-asvab-requirements.html">Army National Guard Asvab Requirements</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-agr-regulation.html">Army National Guard Agr Regulation</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-drill-sergeant-program.html">Army National Guard Drill Sergeant Program</a></li>
+													<li class="list-group-item"><a href="/army-line-art.html">Army Line Art</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-body-fat-standards.html">Army National Guard Body Fat Standards</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-in-montana.html">Army National Guard In Montana</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-e3-drill-pay.html">Army National Guard E3 Drill Pay</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

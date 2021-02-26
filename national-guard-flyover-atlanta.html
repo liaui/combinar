@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Guard Flyover Atlanta - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Guard Flyover Atlanta",
+  "datePublished": "2021-02-27",
+  "image": "https://wgntv.com/wp-content/uploads/sites/5/2020/04/thunderbirds2.jpg?w=1280",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+guard+flyover+atlanta",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Guard Flyover Atlanta</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Georgia Army National Guard said it will be doing a flyover across metro Atlanta and other parts of the state on Monday to honor the fallen. Atlanta Georgia National Guard at Airport. The leak of the phone call was the last nail in coffin for RINOs Brad and Bryan. <br>				
+			</p>
+										<a class="badge badge-success" href="/netguard-default-password.html">netguard default password</a>
+											<a class="badge badge-primary" href="/navy-national-guard.html">navy national guard</a>
+											<a class="badge badge-secondary" href="/netguard-endpoint-security.html">netguard endpoint security</a>
+											<a class="badge badge-light" href="/navy-drill-weekend-schedule-2020.html">navy drill weekend schedule 2020</a>
+											<a class="badge badge-light" href="/nc-national-guard-military-ball-2019.html">nc national guard military ball 2019</a>
+											<a class="badge badge-primary" href="/ncbi-report.html">ncbi report</a>
+											<a class="badge badge-primary" href="/netguard-gboard.html">netguard gboard</a>
+											<a class="badge badge-warning" href="/neon-army-cargo-pants.html">neon army cargo pants</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to pay a visit to the ideal site.  Our website provides you with hints for viewing the maximum quality video and image content, search and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, so we recommend this movie for you to view.  It is also possible to contribute to supporting this website by sharing videos and images that you enjoy on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.11alive.com/assets/WXIA/images/8362111a-1459-4a6a-a88c-2f83fc06f6d9/8362111a-1459-4a6a-a88c-2f83fc06f6d9_1920x1080.jpg" data-lightbox="roadtrip" data-title="Friday Flyover Flight Path Times Air Guard C 130 In Georgia 11alive Com">
+											<img class="card-img v-image ads-img " src="https://media.11alive.com/assets/WXIA/images/8362111a-1459-4a6a-a88c-2f83fc06f6d9/8362111a-1459-4a6a-a88c-2f83fc06f6d9_1920x1080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRljMcf6HR4mOvA3xgxSzM08ewh65ddu5CRyg';" alt="Friday Flyover Flight Path Times Air Guard C 130 In Georgia 11alive Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Friday Flyover Flight Path Times Air Guard C 130 In Georgia 11alive Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.aopa.org/-/media/Images/AOPA-Main/News-and-Media/2020/May/MD_National_Guard_Flyover_0508/20_Nat_Guard_FlyoverDT-_1033F.jpg?mw=1200&amp;mh=675&amp;as=1&amp;hash=D78DAFA74E3E4F9D1FED3703BEC619C5" data-lightbox="roadtrip" data-title="Military Ga Flyovers Continue To Honor Covid 19 Workers Aopa">
+											<img class="card-img v-image ads-img " src="https://www.aopa.org/-/media/Images/AOPA-Main/News-and-Media/2020/May/MD_National_Guard_Flyover_0508/20_Nat_Guard_FlyoverDT-_1033F.jpg?mw=1200&amp;mh=675&amp;as=1&amp;hash=D78DAFA74E3E4F9D1FED3703BEC619C5" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpQ28Hs359I3yfHgbKz_s7-khJr4pEkrclpA';" alt="Military Ga Flyovers Continue To Honor Covid 19 Workers Aopa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Ga Flyovers Continue To Honor Covid 19 Workers Aopa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10158373703687288" data-lightbox="roadtrip" data-title="Georgia National Guard To Honor Fallen Veterans With Memorial Day Flyover Wgxa">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10158373703687288" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ49BQRHu5SJRlDpIXItAHAWQTacYzSurpPAA';" alt="Georgia National Guard To Honor Fallen Veterans With Memorial Day Flyover Wgxa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Georgia National Guard To Honor Fallen Veterans With Memorial Day Flyover Wgxa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.9news.com/assets/WXIA/images/55f71377-eaca-4b54-a801-954396cc3f16/55f71377-eaca-4b54-a801-954396cc3f16_750x422.jpg" data-lightbox="roadtrip" data-title="Your Photos Blue Angels Thunderbirds Fly Over Atlanta 9news Com">
+											<img class="card-img v-image ads-img " src="https://media.9news.com/assets/WXIA/images/55f71377-eaca-4b54-a801-954396cc3f16/55f71377-eaca-4b54-a801-954396cc3f16_750x422.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX-KR3v-XhsSiMJ27dj1hKFkMnyQL2GM79-g';" alt="Your Photos Blue Angels Thunderbirds Fly Over Atlanta 9news Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Your Photos Blue Angels Thunderbirds Fly Over Atlanta 9news Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/Xilq-mgBXhY/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Air Force Arizona National Guard Flyover From Around The Valley Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/Xilq-mgBXhY/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQay0Iu5ZSNWE-sN6fz5sVF2jCejpzsIIjodQ';" alt="Air Force Arizona National Guard Flyover From Around The Valley Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Arizona National Guard Flyover From Around The Valley Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.toledoblade.com/image/2020/05/05/1140x_a10-7_cTC/flight-map-jpg.jpg" data-lightbox="roadtrip" data-title="Air Guard F16s Plan Morale Boosting Flyover For Toledo Area The Blade">
+											<img class="card-img v-image ads-img " src="https://www.toledoblade.com/image/2020/05/05/1140x_a10-7_cTC/flight-map-jpg.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-FJYNvZBMvhOFe9wPNY5mdHcRn39RNJ0wCA';" alt="Air Guard F16s Plan Morale Boosting Flyover For Toledo Area The Blade">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Guard F16s Plan Morale Boosting Flyover For Toledo Area The Blade</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://media.11alive.com/assets/WXIA/images/8362111a-1459-4a6a-a88c-2f83fc06f6d9/8362111a-1459-4a6a-a88c-2f83fc06f6d9_1920x1080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-FJYNvZBMvhOFe9wPNY5mdHcRn39RNJ0wCA';" alt="Air Guard F16s Plan Morale Boosting Flyover For Toledo Area The Blade">
+										<div class="card-body">
+						<h3 class="h5"><b>ATLANTA Continuing a string of similar honorary displays the Georgia National Guard on Memorial Day is conducting flyovers in two parts of the state featuring four UH-60 Blackhawk helicopters.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National guard flyover atlanta</strong>. 
+								
+																	ATLANTA The Georgia Army National Guard conducted a flyover across metro Atlanta and a second one over parts of the state this morning to honor the fallen and those fighting this new war against. 
+																	ATLANTA Continuing a string of similar honorary displays the Georgia National Guard on Memorial Day is conducting flyovers in two parts of the state featuring four UH-60 Blackhawk helicopters. 
+																	Air Force has been flying the B-52H Stratofortress since before the NFL held the first Super Bowl in 1967 but this week Americas oldest bomber joined in a first-of-its-kind flyover to. 
+																	Air National Guard to fly over Atlanta other parts of Georgia to honor health care workers NewsTalk 750 WSB 05-15 Many of you are going to be in for a treat as another fly over is planned for Georgia Friday morning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Helicopters of the Georgia Army National Guard. 
+																	On Monday morning four UH-60 Blackhawks will circle Atlanta and the northern metro area the Georgia National Guard said in social media posts. 
+																	Georgia National Guard ATLANTA - The Georgia National Guard will be performing a Memorial Day flyover in honor of those who died fighting for freedom in the US. 
+																	A second flyover will simultaneously take place over. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A map and schedule from the Georgia Army National Guard show the route for a Memorial Day helicopter flyover Monday in south Georgia. 
+																	522 PM CDT May 25 2020. 
+																	The Commander of the Georgia Air National Guard posted on Facebook that its aircraft would flyover several areas across the state. 
+																	1047 AM CDT May 23 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On Monday one flight will. 
+																	Rumble Is the Stop the Steal happening in Georgia. 
+																	This was the view from Stone Mountain Park. 
+																	Separate flyovers will be held in both north Georgia and south Georgia and pass above both hospitals and sites that honor military service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 165th Airlift Wing flew over Ellijay Gordon County south. 
+																	Snapmaster Published January 4 2021 737 Views 084 earned. 
+																	CBS46 -- The Georgia Army National Guard will put on special helicopter flyovers in north and south Georgia on Memorial Day to honor our fallen soldiers. 
+																	For Memorial Day The Georgia National Guard performed a helicopter flyover. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images02.military.com/sites/default/files/styles/full/public/2019-01/thunderbirds-team-1800.jpg?itok=be8SRk_9" data-lightbox="roadtrip" data-title="Air Force Thunderbirds Gearing Up For Super Bowl Liii Flyover Military Com">
+											<img class="card-img v-image ads-img " src="https://images02.military.com/sites/default/files/styles/full/public/2019-01/thunderbirds-team-1800.jpg?itok=be8SRk_9" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8P0DNd_XwC5suhKTkoGhaFNdknk03CdJvKw';" alt="Air Force Thunderbirds Gearing Up For Super Bowl Liii Flyover Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Thunderbirds Gearing Up For Super Bowl Liii Flyover Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2017/Jul/07/2001774627/-1/-1/0/170704-F-XX999-0001.JPG" data-lightbox="roadtrip" data-title="Atlanta Braves V Houston Astros">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2017/Jul/07/2001774627/-1/-1/0/170704-F-XX999-0001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Ku2q8U6pNMvWhOnTYE4HYkANLuqs0FsQdg';" alt="Atlanta Braves V Houston Astros">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Atlanta Braves V Houston Astros</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://assets.verticalmag.com/wp-content/uploads/2020/06/6220714.jpg" data-lightbox="roadtrip" data-title="Memorial Day Flyover Vertical Mag">
+											<img class="card-img v-image ads-img " src="https://assets.verticalmag.com/wp-content/uploads/2020/06/6220714.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStWyCBw2hNJEhyXxXmK3BRzUQ2QMnOxOo16Q';" alt="Memorial Day Flyover Vertical Mag">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Memorial Day Flyover Vertical Mag</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.abcotvs.com/dip/images/6176583_051220-wpvi-nj-air-national-guard-flyover-5pm-video-vid.jpg?w=1600" data-lightbox="roadtrip" data-title="Coronavirus News New Jersey Air National Guard Honors Health Care Workers With Flyover 6abc Philadelphia">
+											<img class="card-img v-image ads-img " src="https://cdn.abcotvs.com/dip/images/6176583_051220-wpvi-nj-air-national-guard-flyover-5pm-video-vid.jpg?w=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1_94XktHbiHvpy-S4Tp1bFZmgym7xRmdiNQ';" alt="Coronavirus News New Jersey Air National Guard Honors Health Care Workers With Flyover 6abc Philadelphia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coronavirus News New Jersey Air National Guard Honors Health Care Workers With Flyover 6abc Philadelphia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.11alive.com/assets/WXIA/images/dabc44ed-efab-443f-b33a-31ca76b7c314/dabc44ed-efab-443f-b33a-31ca76b7c314_1920x1080.jpg" data-lightbox="roadtrip" data-title="Georgia National Guard Stands Ready In Downtown Atlanta Ahead Of Curfew 11alive Com">
+											<img class="card-img v-image ads-img " src="https://media.11alive.com/assets/WXIA/images/dabc44ed-efab-443f-b33a-31ca76b7c314/dabc44ed-efab-443f-b33a-31ca76b7c314_1920x1080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfYShN3EyyYiUiK1wevlZLf71gwmeXspMs5g';" alt="Georgia National Guard Stands Ready In Downtown Atlanta Ahead Of Curfew 11alive Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Georgia National Guard Stands Ready In Downtown Atlanta Ahead Of Curfew 11alive Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.newyork1.vip.townnews.com/foxcarolina.com/content/tncms/assets/v3/editorial/b/5d/b5de739d-5c52-581a-a4f1-b54c9109f696/5c50c9e091829.preview.jpg?resize=1120%2C630" data-lightbox="roadtrip" data-title="Sc National Guard Practices Flyover Before Super Bowl In Atlanta Foxcarolina Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.newyork1.vip.townnews.com/foxcarolina.com/content/tncms/assets/v3/editorial/b/5d/b5de739d-5c52-581a-a4f1-b54c9109f696/5c50c9e091829.preview.jpg?resize=1120%2C630" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw4KVC7pUdRCB0-PgixIzKq2oeY0kJWSbHDg';" alt="Sc National Guard Practices Flyover Before Super Bowl In Atlanta Foxcarolina Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sc National Guard Practices Flyover Before Super Bowl In Atlanta Foxcarolina Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.timesofisrael.com/www/uploads/2018/02/180202-Z-FF470-014C.jpg" data-lightbox="roadtrip" data-title="Syria Accuses Coalition Of Missile Strikes On Its Army Positions The Times Of Israel">
+											<img class="card-img v-image ads-img " src="https://static.timesofisrael.com/www/uploads/2018/02/180202-Z-FF470-014C.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyqOEKGcVx18FlJAGD0RAL0rCVqAIo769tpQ';" alt="Syria Accuses Coalition Of Missile Strikes On Its Army Positions The Times Of Israel">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Syria Accuses Coalition Of Missile Strikes On Its Army Positions The Times Of Israel</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gazettenet.com/getattachment/c67b1112-87da-49c2-a5c3-6cd5fdf64864/nohoflyover-hg-052320-ph1" data-lightbox="roadtrip" data-title="Military Jets To Fly Over Northampton Area On Memorial Day">
+											<img class="card-img v-image ads-img " src="https://www.gazettenet.com/getattachment/c67b1112-87da-49c2-a5c3-6cd5fdf64864/nohoflyover-hg-052320-ph1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxMOjPrThipyg3o05Gk-YObbzMZ6oRny1UPA';" alt="Military Jets To Fly Over Northampton Area On Memorial Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Jets To Fly Over Northampton Area On Memorial Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.11alive.com/assets/CCT/images/b1ad61ec-82b2-4534-a9a5-d041fc8d862d/b1ad61ec-82b2-4534-a9a5-d041fc8d862d_1920x1080.jpg" data-lightbox="roadtrip" data-title="Air Force Thunderbirds To Perform Super Bowl Flyover 11alive Com">
+											<img class="card-img v-image ads-img " src="https://media.11alive.com/assets/CCT/images/b1ad61ec-82b2-4534-a9a5-d041fc8d862d/b1ad61ec-82b2-4534-a9a5-d041fc8d862d_1920x1080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Tx_YnnVfKO_pfi83twPIbQ8BPgZ59SWQow';" alt="Air Force Thunderbirds To Perform Super Bowl Flyover 11alive Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Thunderbirds To Perform Super Bowl Flyover 11alive Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/cf/f9/01/cff901f39c68f0d1fb50491d1d1a7870.jpg" data-lightbox="roadtrip" data-title="Special Blue Angels And Thunderbirds Joint Flyovers Baltimore Washington Dc Atlanta Youtube Blue Angels Us Navy Blue Angels Baltimore Washington">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/cf/f9/01/cff901f39c68f0d1fb50491d1d1a7870.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4E9YPcBrGRNNHVcYBH65IoGLZ6bZdYKbXw';" alt="Special Blue Angels And Thunderbirds Joint Flyovers Baltimore Washington Dc Atlanta Youtube Blue Angels Us Navy Blue Angels Baltimore Washington">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Blue Angels And Thunderbirds Joint Flyovers Baltimore Washington Dc Atlanta Youtube Blue Angels Us Navy Blue Angels Baltimore Washington</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.11alive.com/assets/WTSP/images/5b607c03-9516-4185-8f25-8696b656f27a/5b607c03-9516-4185-8f25-8696b656f27a_1920x1080.jpg" data-lightbox="roadtrip" data-title="Air Force Will Do Trifecta Flyover At Super Bowl Lv In Tampa 11alive Com">
+											<img class="card-img v-image ads-img " src="https://media.11alive.com/assets/WTSP/images/5b607c03-9516-4185-8f25-8696b656f27a/5b607c03-9516-4185-8f25-8696b656f27a_1920x1080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHhtQYME65QpRWFgrTJbo0wq0tLlZiQPUyQ';" alt="Air Force Will Do Trifecta Flyover At Super Bowl Lv In Tampa 11alive Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Will Do Trifecta Flyover At Super Bowl Lv In Tampa 11alive Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wgntv.com/wp-content/uploads/sites/5/2020/04/thunderbirds2.jpg?w=1280" data-lightbox="roadtrip" data-title="Blue Angels And Thunderbirds To Fly Over Us Cities In Honor Of Essential Workers Wgn Tv">
+											<img class="card-img v-image ads-img " src="https://wgntv.com/wp-content/uploads/sites/5/2020/04/thunderbirds2.jpg?w=1280" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTmim0VzEjcDrj9CUxjPjUYdCTxI5gTrDVtw';" alt="Blue Angels And Thunderbirds To Fly Over Us Cities In Honor Of Essential Workers Wgn Tv">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Blue Angels And Thunderbirds To Fly Over Us Cities In Honor Of Essential Workers Wgn Tv</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/May/12/2002298573/780/780/0/200512-F-CA297-0001.JPG" data-lightbox="roadtrip" data-title="Dobbins Plans Flyover This Week To Honor Georgia Frontline Healthcare Workers Dobbins Air Reserve Base Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/May/12/2002298573/780/780/0/200512-F-CA297-0001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPeihatX-MzkIlU1mjqSAKNaWkKO7wzDG55A';" alt="Dobbins Plans Flyover This Week To Honor Georgia Frontline Healthcare Workers Dobbins Air Reserve Base Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dobbins Plans Flyover This Week To Honor Georgia Frontline Healthcare Workers Dobbins Air Reserve Base Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/xtc-kembar-bandung.html">Xtc Kembar Bandung</a></li>
+													<li class="list-group-item"><a href="/xox-gua-musang.html">Xox Gua Musang</a></li>
+													<li class="list-group-item"><a href="/xtc-adalah.html">Xtc Adalah</a></li>
+													<li class="list-group-item"><a href="/xtc-fitness-mississauga.html">Xtc Fitness Mississauga</a></li>
+													<li class="list-group-item"><a href="/xtc-logo.html">Xtc Logo</a></li>
+													<li class="list-group-item"><a href="/xtc-bandung.html">Xtc Bandung</a></li>
+													<li class="list-group-item"><a href="/xtc-dan-brigez.html">Xtc Dan Brigez</a></li>
+													<li class="list-group-item"><a href="/xtc-dear-god-lyrics.html">Xtc Dear God Lyrics</a></li>
+													<li class="list-group-item"><a href="/wisconsin-army-national-guard-chain-of-command.html">Wisconsin Army National Guard Chain Of Command</a></li>
+													<li class="list-group-item"><a href="/xctc-contract.html">Xctc Contract</a></li>
+													<li class="list-group-item"><a href="/xtc-fly-on-the-wall.html">Xtc Fly On The Wall</a></li>
+													<li class="list-group-item"><a href="/xtc-gbr-cirebon.html">Xtc Gbr Cirebon</a></li>
+													<li class="list-group-item"><a href="/world-highest-army-rank.html">World Highest Army Rank</a></li>
+													<li class="list-group-item"><a href="/xtc-nonsuch-vinyl.html">Xtc Nonsuch Vinyl</a></li>
+													<li class="list-group-item"><a href="/xo-vs-musang-king.html">Xo Vs Musang King</a></li>
+													<li class="list-group-item"><a href="/xtc-gaming.html">Xtc Gaming</a></li>
+													<li class="list-group-item"><a href="/xtc-kuningan.html">Xtc Kuningan</a></li>
+													<li class="list-group-item"><a href="/xtc-official-merchandise.html">Xtc Official Merchandise</a></li>
+													<li class="list-group-item"><a href="/xtc-discography.html">Xtc Discography</a></li>
+													<li class="list-group-item"><a href="/will-army-reserves-pay-for-college.html">Will Army Reserves Pay For College</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

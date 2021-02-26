@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Dod National Guard Bureau - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Dod National Guard Bureau",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/d5/f3/86/d5f386f3b56b487216ee7decb0ab533a.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=dod+national+guard+bureau",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Dod National Guard Bureau</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The purpose of this library is to make authorized National Guard Bureau Army National Guard forms available in electronic PDF format. Dustin Gold a reserve officer from. Since its opening in 1953 the print shop has been fulfilling the printing needs of the Army National Guard. <br>				
+			</p>
+										<a class="badge badge-info" href="/jis-depok.html">jis depok</a>
+											<a class="badge badge-success" href="/jis-list.html">jis list</a>
+											<a class="badge badge-danger" href="/jis-h-5202.html">jis h 5202</a>
+											<a class="badge badge-primary" href="/jisoo-biodata.html">jisoo biodata</a>
+											<a class="badge badge-dark" href="/jis-pkp.html">jis pkp</a>
+											<a class="badge badge-success" href="/jisc-joglo.html">jisc joglo</a>
+											<a class="badge badge-dark" href="/jis-logo.html">jis logo</a>
+											<a class="badge badge-danger" href="/jisoo-variety-show.html">jisoo variety show</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to visit the right blog.  Our website provides you with suggestions for seeing the maximum quality video and image content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, so we recommend this movie for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/a7/d3/55a7d368ec6df62ae78757c8c2981e92.jpg" data-lightbox="roadtrip" data-title="Pin On U S Homeland Security">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/a7/d3/55a7d368ec6df62ae78757c8c2981e92.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXoaeTB-mk5AN-oEbaLL-A-Hed8R32xnQ1iA';" alt="Pin On U S Homeland Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Homeland Security</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nationalguard.mil/portals/31/Images/Image%20Gallery/Graphics/NGB-seal-low.png" data-lightbox="roadtrip" data-title="The National Guard Official Website Of The National Guard">
+											<img class="card-img v-image ads-img " src="https://www.nationalguard.mil/portals/31/Images/Image%20Gallery/Graphics/NGB-seal-low.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrrRugIJ8PfJYkxJ02wQPgLUgrsR1-As1NwQ';" alt="The National Guard Official Website Of The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The National Guard Official Website Of The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2007/Oct/24/2000791237/-1/-1/0/071024-F-ZZ000-892.JPG" data-lightbox="roadtrip" data-title="National Guard Bureau Seal Color">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2007/Oct/24/2000791237/-1/-1/0/071024-F-ZZ000-892.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXfETFJGHW2WmXy-SoDJ1JDu4YjQsGUns-BA';" alt="National Guard Bureau Seal Color">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Bureau Seal Color</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media-exp1.licdn.com/dms/image/C4E1BAQGzLxxY1Ugv0Q/company-background_10000/0/1574273035171?e=2159024400&amp;v=beta&amp;t=qs1PJJyNkTMerhmjcrpYjr8X475GddmQNHklYISVezk" data-lightbox="roadtrip" data-title="National Guard Bureau Linkedin">
+											<img class="card-img v-image ads-img " src="https://media-exp1.licdn.com/dms/image/C4E1BAQGzLxxY1Ugv0Q/company-background_10000/0/1574273035171?e=2159024400&amp;v=beta&amp;t=qs1PJJyNkTMerhmjcrpYjr8X475GddmQNHklYISVezk" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJUrYMkdm9Cw8Db4G9Rizq3hUTgCr4gNd7Rw';" alt="National Guard Bureau Linkedin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Bureau Linkedin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nationalguard.mil/Portals/31/Images/Leadership/VCNGB/Sasseville/lt-gen-marc-sasseville-full.jpg" data-lightbox="roadtrip" data-title="Vice Chief National Guard Bureau The National Guard">
+											<img class="card-img v-image ads-img " src="https://www.nationalguard.mil/Portals/31/Images/Leadership/VCNGB/Sasseville/lt-gen-marc-sasseville-full.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsWBLbyxZKFIjp4Z1N0rwVHms-ysgvLeK9pA';" alt="Vice Chief National Guard Bureau The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vice Chief National Guard Bureau The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/12/a9/89/12a989f22eb4cf542a478412a239e058.jpg" data-lightbox="roadtrip" data-title="Us Dod Pulls The Plug On Cots Drones Suas News The Business Of Drones Drone Plugs Pulls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/12/a9/89/12a989f22eb4cf542a478412a239e058.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJQPEbgfz9awITXl7hEJN1Rr2wIFrc6tdmpw';" alt="Us Dod Pulls The Plug On Cots Drones Suas News The Business Of Drones Drone Plugs Pulls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Dod Pulls The Plug On Cots Drones Suas News The Business Of Drones Drone Plugs Pulls</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/69/32/a5/6932a56596a1c5755885af6592feaf80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJQPEbgfz9awITXl7hEJN1Rr2wIFrc6tdmpw';" alt="Us Dod Pulls The Plug On Cots Drones Suas News The Business Of Drones Drone Plugs Pulls">
+										<div class="card-body">
+						<h3 class="h5"><b>At least 10000 of those will be on hand by this weekend and that number could surge to as many as 15000 troops chief of the National Guard Bureau Gen.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Dod national guard bureau</strong>. 
+								
+																	Forms on this site include. 
+																	Immigration and Customs Enforcement the Department of Defense and the National Guard Bureau for records reflecting directives assessments and deployment orders regarding federal law enforcement response to protests. 
+																	Law enforcement will take the lead and be the force of choice should it be necessary Acting Army. 
+																	It was created by the Militia Act of 1903. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Guard Bureau Publications Management Center is a printing operation that conducts its business on Camp Keyes in Augusta Maine. 
+																	The National Guard Bureau NGB Sexual Assault Prevention and Response SAPR and Sexual HarassmentAssault Response and Prevention SHARP Offices began Fiscal Year 2019 FY19 receiving the Chief. 
+																	On any given day approximately 30000 Guardsmen carry out Federal missions around the world and an additional 10000 Guardsmen conduct State and Federal missions within the United States and its territories. 
+																	Hokanson serves as the 29th Chief of the National Guard Bureau and as a member of the Joint Chiefs of Staff. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Guard Bureau also provides policies and requirements for training and funds for state Army National Guard and state Air National Guard units the allocation of federal funds to the Army National Guard and the Air National Guard and other administrative responsibilities prescribed under 10 USC. 
+																	The badge was officially unveiled by Air Force Gen. 
+																	This act also elevated the Chief of the National Guard Bureau from L. 
+																	The National Guard Bureau is the federal instrument responsible for the administration of the United States National Guard established by the United States Congress as a joint bureau of the Department of the Army and the Department of the Air Force. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The head of the National Guard Bureau said Monday that there could be as many as 15000 Guard troops in Washington DC for Inauguration Day more than doubling the number of personnel rushed to. 
+																	The National Defense Authorization Act for Fiscal Year 2008 elevated the National Guard to a joint function of the Department of Defense. 
+																	Among them was an Australian Army reservist on duty as a Capital Guardian. 
+																	965 Guard Troops Deployed To US-Mexico Border News Face of Defense. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2021 United States National Guard ELIGIBILITY. 
+																	WASHINGTON - Januarys inauguration support by the National Guard was unique in many ways with more than 26000 National Guard members activated from all 50 states three territories and the District of Columbia. 
+																	Chief National Guard Bureau T odays National Guard plays a vital role in the security and welfare of our nation. 
+																	Forms on this site are unclassified and authorized for public access. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Customs and Border Protection US. 
+																	Joseph Lengyel chief of the National Guard Bureau during celebrations at the Pentagon of the National Guards 381st birthday Dec. 
+																	NGB Forms Certificates Posters and other form type items that are applicable to the National Guard. 
+																	Youth ChalleNGe Academy Leads to Airmans Service News National Guard Bureau Personnel Authorized. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	American Oversight lawsuit against the Department of Justice the Department of Homeland Security US. 
+																	G DoD Directive 510577 National Guard Bureau October 30 2015 h DoD Directive 110020 Support and Services for Eligible Organizations and Activities Outside the Department of Defense April 12 2004 i DoD Directive 541018 Public Affairs Community Relations Policy November 20 2001 as amended. 
+																	News Guard Bureau Chief. 
+																	It was created by the Militia Act of 1903. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Guard Bureau provides a communication channel for state National Guards to the DoD. 
+																	The National Guard Bureau is the federal instrument responsible for the administration of the United States National Guard established by the United States Congress as a joint bureau of the Department of the Army and the Department of the Air Force. 
+																	Army Secretary Ryan McCarthy has now authorized up to 21000 National Guard troops from around the country to assist law enforcement with security surrounding the inauguration of President-elect. 
+																	In this capacity he serves as a military adviser to the President Secretary of Defense National Security Council and is the Department of Defenses official channel of communication to the Governors and State Adjutants General on all matters pertaining to the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	25 2021 BY David Vergun DOD News The National Guard will be a force of last resort. 
+																	Dan Hokanson told reporters on a call. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dc.ng.mil/portals/26/Images/JFHQ-DC%20Front.jpg?ver=2018-09-18-101745-577" data-lightbox="roadtrip" data-title="District Of Columbia National Guard About Us">
+											<img class="card-img v-image ads-img " src="https://dc.ng.mil/portals/26/Images/JFHQ-DC%20Front.jpg?ver=2018-09-18-101745-577" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT34nWXTXvMoftemdQD4tnFqyA2h5eqIrSctA';" alt="District Of Columbia National Guard About Us">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">District Of Columbia National Guard About Us</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4a/a3/72/4aa3724f37678c6f297e5b58a4b4bddf--national-guard-military-life.jpg" data-lightbox="roadtrip" data-title="Department Of The Air Force United States Air Force Air Force Veteran Air Force Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4a/a3/72/4aa3724f37678c6f297e5b58a4b4bddf--national-guard-military-life.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV0-IADPUEURm0mITj_Pk5rY3ny3Q8XXxwQQ';" alt="Department Of The Air Force United States Air Force Air Force Veteran Air Force Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Department Of The Air Force United States Air Force Air Force Veteran Air Force Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3f/f4/5e/3ff45e256cd6ad11010fb68a83fda9a1.jpg" data-lightbox="roadtrip" data-title="Pin On Oklahoma National Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3f/f4/5e/3ff45e256cd6ad11010fb68a83fda9a1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9AWVYJa5uuIm7zwJo1KOyvspaWn7HcC38Ag';" alt="Pin On Oklahoma National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Oklahoma National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://statecms.nationalguard.com/state_logos/arng_NH_rgb_color.svg" data-lightbox="roadtrip" data-title="Army National Guard">
+											<img class="card-img v-image ads-img " src="https://statecms.nationalguard.com/state_logos/arng_NH_rgb_color.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpgmONaKXGcyBMDaLP8Dx_Q-DvRCTi4StJYg';" alt="Army National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/32/a5/6932a56596a1c5755885af6592feaf80.jpg" data-lightbox="roadtrip" data-title="Escuela De Lanceros Colombia Instructors Challenge Coin 961f Challenge Coins Army Challenge Coins Coins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/32/a5/6932a56596a1c5755885af6592feaf80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUpwIHIW2YevGaWsiJO30R_Akgek3PVsOnwg';" alt="Escuela De Lanceros Colombia Instructors Challenge Coin 961f Challenge Coins Army Challenge Coins Coins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Escuela De Lanceros Colombia Instructors Challenge Coin 961f Challenge Coins Army Challenge Coins Coins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/f3/86/d5f386f3b56b487216ee7decb0ab533a.jpg" data-lightbox="roadtrip" data-title="Pin On Feed Your Brain">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/f3/86/d5f386f3b56b487216ee7decb0ab533a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTszktn8LXQAyEeQXOoh8QtClKLnNxvs3Owg';" alt="Pin On Feed Your Brain">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Feed Your Brain</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/91/7e/40917e4ec4c54d243e5aab7f2b5ea130.png" data-lightbox="roadtrip" data-title="Emergency Management Preparedness The Need For A Catastrophic Emergency National Training Center By Dr Xavier Emergency Management Training Center Emergency">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/91/7e/40917e4ec4c54d243e5aab7f2b5ea130.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD4T9ZZppvHWtlG73h-LEPH8JorvKkDQOyhg';" alt="Emergency Management Preparedness The Need For A Catastrophic Emergency National Training Center By Dr Xavier Emergency Management Training Center Emergency">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emergency Management Preparedness The Need For A Catastrophic Emergency National Training Center By Dr Xavier Emergency Management Training Center Emergency</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2010/Oct/05/2000318977/780/780/0/101005-F-JZ024-136.JPG" data-lightbox="roadtrip" data-title="Air National Guard U S Air Force Fact Sheet Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2010/Oct/05/2000318977/780/780/0/101005-F-JZ024-136.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL1zt5Hc_kLR5LSoJPNQB5cqLYlEHw69NIfA';" alt="Air National Guard U S Air Force Fact Sheet Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air National Guard U S Air Force Fact Sheet Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/31/eb/7c/31eb7cc9bb0bce6c4acd1ef8bb1d9a24--in-the-hole-words.jpg" data-lightbox="roadtrip" data-title="Fire In The Hole Provincial Outdoor In The Hole">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/31/eb/7c/31eb7cc9bb0bce6c4acd1ef8bb1d9a24--in-the-hole-words.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJWINn04A5EvCWrBF2VSnVhly0B3uTMSa8Kw';" alt="Fire In The Hole Provincial Outdoor In The Hole">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fire In The Hole Provincial Outdoor In The Hole</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/e3/22/dae322930420829c6f0d014899f088df.jpg" data-lightbox="roadtrip" data-title="Telecommunications Advisory Team Afghanistan Isaf Disa Nato Challenge Coin By Lasvegas9999 On Etsy In 2020 Challenge Coins Army Challenge Coins One Coin">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/e3/22/dae322930420829c6f0d014899f088df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZnl9keyheWHfs5moxPJlyjP6SGDEzqyP5Ow';" alt="Telecommunications Advisory Team Afghanistan Isaf Disa Nato Challenge Coin By Lasvegas9999 On Etsy In 2020 Challenge Coins Army Challenge Coins One Coin">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Telecommunications Advisory Team Afghanistan Isaf Disa Nato Challenge Coin By Lasvegas9999 On Etsy In 2020 Challenge Coins Army Challenge Coins One Coin</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/18/80/e318801a73bec76105baa24dfaa3de78.png" data-lightbox="roadtrip" data-title="Non Profit Print Materials Outer Banks Media In 2020 Branding Design Custom Design Non Profit">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/18/80/e318801a73bec76105baa24dfaa3de78.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtuIC-TxQTnGD_jIUYf8ErT655i28hQ-FuEw';" alt="Non Profit Print Materials Outer Banks Media In 2020 Branding Design Custom Design Non Profit">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Non Profit Print Materials Outer Banks Media In 2020 Branding Design Custom Design Non Profit</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/26/49/98264905d26937e50845f8d9416e5cc1.jpg" data-lightbox="roadtrip" data-title="Worth A Thousand Words M777a2 Howitzer Dodlive Worth Words Big Guns">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/26/49/98264905d26937e50845f8d9416e5cc1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ag7Mrg39oT3lcGgiCDLmxEriPDXipSHq4Q';" alt="Worth A Thousand Words M777a2 Howitzer Dodlive Worth Words Big Guns">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Worth A Thousand Words M777a2 Howitzer Dodlive Worth Words Big Guns</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/84/19/b284195ab5d16f598b9172b18ebc096c.png" data-lightbox="roadtrip" data-title="Career Transition Ivmf Veteran Jobs Hiring Veterans Job Fair">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/84/19/b284195ab5d16f598b9172b18ebc096c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8sruJXXh-SPNeg8cCsTDi7MEP8lRxUrrttg';" alt="Career Transition Ivmf Veteran Jobs Hiring Veterans Job Fair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Career Transition Ivmf Veteran Jobs Hiring Veterans Job Fair</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/otis-vision-and-mission.html">Otis Vision And Mission</a></li>
+													<li class="list-group-item"><a href="/otis-and-lee.html">Otis And Lee</a></li>
+													<li class="list-group-item"><a href="/otis-elevator-los-angeles.html">Otis Elevator Los Angeles</a></li>
+													<li class="list-group-item"><a href="/otis-and-otis.html">Otis And Otis</a></li>
+													<li class="list-group-item"><a href="/otis-and-piper-4001.html">Otis And Piper 4001</a></li>
+													<li class="list-group-item"><a href="/pa-guardianship-act.html">Pa Guardianship Act</a></li>
+													<li class="list-group-item"><a href="/otis-and-scarecrow-read-aloud.html">Otis And Scarecrow Read Aloud</a></li>
+													<li class="list-group-item"><a href="/otis-and-mandy-in-real-life.html">Otis And Mandy In Real Life</a></li>
+													<li class="list-group-item"><a href="/otis-and-ruby-reddit.html">Otis And Ruby Reddit</a></li>
+													<li class="list-group-item"><a href="/otis-milo-and-otis.html">Otis Milo And Otis</a></li>
+													<li class="list-group-item"><a href="/pa-national-guard-tuition-assistance.html">Pa National Guard Tuition Assistance</a></li>
+													<li class="list-group-item"><a href="/otis-antv-operasi-plastik.html">Otis Antv Operasi Plastik</a></li>
+													<li class="list-group-item"><a href="/otis-and-maeve-love-story.html">Otis And Maeve Love Story</a></li>
+													<li class="list-group-item"><a href="/otis-and-the-tornado.html">Otis And The Tornado</a></li>
+													<li class="list-group-item"><a href="/pa-guardian-ad-litem.html">Pa Guardian Ad Litem</a></li>
+													<li class="list-group-item"><a href="/otis-and-katie-chicago-fire.html">Otis And Katie Chicago Fire</a></li>
+													<li class="list-group-item"><a href="/otis-and-will-discover-the-deep-the-record-setting-dive-of-the-bathysphere.html">Otis And Will Discover The Deep The Record Setting Dive Of The Bathysphere</a></li>
+													<li class="list-group-item"><a href="/otis-and-kone.html">Otis And Kone</a></li>
+													<li class="list-group-item"><a href="/otis-and-vinnys.html">Otis And Vinnys</a></li>
+													<li class="list-group-item"><a href="/otis-williams-and-the.html">Otis Williams And The</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

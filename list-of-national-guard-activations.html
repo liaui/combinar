@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>List Of National Guard Activations - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "List Of National Guard Activations",
+  "datePublished": "2021-02-27",
+  "image": "https://media.defense.gov/2021/Jan/27/2002571580/740/740/0/210117-Z-QH938-1004.JPG",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=list+of+national+guard+activations",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>List Of National Guard Activations</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Tim Walz already announced early Saturday that he authorized the full mobilization of the state. Louis City Hall parking lot Nov. Arizona Alaska California Colorado Florida Georgia Illinois Indiana Kentucky Michigan. <br>				
+			</p>
+										<a class="badge badge-danger" href="/hungarian-army-rank-insignia.html">hungarian army rank insignia</a>
+											<a class="badge badge-primary" href="/indian-army-hindi-songs-dj.html">indian army hindi songs dj</a>
+											<a class="badge badge-light" href="/illinois-army-national-guard-public-website.html">illinois army national guard public website</a>
+											<a class="badge badge-primary" href="/illinois-army-national-guard-ocs.html">illinois army national guard ocs</a>
+											<a class="badge badge-info" href="/indian-army-jung-ke-maidan-mein-kitna-song.html">indian army jung ke maidan mein kitna song</a>
+											<a class="badge badge-dark" href="/how-to-be-full-time-national-guard.html">how to be full time national guard</a>
+											<a class="badge badge-info" href="/indian-army-dj-song-free-download.html">indian army dj song free download</a>
+											<a class="badge badge-success" href="/indian-army-kannada-mp3-songs-download.html">indian army kannada mp3 songs download</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to pay a visit to the right blog.  Our website gives you hints for viewing the highest quality video and picture content, search and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, so we recommend this movie for you to see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Sep/04/2002178631/780/780/0/190901-F-OL711-270.JPG" data-lightbox="roadtrip" data-title="South Carolina National Guard Provides Support To Families Service Members During Storm Activation U S Air Force Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Sep/04/2002178631/780/780/0/190901-F-OL711-270.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2tpDJHPHVkiORz5VGUg-_94GLJDsOg61I8g';" alt="South Carolina National Guard Provides Support To Families Service Members During Storm Activation U S Air Force Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">South Carolina National Guard Provides Support To Families Service Members During Storm Activation U S Air Force Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/03/national-guard-coronavirus-response.jpg" data-lightbox="roadtrip" data-title="National Guard S Role Fighting The Coronavirus Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/03/national-guard-coronavirus-response.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgs2m2DrCWvT5TVfQone1rH4voaiifBXTcdQ';" alt="National Guard S Role Fighting The Coronavirus Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard S Role Fighting The Coronavirus Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.abcnews.com/images/US/military-1-ht-er-200318_hpMain_16x9_992.jpg" data-lightbox="roadtrip" data-title="How The Us Military Is Being Utilized In Responding To Coronavirus Abc News">
+											<img class="card-img v-image ads-img " src="https://s.abcnews.com/images/US/military-1-ht-er-200318_hpMain_16x9_992.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxcz56CmSL-2IMhW8CZOmMhwq8FlySrBGUPg';" alt="How The Us Military Is Being Utilized In Responding To Coronavirus Abc News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How The Us Military Is Being Utilized In Responding To Coronavirus Abc News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.usnews.com/dims4/USNEWS/fa76f9b/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F3e%2F1c892ec73b7e4c31341458e883892e%2Fmedia%3A5d45d6e41664443fbaf5538c42ac0dc5Virus_Outbreak_Nevada_51526.jpg" data-lightbox="roadtrip" data-title="Nevada Guard Emphasizes Activation Is Not Martial Law Nevada News Us News">
+											<img class="card-img v-image ads-img " src="https://www.usnews.com/dims4/USNEWS/fa76f9b/2147483647/thumbnail/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F3e%2F1c892ec73b7e4c31341458e883892e%2Fmedia%3A5d45d6e41664443fbaf5538c42ac0dc5Virus_Outbreak_Nevada_51526.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrpssLlsQhuTqigfgc5U_KV3wTOlrMgvwaqg';" alt="Nevada Guard Emphasizes Activation Is Not Martial Law Nevada News Us News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Nevada Guard Emphasizes Activation Is Not Martial Law Nevada News Us News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images01.military.com/sites/default/files/styles/full/public/2020-05/rhode-island-national-guard-C130-3000.jpg?itok=388DJau6" data-lightbox="roadtrip" data-title="Trump Authorizes Activation Of More Troops To Fight Drug Trafficking Military Com">
+											<img class="card-img v-image ads-img " src="https://images01.military.com/sites/default/files/styles/full/public/2020-05/rhode-island-national-guard-C130-3000.jpg?itok=388DJau6" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIswoib0A26b0oMzvOmh-DK8tSI9n109XmVw';" alt="Trump Authorizes Activation Of More Troops To Fight Drug Trafficking Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Authorizes Activation Of More Troops To Fight Drug Trafficking Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EtuKvqLWQAY4GtT.jpg" data-lightbox="roadtrip" data-title="Zjytfpecvynkim">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EtuKvqLWQAY4GtT.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4SeNpBFHuEegC9PDoQpF0FcQeuKYV5DCVUA';" alt="Zjytfpecvynkim">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Zjytfpecvynkim</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://fl.ng.mil/news/PublishingImages/Pages/default/slider_01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4SeNpBFHuEegC9PDoQpF0FcQeuKYV5DCVUA';" alt="Zjytfpecvynkim">
+										<div class="card-body">
+						<h3 class="h5"><b>There are now 5100 National Guard troops activated in Washington DC.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>List of national guard activations</strong>. 
+								
+																	18 2014 for Michael Brown who was killed by a police officer Aug. 
+																	3 election in a number of ways including assisting with cyber defense working the polls and standing-by to respond to any civil unrest Military Times reported. 
+																	-- 1200 from the DC. 
+																	National Guard Activations in 2020 Do Not Stop Trend of Reduced Military Funerals One area of service that has declined in 2020 due to COVID-19 is the number of military funeral honors guard teams that have been asked to participate in the services of veterans according to the New York National Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Guard is expecting a rapid increase in unit activations over the next few weeks leaders said at the Pentagon Thursday filling roles like coronavirus testing and potentially law. 
+																	The activation of the National Guard in states across the nation comes after Minnesota Gov. 
+																	Guard Activations in Response to Coronavirus Expected to Hit 1000 by Weekend. 
+																	States activate National Guard close capitol buildings ahead of Biden inauguration and possible violence Many governors have advised employees to stay home in coming days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Photo courtesy of Army National Guard Capt. 
+																	The Army National Guard may be called up for active duty by the state or territorial governors to help respond to domestic emergencies and disasters. 
+																	On Monday 1000 troops were reportedly activated in Massachusetts. 
+																	On top of the District of Columbia the 23 states that have activated the National Guard are. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	9 in Ferguson Mo. 
+																	The National Guard is preparing to activate more than 3600 troops across the country in support of the presidential election. 
+																	Members of the Missouri National Guard stand watch outside a command post near a protest Monday Aug. 
+																	At least 16 states have Guard troops at the ready for a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Members of the Missouri National Guard stand near the entry to the St. 
+																	Fortunately the National Guard can be activated in a third way. 
+																	The United States National Guard is part of the reserve components of the United States Army and the United States Air ForceIt is a military reserve force composed of National Guard military members or units of each state and the territories of Guam the Virgin Islands and Puerto Rico and the District of Columbia for a total of 54 separate organizations. 
+																	National Guard and 3900 from 11 other states -- and the citys mayor no longer wants them there. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	More than 3600 National Guard service members have been activated across the country ahead of possible civil unrest following Election Day. 
+																	3 2020 as Election Day comes to a close. 
+																	Vice-president Mike Pence reportedly gave the order to activate the National Guard a process usually done by the commander in chief. 
+																	The National Guard is part of a ready reserve category that can be activated by the president in a national emergency with or without the authority of state governors as stated in HR. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The usual suspects for Guard activations like. 
+																	The Army National Guard as currently authorized and organized operates under Title 10 of the United States Code when under federal control and Title 32 of the United States Code and applicable state laws when under state control. 
+																	National Guard members in Florida Iowa Louisiana New York Rhode Island and Washington state are providing support. 
+																	Avery Schneider and the New York National Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	President Trump did not explicitly condemn his violent. 
+																	The Guard plans to support the Nov. 
+																	Under Title 32 status a guardsman is activated by and remains under the control of the governor but is paid for by the federal. 
+																	There was a new round of newly-disclosed Guard activations Monday including 1000 troops in Massachusetts 300 in Arizona 300 in Alabama and an undisclosed number in Florida Oregon and Illinois. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Arizona Alaska California Colorado Florida Georgia Illinois Indiana Kentucky Michigan. 
+																	On top of the District of Columbia the 23 states that have activated the National Guard are. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Jun/07/2002311892/780/780/0/200604-Z-AV530-102.JPG" data-lightbox="roadtrip" data-title="Utah National Guard Soldiers To Return From Washington D C Support Utah National Guard Public Notice Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Jun/07/2002311892/780/780/0/200604-Z-AV530-102.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwu-dQdZiHllsdn6A_BXnEkBS48H20vtjeFg';" alt="Utah National Guard Soldiers To Return From Washington D C Support Utah National Guard Public Notice Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Utah National Guard Soldiers To Return From Washington D C Support Utah National Guard Public Notice Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.arpc.afrc.af.mil/portals/4/Documents/ARPC%20Web%20Images/180916-F-XX000-0001.jpg?ver=2019-06-04-171858-277" data-lightbox="roadtrip" data-title="Recognition">
+											<img class="card-img v-image ads-img " src="https://www.arpc.afrc.af.mil/portals/4/Documents/ARPC%20Web%20Images/180916-F-XX000-0001.jpg?ver=2019-06-04-171858-277" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ5fTZMLDeUnyim76DZUXyIxWmHwgYHlvkog';" alt="Recognition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Recognition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Mar/25/2002269986/990/382/0/200324-Z-BH411-0097.JPG" data-lightbox="roadtrip" data-title="Home">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Mar/25/2002269986/990/382/0/200324-Z-BH411-0097.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYw0d0QDIE_lDUx4HyzF6cn7vziBN5uLHzbA';" alt="Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images03.military.com/sites/default/files/styles/full/public/2019-08/Army%20Reserve%201200.jpg?itok=_Blg4tLQ" data-lightbox="roadtrip" data-title="Reserve And National Guard Activations Top One Million Since 9 11 Military Com">
+											<img class="card-img v-image ads-img " src="https://images03.military.com/sites/default/files/styles/full/public/2019-08/Army%20Reserve%201200.jpg?itok=_Blg4tLQ" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZdb6yvkpzr2jM8dGBju6c64Lir69qLXbeEA';" alt="Reserve And National Guard Activations Top One Million Since 9 11 Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reserve And National Guard Activations Top One Million Since 9 11 Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fl.ng.mil/news/PublishingImages/Pages/default/slider_01.jpg" data-lightbox="roadtrip" data-title="Florida National Guard Official Website Of The Florida National Guard">
+											<img class="card-img v-image ads-img " src="https://fl.ng.mil/news/PublishingImages/Pages/default/slider_01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNH0YKa7yY9tb1TaKkUD2DvSaISwhqM9Hcgg';" alt="Florida National Guard Official Website Of The Florida National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Guard Official Website Of The Florida National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Apr/18/2002283844/1310/736/0/200415-Z-IX878-0194.JPG" data-lightbox="roadtrip" data-title="Covid 19">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Apr/18/2002283844/1310/736/0/200415-Z-IX878-0194.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToQnR-Aj52BT7WWVmCYMBCqBSwvFVUTz8llw';" alt="Covid 19">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Covid 19</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://manchesterinklink.com/wp-content/uploads/2020/04/200407-Z-HA185-0008-scaled.jpg" data-lightbox="roadtrip" data-title="Gov Asks Trump For Activation Of 900 Nh National Guardsmen Through March To Meet Covid 19 Challenges Manchester Ink Link">
+											<img class="card-img v-image ads-img " src="https://manchesterinklink.com/wp-content/uploads/2020/04/200407-Z-HA185-0008-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrG35R4F8tEhBY0hxOOt2DzI-MAw1LL1iN2w';" alt="Gov Asks Trump For Activation Of 900 Nh National Guardsmen Through March To Meet Covid 19 Challenges Manchester Ink Link">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gov Asks Trump For Activation Of 900 Nh National Guardsmen Through March To Meet Covid 19 Challenges Manchester Ink Link</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EtuBl49XYAEyZix.jpg" data-lightbox="roadtrip" data-title="8uldqbw3je6a0m">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EtuBl49XYAEyZix.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSikVvzHMXcfmdX5RyOk_WNyIKaGIqPWhIu6w';" alt="8uldqbw3je6a0m">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">8uldqbw3je6a0m</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2021/Jan/27/2002571580/740/740/0/210117-Z-QH938-1004.JPG" data-lightbox="roadtrip" data-title="History">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2021/Jan/27/2002571580/740/740/0/210117-Z-QH938-1004.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRljEPYNjQwPWHoYPQrtNdkuS1W3iGCYeIbgQ';" alt="History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.khon2.com/wp-content/uploads/sites/8/2020/04/National-Guard.jpg?w=1280" data-lightbox="roadtrip" data-title="Gov Activates Hawaii National Guard To Help With Pandemic Khon2">
+											<img class="card-img v-image ads-img " src="https://www.khon2.com/wp-content/uploads/sites/8/2020/04/National-Guard.jpg?w=1280" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPfK5RtZlpdDgP1u-Zhk6ytDilLYJ84Pmx2g';" alt="Gov Activates Hawaii National Guard To Help With Pandemic Khon2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gov Activates Hawaii National Guard To Help With Pandemic Khon2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sandboxx.us/wp-content/uploads/2018/08/1599px-Citizen-Soldiers_and_Airmen_of_the_Oregon_National_Guard_stand_in_formation_in_front_of_the_Oregon_state_capitol-1140x558.jpg" data-lightbox="roadtrip" data-title="10 National Guard Benefits You Might Not Know About Sandboxx">
+											<img class="card-img v-image ads-img " src="https://www.sandboxx.us/wp-content/uploads/2018/08/1599px-Citizen-Soldiers_and_Airmen_of_the_Oregon_National_Guard_stand_in_formation_in_front_of_the_Oregon_state_capitol-1140x558.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUr3Zi7hi3cVmL-9pJDtiufg7AUxERAhByiw';" alt="10 National Guard Benefits You Might Not Know About Sandboxx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 National Guard Benefits You Might Not Know About Sandboxx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.click2houston.com/resizer/-vtxncIaMTo_IOQmsC-qfM-IQA4=/1600x1066/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/arc-anglerfish-arc2-prod-gmg.s3.amazonaws.com/public/X5DCBPZ5SRCJTBUOE7T7ACFPXA.jpg" data-lightbox="roadtrip" data-title="Trump Outlines National Guard Activations For New York California And Washington">
+											<img class="card-img v-image ads-img " src="https://www.click2houston.com/resizer/-vtxncIaMTo_IOQmsC-qfM-IQA4=/1600x1066/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/arc-anglerfish-arc2-prod-gmg.s3.amazonaws.com/public/X5DCBPZ5SRCJTBUOE7T7ACFPXA.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwp-alg2Cjly5JaeV5zlgREnB1mkZPZeEs-A';" alt="Trump Outlines National Guard Activations For New York California And Washington">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trump Outlines National Guard Activations For New York California And Washington</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://usaa.i.lithium.com/t5/image/serverpage/image-id/5944iC4E2108F820E7DC5/image-size/medium?v=v2&amp;px=-1" data-lightbox="roadtrip" data-title="National Guard Life How To Prepare For Emergency Usaa Community 107301">
+											<img class="card-img v-image ads-img " src="https://usaa.i.lithium.com/t5/image/serverpage/image-id/5944iC4E2108F820E7DC5/image-size/medium?v=v2&amp;px=-1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2eLy3UXt8zV1r3CsELkpfBlSogxUJBnewLg';" alt="National Guard Life How To Prepare For Emergency Usaa Community 107301">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Life How To Prepare For Emergency Usaa Community 107301</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-national-guard-best-warrior-competition-2020.html">Army National Guard Best Warrior Competition 2020</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-health-requirements.html">Army National Guard Health Requirements</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-best-warrior-competition.html">Army National Guard Best Warrior Competition</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-in-nj.html">Army National Guard In Nj</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-hair-regulations.html">Army National Guard Hair Regulations</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-bah-rates.html">Army National Guard Bah Rates</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-in-combat.html">Army National Guard In Combat</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-in-maryland.html">Army National Guard In Maryland</a></li>
+													<li class="list-group-item"><a href="/army-melisa-meninggal.html">Army Melisa Meninggal</a></li>
+													<li class="list-group-item"><a href="/army-mp3-song-shahrukh-khan.html">Army Mp3 Song Shahrukh Khan</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-acronym.html">Army National Guard Acronym</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-awol-regulation.html">Army National Guard Awol Regulation</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-in-las-vegas.html">Army National Guard In Las Vegas</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-aircraft-mechanic.html">Army National Guard Aircraft Mechanic</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-fitness-requirements.html">Army National Guard Fitness Requirements</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-agr-pay.html">Army National Guard Agr Pay</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-est.html">Army National Guard Est</a></li>
+													<li class="list-group-item"><a href="/army-logo-cargo-pants.html">Army Logo Cargo Pants</a></li>
+													<li class="list-group-item"><a href="/army-military-training-request-form.html">Army Military Training Request Form</a></li>
+													<li class="list-group-item"><a href="/army-national-guard-in-nc.html">Army National Guard In Nc</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

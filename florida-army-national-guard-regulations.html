@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Florida Army National Guard Regulations - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Florida Army National Guard Regulations",
+  "datePublished": "2021-02-27",
+  "image": "https://militarybenefits.info/wp-content/uploads/2018/11/National-Guard_opt.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=florida+army+national+guard+regulations",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Florida Army National Guard Regulations</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">AugustineOn September 20 1565 Spanish admiral and Floridas first governor Pedro Menendez de Aviles attacked and defended Florida from an attempted French settlement at Fort Caroline in what is now Jacksonville. Eifert contends the number should be upward of 20000. This regulation provides leaders g uidance on integrating the risk management approach into unit activities and establishes risk assessment requirements for Florida Army National Guard FLARNG units. <br>				
+			</p>
+										<a class="badge badge-danger" href="/otis-art-and-design.html">otis art and design</a>
+											<a class="badge badge-danger" href="/otis-kanye-and-jay-z.html">otis kanye and jay z</a>
+											<a class="badge badge-warning" href="/otis-and-ruby-season-3.html">otis and ruby season 3</a>
+											<a class="badge badge-light" href="/otis-and-will-discover-the-deep.html">otis and will discover the deep</a>
+											<a class="badge badge-dark" href="/pak-army-arty-guns.html">pak army arty guns</a>
+											<a class="badge badge-dark" href="/otis-and-lee-northbrook.html">otis and lee northbrook</a>
+											<a class="badge badge-warning" href="/otis-and-jean.html">otis and jean</a>
+											<a class="badge badge-danger" href="/pa-army-national-guard.html">pa army national guard</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to visit the ideal site.  Our website gives you suggestions for seeing the maximum quality video and picture content, hunt and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, therefore we recommend this video for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fl.ng.mil/news/PublishingImages/Pages/default/slider_01.jpg" data-lightbox="roadtrip" data-title="Florida National Guard Official Website Of The Florida National Guard">
+											<img class="card-img v-image ads-img " src="https://fl.ng.mil/news/PublishingImages/Pages/default/slider_01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZLx1iykJ6kzzkCo6K1miQoQ-K2sKtnKDkEBI-c-sjfv_Of-yqji_yM399MUmCMsrU3gRnck8nYoCK4cuixhI&amp;ec=45774424';" alt="Florida National Guard Official Website Of The Florida National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Florida National Guard Official Website Of The Florida National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="VZt1jmPEKlhoiM" data-lightbox="roadtrip" data-title="Https Www Nationalguard Mil Portals 31 Images Image 20gallery Graphics Arng 20marketing 20logo Arng 20branding 20style 20guidelines Pdf">
+											<img class="card-img v-image ads-img " src="VZt1jmPEKlhoiM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-e0yGcbcjKIJxTQ9uaLHPCoP35g-PIAiMmiCQaF4223uehCR7Tf7xXlT3UAP46edWuMnMOks45V8WJ3HlgnQ&amp;ec=45774424';" alt="Https Www Nationalguard Mil Portals 31 Images Image 20gallery Graphics Arng 20marketing 20logo Arng 20branding 20style 20guidelines Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Nationalguard Mil Portals 31 Images Image 20gallery Graphics Arng 20marketing 20logo Arng 20branding 20style 20guidelines Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://fl.ng.mil/careers/SiteAssets/flng_logo_fl02.png" data-lightbox="roadtrip" data-title="Join The Guard The Official Home Page Of The Florida National Guard">
+											<img class="card-img v-image ads-img " src="https://fl.ng.mil/careers/SiteAssets/flng_logo_fl02.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaRkBg-ILaixwSl2wmSOSEkbysBBLzIBdvTp2GM5ymq2HzpPzOc-poq5GxGTDTutWDG-aouBWJE9KyJ4Sfy70&amp;ec=45774424';" alt="Join The Guard The Official Home Page Of The Florida National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Join The Guard The Official Home Page Of The Florida National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nationalguard.mil/Portals/31/Images/Image%20Gallery/Graphics/ARNG%20Marketing%20Logo/ARNG%20Marketing%20Logo.png" data-lightbox="roadtrip" data-title="Downloadable Graphics Resources The National Guard">
+											<img class="card-img v-image ads-img " src="https://www.nationalguard.mil/Portals/31/Images/Image%20Gallery/Graphics/ARNG%20Marketing%20Logo/ARNG%20Marketing%20Logo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2C7ewDmulwuiziHGm7EyZkl2v3EVQrJMHczM9mvbo61RY84iGcmYwiXhcIFaJSU_OCnUp4Op1ygnbM3HMvmQ&amp;ec=45774424';" alt="Downloadable Graphics Resources The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Downloadable Graphics Resources The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://campbelllawobserver.com/wp-content/uploads/2020/10/NC-National-Guard-pic-scaled.jpg" data-lightbox="roadtrip" data-title="Always Ready Always There Yet Still Misunderstood Debunking Myths About The National Guard Campbell Law Observer">
+											<img class="card-img v-image ads-img " src="http://campbelllawobserver.com/wp-content/uploads/2020/10/NC-National-Guard-pic-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgDc4sDMuBC-ITWvDag0pZu-U8A-MuwtltFDolhtN6HnfLZVJIwA32lb8hz81bpqSOcYkxVznp_qwraaEDI_s&amp;ec=45774424';" alt="Always Ready Always There Yet Still Misunderstood Debunking Myths About The National Guard Campbell Law Observer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Always Ready Always There Yet Still Misunderstood Debunking Myths About The National Guard Campbell Law Observer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2020/03/national-guard-coronavirus-response.jpg" data-lightbox="roadtrip" data-title="National Guard S Role Fighting The Coronavirus Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2020/03/national-guard-coronavirus-response.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKNCHNFupce8qg8EqWNE4jw-kDFnUE5SZ2KtBI3V2s3NL9_Eq2w0nf9ghZ27kJbD8EY_JFCZ34cNYqbTDalbc&amp;ec=45774424';" alt="National Guard S Role Fighting The Coronavirus Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard S Role Fighting The Coronavirus Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://www.nationalguard.mil/Portals/31/Images/Image%20Gallery/Graphics/ARNG%20Marketing%20Logo/ARNG%20Marketing%20Logo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKNCHNFupce8qg8EqWNE4jw-kDFnUE5SZ2KtBI3V2s3NL9_Eq2w0nf9ghZ27kJbD8EY_JFCZ34cNYqbTDalbc&amp;ec=45774424';" alt="National Guard S Role Fighting The Coronavirus Military Benefits">
+										<div class="card-body">
+						<h3 class="h5"><b>The predecessor of the Florida Army National Guard was a Spanish Florida militia formed in 1565 in the newly established presidio town of St.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Florida army national guard regulations</strong>. 
+								
+																	And provides policy for the development implementation and management of the ARNG Safety Program. 
+																	This page was created as a reference to soldiers those who help soldiers and those who are interested in becoming soldiers with any information in regards to education. 
+																	To protect the public safety of citizens. 
+																	Florida - Army National Guard Pinellas Park FL USA Keeping the back of house in order is a key factor in successful mission planning. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Florida Department of Military Affairs provides management oversight of the Florida National Guard and provides units and personnel ready to support national security objectives. 
+																	This regulation establishes policies and prescribes procedures for ob- taining administering and separating Army National Guard of the United States and US. 
+																	Under state law the Army National Guard provides protection of life property. 
+																	This regulation on the Army National Guard ARNG Safety Program has been revised. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	FLNGs newest CBTS March 23 2020 - Florida National Guard Soldiers and Airman opened South Floridas second COVID-19 drive-thru Community Based Testing Site at the Hard Rock Stadium today in support of the Federal Emergency Management Agency. 
+																	Space Force tracks missiles new grooming regulations - Defense News Weekly 020621 - Full Episode. 
+																	When Army National Guard units are not mobilized or under federal control they report to the governor through the state Adjutant General. 
+																	As an Automated Logistical Specialist in the Army National Guard you will maximize your organizational skills and learn the ins and outs of supply chain management. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	2021 United States National Guard ELIGIBILITY. 
+																	Florida currently has roughly 120000 Army National Guardsmen and Air National Guardsmen. 
+																	Abraham MorluArmy National Guard. 
+																	Army Reserve Soldiers serving as. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Florida national guard education services office Welcome to the GoArmyEd page for the Florida Army National Guard Education Office. 
+																	Francis Barracks 82 Marine Street St. 
+																	Florida Politics first reported Eiferts comments. 
+																	Active duty regulations allow federal soldiers airmen sailors and marines to. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States National Guard is part of the reserve components of the United States Army and the United States Air ForceIt is a military reserve force composed of National Guard military members or units of each state and the territories of Guam the Virgin Islands and Puerto Rico and the District of Columbia for a total of 54 separate organizations. 
+																	1-2 dated January 1 1948 require that Flor- ida decorations the Florida Crossand the Distinguished Service Medal be worn immediately following the decorations of the United States Army and the United States Navy. 
+																	Augustine Florida 32084 P. 
+																	However such pay hospitalization or medical attention may not be provided for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Major General Michael A. 
+																	The Florida Na- tional Guard Regulations No. 
+																	Calhoun The Adjutant General of Florida St. 
+																	It explains the need for safety in the ARNG. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And to contribute to national state and community programs that add value to the United States of America and to the State of Florida. 
+																	Each of the 54 National Guard organizations is supervised by the adjutant general of the state or territory. 
+																	The nature of our missions require our soldiers to routinely participate in training. 
+																	1 Every member of the Florida National Guard who is injured or disabled while on state active duty must be furnished medical attention and necessary hospitalization at the expense of the state and must be continued in a pay status on state active duty until a board of inquiry appointed by the Adjutant General determines that the disability no longer justifies such pay hospitalization or medical attention. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This regulation incorporates the provisions of Army Regulation AR 385-. 
+																	Those National Guard soldiers and airmen who subsequently serve in the active or reserve federal forces of the United States Army Navy Marine Corps Coast Guard or United States Air Force ie as active duty or reserve members of the Army Navy Air Force Marine Corps or Coast Guard may not continue to wear and display such decorations on a military uniform unless such activation is under Title 32 status. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.nationalguard.mil/Portals/31/Features/2019/best-warrior-competition/full/190719-Z-NB148-105.jpg" data-lightbox="roadtrip" data-title="2019 Best Warrior Competition Features The National Guard">
+											<img class="card-img v-image ads-img " src="https://www.nationalguard.mil/Portals/31/Features/2019/best-warrior-competition/full/190719-Z-NB148-105.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6lHWeucmxA10RVkCrUccvb9bXOtRjPKBLD3ZNlRWKuoyc9xZd6gnlsbOynhoPFBD-d-WYrPRNR37PGsvPV_4&amp;ec=45774424';" alt="2019 Best Warrior Competition Features The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2019 Best Warrior Competition Features The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://militarybenefits.info/wp-content/uploads/2018/11/National-Guard_opt.jpg" data-lightbox="roadtrip" data-title="Art Vs Agr Vs Tr Jobs In The Guard Reserve Military Benefits">
+											<img class="card-img v-image ads-img " src="https://militarybenefits.info/wp-content/uploads/2018/11/National-Guard_opt.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBDI-zXX3YNKL9qgUlBOZyWLv5tMPRSpziFsPnCDLoKbXFkrOCWkq-V9WmQWX_x9X6l5sFn7krtzYfpRIyx04&amp;ec=45774424';" alt="Art Vs Agr Vs Tr Jobs In The Guard Reserve Military Benefits">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Art Vs Agr Vs Tr Jobs In The Guard Reserve Military Benefits</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2018/Jun/29/2001937694/600/400/0/150515-A-EE857-206.JPG" data-lightbox="roadtrip" data-title="Army Guard Regional Training Institutes Crucial To Growth National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2018/Jun/29/2001937694/600/400/0/150515-A-EE857-206.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUrQ3JhYeRtsWRsYVLGIaLE7obtJdcJv5uxWmYpO8nwVf-L8NupM8b_J9442ITx6tnyW3L0VgiES2zKMakwm4&amp;ec=45774424';" alt="Army Guard Regional Training Institutes Crucial To Growth National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Guard Regional Training Institutes Crucial To Growth National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.dvidshub.net/media/frames/video/2011/772109.jpg" data-lightbox="roadtrip" data-title="Home Of The 145th Airlift Wing">
+											<img class="card-img v-image ads-img " src="https://cdn.dvidshub.net/media/frames/video/2011/772109.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8SFVql4mnDVrRlXL2-zeh9F-6dn0h3UNDhAgUEGlTtSpxvTenC3ba9dggft1I33jg7AfMZ7r8wNZ2B7kndiA&amp;ec=45774424';" alt="Home Of The 145th Airlift Wing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Home Of The 145th Airlift Wing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Oct/04/2002190771/780/780/0/190908-Z-FC733-107.JPG" data-lightbox="roadtrip" data-title="Rule Change Lets More Airmen Become Officers Air National Guard Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Oct/04/2002190771/780/780/0/190908-Z-FC733-107.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ89j5KKxApZgLXBF7R7wjE2WGZsSvJBIA28kXBDnv0YGXBHxY-C8DTvwmjFWKOBK86pPBFLJHW65o565oRSVE&amp;ec=45774424';" alt="Rule Change Lets More Airmen Become Officers Air National Guard Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rule Change Lets More Airmen Become Officers Air National Guard Article Display</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/83/83/f28383063afb6639ac6ba8cbb2bf5885.jpg" data-lightbox="roadtrip" data-title="Pin On United States Vacatio">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/83/83/f28383063afb6639ac6ba8cbb2bf5885.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrvtqeVnc9P-AC4fKPAI_QN-SfjBAwzGE2NORICGQ4HR2vhnaRclyDLFsLSsWkO51rNwPSFg2P0kOExtvEJjo&amp;ec=45774424';" alt="Pin On United States Vacatio">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On United States Vacatio</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://the-military-guide.com/wp-content/uploads/2016/07/national-guard-retirement.jpg" data-lightbox="roadtrip" data-title="What You Need To Know About National Guard Retirement Military Guide">
+											<img class="card-img v-image ads-img " src="https://the-military-guide.com/wp-content/uploads/2016/07/national-guard-retirement.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSkPNlqWnCKK3qLPdOB2oib65ixt-O8VyB2yjFF4zEPHN5MAi_4YK5yVtR5ir8cRFd--crPTY7jWIZLhQLYt8&amp;ec=45774424';" alt="What You Need To Know About National Guard Retirement Military Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What You Need To Know About National Guard Retirement Military Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://thehill.com/sites/default/files/styles/article_full/public/usnationalguard_040418getty.jpg?itok=eIi7Nu4W" data-lightbox="roadtrip" data-title="Retiring Guard And Reserve Wait At The End Of The Military S Pay Line Thehill">
+											<img class="card-img v-image ads-img " src="https://thehill.com/sites/default/files/styles/article_full/public/usnationalguard_040418getty.jpg?itok=eIi7Nu4W" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8zxRdNZ_-nd0pEZJVyGR1PrFwCwZjOiFfXIzWWKyIh-8Iwtg-kl6LVtHhQmf4kuSqPsw7jMbMJZ2GIJjxCLw&amp;ec=45774424';" alt="Retiring Guard And Reserve Wait At The End Of The Military S Pay Line Thehill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Retiring Guard And Reserve Wait At The End Of The Military S Pay Line Thehill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.part-time-commander.com/wp-content/uploads/2012/09/army-ngb-4100.jpg" data-lightbox="roadtrip" data-title="Ngb4100 Army National Guard Enlisted Promotion Points Worksheet Citizen Soldier Resource Center">
+											<img class="card-img v-image ads-img " src="https://www.part-time-commander.com/wp-content/uploads/2012/09/army-ngb-4100.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxJXiXDu6dtRHtiQ2Wj3J6a42HeEifNeSN4cF_bjHFcxyJzd7j0c_kj_J91updAavyLHTvE0IRyFGLE-W7yZI&amp;ec=45774424';" alt="Ngb4100 Army National Guard Enlisted Promotion Points Worksheet Citizen Soldier Resource Center">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ngb4100 Army National Guard Enlisted Promotion Points Worksheet Citizen Soldier Resource Center</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Feb/21/2002252914/600/400/0/200221-Z-UH708-0003.JPG" data-lightbox="roadtrip" data-title="Veteran Swears Oath Of Enlistment At Age 79 National Guard State Partnership Program News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Feb/21/2002252914/600/400/0/200221-Z-UH708-0003.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSraJUQjNSrw8ou4_ak1L7Xbn2WWZrple6Hcm4YUmpcSwde5Pynzu-dtFkirIbzVRIjvtA2jcWKKVr_RVjUock&amp;ec=45774424';" alt="Veteran Swears Oath Of Enlistment At Age 79 National Guard State Partnership Program News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Swears Oath Of Enlistment At Age 79 National Guard State Partnership Program News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.mass.gov/files/2017-06/MA%20National%20Guard.jpg" data-lightbox="roadtrip" data-title="Massachusetts National Guard Mass Gov">
+											<img class="card-img v-image ads-img " src="https://www.mass.gov/files/2017-06/MA%20National%20Guard.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGYGCI9aYO99Jf8k4pJkxElg0OIzZeDd-GMKgDJTSmCdUhVwwyeQ3hc0_TMNx6fMH5E0gPBIvee3ReRy78_QE&amp;ec=45774424';" alt="Massachusetts National Guard Mass Gov">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Massachusetts National Guard Mass Gov</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.etsystatic.com/8474866/r/il/d41557/1597006070/il_794xN.1597006070_4l6l.jpg" data-lightbox="roadtrip" data-title="State Vs National Guard Vs Foreign Awards">
+											<img class="card-img v-image ads-img " src="https://i.etsystatic.com/8474866/r/il/d41557/1597006070/il_794xN.1597006070_4l6l.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQONNhzqQXL5UP7hs3JXHl3Orl99xhpgRPlR42086hLyhdLqIAIVE2uBsCb0VbwHTQmdf7QEb-oSix5gUOmqoM&amp;ec=45774424';" alt="State Vs National Guard Vs Foreign Awards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State Vs National Guard Vs Foreign Awards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/9d/e9/399de903895fc695a086fd8956d95cb1.png" data-lightbox="roadtrip" data-title="Army Hairstyles Regulations Natural Hair Styles Army Regulations Marine Haircut">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/9d/e9/399de903895fc695a086fd8956d95cb1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjTNbbiMbYdMMROx63ZNp0P8DZ8z_ofxUQMcr5zf9Nn4mygm6UOR5S9Bba3bZr0it-GuUr-X7JYzmtbjEgXq8&amp;ec=45774424';" alt="Army Hairstyles Regulations Natural Hair Styles Army Regulations Marine Haircut">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Hairstyles Regulations Natural Hair Styles Army Regulations Marine Haircut</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-songs-pakistan.html">Army Songs Pakistan</a></li>
+													<li class="list-group-item"><a href="/army-songs-rahat-fateh-ali-khan.html">Army Songs Rahat Fateh Ali Khan</a></li>
+													<li class="list-group-item"><a href="/army-song-remix-download.html">Army Song Remix Download</a></li>
+													<li class="list-group-item"><a href="/army-songs-com.html">Army Songs Com</a></li>
+													<li class="list-group-item"><a href="/army-songs-hindi-mp3.html">Army Songs Hindi Mp3</a></li>
+													<li class="list-group-item"><a href="/army-song-status-dj.html">Army Song Status Dj</a></li>
+													<li class="list-group-item"><a href="/army-song-pagalworld.html">Army Song Pagalworld</a></li>
+													<li class="list-group-item"><a href="/army-songs-punjabi.html">Army Songs Punjabi</a></li>
+													<li class="list-group-item"><a href="/army-song-on-monster-hunter.html">Army Song On Monster Hunter</a></li>
+													<li class="list-group-item"><a href="/army-songs-mp3.html">Army Songs Mp3</a></li>
+													<li class="list-group-item"><a href="/army-songs-hd.html">Army Songs Hd</a></li>
+													<li class="list-group-item"><a href="/army-song-no-lyrics.html">Army Song No Lyrics</a></li>
+													<li class="list-group-item"><a href="/army-songs-and-video.html">Army Songs And Video</a></li>
+													<li class="list-group-item"><a href="/army-song-with-lyrics.html">Army Song With Lyrics</a></li>
+													<li class="list-group-item"><a href="/army-song-threepenny-opera-lyrics.html">Army Song Threepenny Opera Lyrics</a></li>
+													<li class="list-group-item"><a href="/army-songs-download-come.html">Army Songs Download Come</a></li>
+													<li class="list-group-item"><a href="/army-songs-hindi-download.html">Army Songs Hindi Download</a></li>
+													<li class="list-group-item"><a href="/army-songs-pk-mp3.html">Army Songs Pk Mp3</a></li>
+													<li class="list-group-item"><a href="/army-song-punjabi-download-mp3.html">Army Song Punjabi Download Mp3</a></li>
+													<li class="list-group-item"><a href="/army-songs-bts.html">Army Songs Bts</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

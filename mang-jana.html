@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Mang Jana - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Mang Jana",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/736x/86/67/f4/8667f4dc9948478d859a311dc496a93f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=mang+jana",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Mang Jana</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">112 Where People Listen. The plumber said he would come tomorrow. Tomorrow Sometime in the future. <br>				
+			</p>
+										<a class="badge badge-danger" href="/gb-facebook.html">gb facebook</a>
+											<a class="badge badge-info" href="/gb-election-commission-website.html">gb election commission website</a>
+											<a class="badge badge-primary" href="/gb-sports-website.html">gb sports website</a>
+											<a class="badge badge-info" href="/gb-energy-website.html">gb energy website</a>
+											<a class="badge badge-info" href="/full-time-army-national-guard-jobs.html">full time army national guard jobs</a>
+											<a class="badge badge-info" href="/ga-national-guard-jobs.html">ga national guard jobs</a>
+											<a class="badge badge-secondary" href="/f-16-fly-over-mn.html">f 16 fly over mn</a>
+											<a class="badge badge-info" href="/feeling-proud-indian-army-song-lyrics.html">feeling proud indian army song lyrics</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the right site.  Our website gives you suggestions for viewing the maximum quality video and picture content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/64/9b/79649b93a28ed5f60b6d80b79dd3eeee.jpg" data-lightbox="roadtrip" data-title="Choor Ky Na Jana Plzz Plzz Jese Mrzi Allah Sy Mang Lo But Plzz Choor Ky Nai Jana Quotes From Novels Romantic Poetry Deep Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/64/9b/79649b93a28ed5f60b6d80b79dd3eeee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9QO1xi3XnpqvZaUpLWuObIWgStjGaMICGQ';" alt="Choor Ky Na Jana Plzz Plzz Jese Mrzi Allah Sy Mang Lo But Plzz Choor Ky Nai Jana Quotes From Novels Romantic Poetry Deep Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Choor Ky Na Jana Plzz Plzz Jese Mrzi Allah Sy Mang Lo But Plzz Choor Ky Nai Jana Quotes From Novels Romantic Poetry Deep Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/60/c6/06/60c606e41c99592c73a32691647612d7.jpg" data-lightbox="roadtrip" data-title="Jana Gana Mana Indian National Anthem Jana Gana Mana Adhinayaka Jaya Hai Bharat Bhagya Vidhata Youtube In 2021 Kids Singing Republic Day Festivals Of India">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/60/c6/06/60c606e41c99592c73a32691647612d7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoj1zThR09sNq66ca05zOXI1Ef21ms9m_TQg';" alt="Jana Gana Mana Indian National Anthem Jana Gana Mana Adhinayaka Jaya Hai Bharat Bhagya Vidhata Youtube In 2021 Kids Singing Republic Day Festivals Of India">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jana Gana Mana Indian National Anthem Jana Gana Mana Adhinayaka Jaya Hai Bharat Bhagya Vidhata Youtube In 2021 Kids Singing Republic Day Festivals Of India</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/72/11/067211419dbf02113dda4790d9dc4692.jpg" data-lightbox="roadtrip" data-title="Pin By Mang Jana On Forest Tattoos Bonsai Tree Bonsai Art Bonsai Tree Types">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/72/11/067211419dbf02113dda4790d9dc4692.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2IRA0EaZmy8FVF3EeCMxTExkuYfXkEZqX4A';" alt="Pin By Mang Jana On Forest Tattoos Bonsai Tree Bonsai Art Bonsai Tree Types">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Mang Jana On Forest Tattoos Bonsai Tree Bonsai Art Bonsai Tree Types</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/f3/42/24f3423d47a77d492a73703630c22d57.png" data-lightbox="roadtrip" data-title="Pin By Mang Jana On Moto Motorcycle Design Buell Motorcycles Motorbike Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/f3/42/24f3423d47a77d492a73703630c22d57.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ZXi6IibcgfnkgdIOJJOlGt_3iQbIB5MoKQ';" alt="Pin By Mang Jana On Moto Motorcycle Design Buell Motorcycles Motorbike Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Mang Jana On Moto Motorcycle Design Buell Motorcycles Motorbike Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/96/57/75/965775ba06d736201dbfa798d8ef26df.jpg" data-lightbox="roadtrip" data-title="Azerbaijan Algeria Argentina Albania Afghanistan Adelaide Armenia Australia Austria Abudhabi Angola Andorra Spain Sloveni Slovenia Albania Algeria">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/96/57/75/965775ba06d736201dbfa798d8ef26df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMGmDVzJUApdIMTfTAEBlPvhbdU5EH5W5j9Q';" alt="Azerbaijan Algeria Argentina Albania Afghanistan Adelaide Armenia Australia Austria Abudhabi Angola Andorra Spain Sloveni Slovenia Albania Algeria">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Azerbaijan Algeria Argentina Albania Afghanistan Adelaide Armenia Australia Austria Abudhabi Angola Andorra Spain Sloveni Slovenia Albania Algeria</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/e3/bd/1de3bd5b3111a8bec40192cebb0a7970.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/e3/bd/1de3bd5b3111a8bec40192cebb0a7970.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5YRC6ATKHl5JpD4HK45hYYsBnDXMiFPVYBg';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/1d/e3/bd/1de3bd5b3111a8bec40192cebb0a7970.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5YRC6ATKHl5JpD4HK45hYYsBnDXMiFPVYBg';" alt="">
+										<div class="card-body">
+						<h3 class="h5"><b>Mang Jana Songs Download- Listen to Mang Jana songs MP3 free online.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Mang jana</strong>. 
+								
+																	In spanish manana means tomorrow Although if you say la manana it means morning Another saying is Manana manana which means later. 
+																	View the profiles of people named Mang Boy Jana. 
+																	2015 July 7 Ian Traynor and Larry Elliott Greece given days to agree bailout deal or face. 
+																	Approved third parties also use these tools in connection with our. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Usually to say in a satirical sense sometime in the unspecified future despite the fact that we were told tomorrow without fail. 
+																	Listya Dewi Monthly Listeners. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+																	Select Your Cookie Preferences. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mang Jana is on Facebook. 
+																	We and our partners use cookies to personalize your experience to show you ads based on your interests and for measurement and analytics purposes. 
+																	To take it slow. 
+																	But I think he will probably be here manana. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We use cookies and similar tools to enhance your shopping experience to provide our services understand how customers use our services so we can make improvements and display ads. 
+																	This later can mean a week later or two years later. 
+																	Facebook gives people the power to share and makes the world. 
+																	All content on this website including dictionary thesaurus literature geography and other reference data is for informational purposes only. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Valymo priemones svaros prekes profesionalios plovimo priemones ir iranga. 
+																	Registruodamasis patvirtinu kad sutinku kad mano duomenys butu tvarkomi tiesiogines rinkodaros tikslu ir kad esu susipazines su Privatumo politikoje numatytomis tvarkymo salygomis. 
+																	Check out Listya Dewi by Mang Jana on Amazon Music. 
+																	By using our website and our services you agree to our use of cookies as described in our Cookie. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Jan 29 Word of the Day. 
+																	Denpasar Surabaya Jakarta Makassar Gianyar. 
+																	Facebook gives people the power to. 
+																	Join Facebook to connect with Jana Mang Basha and others you may know. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bergabunglah dengan Facebook untuk terhubung dengan Mang Jana dan teman lainnya yang mungkin Anda kenal. 
+																	Join Facebook to connect with Mang Boy Jana and others you may know. 
+																	Facebook gives people the power. 
+																	The latest tweets from mang_jana. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Join Facebook to connect with Mang Jana and others you may know. 
+																	View the profiles of people named Jana Mang Basha. 
+																	It is very vague. 
+																	Stream ad-free or purchase CDs and MP3s now on Amazoncouk. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Mangjana lagubali youtube buat teman teman diluar bali yang ingin liburan ke bali silahkan menghubungi. 
+																	Lihat profil orang bernama Mang Jana. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/75/1b/f4751b94cbed84de241d796ed29e8193.jpg" data-lightbox="roadtrip" data-title="Pin By Mang Jana On Motorcycles Cafe Racer Design Cafe Racer Bikes Cafe Racer Helmet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/75/1b/f4751b94cbed84de241d796ed29e8193.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnI_RwF4AUQfhM1wz0Zan__DD-MkvPsXE_Rw';" alt="Pin By Mang Jana On Motorcycles Cafe Racer Design Cafe Racer Bikes Cafe Racer Helmet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Mang Jana On Motorcycles Cafe Racer Design Cafe Racer Bikes Cafe Racer Helmet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3a/4b/c6/3a4bc6f99918050909bb7de27fd51cbe.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3a/4b/c6/3a4bc6f99918050909bb7de27fd51cbe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAIa-xZ2QOSuGQ_StgtUsBFZGxuyX9ZX6t3g';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f0/bb/31/f0bb31376965111dd1fe99e202f5e18c.jpg" data-lightbox="roadtrip" data-title="Pin By Andaz E Dil On Allah S Love Allah Islamic Quotes Love Quetos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f0/bb/31/f0bb31376965111dd1fe99e202f5e18c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJn1uzhdwzWFzrCJjLlYfmyLUoIdqUHpk5BQ';" alt="Pin By Andaz E Dil On Allah S Love Allah Islamic Quotes Love Quetos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Andaz E Dil On Allah S Love Allah Islamic Quotes Love Quetos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/34/a5/eb34a546969fd1c00f8a6e4cf6b2f867.jpg" data-lightbox="roadtrip" data-title="Pin By Rohit Designer On Simple Love Quotes Love Quotes In Hindi Heart Touching Love Quotes Hindi Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/34/a5/eb34a546969fd1c00f8a6e4cf6b2f867.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSePCON80oskpMfAfbH_jvAbWNyZCh5-cYkyA';" alt="Pin By Rohit Designer On Simple Love Quotes Love Quotes In Hindi Heart Touching Love Quotes Hindi Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Rohit Designer On Simple Love Quotes Love Quotes In Hindi Heart Touching Love Quotes Hindi Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/66/25/d666257b85ef69955ddbe5aba68116f4.jpg" data-lightbox="roadtrip" data-title="Malik Romantic Pictures Love Quotes Crazy Girls">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/66/25/d666257b85ef69955ddbe5aba68116f4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzrvq7w8H1ROTA7xd5qIcgqtSN5xGzM6wd5w';" alt="Malik Romantic Pictures Love Quotes Crazy Girls">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Malik Romantic Pictures Love Quotes Crazy Girls</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/02/99/60/029960f6aea0f1b31217c422c24ea01a.jpg" data-lightbox="roadtrip" data-title="Quotes And Whatsapp Status Videos In Hindi Gujarati Marathi Daily Quotes New Quotes Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/02/99/60/029960f6aea0f1b31217c422c24ea01a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTQVjBNqsb-Wo5ac55Udjsrxp6R9yupp-UGw';" alt="Quotes And Whatsapp Status Videos In Hindi Gujarati Marathi Daily Quotes New Quotes Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Quotes And Whatsapp Status Videos In Hindi Gujarati Marathi Daily Quotes New Quotes Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5e/bc/3a/5ebc3ab82df4523bb92146f47eddcd8a.jpg" data-lightbox="roadtrip" data-title="Pin By Healthcare N Clayartist On Islam Mang Islam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5e/bc/3a/5ebc3ab82df4523bb92146f47eddcd8a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSDeMZhAYAxG2RMKUL5xUC1jfwyx9wt9mK5A';" alt="Pin By Healthcare N Clayartist On Islam Mang Islam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Healthcare N Clayartist On Islam Mang Islam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/e0/d9/82/e0d9820ef67b8e77df62178849fda79d.jpg" data-lightbox="roadtrip" data-title="Pin On Meri Diary Se">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/e0/d9/82/e0d9820ef67b8e77df62178849fda79d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqmqvDLEIogi-_Hjw9VQyf-HWaW6Zhy6U5_A';" alt="Pin On Meri Diary Se">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Meri Diary Se</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/86/67/f4/8667f4dc9948478d859a311dc496a93f.jpg" data-lightbox="roadtrip" data-title="Pin Oleh Nur Indayani Di Blackpink Fashion Makeup Di 2020 Gaya Model Pakaian Model Pakaian Gaya Model Pakaian Korea">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/86/67/f4/8667f4dc9948478d859a311dc496a93f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBgj8tlgY_4lRs0q5NS5SOamH_E5f5Wm3GUw';" alt="Pin Oleh Nur Indayani Di Blackpink Fashion Makeup Di 2020 Gaya Model Pakaian Model Pakaian Gaya Model Pakaian Korea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Oleh Nur Indayani Di Blackpink Fashion Makeup Di 2020 Gaya Model Pakaian Model Pakaian Gaya Model Pakaian Korea</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/cd/d6/d9cdd6c0841895f20eba1366fd928b5a.jpg" data-lightbox="roadtrip" data-title="Bts Mang Wallpaper Junghoseok Jhope Bt21 Bts Wallpaper Bts Papel De Parede Papeis De Parede Engracados Papel De Parede Kpop">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/cd/d6/d9cdd6c0841895f20eba1366fd928b5a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReGuXJX2tMoH54D5Nez81D3i6jePFN8inG9Q';" alt="Bts Mang Wallpaper Junghoseok Jhope Bt21 Bts Wallpaper Bts Papel De Parede Papeis De Parede Engracados Papel De Parede Kpop">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bts Mang Wallpaper Junghoseok Jhope Bt21 Bts Wallpaper Bts Papel De Parede Papeis De Parede Engracados Papel De Parede Kpop</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/6b/42/0a6b42e55b59f701d5724ca076841669.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/6b/42/0a6b42e55b59f701d5724ca076841669.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0dEV8ZNzjbU-Y5BJubQ-GDlWfx6hVQ6-PRw';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/4a/a7/934aa78e72886364cbc52bf98177bf5f.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/4a/a7/934aa78e72886364cbc52bf98177bf5f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHcONRKo_NVdkqaO_5sVUV61XxSMokgU3_5Q';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/95/64/5b/95645b9f0fa6d5845b5db9a7ffc3a455.jpg" data-lightbox="roadtrip" data-title="Bt21 Memo Pad Bts Notepads K Pop Letter Memo Pad Scrapbooking School Supplies Koya Chimmy Rj Cooky Shooky Tata Mang School Scrapbook Note Pad Memo Pad">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/95/64/5b/95645b9f0fa6d5845b5db9a7ffc3a455.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFNGcC0Bwo51iGMO7QIZBDWqHQm8XjbF6n_Q';" alt="Bt21 Memo Pad Bts Notepads K Pop Letter Memo Pad Scrapbooking School Supplies Koya Chimmy Rj Cooky Shooky Tata Mang School Scrapbook Note Pad Memo Pad">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bt21 Memo Pad Bts Notepads K Pop Letter Memo Pad Scrapbooking School Supplies Koya Chimmy Rj Cooky Shooky Tata Mang School Scrapbook Note Pad Memo Pad</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-ranking-in-usa.html">Army Ranking In Usa</a></li>
+													<li class="list-group-item"><a href="/army-ranking-nigeria.html">Army Ranking Nigeria</a></li>
+													<li class="list-group-item"><a href="/army-ranks-e5.html">Army Ranks E5</a></li>
+													<li class="list-group-item"><a href="/army-rankings-ranger.html">Army Rankings Ranger</a></li>
+													<li class="list-group-item"><a href="/army-ranking-wiki.html">Army Ranking Wiki</a></li>
+													<li class="list-group-item"><a href="/army-ranks-field-marshal.html">Army Ranks Field Marshal</a></li>
+													<li class="list-group-item"><a href="/army-ranking-nepal.html">Army Ranking Nepal</a></li>
+													<li class="list-group-item"><a href="/army-ranks-bitlife.html">Army Ranks Bitlife</a></li>
+													<li class="list-group-item"><a href="/army-ranks-brigadier.html">Army Ranks Brigadier</a></li>
+													<li class="list-group-item"><a href="/army-ranking-hierarchy.html">Army Ranking Hierarchy</a></li>
+													<li class="list-group-item"><a href="/army-ranking-medals.html">Army Ranking Medals</a></li>
+													<li class="list-group-item"><a href="/army-ranks-britain.html">Army Ranks Britain</a></li>
+													<li class="list-group-item"><a href="/army-ranks-for-officers.html">Army Ranks For Officers</a></li>
+													<li class="list-group-item"><a href="/army-ranking-flow-chart.html">Army Ranking Flow Chart</a></li>
+													<li class="list-group-item"><a href="/army-ranking.html">Army Ranking</a></li>
+													<li class="list-group-item"><a href="/army-ranking-names.html">Army Ranking Names</a></li>
+													<li class="list-group-item"><a href="/army-ranks-bottom-to-top.html">Army Ranks Bottom To Top</a></li>
+													<li class="list-group-item"><a href="/army-ranking-sergeant.html">Army Ranking Sergeant</a></li>
+													<li class="list-group-item"><a href="/army-ranks-doctor.html">Army Ranks Doctor</a></li>
+													<li class="list-group-item"><a href="/army-ranking-country-wise.html">Army Ranking Country Wise</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

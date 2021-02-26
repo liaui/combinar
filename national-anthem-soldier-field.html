@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Anthem Soldier Field - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Anthem Soldier Field",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/0a/88/fd/0a88fd4581fe8593c0f6ccc730d1ed71.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+anthem+soldier+field",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Anthem Soldier Field</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">It was Veterans Day weekend and the Salute to Service. The Chicago Blackhawks beat the Pittsburgh Penguins 5-1. Video shot from my seats. <br>				
+			</p>
+										<a class="badge badge-light" href="/army-song-chords.html">army song chords</a>
+											<a class="badge badge-primary" href="/army-reserve-drill-status.html">army reserve drill status</a>
+											<a class="badge badge-secondary" href="/army-song-come.html">army song come</a>
+											<a class="badge badge-success" href="/army-reserve-drill-weekend-schedule-2021.html">army reserve drill weekend schedule 2021</a>
+											<a class="badge badge-secondary" href="/army-ringtone-2020-download.html">army ringtone 2020 download</a>
+											<a class="badge badge-dark" href="/army-running-cadence-songs-with-lyrics.html">army running cadence songs with lyrics</a>
+											<a class="badge badge-secondary" href="/army-reserve-drill-requirements.html">army reserve drill requirements</a>
+											<a class="badge badge-primary" href="/army-reserve-ranking.html">army reserve ranking</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to visit the ideal blog.  Our site provides you with suggestions for viewing the highest quality video and picture content, search and find more informative video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, so we recommend this movie for you to view.  You can also contribute to supporting this website by sharing videos and graphics that you like on this blog on your social media accounts such as Facebook and Instagram or tell your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/b0/4a/f7b04aeb732622500613df00ff8fa560.jpg" data-lightbox="roadtrip" data-title="Soldiers Assigned To The 144th Army Band Based In Springfield Illinois Present The Colors During The Singing Of The National Soldier Army Band Soldier Field">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/b0/4a/f7b04aeb732622500613df00ff8fa560.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJtbQjTff6sD_dWE4TsaDzsw4igcAIyczT2Q&amp;ec=45774421';" alt="Soldiers Assigned To The 144th Army Band Based In Springfield Illinois Present The Colors During The Singing Of The National Soldier Army Band Soldier Field">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldiers Assigned To The 144th Army Band Based In Springfield Illinois Present The Colors During The Singing Of The National Soldier Army Band Soldier Field</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/5b/61/075b61fc4b2a6589975c96879ea8f082.jpg" data-lightbox="roadtrip" data-title="A Huge American Flag Covers The Field During The National Anthem And In Honor Of The Victims Of The September 11 Att Stadium Tour National Anthem New York Jets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/5b/61/075b61fc4b2a6589975c96879ea8f082.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdS1HZCRUc6ST6K_BVf_I0Xl0m4KAXf9Ef0g&amp;ec=45774421';" alt="A Huge American Flag Covers The Field During The National Anthem And In Honor Of The Victims Of The September 11 Att Stadium Tour National Anthem New York Jets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Huge American Flag Covers The Field During The National Anthem And In Honor Of The Victims Of The September 11 Att Stadium Tour National Anthem New York Jets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/3a/48/d7/3a48d78bb6010805457dc909e61434d5.jpg" data-lightbox="roadtrip" data-title="Chicago Bears Photograph Chicago Bears Soldier Field National Anthem 7745 By David Haskett Ii Soldier Field National Anthem Field">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/3a/48/d7/3a48d78bb6010805457dc909e61434d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBBVJYOKd25wOAjjLr_hYEcLWWc8a77NI_g&amp;ec=45774421';" alt="Chicago Bears Photograph Chicago Bears Soldier Field National Anthem 7745 By David Haskett Ii Soldier Field National Anthem Field">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chicago Bears Photograph Chicago Bears Soldier Field National Anthem 7745 By David Haskett Ii Soldier Field National Anthem Field</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cb/0e/e2/cb0ee2284b9b5dee888ab1ba7ae25e22.jpg" data-lightbox="roadtrip" data-title="Chris Daughtry Sings The National Anthem Prior To The 2007 Nfc Championship Game Between The Chicago Bea In 2020 Singing The National Anthem Chris Daughtry New Orleans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cb/0e/e2/cb0ee2284b9b5dee888ab1ba7ae25e22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREolhNKMuV9nEXCmosuD7z9SPD79ByWNTpUw&amp;ec=45774421';" alt="Chris Daughtry Sings The National Anthem Prior To The 2007 Nfc Championship Game Between The Chicago Bea In 2020 Singing The National Anthem Chris Daughtry New Orleans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chris Daughtry Sings The National Anthem Prior To The 2007 Nfc Championship Game Between The Chicago Bea In 2020 Singing The National Anthem Chris Daughtry New Orleans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/bf/5d/d7bf5d4ffd33cac4275c6e56f6f9ecb6.jpg" data-lightbox="roadtrip" data-title="Pin On Chicago Sports">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/bf/5d/d7bf5d4ffd33cac4275c6e56f6f9ecb6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYbe1U_Qf7eFwU3tPt548nio7soO0-2oRG9A&amp;ec=45774421';" alt="Pin On Chicago Sports">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Chicago Sports</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/f8/ef/8ef8efd09800d8c6bdcdd90bc7ff25e3.jpg" data-lightbox="roadtrip" data-title="Alejandro Villanueva Stands Near The Tunnel At Soldier Field During The Playing Of The National Anthem National Football League Football Boys National Football">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/f8/ef/8ef8efd09800d8c6bdcdd90bc7ff25e3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz-d3EUCqAkjm5hMraQeq1sEI26uHSO4uN9A&amp;ec=45774421';" alt="Alejandro Villanueva Stands Near The Tunnel At Soldier Field During The Playing Of The National Anthem National Football League Football Boys National Football">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Alejandro Villanueva Stands Near The Tunnel At Soldier Field During The Playing Of The National Anthem National Football League Football Boys National Football</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/93/8f/d4/938fd49157cd0bdca01ad159a5e4541a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz-d3EUCqAkjm5hMraQeq1sEI26uHSO4uN9A&amp;ec=45774421';" alt="Alejandro Villanueva Stands Near The Tunnel At Soldier Field During The Playing Of The National Anthem National Football League Football Boys National Football">
+										<div class="card-body">
+						<h3 class="h5"><b>Some raised fists others kneeled.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National anthem soldier field</strong>. 
+								
+																	Bears continue national anthem protests before Giants game. 
+																	Jim Cornelison Jim Cornelison National Anthem Jim Cornelison National Anthem Bears Seahawks Jim Cornelison Nationa. 
+																	National Anthem At Soldier Field. 
+																	It was really cold hence the scarves and hats. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cuban didnt exactly explain why he had made that decision but it drew criticism from people across the country. 
+																	They said since Soldier Field is named in honor of soldiers he. 
+																	Singing the National Anthem at Soldier Field for the Chicago Bears game. 
+																	The NBA shot back Wednesday afternoon mandating that all teams. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	While the rest of the Philadelphia Eagles stood along the sidelines during singer Jim Cornelisons performance of the national anthem before Monday nights kickoff against the Bears at Soldier. 
+																	While Demi Lovato was giving her remarkable rendition of the Star Spangled. 
+																	National Anthem performed by Jim Cornelison at Soldier Field on the tenth anniversary of 9-11. 
+																	NBA billionaire Mavericks owner Mark Cuban was rebuked by the NBA Wednesday after Cuban announced that he would no longer play the National Anthem before games. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What set-backs will do for you when you let go and choose a grateful heart anyway. 
+																	Sunday 24 players stayed in the tunnel during the song and took the field upon its completion. 
+																	The photograph may be purchased as wall art home decor apparel phone cases greeting cards and more. 
+																	All products are produced on-demand and shipped worldwide within 2 - 3 business days. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He has also performed the anthem before Chicago Bears home games at Soldier Field during the 201011 NFL playoffs 3 as well as the 2011 season opener against the Atlanta Falcons which fell on the tenth anniversary of the September. 
+																	National anthem from the March 1 NHL Stadium Series game at Soldier Field. 
+																	Aug 28 2020 - Chicago Bears Soldier Field National Anthem 7745 is a photograph by David Haskett II which was uploaded on January 8th 2016. 
+																	On Saturday veterans police officers and others rallied outside Soldier Field urging Kaepernick to stand for the national anthem. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	White House press secretary Jen Psaki expressed support for Dallas Mavericks owner Mark Cubans decision to remove the national anthem from the teams home games because they feel the anthem doesnt represent them During the Wednesday press briefing Fox Newss Peter Doocy asked Psaki about the Biden administrations stance on Cubans decision. 
+																	The Weeknd has earned widespread praise for his performance during the 2021 Super Bowl halftime show. 
+																	Straight No Chaser National Anthem at Soldier Field - YouTube WeSNC sang the National Anthem in Chicago at the Packers vs. 
+																	What set-backs will do for you when you let go and choose a grateful heart anyway. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Footage belongs to the NFL and FOXTags. 
+																	Cornelison started singing the anthem for the Blackhawks part-time in 1996. 
+																	The Chicago cast of Jersey Boys sings the National Anthem at a Bears game. 
+																	Those debates will come to a head on Sunday at Soldier Field a stadium dedicated to the men and women of the armed services If the Bears allow members of their organization to kneel during the Star-Spangled Banner or to raise their fists to the flag on their first homestand this Sunday they will not only be insulting the taxpayers who subsidized the stadium and its various renovations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Article by Haley Hunt. 
+																	The National Anthem performed at Soldier Field in Chicago on November 12th 2017. 
+																	Singing the National Anthem at Soldier Field for the Chicago Bears game. 
+																	Theres always a Buffalo connection including one during the Super Bowl that Western New Yorkers may not have realized. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The artist real name Abel Tesfaye was the first Canadian to headline solo at the event. 
+																	He has been singing the national anthem for the Blackhawks full-time since 2007. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/63/12/b563127e16cd7f0aa2c262a73ca73362.jpg" data-lightbox="roadtrip" data-title="The United States Military Hold A Large American Flag During The Playing Of The National Anthem Before Lucas Oil Stadium Large American Flag Indianapolis Colts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/63/12/b563127e16cd7f0aa2c262a73ca73362.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQye3ToaJ12OczZFMOxF_mDwJpt0BHRUzJTwQ&amp;ec=45774421';" alt="The United States Military Hold A Large American Flag During The Playing Of The National Anthem Before Lucas Oil Stadium Large American Flag Indianapolis Colts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The United States Military Hold A Large American Flag During The Playing Of The National Anthem Before Lucas Oil Stadium Large American Flag Indianapolis Colts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/d2/8a/2bd28afb53f4b5e5564f17ed2409517a.jpg" data-lightbox="roadtrip" data-title="People Photos University Of Phoenix Stadium National Anthem Stadium Tour">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/d2/8a/2bd28afb53f4b5e5564f17ed2409517a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvext6hD3fcS6gSQWZr4JvY9hv5gNBgU6OMg&amp;ec=45774421';" alt="People Photos University Of Phoenix Stadium National Anthem Stadium Tour">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">People Photos University Of Phoenix Stadium National Anthem Stadium Tour</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/00/21/8700211ac110055083bd91deb3d9dfd0.jpg" data-lightbox="roadtrip" data-title="Remembering 9 11 In Sports On 15th Anniversary Of Tragedy Nfl Football Games Stadium Tour Field">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/00/21/8700211ac110055083bd91deb3d9dfd0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR3fNs7No_YYbkxql5Jn-MK13_XwdRN5CH-w&amp;ec=45774421';" alt="Remembering 9 11 In Sports On 15th Anniversary Of Tragedy Nfl Football Games Stadium Tour Field">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Remembering 9 11 In Sports On 15th Anniversary Of Tragedy Nfl Football Games Stadium Tour Field</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0a/88/fd/0a88fd4581fe8593c0f6ccc730d1ed71.jpg" data-lightbox="roadtrip" data-title="Pin By Laura Rittenhouse On I Love Harmony A Cappella Cool Gifs Soldier Field">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0a/88/fd/0a88fd4581fe8593c0f6ccc730d1ed71.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjjrajMacGvCgOwkzuaTOepeU6eqHh7tgzjg&amp;ec=45774421';" alt="Pin By Laura Rittenhouse On I Love Harmony A Cappella Cool Gifs Soldier Field">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Laura Rittenhouse On I Love Harmony A Cappella Cool Gifs Soldier Field</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/f5/b0/99f5b015d04fc292ee6e3760ed335d0a.jpg" data-lightbox="roadtrip" data-title="Fireworks And Snow At Soldier Field In Chicago Blackhawks Soldier Field Chicago Blackhawks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/f5/b0/99f5b015d04fc292ee6e3760ed335d0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhaLVnKPn-R8dB5So8nLf9ux88xdwTUrDXFA&amp;ec=45774421';" alt="Fireworks And Snow At Soldier Field In Chicago Blackhawks Soldier Field Chicago Blackhawks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fireworks And Snow At Soldier Field In Chicago Blackhawks Soldier Field Chicago Blackhawks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b6/b4/0b/b6b40b6ddbdd2947f0e315116c893fef.jpg" data-lightbox="roadtrip" data-title="The Chicago Bears Lock Arms For The National Anthem Prior To The Game Chicago Bears National Anthem Chicago">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b6/b4/0b/b6b40b6ddbdd2947f0e315116c893fef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMUVmAbA22YQM-0Ad6SXtbKfiX2C7KVroAYg&amp;ec=45774421';" alt="The Chicago Bears Lock Arms For The National Anthem Prior To The Game Chicago Bears National Anthem Chicago">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Chicago Bears Lock Arms For The National Anthem Prior To The Game Chicago Bears National Anthem Chicago</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/8f/d4/938fd49157cd0bdca01ad159a5e4541a.jpg" data-lightbox="roadtrip" data-title="Soldier Field Soldier Field Field Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/8f/d4/938fd49157cd0bdca01ad159a5e4541a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREK9OG7i3hEWjw8KI9FhQbSYLuInood29WBA&amp;ec=45774421';" alt="Soldier Field Soldier Field Field Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier Field Soldier Field Field Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/5e/e8/725ee885448086319e5452b007ff1cb1.jpg" data-lightbox="roadtrip" data-title="Veteran Group S Super Bowl Ad Rejected By The Nfl Super Bowl Veterans Organizations Nfl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/5e/e8/725ee885448086319e5452b007ff1cb1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvoposSVyLZP6kmA-rGKuyMQClu71ZJgu5eA&amp;ec=45774421';" alt="Veteran Group S Super Bowl Ad Rejected By The Nfl Super Bowl Veterans Organizations Nfl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Veteran Group S Super Bowl Ad Rejected By The Nfl Super Bowl Veterans Organizations Nfl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/d8/90/65d89065d9c381b5a51be3896afbc523.jpg" data-lightbox="roadtrip" data-title="Pin On Anchor Down">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/d8/90/65d89065d9c381b5a51be3896afbc523.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjC2c4cak8W-DQ8r5fG7TokiGb4gfrlCY6Cw&amp;ec=45774421';" alt="Pin On Anchor Down">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Anchor Down</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/51/10/9f5110b58a963bb3c9f0f6e6c9d1b9a3.jpg" data-lightbox="roadtrip" data-title="A Giant American Flag In Displayed During The National Anthem Before Game 3 Of The Major League Baseball World Series Baseball World Series World Series World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/51/10/9f5110b58a963bb3c9f0f6e6c9d1b9a3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDlIHqX8eBxtgcu270APpJUloV2oWDC0FD5Q&amp;ec=45774421';" alt="A Giant American Flag In Displayed During The National Anthem Before Game 3 Of The Major League Baseball World Series Baseball World Series World Series World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Giant American Flag In Displayed During The National Anthem Before Game 3 Of The Major League Baseball World Series Baseball World Series World Series World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/65/a7/7565a7cee4646dca1e32792777d51ecd.jpg" data-lightbox="roadtrip" data-title="2015 Rally Anthem Chicago Blackhawks Hockey Blackhawks Hockey Blackhawks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/65/a7/7565a7cee4646dca1e32792777d51ecd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAdLB0j-YVddyYBG6X9uYyMe1R4mCtCAEUcA&amp;ec=45774421';" alt="2015 Rally Anthem Chicago Blackhawks Hockey Blackhawks Hockey Blackhawks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2015 Rally Anthem Chicago Blackhawks Hockey Blackhawks Hockey Blackhawks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fe/eb/75/feeb7542e850c6bc31503e485e9c1b18.jpg" data-lightbox="roadtrip" data-title="Soldier Field Home Of The Chicago Bears Soldier Field Chicago Sun Times Chicago Illinois">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fe/eb/75/feeb7542e850c6bc31503e485e9c1b18.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6wEuQG_pQtmCUwU8mxYyvD_x6eq_x2RWqyQ&amp;ec=45774421';" alt="Soldier Field Home Of The Chicago Bears Soldier Field Chicago Sun Times Chicago Illinois">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldier Field Home Of The Chicago Bears Soldier Field Chicago Sun Times Chicago Illinois</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/46/83/3246830f694531f79114d5323b3b3b41.png" data-lightbox="roadtrip" data-title="Emotional Moments Imago Images In 2020 Soldier Field Sportfotografie New York Giants">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/46/83/3246830f694531f79114d5323b3b3b41.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb49bzj0PbVxvttzZWBkEYNSjR-Lj_GfGsLA&amp;ec=45774421';" alt="Emotional Moments Imago Images In 2020 Soldier Field Sportfotografie New York Giants">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Emotional Moments Imago Images In 2020 Soldier Field Sportfotografie New York Giants</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/guard-reserve.html">Guard Reserve</a></li>
+													<li class="list-group-item"><a href="/great-wall.html">Great Wall</a></li>
+													<li class="list-group-item"><a href="/hijau-army-cocok-dengan-warna-apa.html">Hijau Army Cocok Dengan Warna Apa</a></li>
+													<li class="list-group-item"><a href="/going-from-active-army-to-national-guard.html">Going From Active Army To National Guard</a></li>
+													<li class="list-group-item"><a href="/gp-23ae-12v.html">Gp 23ae 12v</a></li>
+													<li class="list-group-item"><a href="/gurkha-army-rank-in-world.html">Gurkha Army Rank In World</a></li>
+													<li class="list-group-item"><a href="/gorkhali-army-rank-in-world.html">Gorkhali Army Rank In World</a></li>
+													<li class="list-group-item"><a href="/hilang-chord-gitar.html">Hilang Chord Gitar</a></li>
+													<li class="list-group-item"><a href="/gb-whatsapp-yang-aman.html">Gb Whatsapp Yang Aman</a></li>
+													<li class="list-group-item"><a href="/heaviest-military-cargo-plane-blue-whale.html">Heaviest Military Cargo Plane Blue Whale</a></li>
+													<li class="list-group-item"><a href="/gp-23ae-12v-battery.html">Gp 23ae 12v Battery</a></li>
+													<li class="list-group-item"><a href="/gp-23ae-c5.html">Gp 23ae C5</a></li>
+													<li class="list-group-item"><a href="/gp-23ae-vs-23a.html">Gp 23ae Vs 23a</a></li>
+													<li class="list-group-item"><a href="/grey-army-cargo-pants.html">Grey Army Cargo Pants</a></li>
+													<li class="list-group-item"><a href="/hawaii-army-national-guard-oath-of-office.html">Hawaii Army National Guard Oath Of Office</a></li>
+													<li class="list-group-item"><a href="/gp-23ae-alkalicka-baterie-12-v.html">Gp 23ae Alkalicka Baterie 12 V</a></li>
+													<li class="list-group-item"><a href="/hilang-bekas-jerawat.html">Hilang Bekas Jerawat</a></li>
+													<li class="list-group-item"><a href="/global-army-song-for-bts.html">Global Army Song For Bts</a></li>
+													<li class="list-group-item"><a href="/hellenic-army-rank-insignia.html">Hellenic Army Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/hawaii-air-national-guard-upt.html">Hawaii Air National Guard Upt</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

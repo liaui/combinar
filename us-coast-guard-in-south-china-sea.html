@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Coast Guard In South China Sea - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Coast Guard In South China Sea",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/8e/bf/59/8ebf59ea0b9bc158d33751def6073991.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+coast+guard+in+south+china+sea",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Coast Guard In South China Sea</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Officials may have sent the coast guard vessel to stress law enforcement and head off any fears of naval conflict said Jonathan Spangler director of the South China Sea Think Tank in. Navy training operation Exercise Balikatan in 2016 and the training of the Japanese Ground Self-Defense Force for expeditionary warfare. TENSIONS in the South China Sea have reached boiling point after the US deployed Coast Guard ships to counter Beijings dominance in the contested region. <br>				
+			</p>
+										<a class="badge badge-primary" href="/vtgb.html">vtgb</a>
+											<a class="badge badge-secondary" href="/vt-x-bts-perfume.html">vt x bts perfume</a>
+											<a class="badge badge-danger" href="/vt-x-bt21.html">vt x bt21</a>
+											<a class="badge badge-light" href="/vtns1060a-a.html">vtns1060a a</a>
+											<a class="badge badge-secondary" href="/vt-dalam-tiktok.html">vt dalam tiktok</a>
+											<a class="badge badge-success" href="/vtg-haberdashers-ebay.html">vtg haberdashers ebay</a>
+											<a class="badge badge-secondary" href="/vit-k.html">vit k</a>
+											<a class="badge badge-secondary" href="/vtggf-stock-quote.html">vtggf stock quote</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you have come to visit the ideal blog.  Our website provides you with hints for viewing the highest quality video and image content, hunt and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you see.  You can also contribute to supporting this site by sharing videos and images that you like on this site on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/38/43/793843b9f60d298a4d8589bc60b445df.jpg" data-lightbox="roadtrip" data-title="The U S Coast Guard In The South China Sea Strategy Or Folly Coast Guard Coast Guard Boats Us Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/38/43/793843b9f60d298a4d8589bc60b445df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFImSpl3iY9lr7RtDIUgNFPyefY5JF1CWwVw';" alt="The U S Coast Guard In The South China Sea Strategy Or Folly Coast Guard Coast Guard Boats Us Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The U S Coast Guard In The South China Sea Strategy Or Folly Coast Guard Coast Guard Boats Us Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/47/0d/35470d5bfabea87b1a662636bad303cf.jpg" data-lightbox="roadtrip" data-title="Us Coast Guard Monitoring Chinese Militia In South China Sea Us Coast Guard South China Sea Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/47/0d/35470d5bfabea87b1a662636bad303cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eLe4D0k_ks7JoCTJZh56SAQATlfMX9_HjQ';" alt="Us Coast Guard Monitoring Chinese Militia In South China Sea Us Coast Guard South China Sea Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Coast Guard Monitoring Chinese Militia In South China Sea Us Coast Guard South China Sea Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/2e/ef/5d2eef515ccd7008d21d6461d1e95ac3.jpg" data-lightbox="roadtrip" data-title="A Chinese Coast Guard Vessel In Disputed Waters In The South China Sea Off Shore Vietnam Incredible Places South China Sea Beijing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/2e/ef/5d2eef515ccd7008d21d6461d1e95ac3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qI_fcHIAUOXvIk4EL87-HMul0tlLIY0iAQ';" alt="A Chinese Coast Guard Vessel In Disputed Waters In The South China Sea Off Shore Vietnam Incredible Places South China Sea Beijing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Chinese Coast Guard Vessel In Disputed Waters In The South China Sea Off Shore Vietnam Incredible Places South China Sea Beijing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/7b/21/a2/7b21a20543978e263719df2d77726a01.jpg" data-lightbox="roadtrip" data-title="Us Deploy Dozens Of Uscg Vessel To The South China Sea To Stop Hundreds Of China Coast Guard Vessels Youtube In 2020 South China Sea Coast Guard Us Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/7b/21/a2/7b21a20543978e263719df2d77726a01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzwZtoMAiAiLBCYMVS7ser8e3DTaZ0AYmG5g';" alt="Us Deploy Dozens Of Uscg Vessel To The South China Sea To Stop Hundreds Of China Coast Guard Vessels Youtube In 2020 South China Sea Coast Guard Us Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Deploy Dozens Of Uscg Vessel To The South China Sea To Stop Hundreds Of China Coast Guard Vessels Youtube In 2020 South China Sea Coast Guard Us Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/78/64/347864fde0649fbfea1e7d35576f209b.jpg" data-lightbox="roadtrip" data-title="Us Again Patrols Near Chinese Survey Ship In South China Sea South China Sea South China Coast Guard Ships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/78/64/347864fde0649fbfea1e7d35576f209b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBgC7NJOk4fMdCs5JkWQTKf5ze6BRVj__2kw';" alt="Us Again Patrols Near Chinese Survey Ship In South China Sea South China Sea South China Coast Guard Ships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Again Patrols Near Chinese Survey Ship In South China Sea South China Sea South China Coast Guard Ships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/d6/ac/54d6ac7aca1251264b37c01ae92cc1a4.jpg" data-lightbox="roadtrip" data-title="Us Threatening Chaos In Asia Pacific China South China Sea China Coast Guard Ships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/d6/ac/54d6ac7aca1251264b37c01ae92cc1a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ZUgKMimfVZhhRcLWiHCRmQ5breAbeBifbA';" alt="Us Threatening Chaos In Asia Pacific China South China Sea China Coast Guard Ships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Threatening Chaos In Asia Pacific China South China Sea China Coast Guard Ships</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/34/78/64/347864fde0649fbfea1e7d35576f209b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ZUgKMimfVZhhRcLWiHCRmQ5breAbeBifbA';" alt="Us Threatening Chaos In Asia Pacific China South China Sea China Coast Guard Ships">
+										<div class="card-body">
+						<h3 class="h5"><b>Several recent Proceedings articles have called for the United States to counter Chinese expansion in the South China Sea by employing the US.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us coast guard in south china sea</strong>. 
+								
+																	The United States has worked alongside Pacific partners in a number of exercises in the past including coast guard training with the Philippines in 2015 the US. 
+																	Signing such agreements in effect is a cession of sovereign rights by the claimant states to the US in their exclusive economic zones which will make the disputed waters in the South China Sea. 
+																	With coast guards being primarily viewed as law enforcement agencies if Vietnam offers to interact with the American coast guard that would strengthen the bilateral partnership he said. 
+																	Chinese territorial claims in the East and South China Seas remain a source of tension with its neighbours and now the Chinese coastguard has been given the legal power to fire on foreign vessels. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The recently-enacted China Coast Guard laws have renewed uncertainty in the South China Sea. 
+																	The United States said Friday it will deploy Coast Guard patrol ships in the western Pacific to counter destabilizing and malign activities by China in disputed fishing grounds of the South China. 
+																	Those activities have brought the coast guard into frequent contact with air and sea forces from Japan its chief ally the US and other claimants to territory in the South China Sea including. 
+																	FILE - The US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coast Guard National Security Cutter Bertholf WMSL 750 left and the Philippine Coast Guard ship BRP Batangas arrive May 15 2019 in Manila Philippines after taking part in a. 
+																	India must work with the Quad to build collective maritime existence of maritime law enforcement agencies beyond the Indian Ocean Region within the Indo-Pacific. 
+																	Certainly the Coast Guard represents a unique and powerful tool for the nation within the maritime realms and the South China Sea problem needs all the coordinated forces that can be mustered. 
+																	Coast Guard to improve East Asian maritime governance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A US Coast Guard ship plies the South China Sea in a file photo. 
+																	The China Coast Guard he said operates in disputed areas in the West Philippine Sea part of the Philippines claims in the South China Sea where the Philippine navy and coast guard also patrol. 
+																	The US Coast Guards new approach to intervening in South China Sea affairs under the name of fisheries enforcement cooperation so as to hedge against Chinas activities in the South China Sea. 
+																	Instead by training and equipping the coast guards of our regional partners the United States can help them counter control of commerce in the South China Sea by the growing Chinese Coast Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Agence France-Presse - October 24 2020 - 958am WASHINGTON United States The United States said Friday it will deploy Coast Guard patrol ships in the western Pacific to counter destabilizing. 
+																	A presence in the South China Sea and elsewhere would help enforce the sovereignty of partner nations in the disputed waters the US coastguards Pacific area commander Vice-Admiral Linda Fagan. 
+																	In a fresh development in tussle between US and China in South China Sea the US said on Friday that it will deploy coast guard patrol ships in western Pacific Ocean to counter Chinese activities in disputed fishing grounds of South China Sea. 
+																	He speculated that Vietnam would increase its Coast Guard presence and operations in the South China Sea. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Signing such agreements in effect is a cession of sovereign rights by the claimant states to the US in their exclusive economic zones which will make the disputed waters in the South China Sea waters subject to the jurisdiction of the US thus legitimising the US Coast Guards presence in the South China Sea said Yan Yan director of the Research Centre of Oceans Law and Policy in the National Institute for South China Sea Studies. 
+																	Wikimedia For the first time since the end of the Cold War the US Coast Guard USCG is actively joining the US Navy to constrain the maritime ambitions of a rival superpower in the Indo-Pacific broadening Americas reach in disputed waterways. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a3/b8/80/a3b880a375a4834c0ba86a740e0d6d12.jpg" data-lightbox="roadtrip" data-title="Vietnam Left China Right Coast Guard Ships On Patrol In The South China Sea Coast Guard Ships Us Coast Guard Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a3/b8/80/a3b880a375a4834c0ba86a740e0d6d12.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vJLdxFiwMzKdlxsXGjRL8FfJzcOT5an4eg';" alt="Vietnam Left China Right Coast Guard Ships On Patrol In The South China Sea Coast Guard Ships Us Coast Guard Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam Left China Right Coast Guard Ships On Patrol In The South China Sea Coast Guard Ships Us Coast Guard Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/37/cd/06/37cd063e677931daebc18a3aa82ad82b.jpg" data-lightbox="roadtrip" data-title="U S Condemns China S Reported Sinking Of Vietnamese Fishing Vessel In South China Sea South China Sea Coast Guard Ships South China">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/37/cd/06/37cd063e677931daebc18a3aa82ad82b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPOR4bhP-xeQTbq2NHVrTiEpfLEuJk0W2nqw';" alt="U S Condemns China S Reported Sinking Of Vietnamese Fishing Vessel In South China Sea South China Sea Coast Guard Ships South China">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Condemns China S Reported Sinking Of Vietnamese Fishing Vessel In South China Sea South China Sea Coast Guard Ships South China</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/77/c1/2277c12ef468aa75638916cb1ab3b363.jpg" data-lightbox="roadtrip" data-title="Two Chinese Coast Guard Patrol Boats In The South China Sea File Photo Cns Us Coast Guard South China Sea Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/77/c1/2277c12ef468aa75638916cb1ab3b363.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCnWz0iVFpN38LFehQEBDlAXjRWvmUBNFxaQ';" alt="Two Chinese Coast Guard Patrol Boats In The South China Sea File Photo Cns Us Coast Guard South China Sea Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Two Chinese Coast Guard Patrol Boats In The South China Sea File Photo Cns Us Coast Guard South China Sea Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8e/bf/59/8ebf59ea0b9bc158d33751def6073991.jpg" data-lightbox="roadtrip" data-title="Uss Carl Vinson Strike Group In South China Sea Reinforced By Us Navy Ships Navy Coast Guard South China Sea">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8e/bf/59/8ebf59ea0b9bc158d33751def6073991.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXPmFBqlEPh5mOqdRoT3Y_SWT-3yagbQJD4g';" alt="Uss Carl Vinson Strike Group In South China Sea Reinforced By Us Navy Ships Navy Coast Guard South China Sea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uss Carl Vinson Strike Group In South China Sea Reinforced By Us Navy Ships Navy Coast Guard South China Sea</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/09/30/cf0930a8f4165a2d84ac822b1acaa6bb.jpg" data-lightbox="roadtrip" data-title="China To Build On Disputed Shoal In South China Sea South China Sea Coast Guard Ships Chinese Boat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/09/30/cf0930a8f4165a2d84ac822b1acaa6bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD0j_KTpD3CGuPvGbbzrLP7TkexSQwMRWtcA';" alt="China To Build On Disputed Shoal In South China Sea South China Sea Coast Guard Ships Chinese Boat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China To Build On Disputed Shoal In South China Sea South China Sea Coast Guard Ships Chinese Boat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/86/4c/30864c4e9f3c7140d18868aa48320f53.jpg" data-lightbox="roadtrip" data-title="Vietnam Protests Chinese Districts In South China Sea In 2020 South China Sea South China Southeast Asia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/86/4c/30864c4e9f3c7140d18868aa48320f53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrypcaih2VMkCtbqk47qRJ7R6hUvcWVQnHVA';" alt="Vietnam Protests Chinese Districts In South China Sea In 2020 South China Sea South China Southeast Asia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vietnam Protests Chinese Districts In South China Sea In 2020 South China Sea South China Southeast Asia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/c9/72/3ac9724eb0aaaef716ca36226f02b423.jpg" data-lightbox="roadtrip" data-title="A Top Us Navy Intelligence Official Is Warning Of Future China Conflict Us Coast Guard South China Sea Us Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/c9/72/3ac9724eb0aaaef716ca36226f02b423.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK6M1tJMD8flaLcSam07euyhnZ6DsW00Lssg';" alt="A Top Us Navy Intelligence Official Is Warning Of Future China Conflict Us Coast Guard South China Sea Us Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Top Us Navy Intelligence Official Is Warning Of Future China Conflict Us Coast Guard South China Sea Us Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/b9/5c/1cb95c0650fe9d9ece6998b9395fca65.jpg" data-lightbox="roadtrip" data-title="The Arleigh Burke Class Guided Missile Destroyer Uss Pinckney Ddg 91 And U S Coast Guard Uscg La South China Sea Arleigh Burke Class Destroyer South China">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/b9/5c/1cb95c0650fe9d9ece6998b9395fca65.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVt0MFVOrQX_AjWm02mY86lQ9euBarnhh_lw';" alt="The Arleigh Burke Class Guided Missile Destroyer Uss Pinckney Ddg 91 And U S Coast Guard Uscg La South China Sea Arleigh Burke Class Destroyer South China">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Arleigh Burke Class Guided Missile Destroyer Uss Pinckney Ddg 91 And U S Coast Guard Uscg La South China Sea Arleigh Burke Class Destroyer South China</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/89/74/d389748bebc0c813c190dcb678745bd8.jpg" data-lightbox="roadtrip" data-title="Us Navy To Continue Freedom Of Navigation Patrols In South China Sea South China Sea Beijing Coast Guard Ships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/89/74/d389748bebc0c813c190dcb678745bd8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlWv4RZvnk8ock7C5ry9vAkRWSPbBHjzmmvA';" alt="Us Navy To Continue Freedom Of Navigation Patrols In South China Sea South China Sea Beijing Coast Guard Ships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Navy To Continue Freedom Of Navigation Patrols In South China Sea South China Sea Beijing Coast Guard Ships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/4d/35/a64d35e4ecdea57b71fd3dc9336f0926.jpg" data-lightbox="roadtrip" data-title="U S Aircraft Carriers Exercising In The South China Sea Could Spell Danger The American Conservativ In 2020 Navy Aircraft Carrier Aircraft Carrier South China Sea">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/4d/35/a64d35e4ecdea57b71fd3dc9336f0926.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNE1PGsnFz0XzMcYl672spqNHqKjm_qe7u_g';" alt="U S Aircraft Carriers Exercising In The South China Sea Could Spell Danger The American Conservativ In 2020 Navy Aircraft Carrier Aircraft Carrier South China Sea">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Aircraft Carriers Exercising In The South China Sea Could Spell Danger The American Conservativ In 2020 Navy Aircraft Carrier Aircraft Carrier South China Sea</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/86/c1/7d/86c17d8aa501712546c7cf5a35291f83.jpg" data-lightbox="roadtrip" data-title="China Issues Muted Response To U S Warships Near South China Sea Standoff Usni News South China Sea Coast Guard Ships South China">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/86/c1/7d/86c17d8aa501712546c7cf5a35291f83.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV8MCoSe3Eg9L-vnX0s_O_pcyK94e731wGvA';" alt="China Issues Muted Response To U S Warships Near South China Sea Standoff Usni News South China Sea Coast Guard Ships South China">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China Issues Muted Response To U S Warships Near South China Sea Standoff Usni News South China Sea Coast Guard Ships South China</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/ed/8f/f4ed8fb81cfc8344a3307051464ff621.png" data-lightbox="roadtrip" data-title="China Could Soon Sink Us In South China Sea Asia Times In 2020 South China Sea Coast Guard Ships Uss America">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/ed/8f/f4ed8fb81cfc8344a3307051464ff621.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtEPULpH9S7EGrZHv7EabOM5pb0V6LIu-cdg';" alt="China Could Soon Sink Us In South China Sea Asia Times In 2020 South China Sea Coast Guard Ships Uss America">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China Could Soon Sink Us In South China Sea Asia Times In 2020 South China Sea Coast Guard Ships Uss America</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/a9/7f/9ca97f7c773939ded101249b02887b0b.jpg" data-lightbox="roadtrip" data-title="China Panic Australia Joins U S Ships In South China Sea Amid Rising Tension Fight China Youtube South China Sea South China Southeast Asia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/a9/7f/9ca97f7c773939ded101249b02887b0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPupGalPJtG7Y6rzLbMkpI5-bOkDvNS2A3DA';" alt="China Panic Australia Joins U S Ships In South China Sea Amid Rising Tension Fight China Youtube South China Sea South China Southeast Asia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">China Panic Australia Joins U S Ships In South China Sea Amid Rising Tension Fight China Youtube South China Sea South China Southeast Asia</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/wv-army-national-guard-chain-of-command.html">Wv Army National Guard Chain Of Command</a></li>
+													<li class="list-group-item"><a href="/xtc-artinya-apa.html">Xtc Artinya Apa</a></li>
+													<li class="list-group-item"><a href="/xtc-legaliseren.html">Xtc Legaliseren</a></li>
+													<li class="list-group-item"><a href="/xtc-karawang.html">Xtc Karawang</a></li>
+													<li class="list-group-item"><a href="/womens-national-team-soldier-field.html">Womens National Team Soldier Field</a></li>
+													<li class="list-group-item"><a href="/xtc-energy-drink.html">Xtc Energy Drink</a></li>
+													<li class="list-group-item"><a href="/xtc-dan-brigez.html">Xtc Dan Brigez</a></li>
+													<li class="list-group-item"><a href="/why-isnt-the-national-guard-being-deployed.html">Why Isnt The National Guard Being Deployed</a></li>
+													<li class="list-group-item"><a href="/xtc-malaysia.html">Xtc Malaysia</a></li>
+													<li class="list-group-item"><a href="/xtc-fossil-fuel.html">Xtc Fossil Fuel</a></li>
+													<li class="list-group-item"><a href="/xtc-indonesia.html">Xtc Indonesia</a></li>
+													<li class="list-group-item"><a href="/xtc-motor.html">Xtc Motor</a></li>
+													<li class="list-group-item"><a href="/xtc-nails.html">Xtc Nails</a></li>
+													<li class="list-group-item"><a href="/xtc-giant-bike.html">Xtc Giant Bike</a></li>
+													<li class="list-group-item"><a href="/xtc-oil.html">Xtc Oil</a></li>
+													<li class="list-group-item"><a href="/xtc-hair-growth-system.html">Xtc Hair Growth System</a></li>
+													<li class="list-group-item"><a href="/xtc-fitness-mississauga.html">Xtc Fitness Mississauga</a></li>
+													<li class="list-group-item"><a href="/xtc-dibunuh-brigez.html">Xtc Dibunuh Brigez</a></li>
+													<li class="list-group-item"><a href="/xtc-anjing.html">Xtc Anjing</a></li>
+													<li class="list-group-item"><a href="/x-is-greater.html">X Is Greater</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

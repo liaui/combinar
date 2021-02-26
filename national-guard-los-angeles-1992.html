@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Guard Los Angeles 1992 - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Guard Los Angeles 1992",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/6d/6f/4c/6d6f4c8c25b079200a81b0751d71f16b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+guard+los+angeles+1992",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Guard Los Angeles 1992</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Three days into the 1992 riots Bush deployed 4000 soldiers and Marines to Los Angeles to end what The Washington Post called days of urban anarchy Bush also mobilized 1000 federal troops. Major General James D. Armed National Guard soldiers patrolled the streets of Los Angeles early Sunday. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/is-national-guard-going-to-dc.html">is national guard going to dc</a>
+											<a class="badge badge-light" href="/jangan-ada-dusta-diantara-kita-chord.html">jangan ada dusta diantara kita chord</a>
+											<a class="badge badge-light" href="/is-national-guard-considered-active-military.html">is national guard considered active military</a>
+											<a class="badge badge-warning" href="/jack-usb.html">jack usb</a>
+											<a class="badge badge-primary" href="/is-the-national-guard-in-yakima.html">is the national guard in yakima</a>
+											<a class="badge badge-success" href="/is-the-national-guard-federalized.html">is the national guard federalized</a>
+											<a class="badge badge-secondary" href="/is-national-guard-income-taxable.html">is national guard income taxable</a>
+											<a class="badge badge-primary" href="/is-the-national-guard-considered-military.html">is the national guard considered military</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to visit the ideal site.  Our website gives you hints for viewing the highest quality video and picture content, hunt and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video that you see.  It is also possible to contribute to supporting this site by sharing videos and images that you like on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/a1/d1/2fa1d1fe719e1f19b41bc8d565b822bc.png" data-lightbox="roadtrip" data-title="Pin On Los Angeles Riots 1992">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/a1/d1/2fa1d1fe719e1f19b41bc8d565b822bc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjLghMOfj7xvBj1n-8PaTf_Ul2uQys-UOtAg';" alt="Pin On Los Angeles Riots 1992">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Los Angeles Riots 1992</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/bb/2a/4dbb2a62c7f5b75d0c19006138084c36.jpg" data-lightbox="roadtrip" data-title="Pin On La92">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/bb/2a/4dbb2a62c7f5b75d0c19006138084c36.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkMDRjNiqlvPRVfweSknzpkOunJAe96bPekg';" alt="Pin On La92">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On La92</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/20/59/d9205977faeff58e2f042de95d97b55f.jpg" data-lightbox="roadtrip" data-title="Pin On Crime Scenes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/20/59/d9205977faeff58e2f042de95d97b55f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGCQ2leRoQfZxhM5CuBkimoHAh15vEdqOOQ';" alt="Pin On Crime Scenes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Crime Scenes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/d4/64/29d464813ac65f462b80a2040a007ac4.jpg" data-lightbox="roadtrip" data-title="Pin On Photography">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/d4/64/29d464813ac65f462b80a2040a007ac4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhYIxpw7MV0Xrk6Is6OMepwV-h37_yMPT2xw';" alt="Pin On Photography">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Photography</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/67/87/1b67873d7fa7768422b1d9e1be736f90.png" data-lightbox="roadtrip" data-title="Pin On Protester Apes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/67/87/1b67873d7fa7768422b1d9e1be736f90.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyuaAkIh7Gd8RHjHEIa9B5p_adtEGToDCWnA';" alt="Pin On Protester Apes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Protester Apes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/e5/12/68e5121202acc6e003762ed64d9e4fd4.jpg" data-lightbox="roadtrip" data-title="Pin On Los Angeles 1990s">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/e5/12/68e5121202acc6e003762ed64d9e4fd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZdlFMUmGzoGTj5ytSb5C5Ynzc1TZ4AcIPiw';" alt="Pin On Los Angeles 1990s">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Los Angeles 1990s</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/68/e5/12/68e5121202acc6e003762ed64d9e4fd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZdlFMUmGzoGTj5ytSb5C5Ynzc1TZ4AcIPiw';" alt="Pin On Los Angeles 1990s">
+										<div class="card-body">
+						<h3 class="h5"><b>Rodney King Delivers Impassioned Plea for Peace On May 1 the third day of rioting Rodney King made a televised appearance asking for the rioters to stop.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National guard los angeles 1992</strong>. 
+								
+																	The police were encouraging them to do it. 
+																	Mayor Eric Garcetti said he asked Gov. 
+																	More than 600 Army troops 9800 National Guard troops and 1100 Marines patrolled the streets of Los Angeles. 
+																	The scale of the destruction in Los Angeles was. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Marine Corps Units Civil disorder is sparked by acquittals of LAPD officers accused of beating black motorist Rodney King in a traffic stop in Lake View Terrace. 
+																	More than 9800 California National Guard troops are mobilized and deployed into Los Angeles County. 
+																	Unrest began in South Central Los Angeles on April 29 after a trial jury acquitted four officers of the Los Angeles Police Department LAPD for usage of excessive force in the arrest and beating of Rodney King. 
+																	Eventually the governor of California would call in more than 10000 California National Guard troops and 2000 active troops to quell the riots. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The guard began arriving in Southern California after Gov. 
+																	A member of the National Guard stands near burning building during the Los Angeles riots. 
+																	Delk was the commander of California Army National Guard forces in Los Angeles during the 1992 riots until the National Guard was federalized. 
+																	In April of 1992 after a jury acquitted the police officers involved in the beating of Rodney King riots. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A fourth day of violence in Los Angeles prompted the mayor to impose a rare citywide curfew and call in the National Guard after demonstrators clashed repeatedly with officers torched police. 
+																	Later Garcetti changed course issuing the following tweet. 
+																	This article was condensed from MG Delks article in the September 1992 issue of Military Review and was printed here with the authors permission. 
+																	California Governor Gavin Newsom called in the National Guard to patrol the streets of Los Angeles after riots and looting spread across the city. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This unit unlike the authors brought machine guns to the city. 
+																	Dave GatleyLos Angeles Times. 
+																	The California National Guard is being deployed to Los Angeles overnight to support our local response to maintain peace and safety on the streets of our city. 
+																	As a result morale took a slight dip and discipline problems took a slight rise. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The War Zone National Guard Summary Julio Menjivar a lumber salesman and driver was watching the looting and confusion when some police officers passed by laughing telling people that it was fine that they were destroying their own neighborhood. 
+																	The last unit was released on May 28 1992. 
+																	Garcetti was of course referring the 1992 LA Riots which followed the acquittal of four Los Angeles police officers who brutally beat African American man Rodney King. 
+																	Their acquittal sparked the 1992 LA Riots a huge civil disturbance that covered 32-square-miles from the Hollywood Hills to Long Beach. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In Los Angeles meanwhile Guard commanders were hastily training their troops in techniques to quell civil disturbances right up until the moment the ammunition arrived Harrison said. 
+																	In April of 1992 after a jury acquitted the police officers involved in the beating of Rodney King riots. 
+																	Gavin Newsom for 500 to 700 members of the Guard to assist the 10000 Los Angeles Police Department officers. 
+																	The base which is operated by the National Guard was also used to deploy troops during the Watts Riots in 1965 and the Los Angeles Riots in 1992. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On May 10 1992 the National Guard was defederalized and units were sequenced back to home stations for release from state active duty. 
+																	A convoy from the Marines First Light Armored Infantry Battalion en route to Los Angeles in May 1992. 
+																	The 1992 Los Angeles riots sometimes called the 1992 Los Angeles uprising were a series of riots and civil disturbances that occurred in Los Angeles County in April and May 1992. 
+																	LOS ANGELES AP The Los Angeles mayor said National Guard troops were being sent in to the nations second-largest city after a fourth day of violent protests Saturday saw demonstrators clash repeatedly with officers torch police vehicles and pillage businesses. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A member of the National Guard stands near burning building during the Los Angeles riots. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/50/f6/d750f60fe89ee90080b91f22af27efd4.jpg" data-lightbox="roadtrip" data-title="Pin On Los Angeles 1992 Riots">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/50/f6/d750f60fe89ee90080b91f22af27efd4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk6gAqKWW8zQNkSqc453aVoVpHkG0_wnqsHQ';" alt="Pin On Los Angeles 1992 Riots">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Los Angeles 1992 Riots</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/af/46/8faf469abbcaa25c3753f72d1a95b928.jpg" data-lightbox="roadtrip" data-title="Pin On Home Look">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/af/46/8faf469abbcaa25c3753f72d1a95b928.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWRm2iQMW-7Fu9mpLEIrnIkStS7QyXUgHCsA';" alt="Pin On Home Look">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Home Look</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/7d/f9/847df997dbf45062395036f3ed19df09.jpg" data-lightbox="roadtrip" data-title="Pin On Documentarynews">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/7d/f9/847df997dbf45062395036f3ed19df09.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2YQ_hfdGYVpFlKRe8LhkzRIU9NVG-plW9aA';" alt="Pin On Documentarynews">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Documentarynews</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/e9/a2/b7e9a24a6908cdd62b795ddb8c319fca.jpg" data-lightbox="roadtrip" data-title="Pin On Operation Monarch L A Riots 1992">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/e9/a2/b7e9a24a6908cdd62b795ddb8c319fca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfZwTT2g9oMp9pDbvU6XnpR_CNvq-eq_9rNg';" alt="Pin On Operation Monarch L A Riots 1992">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Operation Monarch L A Riots 1992</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/ab/5d/d9ab5d26e0471698dc593b78737454c9.png" data-lightbox="roadtrip" data-title="Pin On Reference La Riots And Fire">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/ab/5d/d9ab5d26e0471698dc593b78737454c9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe3j7RSBLRPxulOM4S_i0etyDEr8dfybt_3w';" alt="Pin On Reference La Riots And Fire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Reference La Riots And Fire</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d0/51/bb/d051bbef6dfc9a61fc2e8c2eb8487c33.jpg" data-lightbox="roadtrip" data-title="Pin On Been There">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d0/51/bb/d051bbef6dfc9a61fc2e8c2eb8487c33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOTEM29CDkT3hLAdEAFZUhw38O-nupvOHV-w';" alt="Pin On Been There">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Been There</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ca/08/5b/ca085bcc1e3fff49fe2f0d7e92c5e6e0.jpg" data-lightbox="roadtrip" data-title="News From California The Nation And World Los Angeles Times Photo Los Angeles Police Department Los Angeles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ca/08/5b/ca085bcc1e3fff49fe2f0d7e92c5e6e0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0rxRHjFjML1b9T8Ya4e7CwvzIk_5G15EAuw';" alt="News From California The Nation And World Los Angeles Times Photo Los Angeles Police Department Los Angeles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">News From California The Nation And World Los Angeles Times Photo Los Angeles Police Department Los Angeles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/18/35/86/183586f071f6d8e0e2c3aa62124fe670.jpg" data-lightbox="roadtrip" data-title="Pin On Cops Criminals Cowboys Trappers Mountain Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/18/35/86/183586f071f6d8e0e2c3aa62124fe670.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu0gru-RF24igmOkQg4Djjjz2_u8O2naXpQg';" alt="Pin On Cops Criminals Cowboys Trappers Mountain Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cops Criminals Cowboys Trappers Mountain Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6d/6f/4c/6d6f4c8c25b079200a81b0751d71f16b.jpg" data-lightbox="roadtrip" data-title="Pin On My Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6d/6f/4c/6d6f4c8c25b079200a81b0751d71f16b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRhoDmor9cMGJbTUfbEAYEYr6xp2Qb8ByYJQ';" alt="Pin On My Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/42/48/af42484014abc03c7f5d621190ca763b.jpg" data-lightbox="roadtrip" data-title="Pin On Mock La Ninja">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/42/48/af42484014abc03c7f5d621190ca763b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQurkD13Q7WSRCjXXmpUrp2W4-2Ckvb6wKdjA';" alt="Pin On Mock La Ninja">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Mock La Ninja</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/92/e6/33/92e6335026ba89fe253185280c6524ad.jpg" data-lightbox="roadtrip" data-title="Pin On Sa I Gu Jour 175">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/92/e6/33/92e6335026ba89fe253185280c6524ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPM0NN0X-vi5MqsRQx5LbjzVUkBytHYVE1vA';" alt="Pin On Sa I Gu Jour 175">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sa I Gu Jour 175</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/f7/7c/24f77ceedf1225436b9841fb3e119b8d.jpg" data-lightbox="roadtrip" data-title="Pin On La Riots">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/f7/7c/24f77ceedf1225436b9841fb3e119b8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy2Sx5o01QDyXdzyAIp56FrnBJoFk2-irnQg';" alt="Pin On La Riots">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On La Riots</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/1f/fe/7a1ffe5f87006d92cdd1ec8a7665e8b7.jpg" data-lightbox="roadtrip" data-title="Pin On La">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/1f/fe/7a1ffe5f87006d92cdd1ec8a7665e8b7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1jp5kdJSVjKYTkdXk2gPxPSGJlA2986lYg';" alt="Pin On La">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On La</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/stang-yang-cocok-untuk-cb150r.html">Stang Yang Cocok Untuk Cb150r</a></li>
+													<li class="list-group-item"><a href="/sudan-army-rank-in-the-world.html">Sudan Army Rank In The World</a></li>
+													<li class="list-group-item"><a href="/stang-yamaha-champ.html">Stang Yamaha Champ</a></li>
+													<li class="list-group-item"><a href="/stang-vixion-old.html">Stang Vixion Old</a></li>
+													<li class="list-group-item"><a href="/stang-zeta.html">Stang Zeta</a></li>
+													<li class="list-group-item"><a href="/strongest-army-rank-in-world.html">Strongest Army Rank In World</a></li>
+													<li class="list-group-item"><a href="/strong-wakamoto.html">Strong Wakamoto</a></li>
+													<li class="list-group-item"><a href="/state-college-army-national-guard.html">State College Army National Guard</a></li>
+													<li class="list-group-item"><a href="/state-defense-force-vs-national-guard.html">State Defense Force Vs National Guard</a></li>
+													<li class="list-group-item"><a href="/switching-from-active-army-to-national-guard.html">Switching From Active Army To National Guard</a></li>
+													<li class="list-group-item"><a href="/tang-kombinasi-tekiro.html">Tang Kombinasi Tekiro</a></li>
+													<li class="list-group-item"><a href="/state-army-national-guard-patches.html">State Army National Guard Patches</a></li>
+													<li class="list-group-item"><a href="/stang-trail-tinggi.html">Stang Trail Tinggi</a></li>
+													<li class="list-group-item"><a href="/switching-from-army-reserve-to-national-guard.html">Switching From Army Reserve To National Guard</a></li>
+													<li class="list-group-item"><a href="/taco-bell-reserve-street.html">Taco Bell Reserve Street</a></li>
+													<li class="list-group-item"><a href="/tang-press.html">Tang Press</a></li>
+													<li class="list-group-item"><a href="/tacp-reserve.html">Tacp Reserve</a></li>
+													<li class="list-group-item"><a href="/stolen-armored-vehicle-richmond-va.html">Stolen Armored Vehicle Richmond Va</a></li>
+													<li class="list-group-item"><a href="/tang-jepit-kapiler.html">Tang Jepit Kapiler</a></li>
+													<li class="list-group-item"><a href="/tang-find-out.html">Tang Find Out</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Middle East News - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Middle East News",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/2a/84/66/2a846657b07755c74270a40bc894f1de.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+middle+east+news",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Middle East News</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Middle East Deeply troubled. The latest news and information from the US. The latest breaking news comment and features from The Independent. <br>				
+			</p>
+										<a class="badge badge-success" href="/army-rank-quiz.html">army rank quiz</a>
+											<a class="badge badge-danger" href="/army-ranking-and-symbols.html">army ranking and symbols</a>
+											<a class="badge badge-light" href="/army-rank-rsm.html">army rank rsm</a>
+											<a class="badge badge-success" href="/army-ranking-by-size.html">army ranking by size</a>
+											<a class="badge badge-primary" href="/army-rank-on-uniform.html">army rank on uniform</a>
+											<a class="badge badge-success" href="/army-rank-up.html">army rank up</a>
+											<a class="badge badge-danger" href="/army-rank-nigeria.html">army rank nigeria</a>
+											<a class="badge badge-dark" href="/army-rank-vs-air-force.html">army rank vs air force</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you've come to visit the right blog.  Our site gives you suggestions for viewing the maximum quality video and picture content, search and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, especially Youtube, therefore we recommend this video that you view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/e6/5d/08/e65d0899064beaf00330a386d58f396d.jpg" data-lightbox="roadtrip" data-title="Middle East Tensions Erupt As Two Us Military Killed In Afghanistan Nato Confirm At Least Two Us Service Members Have Be Afghanistan Troops American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/e6/5d/08/e65d0899064beaf00330a386d58f396d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRybmQEFCRufCsxkt8zYaM5qZSTAjPs6wjlTg';" alt="Middle East Tensions Erupt As Two Us Military Killed In Afghanistan Nato Confirm At Least Two Us Service Members Have Be Afghanistan Troops American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Middle East Tensions Erupt As Two Us Military Killed In Afghanistan Nato Confirm At Least Two Us Service Members Have Be Afghanistan Troops American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/48/6a/d4/486ad4b9560d8d8fb8ffcd18d1009b80.jpg" data-lightbox="roadtrip" data-title="Us Deploys More Troops To Middle East To Defend Against Iran Afghanistan War Afghanistan American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/48/6a/d4/486ad4b9560d8d8fb8ffcd18d1009b80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEMaC7BEuucZypOwCuilY3aLHKbbb0G22GHw';" alt="Us Deploys More Troops To Middle East To Defend Against Iran Afghanistan War Afghanistan American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Deploys More Troops To Middle East To Defend Against Iran Afghanistan War Afghanistan American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/b7/3b/8cb73b12330e0a921c79e52887a29a06.jpg" data-lightbox="roadtrip" data-title="Video News Cnn Iraqi Military Military Forces Troops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/b7/3b/8cb73b12330e0a921c79e52887a29a06.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQty0satI8LvTXzJIfXYCXu25fkpknKN-qFAA';" alt="Video News Cnn Iraqi Military Military Forces Troops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Video News Cnn Iraqi Military Military Forces Troops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/6d/fc/f46dfc93e3ad013e7874d81ffaeb1aa3.png" data-lightbox="roadtrip" data-title="Behind The News Behind News Twitter Troops Middle East Joining The Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/6d/fc/f46dfc93e3ad013e7874d81ffaeb1aa3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq7HVsjm7dwEBjhb3dhgpyRoF-OmAy5dEh-Q';" alt="Behind The News Behind News Twitter Troops Middle East Joining The Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Behind The News Behind News Twitter Troops Middle East Joining The Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ba/13/17/ba1317133bdb9fb37a69d2efe26d7431.jpg" data-lightbox="roadtrip" data-title="Russian Military Acting As Peacekeeper Between Us Troops And Syria Civilians American Armed Forces Turkish Army Syria">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ba/13/17/ba1317133bdb9fb37a69d2efe26d7431.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIWKkV5nhJmw2SbmyTjyrDAfGH6CPnlmk7Hw';" alt="Russian Military Acting As Peacekeeper Between Us Troops And Syria Civilians American Armed Forces Turkish Army Syria">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Russian Military Acting As Peacekeeper Between Us Troops And Syria Civilians American Armed Forces Turkish Army Syria</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/7d/4b/4a7d4bd1ff132b923ccc7d86d180fd8d.jpg" data-lightbox="roadtrip" data-title="Pin On Middle East News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/7d/4b/4a7d4bd1ff132b923ccc7d86d180fd8d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzytSoGZQaOhxCZMO0Pr2kNwf9MXmFnEnXtA';" alt="Pin On Middle East News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Middle East News</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/0d/81/af/0d81afd6e3f06656f2ef3a4953465a08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzytSoGZQaOhxCZMO0Pr2kNwf9MXmFnEnXtA';" alt="Pin On Middle East News">
+										<div class="card-body">
+						<h3 class="h5"><b>US Army identifies soldier killed in Kuwait vehicle accident Yemeni govt welcomes US decision to designate Houthis as terrorist organization January 12 2021 Tribune News Service - Arab News Reports.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army middle east news</strong>. 
+								
+																	The US military is planning to win the hearts of young people in the Middle East by publishing a new comic. 
+																	Jerry Meyerle February 3 2021 Commentary Middle East Army Navy Air. 
+																	Articles covering the Army Navy Air Force and more. 
+																	Or so the Australian military told us. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Your One-Stop online source to stay up to date with the latest Military News From Around The Globe. 
+																	Soldiers from 5th Armored Brigade First Army Division West developed a course of instruction. 
+																	Paratroopers from the US Armys 82nd Airborne Division deploy from Fort Bragg to the Middle East Sunday January 5 as tensions mount in the region after a. 
+																	Washington has more than 60000 troops in the Middle East and is planning to deploy more forces amid tensions with Iran. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But undisclosed to either the Australian public or the federal. 
+																	The US army is pulling out of al-Qaim and two other key military bases in Iraq in the coming weeks. 
+																	Drones pose the biggest threat to US troops in the Middle East since IEDs top general says. 
+																	US warns Houthis days after terror delisting State Department calls on Iran-linked rebel group to cease military attacks in Saudi Arabia and Yemen. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Image copyright Getty Images. 
+																	The decision to leave three of its eight bases in Iraq is a sign the US is looking to. 
+																	By Jeff Schogol February 08 2021 Military Tech News. 
+																	The news site said that pork could be obtained at the military base for 30 and then resold for around 200. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	But when the US assassinated top Iranian military commander Qasem Soleimani as well as a senior Iraqi militia leader Abu Mahdi al-Muhandis Alis work suddenly became far more dangerous. 
+																	How to Cut the US Presence in the Middle East Asking the military to pursue the same goals with fewer resources will not work. 
+																	Tiny Drones Are the Biggest Threat in the Middle East Since IEDs Top General Says. 
+																	Army covering the Americas Middle East Europe Asia and Pacific and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Irans Supreme Leader Ayatollah Khamenei said the attack was a slap in the face for the US and called for an end to the US presence in the Middle East. 
+																	Welcome to the Drone Wars. 
+																	The US Army just announced upcoming deployments for seven units to Europe Afghanistan Iraq and Kuwait despite the recent extension of a Defense Department-wide stop-movement order to contain the. 
+																	Days after the United States assassinated top Iranian military commander. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The US Army announced Friday it was stepping up its military deployment in northeastern Syria despite a push to limit its presence there a move that follows tensions with Russia in the region. 
+																	The army comic may encounter competition from Arab superheroes created by an Egyptian. 
+																	Trump admin brokers Saudi Arabia UAE Bahrain Egypt Qatar agreement. 
+																	Military deployed B-52 bombers to the Middle East Saturday just days after the Trump administration announced a partial withdrawal of American troops from Afghanistan and Iraq. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Pork is prohibited in Kuwait and under the countrys strict laws individuals involved. 
+																	US soldier and 16-year. 
+																	Australian air attacks on enemy ground targets in the Middle East ended three years ago. 
+																	The US is to end its support for offensive operations by its allies in Yemen which has been devastated by a six-year war in which more than 110000 people are believed to have died. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Middle East January 24 2021 Syrias state-run media earlier reported that 200 troops had been flown to US bases in al-Shaddadi on 21 January for future deployment at Omar. 
+																	US soldier charged with planning attack on 911 memorial. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/39/dd/4039ddeecac635ce2b06be0db84e3628.jpg" data-lightbox="roadtrip" data-title="What The Us Troop Withdrawal Means For Iraq In 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/39/dd/4039ddeecac635ce2b06be0db84e3628.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKu8VyD2wZEi0QUo8Fo1qJjL1zwrMfBK9z4w';" alt="What The Us Troop Withdrawal Means For Iraq In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What The Us Troop Withdrawal Means For Iraq In 2020</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/1a/30/771a306101c9726950e586ed67cb446f.png" data-lightbox="roadtrip" data-title="Aol News Weather Entertainment Finance Lifestyle American Soldiers Armed Forces Military Draft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/1a/30/771a306101c9726950e586ed67cb446f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTulzMErNsbLOtbL423Ay8jzdarXgdDcUFJMQ';" alt="Aol News Weather Entertainment Finance Lifestyle American Soldiers Armed Forces Military Draft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aol News Weather Entertainment Finance Lifestyle American Soldiers Armed Forces Military Draft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0d/81/af/0d81afd6e3f06656f2ef3a4953465a08.jpg" data-lightbox="roadtrip" data-title="Who S Threatening Who Map Of Us Military Bases Surrounding Iran Us Military Bases Map Middle East Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0d/81/af/0d81afd6e3f06656f2ef3a4953465a08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ3AMu8-aMkRt5d4vaDCzN4Y83U31ktUHTYQ';" alt="Who S Threatening Who Map Of Us Military Bases Surrounding Iran Us Military Bases Map Middle East Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Who S Threatening Who Map Of Us Military Bases Surrounding Iran Us Military Bases Map Middle East Map</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/9b/54/479b54c6ac1faf96eead39fcd4c6dff3.jpg" data-lightbox="roadtrip" data-title="Fox News What Is The Presidents Message To The Middle East After He Announces That He Is Pulling U S Troops Out Of Syria Syria Troops World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/9b/54/479b54c6ac1faf96eead39fcd4c6dff3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVcuWXkfHmNQunsQNqoS-sJEVEvg8yIDktXA';" alt="Fox News What Is The Presidents Message To The Middle East After He Announces That He Is Pulling U S Troops Out Of Syria Syria Troops World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fox News What Is The Presidents Message To The Middle East After He Announces That He Is Pulling U S Troops Out Of Syria Syria Troops World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c4/27/b2/c427b2b4739d5d98e3944d6ad9e6af9e.jpg" data-lightbox="roadtrip" data-title="Operation Desert Shield Operation Desert Shield War History 20th Century">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c4/27/b2/c427b2b4739d5d98e3944d6ad9e6af9e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS368wJXjTxie5fWDPX1T3LmL1YcYNbj0xG-A';" alt="Operation Desert Shield Operation Desert Shield War History 20th Century">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Operation Desert Shield Operation Desert Shield War History 20th Century</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/17/21/63/172163670313d776d1da7b6df4351441.jpg" data-lightbox="roadtrip" data-title="Pin On Easitimes Com News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/17/21/63/172163670313d776d1da7b6df4351441.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEjBKWKnbsObg5eCNLBLxKuChjsGi3N_T0Iw';" alt="Pin On Easitimes Com News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Easitimes Com News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/c6/0a/9ac60ad39406f8b7640bffb3ef5b9f5c.jpg" data-lightbox="roadtrip" data-title="Pin On Latest News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/c6/0a/9ac60ad39406f8b7640bffb3ef5b9f5c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYzaMYOT12TlD8mN7dZjKQ_muOebctsj8Qmg';" alt="Pin On Latest News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Latest News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/32/a0/9132a0dc0edf68f35204d734391f8a50.jpg" data-lightbox="roadtrip" data-title="Us Deploys About 750 Paratroopers To The Middle East Following Attack On Embassy In Baghdad Military News Iraq Deployment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/32/a0/9132a0dc0edf68f35204d734391f8a50.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe-TTh6CuGKM_FCPNXttqBpPDnsRKINdJfDA';" alt="Us Deploys About 750 Paratroopers To The Middle East Following Attack On Embassy In Baghdad Military News Iraq Deployment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Deploys About 750 Paratroopers To The Middle East Following Attack On Embassy In Baghdad Military News Iraq Deployment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a6/2c/43/a62c437c98ebc5451c6ce8f95e6daa76.jpg" data-lightbox="roadtrip" data-title="Pin On Cities Of Salt">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a6/2c/43/a62c437c98ebc5451c6ce8f95e6daa76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqI9hX_h5FEJqjvYqQcTBX14hbGVW_TqLWyA';" alt="Pin On Cities Of Salt">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Cities Of Salt</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/90/e8/50/90e8500dfaae91ea70250596cc3deefb.jpg" data-lightbox="roadtrip" data-title="Us To Deploy 1 000 Troops To Poland Army Training Troops News Around The World">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/90/e8/50/90e8500dfaae91ea70250596cc3deefb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRqvBbdZxiMFy98Dmv0iOL8yLpA5QKb9W3OQ';" alt="Us To Deploy 1 000 Troops To Poland Army Training Troops News Around The World">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us To Deploy 1 000 Troops To Poland Army Training Troops News Around The World</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/17/c4/e217c4fa43e2cf80fa023788d42d227b.jpg" data-lightbox="roadtrip" data-title="Pin On Middle East News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/17/c4/e217c4fa43e2cf80fa023788d42d227b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfwWAmWDB2VWfvNABkbj5Pvg-aAoFADdylvw';" alt="Pin On Middle East News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Middle East News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/25/c5/3c25c588766402c0412b18c78c235b1e.jpg" data-lightbox="roadtrip" data-title="The Real Lesson Of Afghanistan Is That Regime Change Does Not Work Citizen Truth Army Humor Military Jokes Military Humor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/25/c5/3c25c588766402c0412b18c78c235b1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzX0vJIVgRezPbd0aRo3O4WtvCtKVTHRN-Fg';" alt="The Real Lesson Of Afghanistan Is That Regime Change Does Not Work Citizen Truth Army Humor Military Jokes Military Humor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Real Lesson Of Afghanistan Is That Regime Change Does Not Work Citizen Truth Army Humor Military Jokes Military Humor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/84/66/2a846657b07755c74270a40bc894f1de.jpg" data-lightbox="roadtrip" data-title="Us Troops Out Of Syria Not Victory In Defeat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/84/66/2a846657b07755c74270a40bc894f1de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWZ10XIiVD6IlnOiUAJV_Mtu2FJVlQQ8t4Gg';" alt="Us Troops Out Of Syria Not Victory In Defeat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Troops Out Of Syria Not Victory In Defeat</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/mcghee-tyson-airbase.html">Mcghee Tyson Airbase</a></li>
+													<li class="list-group-item"><a href="/mang-uu-bogor.html">Mang Uu Bogor</a></li>
+													<li class="list-group-item"><a href="/mcentire-air-national-guard-base-address.html">Mcentire Air National Guard Base Address</a></li>
+													<li class="list-group-item"><a href="/menang-ceme.html">Menang Ceme</a></li>
+													<li class="list-group-item"><a href="/mcghee-tyson-afb-commissary.html">Mcghee Tyson Afb Commissary</a></li>
+													<li class="list-group-item"><a href="/mcghee-tyson-air-force-base-address.html">Mcghee Tyson Air Force Base Address</a></li>
+													<li class="list-group-item"><a href="/manfaat-gamat-nge-untuk-kanker.html">Manfaat Gamat Nge Untuk Kanker</a></li>
+													<li class="list-group-item"><a href="/mang-engking.html">Mang Engking</a></li>
+													<li class="list-group-item"><a href="/mcentire-and-kelly-clarkson.html">Mcentire And Kelly Clarkson</a></li>
+													<li class="list-group-item"><a href="/manga-attack-on-titan-season-4.html">Manga Attack On Titan Season 4</a></li>
+													<li class="list-group-item"><a href="/manga-haikyuu-karasuno-vs-nekoma.html">Manga Haikyuu Karasuno Vs Nekoma</a></li>
+													<li class="list-group-item"><a href="/manfaat-gamat-nge.html">Manfaat Gamat Nge</a></li>
+													<li class="list-group-item"><a href="/mang-j-hope.html">Mang J Hope</a></li>
+													<li class="list-group-item"><a href="/mang-kabayan.html">Mang Kabayan</a></li>
+													<li class="list-group-item"><a href="/menang-iphone-dari-hero.html">Menang Iphone Dari Hero</a></li>
+													<li class="list-group-item"><a href="/menang-chord.html">Menang Chord</a></li>
+													<li class="list-group-item"><a href="/maryland-army-national-guard-website.html">Maryland Army National Guard Website</a></li>
+													<li class="list-group-item"><a href="/menang-cacak-kalah-cacak.html">Menang Cacak Kalah Cacak</a></li>
+													<li class="list-group-item"><a href="/mang-kabayan-harapan-indah.html">Mang Kabayan Harapan Indah</a></li>
+													<li class="list-group-item"><a href="/massachusetts-army-national-guard-medical-command.html">Massachusetts Army National Guard Medical Command</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

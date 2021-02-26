@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Guard - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Guard",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/e3/35/47/e335478eb5be0dfbd775525b3da5ec27.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+guard",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Guard</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Transport secretary who has taken his first of two Covid vaccine doses has so far tested negative for the virus. Tight-fitting or double mask helps fight COVID US study. A US Army official and a senior US intelligence official confirmed the decision to remove the 12 Guard members to the Associated Press on the condition of anonymity due to Defense Department media. <br>				
+			</p>
+										<a class="badge badge-success" href="/army-yang-paling-cantik.html">army yang paling cantik</a>
+											<a class="badge badge-light" href="/arnie-palmer-army.html">arnie palmer army</a>
+											<a class="badge badge-secondary" href="/arnes-hotel.html">arnes hotel</a>
+											<a class="badge badge-warning" href="/army-training-military-exercise.html">army training military exercise</a>
+											<a class="badge badge-warning" href="/army-to-army-bts.html">army to army bts</a>
+											<a class="badge badge-info" href="/army-turki-yang-meninggal.html">army turki yang meninggal</a>
+											<a class="badge badge-primary" href="/arnies-army-hat.html">arnies army hat</a>
+											<a class="badge badge-secondary" href="/army-with-army-bomb.html">army with army bomb</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you have come to pay a visit to the right site.  Our site gives you hints for seeing the highest quality video and picture content, search and find more enlightening video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video for you to view.  You can also contribute to supporting this website by sharing videos and images that you like on this blog on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this website.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/ee/7d/f4ee7dcf311961b0b1d4a6a2d87aff57.jpg" data-lightbox="roadtrip" data-title="United States Coast Guard Ranks Coast Guard Ranks Coast Guard Coast Guard Academy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/ee/7d/f4ee7dcf311961b0b1d4a6a2d87aff57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6K68jR2vvuc44J5QCd90encPxMsD9gZGiaA';" alt="United States Coast Guard Ranks Coast Guard Ranks Coast Guard Coast Guard Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Coast Guard Ranks Coast Guard Ranks Coast Guard Coast Guard Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/0d/5f/9f0d5f51c9a2627a43e95dbfc0724e00.png" data-lightbox="roadtrip" data-title="Color In The Us Armed Forces Coast Guard Uniforms Coast Guard Uniforms Coast Guard Auxiliary Us Coast Guard Uniforms">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/0d/5f/9f0d5f51c9a2627a43e95dbfc0724e00.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgv8BSVyogfy8kl4z1DBqvVbEEbKIWyJAAPQ';" alt="Color In The Us Armed Forces Coast Guard Uniforms Coast Guard Uniforms Coast Guard Auxiliary Us Coast Guard Uniforms">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Color In The Us Armed Forces Coast Guard Uniforms Coast Guard Uniforms Coast Guard Auxiliary Us Coast Guard Uniforms</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c8/36/7b/c8367b6fe6cc8fa59f5beaaa8e498e32.jpg" data-lightbox="roadtrip" data-title="The Prestigious Military Honor Guards Military Honor Honor Guard Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c8/36/7b/c8367b6fe6cc8fa59f5beaaa8e498e32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa9A-7E4mmdo5xwYIJi-kXyDZaBG9UgroMCw';" alt="The Prestigious Military Honor Guards Military Honor Honor Guard Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Prestigious Military Honor Guards Military Honor Honor Guard Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/33/fb/b233fb9588116c33a753949d57246bb7.jpg" data-lightbox="roadtrip" data-title="Call To Colors Boothbay Register Coast Guard Auxiliary Us Coast Guard Uniforms Coast Guard Boats">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/33/fb/b233fb9588116c33a753949d57246bb7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZRiC8pa10_a1HYMafuGL1lGGHW0MIIC0hPQ';" alt="Call To Colors Boothbay Register Coast Guard Auxiliary Us Coast Guard Uniforms Coast Guard Boats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Call To Colors Boothbay Register Coast Guard Auxiliary Us Coast Guard Uniforms Coast Guard Boats</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/02/16/8d0216125a304ddc79f53120e5f60a22.jpg" data-lightbox="roadtrip" data-title="Pin On Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/02/16/8d0216125a304ddc79f53120e5f60a22.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVVhS2XCNKuxDow3qAqmYCQw68gUhlI5mbAw';" alt="Pin On Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/ef/b5/ceefb5805f23c003c11d85d77101b33e.jpg" data-lightbox="roadtrip" data-title="Us Air Force Honor Guard United States Air Force Air Force">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/ef/b5/ceefb5805f23c003c11d85d77101b33e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSq316IOcPje4EFGNr2n4t0Z_WkqRv618nGQ';" alt="Us Air Force Honor Guard United States Air Force Air Force">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Air Force Honor Guard United States Air Force Air Force</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/7e/65/0b/7e650bc518527c2f0438123ddf2e8c49.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSq316IOcPje4EFGNr2n4t0Z_WkqRv618nGQ';" alt="Us Air Force Honor Guard United States Air Force Air Force">
+										<div class="card-body">
+						<h3 class="h5"><b>The images showing a heavy security presence.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us guard</strong>. 
+								
+																	US Coast Guard rescues three Cubans stranded on island for 33 days. 
+																	Youll gain job skills and leadership experience and get a head start on your civilian career. 
+																	The United States National Guard is part of the reserve components of the United States Army and the United States Air Force. 
+																	Chinese community donates goods worth 500k to MoBay Freeport. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With over 130 careers the Guard has a future for you. 
+																	United States Coast Guard US. 
+																	Department of Homeland Security. 
+																	About 26000 soldiers and personnel were. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One week after deadly unrest at the heart of the US government photographs are going viral of National Guard troops keeping watch over the Capitol. 
+																	The federal government has spent nearly a half billion dollars to deploy National Guard troops to the US. 
+																	To buy a copy go to guardianbookshop. 
+																	Latest US news world news sports business opinion analysis and reviews from the Guardian the worlds leading liberal voice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	United States Coast Guard home. 
+																	Explore the future youve always wanted When you join the Army National Guard youre joining a team with purpose and setting yourself up for success. 
+																	National Guard is a ready reserve group of 450000 men and women voluntarily serving in all 50 states and four US. 
+																	Tuesday 19 January 2021 2142 UK. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Delivery charges may apply. 
+																	Pete Buttigieg self-isolating after security guard tests positive for Covid. 
+																	Vanguard isnt owned by shareholders its owned by the people who invest in our funds As an owner you have access to personalized financial advice high-quality investments retirements tools and relevant market insights that help you build a future for those you love. 
+																	It is a military reserve force composed of National Guard military members or units of each state and the territories of Guam the Virgin Islands and Puerto Rico and the District of Columbia for a total of 54 separate organizations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coast Guard marksmen aboard Navy helicopters firing on suspected smugglers is a daily event the head of US Southern Command said in January. 
+																	The drugs were seized in international waters in the eastern Pacific Ocean the US Department of Defense saidThe narcotics consisted of approximately 11400 pounds of cocaine and 9000 pounds of marijuana the department saidThe drugs were offloaded from the USS Gabrielle Giffords. 
+																	Capital before and after the inauguration of Joe Biden The Associated Press reported quoting unidentified military sources. 
+																	The Changing of the Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	12 US National Guard troops removed from inauguration - with some linked to far right The Pentagon said the decision was made after vetting adding not all of the dozen were withdrawn for ties to extremist groups. 
+																	Founded in 1636 as a citizen force the US. 
+																	US Coast Guard Two men and a woman who said they had been stranded on a deserted island for 33 days were rescued after they waved flags to get the attention of a passing US Coast Guard helicopter. 
+																	The British Army Since 911 is published by Scribe 25. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	US Coast Guard and Navy personnel on February 1 offloaded 211 million worth of drugs in San Diego California. 
+																	The United States Coast Guard USCG is the maritime security search and rescue and law enforcement service branch of the United States Armed Forces and one of the countrys eight uniformed servicesThe Coast Guard is a maritime military multi-mission service unique among the US. 
+																	Military branches for having a maritime law enforcement mission with jurisdiction in both domestic and. 
+																	Latest news sport business comment analysis and reviews from the Guardian the worlds leading liberal voice. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Organization Coast Guard A to Z Atlantic Area Pacific Area Force Readiness Command. 
+																	News Room Reserve Forcecom Operations Mission Support Atlantic Area Pacific Area History Units. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/35/47/e335478eb5be0dfbd775525b3da5ec27.jpg" data-lightbox="roadtrip" data-title="Beautiful Photos From Military Weddings Coast Guard Wedding The Office Wedding Military Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/35/47/e335478eb5be0dfbd775525b3da5ec27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY_UGie0SMNLsObUS6zBL0u_XI0i4cZ7s4VA';" alt="Beautiful Photos From Military Weddings Coast Guard Wedding The Office Wedding Military Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Beautiful Photos From Military Weddings Coast Guard Wedding The Office Wedding Military Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/b7/0f/07b70fec29abdb6c29bf38a876223416.jpg" data-lightbox="roadtrip" data-title="U S Coast Guard A Branch Of The United States Armed Forces And One Of The Seven U S Uniformed Services The Coast Guard Ranks Coast Guard Coast Guard Academy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/b7/0f/07b70fec29abdb6c29bf38a876223416.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbqx3lx3XWCyjndRiA-44gFZO6YIDVI-yevA';" alt="U S Coast Guard A Branch Of The United States Armed Forces And One Of The Seven U S Uniformed Services The Coast Guard Ranks Coast Guard Coast Guard Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Coast Guard A Branch Of The United States Armed Forces And One Of The Seven U S Uniformed Services The Coast Guard Ranks Coast Guard Coast Guard Academy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/12/84/f012847b5cd4c8b1802bccf61ae80432.jpg" data-lightbox="roadtrip" data-title="Pin By John Newton On Patriatis Americanis Military Heroes Military Pride Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/12/84/f012847b5cd4c8b1802bccf61ae80432.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRWp4vsHXn8Es14uONXDjC7YfqEWNvq9SC-w';" alt="Pin By John Newton On Patriatis Americanis Military Heroes Military Pride Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By John Newton On Patriatis Americanis Military Heroes Military Pride Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/2d/ed/5d2dedeed3e83ffaae4182e9de73a5c8.jpg" data-lightbox="roadtrip" data-title="Coast Guard Emblem Coast Guard Logo Us Coast Guard Military Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/2d/ed/5d2dedeed3e83ffaae4182e9de73a5c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFOWjhklbg9RpZQETUByWZGF6F_Wu3YMh2aQ';" alt="Coast Guard Emblem Coast Guard Logo Us Coast Guard Military Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coast Guard Emblem Coast Guard Logo Us Coast Guard Military Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/16/69/941669961cef2f3d5b1ecf5da30d357a.jpg" data-lightbox="roadtrip" data-title="Hard Hat Emblem United States Coast Guard 2 Dia Ps Vinyl Coast Guard Logo Coast Guard Military Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/16/69/941669961cef2f3d5b1ecf5da30d357a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7YbSguMMJctspZDFQi5oQL34tmNPX-sEkrQ';" alt="Hard Hat Emblem United States Coast Guard 2 Dia Ps Vinyl Coast Guard Logo Coast Guard Military Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hard Hat Emblem United States Coast Guard 2 Dia Ps Vinyl Coast Guard Logo Coast Guard Military Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/bf/fe/19bffe725d3dd1b3a9a91e9b9be3dd9f.jpg" data-lightbox="roadtrip" data-title="Pin On Men">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/bf/fe/19bffe725d3dd1b3a9a91e9b9be3dd9f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQKiwXt3zW4OpeONYOPaZXYzHpwoQb7ZCqlA';" alt="Pin On Men">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Men</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a4/22/ad/a422ad23c15038b00b22ebc4eda6616e.png" data-lightbox="roadtrip" data-title="Us Coast Guard And Other Military Teams Coming To Honorfest Coast Guard Us Coast Guard Coast Guard Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a4/22/ad/a422ad23c15038b00b22ebc4eda6616e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeXbGimFw705pnpgSw95-6JZYR03FvJyARA';" alt="Us Coast Guard And Other Military Teams Coming To Honorfest Coast Guard Us Coast Guard Coast Guard Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Coast Guard And Other Military Teams Coming To Honorfest Coast Guard Us Coast Guard Coast Guard Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/b8/73/fab873fdb3d2164e5d116700e48befc5.jpg" data-lightbox="roadtrip" data-title="Uscg Tracen Cape May Image With Ccs Coast Guard Training Us Coast Guard Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/b8/73/fab873fdb3d2164e5d116700e48befc5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC7px9nqqesVfr71SnMVGQ9UwmsHzlV-vDEw';" alt="Uscg Tracen Cape May Image With Ccs Coast Guard Training Us Coast Guard Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uscg Tracen Cape May Image With Ccs Coast Guard Training Us Coast Guard Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/65/0b/7e650bc518527c2f0438123ddf2e8c49.jpg" data-lightbox="roadtrip" data-title="United States Coast Guard Silent Drill Team Performing In Washington Dc Navy Coast Guard Coast Guard Coast Guard Boats">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/65/0b/7e650bc518527c2f0438123ddf2e8c49.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAnfoOyPx9rahdMO9G2HUh21AGcLjPtxfiQQ';" alt="United States Coast Guard Silent Drill Team Performing In Washington Dc Navy Coast Guard Coast Guard Coast Guard Boats">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Coast Guard Silent Drill Team Performing In Washington Dc Navy Coast Guard Coast Guard Coast Guard Boats</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/5a/ac/4a5aac6d8b589a915fb30ee1db064d03.jpg" data-lightbox="roadtrip" data-title="U S Army Soldiers With 3rd U S Infantry Regiment The Old Guard Carry The Casket Of Army Cpl Frank Woodruff Buc American Soldiers Military Heroes Army Strong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/5a/ac/4a5aac6d8b589a915fb30ee1db064d03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHUmY2KD9UcGtPwPt-eFj9STACwElo8Pi3pA';" alt="U S Army Soldiers With 3rd U S Infantry Regiment The Old Guard Carry The Casket Of Army Cpl Frank Woodruff Buc American Soldiers Military Heroes Army Strong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Soldiers With 3rd U S Infantry Regiment The Old Guard Carry The Casket Of Army Cpl Frank Woodruff Buc American Soldiers Military Heroes Army Strong</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/22/16/0f221611c83fd1e032893f80040d9243.jpg" data-lightbox="roadtrip" data-title="United States Coast Guard Hypothetical Insignia Of Rank With Differences From The Actual Ranks The Coast Guard Shield Is Superimposed Upon The Seamans Strip">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/22/16/0f221611c83fd1e032893f80040d9243.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmXnJb_eFcUprSkbXoM1YHKWRuR9GC6nQJig';" alt="United States Coast Guard Hypothetical Insignia Of Rank With Differences From The Actual Ranks The Coast Guard Shield Is Superimposed Upon The Seamans Strip">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">United States Coast Guard Hypothetical Insignia Of Rank With Differences From The Actual Ranks The Coast Guard Shield Is Superimposed Upon The Seamans Strip</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d7/fb/e2/d7fbe207f8d6c1b777e6542150369427.jpg" data-lightbox="roadtrip" data-title="Us Coast Guard Retirement Ceremony Coast Guard Us Coast Guard Coast Guard Ships">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d7/fb/e2/d7fbe207f8d6c1b777e6542150369427.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTduJ34g0-2jvzNTqUbwnS6xoJ35iaxxVHd5A';" alt="Us Coast Guard Retirement Ceremony Coast Guard Us Coast Guard Coast Guard Ships">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Coast Guard Retirement Ceremony Coast Guard Us Coast Guard Coast Guard Ships</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/45/c7/5b/45c75b6ccb93ee14e959cdbb24e36c1a.jpg" data-lightbox="roadtrip" data-title="Strong Leader Balances Empathy Wellness And Mission Coast Guard Coast Seaman">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/45/c7/5b/45c75b6ccb93ee14e959cdbb24e36c1a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTgCNtsAAj9WN_UAtV89clktTDxrCNjnM9mA';" alt="Strong Leader Balances Empathy Wellness And Mission Coast Guard Coast Seaman">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Strong Leader Balances Empathy Wellness And Mission Coast Guard Coast Seaman</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/is-national-guard-in-philadelphia-tonight.html">Is National Guard In Philadelphia Tonight</a></li>
+													<li class="list-group-item"><a href="/jaket-army-yang-dipakai-milea.html">Jaket Army Yang Dipakai Milea</a></li>
+													<li class="list-group-item"><a href="/is-the-national-guard-in-nashville.html">Is The National Guard In Nashville</a></li>
+													<li class="list-group-item"><a href="/is-the-national-guard-part-of-army.html">Is The National Guard Part Of Army</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-eligible-for-tricare.html">Is National Guard Eligible For Tricare</a></li>
+													<li class="list-group-item"><a href="/is-the-national-guard-in-lakewood.html">Is The National Guard In Lakewood</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-in-the-military.html">Is National Guard In The Military</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-usually-at-inauguration.html">Is National Guard Usually At Inauguration</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-deployed-to-12-states.html">Is National Guard Deployed To 12 States</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-counting-votes.html">Is National Guard Counting Votes</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-its-own-branch.html">Is National Guard Its Own Branch</a></li>
+													<li class="list-group-item"><a href="/is-there-a-weight-requirement-for-the-national-guard.html">Is There A Weight Requirement For The National Guard</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-dod.html">Is National Guard Dod</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-deployed.html">Is National Guard Deployed</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-going-to-capital.html">Is National Guard Going To Capital</a></li>
+													<li class="list-group-item"><a href="/jamie-otis-and-family.html">Jamie Otis And Family</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-hard-to-get-into.html">Is National Guard Hard To Get Into</a></li>
+													<li class="list-group-item"><a href="/italian-army-rank-insignia.html">Italian Army Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/is-the-national-guard-army.html">Is The National Guard Army</a></li>
+													<li class="list-group-item"><a href="/jaket-army.html">Jaket Army</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

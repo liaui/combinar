@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Army Us - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Army Us",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/fc/a1/37/fca137a2ca4351c593afc498471a04a5.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+army+us",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Army Us</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Division is designed to overcome threats across the full spectrum of operations including all hybrid threats in the same time and space. The troops are being sent to the DC. Explore some of the great career opportunities the Guard has to offer. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/military-police-officer-national-guard-duties.html">military police officer national guard duties</a>
+											<a class="badge badge-warning" href="/military-uniform-for-national-guard.html">military uniform for national guard</a>
+											<a class="badge badge-info" href="/mn-nm-mm.html">mn nm mm</a>
+											<a class="badge badge-info" href="/military-police-texas-army-national-guard.html">military police texas army national guard</a>
+											<a class="badge badge-primary" href="/minnesota-national-guard-twitter.html">minnesota national guard twitter</a>
+											<a class="badge badge-primary" href="/military-rank-buy-insignia.html">military rank buy insignia</a>
+											<a class="badge badge-primary" href="/military-retirement-plan-air-national-guard.html">military retirement plan air national guard</a>
+											<a class="badge badge-warning" href="/miller-us-army-pics.html">miller us army pics</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to pay a visit to the ideal blog.  Our site gives you hints for seeing the highest quality video and picture content, search and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this video that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/c7/0b/23c70bd0447a15cb79257bd5a90837d4.jpg" data-lightbox="roadtrip" data-title="Pin On Days And Events">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/c7/0b/23c70bd0447a15cb79257bd5a90837d4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7U9ctVQHKth-0o-aNVvpsbtuyqMbK5uJ8uA';" alt="Pin On Days And Events">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Days And Events</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8c/3d/9b/8c3d9b221f9e80312d6de30392d8ea69.jpg" data-lightbox="roadtrip" data-title="Us Special Forces Provides Security For Afghan National Army Special Forces Soldiers Marine Raiders Marine Special Forces Military Helmets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8c/3d/9b/8c3d9b221f9e80312d6de30392d8ea69.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTww5FdeNvSRYOmf7CLxgSdcJzTQg6SLr2IkQ';" alt="Us Special Forces Provides Security For Afghan National Army Special Forces Soldiers Marine Raiders Marine Special Forces Military Helmets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Special Forces Provides Security For Afghan National Army Special Forces Soldiers Marine Raiders Marine Special Forces Military Helmets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/8c/6b/f68c6b0a6353afd246b810f3232552ca.jpg" data-lightbox="roadtrip" data-title="U S Special Forces Soldiers Attached To Combined Joint Special Operations Task Force Afghanistan Pr Special Forces Us Special Forces Military Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/8c/6b/f68c6b0a6353afd246b810f3232552ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU4Qfy387_gCnUcC5kd4l8V35UuIJNqgFJ0w';" alt="U S Special Forces Soldiers Attached To Combined Joint Special Operations Task Force Afghanistan Pr Special Forces Us Special Forces Military Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Special Forces Soldiers Attached To Combined Joint Special Operations Task Force Afghanistan Pr Special Forces Us Special Forces Military Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4e/6d/38/4e6d3855d50cf26fca0c3429b4bd6664.jpg" data-lightbox="roadtrip" data-title="A U S Special Forces Soldier Attached To Combined Joint Special Operations Task Force Afghanistan And An Special Forces Military Special Forces Afghanistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4e/6d/38/4e6d3855d50cf26fca0c3429b4bd6664.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6kMnVYa5eHXJsijX4jumFUh9sfGIz111xEw';" alt="A U S Special Forces Soldier Attached To Combined Joint Special Operations Task Force Afghanistan And An Special Forces Military Special Forces Afghanistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A U S Special Forces Soldier Attached To Combined Joint Special Operations Task Force Afghanistan And An Special Forces Military Special Forces Afghanistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/9d/14/a89d148006925dd3d8ef88d445b3c317.jpg" data-lightbox="roadtrip" data-title="National Army Day Army Day Image Quotes Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/9d/14/a89d148006925dd3d8ef88d445b3c317.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5br8kkvzc4l0sskSpobRKWcxudZ9C_Dk22Q';" alt="National Army Day Army Day Image Quotes Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Army Day Army Day Image Quotes Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1a/11/6a/1a116afbddc5794a9ceb3fdb0203b332.jpg" data-lightbox="roadtrip" data-title="U S Army Special Forces Photo Of The Day Afghan National Army Commandos With The 6th Special Operations Kandak Patrol An Alley In Tagab District Pinterest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1a/11/6a/1a116afbddc5794a9ceb3fdb0203b332.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA0nwC46oqghjsWmyFxNa7mtpnP2rKT-H39A';" alt="U S Army Special Forces Photo Of The Day Afghan National Army Commandos With The 6th Special Operations Kandak Patrol An Alley In Tagab District Pinterest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Special Forces Photo Of The Day Afghan National Army Commandos With The 6th Special Operations Kandak Patrol An Alley In Tagab District Pinterest</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/24/8c/b4/248cb43e22b9d38cba5131993019b1e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA0nwC46oqghjsWmyFxNa7mtpnP2rKT-H39A';" alt="U S Army Special Forces Photo Of The Day Afghan National Army Commandos With The 6th Special Operations Kandak Patrol An Alley In Tagab District Pinterest">
+										<div class="card-body">
+						<h3 class="h5"><b>Find out whats in the National Army Museums Collection the range of material it contains and its chronological and thematic scope.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National army us</strong>. 
+								
+																	Thanks to a new scheme a British Army reservist will be on duty with his US National Guard unit in the capital. 
+																	January 18 2021 Message to the Army Community about recent events at the US. 
+																	We seek to inspire engage and educate through our world class museum and collections. 
+																	You can get in touch with the National Army Museum by calling 020 7730 0717 or by completing the form below. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Museum of the United States Army provides the only comprehensive portrayal of Army history and traditions through the eyes of the American Soldier. 
+																	The difference between National Guards and Army is the services which they provide and the way they offer services. 
+																	Pre-1917 Army Records 1917 and Later Army Records. 
+																	The first colony-wide militia was formed by Massachusetts in 1636 by merging small older local units and several National Guard units can be traced back to this. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Statement by Acting Secretary of Defense Christopher Miller on National Guard Support in Washington DC. 
+																	Army is a force that has to perform its services for the country in safeguarding the strategies of the United States and the cases which involve national security. 
+																	A British Army Reservist serving with the US National Guard provided security for President Bidens inauguration the MoD has confirmed. 
+																	3rd UK Division forms the backbone of the British Armys response to any threat to the Nation or national interests and is comprised of over 27000 soldiers and 3500 vehicles. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Army was formed from the old core of the regular United States Army augmented by units of the United States National Guard and a large draft of able-bodied men. 
+																	The Army National Guard and the Air National Guard respectively. 
+																	A combined conscript and volunteer force the National Army was formed by the United States War Department in 1917 to fight in World War I. 
+																	Research What the Museum holds. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The National Army Museum is the leading authority on Our Army and its impact on society past and present. 
+																	When you join the Army National Guard youre joining a team with purpose and setting yourself up for success. 
+																	Major Keiron Francis a Royal Signals officer is the first. 
+																	The US Army is activating the entire District of Columbia National Guard 1100 troops in response to a request from Mayor Muriel Bowser of Washington an Army official said on Wednesday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army and National Guard are two different branches of the components of the national security of the US. 
+																	In a statement Jonathan Hoffman the chief Pentagon spokesman said the Guard had been mobilized and the response would be led by the Justice Department. 
+																	Today sees the inauguration of the 46th President of the United States of America in Washington DC. 
+																	Army National Guard members have been removed from the presidential inauguration security mission after they were found to have ties with right-wing militia groups or posted extremist views. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Army may also refer to. 
+																	Armory and will be deployed to the Capitol and to other points around Washington the official said. 
+																	Youll gain job skills and leadership experience and get a head start on your civilian career. 
+																	TWO members of the US Army National Guard have been pulled from the mission to keep tomorrows presidential inauguration safe after they were found to have ties to right-wing militia groups. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Revolutionary Army the national army of the Republic of China in 19251947 known has the National Army after 1928 Korean Liberation Army the national army of the Republic of Korea in 19411946 known has the National Army after 1943 National Army USA the 1917 army of the United States of America. 
+																	Local militias were formed from the earliest English colonization of the Americas in 1607. 
+																	The National Guard is a joint activity of the United States Department of Defense DoD composed of reserve components of the United States Army and the United States Air Force. 
+																	British Army officer on duty at the 46th US Presidents Inauguration. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Guard comes to play mostly on state based territory. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/34/22/b934227569b74c3519dfb11aafa9f4ac.jpg" data-lightbox="roadtrip" data-title="Pin On Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/34/22/b934227569b74c3519dfb11aafa9f4ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSMX9QBpZXGHV4rjL1_5BA528LrtUVc9nUlw';" alt="Pin On Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/44/90/df44907c13349a9bae3f26f9d796b95a.jpg" data-lightbox="roadtrip" data-title="A U S Special Forces Soldier Attached To Combined Joint Special Task Force Afghanistan And Two Afghan National Ar Special Forces Special Operations Commando">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/44/90/df44907c13349a9bae3f26f9d796b95a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo49_oOMndCqPUQI1qxdenTj1QFUshGkQ8lg';" alt="A U S Special Forces Soldier Attached To Combined Joint Special Task Force Afghanistan And Two Afghan National Ar Special Forces Special Operations Commando">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A U S Special Forces Soldier Attached To Combined Joint Special Task Force Afghanistan And Two Afghan National Ar Special Forces Special Operations Commando</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/71/a0/7c71a0cccb41097d511c612367071a77.jpg" data-lightbox="roadtrip" data-title="Who Leads The National Army Original 1917 World War 1 Ww1 Wwi Poster 27 X 41 Recruitment Poster World War I Ww1 Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/71/a0/7c71a0cccb41097d511c612367071a77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOSFPxJs4wy8GDID9A54gK1s2bcE8rTlzJkQ';" alt="Who Leads The National Army Original 1917 World War 1 Ww1 Wwi Poster 27 X 41 Recruitment Poster World War I Ww1 Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Who Leads The National Army Original 1917 World War 1 Ww1 Wwi Poster 27 X 41 Recruitment Poster World War I Ww1 Posters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/1a/a6/031aa6a1dc20f52b8f33c70079bf6183.jpg" data-lightbox="roadtrip" data-title="Iraq And Afghanistan Have Officially Become Vietnam 2 0 Afghanistan Platoon Refugee Crisis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/1a/a6/031aa6a1dc20f52b8f33c70079bf6183.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpNMoGUkeA4ovRuL9VmZiKUdMqQWBCMPAMeA';" alt="Iraq And Afghanistan Have Officially Become Vietnam 2 0 Afghanistan Platoon Refugee Crisis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iraq And Afghanistan Have Officially Become Vietnam 2 0 Afghanistan Platoon Refugee Crisis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/59/65/cd59659e04e5f0439f142cd9b0df9475.jpg" data-lightbox="roadtrip" data-title="Us Army Troops Lead A Patrol With Afghan National Army Soldiers Canvas Art Stocktrek Images 34 X 23 Walmart Com Army Soldier Us Army Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/59/65/cd59659e04e5f0439f142cd9b0df9475.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPg1GbdWZayAGy4DbzU4iXkjo-yNBv08fqQ';" alt="Us Army Troops Lead A Patrol With Afghan National Army Soldiers Canvas Art Stocktrek Images 34 X 23 Walmart Com Army Soldier Us Army Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Troops Lead A Patrol With Afghan National Army Soldiers Canvas Art Stocktrek Images 34 X 23 Walmart Com Army Soldier Us Army Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/61/09/16/610916526ce925561470f878f107242a.jpg" data-lightbox="roadtrip" data-title="Us Army Soldiers And Afghan National Army Soldiers Racing To Get Out Of The Way Of A Ch 47 Chinook Helicopter Land Military Blog Us Army Soldier Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/61/09/16/610916526ce925561470f878f107242a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ73Gpl1WbfT-n3YpqxugFQSmk_8Qq0BI33rg';" alt="Us Army Soldiers And Afghan National Army Soldiers Racing To Get Out Of The Way Of A Ch 47 Chinook Helicopter Land Military Blog Us Army Soldier Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Soldiers And Afghan National Army Soldiers Racing To Get Out Of The Way Of A Ch 47 Chinook Helicopter Land Military Blog Us Army Soldier Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/03/22/a60322795b7c219780a9a89e0fd8f5a8.jpg" data-lightbox="roadtrip" data-title="Pin On Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/03/22/a60322795b7c219780a9a89e0fd8f5a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXpzHhJA91mPHDFabQOgLrCufhAvfqT6dU-Q';" alt="Pin On Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/a1/37/fca137a2ca4351c593afc498471a04a5.jpg" data-lightbox="roadtrip" data-title="Afghan National Army Commando From The 3rd Commando Kandak And A Us Navy Seal Scanning The Horizon During A Patrol Of Gerandai V Navy Seals Army Us Navy Seals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/a1/37/fca137a2ca4351c593afc498471a04a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTreyFkDtT3gsGas3_DHDACZEi63yrtpVYkOA';" alt="Afghan National Army Commando From The 3rd Commando Kandak And A Us Navy Seal Scanning The Horizon During A Patrol Of Gerandai V Navy Seals Army Us Navy Seals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Afghan National Army Commando From The 3rd Commando Kandak And A Us Navy Seal Scanning The Horizon During A Patrol Of Gerandai V Navy Seals Army Us Navy Seals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/1b/15/121b155d6c02a34c3edb0cf7183f0d15.jpg" data-lightbox="roadtrip" data-title="U S Army Soldiers 3rd Battalion 21st Infantry Regiment 1st Stryker Brigade Combat Team 25th Infantry Division Military Honor Military Heroes Army Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/1b/15/121b155d6c02a34c3edb0cf7183f0d15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ18v9T2_IUngGiRhb_DikZAyRv0wMGfQsIpw';" alt="U S Army Soldiers 3rd Battalion 21st Infantry Regiment 1st Stryker Brigade Combat Team 25th Infantry Division Military Honor Military Heroes Army Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Army Soldiers 3rd Battalion 21st Infantry Regiment 1st Stryker Brigade Combat Team 25th Infantry Division Military Honor Military Heroes Army Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/16/fb/5416fb402475df415e712170559e1c3c.jpg" data-lightbox="roadtrip" data-title="Navy Seals On Deployment In Afghanistan Discover Military Navy Seals Us Navy Seals Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/16/fb/5416fb402475df415e712170559e1c3c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkuopePRtFV2io8f07r1lzapUnoK9L2gp65g';" alt="Navy Seals On Deployment In Afghanistan Discover Military Navy Seals Us Navy Seals Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Navy Seals On Deployment In Afghanistan Discover Military Navy Seals Us Navy Seals Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/8c/b4/248cb43e22b9d38cba5131993019b1e4.jpg" data-lightbox="roadtrip" data-title="National Army Day Army Day Army Us Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/8c/b4/248cb43e22b9d38cba5131993019b1e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG1OQ6nVF7v-2A2KerJY_HozDeaMkQj6hZhQ';" alt="National Army Day Army Day Army Us Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Army Day Army Day Army Us Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8a/8f/f9/8a8ff95941a2c1e98c043ebf31929c44.jpg" data-lightbox="roadtrip" data-title="On Patrol Military Heroes Troops Army Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8a/8f/f9/8a8ff95941a2c1e98c043ebf31929c44.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbWPOOAWwCwsW06VwS5DeJfqn7_Lvg4Qsy7g';" alt="On Patrol Military Heroes Troops Army Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">On Patrol Military Heroes Troops Army Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/09/38/10/0938100abf6429aab25d84bf9a8a5cba.jpg" data-lightbox="roadtrip" data-title="Man My Pack Was Heavy Enough By Itself Soldier Military Heroes American Soldiers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/09/38/10/0938100abf6429aab25d84bf9a8a5cba.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvcowBKcLAaNMyVKjy4Jo3h-Vvij2J20X-tQ';" alt="Man My Pack Was Heavy Enough By Itself Soldier Military Heroes American Soldiers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Man My Pack Was Heavy Enough By Itself Soldier Military Heroes American Soldiers</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/why-is-the-unknown-soldier-tomb-guarded.html">Why Is The Unknown Soldier Tomb Guarded</a></li>
+													<li class="list-group-item"><a href="/xtc-geng-motor.html">Xtc Geng Motor</a></li>
+													<li class="list-group-item"><a href="/xtc-news.html">Xtc News</a></li>
+													<li class="list-group-item"><a href="/xtc-artinya-apa.html">Xtc Artinya Apa</a></li>
+													<li class="list-group-item"><a href="/wisconsin-army-national-guard-chain-of-command.html">Wisconsin Army National Guard Chain Of Command</a></li>
+													<li class="list-group-item"><a href="/xtc-logo-vector.html">Xtc Logo Vector</a></li>
+													<li class="list-group-item"><a href="/xtc-fort-worth.html">Xtc Fort Worth</a></li>
+													<li class="list-group-item"><a href="/xtc-discography.html">Xtc Discography</a></li>
+													<li class="list-group-item"><a href="/xtc-hood-river.html">Xtc Hood River</a></li>
+													<li class="list-group-item"><a href="/why-national-guard-in-georgia.html">Why National Guard In Georgia</a></li>
+													<li class="list-group-item"><a href="/xtc-official-merchandise.html">Xtc Official Merchandise</a></li>
+													<li class="list-group-item"><a href="/xo-vs-musang-king.html">Xo Vs Musang King</a></li>
+													<li class="list-group-item"><a href="/xtc-fat-burner.html">Xtc Fat Burner</a></li>
+													<li class="list-group-item"><a href="/xtc-kembar-logo.html">Xtc Kembar Logo</a></li>
+													<li class="list-group-item"><a href="/xtc-oil.html">Xtc Oil</a></li>
+													<li class="list-group-item"><a href="/world-rank-of-pakistan-army.html">World Rank Of Pakistan Army</a></li>
+													<li class="list-group-item"><a href="/wisconsin-army-national-guard-activated.html">Wisconsin Army National Guard Activated</a></li>
+													<li class="list-group-item"><a href="/xtc-batam.html">Xtc Batam</a></li>
+													<li class="list-group-item"><a href="/xtc-frame-price-philippines.html">Xtc Frame Price Philippines</a></li>
+													<li class="list-group-item"><a href="/xiaomi-hp-orang-miskin.html">Xiaomi Hp Orang Miskin</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

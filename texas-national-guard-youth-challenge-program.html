@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Texas National Guard Youth Challenge Program - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Texas National Guard Youth Challenge Program",
+  "datePublished": "2021-02-27",
+  "image": "https://media.defense.gov/2019/May/06/2002128076/600/400/0/190501-Z-DZ751-233.JPG",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=texas+national+guard+youth+challenge+program",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Texas National Guard Youth Challenge Program</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Youth ChalleNGe Program is 17-month second chance program for 16-18 year-olds who have dropped out of school. The Youth ChalleNGe Program has undergone r. The Texas National Guard Joint Counterdrug Task Force has supported the Texas ChalleNGe Academy for more than 20 years with mentorship process improvement and training to help students succeed. <br>				
+			</p>
+										<a class="badge badge-primary" href="/army-lieutenant-recruitment-2020.html">army lieutenant recruitment 2020</a>
+											<a class="badge badge-info" href="/army-god.html">army god</a>
+											<a class="badge badge-dark" href="/army-ki-naa-songs-download.html">army ki naa songs download</a>
+											<a class="badge badge-secondary" href="/army-g-army-login.html">army g army login</a>
+											<a class="badge badge-warning" href="/army-ke-new-song-gane.html">army ke new song gane</a>
+											<a class="badge badge-warning" href="/army-gun.html">army gun</a>
+											<a class="badge badge-light" href="/army-gears-orange.html">army gears orange</a>
+											<a class="badge badge-light" href="/army-guard-gko.html">army guard gko</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to visit the ideal site.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this video for you to view.  You can also bring about supporting this website by sharing videos and graphics that you enjoy on this blog on your social media accounts like Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://nnomy.org/images/National_Guard_Youth_ChalleNGe_Program_cadets.png" data-lightbox="roadtrip" data-title="National Guard Youth Challenge Program Ngycp The National Network Opposing The Militarization Of Youth">
+											<img class="card-img v-image ads-img " src="https://nnomy.org/images/National_Guard_Youth_ChalleNGe_Program_cadets.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8snkLSsiLOG5izrEd_Tt4xyOQe7wS_4rOBA';" alt="National Guard Youth Challenge Program Ngycp The National Network Opposing The Militarization Of Youth">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Youth Challenge Program Ngycp The National Network Opposing The Militarization Of Youth</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10158348275689718" data-lightbox="roadtrip" data-title="Texas Challenge Academy High School 1 Review 4 173 Photos Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=10158348275689718" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPBWosgjLAsfVv1pPbesZckmFGRJvsbZ4Oqg';" alt="Texas Challenge Academy High School 1 Review 4 173 Photos Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Texas Challenge Academy High School 1 Review 4 173 Photos Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="NhBkuejdHnelAM" data-lightbox="roadtrip" data-title="Http Www Esc16 Net Upload Page 0462 Docs Rojas 20nationwide 20national 20guard 20youth 20challenge 20program Pdf">
+											<img class="card-img v-image ads-img " src="NhBkuejdHnelAM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTde_P-ssO_rLP0WU42tOVrkBqR2x70pYpKQw';" alt="Http Www Esc16 Net Upload Page 0462 Docs Rojas 20nationwide 20national 20guard 20youth 20challenge 20program Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Esc16 Net Upload Page 0462 Docs Rojas 20nationwide 20national 20guard 20youth 20challenge 20program Pdf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/ad/f0/2cadf02bf64f4739a4c14725f098785c.jpg" data-lightbox="roadtrip" data-title="Pin On American Pride">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/ad/f0/2cadf02bf64f4739a4c14725f098785c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIS59N74jV9l8OG9j0t1nCTYfKYyxW82aRkQ';" alt="Pin On American Pride">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On American Pride</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mediad.publicbroadcasting.net/p/krwg/files/styles/x_large/public/202005/guard_youth_academy.jpg" data-lightbox="roadtrip" data-title="New Mexico National Guard Youth Challenge Academy Krwg">
+											<img class="card-img v-image ads-img " src="https://mediad.publicbroadcasting.net/p/krwg/files/styles/x_large/public/202005/guard_youth_academy.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYjMxNLZqlzoPvEv88od8d_fUaE5OrCe2zA';" alt="New Mexico National Guard Youth Challenge Academy Krwg">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Mexico National Guard Youth Challenge Academy Krwg</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="OtTFef-za3lqZM" data-lightbox="roadtrip" data-title="Https Www Esc16 Net Upload Page 0462 Docs Rojas 20nationwide 20national 20guard 20youth 20challenge 20program Pdf">
+											<img class="card-img v-image ads-img " src="OtTFef-za3lqZM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF6RHO5G7z2ZYQkWdUDcPjKQ9Bw9wY2jjR7g';" alt="Https Www Esc16 Net Upload Page 0462 Docs Rojas 20nationwide 20national 20guard 20youth 20challenge 20program Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Https Www Esc16 Net Upload Page 0462 Docs Rojas 20nationwide 20national 20guard 20youth 20challenge 20program Pdf</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/2c/ad/f0/2cadf02bf64f4739a4c14725f098785c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF6RHO5G7z2ZYQkWdUDcPjKQ9Bw9wY2jjR7g';" alt="Https Www Esc16 Net Upload Page 0462 Docs Rojas 20nationwide 20national 20guard 20youth 20challenge 20program Pdf">
+										<div class="card-body">
+						<h3 class="h5"><b>Im proud of my decision to join the program.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Texas national guard youth challenge program</strong>. 
+								
+																	Challenge provides youth with an experience based in solid life skills reinforced through all phases with ongoing mentoring support. 
+																	The mission of the National Guard Youth ChalleNG e Program is to intervene in and reclaim the lives of 16-18 year-old youths producing program graduates with the values life skills education and self-discipline necessary to succeed as productive citizens. 
+																	We are taught job. 
+																	The Texas ChalleNGe Academy is a volun- teer program for 16 to 18 year old teens that are at risk of dropping out or who have al- ready dropped out of high school. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Matthew Harrison monitors the morning accountability formation during the acclimation phase at the Texas ChalleNGe Academy in Eagle Lake Texas. 
+																	The Texas Challenge Academy styled ChalleNGe is the Texas affiliate of the Youth Challenge Program operated by the Texas National Guard. 
+																	The mission of the Arkansas National Guard Youth ChalleNGe Program is to intervene in and reclaim the lives of 16-18 year-old youths in the state of Arkansas producing program graduates with the values life skills education and self-discipline necessary to succeed as productive citizens. 
+																	I needed the credits but also the skills that came along with those credits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	TAKE THE TEXAS CHALLENGE. 
+																	The mission of the National Guard Youth ChalleNGe program is to intervene in the lives of 16-18 year old high-school dropouts nationwide and provide them with the values life skills education and self-discipline necessary to succeed. 
+																	The pro- gram is open to all students without regard to race sex religious affiliation or house- hold income. 
+																	The National Guard Youth ChalleNGe Program currently operates in 39 programs in 28 states Puerto Rico and the District of Columbia. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A YOUTH EDUCATION PROGRAM OF THE TEXAS NATIONAL GUARD FOR AT-RISK TEENS NOT A BOOT CAMP OR ROTC PROGRAM. 
+																	National Mentoring Programs Funding Opportunity National Guard Youth Challenge Program The mission of the National Guard Youth ChalleNGe Program is to intervene in and reclaim the lives of at-risk youth to produce program graduates with the values skills education and self-discipline necessary to succeed as adults. 
+																	Pennsylvania Keystone State ChalleNGe Academy Opening 2021. 
+																	The stated mission of the Youth Challenge Program is to intervene in and reclaim the lives of at-risk youth to produce program graduates with the values skills education and self-discipline necessary to succeed as adults. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Vision of the Virginia National Guard Commonwealth ChalleNGe Youth Academy is to be recognized as Virginias premiere program for potential or actual high school dropouts or transfer students from Virginias high schools and to provide eligible teenagers throughout Virginia the opportunity to participate in an alternative educational program that helps them become productive. 
+																	This community-based program is conducted in three phases. 
+																	I came to OYCP because I was behind with my high school credits and I was failing most of my classes. 
+																	Texas Counterdrug supports at-risk youth program Members of the Texas National Guard Joint Counterdrug Task Force are supporting the Texas ChalleNGe Academy with mentorship life skills advice and training to students and cadre during their acclimation phase at their campus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This program has given me structure confidence and pride. 
+																	Our goal is to grow ChalleNGe to serve 20000 young people each year. 
+																	South Carolina South Carolina Youth ChalleNGe Academy Job Challenge Site 803-299-4879 866-737-7292. 
+																	EAGLE LAKE Texas Members of the Texas National Guard Joint Counterdrug Task Force support the Texas ChalleNGe Academy with mentorship life skills advice and training to students and cadre. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	One of the major social challenges facing the nation today is the plight of teenagers that drop out of high school before graduation. 
+																	Our mission is to provide resources and opportunities to help graduates of the National Guard Youth ChalleNGe Program maintain a path of success beyond graduation day. 
+																	The Oregon National Guard Youth Challenge Program OYCP is where youth turn into adults. 
+																	Puerto Rico Puerto Rico NG Youth ChalleNGe Academy 787-260-1757. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Texas ChalleNGe Academy is located in Eagle Lake Texas. 
+																	It operates a free 5 12 -month residential and 12-month post-residential education program for at-risk 16- to 18-year-old students. 
+																	The National Guard Youth Challenge Program a preventive rather than remedial at-risk youth program targets voluntary participants 16 to 18 years of age who have dropped out of school or are not satisfactorily progressing are unemployed or under employed drug-free and crime-free. 
+																	Oregon National Guard Youth ChalleNGe Program 541-317-9623 x223 541-317-9623 x224. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Texas National Guard Youth ChalleNGe ProgramReclaiming the potential of at-risk teens through mentoring education training and volunteer service. 
+																	Texas Texas ChalleNGe Academy 877-822-0050 432-836-4648 432-290-7145. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7c/47/ab/7c47ab8461bbbe0a2ebd378b504fe5f1.jpg" data-lightbox="roadtrip" data-title="Arlington Funeral Honors For Msgt Nathan Goodman Military Funeral Honors American Pride Arlington National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7c/47/ab/7c47ab8461bbbe0a2ebd378b504fe5f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsOsIrPx6t5u2fYinkb9dMxrpYQqPUB0fjdw';" alt="Arlington Funeral Honors For Msgt Nathan Goodman Military Funeral Honors American Pride Arlington National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arlington Funeral Honors For Msgt Nathan Goodman Military Funeral Honors American Pride Arlington National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://gray-kalb-prod.cdn.arcpublishing.com/resizer/6dHEQlnQN8e6hLLAlGJQzDD9HC8=/1200x675/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/HPS6K5L5CRPQTNVB2WGFRNDBSM.jpg" data-lightbox="roadtrip" data-title="National Guard S Ycp Program Adjusting To The Pandemic">
+											<img class="card-img v-image ads-img " src="https://gray-kalb-prod.cdn.arcpublishing.com/resizer/6dHEQlnQN8e6hLLAlGJQzDD9HC8=/1200x675/smart/cloudfront-us-east-1.images.arcpublishing.com/gray/HPS6K5L5CRPQTNVB2WGFRNDBSM.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTTnH2Ft9qQbNIzJE12ZgBND12XfhE7lSQrw';" alt="National Guard S Ycp Program Adjusting To The Pandemic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard S Ycp Program Adjusting To The Pandemic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Aug/28/2002486954/600/400/0/200828-Z-TJ918-001.JPG" data-lightbox="roadtrip" data-title="Vng Lt Earns Ranger Tab With Teamwork Attention To Detail National Guard News Features The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Aug/28/2002486954/600/400/0/200828-Z-TJ918-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTma_6izYqjzpdL72PZQpoA2tv_k8Awoi9F9A';" alt="Vng Lt Earns Ranger Tab With Teamwork Attention To Detail National Guard News Features The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vng Lt Earns Ranger Tab With Teamwork Attention To Detail National Guard News Features The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ms.ng.mil/resources/specialstaff/pa/article/PublishingImages/Pages/National-Guard-Engineers-Prepare-for-Another-Deployment/1000w_q95-4.jpg" data-lightbox="roadtrip" data-title="National Guard Engineers Prepare For Another Deployment">
+											<img class="card-img v-image ads-img " src="https://ms.ng.mil/resources/specialstaff/pa/article/PublishingImages/Pages/National-Guard-Engineers-Prepare-for-Another-Deployment/1000w_q95-4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSokepOPV8TmuBEtNEAzSBKgH3YAy2YmhNK5g';" alt="National Guard Engineers Prepare For Another Deployment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Engineers Prepare For Another Deployment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2018/Nov/02/2002058852/600/400/0/181029-Z-IZ368-577.JPG" data-lightbox="roadtrip" data-title="Neb Texas Guard Form Unique Color Guard For Czech Parade National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2018/Nov/02/2002058852/600/400/0/181029-Z-IZ368-577.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSnKMk3uHP2HvK_3MUIp9eP07RBqrc1VpwKQ';" alt="Neb Texas Guard Form Unique Color Guard For Czech Parade National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Neb Texas Guard Form Unique Color Guard For Czech Parade National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0e/d9/ad/0ed9ade112cb481059191a5400d280c1.jpg" data-lightbox="roadtrip" data-title="Pin On National Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0e/d9/ad/0ed9ade112cb481059191a5400d280c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnlX5uwkaMZ5EX81V8aC-wfoGYmYoX_ye5-g';" alt="Pin On National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2015/Sep/30/2001295650/600/400/0/150930-A-YG824-002.JPG" data-lightbox="roadtrip" data-title="South Carolina National Guard Helps Youth Challenge Cadets To Obtain Trade Certificates National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2015/Sep/30/2001295650/600/400/0/150930-A-YG824-002.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsyjlECU4jDhHE5qFRYPMxC5hATTvFPHx8jQ';" alt="South Carolina National Guard Helps Youth Challenge Cadets To Obtain Trade Certificates National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">South Carolina National Guard Helps Youth Challenge Cadets To Obtain Trade Certificates National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/4a/95/cb4a95b3ba42a9d44522823375a7318e.jpg" data-lightbox="roadtrip" data-title="The U S Led The Way Down The Avenue Des Champs Elysees In Paris France For The Military Parade On Chief Petty Officer Avenue Des Champs Elysees Bastille Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/4a/95/cb4a95b3ba42a9d44522823375a7318e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmDQr5kTiG2X6l92_bl1qRxzsr4SWiEMx5Qg';" alt="The U S Led The Way Down The Avenue Des Champs Elysees In Paris France For The Military Parade On Chief Petty Officer Avenue Des Champs Elysees Bastille Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The U S Led The Way Down The Avenue Des Champs Elysees In Paris France For The Military Parade On Chief Petty Officer Avenue Des Champs Elysees Bastille Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Feb/21/2002252756/600/400/0/200220-Z-PJ019-1013.JPG" data-lightbox="roadtrip" data-title="Louisiana National Guard Soldier Starts Career With Elite Army Training National Guard State Partnership Program News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Feb/21/2002252756/600/400/0/200220-Z-PJ019-1013.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRydAVnCZ62rAUoJNzunEND3ynvP8Xadl1Aqg';" alt="Louisiana National Guard Soldier Starts Career With Elite Army Training National Guard State Partnership Program News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Louisiana National Guard Soldier Starts Career With Elite Army Training National Guard State Partnership Program News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2018/Apr/27/2001909421/600/400/0/180405-Z-XX999-1002.JPG" data-lightbox="roadtrip" data-title="Fg4obmz1yjfxym">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2018/Apr/27/2001909421/600/400/0/180405-Z-XX999-1002.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOQKqBReCSSRCyyrmLXda6_fqHwoI3CKy62g';" alt="Fg4obmz1yjfxym">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fg4obmz1yjfxym</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/Aug/27/2002175654/600/400/0/190717-A-BN267-003.JPG" data-lightbox="roadtrip" data-title="Multiple Guard Units Sharpen Combat Skills At Fort Pickett National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/Aug/27/2002175654/600/400/0/190717-A-BN267-003.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmI6JkIb7Xnf0855jlV7GthnIarF9_vF7ZYA';" alt="Multiple Guard Units Sharpen Combat Skills At Fort Pickett National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Multiple Guard Units Sharpen Combat Skills At Fort Pickett National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2017/Sep/19/2001812640/600/400/0/170919-A-YG824-003.JPG" data-lightbox="roadtrip" data-title="91st Cyber Brigade Activated As Army National Guard S First Cyber Brigade National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2017/Sep/19/2001812640/600/400/0/170919-A-YG824-003.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUk8GLxFmfzSo2joVN0f7PrUz1lvS62TLsEw';" alt="91st Cyber Brigade Activated As Army National Guard S First Cyber Brigade National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">91st Cyber Brigade Activated As Army National Guard S First Cyber Brigade National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2019/May/06/2002128076/600/400/0/190501-Z-DZ751-233.JPG" data-lightbox="roadtrip" data-title="In Egypt National Guard Troops Support Key U S Partner National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2019/May/06/2002128076/600/400/0/190501-Z-DZ751-233.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1vFIagAhrb08gFrE5WzQHgmyTE8YwtrFeCA';" alt="In Egypt National Guard Troops Support Key U S Partner National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">In Egypt National Guard Troops Support Key U S Partner National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/gb-nagar-website.html">Gb Nagar Website</a></li>
+													<li class="list-group-item"><a href="/gb-mods-official-website.html">Gb Mods Official Website</a></li>
+													<li class="list-group-item"><a href="/gb-shoe-warehouse-website.html">Gb Shoe Warehouse Website</a></li>
+													<li class="list-group-item"><a href="/gb-extracts-website.html">Gb Extracts Website</a></li>
+													<li class="list-group-item"><a href="/gb-tours-website.html">Gb Tours Website</a></li>
+													<li class="list-group-item"><a href="/frp-j111f.html">Frp J111f</a></li>
+													<li class="list-group-item"><a href="/film-indian-army-song-gana.html">Film Indian Army Song Gana</a></li>
+													<li class="list-group-item"><a href="/full-time-nebraska-army-national-guard-jobs.html">Full Time Nebraska Army National Guard Jobs</a></li>
+													<li class="list-group-item"><a href="/fallout-4-national-guard-training-yard-bug.html">Fallout 4 National Guard Training Yard Bug</a></li>
+													<li class="list-group-item"><a href="/gamis-army-warna-merah.html">Gamis Army Warna Merah</a></li>
+													<li class="list-group-item"><a href="/gb-news-website.html">Gb News Website</a></li>
+													<li class="list-group-item"><a href="/gamis-warna-army-kombinasi.html">Gamis Warna Army Kombinasi</a></li>
+													<li class="list-group-item"><a href="/frp-j200g.html">Frp J200g</a></li>
+													<li class="list-group-item"><a href="/full-time-jobs-in-national-guard.html">Full Time Jobs In National Guard</a></li>
+													<li class="list-group-item"><a href="/gb-fm.html">Gb Fm</a></li>
+													<li class="list-group-item"><a href="/florida-army-national-guard-agr-positions.html">Florida Army National Guard Agr Positions</a></li>
+													<li class="list-group-item"><a href="/florida-army-national-guard-state-awards.html">Florida Army National Guard State Awards</a></li>
+													<li class="list-group-item"><a href="/garde-nationale-du-mali.html">Garde Nationale Du Mali</a></li>
+													<li class="list-group-item"><a href="/gamis-warna-hijau-army.html">Gamis Warna Hijau Army</a></li>
+													<li class="list-group-item"><a href="/f-16-fly-over-mn.html">F 16 Fly Over Mn</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

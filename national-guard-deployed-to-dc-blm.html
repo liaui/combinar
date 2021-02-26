@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Guard Deployed To Dc Blm - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Guard Deployed To Dc Blm",
+  "datePublished": "2021-02-27",
+  "image": "https://i.insider.com/5ee01c3df34d0514a97a0635?width=700",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+guard+deployed+to+dc+blm",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Guard Deployed To Dc Blm</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In many cities including the nations capitol police met protesters with tear gas violence and arrests. According to CNN reports 17000 National Guard members had been deployed as of Monday morning a. DoD limited DC Guard tactics to avoid the public backlash that followed its aggressive response to BLM protests The Washington Post reported. <br>				
+			</p>
+										<a class="badge badge-warning" href="/us-army-rangers.html">us army rangers</a>
+											<a class="badge badge-success" href="/us-army-rangers-cod.html">us army rangers cod</a>
+											<a class="badge badge-secondary" href="/us-army-rank-progression.html">us army rank progression</a>
+											<a class="badge badge-secondary" href="/us-army-recruiting-station-newport-news-va.html">us army recruiting station newport news va</a>
+											<a class="badge badge-success" href="/us-army-rank-with-t.html">us army rank with t</a>
+											<a class="badge badge-warning" href="/us-army-rank-stripes.html">us army rank stripes</a>
+											<a class="badge badge-primary" href="/us-army-rank.html">us army rank</a>
+											<a class="badge badge-danger" href="/us-army-reserve-drill-weekend.html">us army reserve drill weekend</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to pay a visit to the ideal site.  Our site provides you with suggestions for viewing the highest quality video and picture content, hunt and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video that you view.  It is also possible to bring about supporting this website by sharing videos and graphics that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this site.  This site is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images04.military.com/sites/default/files/styles/full/public/2021-01/mil-carolina-guard-inauguration-1800.jpg?itok=7B3jGZSt" data-lightbox="roadtrip" data-title="Thousands Of National Guard Troops To Begin Leaving Dc This Weekend Military Com">
+											<img class="card-img v-image ads-img " src="https://images04.military.com/sites/default/files/styles/full/public/2021-01/mil-carolina-guard-inauguration-1800.jpg?itok=7B3jGZSt" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOMAJVIfz7_5rdyrKcjubIBBNl2D7VjB5vVw';" alt="Thousands Of National Guard Troops To Begin Leaving Dc This Weekend Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thousands Of National Guard Troops To Begin Leaving Dc This Weekend Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.khou.com/assets/WUSA/images/edd03dcb-b253-483d-91fc-93f176b1dfdf/edd03dcb-b253-483d-91fc-93f176b1dfdf_1920x1080.jpg" data-lightbox="roadtrip" data-title="National Guard Troops Will Be Armed For Inauguration Khou Com">
+											<img class="card-img v-image ads-img " src="https://media.khou.com/assets/WUSA/images/edd03dcb-b253-483d-91fc-93f176b1dfdf/edd03dcb-b253-483d-91fc-93f176b1dfdf_1920x1080.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrBPF_HExSNcSkMv1Isls3h-4IWKqHrdSrWg';" alt="National Guard Troops Will Be Armed For Inauguration Khou Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Troops Will Be Armed For Inauguration Khou Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images01.military.com/sites/default/files/styles/full/public/2021-01/mil-national-guard-inauguration-1800.jpg?itok=lsZlsuKE" data-lightbox="roadtrip" data-title="The 26k Guard Troops In Dc Did Not Face A Single Inauguration Security Threat Top General Military Com">
+											<img class="card-img v-image ads-img " src="https://images01.military.com/sites/default/files/styles/full/public/2021-01/mil-national-guard-inauguration-1800.jpg?itok=lsZlsuKE" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLwqxyv2RIC4KfA8YDPCJIWdrUYd_hBUGYfg';" alt="The 26k Guard Troops In Dc Did Not Face A Single Inauguration Security Threat Top General Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 26k Guard Troops In Dc Did Not Face A Single Inauguration Security Threat Top General Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.boisestatepublicradio.org/sites/idaho/files/styles/x_large/public/202101/national_guard_blm_protest.png" data-lightbox="roadtrip" data-title="A Blm Protest Brought Thousands Of National Guardsmen To D C In June Where Were They Wednesday Boise State Public Radio">
+											<img class="card-img v-image ads-img " src="https://www.boisestatepublicradio.org/sites/idaho/files/styles/x_large/public/202101/national_guard_blm_protest.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8qkjh8qYocbQ2J_lp9Wtx8qRGXD2FmxDtw';" alt="A Blm Protest Brought Thousands Of National Guardsmen To D C In June Where Were They Wednesday Boise State Public Radio">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Blm Protest Brought Thousands Of National Guardsmen To D C In June Where Were They Wednesday Boise State Public Radio</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images04.military.com/sites/default/files/styles/full/public/2021-01/newscrednationalguardcapitolpatroldc1800.jpeg.jpg?itok=3baNGKGg" data-lightbox="roadtrip" data-title="Military Pledges Proper Housing For Troops In Dc As National Guard Force Grows To 25 000 Military Com">
+											<img class="card-img v-image ads-img " src="https://images04.military.com/sites/default/files/styles/full/public/2021-01/newscrednationalguardcapitolpatroldc1800.jpeg.jpg?itok=3baNGKGg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9sOvuaGlJ7aUBtYTL9JfdX0afAQOhPG5S5w';" alt="Military Pledges Proper Housing For Troops In Dc As National Guard Force Grows To 25 000 Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military Pledges Proper Housing For Troops In Dc As National Guard Force Grows To 25 000 Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images.newindianexpress.com/uploads/user/imagelibrary/2021/1/15/w900X450/NG.jpg" data-lightbox="roadtrip" data-title="National Guard Troops Flooding In As Washington Locks Down The New Indian Express">
+											<img class="card-img v-image ads-img " src="https://images.newindianexpress.com/uploads/user/imagelibrary/2021/1/15/w900X450/NG.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIiLnyQkXgVxaXLIwAw2GU6hLFToVYDV5-kg';" alt="National Guard Troops Flooding In As Washington Locks Down The New Indian Express">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Troops Flooding In As Washington Locks Down The New Indian Express</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://images01.military.com/sites/default/files/styles/full/public/2021-01/mil-national-guard-inauguration-1800.jpg?itok=lsZlsuKE" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIiLnyQkXgVxaXLIwAw2GU6hLFToVYDV5-kg';" alt="National Guard Troops Flooding In As Washington Locks Down The New Indian Express">
+										<div class="card-body">
+						<h3 class="h5"><b>Over the next few days in order to help secure the peaceful transfer of power during President-elect Joe Biden s.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National guard deployed to dc blm</strong>. 
+								
+																	According to a report from the Air Force Inspector General the National Guard flew surveillance flights in June over California Minneapolis Phoenix and Washington DC. 
+																	Images DC National Guard guardsmen stand outside. 
+																	The National Guard has already been activated in 23 states to support local law enforcement. 
+																	The deployment of the National Guard was not immediate It took multiple requests for troops from DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The head of the National Guard said at least 10000 troops will be deployed in Washington DC by Saturday and an additional 5000 could be requested from other statesThere are currently 6200. 
+																	The National Guard was deployed to protect the Lincoln Memorial during the Black Lives Matter protests in the spring of 2020. 
+																	WASHINGTON National Guard troops were deployed to DC. 
+																	After some delay the DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	6 then-acting Defense Secretary Christopher Miller approved up to 6200 National Guard troops to support civil authorities in the District of Columbia for up to 31 days under Title 32 502. 
+																	A total of 6200 National Guardsmen will be mobilized in Washington DC. 
+																	National Guard troops were deployed to the Lincoln Memorial on June 2 2020 during. 
+																	26 Jun 2020 1812. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Washington Post reporter quoting an anonymous source said the. 
+																	6 days ago. 
+																	One showing a heavy presence of National Guard troops purportedly positioned on the steps of the US. 
+																	The deployment ahead of the 6 January riot was far lighter. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Guard deployment to secure DC will cost nearly 500 million. 
+																	National Guard was deployed in the Capitol. 
+																	After Washingtons mayor Muriel Bowser made a request 340 guardsmen were activated in advance of which 115 were on duty at any one. 
+																	Virginia and Maryland said they would also send their guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Baldor The Associated Press. 
+																	This summer as protesters gathered to confront police brutality and system racism more than 4000 National Guard members were deployed to the capitol not counting other kinds of law enforcement and military personnel. 
+																	DONALD Trump allowed Capitol security be overrun during the MAGA riots but demanded a massive National Guard presence at the Black Lives Matter rallies last year. 
+																	The post includes two photos. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Washington CNN Acting Defense Secretary Christopher Miller on Monday approved a request from the mayor of Washington to deploy DC National Guard forces to the city to support local authorities. 
+																	From the District Virginia and Maryland Wednesday as Trump supporters broke into the US. 
+																	FOUR hundred National Guard members have been deployed to protect the Emancipation Memorial in Washington DC after Black Lives Matters protesters vowed to bring it down. 
+																	Capitol and the second showing Capitol Police attempting to keep. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And out-of-state law enforcement to gain authorization from federal defense officials to. 
+																	During Black Lives Matter. 
+																	In stark contrast to Trumps. 
+																	Soldiers and airmen of the National Guard salute the presentation of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The House and Senate were evacuated as rioters stormed the Capitol and a woman was shot and killed during an attempt to access the House Chambers. 
+																	By contrast in response to the pro-Trump rioters on Wednesday only 1100 had been deployed by late that evening. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.lawofficer.com/wp-content/uploads/2021/01/National-Guard-750x536.png" data-lightbox="roadtrip" data-title="National Guard Troops Tossed From Capitol Told To Rest In Parking Garage Law Officer">
+											<img class="card-img v-image ads-img " src="https://www.lawofficer.com/wp-content/uploads/2021/01/National-Guard-750x536.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY4YZKHHObr5zCIf7nOJlQ7UyExlStjTpg3A';" alt="National Guard Troops Tossed From Capitol Told To Rest In Parking Garage Law Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Troops Tossed From Capitol Told To Rest In Parking Garage Law Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/ErEv7QSUYAMhtS1.jpg" data-lightbox="roadtrip" data-title="Manny On Twitter This Is A Photo Of The National Guard Stationed In Response To A Black Lives Matter Protest At The Lincoln Memorial In June Https T Co Ggvxsmnlq0">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/ErEv7QSUYAMhtS1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN7Lyx0I-Xxou47dE9UNyHGO7iGeceLGBIcQ';" alt="Manny On Twitter This Is A Photo Of The National Guard Stationed In Response To A Black Lives Matter Protest At The Lincoln Memorial In June Https T Co Ggvxsmnlq0">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Manny On Twitter This Is A Photo Of The National Guard Stationed In Response To A Black Lives Matter Protest At The Lincoln Memorial In June Https T Co Ggvxsmnlq0</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.inquirer.com/resizer/viY97tq7grarucJf3KbTRvHX00U=/0x0:6045x4024/1400x932/cloudfront-us-east-1.images.arcpublishing.com/pmn/G3XH36TB5FHHVN53DGQIQ54C5M.jpg" data-lightbox="roadtrip" data-title="Washington D C Locks Down Before Inauguration With National Guard Troops Deployed">
+											<img class="card-img v-image ads-img " src="https://www.inquirer.com/resizer/viY97tq7grarucJf3KbTRvHX00U=/0x0:6045x4024/1400x932/cloudfront-us-east-1.images.arcpublishing.com/pmn/G3XH36TB5FHHVN53DGQIQ54C5M.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHCen1l39cXlIteV6EkO8xwGCXB9B2Jm4Evg';" alt="Washington D C Locks Down Before Inauguration With National Guard Troops Deployed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Washington D C Locks Down Before Inauguration With National Guard Troops Deployed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dcist.com/wp-content/uploads/sites/3/2020/06/WhatsApp-Image-2020-06-06-at-16.29.50-1-1500x999.jpeg" data-lightbox="roadtrip" data-title="National Guard Troops Will Start Withdrawing From D C Trump Says Dcist">
+											<img class="card-img v-image ads-img " src="https://dcist.com/wp-content/uploads/sites/3/2020/06/WhatsApp-Image-2020-06-06-at-16.29.50-1-1500x999.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaga3Bao2vic34eqk-1qmxVz7i-f8reob9Fg';" alt="National Guard Troops Will Start Withdrawing From D C Trump Says Dcist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Troops Will Start Withdrawing From D C Trump Says Dcist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.us-east-2.amazonaws.com/itt-images/_1200x630_crop_center-center_82_none/GettyImages-1237882534.jpg?mtime=1597006690" data-lightbox="roadtrip" data-title="The National Guard Crushes Protests Just Like The Military Does In These Times">
+											<img class="card-img v-image ads-img " src="https://s3.us-east-2.amazonaws.com/itt-images/_1200x630_crop_center-center_82_none/GettyImages-1237882534.jpg?mtime=1597006690" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP0znKgkUfHI-ZcPf8Iv5O8Vzv3OMAQ0lNoQ';" alt="The National Guard Crushes Protests Just Like The Military Does In These Times">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The National Guard Crushes Protests Just Like The Military Does In These Times</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images02.military.com/sites/default/files/styles/full/public/2021-01/newscred%20National%20Guard-Unemployment%20Benefits%201800x1200.jpeg.jpg?itok=KjXY5APK" data-lightbox="roadtrip" data-title="Gov Inslee Calls Up National Guard As Protests Planned For Start Of Washington Legislature Military Com">
+											<img class="card-img v-image ads-img " src="https://images02.military.com/sites/default/files/styles/full/public/2021-01/newscred%20National%20Guard-Unemployment%20Benefits%201800x1200.jpeg.jpg?itok=KjXY5APK" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ2kr--IoMm6rCTIpDJAODCYGMGFd_4SgW2w';" alt="Gov Inslee Calls Up National Guard As Protests Planned For Start Of Washington Legislature Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gov Inslee Calls Up National Guard As Protests Planned For Start Of Washington Legislature Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/May/31/2002308162/600/400/0/200531-A-YG824-001.JPG" data-lightbox="roadtrip" data-title="Guard Members In 23 States D C Called Up In Response To Civil Unrest National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/May/31/2002308162/600/400/0/200531-A-YG824-001.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGKW9f7mE8vB8qo8zyUsXmkZZiEXX8ckVd_w';" alt="Guard Members In 23 States D C Called Up In Response To Civil Unrest National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guard Members In 23 States D C Called Up In Response To Civil Unrest National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dcist.com/wp-content/uploads/sites/3/2020/06/AP_20157743017832-1500x999.jpg" data-lightbox="roadtrip" data-title="Pentagon Orders Review Of National Guard S Role In Protests Dcist">
+											<img class="card-img v-image ads-img " src="https://dcist.com/wp-content/uploads/sites/3/2020/06/AP_20157743017832-1500x999.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfnyab1pC98W5xWwF5PXR9buDME2u-smM9iA';" alt="Pentagon Orders Review Of National Guard S Role In Protests Dcist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pentagon Orders Review Of National Guard S Role In Protests Dcist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i1.wp.com/wp-cpr.s3.amazonaws.com/uploads/2020/06/ga_national_guard-e1591976147186.jpg?fit=675%2C450&amp;ssl=1" data-lightbox="roadtrip" data-title="Some National Guardsmen Likely To Face Discipline After Refusing Deployment To Protests Colorado Public Radio">
+											<img class="card-img v-image ads-img " src="https://i1.wp.com/wp-cpr.s3.amazonaws.com/uploads/2020/06/ga_national_guard-e1591976147186.jpg?fit=675%2C450&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk6cjSq3sDMgRph8W35dRoNmKg0CaHK-ajIQ';" alt="Some National Guardsmen Likely To Face Discipline After Refusing Deployment To Protests Colorado Public Radio">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Some National Guardsmen Likely To Face Discipline After Refusing Deployment To Protests Colorado Public Radio</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.insider.com/5ed3ddbaaee6a82964075503?width=700" data-lightbox="roadtrip" data-title="5 000 National Guard Troops Activated In 15 States Dc Amid Protests Business Insider">
+											<img class="card-img v-image ads-img " src="https://i.insider.com/5ed3ddbaaee6a82964075503?width=700" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZuhZ6pU2WtoUNOmFa5UcrdECJXLi0GQ9mXg';" alt="5 000 National Guard Troops Activated In 15 States Dc Amid Protests Business Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">5 000 National Guard Troops Activated In 15 States Dc Amid Protests Business Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wjla.com/resources/media2/16x9/full/1015/center/80/ae058cf5-04b4-4501-a155-a45cdd1f0516-large16x9_DC_PM_PROTEST6.jfif" data-lightbox="roadtrip" data-title="National Guard Called Out In D C As Protests Carry On Into The Evening Wjla">
+											<img class="card-img v-image ads-img " src="https://wjla.com/resources/media2/16x9/full/1015/center/80/ae058cf5-04b4-4501-a155-a45cdd1f0516-large16x9_DC_PM_PROTEST6.jfif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSG6ImUIJJRnCUNK0L62qfE3gZx4ve3TrKMA';" alt="National Guard Called Out In D C As Protests Carry On Into The Evening Wjla">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Called Out In D C As Protests Carry On Into The Evening Wjla</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.insider.com/5ee01c3df34d0514a97a0635?width=700" data-lightbox="roadtrip" data-title="Dc National Guard Troops Who Policed Protests Test Positive For Covid 19 Business Insider">
+											<img class="card-img v-image ads-img " src="https://i.insider.com/5ee01c3df34d0514a97a0635?width=700" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPO0zMfuG3FtTCT-iNuyrnrMbzBq9K0X9YbQ';" alt="Dc National Guard Troops Who Policed Protests Test Positive For Covid 19 Business Insider">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dc National Guard Troops Who Policed Protests Test Positive For Covid 19 Business Insider</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/Daiuw1AuL6BIjy7y8xw.tg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM2MA--/https://media.zenfs.com/en/us.abcnews.go.com/25b4c4af869ca3aac8de0cc1b8f40df6" data-lightbox="roadtrip" data-title="Dc National Guard Activated Ahead Of Protests">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/Daiuw1AuL6BIjy7y8xw.tg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM2MA--/https://media.zenfs.com/en/us.abcnews.go.com/25b4c4af869ca3aac8de0cc1b8f40df6" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaMknYmdpNuy_-Ae_z76KVsUxEdBqzNvPpDw';" alt="Dc National Guard Activated Ahead Of Protests">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dc National Guard Activated Ahead Of Protests</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/argus-background.html">Argus Background</a></li>
+													<li class="list-group-item"><a href="/argus-air-harga.html">Argus Air Harga</a></li>
+													<li class="list-group-item"><a href="/argus-ml-revamp.html">Argus Ml Revamp</a></li>
+													<li class="list-group-item"><a href="/are-soldier-ants-male-or-female.html">Are Soldier Ants Male Or Female</a></li>
+													<li class="list-group-item"><a href="/argus-new.html">Argus New</a></li>
+													<li class="list-group-item"><a href="/argus-nc.html">Argus Nc</a></li>
+													<li class="list-group-item"><a href="/are-marines-better-than-the-army.html">Are Marines Better Than The Army</a></li>
+													<li class="list-group-item"><a href="/argus-revamp.html">Argus Revamp</a></li>
+													<li class="list-group-item"><a href="/argus-road-closures.html">Argus Road Closures</a></li>
+													<li class="list-group-item"><a href="/area-v-selalu-gatal.html">Area V Selalu Gatal</a></li>
+													<li class="list-group-item"><a href="/argus-fandom.html">Argus Fandom</a></li>
+													<li class="list-group-item"><a href="/are-those-who-served-in-the-national-guard-considered-veterans.html">Are Those Who Served In The National Guard Considered Veterans</a></li>
+													<li class="list-group-item"><a href="/argus-filch.html">Argus Filch</a></li>
+													<li class="list-group-item"><a href="/argus-flinch.html">Argus Flinch</a></li>
+													<li class="list-group-item"><a href="/argus-build-tersakit.html">Argus Build Tersakit</a></li>
+													<li class="list-group-item"><a href="/argan-oil-untuk-rambut.html">Argan Oil Untuk Rambut</a></li>
+													<li class="list-group-item"><a href="/argus-ii-implant.html">Argus Ii Implant</a></li>
+													<li class="list-group-item"><a href="/argus-filch-squib.html">Argus Filch Squib</a></li>
+													<li class="list-group-item"><a href="/argus-ii-implant-surgery.html">Argus Ii Implant Surgery</a></li>
+													<li class="list-group-item"><a href="/argus-208-hdi-2013.html">Argus 208 Hdi 2013</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

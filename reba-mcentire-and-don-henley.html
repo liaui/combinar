@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Reba Mcentire And Don Henley - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Reba Mcentire And Don Henley",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/66/07/c9/6607c9c583da341070b6d7503699647b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=reba+mcentire+and+don+henley",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Reba Mcentire And Don Henley</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">I dont want to say too much We both know the reasons Why we didnt keep in touch Were no good for each other Still its hard to let it go Im trying to be strong but babe youve got to know. Discover more music concerts videos and pictures with the largest catalogue online at Lastfm. Listen to Break Each Others Hearts Again by Reba McEntire Don Henley 3389 Shazams featuring on Broken Down and Country Ballads Essentials Apple Music playlists. <br>				
+			</p>
+										<a class="badge badge-light" href="/otis-and-olivers.html">otis and olivers</a>
+											<a class="badge badge-light" href="/otis-and-ticker.html">otis and ticker</a>
+											<a class="badge badge-success" href="/otis-and-lily.html">otis and lily</a>
+											<a class="badge badge-success" href="/pa-guardianship-act.html">pa guardianship act</a>
+											<a class="badge badge-danger" href="/otis-angeles-city.html">otis angeles city</a>
+											<a class="badge badge-success" href="/otus-and-ephialtes.html">otus and ephialtes</a>
+											<a class="badge badge-dark" href="/otis-and-parker.html">otis and parker</a>
+											<a class="badge badge-dark" href="/otis-and-tucker-wwe-figures.html">otis and tucker wwe figures</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to visit the right blog.  Our website gives you suggestions for seeing the maximum quality video and image content, hunt and find more informative video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this movie for you to see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/0b/58/9f0b58c1526279b334dde19903256e93.jpg" data-lightbox="roadtrip" data-title="Don Henley Reba Eagles Band Henley Reba Mcentire">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/0b/58/9f0b58c1526279b334dde19903256e93.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNwcu6n0982kXudzKRbLcE0xMUr6nmGrpnCA';" alt="Don Henley Reba Eagles Band Henley Reba Mcentire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don Henley Reba Eagles Band Henley Reba Mcentire</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/a8/50/2aa8502b12e2ac3dfb20e9254785ab13.jpg" data-lightbox="roadtrip" data-title="Reba Mcentire 2002 11 13 Don Henley Presents Stormy Weather 2002 Reba Mcentire Female Singers Favorite Celebrities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/a8/50/2aa8502b12e2ac3dfb20e9254785ab13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROe_9HQ0k8vps6hG68JknITzD_FiE3TxGqqw';" alt="Reba Mcentire 2002 11 13 Don Henley Presents Stormy Weather 2002 Reba Mcentire Female Singers Favorite Celebrities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire 2002 11 13 Don Henley Presents Stormy Weather 2002 Reba Mcentire Female Singers Favorite Celebrities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/51/b1/0c51b11c99c39e399bf55c0de5c8a9fc.jpg" data-lightbox="roadtrip" data-title="Reba Mcentire 2002 11 13 Don Henley Presents Stormy Weather 2002 Reba Mcentire Tammy Wynette Her Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/51/b1/0c51b11c99c39e399bf55c0de5c8a9fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8gSz2b8X2rNWzG0uQn_vDVjBIeIwhmaKPMQ';" alt="Reba Mcentire 2002 11 13 Don Henley Presents Stormy Weather 2002 Reba Mcentire Tammy Wynette Her Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire 2002 11 13 Don Henley Presents Stormy Weather 2002 Reba Mcentire Tammy Wynette Her Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/c7/8b/65c78badf343c44daf78c58f2813d52c.jpg" data-lightbox="roadtrip" data-title="Pin On Stevie Nicks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/c7/8b/65c78badf343c44daf78c58f2813d52c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKdYZW6BIuBc3__MkodVIriVbp6aUt4toiHg';" alt="Pin On Stevie Nicks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Stevie Nicks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/40/db/6640dbf865868bbd2b0cb2776de6413e.jpg" data-lightbox="roadtrip" data-title="Dolly Parton And Eagles Frontman Break Hearts With Passionate Ballad Country Music Stars Videos Country Music Lyrics Dolly Parton Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/40/db/6640dbf865868bbd2b0cb2776de6413e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzha94yxoWIx_zNKSJCYemYGS5JTT8BcAU5A';" alt="Dolly Parton And Eagles Frontman Break Hearts With Passionate Ballad Country Music Stars Videos Country Music Lyrics Dolly Parton Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dolly Parton And Eagles Frontman Break Hearts With Passionate Ballad Country Music Stars Videos Country Music Lyrics Dolly Parton Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/af/ff/29/afff29a058c2f30926e671103c6c0a13.jpg" data-lightbox="roadtrip" data-title="Trisha Yearwood Photos Photos Don Henley Honored As The 2007 Musicares Person Of The Year Arrivals In 2020">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/af/ff/29/afff29a058c2f30926e671103c6c0a13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRznbeT13tFfogHTfN14MDh2A5gF0jDTE5lHQ';" alt="Trisha Yearwood Photos Photos Don Henley Honored As The 2007 Musicares Person Of The Year Arrivals In 2020">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Trisha Yearwood Photos Photos Don Henley Honored As The 2007 Musicares Person Of The Year Arrivals In 2020</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/66/40/db/6640dbf865868bbd2b0cb2776de6413e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRznbeT13tFfogHTfN14MDh2A5gF0jDTE5lHQ';" alt="Trisha Yearwood Photos Photos Don Henley Honored As The 2007 Musicares Person Of The Year Arrivals In 2020">
+										<div class="card-body">
+						<h3 class="h5"><b>These arms want to hold you These lips want to kiss you These eyes are glad to see you Baby I miss you Lets drive each other crazy Like we did back then.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Reba mcentire and don henley</strong>. 
+								
+																	SONGLYRICS just got interactive. 
+																	D These arms wanna hold you Bm These. 
+																	Listen to music from Reba McEntire Don Henley. 
+																	Oct 15 2014 - Reba photo by Mike Chojnacki. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Do you still drink whiskey. 
+																	C 1992 MCA Nashv. 
+																	Nov 2 2019 - This Pin was discovered by Suzie. 
+																	Reba McEntire - Break Each Others Hearts Again Duet with Don Henley INTRO. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Best of Trisha Yearwood. 
+																	If nobodys sitting here Do you mind if I sit down. 
+																	Find the latest tracks albums and images from Reba McEntire Don Henley. 
+																	Discover and save your own Pins on Pinterest. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Buy Country Music CDs Reba McEntire and get the best deals at the lowest prices on eBay. 
+																	Listen to music from Reba McEntire Don Henley like Break Each Others Hearts Again Break Each Others Hearts Again more. 
+																	Great Savings Free Delivery Collection on many items. 
+																	Select Your Cookie Preferences. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I was nervous when I saw you I almost walked away And now I cant believe What Im. 
+																	Find the latest tracks albums and images from Reba McEntire Don Henley. 
+																	Reba McEntire Don Henley. 
+																	Stream ad-free or purchase CDs and MP3s now on Amazoncouk. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	C 2015 Starstruck Records LLC httpvevolyTcBzKe. 
+																	Check out Break Each Others Hearts Again Album Version by Reba McEntire Don Henley on Amazon Music. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+																	Read Reba McEntire Don Henleys bio and find out more about Reba McEntire Don Henleys songs albums and chart history. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Can I buy you a round. 
+																	D Bm A G D Bm Do you still drink whiskey A Can I buy you a round If nobodys sitting here G Do you mind if I sit down D I was nervous when I saw you Bm I almost walked away A And now I cant believe G What Im about to say CHORUS. 
+																	Reba McEntire Don Henley - Break Each Others Hearts Again Lyrics. 
+																	Get recommendations for other artists youll love. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We use cookies and similar tools to enhance your shopping experience to provide our services understand how customers use our services so we can make improvements and display ads. 
+																	She has performed duets with Trisha Yearwood Don Henley Justin Timberlake and LeAnn Rimes. 
+																	1955 is a country-western singer and actress who started performing in high school and first signed with a record label in 1975. 
+																	Listen free to Reba McEntire Don Henley Reba - Duets. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Music video by Reba McEntire performing Until They Dont Love You. 
+																	Httpsgooglne4ABWMusic video by Trisha Yearwood performing Walkaway Joe. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/e7/72/41e7725d27270d135cba8c3959a975b4.jpg" data-lightbox="roadtrip" data-title="Don Henley Words Can Break Your Heart On Austin City Limits Austin City Limits Country Music Videos Music History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/e7/72/41e7725d27270d135cba8c3959a975b4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVVmAXEUeqpqq_lO3jglXIj9jlJM0-i1S7Sg';" alt="Don Henley Words Can Break Your Heart On Austin City Limits Austin City Limits Country Music Videos Music History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don Henley Words Can Break Your Heart On Austin City Limits Austin City Limits Country Music Videos Music History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/ed/25/a7ed25d61f63798c383923b925d22620.jpg" data-lightbox="roadtrip" data-title="Don Henley She S Got A Way Kennedy Center Honors Billy Joel Billy Joel Billy Joel Music Music Book">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/ed/25/a7ed25d61f63798c383923b925d22620.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsdaFOuWAyXeLEnKlI6_WwkppGm-_iAAdL_w';" alt="Don Henley She S Got A Way Kennedy Center Honors Billy Joel Billy Joel Billy Joel Music Music Book">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don Henley She S Got A Way Kennedy Center Honors Billy Joel Billy Joel Billy Joel Music Music Book</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/40/f5/9a40f5bfa8831b0e09407e4325fad8da.jpg" data-lightbox="roadtrip" data-title="Don Henley With Billy Joel Billy Joel Linda Ronstadt Singer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/40/f5/9a40f5bfa8831b0e09407e4325fad8da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFFAODW7BNSNlTBJqrMAcVuS6d50KMjZrS6g';" alt="Don Henley With Billy Joel Billy Joel Linda Ronstadt Singer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don Henley With Billy Joel Billy Joel Linda Ronstadt Singer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/e2/fb/f4e2fb062cb3ad926e81e4f6e19d195e.jpg" data-lightbox="roadtrip" data-title="Reba Mcentire 1986 02 25 28th Annual Grammy Awards Reba Mcentire Grammy Awards Grammy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/e2/fb/f4e2fb062cb3ad926e81e4f6e19d195e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1QbiX8-uW-fTpxRnFo92XqLi3R5CKGOTa2g';" alt="Reba Mcentire 1986 02 25 28th Annual Grammy Awards Reba Mcentire Grammy Awards Grammy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire 1986 02 25 28th Annual Grammy Awards Reba Mcentire Grammy Awards Grammy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/07/c9/6607c9c583da341070b6d7503699647b.jpg" data-lightbox="roadtrip" data-title="Jackson Browne And Don Henley Jackson Browne The Pretenders Singer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/07/c9/6607c9c583da341070b6d7503699647b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTUW9B-OpFuO8Og7czB2HgzEjlYMbJIr1z2A';" alt="Jackson Browne And Don Henley Jackson Browne The Pretenders Singer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jackson Browne And Don Henley Jackson Browne The Pretenders Singer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/9c/21/e5/9c21e52649335d446d9c4588c2dc22c4--henleys-the-eagles.jpg" data-lightbox="roadtrip" data-title="Don Henley S Long Run How To Run Longer History Of The Eagles Eagles Tour">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/9c/21/e5/9c21e52649335d446d9c4588c2dc22c4--henleys-the-eagles.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyZKzab8N3JaRf07mip3H23nNzmesk6qEvRw';" alt="Don Henley S Long Run How To Run Longer History Of The Eagles Eagles Tour">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don Henley S Long Run How To Run Longer History Of The Eagles Eagles Tour</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/27/74/562774b254b23dc0280ca4e98205eb13.jpg" data-lightbox="roadtrip" data-title="Guess Who These Cute Kids Turned Into Part 3 It S Reba Mcentire Diana Gabaldon Celebrities Reading Reba Mcentire">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/27/74/562774b254b23dc0280ca4e98205eb13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1hkd3Xtf3-0-TkXajI8wV9ZkRAf0lHrfZSA';" alt="Guess Who These Cute Kids Turned Into Part 3 It S Reba Mcentire Diana Gabaldon Celebrities Reading Reba Mcentire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guess Who These Cute Kids Turned Into Part 3 It S Reba Mcentire Diana Gabaldon Celebrities Reading Reba Mcentire</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/43/6a/34436a1f0a6724f2445813f0ee3e8a0b.jpg" data-lightbox="roadtrip" data-title="Non Existent Top Lip Sally Ann Reba Mcentire Celebrities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/43/6a/34436a1f0a6724f2445813f0ee3e8a0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTz6CFpNuoBOiam7mYr0B5vKFkB_hi8Qq0RA';" alt="Non Existent Top Lip Sally Ann Reba Mcentire Celebrities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Non Existent Top Lip Sally Ann Reba Mcentire Celebrities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/95/95/75/9595753c85d54d98220463bbaafa3098.jpg" data-lightbox="roadtrip" data-title="Stevie Nicks With Don Henley Leather And Lace Vinyl By Stevie Nicks I Have My Own Life And I Am Stronger Than You Stevie Nicks Leather And Lace Stevie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/95/95/75/9595753c85d54d98220463bbaafa3098.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLNQR0utDnT2yNpt19GiH2wrcq_xMR17pPuA';" alt="Stevie Nicks With Don Henley Leather And Lace Vinyl By Stevie Nicks I Have My Own Life And I Am Stronger Than You Stevie Nicks Leather And Lace Stevie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Stevie Nicks With Don Henley Leather And Lace Vinyl By Stevie Nicks I Have My Own Life And I Am Stronger Than You Stevie Nicks Leather And Lace Stevie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/42/ea/6c/42ea6c286d803cc441105ff198dd7438.jpg" data-lightbox="roadtrip" data-title="I Don T Recognize Country Music Anymore Don Henley Shares Opinion On Modern Country Country Music Country Music Lyrics Country Music Lyrics Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/42/ea/6c/42ea6c286d803cc441105ff198dd7438.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2JyKDCg1awo3fbsYPBpgbmkU9bT57dJY3kg';" alt="I Don T Recognize Country Music Anymore Don Henley Shares Opinion On Modern Country Country Music Country Music Lyrics Country Music Lyrics Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">I Don T Recognize Country Music Anymore Don Henley Shares Opinion On Modern Country Country Music Country Music Lyrics Country Music Lyrics Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b1/01/77/b10177985fa630f79f43f9645c4963f8.jpg" data-lightbox="roadtrip" data-title="Don Henley The Boys Of Summer Live At Farm Aid 1985 Http Afarcryfromsunset Com Don Henley The Boys Of Summer Liv Cool Music Videos Good Music Music Mix">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b1/01/77/b10177985fa630f79f43f9645c4963f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJf_3irVWb2raoVLKrTACqsqAi3umbex8pcg';" alt="Don Henley The Boys Of Summer Live At Farm Aid 1985 Http Afarcryfromsunset Com Don Henley The Boys Of Summer Liv Cool Music Videos Good Music Music Mix">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Don Henley The Boys Of Summer Live At Farm Aid 1985 Http Afarcryfromsunset Com Don Henley The Boys Of Summer Liv Cool Music Videos Good Music Music Mix</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/89/da/46/89da462930673c7c6a1dd35611407ff7.jpg" data-lightbox="roadtrip" data-title="Pin On My Idol Reba Mcentire">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/89/da/46/89da462930673c7c6a1dd35611407ff7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm_x23eaRtF4E9U-_VVhtwktHYK80FOYhI7w';" alt="Pin On My Idol Reba Mcentire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Idol Reba Mcentire</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/7f/21/a87f21e3665ab2cd13cfc1f3c2b46eef.jpg" data-lightbox="roadtrip" data-title="Pin By Tammy Papes On Reba Mcentire Country Female Singers Country Music Singers Country Singers">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/7f/21/a87f21e3665ab2cd13cfc1f3c2b46eef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLlNosocE0dmPTNCycYZYTpmweC-FR1G5rvw';" alt="Pin By Tammy Papes On Reba Mcentire Country Female Singers Country Music Singers Country Singers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Tammy Papes On Reba Mcentire Country Female Singers Country Music Singers Country Singers</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/are-army-rangers-tough.html">Are Army Rangers Tough</a></li>
+													<li class="list-group-item"><a href="/argus-network-monitoring.html">Argus Network Monitoring</a></li>
+													<li class="list-group-item"><a href="/argus-counter.html">Argus Counter</a></li>
+													<li class="list-group-item"><a href="/argus-revamp-survey.html">Argus Revamp Survey</a></li>
+													<li class="list-group-item"><a href="/argus-ii-retinal-prosthesis-system.html">Argus Ii Retinal Prosthesis System</a></li>
+													<li class="list-group-item"><a href="/argus-ml.html">Argus Ml</a></li>
+													<li class="list-group-item"><a href="/argus-army.html">Argus Army</a></li>
+													<li class="list-group-item"><a href="/are-army-ants-dangerous.html">Are Army Ants Dangerous</a></li>
+													<li class="list-group-item"><a href="/argus-fandom.html">Argus Fandom</a></li>
+													<li class="list-group-item"><a href="/argus-adalah.html">Argus Adalah</a></li>
+													<li class="list-group-item"><a href="/are-national-guard-considered-soldiers.html">Are National Guard Considered Soldiers</a></li>
+													<li class="list-group-item"><a href="/argus-albino.html">Argus Albino</a></li>
+													<li class="list-group-item"><a href="/are-there-secret-military-units.html">Are There Secret Military Units</a></li>
+													<li class="list-group-item"><a href="/argus-hdd-dock.html">Argus Hdd Dock</a></li>
+													<li class="list-group-item"><a href="/argus-208-hdi-2013.html">Argus 208 Hdi 2013</a></li>
+													<li class="list-group-item"><a href="/argus-mlbb.html">Argus Mlbb</a></li>
+													<li class="list-group-item"><a href="/argus-ml-build.html">Argus Ml Build</a></li>
+													<li class="list-group-item"><a href="/are-national-guard-members-eligible-for-tricare.html">Are National Guard Members Eligible For Tricare</a></li>
+													<li class="list-group-item"><a href="/argus-ii-retinal-implant.html">Argus Ii Retinal Implant</a></li>
+													<li class="list-group-item"><a href="/argus-new-skin.html">Argus New Skin</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

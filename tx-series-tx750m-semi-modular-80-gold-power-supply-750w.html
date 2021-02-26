@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Tx Series Tx750m Semi Modular 80 Gold Power Supply 750w - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Tx Series Tx750m Semi Modular 80 Gold Power Supply 750w",
+  "datePublished": "2021-02-27",
+  "image": "https://i.ytimg.com/vi/E2T3G53iCcc/maxresdefault.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=tx+series+tx750m+semi+modular+80+gold+power+supply+750w",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Tx Series Tx750m Semi Modular 80 Gold Power Supply 750w</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">45 out of 5 stars 953. With all Japanese 105C capacitors theyre a great choice for high performance PCs where reliability is essential. Corsair TX750M 750W 80 PLUS Gold Semi-Modular PSU Power Supply Wattage. <br>				
+			</p>
+										<a class="badge badge-dark" href="/cbgb-tactical.html">cbgb tactical</a>
+											<a class="badge badge-light" href="/cer-de-leon.html">cer de leon</a>
+											<a class="badge badge-dark" href="/catering-depok.html">catering depok</a>
+											<a class="badge badge-secondary" href="/cerdika.html">cerdika</a>
+											<a class="badge badge-secondary" href="/caring-group.html">caring group</a>
+											<a class="badge badge-light" href="/cerdik-kemenkes.html">cerdik kemenkes</a>
+											<a class="badge badge-success" href="/caring.html">caring</a>
+											<a class="badge badge-warning" href="/cargo-pants-army-jogger.html">cargo pants army jogger</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to pay a visit to the ideal site.  Our site gives you hints for viewing the maximum quality video and picture content, hunt and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from several sources, particularly Youtube, so we recommend this video for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/9a/25/c7/9a25c77a0e93665a2ca22bc8f9d833b2.jpg" data-lightbox="roadtrip" data-title="Pin By Heforx Com On Shap2 Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/9a/25/c7/9a25c77a0e93665a2ca22bc8f9d833b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuDv5V-76EqEogni80ewS8OWcbyEWaS8R_xg';" alt="Pin By Heforx Com On Shap2 Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Heforx Com On Shap2 Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/5c/e1/e75ce1188b6dde291ca911e5bf524656.jpg" data-lightbox="roadtrip" data-title="750w Corsair Enthusiast Series Tx750m Modular 85 Eff 80 Plus Bronze Sli Crossfire Eps 12v Quiet Fan Atx Psu Modular Computer Components Power Supply">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/5c/e1/e75ce1188b6dde291ca911e5bf524656.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvvo7jxsA5pvM8k5mTZOsTXeMSenrC73Yi0w';" alt="750w Corsair Enthusiast Series Tx750m Modular 85 Eff 80 Plus Bronze Sli Crossfire Eps 12v Quiet Fan Atx Psu Modular Computer Components Power Supply">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">750w Corsair Enthusiast Series Tx750m Modular 85 Eff 80 Plus Bronze Sli Crossfire Eps 12v Quiet Fan Atx Psu Modular Computer Components Power Supply</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://boomit.ca/wp-content/uploads/2020/12/17-139-051-10.jpg" data-lightbox="roadtrip" data-title="Corsair Tx M Series Tx750m 80 Plus Gold Certified Semi Modular Power Supply Boom I T Group 709 739 8777">
+											<img class="card-img v-image ads-img " src="https://boomit.ca/wp-content/uploads/2020/12/17-139-051-10.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7k3v9wnKlNZyBbufducS7D0WmVOqvoQzCCw';" alt="Corsair Tx M Series Tx750m 80 Plus Gold Certified Semi Modular Power Supply Boom I T Group 709 739 8777">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Corsair Tx M Series Tx750m 80 Plus Gold Certified Semi Modular Power Supply Boom I T Group 709 739 8777</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.sv-comp.com/image/cache/cache/3001-4000/3252/main/a25b-1-0-1-800x800.jpg" data-lightbox="roadtrip" data-title="Corsair Tx750m Power Supply 750w Semi Modular Atx Power Supply">
+											<img class="card-img v-image ads-img " src="https://www.sv-comp.com/image/cache/cache/3001-4000/3252/main/a25b-1-0-1-800x800.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaJ-IowjxkeiuDlHECSEDIrB_HsPLlVCUXsg';" alt="Corsair Tx750m Power Supply 750w Semi Modular Atx Power Supply">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Corsair Tx750m Power Supply 750w Semi Modular Atx Power Supply</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/E2T3G53iCcc/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Corsair Tx M Series Tx750m Power Supply Unboxing Review And Demo Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/E2T3G53iCcc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnIIt66X52IPFzfUs9fgziYvx7WQ-5L-18Mg';" alt="Corsair Tx M Series Tx750m Power Supply Unboxing Review And Demo Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Corsair Tx M Series Tx750m Power Supply Unboxing Review And Demo Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://c1.neweggimages.com/ProductImage/17-139-208-Z01.jpg" data-lightbox="roadtrip" data-title="Corsair Tx M Series Tx750m Cp 9020131 Na 750w Atx12v V2 4 Eps 2 92 80 Plus Gold Certified Semi Modular Active Pfc Power Supply Power Supplies Newegg Ca">
+											<img class="card-img v-image ads-img " src="https://c1.neweggimages.com/ProductImage/17-139-208-Z01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMRwKn-CPL4JdybW1xr814nUIaxkCFoKTCjA';" alt="Corsair Tx M Series Tx750m Cp 9020131 Na 750w Atx12v V2 4 Eps 2 92 80 Plus Gold Certified Semi Modular Active Pfc Power Supply Power Supplies Newegg Ca">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Corsair Tx M Series Tx750m Cp 9020131 Na 750w Atx12v V2 4 Eps 2 92 80 Plus Gold Certified Semi Modular Active Pfc Power Supply Power Supplies Newegg Ca</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/3c/13/3c/3c133c68b0e19f75e95d82d6fc1ee1bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMRwKn-CPL4JdybW1xr814nUIaxkCFoKTCjA';" alt="Corsair Tx M Series Tx750m Cp 9020131 Na 750w Atx12v V2 4 Eps 2 92 80 Plus Gold Certified Semi Modular Active Pfc Power Supply Power Supplies Newegg Ca">
+										<div class="card-body">
+						<h3 class="h5"><b>Corsair TXM 750W Power Supply For basic desktop systems the TXM series semi-modular power supplies are ideal and give you low noise and energy with a power output of 750W this PSU is ideal to run an entry level PC.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Tx series tx750m semi modular 80 gold power supply 750w</strong>. 
+								
+																	Keep your PC running smoothly with the Corsair TX750M Semi-Modular ATX PSU. 
+																	All the capacitors are 105C rated Japanese brand to ensure a solid power delivery. 
+																	AeroCool Integrator Mod Xt 750W Power Supply Semi-Modular 80 Plus Bronze Up to 85 Efficiency 12 cm Black Fan For Gamers System Integrators - Black. 
+																	GOLD-CERTIFIED EFFICIENCY AND SEMI-MODULAR CABLING FOR LOW ENERGY USE AND EASY INSTALLATION. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The listing youre looking for has ended. 
+																	TX750M 750W 80 Plus Gold Semi Modular Power Supply CP-9020131-UK The CORSAIR TX-M Series power supplies give you extremely tight voltage regulation and a semi-modular cable set. 
+																	The CORSAIR TX-M Series power supplies give you extremely tight voltage regulation and a semi-modular cable set. 
+																	Modular cables with connectors make the installation fast. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That means you can run heavy games or video-rendering software while your PC stays efficient. 
+																	CORSAIR TX750M 750W 80 Plus Gold Power Supply overview Gold-certified efficiency and semi-modular cabling for low energy use and easy installation TX Series semi-modular power supplies are ideal for basic desktop systems where low energy use low noise and simple installation are essential. 
+																	45 out of 5 stars 479. 
+																	Capacitors are 105C rated and Japanese to ensure power delivery and long term reliability. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Corsair TX750M 750W 80 PLUS Gold Semi-Modular PSU Power Supply CP-9020131-UK The CORSAIR TX-M Series power supplies provide industrial build quality 80 PLUS Gold efficiency extremely tight voltages and a semi-modular cable set. 
+																	SKU CP-9020131-NA TX-M Series TX750M 750 Watt 80 Plus Gold Certified PSU The CORSAIR TX-M Series power supplies provide industrial build quality 80 PLUS Gold efficiency extremely tight voltages and a semi-modular cable set. 
+																	All of the capacitors are 105 C rated Japanese brand to ensure solid power delivery and long term reliability and 80 PLUS Gold efficiency reduces operating cost and excess heat. 
+																	Click the link below in description to know morehttpswwwamazonindpB06X9K8TK6taghindilovers95-21 - Corsair TX Series TX750M 750W 80 Gold Semi-Modula. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Build without worry knowing. 
+																	Corsair TX Series TX750M 750W 80 Gold Semi-Modular Power Supply - Black 11 41000 Corsair Vengeance LPX 16GB 2x8GB DDR4 DRAM 3200MHz C16 Desktop Memory Kit - Black 10 07900. 
+																	Corsair CP-9020131-UK TXM Series 750 W TX750M ATXEPS Semi-Modular 80 PLUS Gold Power Supply Unit - Black AeroCool Integrator Mod Xt 750W Power Supply Semi-Modular 80 Plus Bronze Up to 85 Efficiency 12 cm Black Fan For Gamers System Integrators - Black EVGA 600 W1 80 WHITE 600W Power Supply 100-W1-0600-K3 1 Best Seller. 
+																	5550 Corsair CXM Series 750W CX750M ATX Power Supply Unit Black. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	80 PLUS GOLD-CERTIFIED EFFICIENCY. 
+																	Buy CORSAIR TX-M Series TX750M CP-9020131-NA 750W ATX12V v24 EPS 292 80 PLUS GOLD Certified Semi-Modular Active PFC Power Supply with fast shipping and top-rated customer service. 
+																	Corsair CP-9020131-UK TXM Series 750 W TX750M ATXEPS Semi-Modular 80 PLUS Gold Power Supply Unit - Black. 
+																	With an 80 Plus Gold certification it prevents power from being turned into unnecessary heat. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	TX Series semi-modular power supplies are ideal for basic desktop systems where low energy use low noise and simple installation are essential. 
+																	Newegg shopping upgraded. 
+																	Under a continuous full-load output the PSUs maximum. 
+																	Enthusiast TX-M Series 750W Compliant for Most CPU and Mainboards. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Buy Corsair 750W Enthusiast TX-M Series TX750M PSU Rifle Bearing Fan Semi-Modular 80 Gold in Extremely Good Price. 
+																	80 PLUS Gold efficiency reduces operating cost and excess heat and together with the rifle bearing fan yields virtually silent operation. 
+																	Share - Corsair TX-M Series TX750M Power Supply - CP9020131UK. 
+																	TX Series semi-modular power supplies are ideal for basic desktop systems where low energy use low noise and simple installation are essential. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The TX750M is 80 PLUS Gold-certified and it also carries ETA-A and LAMBDA-A- certifications for efficiency and output noise respectively. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/6a/ac/c56aac42c21c26dc7b5bab05a9e61c59.jpg" data-lightbox="roadtrip" data-title="Ocz 1000w Fatal1ty Individually Sleeved Modular Gaming 80plus Gold Power Supply Compatible With Intel Haswell Core I3 I5 I7 And Best Pc Power Supply Cool Stuff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/6a/ac/c56aac42c21c26dc7b5bab05a9e61c59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmGcLzDynYSlELPuTZL4OKYSx7_Kj7bxsxHw';" alt="Ocz 1000w Fatal1ty Individually Sleeved Modular Gaming 80plus Gold Power Supply Compatible With Intel Haswell Core I3 I5 I7 And Best Pc Power Supply Cool Stuff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ocz 1000w Fatal1ty Individually Sleeved Modular Gaming 80plus Gold Power Supply Compatible With Intel Haswell Core I3 I5 I7 And Best Pc Power Supply Cool Stuff</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.kitguru.net/wp-content/uploads/2017/05/L1002137-310x165.jpg" data-lightbox="roadtrip" data-title="Corsair Tx 750m Power Supply Review 80 Plus Gold Kitguru">
+											<img class="card-img v-image ads-img " src="https://www.kitguru.net/wp-content/uploads/2017/05/L1002137-310x165.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD8fG3oPRgR-V-2Is2v5s3HDsidwMZhdvcGg';" alt="Corsair Tx 750m Power Supply Review 80 Plus Gold Kitguru">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Corsair Tx 750m Power Supply Review 80 Plus Gold Kitguru</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/a7/c8/27a7c861ff67ef6debbeb37610cbd009.jpg" data-lightbox="roadtrip" data-title="Ocz Fatal1ty 550w Modular Gaming Power Supply Compatible With Intel Sandy Bridge Core I3 I5 I7 And Amd Phenom By Ocz Http Www Ama Power Power Supply Modular">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/a7/c8/27a7c861ff67ef6debbeb37610cbd009.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8iPQAEA92jOmQ7x69cjUvzLvm3HOgOGlc7A';" alt="Ocz Fatal1ty 550w Modular Gaming Power Supply Compatible With Intel Sandy Bridge Core I3 I5 I7 And Amd Phenom By Ocz Http Www Ama Power Power Supply Modular">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ocz Fatal1ty 550w Modular Gaming Power Supply Compatible With Intel Sandy Bridge Core I3 I5 I7 And Amd Phenom By Ocz Http Www Ama Power Power Supply Modular</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/13/3c/3c133c68b0e19f75e95d82d6fc1ee1bb.jpg" data-lightbox="roadtrip" data-title="Xfx Pro1050w Black Edition Full Modular 80plus Gold Psu Compatible With Intel Core I3 I5 I7 And Amd Phenom Fx Atx 1050 Energy St Intel Core Power Supply Atx">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/13/3c/3c133c68b0e19f75e95d82d6fc1ee1bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaCq_gntpYWzGxNKq4QOlR2zlo5azv4Zza6A';" alt="Xfx Pro1050w Black Edition Full Modular 80plus Gold Psu Compatible With Intel Core I3 I5 I7 And Amd Phenom Fx Atx 1050 Energy St Intel Core Power Supply Atx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Xfx Pro1050w Black Edition Full Modular 80plus Gold Psu Compatible With Intel Core I3 I5 I7 And Amd Phenom Fx Atx 1050 Energy St Intel Core Power Supply Atx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/eb/65/72/eb6572bd8cf97a692a986f76b0a98c9b.jpg" data-lightbox="roadtrip" data-title="Evga 120 Pb 0750 Kr Power Supply Supernova Nex750b 750w 80 Bronze By Evga Http Www Amazon Com Dp B00b6z8uy6 Ref Cm Sw R Budgeting System Power Supply Power">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/eb/65/72/eb6572bd8cf97a692a986f76b0a98c9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh2axikxRBv3ijDI0nyrQ22CiSYBZgJS_4ow';" alt="Evga 120 Pb 0750 Kr Power Supply Supernova Nex750b 750w 80 Bronze By Evga Http Www Amazon Com Dp B00b6z8uy6 Ref Cm Sw R Budgeting System Power Supply Power">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evga 120 Pb 0750 Kr Power Supply Supernova Nex750b 750w 80 Bronze By Evga Http Www Amazon Com Dp B00b6z8uy6 Ref Cm Sw R Budgeting System Power Supply Power</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/70/31/06/7031069d831c0a818e530fbad0b645d9.jpg" data-lightbox="roadtrip" data-title="Silverstone Strider Plus St50f P 500w Atx 12v V2 3 Eps 12v 80 Plus Bronze Certified 100 Modular Active Pfc Power Supply Black By S 80 Plus Power Supply Atx">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/70/31/06/7031069d831c0a818e530fbad0b645d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeyTn7h4q5_QqhayqRPZ9EeWls_EBNtAzMSw';" alt="Silverstone Strider Plus St50f P 500w Atx 12v V2 3 Eps 12v 80 Plus Bronze Certified 100 Modular Active Pfc Power Supply Black By S 80 Plus Power Supply Atx">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Silverstone Strider Plus St50f P 500w Atx 12v V2 3 Eps 12v 80 Plus Bronze Certified 100 Modular Active Pfc Power Supply Black By S 80 Plus Power Supply Atx</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/a9/75/49a975b16abba412cb1265d4aecf1431.jpg" data-lightbox="roadtrip" data-title="Rosewill 1000w Continuous 80 Plus Gold Certified Power Supply Lightning 1000 By Rosewill Http Www Amazon Com Dp B004n951 Power Supply Power Budgeting System">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/a9/75/49a975b16abba412cb1265d4aecf1431.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ou9RZMoAmDuOuLtr57fsq-rel5LnRzbRGA';" alt="Rosewill 1000w Continuous 80 Plus Gold Certified Power Supply Lightning 1000 By Rosewill Http Www Amazon Com Dp B004n951 Power Supply Power Budgeting System">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rosewill 1000w Continuous 80 Plus Gold Certified Power Supply Lightning 1000 By Rosewill Http Www Amazon Com Dp B004n951 Power Supply Power Budgeting System</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8f/ee/f6/8feef69a9ef46f7e209da6d768e82bef.jpg" data-lightbox="roadtrip" data-title="Thermaltake Toughpower Grand 850w Moduler 14cm Fanli 80 Gold Psu Tpg 850mpceu Bilgi">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8f/ee/f6/8feef69a9ef46f7e209da6d768e82bef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8QKaqJ7Rg7WzPl47xNE58WUgWSdvor7U_qg';" alt="Thermaltake Toughpower Grand 850w Moduler 14cm Fanli 80 Gold Psu Tpg 850mpceu Bilgi">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Thermaltake Toughpower Grand 850w Moduler 14cm Fanli 80 Gold Psu Tpg 850mpceu Bilgi</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.eezepc.com/wp-content/uploads/2019/01/HCG-650-Gold-3.jpg" data-lightbox="roadtrip" data-title="Antec Hcg650 Gold 650 Watts Fully Modular 80 Gold Power Supply Pakistan">
+											<img class="card-img v-image ads-img " src="https://www.eezepc.com/wp-content/uploads/2019/01/HCG-650-Gold-3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSLVwvzKj3cMlemwqxs8Adpo-5mURueo441g';" alt="Antec Hcg650 Gold 650 Watts Fully Modular 80 Gold Power Supply Pakistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Antec Hcg650 Gold 650 Watts Fully Modular 80 Gold Power Supply Pakistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/36/3e/3a/363e3a61c94534245cfbbe1890326fbf.jpg" data-lightbox="roadtrip" data-title="Visiontek 550w Modular Atx Power Supply 900488 By Visiontek Http Www Amazon Com Dp B006ttqe3s Ref Cm Sw R Pi Dp Pmhvsb0fttc Power Supply Atx Pc Components">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/36/3e/3a/363e3a61c94534245cfbbe1890326fbf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUl1syeh2VuKWKFHy1NCl-gCHf94EVh0iM4A';" alt="Visiontek 550w Modular Atx Power Supply 900488 By Visiontek Http Www Amazon Com Dp B006ttqe3s Ref Cm Sw R Pi Dp Pmhvsb0fttc Power Supply Atx Pc Components">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Visiontek 550w Modular Atx Power Supply 900488 By Visiontek Http Www Amazon Com Dp B006ttqe3s Ref Cm Sw R Pi Dp Pmhvsb0fttc Power Supply Atx Pc Components</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.corsair.com/corsairmedia/sys_master/productcontent/TLC_psu_quiet_performance.jpg" data-lightbox="roadtrip" data-title="Power Supplies Corsair">
+											<img class="card-img v-image ads-img " src="https://www.corsair.com/corsairmedia/sys_master/productcontent/TLC_psu_quiet_performance.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqfD4TzhfNCvtrQM347nVrxc534ezTMecxGQ';" alt="Power Supplies Corsair">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Power Supplies Corsair</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.vedantcomputers.com/image/cache/catalog/assets/product/corsair/power-supply/cp-9020131-uk/cp-9020131-uk-3-550x550.jpg" data-lightbox="roadtrip" data-title="Buy Corsair Tx M Series Tx750m 750 Watt 80 Plus Gold Certified Power Supply At Best Price In India Only At Vedant Computers">
+											<img class="card-img v-image ads-img " src="https://www.vedantcomputers.com/image/cache/catalog/assets/product/corsair/power-supply/cp-9020131-uk/cp-9020131-uk-3-550x550.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUbYaDRCkTqkpwLTRDzhyar3KFn9WG-h1XEw';" alt="Buy Corsair Tx M Series Tx750m 750 Watt 80 Plus Gold Certified Power Supply At Best Price In India Only At Vedant Computers">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Buy Corsair Tx M Series Tx750m 750 Watt 80 Plus Gold Certified Power Supply At Best Price In India Only At Vedant Computers</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images-na.ssl-images-amazon.com/images/I/81HTlmS3ZIL._AC_SX355_.jpg" data-lightbox="roadtrip" data-title="Seasonic Focus Fm Series 750w Ssr 750fm 80 Plus Gold Power Supply Semi Modular Atx12v Eps12v Active Pfc 7 Yr Warranty Amazon Ca Computers Tablets">
+											<img class="card-img v-image ads-img " src="https://images-na.ssl-images-amazon.com/images/I/81HTlmS3ZIL._AC_SX355_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNoAU1Hh-AAaBFp0qZ1fvav2wa-89-rN9doQ';" alt="Seasonic Focus Fm Series 750w Ssr 750fm 80 Plus Gold Power Supply Semi Modular Atx12v Eps12v Active Pfc 7 Yr Warranty Amazon Ca Computers Tablets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seasonic Focus Fm Series 750w Ssr 750fm 80 Plus Gold Power Supply Semi Modular Atx12v Eps12v Active Pfc 7 Yr Warranty Amazon Ca Computers Tablets</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-gcss-army-login.html">Army Gcss Army Login</a></li>
+													<li class="list-group-item"><a href="/army-gane-song-dj.html">Army Gane Song Dj</a></li>
+													<li class="list-group-item"><a href="/army-guard-pay.html">Army Guard Pay</a></li>
+													<li class="list-group-item"><a href="/army-lieutenant-rank-insignia.html">Army Lieutenant Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/army-garhwali-song-download.html">Army Garhwali Song Download</a></li>
+													<li class="list-group-item"><a href="/army-helmet-art.html">Army Helmet Art</a></li>
+													<li class="list-group-item"><a href="/army-guard-aviation-officer.html">Army Guard Aviation Officer</a></li>
+													<li class="list-group-item"><a href="/army-guardsman-killed-in-shootout-while-on-duty-as-police-officer.html">Army Guardsman Killed In Shootout While On Duty As Police Officer</a></li>
+													<li class="list-group-item"><a href="/army-gana-songs.html">Army Gana Songs</a></li>
+													<li class="list-group-item"><a href="/army-lieutenant-kaise-bane.html">Army Lieutenant Kaise Bane</a></li>
+													<li class="list-group-item"><a href="/army-general-painting.html">Army General Painting</a></li>
+													<li class="list-group-item"><a href="/army-gaya-admit-card-2020.html">Army Gaya Admit Card 2020</a></li>
+													<li class="list-group-item"><a href="/army-itu-apa-ya.html">Army Itu Apa Ya</a></li>
+													<li class="list-group-item"><a href="/army-green-mens-cargo-pants.html">Army Green Mens Cargo Pants</a></li>
+													<li class="list-group-item"><a href="/army-jag-rank.html">Army Jag Rank</a></li>
+													<li class="list-group-item"><a href="/army-guard-georgia.html">Army Guard Georgia</a></li>
+													<li class="list-group-item"><a href="/army-ke-new-song-gane.html">Army Ke New Song Gane</a></li>
+													<li class="list-group-item"><a href="/army-games-2020-ranking.html">Army Games 2020 Ranking</a></li>
+													<li class="list-group-item"><a href="/army-framed-art.html">Army Framed Art</a></li>
+													<li class="list-group-item"><a href="/army-latest-army-news.html">Army Latest Army News</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

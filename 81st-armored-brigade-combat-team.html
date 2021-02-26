@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>81st Armored Brigade Combat Team - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "81st Armored Brigade Combat Team",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/564x/5f/1a/74/5f1a7409dc62384ecfecc9ba70ca3b2c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=81st+armored+brigade+combat+team",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>81st Armored Brigade Combat Team</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The Brigade contains six battalions and a Headquarters and Headquarters Company. On 9 July 2015 it was announced that the 81st Brigade would convert from being an Armored BCT to a Stryker BCT. Christine Gregiore during her visit to Iraq. <br>				
+			</p>
+										<a class="badge badge-danger" href="/f-16-flyover.html">f 16 flyover</a>
+											<a class="badge badge-warning" href="/fallout-4-dc-guard-overhaul.html">fallout 4 dc guard overhaul</a>
+											<a class="badge badge-primary" href="/fake-army-artinya.html">fake army artinya</a>
+											<a class="badge badge-success" href="/fallout-3-national-guard-depot-door.html">fallout 3 national guard depot door</a>
+											<a class="badge badge-success" href="/fallout-4-national-guard-training-yard-power-armor.html">fallout 4 national guard training yard power armor</a>
+											<a class="badge badge-success" href="/french-army-world-rank.html">french army world rank</a>
+											<a class="badge badge-primary" href="/frp-j500g.html">frp j500g</a>
+											<a class="badge badge-dark" href="/gb-qbit-plus-review.html">gb qbit plus review</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to visit the ideal site.  Our site provides you with suggestions for viewing the maximum quality video and image content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/ec/7c/3aec7c38805c0b026c4a73e749475d97.jpg" data-lightbox="roadtrip" data-title="81st Armored Brigade Combat Team Military Flag Military Insignia Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/ec/7c/3aec7c38805c0b026c4a73e749475d97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLcchzkqbUrZZR4wvtfIG4eh76UQYWsVXPlA';" alt="81st Armored Brigade Combat Team Military Flag Military Insignia Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">81st Armored Brigade Combat Team Military Flag Military Insignia Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e9/bb/a4/e9bba4df7b125d2a92e30af494ce5d88.jpg" data-lightbox="roadtrip" data-title="81st Stryker Brigade Combat Team Multicam Ocp Patch Multicam Brigade Patches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e9/bb/a4/e9bba4df7b125d2a92e30af494ce5d88.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3W74M0Cd-Qwqrwplp4BKVCHaaS9F-5VqWCw';" alt="81st Stryker Brigade Combat Team Multicam Ocp Patch Multicam Brigade Patches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">81st Stryker Brigade Combat Team Multicam Ocp Patch Multicam Brigade Patches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/af/bb/ab/afbbab827c917586c7cb0669b62113cd.jpg" data-lightbox="roadtrip" data-title="81st Armored Brigade Combat Team Unit Crest Washington Rifles Cavalry The Unit Combat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/af/bb/ab/afbbab827c917586c7cb0669b62113cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDYNs3YMdHAiTzpbkgRtcN51ESqcXDAtlUHg';" alt="81st Armored Brigade Combat Team Unit Crest Washington Rifles Cavalry The Unit Combat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">81st Armored Brigade Combat Team Unit Crest Washington Rifles Cavalry The Unit Combat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/6b/c6/816bc6a3775baf450ee81893e704959a.jpg" data-lightbox="roadtrip" data-title="Special Troops Battalion 81st Armored Brigade Unit Crest Backbone Of The Brigade Military Insignia Special Forces Parachute Regiment">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/6b/c6/816bc6a3775baf450ee81893e704959a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5HlPItuFH_dNc7TkSBEC-kM2QNC2lWuysQQ';" alt="Special Troops Battalion 81st Armored Brigade Unit Crest Backbone Of The Brigade Military Insignia Special Forces Parachute Regiment">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Troops Battalion 81st Armored Brigade Unit Crest Backbone Of The Brigade Military Insignia Special Forces Parachute Regiment</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/68/21/da/6821da7577638d726c60c1792da2b685.jpg" data-lightbox="roadtrip" data-title="Shermans Of The 81st Tank Battalion 5th Armored Division 1944 Tanks Military American Tank War Thunder">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/68/21/da/6821da7577638d726c60c1792da2b685.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsqt39Nn2yUM6YRMEnjYRZyx3X53M4XoZ7dw';" alt="Shermans Of The 81st Tank Battalion 5th Armored Division 1944 Tanks Military American Tank War Thunder">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Shermans Of The 81st Tank Battalion 5th Armored Division 1944 Tanks Military American Tank War Thunder</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/62/44/a962448a14ceae5f73f4c46b2d8aa55d.jpg" data-lightbox="roadtrip" data-title="Malaysian Ggk During The Demonstration For 81st Malaysian Army Anniversary At Port Dickson Beach Military Photos Special Forces Army Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/62/44/a962448a14ceae5f73f4c46b2d8aa55d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTV-Ov-Zl-Xg7j1cIwM_r2ogF4QfKduco8IA';" alt="Malaysian Ggk During The Demonstration For 81st Malaysian Army Anniversary At Port Dickson Beach Military Photos Special Forces Army Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Malaysian Ggk During The Demonstration For 81st Malaysian Army Anniversary At Port Dickson Beach Military Photos Special Forces Army Day</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/78/53/63/785363880bfd400e720bc5d60aa6f499.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTV-Ov-Zl-Xg7j1cIwM_r2ogF4QfKduco8IA';" alt="Malaysian Ggk During The Demonstration For 81st Malaysian Army Anniversary At Port Dickson Beach Military Photos Special Forces Army Day">
+										<div class="card-body">
+						<h3 class="h5"><b>The units distinctive fleur-de-lis crest represents the brigades service in France where the unit saw combat after it was organized on 24 May 1917 under the newly formed First Expeditionary Force.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>81st armored brigade combat team</strong>. 
+								
+																	590 likes 11 talking about this. 
+																	Joseph McInroy from B Troop 1-303rd 81st Brigade Combat Team Washington Army National Guard is given a commander in chief coin by Washington Gov. 
+																	81st Armored Brigade Combat Team Seattle. 
+																	Army armor soldier excellence 2-15 CAV 5-15 CAV 30th Adjutant General Reception Battalion 1st Battalion 81st Armor Regiment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It has an organizational flag and guidon of the standard pattern for separate brigades. 
+																	The 81st Stryker Brigade Combat Team is a modular brigade of the United States Army National Guard based in Washington Oregon and California and is subordinate to the 7th Infantry Division. 
+																	The 81st Brigade Combat Team Brigade Combat Team accepted authority for the defense of Logistical Support Area LSA Anaconda in Balad from the 1st BCT of the 82nd Airborne Division during a Transfer of Authority ceremony at LSA Anaconda 18 April 2004. 
+																	It assumed its current organizational structure in late 2005 after its return from Iraq and Kuwait. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to the 81st Stryker Brigades official Facebook page a place to connect share and tell us what you. 
+																	1st Brigade fought a. 
+																	1st Armored Brigade Combat Team Devil Brigade Americas First Brigade. 
+																	2nd Medical Brigade US Army 2nd Signal Brigade US Army 3d Cavalry Regiment US Army 3rd Armored Division US Army 3rd Aviation Regiment US Army 3rd Chemical Brigade US Army 3rd Coast Artillery Regiment US Army 3rd Signal Brigade US Army 3rd Transportation Brigade US Army 4th Armored Division US Army. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 81st Armored Brigade Combat Team is a modular brigade of the United States Army National Guard based in Washington and California and is subordinate to the 40th Infantry Division. 
+																	The 81st Brigade Combat Team BCT accepted authority for the defense of Logistical Support Area LSA Anaconda in Balad from the 1st BCT of the 82nd Airborne Division during a Transfer of. 
+																	81st Brigade Combat Team Headquartered in Seattle but with units spread across the state the 81st Brigade Combat Team BCT makes up nearly one half of the Washington Army National Guard with 2900 citizen soldiers from every community in Washington State filling their ranks. 
+																	Photo montage of Soldiers of the 81st Heavy Brigade Combat Team Washington Army National Guard serving in Iraq. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Announced on July 9 2015 that the 81st Brigade would convert from being an Armored BCT to Stryker BCT. 
+																	81st Armored Brigade Combat Team Mouse Pads Non-Slip Gaming Mouse Pad Mousepad for Working Office Home. 
+																	The 1st Brigade 1st Infantry Division is one of the Armys two oldest divisional brigades. 
+																	The song in the video Bring Me Rain Raven written and performed by Rachel. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1st Battalion 161st Infantry consists of a Headquarters Company. 
+																	The 81st Armored Brigade Combat Team is a modular brigade of the United States Army National Guard in Washington and California. 
+																	The 81st Armored Brigade Combat Team is a modular brigade of the United States Army National Guard based in Washington and California and is subordinate to the 40th Infantry Division. 
+																	81st Stryker Brigade Combat Team Seattle Washington. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Welcome to the 81st Stryker Brigades official Facebook page a place to connect share and tell us what you think. 
+																	81st Armored BCT Det 1 HHC 1st Bn 161st IN 1st Bn 185th AR 1st Sqdn 303rd CAV. 
+																	This is just ONE example of excellence among the ranks of soldiers here at the 194th. 
+																	The 81st Brigade Combat Team is a modular brigade of the United States Army National Guard based in Washington and California and is subordinate to the 40th Infantry DivisionOn July 9 2015 it was announced that the 81st Brigade would convert from being an Armored BCT to Stryker BCT. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Office Products Select Your Cookie Preferences We use cookies and similar tools to enhance your shopping experience to provide our services understand how customers use our services so we can make improvements and display ads. 
+																	A Stryker armored fighting vehicles from the Washington National Guards 81st Brigade Combat Team drives down a dusty road at the Yakima Training Center on the way to a training exercise in June. 
+																	Last year SPC Smith was the first individual in the Brigade to get a perfect score on the Army Combat Fitness Test. 
+																	81st Stryker Brigade Combat Team Seattle Washington. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 81st Stryker Brigade Combat Team is a unit of the Washington Army National Guard and is affiliated with the 2nd Infantry Division. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/df/b7/22dfb74b5345fcf690d52682d156aecc.jpg" data-lightbox="roadtrip" data-title="Pin On U S Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/df/b7/22dfb74b5345fcf690d52682d156aecc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Iv6_6cVnXp-2Br5Qts1lJ0JqgLNucKAl4Q';" alt="Pin On U S Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On U S Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/59/e4/f059e47481fe04a15772a32e5e399d42.jpg" data-lightbox="roadtrip" data-title="Pin By Mallory Jarboe On Native North Americans Native North Americans Native American Nations Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/59/e4/f059e47481fe04a15772a32e5e399d42.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZIkXXRf8FJLbB2OyRV0mskPIcUKwSzQElYg';" alt="Pin By Mallory Jarboe On Native North Americans Native North Americans Native American Nations Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Mallory Jarboe On Native North Americans Native North Americans Native American Nations Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/4b/83/51/4b83512251ea5ec492ac3b95028aabfe.jpg" data-lightbox="roadtrip" data-title="Mortar Rt Rifled Towed F1 Soltam K6 Mortar United States Army Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/4b/83/51/4b83512251ea5ec492ac3b95028aabfe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc7Wt5INXvBQRLQ6ZL4aCRFaenppXt1FRq6Q';" alt="Mortar Rt Rifled Towed F1 Soltam K6 Mortar United States Army Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mortar Rt Rifled Towed F1 Soltam K6 Mortar United States Army Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/5f/1a/74/5f1a7409dc62384ecfecc9ba70ca3b2c.jpg" data-lightbox="roadtrip" data-title="58th Infantry Brigade Combat Team Unit Crest Maryland 400 Us Army Infantry Army Infantry Infantry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/5f/1a/74/5f1a7409dc62384ecfecc9ba70ca3b2c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTDBfl_HlZNUidm_MoWxn7tNfeCjHQ2cr-pA';" alt="58th Infantry Brigade Combat Team Unit Crest Maryland 400 Us Army Infantry Army Infantry Infantry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">58th Infantry Brigade Combat Team Unit Crest Maryland 400 Us Army Infantry Army Infantry Infantry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/e4/a4/dfe4a4ebdbb572d726a4a3c265ca3751.jpg" data-lightbox="roadtrip" data-title="377th Military Intelligence Battalion Unit Crest Illuminate The Truth Military Insignia Us Army Patches Army Patches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/e4/a4/dfe4a4ebdbb572d726a4a3c265ca3751.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzm5eTideWdW0B9sEmteYz4tHqxayFwFFVMQ';" alt="377th Military Intelligence Battalion Unit Crest Illuminate The Truth Military Insignia Us Army Patches Army Patches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">377th Military Intelligence Battalion Unit Crest Illuminate The Truth Military Insignia Us Army Patches Army Patches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/87/f6/22/87f622e8f22ac5e57c240c304aa09b75.jpg" data-lightbox="roadtrip" data-title="45th Infantry Brigade Combat Team Unit Crest Us Army Infantry Army Infantry Infantry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/87/f6/22/87f622e8f22ac5e57c240c304aa09b75.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_yYWOd3hjvwxtUlPx8qrZRvffkx0VJ9YbSg';" alt="45th Infantry Brigade Combat Team Unit Crest Us Army Infantry Army Infantry Infantry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">45th Infantry Brigade Combat Team Unit Crest Us Army Infantry Army Infantry Infantry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/29/63/4b296312adb7d08ff3a0d7d1941a39e5.jpg" data-lightbox="roadtrip" data-title="The 81st Daffodil Festival S Grand Floral Parade Returned To Its Roots April 5 With The Theme Ready Set Northwest Region British Columbia Pacific Northwest">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/29/63/4b296312adb7d08ff3a0d7d1941a39e5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuIcB-Wyt0PQ9kyhfNflPgveSydpG_NkV7sw';" alt="The 81st Daffodil Festival S Grand Floral Parade Returned To Its Roots April 5 With The Theme Ready Set Northwest Region British Columbia Pacific Northwest">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 81st Daffodil Festival S Grand Floral Parade Returned To Its Roots April 5 With The Theme Ready Set Northwest Region British Columbia Pacific Northwest</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f4/fa/a5/f4faa59fb4b573e8f4a4aa65f2662c53.jpg" data-lightbox="roadtrip" data-title="Soldiers Assigned To Charlie Company 2nd Battalion General Support 104th Aviation Brigade Respond To A 9 Line Medevac Reques Fort Drum Battalion Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f4/fa/a5/f4faa59fb4b573e8f4a4aa65f2662c53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrBTY0S8so3d3A0-rtFX01cDWwt1wl7U5vw';" alt="Soldiers Assigned To Charlie Company 2nd Battalion General Support 104th Aviation Brigade Respond To A 9 Line Medevac Reques Fort Drum Battalion Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Soldiers Assigned To Charlie Company 2nd Battalion General Support 104th Aviation Brigade Respond To A 9 Line Medevac Reques Fort Drum Battalion Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/3c/1c/ea/3c1cea95ac44bb896fdef033fb0cca99.jpg" data-lightbox="roadtrip" data-title="81st Field Artillery Regiment Unit Crest The Unit Regiment Army Service Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/3c/1c/ea/3c1cea95ac44bb896fdef033fb0cca99.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoHtHX7AuZRKK0CHaWDhkiYfqee2RIQIq7QA';" alt="81st Field Artillery Regiment Unit Crest The Unit Regiment Army Service Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">81st Field Artillery Regiment Unit Crest The Unit Regiment Army Service Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/38/77/b938776701088aafaaed39ee6abb238c.png" data-lightbox="roadtrip" data-title="81st Field Artillery Regiment Wikipedia Artillery Regiment Field">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/38/77/b938776701088aafaaed39ee6abb238c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR22I9kG_YotrPyxfIY9rGS9krtbnSMZJqbfQ';" alt="81st Field Artillery Regiment Wikipedia Artillery Regiment Field">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">81st Field Artillery Regiment Wikipedia Artillery Regiment Field</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/53/63/785363880bfd400e720bc5d60aa6f499.jpg" data-lightbox="roadtrip" data-title="Japanese Forces Japanese Marines History War War Military History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/53/63/785363880bfd400e720bc5d60aa6f499.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVOV7ZB1kWIAcDQTQN5k4uB7gEYocEc3VBvg';" alt="Japanese Forces Japanese Marines History War War Military History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Japanese Forces Japanese Marines History War War Military History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/2a/ef/552aef5bc3f1eb16fb4d3c2952a11cf8.jpg" data-lightbox="roadtrip" data-title="185th Fa Regt Military Insignia Us Army Dui">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/2a/ef/552aef5bc3f1eb16fb4d3c2952a11cf8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIcZInDB1XTr6TnuYAosfTqnHSN0zVRYW_ow';" alt="185th Fa Regt Military Insignia Us Army Dui">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">185th Fa Regt Military Insignia Us Army Dui</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/7a/c1/cd7ac18b6edec3edb4796bec593399a6.jpg" data-lightbox="roadtrip" data-title="131st Cavalry Regiment Unit Crest Military Units Military Insignia Military Logo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/7a/c1/cd7ac18b6edec3edb4796bec593399a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8CeqW_iIjGs7plpGjz_N7lrICuk4M034caA';" alt="131st Cavalry Regiment Unit Crest Military Units Military Insignia Military Logo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">131st Cavalry Regiment Unit Crest Military Units Military Insignia Military Logo</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/atlanta-national-guard-deployed-today.html">Atlanta National Guard Deployed Today</a></li>
+													<li class="list-group-item"><a href="/basic-training-of-army-national-guard.html">Basic Training Of Army National Guard</a></li>
+													<li class="list-group-item"><a href="/best-army-cadence-for-running.html">Best Army Cadence For Running</a></li>
+													<li class="list-group-item"><a href="/bhim-army-gane-dj-song.html">Bhim Army Gane Dj Song</a></li>
+													<li class="list-group-item"><a href="/bangladesh-army-rank-in-world.html">Bangladesh Army Rank In World</a></li>
+													<li class="list-group-item"><a href="/arnold-schwarzenegger-army-picture.html">Arnold Schwarzenegger Army Picture</a></li>
+													<li class="list-group-item"><a href="/batang-logam-yang-sama-ukurannya-tetapi-terbuat-dari-logam-yang-berbeda-digabung-seperti-pada-gambar.html">Batang Logam Yang Sama Ukurannya Tetapi Terbuat Dari Logam Yang Berbeda Digabung Seperti Pada Gambar</a></li>
+													<li class="list-group-item"><a href="/bts-army-song-ringtone-download.html">Bts Army Song Ringtone Download</a></li>
+													<li class="list-group-item"><a href="/arnys-army-sunset-piano-sheet.html">Arnys Army Sunset Piano Sheet</a></li>
+													<li class="list-group-item"><a href="/benefits-of-joining-the-army-national-guard.html">Benefits Of Joining The Army National Guard</a></li>
+													<li class="list-group-item"><a href="/bangladesh-army-rank-insignia.html">Bangladesh Army Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/baggy-army-cargo-pants.html">Baggy Army Cargo Pants</a></li>
+													<li class="list-group-item"><a href="/australian-army-artwork.html">Australian Army Artwork</a></li>
+													<li class="list-group-item"><a href="/azerbaijan-army-rank-in-the-world.html">Azerbaijan Army Rank In The World</a></li>
+													<li class="list-group-item"><a href="/baju-army-jilbab-warna-apa.html">Baju Army Jilbab Warna Apa</a></li>
+													<li class="list-group-item"><a href="/barmy-army-song-come-on-england.html">Barmy Army Song Come On England</a></li>
+													<li class="list-group-item"><a href="/autoguard-group.html">Autoguard Group</a></li>
+													<li class="list-group-item"><a href="/arnold-army-film.html">Arnold Army Film</a></li>
+													<li class="list-group-item"><a href="/arnies-army.html">Arnies Army</a></li>
+													<li class="list-group-item"><a href="/bhim-army-gana-dj-song.html">Bhim Army Gana Dj Song</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Saudi Arabia Army Rank In World - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Saudi Arabia Army Rank In World",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/de/25/72/de2572386024f69dc522276103ba1a70.gif",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=saudi+arabia+army+rank+in+world",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Saudi Arabia Army Rank In World</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Our unique in-house formula allows for smaller more technologically-advanced nations to compete with. Saudi security forces during a military parade in preparation for the annual Haj pilgrimage in the. Saudi Arabia has been ranked 11th most powerful country in the world and first in the Islamic and Arab world for 2021 according to an annual ranking by the CEOWORLD magazine. <br>				
+			</p>
+										<a class="badge badge-warning" href="/netguard-work-bug.html">netguard work bug</a>
+											<a class="badge badge-secondary" href="/netguard-pro.html">netguard pro</a>
+											<a class="badge badge-info" href="/new-york-guardians-stadium.html">new york guardians stadium</a>
+											<a class="badge badge-dark" href="/new-york-guardians-xfl.html">new york guardians xfl</a>
+											<a class="badge badge-warning" href="/new-pak-army-songs-mp3-download.html">new pak army songs mp3 download</a>
+											<a class="badge badge-primary" href="/ngewink-artinya.html">ngewink artinya</a>
+											<a class="badge badge-primary" href="/netguard-xiaomi.html">netguard xiaomi</a>
+											<a class="badge badge-success" href="/netguard-old-version.html">netguard old version</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to pay a visit to the ideal site.  Our website gives you hints for viewing the maximum quality video and picture content, search and find more informative video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie that you see.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/25/83/35258332f834a363679fb098d86a033a.jpg" data-lightbox="roadtrip" data-title="Air Force Insignia Saudi Arabia Military Ranks And Insignia Of The World Illus Affiliate Saudi Arabia Insignia Military Ranks Illustration Insignia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/25/83/35258332f834a363679fb098d86a033a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEpIia7lE90Hl5SMJUytDjU3VrZudGkjfuyw';" alt="Air Force Insignia Saudi Arabia Military Ranks And Insignia Of The World Illus Affiliate Saudi Arabia Insignia Military Ranks Illustration Insignia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Insignia Saudi Arabia Military Ranks And Insignia Of The World Illus Affiliate Saudi Arabia Insignia Military Ranks Illustration Insignia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/bc/a2/debca261a94236174be460056d6d1bea.jpg" data-lightbox="roadtrip" data-title="World Special Forces Insignia 1 Jordan Sf Bde 2 Oman Sultan S Sf 3 Saudi Arabia Abn Bde 4 Syria C Military Drawings Military Art Army Poster">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/bc/a2/debca261a94236174be460056d6d1bea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrWJ_5kthfoE5N7Y6buylBlqyMU_kbk6KtfQ';" alt="World Special Forces Insignia 1 Jordan Sf Bde 2 Oman Sultan S Sf 3 Saudi Arabia Abn Bde 4 Syria C Military Drawings Military Art Army Poster">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">World Special Forces Insignia 1 Jordan Sf Bde 2 Oman Sultan S Sf 3 Saudi Arabia Abn Bde 4 Syria C Military Drawings Military Art Army Poster</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9e/0e/52/9e0e5229dc0098d9c67aca82ba2199db.jpg" data-lightbox="roadtrip" data-title="World Special Forces Insignia 1 N Yemen Al Mithalat Bde 2 Djibouti Para Co 3 Egypt 182 Para Bde Army Drawing Military Art Military Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9e/0e/52/9e0e5229dc0098d9c67aca82ba2199db.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqWZsWEFpYIr-ge6xVZPsRWKFMCLNK_qZL1A';" alt="World Special Forces Insignia 1 N Yemen Al Mithalat Bde 2 Djibouti Para Co 3 Egypt 182 Para Bde Army Drawing Military Art Military Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">World Special Forces Insignia 1 N Yemen Al Mithalat Bde 2 Djibouti Para Co 3 Egypt 182 Para Bde Army Drawing Military Art Military Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/33/45/ad3345cf313cf73ead04fd6b874fe4c5.jpg" data-lightbox="roadtrip" data-title="Special Forces Around The World Part 4 Enjoy Military Special Forces Special Forces Gear Special Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/33/45/ad3345cf313cf73ead04fd6b874fe4c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb0lEOqPa8TFCF3XIdWGmVG1y-2WUYzigWxg';" alt="Special Forces Around The World Part 4 Enjoy Military Special Forces Special Forces Gear Special Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Special Forces Around The World Part 4 Enjoy Military Special Forces Special Forces Gear Special Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/f0/50/14f0508e14966d5bca1a520a2fe757ac.jpg" data-lightbox="roadtrip" data-title="Iran Vs Saudi Arabia Comparison Of Military Power Infographics Military Middle East Map Military History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/f0/50/14f0508e14966d5bca1a520a2fe757ac.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG_kE8uqrT2hWgoZbvVmyZNlCZZxA2p2rnzw';" alt="Iran Vs Saudi Arabia Comparison Of Military Power Infographics Military Middle East Map Military History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Iran Vs Saudi Arabia Comparison Of Military Power Infographics Military Middle East Map Military History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ee/4b/04/ee4b047685056baed97cf81b5ad47af4.jpg" data-lightbox="roadtrip" data-title="Pin By Sean Mckarns On Survival Military Ranks Military Insignia Military Ribbons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ee/4b/04/ee4b047685056baed97cf81b5ad47af4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn_2-9x_7Fxk4mTOO7NOJrkJSQ-EQbMYRpgg';" alt="Pin By Sean Mckarns On Survival Military Ranks Military Insignia Military Ribbons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sean Mckarns On Survival Military Ranks Military Insignia Military Ribbons</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/474x/ac/a5/bb/aca5bb3cb718b570e9d7a83137175179.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn_2-9x_7Fxk4mTOO7NOJrkJSQ-EQbMYRpgg';" alt="Pin By Sean Mckarns On Survival Military Ranks Military Insignia Military Ribbons">
+										<div class="card-body">
+						<h3 class="h5"><b>Saudi Arabia Military Strength 2021 For 2021 Saudi Arabia is ranked 17of 139 out of the countries consideredfor the annual GFP review.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Saudi arabia army rank in world</strong>. 
+								
+																	The finalized Global Firepower ranking below utilizes over 50 individual factors to determine a given nations PowerIndex PwrIndx score with categories ranging from military might and financials to logistical capability and geography. 
+																	This can be proved through the dissection of two high-profile and very similar visits that stand as proof of the Saudi-Pakistan breakup that also reaffirm how Saudi Arabia along with the UAE is increasingly leaning towards India. 
+																	Prepared by the Tortoise Intelligence report it is the first global index to benchmark nations on their level of investment innovation and implementation of artificial intelligence. 
+																	The Saudi ranks in all services were known by the same designations. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Global powers ranked by potential military strength. 
+																	Saudi Arabia has been ranked first in the Arab world and 22nd globally in the Global Artificial Intelligence Index. 
+																	The CEOWORLDs ranking is based on several factors including. 
+																	Its modern high-technology arsenal makes Saudi Arabia among the worlds most densely armed nations with its military equipment being supplied primarily by the United States France and Britain. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is a founding member of OPEC and a member of other international organizations. 
+																	Institute For Criminal Policy Research 2018. 
+																	For example mulazim thani corresponded to second lieutenant in the army air defense force and air force and to ensign in the. 
+																	Saudi Arabia Ranks Third in the World in Military Spending Rabat- Saudi Arabia has become the worlds third leading country in terms of military spending according to a report published by the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Saudi Arabia Army has become the 17th most powerful army in the world in terms of military power according to the Global Firepower index 2021. 
+																	The modern Army of Arabia has its roots in the Saudi state which was dating to 1744 and is considered to be the birth year of the Saudi army. 
+																	25 Saudi Arabia 26 Interestingly the three countries with the least powerful armies according to the ranking are Bhutan Liberia and Suriname which rank 137 136 and 135 respectively. 
+																	Pakistan has been slowly slipping from the good books of the Arab nations especially Saudi Arabia the de facto leader of the Islamic world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Each nation is assessed on individual and collective values processed through an in-house formula to generate a PwrIndx score. 
+																	Women in Saudi Arabia will be allowed to join the army as soldiers for the first time in yet another step to empower females in the country Saudi newspaper Asharq Al Awsat reported Thursday. 
+																	Political stability economic impact defense budget state weapons scientific alliances military. 
+																	Saudi Arabia urban population. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As of 1901 the ground forces was re-established as a separate branch of the armed forces with the starting of the modern Saudi state. 
+																	Urban population 83600. 
+																	Saudi Arabia ranks among the top five nations in the world in government spending for its military representing about 9 of GDP in 2013. 
+																	Saudi Arabia Ranks 24 in IMD World Competitiveness Yearbook 2020 Tuesday 16 June 2020 - 1030 General view of Riyadh city after the Saudi government eased a curfew following the outbreak of the coronavirus in Riyadh Saudi Arabia May 7 2020. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to a report published in Global Firepower Saudi Arabia has surpassed Spain Australia Israel in terms of military power. 
+																	The article contains the military ranks and insignias of the Armed Forces of Saudi ArabiaThe insignias were influenced by both the British and the American militaries. 
+																	The rank insignia for commissioned officers for the army navy and air force respectively. 
+																	Saudi Arabia is ranked ahead of 179 countries including Canada Turkey Australia Italy Sweden Spain Iran Greece Ukraine Egypt Brazil and others. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It holds a PwrIndx rating of 0323100000 considered perfect. 
+																	Saudi Arabias recent membership in the World Trade Organization has helped open it up to foreign investment. 
+																	The Saudi Arabian Armed Forces also known as Royal Saudi Armed Forces are the military forces of the Kingdom of Saudi ArabiaThey include the General Staff of the five services responsible for the defence the Army the Navy the Air Forces the Air Defense and the Missiles Force under the Minister of Defense and Aviation MODA. 
+																	In the list released for the year 2021 Saudi Arabia keeps the 17th position from last year. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And it is considered the oldest branches of the Saudi Arabias military. 
+																	This is how the US and Iran rank among the worlds 25 most powerful militaries. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/25/72/de2572386024f69dc522276103ba1a70.gif" data-lightbox="roadtrip" data-title="Defence Budgets Military Ranking Graphic Detail Military Personnel Business And Economics History War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/25/72/de2572386024f69dc522276103ba1a70.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBezAaRGozl9aeVGVkzD8yAzibnt4s0fR5sw';" alt="Defence Budgets Military Ranking Graphic Detail Military Personnel Business And Economics History War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Defence Budgets Military Ranking Graphic Detail Military Personnel Business And Economics History War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/63/62/0b63629ea2b59337cdc13c3c51de02c5.jpg" data-lightbox="roadtrip" data-title="World Special Forces Insignia 1 Malaysia 21 Para Cdo 2 Sudan 144th Parachute Bde 3 Somalia Military Art Special Forces Training Military Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/63/62/0b63629ea2b59337cdc13c3c51de02c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIyX12hFQlTRTmFYjSLhSQ-QcY-2T5h7eV4A';" alt="World Special Forces Insignia 1 Malaysia 21 Para Cdo 2 Sudan 144th Parachute Bde 3 Somalia Military Art Special Forces Training Military Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">World Special Forces Insignia 1 Malaysia 21 Para Cdo 2 Sudan 144th Parachute Bde 3 Somalia Military Art Special Forces Training Military Uniform</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5a/2d/55/5a2d55d2b82d62ae2108592b0c428b6e.png" data-lightbox="roadtrip" data-title="Saudi Arabian Military Police Present As Superstars Were Removed From Flight The Fosters Episodes Military Police Wrestling News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5a/2d/55/5a2d55d2b82d62ae2108592b0c428b6e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNog3_wBGEmaupZGJlTaKtau7gaaJL-9v1Kg';" alt="Saudi Arabian Military Police Present As Superstars Were Removed From Flight The Fosters Episodes Military Police Wrestling News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Saudi Arabian Military Police Present As Superstars Were Removed From Flight The Fosters Episodes Military Police Wrestling News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/67/ec/b3/67ecb32714153001aaf4be4127cfcf57.jpg" data-lightbox="roadtrip" data-title="Army Chief S Visit To Saudi Arabia Uae Jammu And Kashmir Navy Chief Jammu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/67/ec/b3/67ecb32714153001aaf4be4127cfcf57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXRxz7jaJKAg1ZR3OzrQXZ5WV6GOcm3wnaIA';" alt="Army Chief S Visit To Saudi Arabia Uae Jammu And Kashmir Navy Chief Jammu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Chief S Visit To Saudi Arabia Uae Jammu And Kashmir Navy Chief Jammu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f7/4e/08/f74e088f7d401de4c82c7d525863744c.jpg" data-lightbox="roadtrip" data-title="Us Sends 200 Soldiers To Support Saudi Arabia S Defenses Military Friendly How To Fall Asleep Army Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f7/4e/08/f74e088f7d401de4c82c7d525863744c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXsr9IIvsp7UKCPhaeO8pHQFrVx74cgXRh8w';" alt="Us Sends 200 Soldiers To Support Saudi Arabia S Defenses Military Friendly How To Fall Asleep Army Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Sends 200 Soldiers To Support Saudi Arabia S Defenses Military Friendly How To Fall Asleep Army Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/51/74/2a517475c4f254932c432a84cf3a33dd.jpg" data-lightbox="roadtrip" data-title="Saudi Army Saudi Arabia Military Operations Army Infantry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/51/74/2a517475c4f254932c432a84cf3a33dd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSASygnVK6XO7PefX1qxkOS5eAkgMTrLe3iwQ';" alt="Saudi Army Saudi Arabia Military Operations Army Infantry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Saudi Army Saudi Arabia Military Operations Army Infantry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ca/f9/c4/caf9c47f7ab3cb1d564d87bf681b1e98.jpg" data-lightbox="roadtrip" data-title="Chief Of Army Travel To Saudi Arabia Saudi Arabia Saudi Arabia News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ca/f9/c4/caf9c47f7ab3cb1d564d87bf681b1e98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT80BkNEeKyDx2hETe9m4CqbmL00zIlSKBdQA';" alt="Chief Of Army Travel To Saudi Arabia Saudi Arabia Saudi Arabia News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chief Of Army Travel To Saudi Arabia Saudi Arabia Saudi Arabia News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/36/88/7736882f92722811584ec862641f2067.jpg" data-lightbox="roadtrip" data-title="باكستان ترسل ٢٠ ألف مقاتل إلى قطر بسبب اتفاقية عسكرية كشفت وسائل إعلام عربية أن باكستان قررت إرسال آلاف الجنود إ Pakistan Army Pakistan Armed Forces Pakistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/36/88/7736882f92722811584ec862641f2067.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwaBlnA5r5-xF-Ug2ZOgJu5-0RyYTqd8Lq5g';" alt="باكستان ترسل ٢٠ ألف مقاتل إلى قطر بسبب اتفاقية عسكرية كشفت وسائل إعلام عربية أن باكستان قررت إرسال آلاف الجنود إ Pakistan Army Pakistan Armed Forces Pakistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">باكستان ترسل ٢٠ ألف مقاتل إلى قطر بسبب اتفاقية عسكرية كشفت وسائل إعلام عربية أن باكستان قررت إرسال آلاف الجنود إ Pakistan Army Pakistan Armed Forces Pakistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f7/96/5e/f7965e0e6e0f99e3eed9ced5ff8e825b.jpg" data-lightbox="roadtrip" data-title="Pakistani Commandos Ranked Among The Top Ten Forces Of The World Pakistan Army Pakistan Armed Forces Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f7/96/5e/f7965e0e6e0f99e3eed9ced5ff8e825b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSVaaQCGe4Zo7GtuZ02v3m9tlkYbdpHnd2HA';" alt="Pakistani Commandos Ranked Among The Top Ten Forces Of The World Pakistan Army Pakistan Armed Forces Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistani Commandos Ranked Among The Top Ten Forces Of The World Pakistan Army Pakistan Armed Forces Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/e6/45/bee6451690a8a0e3165a7f1e3b0a760f.jpg" data-lightbox="roadtrip" data-title="Modernize The Artillery Forces Of Bangladesh Bangladesh Army Ranking In The World Modernize The Artillery Army Self Propelled Artillery Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/e6/45/bee6451690a8a0e3165a7f1e3b0a760f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT917wZK5gZYwuuec6Zjs4qNBxEfqkC6bXb7g';" alt="Modernize The Artillery Forces Of Bangladesh Bangladesh Army Ranking In The World Modernize The Artillery Army Self Propelled Artillery Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Modernize The Artillery Forces Of Bangladesh Bangladesh Army Ranking In The World Modernize The Artillery Army Self Propelled Artillery Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9d/91/36/9d9136e22880fe8f1dbe4bfcd8f18e03.jpg" data-lightbox="roadtrip" data-title="Pakistan Army International Media Just Warned India About Pakistani Army Pakistan Army Pakistan Armed Forces Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9d/91/36/9d9136e22880fe8f1dbe4bfcd8f18e03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_17wnxQWmDxztSgr3IsW60Ps-AGXDZv56zw';" alt="Pakistan Army International Media Just Warned India About Pakistani Army Pakistan Army Pakistan Armed Forces Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistan Army International Media Just Warned India About Pakistani Army Pakistan Army Pakistan Armed Forces Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/ac/a5/bb/aca5bb3cb718b570e9d7a83137175179.jpg" data-lightbox="roadtrip" data-title="Pakistani Armed Force Boss Shows Up In Saudi Arabia In The Midst Of Stressed Ties Boss Show Pakistani Boss">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/ac/a5/bb/aca5bb3cb718b570e9d7a83137175179.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_63J4-7auECjVh4iOxdZguJtVwzDDYsQQg';" alt="Pakistani Armed Force Boss Shows Up In Saudi Arabia In The Midst Of Stressed Ties Boss Show Pakistani Boss">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistani Armed Force Boss Shows Up In Saudi Arabia In The Midst Of Stressed Ties Boss Show Pakistani Boss</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/74/0f/dc740f4cbd6372edb26041cf5468169a.jpg" data-lightbox="roadtrip" data-title="Pin By Banawegahta On English News Yemeni Army Saudi Arabia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/74/0f/dc740f4cbd6372edb26041cf5468169a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSco6UUQIbWVAhxMyuYlbHmD_uvSEPTmW5w';" alt="Pin By Banawegahta On English News Yemeni Army Saudi Arabia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Banawegahta On English News Yemeni Army Saudi Arabia</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/cara-mengubah-kuota-belajar-menjadi-kuota-utama.html">Cara Mengubah Kuota Belajar Menjadi Kuota Utama</a></li>
+													<li class="list-group-item"><a href="/can-national-guard-transfer-to-active-duty.html">Can National Guard Transfer To Active Duty</a></li>
+													<li class="list-group-item"><a href="/cara-menang-giveaway-youtube.html">Cara Menang Giveaway Youtube</a></li>
+													<li class="list-group-item"><a href="/can-you-have-tattoos-in-the-army-national-guard.html">Can You Have Tattoos In The Army National Guard</a></li>
+													<li class="list-group-item"><a href="/cardi-rajut-warna-army.html">Cardi Rajut Warna Army</a></li>
+													<li class="list-group-item"><a href="/cambi-banca-ditalia.html">Cambi Banca Ditalia</a></li>
+													<li class="list-group-item"><a href="/can-you-change-your-mos-in-the-army-national-guard.html">Can You Change Your Mos In The Army National Guard</a></li>
+													<li class="list-group-item"><a href="/can-active-army-switch-to-national-guard.html">Can Active Army Switch To National Guard</a></li>
+													<li class="list-group-item"><a href="/can-you-be-in-the-army-and-national-guard.html">Can You Be In The Army And National Guard</a></li>
+													<li class="list-group-item"><a href="/cargo-adalah.html">Cargo Adalah</a></li>
+													<li class="list-group-item"><a href="/can-national-guard-be-rangers.html">Can National Guard Be Rangers</a></li>
+													<li class="list-group-item"><a href="/can-a-national-guard-soldier-get-a-va-loan.html">Can A National Guard Soldier Get A Va Loan</a></li>
+													<li class="list-group-item"><a href="/carfentanil.html">Carfentanil</a></li>
+													<li class="list-group-item"><a href="/can-i-go-active-duty-in-the-national-guard.html">Can I Go Active Duty In The National Guard</a></li>
+													<li class="list-group-item"><a href="/california-national-guard-military-records.html">California National Guard Military Records</a></li>
+													<li class="list-group-item"><a href="/candy-bar.html">Candy Bar</a></li>
+													<li class="list-group-item"><a href="/can-i-switch-from-army-guard-to-air-guard.html">Can I Switch From Army Guard To Air Guard</a></li>
+													<li class="list-group-item"><a href="/can-you-look-up-military-records.html">Can You Look Up Military Records</a></li>
+													<li class="list-group-item"><a href="/cara-membuat-donat.html">Cara Membuat Donat</a></li>
+													<li class="list-group-item"><a href="/can-you-go-from-active-army-to-air-national-guard.html">Can You Go From Active Army To Air National Guard</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

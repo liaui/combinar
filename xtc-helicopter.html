@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Xtc Helicopter - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Xtc Helicopter",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/f1/c3/92/f1c392e371ae42c9ce40ba145eeb98e4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=xtc+helicopter",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Xtc Helicopter</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">XTC XTC was a New Wave band from Swindon England active between 1977 and 2005. Reacting to Helicopter by XTC from the English bands 1979 third album Drums and Wires. XTC were an English rock band formed in Swindon in 1972. <br>				
+			</p>
+										<a class="badge badge-light" href="/what-is-the-salary-of-a-indian-army-soldier.html">what is the salary of a indian army soldier</a>
+											<a class="badge badge-primary" href="/where-does-the-national-guard-get-deployed.html">where does the national guard get deployed</a>
+											<a class="badge badge-light" href="/what-pays-more-army-reserve-or-national-guard.html">what pays more army reserve or national guard</a>
+											<a class="badge badge-danger" href="/whats-the-national-guards-job.html">whats the national guards job</a>
+											<a class="badge badge-success" href="/where-is-the-army-national-guard-boot-camp.html">where is the army national guard boot camp</a>
+											<a class="badge badge-success" href="/what-is-the-best-warrior-competition.html">what is the best warrior competition</a>
+											<a class="badge badge-success" href="/what-is-the-song-in-the-army-commercial.html">what is the song in the army commercial</a>
+											<a class="badge badge-danger" href="/what-is-the-national-guard-doing-in-michigan.html">what is the national guard doing in michigan</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the keyword you've come to visit the ideal site.  Our website gives you hints for viewing the maximum quality video and picture content, search and locate more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this movie that you view.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/42/47/ba4247cf5d186d3b0060772436e3d115.jpg" data-lightbox="roadtrip" data-title="Bell 47 Helicopter Helicopter Bell Helicopter Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/42/47/ba4247cf5d186d3b0060772436e3d115.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZkcpJ2aEyF3XdN9i5YGnKqPYsHfe4GOixDg';" alt="Bell 47 Helicopter Helicopter Bell Helicopter Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bell 47 Helicopter Helicopter Bell Helicopter Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/17/11/32171174c718ae4fbea901b54d240e9a.png" data-lightbox="roadtrip" data-title="Sunflightcraft Paraplanes Airchopper Rotax Coax P Microlights Flugzeuge Ultralight Planes U Microlight Aircraft Ultralight Plane Aircraft Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/17/11/32171174c718ae4fbea901b54d240e9a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw7b0zSoa76SxuQVLEwmN4AyJ46he6akqQpg';" alt="Sunflightcraft Paraplanes Airchopper Rotax Coax P Microlights Flugzeuge Ultralight Planes U Microlight Aircraft Ultralight Plane Aircraft Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sunflightcraft Paraplanes Airchopper Rotax Coax P Microlights Flugzeuge Ultralight Planes U Microlight Aircraft Ultralight Plane Aircraft Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/15/92/a61592020a902cda0e19e7fb83fc0f48.jpg" data-lightbox="roadtrip" data-title="Volocopter 18 Rotor Copter Is A Human Sized Drone That Carries People Drone Human Abs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/15/92/a61592020a902cda0e19e7fb83fc0f48.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRni0ra_JwqsHku9dthXQPsLMKE4QuPKDBIpg';" alt="Volocopter 18 Rotor Copter Is A Human Sized Drone That Carries People Drone Human Abs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Volocopter 18 Rotor Copter Is A Human Sized Drone That Carries People Drone Human Abs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/c3/92/f1c392e371ae42c9ce40ba145eeb98e4.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/c3/92/f1c392e371ae42c9ce40ba145eeb98e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxP_izWPI8_Rkvb3C9slrajMgPTVdJqhAsrg';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/27/d1/e9/27d1e99c68aaabbc90cb82cd4f3b7427.jpg" data-lightbox="roadtrip" data-title="Unique Airplanes Aircraft Design Aircraft Aircraft Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/27/d1/e9/27d1e99c68aaabbc90cb82cd4f3b7427.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5nhXNUAar0N-xedeeHS_v19agW1EzRIiIA';" alt="Unique Airplanes Aircraft Design Aircraft Aircraft Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Unique Airplanes Aircraft Design Aircraft Aircraft Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4b/3c/55/4b3c552fd20706d244529dc80a1ecd00.jpg" data-lightbox="roadtrip" data-title="Pin By Nicol Novak On Roztomile In 2020 Hubsan Hd Camera Quadcopter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4b/3c/55/4b3c552fd20706d244529dc80a1ecd00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCDvWjmrp9oxjXML_-fVWlSFWMJd9pGr8hvw';" alt="Pin By Nicol Novak On Roztomile In 2020 Hubsan Hd Camera Quadcopter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Nicol Novak On Roztomile In 2020 Hubsan Hd Camera Quadcopter</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/62/b6/bc/62b6bc558408441dd8b060f9e605edfd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCDvWjmrp9oxjXML_-fVWlSFWMJd9pGr8hvw';" alt="Pin By Nicol Novak On Roztomile In 2020 Hubsan Hd Camera Quadcopter">
+										<div class="card-body">
+						<h3 class="h5"><b>XTC Song 1979.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Xtc helicopter</strong>. 
+								
+																	And earn IQ Suggest correction. 
+																	Helicopter is a song by Andy Partridge. 
+																	Verse 1 Im crouching here with a telescope in hand Looking out across our. 
+																	XTC were a rock band from Swindon England led by Andy Partridge guitars vocals and Colin Moulding bass vocals. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	XTC playing Helicopter live on French TV - 18111979. 
+																	For decades British art-rock chameleons XTC occupied an awkward space in the musical landscape. 
+																	The band enjoyed some chart success including the UK and Canadian hits Making Plans for Nigel 1979 and Senses Working Overtime 1982 but are perhaps even better known for their long-standing critical rather than commercial success. 
+																	Slowly over the years this opinion changed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Listen to Helicopter - 2001 Digital Remaster on Spotify. 
+																	Helicopter Lyrics Refrain Oh heli. 
+																	It appeared on the 1979 album Drums and Wires. 
+																	Oh heli Oh heli Im crouching here with a telescope in hand Looking out across our lego land I really think its about time that she came down She a laughing giggly whirlybird. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Lyrics to Helicopter by XTC. 
+																	Im beginning to think that this is my favorite XTC album. 
+																	Drums and Wires is the third studio album by the English rock band XTC released 17 August 1979 on Virgin RecordsIt is a more pop-oriented affair than the bands previous Go 2 1978 and was named for its emphasis on guitars wires and expansive-sounding drums. 
+																	Oh heli oh heli Im crouching here with a telescope in hand Looking across our lego land I really think its about time that she came down She a laughing giggly whirlybird She got to be obscene to be obheard I really think its about time that she came down And I object to all the air male that she pick up The air male that she pick up The air male that. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Underappreciated songwriting geniuses too quirky for mainstream success but not edgy enough for alternative acceptance. 
+																	Oh heli Oh heli Im crouching here with a telescope in hand Looking across our lego land I really think its about time that she came down She a laughing gig. 
+																	An unused single version appeared on the 2002 Coat of Many Cupboards box set. 
+																	Produced by Steve Lillywhite. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	By helping UG you make the world better. 
+																	Partly because the group did not fit into contemporary trends. 
+																	The album was their first issued in the United States and their first recorded with guitarist Dave Gregory who had replaced. 
+																	The demo appeared on Andys Fuzzy Warbles Volume 4 in 2003. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Directory of albums by English X artists. 
+																	Drums And Wires. 
+																	Album Drums and Wires. 
+																	Just like a helicopter - copter Oh heli - Oh heli Now shes away from convent shes gone wild Grown from a nice young lady to a child I really think its about time that she came down She a laughing giggly whirlybird She got to be obscene to be obheard I really think its about time that she came down Submit Corrections. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Great new waver from the 1979 LP Drums and Wires by XTC. 
+																	Well I cant pick a favorite anyway but I love the guitar-. 
+																	Active between the late 1970s and the mid 2000s XTCs music ranged from jerky new wavepunk riffs to lushly-arranged progressive popThey also drew heavily from vintage pop rock and psychedelia from the 1960s genres which they began to explore more deeply after creating The. 
+																	Just like a helicopter - copter Shes landing on the town Its about time that I stopped her - stopped her When shes up there twirling round Just like a helicopter - copter Oh heli - Oh heli Now shes away from convent shes gone wild Grown from a nice young lady to a child I really think its about time that she came down She a laughing giggly whirlybird She got to be obscene to be obheard I. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Another beauty from Drums and Wires. 
+																	Fronted by songwriters Andy Partridge guitars vocals and Colin Moulding bass vocals the band gained popularity during the rise of punk and new wave in the 1970s later playing in a variety of styles that ranged from angular guitar riffs to elaborately arranged pop. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f9/aa/fa/f9aafa81a25d2b67108afadfc118df7b.jpg" data-lightbox="roadtrip" data-title="Antonov Airlines Airlifts Helicopters And Spare Parts On Its An 22 Antei Antonov Airlines An 22 Antei Was Recently Utilised To T Helicopter Airlines Air Cargo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f9/aa/fa/f9aafa81a25d2b67108afadfc118df7b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnyxOzLHtvua6XiidHn5mXr34PBycrmjkDPg';" alt="Antonov Airlines Airlifts Helicopters And Spare Parts On Its An 22 Antei Antonov Airlines An 22 Antei Was Recently Utilised To T Helicopter Airlines Air Cargo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Antonov Airlines Airlifts Helicopters And Spare Parts On Its An 22 Antei Antonov Airlines An 22 Antei Was Recently Utilised To T Helicopter Airlines Air Cargo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ac/a3/56/aca356f174a7a3c125f5ed94e83177a4.jpg" data-lightbox="roadtrip" data-title="Pin On 13523 Astonishing Aircraft 3">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ac/a3/56/aca356f174a7a3c125f5ed94e83177a4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlwZ2qbh_E5xjCfn1Kg3rmdPq05-sPFJOwA';" alt="Pin On 13523 Astonishing Aircraft 3">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 13523 Astonishing Aircraft 3</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/11/2b/5f/112b5f78be17628fbdbd1ec0ef5e820d.jpg" data-lightbox="roadtrip" data-title="Pin On Rc Aircraft And Accessories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/11/2b/5f/112b5f78be17628fbdbd1ec0ef5e820d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR38Kww3_35U2qvo2ZmuQlq481De2nr6Ku4Iw';" alt="Pin On Rc Aircraft And Accessories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Rc Aircraft And Accessories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/69/89/406989928e5da7225c8dce0d3bd0eadf.jpg" data-lightbox="roadtrip" data-title="Pin By Claudio Vieira On Aviation Bush Plane Ultralight Plane Stol Aircraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/69/89/406989928e5da7225c8dce0d3bd0eadf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKKvcrWNt1c7K8qMARvNIZhefJvl8SpLXwag';" alt="Pin By Claudio Vieira On Aviation Bush Plane Ultralight Plane Stol Aircraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Claudio Vieira On Aviation Bush Plane Ultralight Plane Stol Aircraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/31/78/7e31782608c175197cee07b1c318019d.jpg" data-lightbox="roadtrip" data-title="Pin Em Bikepacking Giant Xtc 27 5">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/31/78/7e31782608c175197cee07b1c318019d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPB5YSR9boLNWaCfDcuUK0zhIuo9Nn9eAllw';" alt="Pin Em Bikepacking Giant Xtc 27 5">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Em Bikepacking Giant Xtc 27 5</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5f/d7/01/5fd701e98e66f761a065f6f118194fa6.jpg" data-lightbox="roadtrip" data-title="Asap Chinook Monomotor A Pistao Chin Aircraft Flightaware Aeronave Helicoptero Aviacao">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5f/d7/01/5fd701e98e66f761a065f6f118194fa6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8QV3rtFvKTosyWTYkZ-1NiKU2Kf9FcIqbQA';" alt="Asap Chinook Monomotor A Pistao Chin Aircraft Flightaware Aeronave Helicoptero Aviacao">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Asap Chinook Monomotor A Pistao Chin Aircraft Flightaware Aeronave Helicoptero Aviacao</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2a/68/63/2a6863bbfda624543435664f86414cef.jpg" data-lightbox="roadtrip" data-title="Pin On My Love For Carbon Kevlar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2a/68/63/2a6863bbfda624543435664f86414cef.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwxFi_O1G_8WTQSwr_Wy6YZgfe4BHtGSseLw';" alt="Pin On My Love For Carbon Kevlar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Love For Carbon Kevlar</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/02/be/99/02be995e8cc50482bd2bfbe3b965e778.jpg" data-lightbox="roadtrip" data-title="Johann Johannsson Heptapod B From Arrival Soundtrack Pseudo Video Soundtrack Music Film Score Contemporary Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/02/be/99/02be995e8cc50482bd2bfbe3b965e778.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdv1yaX2vM2Dx53cruDq1rAaihAufeiTTeJg';" alt="Johann Johannsson Heptapod B From Arrival Soundtrack Pseudo Video Soundtrack Music Film Score Contemporary Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Johann Johannsson Heptapod B From Arrival Soundtrack Pseudo Video Soundtrack Music Film Score Contemporary Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/4f/b6/fd/4fb6fd7aa6bbecd68887db95fa8608b2.jpg" data-lightbox="roadtrip" data-title="Untitled 6 Bikepacking Bike Camping Bike Accesories">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/4f/b6/fd/4fb6fd7aa6bbecd68887db95fa8608b2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxAlfQt9WutH-Y0yyJtPtJzQrZOHyfrQfiIQ';" alt="Untitled 6 Bikepacking Bike Camping Bike Accesories">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Untitled 6 Bikepacking Bike Camping Bike Accesories</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/43/a8/3343a80cc093a2f356a3fb07e86cb8ff.jpg" data-lightbox="roadtrip" data-title="Pin On Music And Band Memorabilia Press Kits Ticket Stubs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/43/a8/3343a80cc093a2f356a3fb07e86cb8ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG-JhdLTZYpsCMaXUEgTjsdxtucmywMwx3mw';" alt="Pin On Music And Band Memorabilia Press Kits Ticket Stubs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Music And Band Memorabilia Press Kits Ticket Stubs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/62/b6/bc/62b6bc558408441dd8b060f9e605edfd.jpg" data-lightbox="roadtrip" data-title="Pin On Inspiration Gear">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/62/b6/bc/62b6bc558408441dd8b060f9e605edfd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHS9aQrZoYsNBPZ911dfuii4s2lDdnQ7TtZg';" alt="Pin On Inspiration Gear">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Inspiration Gear</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/64/ce/ec64cef346c1c39b8b66f4651ee96241.jpg" data-lightbox="roadtrip" data-title="Barjam Bikepacking Harness Rockgeist Bikepack Usa Bikepacking Bikepacking Gear Harness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/64/ce/ec64cef346c1c39b8b66f4651ee96241.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPqIzINKD8BNn1jZt0e9X9lcN2V4ryPVLh7Q';" alt="Barjam Bikepacking Harness Rockgeist Bikepack Usa Bikepacking Bikepacking Gear Harness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barjam Bikepacking Harness Rockgeist Bikepack Usa Bikepacking Bikepacking Gear Harness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/93/30/1a/93301a5e279d39b24feede174a28bdfd.jpg" data-lightbox="roadtrip" data-title="Drones For Sale In 2020 Fpv Drone Racing Racing Drones For Sale Drone Racing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/93/30/1a/93301a5e279d39b24feede174a28bdfd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoNBhzPfS_JKHtoMO9Wq4WRfryGYYOzsy5Gg';" alt="Drones For Sale In 2020 Fpv Drone Racing Racing Drones For Sale Drone Racing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Drones For Sale In 2020 Fpv Drone Racing Racing Drones For Sale Drone Racing</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-songs-pk-mp3.html">Army Songs Pk Mp3</a></li>
+													<li class="list-group-item"><a href="/army-songs-hindi-mp3.html">Army Songs Hindi Mp3</a></li>
+													<li class="list-group-item"><a href="/army-song-over-hill-over-dale.html">Army Song Over Hill Over Dale</a></li>
+													<li class="list-group-item"><a href="/army-songs-malayalam.html">Army Songs Malayalam</a></li>
+													<li class="list-group-item"><a href="/army-songs-kabhi-parcham-mein.html">Army Songs Kabhi Parcham Mein</a></li>
+													<li class="list-group-item"><a href="/army-songs-hd.html">Army Songs Hd</a></li>
+													<li class="list-group-item"><a href="/army-song-sharechat.html">Army Song Sharechat</a></li>
+													<li class="list-group-item"><a href="/army-song-pakistan.html">Army Song Pakistan</a></li>
+													<li class="list-group-item"><a href="/army-songs-ringtones-download.html">Army Songs Ringtones Download</a></li>
+													<li class="list-group-item"><a href="/army-song-status-download.html">Army Song Status Download</a></li>
+													<li class="list-group-item"><a href="/army-songs-movie.html">Army Songs Movie</a></li>
+													<li class="list-group-item"><a href="/army-songs-in-hindi.html">Army Songs In Hindi</a></li>
+													<li class="list-group-item"><a href="/army-song-video-come.html">Army Song Video Come</a></li>
+													<li class="list-group-item"><a href="/army-songs-for-bts.html">Army Songs For Bts</a></li>
+													<li class="list-group-item"><a href="/army-songs-audio.html">Army Songs Audio</a></li>
+													<li class="list-group-item"><a href="/army-song-ringtone-mp3-mr-jatt.html">Army Song Ringtone Mp3 Mr Jatt</a></li>
+													<li class="list-group-item"><a href="/army-songs-download-songs-download.html">Army Songs Download Songs Download</a></li>
+													<li class="list-group-item"><a href="/army-songs-download-kannada.html">Army Songs Download Kannada</a></li>
+													<li class="list-group-item"><a href="/army-songs-old.html">Army Songs Old</a></li>
+													<li class="list-group-item"><a href="/army-songs-download-telugu.html">Army Songs Download Telugu</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

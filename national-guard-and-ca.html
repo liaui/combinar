@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>National Guard And Ca - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "National Guard And Ca",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/fa/ca/10/faca10294d867cbae46a967aab1bb9cd.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=national+guard+and+ca",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>National Guard And Ca</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Army National Guard photos by Spc. The CSG has four components Army Air Maritim. Gavin Newsom on Thursday. <br>				
+			</p>
+										<a class="badge badge-light" href="/army-national-guard-face-mask.html">army national guard face mask</a>
+											<a class="badge badge-danger" href="/army-national-guard-application-packet.html">army national guard application packet</a>
+											<a class="badge badge-info" href="/army-mp3-songs-free-download-pagalworld.html">army mp3 songs free download pagalworld</a>
+											<a class="badge badge-light" href="/army-national-guard-domestic-operations.html">army national guard domestic operations</a>
+											<a class="badge badge-secondary" href="/army-national-guard-in-las-vegas.html">army national guard in las vegas</a>
+											<a class="badge badge-secondary" href="/army-national-guard-awards-regulation.html">army national guard awards regulation</a>
+											<a class="badge badge-danger" href="/army-major-rank-insignia.html">army major rank insignia</a>
+											<a class="badge badge-light" href="/army-military-police-training-length.html">army military police training length</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to pay a visit to the right site.  Our site gives you hints for viewing the maximum quality video and image content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from several sources, especially Youtube, therefore we recommend this movie for you to see.   This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/3c/2f/843c2f4759155481829f95b85b0a85cc.jpg" data-lightbox="roadtrip" data-title="Pin On Special Warfare Airmen">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/3c/2f/843c2f4759155481829f95b85b0a85cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6mtuEZ7uK_K1HBUBZhVUW1oJVVuXlKzFWXA';" alt="Pin On Special Warfare Airmen">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Special Warfare Airmen</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/ca/10/faca10294d867cbae46a967aab1bb9cd.jpg" data-lightbox="roadtrip" data-title="Pin On Army National Guard Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/ca/10/faca10294d867cbae46a967aab1bb9cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXrdfaJ2lWEaIJX7iBQaGzEDzlHFiNRbzU1g';" alt="Pin On Army National Guard Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army National Guard Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9f/a0/bf/9fa0bffd4f62bc16d350fd960f56f4c1.png" data-lightbox="roadtrip" data-title="Pin On Black White">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9f/a0/bf/9fa0bffd4f62bc16d350fd960f56f4c1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE86-SNGmr71EuNKX1V_Yf9f5Bvexx9pKQcA';" alt="Pin On Black White">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Black White</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/44/0c/cd/440ccdc9f7dc4df322627088e6d19770.jpg" data-lightbox="roadtrip" data-title="Pin On California Police Patches">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/44/0c/cd/440ccdc9f7dc4df322627088e6d19770.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAFx-U6Pb-gRNVYsuty-fimOp7AHLdGH1Qmw';" alt="Pin On California Police Patches">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On California Police Patches</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/66/b7/af/66b7af60d14e47b638dc176deb614884.jpg" data-lightbox="roadtrip" data-title="Pin On Gutless Wonders Perpetual Victims And Others">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/66/b7/af/66b7af60d14e47b638dc176deb614884.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvoFCWiVuT-cGqefn467_Zsk4pAoymlrVnHw';" alt="Pin On Gutless Wonders Perpetual Victims And Others">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Gutless Wonders Perpetual Victims And Others</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c6/d7/58/c6d758ec179c1b6814c1a228d21e2a29.jpg" data-lightbox="roadtrip" data-title="Pin On F 86 Saber">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c6/d7/58/c6d758ec179c1b6814c1a228d21e2a29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSOXVuK5KOZxBIpnIf37V0a7TpOJqncR7x1w';" alt="Pin On F 86 Saber">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On F 86 Saber</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/be/b1/7c/beb17c3ef004da1b0b3f78ca0284a40e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSOXVuK5KOZxBIpnIf37V0a7TpOJqncR7x1w';" alt="Pin On F 86 Saber">
+										<div class="card-body">
+						<h3 class="h5"><b>Civil unrest wildfires floods earthquakes and pandemics.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>National guard and ca</strong>. 
+								
+																	Theres currently a heavy presence from the California. 
+																	According to a report from the Air Force Inspector General the National Guard flew surveillance flights in June over California Minneapolis Phoenix and Washington DC. 
+																	12 2021 California National Guard Soldiers and Airmen are supporting Sacramento County Public Health officials and nurses to vaccinate first responders against COVID-19 Medical teams rally for nursing homes Dec. 
+																	Our versatility enables us to respond to domestic emergencies overseas combat missions counterdrug efforts reconstruction missions and more. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	9 2020 Cal Guard medical personnel respond to stricken nursing homes as virus surges. 
+																	The National Guard has been called to Los Angeles County to help with the temporary storage of bodies at the county medical examiner-coroners office relieving pressure on hospital morgues and. 
+																	California - Army National Guard San Rafael CA USA Intelligence is crucial to the security of our Nation. 
+																	With officials bracing for the possibility of civil unrest and armed conflicts at state capitols nationwide following last weeks siege at the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The California Army National Guard was formed with the passing of the Militia Act of 1903 also known as the Dick ActPrior to that time the California Army Guard originated from the state militia established by the Constitution of California in 1849. 
+																	The California National Guard is a federally funded California military force part of the National Guard of the United States. 
+																	D emocrat California Governor Gavin Newsom will be deploying 1000 National Guard members to the state Capitol amongst other security precautions heading into President-elect Joe Bidens inauguration. 
+																	As of January 2012 California National Guardsmen have been deployed overseas more than 38000 times since 2001 of which twenty-nine have been killed in Iraq and two. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Many CSG units are fully integrated with CA Army and Air National Guard units. 
+																	The CSG is a volunteer force that protects California and its citizens from natural and man-made disasters including. 
+																	The Guard always responds with speed strength and efficiency helping to defend American freedom and ideals. 
+																	The California Army National Guard organizes trains equips and resources community based land forces. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It comprises both Army and Air National Guard components and its also the largest national guard force in the United States with a total authorized strength of over 23000 soldiers and airmen. 
+																	The California State Guard is one of three branches of the California Military Department. 
+																	Over the past year California has repeatedly relied on the states National Guard force of 18000 to help with a dangerous annual wildfire season protests over the racial injustice COVID-19 and. 
+																	During the Watts Riots in August 1965 to provide security and help restore order. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	California National Guard and California Highway Patrol kept their watch on Inauguration Day to protect lives rights and property at the Capitol and surrounding areas in downtown Sacramento. 
+																	On order mobilizes to support state andor federal authority. 
+																	Guard members on land and in the air are helping firefighters and first responders do their jobs while Guard aircrews are helping map and fight the blazes. 
+																	The California Army National Guard were mobilized by the Governor of California Edmund Gerald Brown Sr. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The CSG also augments the California Army National Guard and Air National Guard when they are deployed. 
+																	Hundreds of members of the National Guard from multiple states are supporting state and local efforts to fight the wildfires raging in California. 
+																	Several law enforcement agencies are at the California Capitol in Sacramento to secure the area in anticipation of any violent protests. 
+																	In a statement released Thursday Newsom cited the United States Capitol riots last week as the reasoning for his actions. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	During Black Lives Matter. 
+																	By gathering information about an adversarys intentions strengths vulnerabilities and capabilities the military can plan prepare and defend against attacks. 
+																	California National Guard troops have been deployed throughout downtown Sacramento since early Saturday in response to a threat of violence that was expected to last through Inauguration Day. 
+																	On April 4 1850 the first California Legislature in San Jose adopted enabling legislation formally establishing a militia of volunteer or. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	California Army National Guard Soldiers serve both community and country. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6c/8e/28/6c8e28528242e46244e1f6cc07c60bc6.jpg" data-lightbox="roadtrip" data-title="Pin On Magnum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6c/8e/28/6c8e28528242e46244e1f6cc07c60bc6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGs9xh9F-2x7Ch8-31e9UJvbpSCc9R3rj5fg';" alt="Pin On Magnum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Magnum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/56/d2/2356d219259e444711838d020a32bc4d.jpg" data-lightbox="roadtrip" data-title="Pin On American Pride And Patriotism">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/56/d2/2356d219259e444711838d020a32bc4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiQivQwWaZ9rojCpjR-ZBcsJq1WqOMEnM8NQ';" alt="Pin On American Pride And Patriotism">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On American Pride And Patriotism</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f9/aa/ca/f9aacaba87ce69e5b1875f3e5a75a749.jpg" data-lightbox="roadtrip" data-title="Pin On Guard In The Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f9/aa/ca/f9aacaba87ce69e5b1875f3e5a75a749.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsPXyDq3h03dDRxxDVYoie1gpeUzDOAMaISQ';" alt="Pin On Guard In The Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard In The Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f3/d4/a4/f3d4a4e69ca33c2acc7f8c3b61721576.jpg" data-lightbox="roadtrip" data-title="Pin On Military Aviation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f3/d4/a4/f3d4a4e69ca33c2acc7f8c3b61721576.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv7PBID0KJWFSdlUDKqps99C5No5C3kQ3sxA';" alt="Pin On Military Aviation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Aviation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/19/20/ba1920b23246fef15ac6d86f322270a6.jpg" data-lightbox="roadtrip" data-title="Pin On Guard In The Community">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/19/20/ba1920b23246fef15ac6d86f322270a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxd9I_8v8Pu77B6Kol0wVFQCqpLLQHHrLHsQ';" alt="Pin On Guard In The Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard In The Community</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/79/90/5479901d988e90154610f1339a1f3803.jpg" data-lightbox="roadtrip" data-title="Pin On Aerospace And Defense">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/79/90/5479901d988e90154610f1339a1f3803.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzMp-HuYLlqxTGiYGch887us1R33TCByOnHA';" alt="Pin On Aerospace And Defense">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Aerospace And Defense</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ce/8d/39/ce8d39c9526cf421258480cc7e5d611c.jpg" data-lightbox="roadtrip" data-title="Pin On Usmc Troops">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ce/8d/39/ce8d39c9526cf421258480cc7e5d611c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXwxRXQ_gWfRjmwmvjEHQFe2AwjwnJx-CPhg';" alt="Pin On Usmc Troops">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Usmc Troops</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/70/34/8b/70348b814f80425247fb71ccc1fcccb8.jpg" data-lightbox="roadtrip" data-title="Pin On Helli">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/70/34/8b/70348b814f80425247fb71ccc1fcccb8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy5VPvaIyj6kiDdtfP8SKxzTMzRvttzdutVQ';" alt="Pin On Helli">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Helli</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/f3/65/ebf36569690c7a277b29511fa1329577.jpg" data-lightbox="roadtrip" data-title="Pin On California In The 1960s">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/f3/65/ebf36569690c7a277b29511fa1329577.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnzxr2Vwz3xwp1hGCI0P7QCbYRigmvUXvZxQ';" alt="Pin On California In The 1960s">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On California In The 1960s</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/ee/ca/98eecaa199de678c9a7bcd998b44e947.jpg" data-lightbox="roadtrip" data-title="Pin On I Saw You In His Eyes E Book Tour News Ii Reenie 2 Chr 9 7 Kjv Niv">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/ee/ca/98eecaa199de678c9a7bcd998b44e947.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA4LkrecjzMQIfoch5QCI8J0lIwEqs3W-x9g';" alt="Pin On I Saw You In His Eyes E Book Tour News Ii Reenie 2 Chr 9 7 Kjv Niv">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On I Saw You In His Eyes E Book Tour News Ii Reenie 2 Chr 9 7 Kjv Niv</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/ca/fa/48cafa0826e647166b929c439ee8983b.jpg" data-lightbox="roadtrip" data-title="Pin On Afghanistan Wars">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/ca/fa/48cafa0826e647166b929c439ee8983b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWJ90Xf_5CIaUzkV-HtGu52wZ6JnI9lIbmUA';" alt="Pin On Afghanistan Wars">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Afghanistan Wars</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/63/d6/05/63d605e9ae682e214feea4a8fe61c50c.jpg" data-lightbox="roadtrip" data-title="Pin On Aircraft Schematic">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/63/d6/05/63d605e9ae682e214feea4a8fe61c50c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSktAInd5O63SejOlw2RFFMzQrE_QvuCyQzeg';" alt="Pin On Aircraft Schematic">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Aircraft Schematic</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/b1/7c/beb17c3ef004da1b0b3f78ca0284a40e.jpg" data-lightbox="roadtrip" data-title="Pin On Aviation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/b1/7c/beb17c3ef004da1b0b3f78ca0284a40e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpFa-aZqIAvAm_hI_yyjMQTeFurb62_f3rlA';" alt="Pin On Aviation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Aviation</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-army-plant.html">Army Army Plant</a></li>
+													<li class="list-group-item"><a href="/army-army-shayari.html">Army Army Shayari</a></li>
+													<li class="list-group-item"><a href="/army-army-tik-tok.html">Army Army Tik Tok</a></li>
+													<li class="list-group-item"><a href="/army-army-ringtone.html">Army Army Ringtone</a></li>
+													<li class="list-group-item"><a href="/army-army-reserves.html">Army Army Reserves</a></li>
+													<li class="list-group-item"><a href="/army-art-drawing.html">Army Art Drawing</a></li>
+													<li class="list-group-item"><a href="/army-army-result.html">Army Army Result</a></li>
+													<li class="list-group-item"><a href="/army-art-and-science-of-training.html">Army Art And Science Of Training</a></li>
+													<li class="list-group-item"><a href="/army-army-medical.html">Army Army Medical</a></li>
+													<li class="list-group-item"><a href="/army-artinya-adalah.html">Army Artinya Adalah</a></li>
+													<li class="list-group-item"><a href="/army-by-art.html">Army By Art</a></li>
+													<li class="list-group-item"><a href="/army-artinya-dalam-bahasa-indonesia.html">Army Artinya Dalam Bahasa Indonesia</a></li>
+													<li class="list-group-item"><a href="/army-board-questions-army-command-policy.html">Army Board Questions Army Command Policy</a></li>
+													<li class="list-group-item"><a href="/army-arty.html">Army Arty</a></li>
+													<li class="list-group-item"><a href="/army-board-questions-army-physical-readiness-training.html">Army Board Questions Army Physical Readiness Training</a></li>
+													<li class="list-group-item"><a href="/army-art.html">Army Art</a></li>
+													<li class="list-group-item"><a href="/army-artwork-prints.html">Army Artwork Prints</a></li>
+													<li class="list-group-item"><a href="/army-army-man.html">Army Army Man</a></li>
+													<li class="list-group-item"><a href="/army-arty-centre-nasik.html">Army Arty Centre Nasik</a></li>
+													<li class="list-group-item"><a href="/army-art-show.html">Army Art Show</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Coast Guard Texas - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Coast Guard Texas",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/3f/cf/be/3fcfbe590354b68253ec4d3e8dbd817f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+coast+guard+texas",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Coast Guard Texas</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The detachment is responsible for media relations for all of Texas and up to Lake Charles Louisiana. Thus was born the United States Revenue Cutter Service known today as the US. New Coast Guard jobs added daily. <br>				
+			</p>
+										<a class="badge badge-info" href="/army-ranking-global.html">army ranking global</a>
+											<a class="badge badge-warning" href="/army-ranks-during-ww2.html">army ranks during ww2</a>
+											<a class="badge badge-light" href="/army-ranking-of-officers.html">army ranking of officers</a>
+											<a class="badge badge-secondary" href="/army-ranking-football.html">army ranking football</a>
+											<a class="badge badge-light" href="/army-ranks-during-the-vietnam-war.html">army ranks during the vietnam war</a>
+											<a class="badge badge-dark" href="/army-rankings.html">army rankings</a>
+											<a class="badge badge-primary" href="/army-ranking-in-us.html">army ranking in us</a>
+											<a class="badge badge-info" href="/army-ranking.html">army ranking</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the key word you have come to visit the ideal site.  Our website gives you hints for seeing the highest quality video and picture content, hunt and find more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this video for you to view.   This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/52/b5/3e52b5e6c9137c5b6a4d1ce14aa56047.jpg" data-lightbox="roadtrip" data-title="Coast Guard Clipper Heron Based In Sabine Pass Patrolling Just Off The Texas Coast With Help From Some Dolphins Coast Guard Texas Coast Us Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/52/b5/3e52b5e6c9137c5b6a4d1ce14aa56047.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYv9MCX6MckMNnEnOpE3fS4eoxSrD-BEztGg';" alt="Coast Guard Clipper Heron Based In Sabine Pass Patrolling Just Off The Texas Coast With Help From Some Dolphins Coast Guard Texas Coast Us Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coast Guard Clipper Heron Based In Sabine Pass Patrolling Just Off The Texas Coast With Help From Some Dolphins Coast Guard Texas Coast Us Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/8d/40/148d40090b38a192d32ae806f3ac8542.jpg" data-lightbox="roadtrip" data-title="A U S Coast Guard Mh 65 Helicopter Air Crew Stands In Front Of Their Aircraft After Returning From A Successful Medevac Near Coast Guard Us Coast Guard Coast">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/8d/40/148d40090b38a192d32ae806f3ac8542.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSACYAznvyk8nQLQz9i-OlLA0EDVDOYYKww3g';" alt="A U S Coast Guard Mh 65 Helicopter Air Crew Stands In Front Of Their Aircraft After Returning From A Successful Medevac Near Coast Guard Us Coast Guard Coast">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A U S Coast Guard Mh 65 Helicopter Air Crew Stands In Front Of Their Aircraft After Returning From A Successful Medevac Near Coast Guard Us Coast Guard Coast</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/b7/73/53b773a7f9920af424311d3b49039fc4.jpg" data-lightbox="roadtrip" data-title="Coast Guard Cutter Angela Mcshan Coast Guard Cutter Coast Guard Chief Petty Officer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/b7/73/53b773a7f9920af424311d3b49039fc4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtQ-zdus-j9pUwZMQYchAuSOuC7vjE5HUHeQ';" alt="Coast Guard Cutter Angela Mcshan Coast Guard Cutter Coast Guard Chief Petty Officer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coast Guard Cutter Angela Mcshan Coast Guard Cutter Coast Guard Chief Petty Officer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/ed/da/e8eddaeb8d24c3c7741b520f2e32c793.jpg" data-lightbox="roadtrip" data-title="Us Coast Guard By Betsy Knapp In 2020 Us Coast Guard Coast Guard Coast Guard Cutter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/ed/da/e8eddaeb8d24c3c7741b520f2e32c793.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREkOyr1YkGob33_KCd60lAjOVN0UJEjaMfgQ';" alt="Us Coast Guard By Betsy Knapp In 2020 Us Coast Guard Coast Guard Coast Guard Cutter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Coast Guard By Betsy Knapp In 2020 Us Coast Guard Coast Guard Coast Guard Cutter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ba/fa/b7/bafab7a74c3cd24649ea81427df60ccb.jpg" data-lightbox="roadtrip" data-title="Us Coast Guard Harbor Patrol Boat Coast Guard Us Coast Guard Boat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ba/fa/b7/bafab7a74c3cd24649ea81427df60ccb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-3b_uyH3Ak2hlNVh6ydyKXHJmWbkgatuhw';" alt="Us Coast Guard Harbor Patrol Boat Coast Guard Us Coast Guard Boat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Coast Guard Harbor Patrol Boat Coast Guard Us Coast Guard Boat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/a7/45/07a7456f2da3afb68f386fd9c63d2ff0.jpg" data-lightbox="roadtrip" data-title="Happy Birthday U S Coast Guard Storybook Wedding Photographer M Couturier Coast Guard Rescue Coast Guard Coast Guard Cutter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/a7/45/07a7456f2da3afb68f386fd9c63d2ff0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-PQL05fsZob4BqQXABU1aD7t5exASDHzr_w';" alt="Happy Birthday U S Coast Guard Storybook Wedding Photographer M Couturier Coast Guard Rescue Coast Guard Coast Guard Cutter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Happy Birthday U S Coast Guard Storybook Wedding Photographer M Couturier Coast Guard Rescue Coast Guard Coast Guard Cutter</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/cf/52/80/cf528069861378d1858eaeaa20cd7f15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-PQL05fsZob4BqQXABU1aD7t5exASDHzr_w';" alt="Happy Birthday U S Coast Guard Storybook Wedding Photographer M Couturier Coast Guard Rescue Coast Guard Coast Guard Cutter">
+										<div class="card-body">
+						<h3 class="h5"><b>Dynagard Blue MIL-PRF-18458C Type I Location Galveston Texas.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us coast guard texas</strong>. 
+								
+																	8876 Gulf Freeway Suite 200 Houston Texas 77017. 
+																	MSU TX City members teamed up to help out the Galveston County Food Bank. 
+																	Via cell phone from the crew of the 899-foot tanker vessel Karvounis stating a. 
+																	Todays top 29 Coast Guard jobs in Houston Texas United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Coast Guard motto is Semper Paratus which means Always ready. 
+																	With over a dozen seaports and air bases across the state the Coast Guard conducts missions by land sea and air to protect this countrys waterways and uphold its laws around the maritime boundaries of Texas. 
+																	Troy has served in the US Coast Guard Auxiliary for the past 3 years working in Marine SafetyEnvironmental Protection Aids to Navigation Vessel Safety Inspections and Emergency Management. 
+																	Shipboard Crane Loadline serviced. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On August 4 1790 President George Washington signed legislation establishing a maritime force simply called the cutters or the system of cutters. 
+																	South Padre Island TX 78597. 
+																	The US Coast Guard has determined that crew members onboard cruise ships in Texas pose a risk of spreading Covid-19 Keep on reading Travel freedom redefined by Covid-19. 
+																	US Coast Guard Job Requirements in Texas. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Port Arthur Texas Coast Guard located in Port Arthur TX is a local branch of the United States Coast Guard one of the five service branches of the US. 
+																	This page contains a list of United States Coast Guard stations in the United States within the United States Coast Guards nine districtsThere are currently many stations located throughout the country along the shores of the Atlantic Ocean Gulf of Mexico Pacific Ocean and Great LakesAlthough many of the stations have been located on shore floating stations have been based on the Ohio. 
+																	The US Coast Guard was established on August 4 1790. 
+																	The US Coast Guard medevaced a 53-year-old man from a tanker vessel 9 miles off Corpus Christi Texas Tuesday Feb09. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Coast Guard in Jefferson County provides law enforcement search and rescue and regulatory services. 
+																	Crude oil tanker Karvounis - Image courtesy of Ahmet Uenluegil Coast Guard SectorAir Station Corpus Christi command center watchstanders received a medevac request at 214 pm. 
+																	The United States Coast Guard USCG is the maritime security search and rescue and law enforcement service branch of the United States Armed Forces and one of the countrys eight uniformed servicesThe Coast Guard is a maritime military multi-mission service unique among the US. 
+																	No injuries were reported. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Inland Construction Tender Galveston Texas Coast Guard Base USCGC Clamp. 
+																	Leverage your professional network and get hired. 
+																	Watch standers directed the launch of a Station Freeport 45-foot Response Boat crew and an Air Station Houston MH-65 Dolphin helicopter crew to locate and assist the missing vessel. 
+																	Coast Guard Bases Stations February 11 2019 by militarybase Find a list of USCG bases training facilities air stations and boat stations throughout the United States Caribbean and Guam. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	PADET Texas is a sub-office of the Coast Guards 8th District Headquarters in New Orleans which is responsible for Coast Guard activities in 26 states. 
+																	Apply to Program Specialist Emergency Room Technician Deckhand and more. 
+																	There are over 40000 service men and women in active duty in the Coast Guard and 7000 in the reserves. 
+																	A majority of our activity is along the Gulf of Mexico. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Crews are prepared 24 hours a day for deployment on the states 13 cutters 100 boats and nine aircraft which include helicopters and fixed-wing airplanes based out of USCG Air Station Houston and USCG Air Station Corpus Christi. 
+																	Military branches for having a maritime law enforcement mission with jurisdiction in both domestic and. 
+																	The Coast Guard assisted six people on a 32-foot boat approximately 56 miles offshore Freeport Texas Saturday. 
+																	US Coast Guard orders cruise ships in Texas to form medical plans Publishing Details Travel 14 Apr 2020 Clara Bullock Share. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For more information about the 8th District visit our homepage at wwwuscgmild8. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/aa/0c/94aa0c30558ab02eb7b38f54c9b70b86.jpg" data-lightbox="roadtrip" data-title="Uscgc Boutwell Coast Guard Boats Us Coast Guard Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/aa/0c/94aa0c30558ab02eb7b38f54c9b70b86.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWfSxhaDiZ0E-XiZeauW6GxZWU0rzekDK5Ng';" alt="Uscgc Boutwell Coast Guard Boats Us Coast Guard Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uscgc Boutwell Coast Guard Boats Us Coast Guard Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/de/27/78de27dc5d3bc9f9369538e74410ae7b.jpg" data-lightbox="roadtrip" data-title="Uscgc Blackhaw Wlb 390 Coast Guard Coast Guard Cutter Submarines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/de/27/78de27dc5d3bc9f9369538e74410ae7b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-b7PaXsWYYOODHB9yRZRdDEm15T6qHI_Vxw';" alt="Uscgc Blackhaw Wlb 390 Coast Guard Coast Guard Cutter Submarines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uscgc Blackhaw Wlb 390 Coast Guard Coast Guard Cutter Submarines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/f7/8a/7ef78ad7dc05bea3d499b3f516c86915.jpg" data-lightbox="roadtrip" data-title="Pin By Bater Kari On Public Safety Boats Coast Guard Rescue Us Coast Guard Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/f7/8a/7ef78ad7dc05bea3d499b3f516c86915.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpjYfWHMhW7ub32UkvDKgN4WXZrx5iSKiFdw';" alt="Pin By Bater Kari On Public Safety Boats Coast Guard Rescue Us Coast Guard Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Bater Kari On Public Safety Boats Coast Guard Rescue Us Coast Guard Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/4e/c7/a94ec73b6efe59f376219617233791b5.jpg" data-lightbox="roadtrip" data-title="Mars Mission Astronauts Rehearse Water Landings Off Texas Mission To Mars Orion Apollo Program">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/4e/c7/a94ec73b6efe59f376219617233791b5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXtHbukm6y7zR0RESD7HbVCLB40YLHLstV9w';" alt="Mars Mission Astronauts Rehearse Water Landings Off Texas Mission To Mars Orion Apollo Program">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mars Mission Astronauts Rehearse Water Landings Off Texas Mission To Mars Orion Apollo Program</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/31/0d/99310d14c9382431a340c1bb6df7febb.jpg" data-lightbox="roadtrip" data-title="11 Result Cyclone Class Patrol Ship Coast Guard Boats Coast Gaurd Us Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/31/0d/99310d14c9382431a340c1bb6df7febb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWmFPQAuDTmm8o5hYrov3jjjQ1fnSHVaaaXQ';" alt="11 Result Cyclone Class Patrol Ship Coast Guard Boats Coast Gaurd Us Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">11 Result Cyclone Class Patrol Ship Coast Guard Boats Coast Gaurd Us Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fa/72/7a/fa727af2d5b01def9f668d477ef1f6a2.jpg" data-lightbox="roadtrip" data-title="U S Coast Guard Cutter James Serves As A Command And Control Platform In San Juan Puerto Rico The Cutter S Cre Us Coast Guard Coast Guard Cutter Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fa/72/7a/fa727af2d5b01def9f668d477ef1f6a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsFj-VUI4AJHUvcNJVcIlqyOX4VDUVgR7KBg';" alt="U S Coast Guard Cutter James Serves As A Command And Control Platform In San Juan Puerto Rico The Cutter S Cre Us Coast Guard Coast Guard Cutter Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">U S Coast Guard Cutter James Serves As A Command And Control Platform In San Juan Puerto Rico The Cutter S Cre Us Coast Guard Coast Guard Cutter Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9b/1c/94/9b1c94afecc81663c1daea3ab65c4aea.jpg" data-lightbox="roadtrip" data-title="Uscgc Mallow Wlb 396 Coast Guard Cutter Coast Guard Us Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9b/1c/94/9b1c94afecc81663c1daea3ab65c4aea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwhYljODqs3jJdUJSCRGCJSETRwM6dVHOGlQ';" alt="Uscgc Mallow Wlb 396 Coast Guard Cutter Coast Guard Us Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uscgc Mallow Wlb 396 Coast Guard Cutter Coast Guard Us Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/b4/9e/72b49e6b38e2446500d6019aad164b33.jpg" data-lightbox="roadtrip" data-title="New Coast Guard Cutter Daniel Tarr Coast Guard Cutter Coast Guard Coast">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/b4/9e/72b49e6b38e2446500d6019aad164b33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhIbEH427FRcneyN7KyHYNbE3T9UmVWeWPgg';" alt="New Coast Guard Cutter Daniel Tarr Coast Guard Cutter Coast Guard Coast">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">New Coast Guard Cutter Daniel Tarr Coast Guard Cutter Coast Guard Coast</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b4/1a/07/b41a07100f37d3789d1f3091a37def78.jpg" data-lightbox="roadtrip" data-title="Pin Op Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b4/1a/07/b41a07100f37d3789d1f3091a37def78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrGDyP409vpW7pOEMaZFNxmyJ5-5QBNCzq2w';" alt="Pin Op Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Op Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/12/0f/b7120f233de6c55fb0d940896778fdb4.jpg" data-lightbox="roadtrip" data-title="Uscgc Bittersweet Wlb 389 Us Coast Guard Coast Guard Cutter Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/12/0f/b7120f233de6c55fb0d940896778fdb4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT17uUNMN7uqHNMvhoJ_vrs8MVkFkBATefgQ';" alt="Uscgc Bittersweet Wlb 389 Us Coast Guard Coast Guard Cutter Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uscgc Bittersweet Wlb 389 Us Coast Guard Coast Guard Cutter Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/cf/be/3fcfbe590354b68253ec4d3e8dbd817f.jpg" data-lightbox="roadtrip" data-title="Pin By Nancy Lee On Coast Guard Coast Guard Stations Coast Guard Boats Us Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/cf/be/3fcfbe590354b68253ec4d3e8dbd817f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZrMPCHK1RY6wtaNJqI-PhnQe6hEPB3sSGWw';" alt="Pin By Nancy Lee On Coast Guard Coast Guard Stations Coast Guard Boats Us Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Nancy Lee On Coast Guard Coast Guard Stations Coast Guard Boats Us Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cf/52/80/cf528069861378d1858eaeaa20cd7f15.jpg" data-lightbox="roadtrip" data-title="Cutter Edgar Culbertson Arrives In Galveston Coast Guard Cutter Galveston Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cf/52/80/cf528069861378d1858eaeaa20cd7f15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPEyH5BpHoLj3zPnyj7HicRj0Qb8SaLlobw';" alt="Cutter Edgar Culbertson Arrives In Galveston Coast Guard Cutter Galveston Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cutter Edgar Culbertson Arrives In Galveston Coast Guard Cutter Galveston Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/33/02/ef/3302ef5c646d946780b8851b69f86b27.jpg" data-lightbox="roadtrip" data-title="Cg 44377 Mlb Coast Guard Us Coast Guard Military Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/33/02/ef/3302ef5c646d946780b8851b69f86b27.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM0ekT2r2tU-d1uH92toaL6ln2Bho4-Pf8LQ';" alt="Cg 44377 Mlb Coast Guard Us Coast Guard Military Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cg 44377 Mlb Coast Guard Us Coast Guard Military Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/argus-vs-sun.html">Argus Vs Sun</a></li>
+													<li class="list-group-item"><a href="/army-army-army-army.html">Army Army Army Army</a></li>
+													<li class="list-group-item"><a href="/argus-wallpaper-3d.html">Argus Wallpaper 3d</a></li>
+													<li class="list-group-item"><a href="/argus-skin-light-of-dawn.html">Argus Skin Light Of Dawn</a></li>
+													<li class="list-group-item"><a href="/army-army-jawan.html">Army Army Jawan</a></li>
+													<li class="list-group-item"><a href="/army-and-army-law.html">Army And Army Law</a></li>
+													<li class="list-group-item"><a href="/army-army-in-the-world.html">Army Army In The World</a></li>
+													<li class="list-group-item"><a href="/argus-starlight.html">Argus Starlight</a></li>
+													<li class="list-group-item"><a href="/army-army-hairstyle.html">Army Army Hairstyle</a></li>
+													<li class="list-group-item"><a href="/army-army-jackets.html">Army Army Jackets</a></li>
+													<li class="list-group-item"><a href="/argus-wiki.html">Argus Wiki</a></li>
+													<li class="list-group-item"><a href="/argus-user.html">Argus User</a></li>
+													<li class="list-group-item"><a href="/army-army-gd.html">Army Army Gd</a></li>
+													<li class="list-group-item"><a href="/arkansas-army-national-guard-agr.html">Arkansas Army National Guard Agr</a></li>
+													<li class="list-group-item"><a href="/argus-x-mod.html">Argus X Mod</a></li>
+													<li class="list-group-item"><a href="/arizona-army-national-guard-medical-command.html">Arizona Army National Guard Medical Command</a></li>
+													<li class="list-group-item"><a href="/arkansas-jfhq.html">Arkansas Jfhq</a></li>
+													<li class="list-group-item"><a href="/argus-wallpaper.html">Argus Wallpaper</a></li>
+													<li class="list-group-item"><a href="/arizona-national-guard-military-id-cards.html">Arizona National Guard Military Id Cards</a></li>
+													<li class="list-group-item"><a href="/army-army-gear.html">Army Army Gear</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

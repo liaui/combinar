@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Reba Mcentire And Vince Gill - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Reba Mcentire And Vince Gill",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/c9/76/5f/c9765fb491efd1c4a9a31a508f5eeefe.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=reba+mcentire+and+vince+gill",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Reba Mcentire And Vince Gill</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Vince Gill and Reba McEntire perform Saturday on the Grand Ole Opry. In July of 2020 Reba McEntire and Vince Gill reunited on the Grand Ole Opry. The Heart Wont Lie as told by Reba. <br>				
+			</p>
+										<a class="badge badge-success" href="/does-military-retirement-pay-ever-end.html">does military retirement pay ever end</a>
+											<a class="badge badge-success" href="/does-national-guard-go-through-boot-camp.html">does national guard go through boot camp</a>
+											<a class="badge badge-dark" href="/do-you-get-paid-in-basic-training-national-guard.html">do you get paid in basic training national guard</a>
+											<a class="badge badge-light" href="/does-national-guard-pay-bah.html">does national guard pay bah</a>
+											<a class="badge badge-secondary" href="/does-army-national-guard-count-as-active-duty.html">does army national guard count as active duty</a>
+											<a class="badge badge-primary" href="/dr-ang-tacoma.html">dr ang tacoma</a>
+											<a class="badge badge-info" href="/do-national-guard-soldiers-get-deployed.html">do national guard soldiers get deployed</a>
+											<a class="badge badge-success" href="/epfo-e-sewa-portal-and-login-using-your-uan.html">epfo e sewa portal and login using your uan</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to pay a visit to the ideal site.  Our site provides you with suggestions for viewing the highest quality video and image content, hunt and locate more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/dd/be/a8/ddbea8e353b246215c2b61aea256afb2.jpg" data-lightbox="roadtrip" data-title="Relive Reba Mcentire Vince Gill S Duet The Heart Won T Lie Best Country Music Country Music Artists Country Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/dd/be/a8/ddbea8e353b246215c2b61aea256afb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPK0Qdo02k0G2__AhYhUk3Czvv9tso3cksDw';" alt="Relive Reba Mcentire Vince Gill S Duet The Heart Won T Lie Best Country Music Country Music Artists Country Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Relive Reba Mcentire Vince Gill S Duet The Heart Won T Lie Best Country Music Country Music Artists Country Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/01/ac/4f01ac103a634b2850dfa43e4a51ec60.jpg" data-lightbox="roadtrip" data-title="Reba Mcentire Vince Gill Oklahoma Swing Grand Ole Opry Via Youtube Vince Gill Reba Mcentire Opry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/01/ac/4f01ac103a634b2850dfa43e4a51ec60.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-L8a8ua6DR6_vZNs6--nNr0aoOE2Qo4h4ig';" alt="Reba Mcentire Vince Gill Oklahoma Swing Grand Ole Opry Via Youtube Vince Gill Reba Mcentire Opry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire Vince Gill Oklahoma Swing Grand Ole Opry Via Youtube Vince Gill Reba Mcentire Opry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/7d/a4/587da4987c79248f053e0375723ef529.jpg" data-lightbox="roadtrip" data-title="Flashback Reba Mcentire Vince Gill Duet On The Heart Won T Lie In 1994 Vince Gill Reba Mcentire Vince">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/7d/a4/587da4987c79248f053e0375723ef529.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9NXhfinGjXNC20EbnLqgCIv38IpuRS7032g';" alt="Flashback Reba Mcentire Vince Gill Duet On The Heart Won T Lie In 1994 Vince Gill Reba Mcentire Vince">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flashback Reba Mcentire Vince Gill Duet On The Heart Won T Lie In 1994 Vince Gill Reba Mcentire Vince</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/18/01/f6/1801f6a9cc14789cdfae21f0c33f91c1.jpg" data-lightbox="roadtrip" data-title="Reba Mcentire And Vince Gill The Heart Won T Lie In 2020 Vince Gill Reba Mcentire Country Music Videos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/18/01/f6/1801f6a9cc14789cdfae21f0c33f91c1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHM2S9bsXSIHiKjlK_eSZGhDRYFssq-bQp2Q';" alt="Reba Mcentire And Vince Gill The Heart Won T Lie In 2020 Vince Gill Reba Mcentire Country Music Videos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire And Vince Gill The Heart Won T Lie In 2020 Vince Gill Reba Mcentire Country Music Videos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/e5/17/14e5175a880ca93e25327df2ededec84.jpg" data-lightbox="roadtrip" data-title="Relive Reba Mcentire Vince Gill S Duet The Heart Won T Lie Reba Mcentire Hot Country Songs Worship Songs Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/e5/17/14e5175a880ca93e25327df2ededec84.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH9-T68wWW6fbaCLJvsVfUgN4mH7Q-P7ancQ';" alt="Relive Reba Mcentire Vince Gill S Duet The Heart Won T Lie Reba Mcentire Hot Country Songs Worship Songs Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Relive Reba Mcentire Vince Gill S Duet The Heart Won T Lie Reba Mcentire Hot Country Songs Worship Songs Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/15/45/ad/1545ad6193bc3f161a5783a3a53bfbe0.jpg" data-lightbox="roadtrip" data-title="Watch As Reba Mcentire And Vince Gill Sing The Song They Were Never Meant To Sing Reba Mcentire Country Music Videos Country Music Stars">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/15/45/ad/1545ad6193bc3f161a5783a3a53bfbe0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbR4s84ThVBzLGv0JHJOkxb6penV0dYkiKPg';" alt="Watch As Reba Mcentire And Vince Gill Sing The Song They Were Never Meant To Sing Reba Mcentire Country Music Videos Country Music Stars">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch As Reba Mcentire And Vince Gill Sing The Song They Were Never Meant To Sing Reba Mcentire Country Music Videos Country Music Stars</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c7/a8/58/c7a858eda6c49925277629a705c77e74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbR4s84ThVBzLGv0JHJOkxb6penV0dYkiKPg';" alt="Watch As Reba Mcentire And Vince Gill Sing The Song They Were Never Meant To Sing Reba Mcentire Country Music Videos Country Music Stars">
+										<div class="card-body">
+						<h3 class="h5"><b>Both Vince Gill and Reba McEntire are also officially Grand Ole Opry members.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Reba mcentire and vince gill</strong>. 
+								
+																	Reba Vinces Live Duet in 1994 On February 19 1994 McEntire and Gill performed this song during the Hot Country Jam held at the Roy Acuff Theater. 
+																	Both singers delivered a passionate duet and it was poignantly sung. 
+																	The early 90s found Reba McEntire and Vince Gill at the height of their country music careers. 
+																	The singer retweeted on Friday Vinces post. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Even without the audience to play off of both Reba and Vince have great presence and put on one hell of a show. 
+																	Both artists had already been inducted into the Grand Ole Opry and were dominating the industry as top male and female vocalists in their respective fields. 
+																	Reba McEntire Vince Gill Duet on The Heart Wont Lie in 1994 Co-written by Kim Carnes the song took a rather circuitous route to get to the two superstars. 
+																	Two Grand Ole Opry and Country Music Hall of Fame members will take the stage at the Grand Ole Opry this weekend as Vince Gill and Reba McEntire step into the circle for the Oprys 4933rd consecutive Saturday night broadcast on July 18. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	With songs like I Keep Loving You Until They Dont Love You and Starting Over Again McEntire is known for her gut-wrenching songs about love. 
+																	The circle remains unbroken for another unforgettable Saturday Night Grand Ole Opry. 
+																	Oklahomans Vince Gill and Reba McEntire will step into the circle together July 18 for the Grand Ole Oprys 4933rd consecutive Saturday broadcast. 
+																	Celebrate their 40-year friendship with live performances from Vince Gil. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Originally Kenny Rogers and I were looking at doing this song as a duet but we could never get it to sound just right because. 
+																	I do not own the music. 
+																	It was released in February 1993 as the second single from Rebas album Its Your Call. 
+																	The song reached the top of the Billboard Hot Country Singles Tracks chart. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	McEntire and Gill each Oklahoma natives first met in 1988 when Gill performed backing vocals on the latters fifteenth studio full-length Reba The two would cut a number of duets in the. 
+																	Her duet with Gill The Heart Wont Lie is no different. 
+																	There was no audience in attendance but you couldnt tell that by watching them onstage. 
+																	Reba McEntire and Vince Gill Reunite on the Opry. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Copyright Disclaimer Under Section 107 of the Copyright Act 1976 allowance is made for fair use for purposes such as criticism comment news reporting t. 
+																	In 1990 the pair recorded their first of many duets Oklahoma Swing the second single from Gills breakthrough album When I Call Your Name. 
+																	In 1993 the duo reached the top of the Billboard Hot Country Singles Tracks chart with their hit duet The Heart Wont Lie and made Country music history with the accompanying cinematic military-themed. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The two Oklahoma natives met in Nashville in 1988 when Gill sang background vocals on McEntires self-titled studio album Reba. 
+																	Invalid Date KELLY Clarkson got emotional while promoting Reba McEntire and Vince Gills performance of their legendary love song The Heart Wont Lie. 
+																	Their performance can be accessed on Circle TV. 
+																	Mon July 20 2020 849 AM. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	McEntire started out on stage alone before Gill came out and joined her taking her hand in his. 
+																	Reba McEntire and Vince Gill at the Grand Ole Opry singing Oklahoma SwingDisclaimerThis video is property of TNN. 
+																	Chris HolloGrand Ole Opry Members of both the Grand Ole Opry and the Country Music Hall of Fame Oklahoma natives Vince Gill and Reba McEntire performed together Saturday night during the Oprys 4933rd consecutive Saturday night broadcast. 
+																	The Heart Wont Lie is a song written by Kim Carnes and Donna Terry Weiss and recorded as a duet between American country music artists Reba McEntire and Vince Gill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And though Vince Gill is a regular on the Opry stage and played with his wife Amy Grant and their daughters on one of the earlier COVID-19 special presentations in March Rebas presence on the Opry stage has been very rare lately and will be a special treat. 
+																	Country superstars Reba McEntire and Vince Gill wowed audiences with a performance of their first duet together The Heart Wont Lie 26 years ago. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/1b/57/8b1b5708362ec853bb1c3e59af0924d3.jpg" data-lightbox="roadtrip" data-title="Vince Gill Reba Walk On Stage Together Watch What Happens Next Vince Vince Gill Walk On">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/1b/57/8b1b5708362ec853bb1c3e59af0924d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeFXyTXJ0-Wkv6fAi8ahD4U6Xjc6SvKaeKpg';" alt="Vince Gill Reba Walk On Stage Together Watch What Happens Next Vince Vince Gill Walk On">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vince Gill Reba Walk On Stage Together Watch What Happens Next Vince Vince Gill Walk On</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/a8/58/c7a858eda6c49925277629a705c77e74.jpg" data-lightbox="roadtrip" data-title="Circle All Access Minute Vince Gill Reba Mcentire Youtube Vince Gill Vince Reba Mcentire">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/a8/58/c7a858eda6c49925277629a705c77e74.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI3JkHOnLjJuWRw1qvdIlIRyzunAGNbLAKIw';" alt="Circle All Access Minute Vince Gill Reba Mcentire Youtube Vince Gill Vince Reba Mcentire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Circle All Access Minute Vince Gill Reba Mcentire Youtube Vince Gill Vince Reba Mcentire</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/ed/85/6aed85e8679a689e9be418397d12b710.jpg" data-lightbox="roadtrip" data-title="Reba Mcentire At Vince Gill Honored In Hollywood Reba Mcentire Lil Kim Lady">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/ed/85/6aed85e8679a689e9be418397d12b710.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4okPeEMTke4Z39PtczzsJqtp1DVWLuf5U5Q';" alt="Reba Mcentire At Vince Gill Honored In Hollywood Reba Mcentire Lil Kim Lady">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire At Vince Gill Honored In Hollywood Reba Mcentire Lil Kim Lady</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/08/91/f4/0891f48b6a1e690a71587d7ef9c8a6ee.jpg" data-lightbox="roadtrip" data-title="Reba Mcentire Vince Gill The Heart Won T Lie Hot Country Jam 94 Reba Mcentire Vince Gill Country Jam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/08/91/f4/0891f48b6a1e690a71587d7ef9c8a6ee.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7w15AEV-mDtz2jjYbxn0mdgSL5f5NrWssHA';" alt="Reba Mcentire Vince Gill The Heart Won T Lie Hot Country Jam 94 Reba Mcentire Vince Gill Country Jam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire Vince Gill The Heart Won T Lie Hot Country Jam 94 Reba Mcentire Vince Gill Country Jam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/b6/26/55b626d5848cc7f13d157665517c688b.jpg" data-lightbox="roadtrip" data-title="Reba Mcentire And Vince Gill On The Heart Won T Lie Music Video Favorite Lyrics Country Music Stars Country Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/b6/26/55b626d5848cc7f13d157665517c688b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu1PBMEtRhW-oMZB18CRLdrZjgM-t_uwrktg';" alt="Reba Mcentire And Vince Gill On The Heart Won T Lie Music Video Favorite Lyrics Country Music Stars Country Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire And Vince Gill On The Heart Won T Lie Music Video Favorite Lyrics Country Music Stars Country Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dd/b6/5f/ddb65fff52dd8b2aa7181efaf67c880f.jpg" data-lightbox="roadtrip" data-title="The Heart Won T Lie Reba Mcentire And Vince Gill Life Vince Gill Give It To Me">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dd/b6/5f/ddb65fff52dd8b2aa7181efaf67c880f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpzUsptT4_S_JbnSLTU-XqcyDtdNOUNgE-cw';" alt="The Heart Won T Lie Reba Mcentire And Vince Gill Life Vince Gill Give It To Me">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Heart Won T Lie Reba Mcentire And Vince Gill Life Vince Gill Give It To Me</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/33/9c/0b339c6fb2e2c32527a1159fa5f95f57.jpg" data-lightbox="roadtrip" data-title="Reba Mcentire Vince Gill The Heart Won T Lie Via Youtube Country Music Videos Country Music Singers Music Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/33/9c/0b339c6fb2e2c32527a1159fa5f95f57.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlh1MwPMc2pNl2tXDWi8-bd1-vO-ZyxgBsxg';" alt="Reba Mcentire Vince Gill The Heart Won T Lie Via Youtube Country Music Videos Country Music Singers Music Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire Vince Gill The Heart Won T Lie Via Youtube Country Music Videos Country Music Singers Music Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/8a/f4/608af45d5d59d82f26361ea3d7a8e97d.jpg" data-lightbox="roadtrip" data-title="The Heart Won T Lie Honoring Reba And Vince Gill S Iconic Duet Vince Gill Duet Vince">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/8a/f4/608af45d5d59d82f26361ea3d7a8e97d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP2ZTrQI4rghYqf9HIHv3AnGcD4yaJDJGy0Q';" alt="The Heart Won T Lie Honoring Reba And Vince Gill S Iconic Duet Vince Gill Duet Vince">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Heart Won T Lie Honoring Reba And Vince Gill S Iconic Duet Vince Gill Duet Vince</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/3c/92/223c9273b536cf4398ab351f60dc4eff.jpg" data-lightbox="roadtrip" data-title="Pin By Famous Oklahomans On Reba Country Music Singers Fried Green Tomatoes Singer">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/3c/92/223c9273b536cf4398ab351f60dc4eff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2BJaRqkR6enzIo5kDlqlY4BlC_Pbb_cPS2Q';" alt="Pin By Famous Oklahomans On Reba Country Music Singers Fried Green Tomatoes Singer">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Famous Oklahomans On Reba Country Music Singers Fried Green Tomatoes Singer</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/81/d8/f681d8878870bfc44b455f3d479decc6.jpg" data-lightbox="roadtrip" data-title="Gill S High Pure Tenor Voice And Unerring Sense Of Harmony Have Caused Dozens Of Artists From Reba Mcentire T Vince Gill Country Music Association Songwriting">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/81/d8/f681d8878870bfc44b455f3d479decc6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlD2ctUXwx_nD0f7NfJffZfHqUPXD1KEgkzQ';" alt="Gill S High Pure Tenor Voice And Unerring Sense Of Harmony Have Caused Dozens Of Artists From Reba Mcentire T Vince Gill Country Music Association Songwriting">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gill S High Pure Tenor Voice And Unerring Sense Of Harmony Have Caused Dozens Of Artists From Reba Mcentire T Vince Gill Country Music Association Songwriting</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/52/af/34/52af34b5cbf2a86f3260e373a4558983.jpg" data-lightbox="roadtrip" data-title="Reba Mcentire Vince Gill The Heart Won T Lie Kind Of A Rough Recording Here But 3 3 3 He S So Handsome In His Y Singing Videos Reba Mcentire Vince Gill">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/52/af/34/52af34b5cbf2a86f3260e373a4558983.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIKoY0mQNLkNePv4kWQRgPhUfzotVQ8m_zLg';" alt="Reba Mcentire Vince Gill The Heart Won T Lie Kind Of A Rough Recording Here But 3 3 3 He S So Handsome In His Y Singing Videos Reba Mcentire Vince Gill">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire Vince Gill The Heart Won T Lie Kind Of A Rough Recording Here But 3 3 3 He S So Handsome In His Y Singing Videos Reba Mcentire Vince Gill</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/4d/d5/644dd5c7da94aa818bf13e919fab489d.jpg" data-lightbox="roadtrip" data-title="Reba Mcentire At Vince Gill Honored In Hollywood Country Love Songs Reba Mcentire Country Rock">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/4d/d5/644dd5c7da94aa818bf13e919fab489d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1VxDbvaXWw8NPRy_OQHMScdaZCfbxkCMRnQ';" alt="Reba Mcentire At Vince Gill Honored In Hollywood Country Love Songs Reba Mcentire Country Rock">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Reba Mcentire At Vince Gill Honored In Hollywood Country Love Songs Reba Mcentire Country Rock</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c9/76/5f/c9765fb491efd1c4a9a31a508f5eeefe.jpg" data-lightbox="roadtrip" data-title="Pin On Reba And Her Friends">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c9/76/5f/c9765fb491efd1c4a9a31a508f5eeefe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREXIUu_MB5tFP3RqAmLPTtkJG7m965gY7U4w';" alt="Pin On Reba And Her Friends">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Reba And Her Friends</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/caring-jobs-uk.html">Caring Jobs Uk</a></li>
+													<li class="list-group-item"><a href="/catering-harian-malang.html">Catering Harian Malang</a></li>
+													<li class="list-group-item"><a href="/celana-warna-army-cocok-dengan-warna-apa.html">Celana Warna Army Cocok Dengan Warna Apa</a></li>
+													<li class="list-group-item"><a href="/cbgb-television.html">Cbgb Television</a></li>
+													<li class="list-group-item"><a href="/cefuroxim.html">Cefuroxim</a></li>
+													<li class="list-group-item"><a href="/catering-diet.html">Catering Diet</a></li>
+													<li class="list-group-item"><a href="/cerfs-longueuil.html">Cerfs Longueuil</a></li>
+													<li class="list-group-item"><a href="/caring-gombak.html">Caring Gombak</a></li>
+													<li class="list-group-item"><a href="/cerdo-y-dragon-son-compatibles.html">Cerdo Y Dragon Son Compatibles</a></li>
+													<li class="list-group-item"><a href="/cargo-pants-army-jogger.html">Cargo Pants Army Jogger</a></li>
+													<li class="list-group-item"><a href="/cargo-pants-army-pants.html">Cargo Pants Army Pants</a></li>
+													<li class="list-group-item"><a href="/cefadroxil.html">Cefadroxil</a></li>
+													<li class="list-group-item"><a href="/caring-behavior-adalah.html">Caring Behavior Adalah</a></li>
+													<li class="list-group-item"><a href="/caring-fair-white-moisturizer.html">Caring Fair White Moisturizer</a></li>
+													<li class="list-group-item"><a href="/cendekiawan-islam-dibidang-ilmu-tafsir-adalah.html">Cendekiawan Islam Dibidang Ilmu Tafsir Adalah</a></li>
+													<li class="list-group-item"><a href="/catering-harian.html">Catering Harian</a></li>
+													<li class="list-group-item"><a href="/cerdo-y-puerco-es-lo-mismo.html">Cerdo Y Puerco Es Lo Mismo</a></li>
+													<li class="list-group-item"><a href="/cargo.html">Cargo</a></li>
+													<li class="list-group-item"><a href="/cefacef.html">Cefacef</a></li>
+													<li class="list-group-item"><a href="/cbis.html">Cbis</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

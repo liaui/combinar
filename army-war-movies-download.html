@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army War Movies Download - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army War Movies Download",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/81/0a/ce/810ace5b49d4b2e24ef2881b4feaf668.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+war+movies+download",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army War Movies Download</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The war movies on this list are ranked according to their success awards nominations their popularity and their cinematic greatness from a directingwriting perspective. They are based on the true greatness andor success of the person place or thing. Top war movies to watch on Netflix Hulu Amazon Prime Disney other Streaming services out on DVDBlu-ray or in cinemas right now. <br>				
+			</p>
+										<a class="badge badge-danger" href="/lgbt.html">lgbt</a>
+											<a class="badge badge-warning" href="/kontinental-army-artinya.html">kontinental army artinya</a>
+											<a class="badge badge-primary" href="/karang-taruna-desa-x-mengadakan.html">karang taruna desa x mengadakan</a>
+											<a class="badge badge-danger" href="/kombinasi-warna-hijau-army.html">kombinasi warna hijau army</a>
+											<a class="badge badge-secondary" href="/korean-army-rank-in-world.html">korean army rank in world</a>
+											<a class="badge badge-danger" href="/karang-xenia.html">karang xenia</a>
+											<a class="badge badge-warning" href="/klm-gb-website.html">klm gb website</a>
+											<a class="badge badge-info" href="/la-guardia-airport.html">la guardia airport</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you've come to visit the ideal blog.  Our site gives you hints for viewing the maximum quality video and picture content, hunt and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie that you view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e7/52/e8/e752e8ced6b470c5a948ceb15c31abf9.jpg" data-lightbox="roadtrip" data-title="Hd Movie Free Download Brothers Of War Full Hd Movie Free Free Movies Online Streaming Movies Free Free Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e7/52/e8/e752e8ced6b470c5a948ceb15c31abf9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjRdRyLT1Ddvlz-FHuQvYEGMSYr8LlwXtlGw';" alt="Hd Movie Free Download Brothers Of War Full Hd Movie Free Free Movies Online Streaming Movies Free Free Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hd Movie Free Download Brothers Of War Full Hd Movie Free Free Movies Online Streaming Movies Free Free Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/c7/ea/a0c7eabac7b314701125acc28cc8b820.jpg" data-lightbox="roadtrip" data-title="A Sniper S War Download Or Stream Available English Movies Sniper Film">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/c7/ea/a0c7eabac7b314701125acc28cc8b820.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjgY59avyAcdDD9-QpN2dWXD7HkI6FiZSQxQ';" alt="A Sniper S War Download Or Stream Available English Movies Sniper Film">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Sniper S War Download Or Stream Available English Movies Sniper Film</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/7f/0e/497f0e23214c57908206aab1e0d4b91b.jpg" data-lightbox="roadtrip" data-title="Uri Movie First Look Poster Social News Xyz Full Movies Online Free Download Movies Full Movies Download">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/7f/0e/497f0e23214c57908206aab1e0d4b91b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_INmpasgd1Yzjde9he-nxRNW3CKWViw8wUw';" alt="Uri Movie First Look Poster Social News Xyz Full Movies Online Free Download Movies Full Movies Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uri Movie First Look Poster Social News Xyz Full Movies Online Free Download Movies Full Movies Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/77/fd/53/77fd538d4e709450094a4d07d1409298.jpg" data-lightbox="roadtrip" data-title="Pin On Spell Film Complet En Streaming Vf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/77/fd/53/77fd538d4e709450094a4d07d1409298.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2fM6FF4xbSZgj6zhoUezCqnlYLcd131uXEg';" alt="Pin On Spell Film Complet En Streaming Vf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Spell Film Complet En Streaming Vf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f5/96/84/f596845fc7c25c1d4e15298140befad6.png" data-lightbox="roadtrip" data-title="Filling You With Pride Uri Is A Must Watch For Every Indian Drama Action Uri Film Moviereview Download Movies Full Movies Download Hd Movies Download">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f5/96/84/f596845fc7c25c1d4e15298140befad6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8tUKHV5m5e_19ohjXYbKovAgXHDDAjHXFhw';" alt="Filling You With Pride Uri Is A Must Watch For Every Indian Drama Action Uri Film Moviereview Download Movies Full Movies Download Hd Movies Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Filling You With Pride Uri Is A Must Watch For Every Indian Drama Action Uri Film Moviereview Download Movies Full Movies Download Hd Movies Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/f6/9c/bc/f69cbc3899cf51a9d5d8dabf71747ef6.jpg" data-lightbox="roadtrip" data-title="Battalion 609 2019 1 4gb 720p Hdtv Hindi Movie Full Movies Download Movies To Watch Free Indian Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/f6/9c/bc/f69cbc3899cf51a9d5d8dabf71747ef6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG9j6yvmffVqlZionTjIREKNrYfpdR_6xR8w';" alt="Battalion 609 2019 1 4gb 720p Hdtv Hindi Movie Full Movies Download Movies To Watch Free Indian Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Battalion 609 2019 1 4gb 720p Hdtv Hindi Movie Full Movies Download Movies To Watch Free Indian Movies</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/736x/bf/d7/63/bfd76325e28b2faa1cf624b96927afa5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG9j6yvmffVqlZionTjIREKNrYfpdR_6xR8w';" alt="Battalion 609 2019 1 4gb 720p Hdtv Hindi Movie Full Movies Download Movies To Watch Free Indian Movies">
+										<div class="card-body">
+						<h3 class="h5"><b>Prime Video 18 IMDb TV 4 Prime Video Rent or Buy 40 War 65 Drama 57 Action 40 History 23 Thriller 18 Biography.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army war movies download</strong>. 
+								
+																	Patton is a war movie make no mistake but it uses the war movie blueprint for housing a character study of its protagonist. 
+																	The 45 best war army navy marines airforce Military movies of all time by ruffcoaley created - 28 May 2015 updated - 28 May 2015 Public Refine See titles to watch instantly titles you havent rated etc. 
+																	Join us in examining some of the real life heroes of historys greatest conflicts. 
+																	The results almost half a century later remain completely singular. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	War Movies 2013 - 2020 by nenfitis created - 29 Jun 2014 updated - 2 weeks ago Public Refine See titles to watch instantly titles you havent rated etc. 
+																	The videos in my playlists are uploaded by many wonderful people who take a lot of time and effort to make these videos available for us to enjoy. 
+																	Military war Movies Action packed scenees 2019 Latest Movie 2019. 
+																	The Wipers Times 2013 1 hr 35 min. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Tubi offers streaming war movies movies and tv you will love. 
+																	My lists are not based on my own personal favorites. 
+																	To me accuracy when making a Top 10Top 100 all time list is extremely important. 
+																	Its less an outright war movie than a war-adjacent movie but few films have documented the atrocities of the Holocaust with such resonance detail and purpose as Spielbergs. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Watch free war movies movies and TV shows online in HD on any device. 
+																	Check out the list of all latest war movies released in 2021 along with trailers and reviews. 
+																	Hindustan ki Kasam is a Bollywood War Movie based on Operation Cactus Lilly of the 1971 Indo-Pak War Directed by Chetan Anand. 
+																	100 Best War movies by omidpacino created - 04 Jul 2012 updated - 12 Jun 2019 Public Refine See titles to watch instantly titles you havent rated etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Prime Video 11 IMDb TV 3 Prime Video Rent or Buy 96 War 99 Drama 95 History 41 Action 29 Adventure 23 Biography 21. 
+																	List of the latest war movies in 2021 and the best war movies of 2020 the 2010s. 
+																	Can you imagine a movie without great music performance. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sometimes its as. 
+																	WORLD WAR II CLASSIC ACTION WAR MOVIES by samnigam20 created - 14 Jul 2016 updated - 22 Jun 2017 Public Genre. 
+																	Classic War Movies free download - My Movies War Rock Client Media Player Classic Home Cinema and many more programs. 
+																	Best Action War Movies 2016 Full Length Movies English Top Adventure Movieoi. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The film was average at the box office but after a few years of the release the film got the cult status and included in one of the Best Indian War Movies. 
+																	New War Movies with best quality at. 
+																	Also find details of theaters in which latest war movies are playing along with. 
+																	War WWII Wartime Action drama adventure and documentary movies films Refine See titles to watch instantly titles you havent rated etc. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	And because beauty is in the eye of the beholder its not any top 20 the order is completely random though every soundtrack in this article is worthy of hearing again. 
+																	U-235 2020 1 hr 42 min. 
+																	Perhaps it will bring back memories about some movies that you really liked and want to watch again. 
+																	20 amazing soundtracks from war movies. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Prime Video 34 IMDb TV 4 Prime. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bf/d7/63/bfd76325e28b2faa1cf624b96927afa5.jpg" data-lightbox="roadtrip" data-title="Paltan Film Complet En Francais En Ligne Stream Complet Paltan Hd Online Movie Free Download Free English Paltan Movie Films Complets Film Regarder Le Film">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bf/d7/63/bfd76325e28b2faa1cf624b96927afa5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Vu9HNaZXQsTvAFhqcwWPNM2VXAo5nH3l0Q';" alt="Paltan Film Complet En Francais En Ligne Stream Complet Paltan Hd Online Movie Free Download Free English Paltan Movie Films Complets Film Regarder Le Film">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paltan Film Complet En Francais En Ligne Stream Complet Paltan Hd Online Movie Free Download Free English Paltan Movie Films Complets Film Regarder Le Film</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/81/0a/ce/810ace5b49d4b2e24ef2881b4feaf668.jpg" data-lightbox="roadtrip" data-title="The Great War Movie Poster Https Teaser Trailer Com Movie The Great War Thegreatwar Thegreatwarmovie Ronperlman B War Film Ron Perlman Action Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/81/0a/ce/810ace5b49d4b2e24ef2881b4feaf668.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT47KmUy0HY94VcgKHq6sj8qxibn7gamOBe2Q';" alt="The Great War Movie Poster Https Teaser Trailer Com Movie The Great War Thegreatwar Thegreatwarmovie Ronperlman B War Film Ron Perlman Action Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Great War Movie Poster Https Teaser Trailer Com Movie The Great War Thegreatwar Thegreatwarmovie Ronperlman B War Film Ron Perlman Action Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/99/f9/1999f96b237fbaf8fc40477b590821fe.jpg" data-lightbox="roadtrip" data-title="Paskal 2018 In 2020 Movies Online Free Movies Online Download Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/99/f9/1999f96b237fbaf8fc40477b590821fe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9-nHcitsaWCvE32Oso7PghdBD3AbA-7cvTw';" alt="Paskal 2018 In 2020 Movies Online Free Movies Online Download Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Paskal 2018 In 2020 Movies Online Free Movies Online Download Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/12/26/76/122676b35b4ba9da7bce217e465d727a.jpg" data-lightbox="roadtrip" data-title="War War 2019 War Movie War Movie Poster War Movir Hd Poster War Full Movie 480p War Full Movie 720p New War Movies 2019 Download Movies War Movies Movies 2019">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/12/26/76/122676b35b4ba9da7bce217e465d727a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4dmyCMa1PCHAnGolWawvKz7rvWtMLkAw-gQ';" alt="War War 2019 War Movie War Movie Poster War Movir Hd Poster War Full Movie 480p War Full Movie 720p New War Movies 2019 Download Movies War Movies Movies 2019">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">War War 2019 War Movie War Movie Poster War Movir Hd Poster War Full Movie 480p War Full Movie 720p New War Movies 2019 Download Movies War Movies Movies 2019</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/7e/19/267e193afa87e3a7af47ff5150805ad5.jpg" data-lightbox="roadtrip" data-title="Pin On Pollywood News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/7e/19/267e193afa87e3a7af47ff5150805ad5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL4jan_ylUgkk3Itqv4XqdwENFxqoFdJ9B9A';" alt="Pin On Pollywood News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pollywood News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/6f/40/75/6f40751caedeb5a9c361df777470fb06.jpg" data-lightbox="roadtrip" data-title="Bennett S War Poster Id 1644140 Free Movies Online Download Movies Free Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/6f/40/75/6f40751caedeb5a9c361df777470fb06.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYJyse5SdDh2WuYpVVa7oe6ChU66O2aKVVRg';" alt="Bennett S War Poster Id 1644140 Free Movies Online Download Movies Free Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bennett S War Poster Id 1644140 Free Movies Online Download Movies Free Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/c5/f9/73/c5f97341a8a7e0289fd8369908d847c5.jpg" data-lightbox="roadtrip" data-title="Parmanu 2018 Pre Dvdrip 350mb Full Hindi Movie Download 480p Bollywood Movies Online Watch Bollywood Movies Online Hd Movies Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/c5/f9/73/c5f97341a8a7e0289fd8369908d847c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk7-UcA0wUuW4MKVqNLKVHGVYIZ48myuGruA';" alt="Parmanu 2018 Pre Dvdrip 350mb Full Hindi Movie Download 480p Bollywood Movies Online Watch Bollywood Movies Online Hd Movies Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Parmanu 2018 Pre Dvdrip 350mb Full Hindi Movie Download 480p Bollywood Movies Online Watch Bollywood Movies Online Hd Movies Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/44/2e/be442ee032d2f46631310d9bab8b032d.jpg" data-lightbox="roadtrip" data-title="Kesari Akshay Kumar Akshay Kumar Download Movies Full Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/44/2e/be442ee032d2f46631310d9bab8b032d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9JK6kD1iB3vubZHNzLHxjzYqjunuxKsko-g';" alt="Kesari Akshay Kumar Akshay Kumar Download Movies Full Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kesari Akshay Kumar Akshay Kumar Download Movies Full Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/69/f1/2e/69f12e0448a3080c8f595e4a78f4e2d0.jpg" data-lightbox="roadtrip" data-title="War Movie Hindi Movies New Hindi Movie Full Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/69/f1/2e/69f12e0448a3080c8f595e4a78f4e2d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXbXterYUb6Jb_66y4FzVn1XERg3LdBSU6tQ';" alt="War Movie Hindi Movies New Hindi Movie Full Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">War Movie Hindi Movies New Hindi Movie Full Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/8f/ef/0e/8fef0e5f5248462a93a49ec97ab9c568.jpg" data-lightbox="roadtrip" data-title="Watch War 2019 Full Online Streaming Full Movies Online Free Hindi Movies Online Free Movies Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/8f/ef/0e/8fef0e5f5248462a93a49ec97ab9c568.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaLU_p4wG4z0Q2_GI0_0hRsvcMeHeJaJG4iQ';" alt="Watch War 2019 Full Online Streaming Full Movies Online Free Hindi Movies Online Free Movies Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Watch War 2019 Full Online Streaming Full Movies Online Free Hindi Movies Online Free Movies Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/41/17/ed41177427e651a78cf9854b8256d2fa.jpg" data-lightbox="roadtrip" data-title="Hyena Road 2015 Hyena War Movies Download Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/41/17/ed41177427e651a78cf9854b8256d2fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRTT4XkDLBvKaQa9nlyAZbKcldL7ZPT4Nmug';" alt="Hyena Road 2015 Hyena War Movies Download Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hyena Road 2015 Hyena War Movies Download Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/32/86/ad/3286ad8544bc1da908acf6a1c9667267.jpg" data-lightbox="roadtrip" data-title="Pin On Brwmovies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/32/86/ad/3286ad8544bc1da908acf6a1c9667267.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOlD9zxnIIsvNItQQLnR86UU4sOr9uXBIXFA';" alt="Pin On Brwmovies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Brwmovies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/cf/bf/38cfbf8e1f0b07c8c6a23e13cf71aaaf.jpg" data-lightbox="roadtrip" data-title="Kesari 2019 Movies Online Free Film Hd Movies Download Movie Showtimes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/cf/bf/38cfbf8e1f0b07c8c6a23e13cf71aaaf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4VKo4OqCSJXHOTedjPnAx5yKvxoOZNX32Aw';" alt="Kesari 2019 Movies Online Free Film Hd Movies Download Movie Showtimes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kesari 2019 Movies Online Free Film Hd Movies Download Movie Showtimes</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/national-guard-soldiers-ordered-home.html">National Guard Soldiers Ordered Home</a></li>
+													<li class="list-group-item"><a href="/national-guard-troops-to-teachers.html">National Guard Troops To Teachers</a></li>
+													<li class="list-group-item"><a href="/national-security-guard-indian-special-forces.html">National Security Guard Indian Special Forces</a></li>
+													<li class="list-group-item"><a href="/national-guards.html">National Guards</a></li>
+													<li class="list-group-item"><a href="/national-guard-troops-evicted-from-dc-hotels.html">National Guard Troops Evicted From Dc Hotels</a></li>
+													<li class="list-group-item"><a href="/national-guard-soldiers-relieved-of-duty.html">National Guard Soldiers Relieved Of Duty</a></li>
+													<li class="list-group-item"><a href="/national-guard-to-active-duty-warrant-officer.html">National Guard To Active Duty Warrant Officer</a></li>
+													<li class="list-group-item"><a href="/national-guard-special-forces-washington.html">National Guard Special Forces Washington</a></li>
+													<li class="list-group-item"><a href="/national-soldier-day.html">National Soldier Day</a></li>
+													<li class="list-group-item"><a href="/national-guard-to-active-duty-navy.html">National Guard To Active Duty Navy</a></li>
+													<li class="list-group-item"><a href="/national-guard-soldiers-sent-home.html">National Guard Soldiers Sent Home</a></li>
+													<li class="list-group-item"><a href="/national-guard-veterans-benefits.html">National Guard Veterans Benefits</a></li>
+													<li class="list-group-item"><a href="/national-guard-what-do-you-do.html">National Guard What Do You Do</a></li>
+													<li class="list-group-item"><a href="/national-security-guard-commando.html">National Security Guard Commando</a></li>
+													<li class="list-group-item"><a href="/national-guard-vs-air-force.html">National Guard Vs Air Force</a></li>
+													<li class="list-group-item"><a href="/national-guard-title-10.html">National Guard Title 10</a></li>
+													<li class="list-group-item"><a href="/national-guard-soldier-of-the-year-competition.html">National Guard Soldier Of The Year Competition</a></li>
+													<li class="list-group-item"><a href="/national-guard-yearly-salary.html">National Guard Yearly Salary</a></li>
+													<li class="list-group-item"><a href="/national-guard-to-florida.html">National Guard To Florida</a></li>
+													<li class="list-group-item"><a href="/national-guard-troops-riots.html">National Guard Troops Riots</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

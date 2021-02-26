@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Otis And The Elevators - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Otis And The Elevators",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/eb/23/55/eb2355c1fea2df37f623a1dd3aaba5ea.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=otis+and+the+elevators",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Otis And The Elevators</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Otis Gen2 lift at an apartment building by plush1. OTIS SkyRise lift ride by plush1. We are a 5 peice bandotis doncaster on harp and lead vocaldave brown bass and vocaljeremy brownpianocj chaplin drums and tom wrightgtr. <br>				
+			</p>
+										<a class="badge badge-danger" href="/in-the-united-states-coast-guard.html">in the united states coast guard</a>
+											<a class="badge badge-light" href="/indian-army-all-songs-mp3-download.html">indian army all songs mp3 download</a>
+											<a class="badge badge-light" href="/i-army-artinya.html">i army artinya</a>
+											<a class="badge badge-light" href="/hwarang-viu.html">hwarang viu</a>
+											<a class="badge badge-secondary" href="/indian-army-new-song-gane.html">indian army new song gane</a>
+											<a class="badge badge-success" href="/indian-army-jung-ke-maidan-mein-punjabi-song.html">indian army jung ke maidan mein punjabi song</a>
+											<a class="badge badge-primary" href="/how-to-resign-your-commission-army-national-guard.html">how to resign your commission army national guard</a>
+											<a class="badge badge-secondary" href="/indian-army-jung-ke-maidan-mein-song-lyrics.html">indian army jung ke maidan mein song lyrics</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the key word you have come to pay a visit to the right blog.  Our website provides you with hints for seeing the maximum quality video and image content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, therefore we recommend this movie that you see.  It is also possible to bring about supporting this site by sharing videos and images that you enjoy on this blog on your social networking accounts like Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information you get on this site.  This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/8f/00/d68f000c575eae68abf6d7de83a56489.jpg" data-lightbox="roadtrip" data-title="Otis Elevator Switch Elevation Otis Elevator Old Things">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/8f/00/d68f000c575eae68abf6d7de83a56489.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9VSsuc0WxzVOFESjCyEABfjpAqL8By27XEA';" alt="Otis Elevator Switch Elevation Otis Elevator Old Things">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otis Elevator Switch Elevation Otis Elevator Old Things</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/70/42/34704252ae972c6a74bde51aad3e7ba3.jpg" data-lightbox="roadtrip" data-title="Day 213 Otis Gate Our Otis Elevator Is Installed With Its Own Gate To Protect The Attendant And Guests Who Are Riding Glass Elevator Elevation Stair Posts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/70/42/34704252ae972c6a74bde51aad3e7ba3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2-vLZsZD2LKPyZweUJxRTL4vhRt6ekRGmCg';" alt="Day 213 Otis Gate Our Otis Elevator Is Installed With Its Own Gate To Protect The Attendant And Guests Who Are Riding Glass Elevator Elevation Stair Posts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Day 213 Otis Gate Our Otis Elevator Is Installed With Its Own Gate To Protect The Attendant And Guests Who Are Riding Glass Elevator Elevation Stair Posts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3c/b4/3e/3cb43e41adbe3ba8ef2af2f0ecb0c17d.jpg" data-lightbox="roadtrip" data-title="Antique Otis Birdcage Elevator With Original Hardware Finials And Scissor Doors From A Unique Collection Of Antiq Elevator Design Antiques Vintage Bird Cage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3c/b4/3e/3cb43e41adbe3ba8ef2af2f0ecb0c17d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX3QxdCmoupQQTrzAgdS4G7QAHaXoYDpCzRQ';" alt="Antique Otis Birdcage Elevator With Original Hardware Finials And Scissor Doors From A Unique Collection Of Antiq Elevator Design Antiques Vintage Bird Cage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Antique Otis Birdcage Elevator With Original Hardware Finials And Scissor Doors From A Unique Collection Of Antiq Elevator Design Antiques Vintage Bird Cage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/c5/a9/91c5a95a8f81d03ff77625e32ae872d5.jpg" data-lightbox="roadtrip" data-title="Otis Elevator Company Wikipedia The Free Encyclopedia Elevator Design Otis Elevator Spanish Style Home">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/c5/a9/91c5a95a8f81d03ff77625e32ae872d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Jmg2O9-KrOk_NLqM1B6LgNV_DBdfy4VNug';" alt="Otis Elevator Company Wikipedia The Free Encyclopedia Elevator Design Otis Elevator Spanish Style Home">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otis Elevator Company Wikipedia The Free Encyclopedia Elevator Design Otis Elevator Spanish Style Home</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/3d/63/3d3d63a06fd285fe2671839de6e06d9b.jpg" data-lightbox="roadtrip" data-title="Otis Elevator Brand Elevator Otis Elevator Mitsubishi Elevaotr">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/3d/63/3d3d63a06fd285fe2671839de6e06d9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqBycF7Ak1UzZpKX_Nx_RjeUGFiBVNoADx9Q';" alt="Otis Elevator Brand Elevator Otis Elevator Mitsubishi Elevaotr">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otis Elevator Brand Elevator Otis Elevator Mitsubishi Elevaotr</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/67/a1/9867a1e8613242f83e880bae93af79ca.jpg" data-lightbox="roadtrip" data-title="Gearless Elevator Machine Roomless Otis Elevator Usa Gen2productpage Glass Elevator Company Profile Template Otis Elevator">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/67/a1/9867a1e8613242f83e880bae93af79ca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eB0_LnXUcu2a-rlmKacbv-RWGXDskRJJyw';" alt="Gearless Elevator Machine Roomless Otis Elevator Usa Gen2productpage Glass Elevator Company Profile Template Otis Elevator">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gearless Elevator Machine Roomless Otis Elevator Usa Gen2productpage Glass Elevator Company Profile Template Otis Elevator</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/3c/b4/3e/3cb43e41adbe3ba8ef2af2f0ecb0c17d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5eB0_LnXUcu2a-rlmKacbv-RWGXDskRJJyw';" alt="Gearless Elevator Machine Roomless Otis Elevator Usa Gen2productpage Glass Elevator Company Profile Template Otis Elevator">
+										<div class="card-body">
+						<h3 class="h5"><b>Otis is doing that by providing field professionals with iPhones to increase efficiency placing sensors on elevators that can collect data to offer real time updates on the elevators performance and providing customersmanagers access to transparent and real-time data on their elevators performance.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Otis and the elevators</strong>. 
+								
+																	Courtesy of Otis FARMINGTON CT Elevator rides with the proper. 
+																	A study conducted by Purdue University and commissioned by Otis Worldwide the worlds largest elevator and escalator manufacturer found that short elevator rides have less risk for coronavirus. 
+																	Otis and The Elevators. 
+																	We are a world class leader in elevators escalators moving walkways. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Glass OTIS Series 1 at the Skyscrapersim Building remix by plush1. 
+																	Otis offers the best solutions to manage vertical transportation in elevators in high rise buildings. 
+																	Otis Elevator Company is the worlds largest manufacturer of vertical transportation solutions especially elevators which Otis invented in most recently known form and escalators. 
+																	Otis Elevator Company 11760 US Hwy 1 Suite W600 Palm Beach Gardens FL 33408 USA. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	West BayTown Mall Part 10300 - OTIS GeN2 at an electrical shop by plush1. 
+																	1204 likes 1 talking about this. 
+																	Otis Elevator Company 11760 US Hwy 1 Suite W600 Palm Beach Gardens FL 33408 USA. 
+																	High rise buildings are classified as buildings with more than 12 floors and can require custom designs for managing car arrangements with single double and super double deck solutions as well as lobby arrangements. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Built on a legacy of innovation. 
+																	Supports Critical Infrastructure Segment as Canada Expands Public Transportation TORONTO Feb. 
+																	10 2021 PRNewswire -- Otis has been selected to supply hundreds of elevators and. 
+																	Where appropriate Otis will offer to install a free space guard to mitigate the excessive space hazard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	OTIS Elevonic 401 Series 1 Hi-rise elevators at the Balear Hotel by plush1. 
+																	Otis USA Canada. 
+																	Otis and the Elevators Regarded as probably the most influential retro soulRB revue on the live circuit during the last three decades the band continue to excite audiences with their high octane delivery of classic SoulRB favourites arranged in their own unique signature style. 
+																	Otis USA Canada. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Otis Worldwide Corporation branded as the Otis Elevator Company its former legal name is an American company that develops manufactures and markets elevators escalators moving walkways and related equipment. 
+																	Otis and The Elevators. 
+																	New elevators modernization tools world class service packages for your business. 
+																	His invention would give rise to the modern city and forever change how we live. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Elisha Graves Otis August 3 1811 April 8 1861 was an American industrialist founder of the Otis Elevator Company and inventor of a safety device that prevents elevators from falling if the hoisting cable fails. 
+																	Based in Farmington Connecticut US Otis is the worlds largest manufacturer of vertical transportation systems principally focusing on elevators moving walkways and escalators. 
+																	A Otis-commissioned study places riding an elevator with all passengers wearing masks in a low exposure risk category. 
+																	Otis will schedule a free inspection upon proper authentication showing that the private residence elevator is an Otis elevator installed before 2012 or a CemcoLift unit installed between 1999 and 2012. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	We are a 5 peice bandotis doncaster on harp and lead vocaldave brown bass and vocaljeremy. 
+																	In Toronto Otis is providing 111 of its heavy-duty commercial-grade NPE. 
+																	The company was founded in 1854 in Yonkers New York USA by Elisha Otis who invented the safety mechanism of the elevator should the hoisting rope break. 
+																	Otis was founded in 1853 after Elisha Otis invented the elevator safety brake giving rise to the modern city transforming how people live and work and revolutionizing architecture. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Otis now 167 years old is the top elevator company in the world with the largest service portfolio of about 21 million units including escalators or more than 10 of the global installed base. 
+																	Otis has been selected to supply hundreds of elevators and escalators for six projects in Toronto Montreal and Ottawa. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ee/c7/d1/eec7d19314cac9cb7e4cf1fc5e58e100.jpg" data-lightbox="roadtrip" data-title="Vintage Otis Lift Lithograph Elevator Design Otis Lift Urban Planning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ee/c7/d1/eec7d19314cac9cb7e4cf1fc5e58e100.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTObPYLa5Qjj6DlbcwFq8fmbDyu2JoA6Gqs3g';" alt="Vintage Otis Lift Lithograph Elevator Design Otis Lift Urban Planning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Vintage Otis Lift Lithograph Elevator Design Otis Lift Urban Planning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/32/4d/25324d894952fd49b8e2b6bc7825df09.jpg" data-lightbox="roadtrip" data-title="Otis Elevator Buttons Elevator Design Elevation Elevator Buttons">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/32/4d/25324d894952fd49b8e2b6bc7825df09.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTdyvug5Hpg8JeBI007dhoVcAGAorRRBcPpw';" alt="Otis Elevator Buttons Elevator Design Elevation Elevator Buttons">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otis Elevator Buttons Elevator Design Elevation Elevator Buttons</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a5/11/0c/a5110c6bc6d2d4571533cd3e9b768192.jpg" data-lightbox="roadtrip" data-title="Otis Gen2 Elevators Elevator Design Otis Elevator Company Otis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a5/11/0c/a5110c6bc6d2d4571533cd3e9b768192.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ZAZ_VohrIf5AUC60UIaaeqyWflYw6qDQow';" alt="Otis Gen2 Elevators Elevator Design Otis Elevator Company Otis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otis Gen2 Elevators Elevator Design Otis Elevator Company Otis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/b7/ac/f1b7ac75b4ef7609622e87e3c8fb65d0.jpg" data-lightbox="roadtrip" data-title="Otis Elevators 1952 Vintage Ads Otis Elevator Elevator Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/b7/ac/f1b7ac75b4ef7609622e87e3c8fb65d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoTZW3PuyXY_GrLP_hF2sPSslnCc9aLbSNpg';" alt="Otis Elevators 1952 Vintage Ads Otis Elevator Elevator Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otis Elevators 1952 Vintage Ads Otis Elevator Elevator Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/23/55/eb2355c1fea2df37f623a1dd3aaba5ea.jpg" data-lightbox="roadtrip" data-title="1894 Otis Elevator Controller Otis Elevator Otis Elevation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/23/55/eb2355c1fea2df37f623a1dd3aaba5ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR46WZ5oUfBGT7dm-C8M5um8SWAO6fQxEwkDw';" alt="1894 Otis Elevator Controller Otis Elevator Otis Elevation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1894 Otis Elevator Controller Otis Elevator Otis Elevation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/11/cc/a811cce45ea224227d29b0ac560bb270.jpg" data-lightbox="roadtrip" data-title="Otis Lift 1892 Strand Arcade Sydney Otis Lift Arcade Elevator Door">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/11/cc/a811cce45ea224227d29b0ac560bb270.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2YVyt7_-ZPLwVmwFlCstVC6P043onvkH9CQ';" alt="Otis Lift 1892 Strand Arcade Sydney Otis Lift Arcade Elevator Door">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otis Lift 1892 Strand Arcade Sydney Otis Lift Arcade Elevator Door</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/38/41/a4/3841a45a57da1fcd8b9fafb4ba7f0a5a.jpg" data-lightbox="roadtrip" data-title="Elevatorbob S Elevator Pictures Car Operating Panels Page 4 Otis Elevator Elevation Otis Elevator Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/38/41/a4/3841a45a57da1fcd8b9fafb4ba7f0a5a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-EQTNbHpVSHQhfRPF1oAcnmTBVNbfl2rOUw';" alt="Elevatorbob S Elevator Pictures Car Operating Panels Page 4 Otis Elevator Elevation Otis Elevator Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elevatorbob S Elevator Pictures Car Operating Panels Page 4 Otis Elevator Elevation Otis Elevator Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d6/09/26/d60926e6f7c4b0d8c0efd5f701898552.jpg" data-lightbox="roadtrip" data-title="Day 222 Inside Otis Check Out The View Of Our 1906 Otis Elevator From The Inside Elevation Photo Projects Framed Bathroom Mirror">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d6/09/26/d60926e6f7c4b0d8c0efd5f701898552.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSObMI1p_AFSDRq5s7X4hMEm2JNi4wnjFTK9w';" alt="Day 222 Inside Otis Check Out The View Of Our 1906 Otis Elevator From The Inside Elevation Photo Projects Framed Bathroom Mirror">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Day 222 Inside Otis Check Out The View Of Our 1906 Otis Elevator From The Inside Elevation Photo Projects Framed Bathroom Mirror</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/5d/c3/42/5dc342fead9f1bd52cfbc5bc53a1d7a5.jpg" data-lightbox="roadtrip" data-title="Otis Elevator Company Cutaway Drawing From The 1950s Elevator Design Otis Elevator Company Lift Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/5d/c3/42/5dc342fead9f1bd52cfbc5bc53a1d7a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThy3FYhakrpAnSRxWXJZt5P_aB9xnSs4Z2DQ';" alt="Otis Elevator Company Cutaway Drawing From The 1950s Elevator Design Otis Elevator Company Lift Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otis Elevator Company Cutaway Drawing From The 1950s Elevator Design Otis Elevator Company Lift Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/4b/20/41/4b2041193e9d262dd3f0c0cb1086a6cb.jpg" data-lightbox="roadtrip" data-title="Image Result For Otis Elevator Logo Otis Otis Elevator Logos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/4b/20/41/4b2041193e9d262dd3f0c0cb1086a6cb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-5sU_WdE0hOIL4z-wvy4Xu9Rc-7onIhKFXQ';" alt="Image Result For Otis Elevator Logo Otis Otis Elevator Logos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Image Result For Otis Elevator Logo Otis Otis Elevator Logos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/10/38/d8103843d826a74e1e008a6b9216c83b.jpg" data-lightbox="roadtrip" data-title="Otis Launches Sustainable Residential Elevator House Elevation Elevator Design House Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/10/38/d8103843d826a74e1e008a6b9216c83b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRK7j3G_oxCUSHVRcCaYE3EfxbcbKCwOsZNA';" alt="Otis Launches Sustainable Residential Elevator House Elevation Elevator Design House Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otis Launches Sustainable Residential Elevator House Elevation Elevator Design House Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/ad/08/b8ad085ef558590e9e0e736ca91fc278.jpg" data-lightbox="roadtrip" data-title="Otis Elevator Company Wikipedia Escalator Otis Elevator Company Installation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/ad/08/b8ad085ef558590e9e0e736ca91fc278.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuwwJB4n-04hL7G2RqnpFyJkUj7fWMvOCJUw';" alt="Otis Elevator Company Wikipedia Escalator Otis Elevator Company Installation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otis Elevator Company Wikipedia Escalator Otis Elevator Company Installation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/60/38/7c/60387c9bedc52ff7582f765b3af05bf9.jpg" data-lightbox="roadtrip" data-title="Elevators Machine Roomless Gearless Otis Elevator Usa Otis Elevator Elevator Interior Otis Elevator Company">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/60/38/7c/60387c9bedc52ff7582f765b3af05bf9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrgg_cE9E-nQIWP0vqXFTj8eWf7GMPpGXPPA';" alt="Elevators Machine Roomless Gearless Otis Elevator Usa Otis Elevator Elevator Interior Otis Elevator Company">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elevators Machine Roomless Gearless Otis Elevator Usa Otis Elevator Elevator Interior Otis Elevator Company</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/argus-new-skin.html">Argus New Skin</a></li>
+													<li class="list-group-item"><a href="/argus-revamp-kapan.html">Argus Revamp Kapan</a></li>
+													<li class="list-group-item"><a href="/argus-ii-cost.html">Argus Ii Cost</a></li>
+													<li class="list-group-item"><a href="/argus-rafaela.html">Argus Rafaela</a></li>
+													<li class="list-group-item"><a href="/are-national-guard-active-duty.html">Are National Guard Active Duty</a></li>
+													<li class="list-group-item"><a href="/argus-rda.html">Argus Rda</a></li>
+													<li class="list-group-item"><a href="/argus-road-closures.html">Argus Road Closures</a></li>
+													<li class="list-group-item"><a href="/argus-ii-implant.html">Argus Ii Implant</a></li>
+													<li class="list-group-item"><a href="/area-v-sakit.html">Area V Sakit</a></li>
+													<li class="list-group-item"><a href="/argus-by-voopoo.html">Argus By Voopoo</a></li>
+													<li class="list-group-item"><a href="/argus-ml-revamp.html">Argus Ml Revamp</a></li>
+													<li class="list-group-item"><a href="/argus-ii-in-india.html">Argus Ii In India</a></li>
+													<li class="list-group-item"><a href="/are-national-guard-members-eligible-for-tricare.html">Are National Guard Members Eligible For Tricare</a></li>
+													<li class="list-group-item"><a href="/argus-questline.html">Argus Questline</a></li>
+													<li class="list-group-item"><a href="/argus-batubara.html">Argus Batubara</a></li>
+													<li class="list-group-item"><a href="/are-national-guard-considered-veterans.html">Are National Guard Considered Veterans</a></li>
+													<li class="list-group-item"><a href="/argus-hd.html">Argus Hd</a></li>
+													<li class="list-group-item"><a href="/argus-buff.html">Argus Buff</a></li>
+													<li class="list-group-item"><a href="/argus-engine.html">Argus Engine</a></li>
+													<li class="list-group-item"><a href="/argus-revamp-2021.html">Argus Revamp 2021</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

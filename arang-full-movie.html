@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Arang Full Movie - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Arang Full Movie",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/06/9e/38/069e383df7ff5c0d7654cfba54ccf82e.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=arang+full+movie",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Arang Full Movie</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Arang Full Movie Mizo Version. The Legend of Arang 400 years ago states that theres a village full of new magistrates that are killed mysteriously. Arang and the Magistrate Korean. <br>				
+			</p>
+										<a class="badge badge-light" href="/download-video-jangan-bertengkar-lagi.html">download video jangan bertengkar lagi</a>
+											<a class="badge badge-danger" href="/do-air-national-guard-officers-go-to-basic-training.html">do air national guard officers go to basic training</a>
+											<a class="badge badge-danger" href="/do-national-guard-mps-get-deployed.html">do national guard mps get deployed</a>
+											<a class="badge badge-warning" href="/do-all-national-guard-units-get-deployed.html">do all national guard units get deployed</a>
+											<a class="badge badge-secondary" href="/do-military-cargo-planes-have-bathrooms.html">do military cargo planes have bathrooms</a>
+											<a class="badge badge-danger" href="/etc-question-mark.html">etc question mark</a>
+											<a class="badge badge-light" href="/differences-between-regular-army-and-national-guard.html">differences between regular army and national guard</a>
+											<a class="badge badge-danger" href="/does-national-guard-count-as-military.html">does national guard count as military</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to visit the right blog.  Our site gives you suggestions for seeing the maximum quality video and image content, hunt and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/66/8e/68/668e68c608f8daa1d8d21ca76eb5333d.jpg" data-lightbox="roadtrip" data-title="Arang K Horror Japanese Horror Movies Korean Drama Online Korean Drama Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/66/8e/68/668e68c608f8daa1d8d21ca76eb5333d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_Yrs9xQWX1eBpSyrLHkOSHR0b_uhA1qBnQ';" alt="Arang K Horror Japanese Horror Movies Korean Drama Online Korean Drama Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arang K Horror Japanese Horror Movies Korean Drama Online Korean Drama Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/56/84/be56846d318257f7626ee9d9c339ab83.png" data-lightbox="roadtrip" data-title="Arang And The Magistrate 2012 Historical Korean Drama Arang And The Magistrate Korean Drama List">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/56/84/be56846d318257f7626ee9d9c339ab83.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY79ww8rS0UGrIu1xgplKXybn9QorPmjys2g';" alt="Arang And The Magistrate 2012 Historical Korean Drama Arang And The Magistrate Korean Drama List">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arang And The Magistrate 2012 Historical Korean Drama Arang And The Magistrate Korean Drama List</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/9e/38/069e383df7ff5c0d7654cfba54ccf82e.jpg" data-lightbox="roadtrip" data-title="Yesasia Movies On Twitter Full Films Full Movies Free Free Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/9e/38/069e383df7ff5c0d7654cfba54ccf82e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTutxrOoZqCRlvoCTrrLZ1zVjWLO-HDCmyQiw';" alt="Yesasia Movies On Twitter Full Films Full Movies Free Free Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yesasia Movies On Twitter Full Films Full Movies Free Free Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1d/3e/0e/1d3e0e0da7d6bfc6b4e1a194b27a9529.jpg" data-lightbox="roadtrip" data-title="Arang And The Magistrate Arang And The Magistrate Korean Drama Movies Korean Drama">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1d/3e/0e/1d3e0e0da7d6bfc6b4e1a194b27a9529.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFE8sQ2x53XwekZU_cajBHEH9z_EYexs7S5A';" alt="Arang And The Magistrate Arang And The Magistrate Korean Drama Movies Korean Drama">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arang And The Magistrate Arang And The Magistrate Korean Drama Movies Korean Drama</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/4c/a8/834ca8916b4b5edcff1889bc81d2a33b.jpg" data-lightbox="roadtrip" data-title="The Perfect Villain Not Sure About The Clothes P Arang And The Magistrate Korean Drama Korean Hanbok">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/4c/a8/834ca8916b4b5edcff1889bc81d2a33b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDt8zNGrpsDjBll0J-QJBngIrhHL4B2Op6Lg';" alt="The Perfect Villain Not Sure About The Clothes P Arang And The Magistrate Korean Drama Korean Hanbok">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Perfect Villain Not Sure About The Clothes P Arang And The Magistrate Korean Drama Korean Hanbok</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/9d/3a/26/9d3a26ee8a0b3b42568d2c5713edde0c.jpg" data-lightbox="roadtrip" data-title="Photos New Stills Added For The Korean Drama Flower Of Evil In 2020 Lee Joon Joon Gi Lee Joong Ki">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/9d/3a/26/9d3a26ee8a0b3b42568d2c5713edde0c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgC4GXmKaOmPnPpldpb00Ao97CsuSsH9wmg';" alt="Photos New Stills Added For The Korean Drama Flower Of Evil In 2020 Lee Joon Joon Gi Lee Joong Ki">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Photos New Stills Added For The Korean Drama Flower Of Evil In 2020 Lee Joon Joon Gi Lee Joong Ki</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/06/9e/38/069e383df7ff5c0d7654cfba54ccf82e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgC4GXmKaOmPnPpldpb00Ao97CsuSsH9wmg';" alt="Photos New Stills Added For The Korean Drama Flower Of Evil In 2020 Lee Joon Joon Gi Lee Joong Ki">
+										<div class="card-body">
+						<h3 class="h5"><b>Video credits - whackedoutmedia StarMAASet on the backdrop of Australia the film opens with an angry Ram Ram Charan who just broke up with his girlfri.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Arang full movie</strong>. 
+								
+																	Enjoy the videos and music you love upload original content and share it all with friends family and the world on YouTube. 
+																	Korean horror specifically has its hits and misses but very few movies really manage to go beyond the entertaining type of pop-corn horror. 
+																	Enjoy the videos and music you love upload original content and share it all with friends family and the world on YouTube. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Arang doesnt have a quick match with her husband Chan-jun. 
+																	She goes to the attic and finds her family there the same way she did in the beginning of the movie. 
+																	Watch Arang Full Movie IN HD Visit. 
+																	Watch Arang Full Movie IN HD Visit. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I live by satisfying my needs through masturbation. 
+																	SynopsisSet on the backdrop of Australia the film is about an angry young guy named Ram Ram Charan who just broke up with his girlfriend Genelia. 
+																	Inside she finds a scribbled inscription. 
+																	Also known as Tale of A-rang is a 2012 South Korean historical television drama starring Lee Joon-gi Shin Min-ah and Yeon Woo-jinThe period horror-romance is based on the folklore of Arang who died unjustly and returns as a ghost in order to reveal the circumstances surrounding her death. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They sing Happy Birthday to her and Kyeong-ran gives her the same album. 
+																	He found out that the spirit of Arang is full of hatred and revenge. 
+																	Directed by Sang-hoon Ahn. 
+																	That is why no new magistrate dares to go to the village to be appointed. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	However theres a new magistrate willing to go to the village. 
+																	SKIP AD AFTER 5 SECONDS THANK YOU Episode11 httpadflyLTOaF12 httpadflyLTOfe13 httpadflyLTOiK14 httpadflyLTOm2Episode21 httpa. 
+																	- httponline-moviezxyzmovie33794 A salt storehouse near the. 
+																	This is only the beginning before the ghostly hands of Kim Tae-yeon grasp her old friends face. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At the end of the film theres a myth said to relate to the movie. 
+																	Sinopsis Film Arang Film ini menceritakan tentang seorang detektif polisi So Young Song Yoon Ah yang baru saja kembali bertugas setelah beberapa waktu menjalani suspensi. 
+																	A sexual assault that haunts her. 
+																	The detectives assigned the case are Min newly reinstated after a suspension and Lee a new transfer from forensics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A salt storehouse near the sea may be haunted. 
+																	With So-yeong Choo Lee Dong-Wook Lim Il-Gyu Won-joong Jung. 
+																	HanCinemas Film Review Arang 20140927 Asian horror is without a doubt one of the biggest genres known to international viewers. 
+																	- httpbestmoviezclubmovie33794 A salt storehouse near the sea. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Watch Just A Bite 2020 full movie with English Subtitles on 123Movies free online movie streaming website. 
+																	A penniless ex-con dies a gristly death in a house he can ill afford. 
+																	Meanwhile Chan Joon is tired of Arang. 
+																	Fear the Rush Online Full Movie vevohd Watch Hot Bath an a Stiff Drink Movie Stream movdivx Watch La pasi n turca Free Online. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Usai kembali So Young diminta menyelidiki kasus misterius bersama seorang detektif polisi pemula Hyun Ki Lee Dong Wook. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b6/4b/ff/b64bff811203c6c892ea2b21253e992b.jpg" data-lightbox="roadtrip" data-title="Arang And The Magistrate Dramafever Arang And The Magistrate Actors Korean Drama">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b6/4b/ff/b64bff811203c6c892ea2b21253e992b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3YD5EsWW4JJ-MY0TFJffAWALHZbVEPnYbjg';" alt="Arang And The Magistrate Dramafever Arang And The Magistrate Actors Korean Drama">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arang And The Magistrate Dramafever Arang And The Magistrate Actors Korean Drama</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/47/8a/bd/478abdfd3d7242e2e19e88daa07b1975.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/47/8a/bd/478abdfd3d7242e2e19e88daa07b1975.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnSe_qVdPSN7uXXpr2l7D29Qc9KoD-vmDZ3g';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/ee/6a/91ee6aa0793f6f3552244ef3c00a632b.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/ee/6a/91ee6aa0793f6f3552244ef3c00a632b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdRmwyIZRAXQQAwLq2Jy5iFEA5Qr37-IUXzA';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/6d/4a/ed6d4a7ed61311ef9a7d1a72e59b2341.jpg" data-lightbox="roadtrip" data-title="Pin By Vanessa Nunez On Movies Tv Shows I Love Lee Joon The Flowers Of Evil Lee Jun Ki">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/6d/4a/ed6d4a7ed61311ef9a7d1a72e59b2341.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAk7eyanh6DGHnj9DM67mti23aa1if0xbtA';" alt="Pin By Vanessa Nunez On Movies Tv Shows I Love Lee Joon The Flowers Of Evil Lee Jun Ki">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Vanessa Nunez On Movies Tv Shows I Love Lee Joon The Flowers Of Evil Lee Jun Ki</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2a/16/ee/2a16ee197305792d30c89a9d6ec44e52.jpg" data-lightbox="roadtrip" data-title="Lee Jun Ki On Army Acting And Arang Dramabeans Deconstructing Korean Dramas And Kpop Culture Lee Jun Ki Korean Actors Lee Joon">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2a/16/ee/2a16ee197305792d30c89a9d6ec44e52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvjNwVu20bu26o0JCQAZY9pjNvuCbz71z4Eg';" alt="Lee Jun Ki On Army Acting And Arang Dramabeans Deconstructing Korean Dramas And Kpop Culture Lee Jun Ki Korean Actors Lee Joon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lee Jun Ki On Army Acting And Arang Dramabeans Deconstructing Korean Dramas And Kpop Culture Lee Jun Ki Korean Actors Lee Joon</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/93/89/d1/9389d107f6ef1542150f0b54a7f1a53f.jpg" data-lightbox="roadtrip" data-title="2 Weeks Ost Mbc Tv Drama Oh My Goodness What A Good Drama One Of My Favorites Korean Tv Series Drama Tv Drama">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/93/89/d1/9389d107f6ef1542150f0b54a7f1a53f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT98keRtqQtIQkc7rYnm8Khc47H_TBdkiUWgQ';" alt="2 Weeks Ost Mbc Tv Drama Oh My Goodness What A Good Drama One Of My Favorites Korean Tv Series Drama Tv Drama">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2 Weeks Ost Mbc Tv Drama Oh My Goodness What A Good Drama One Of My Favorites Korean Tv Series Drama Tv Drama</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/56/4b/14564bc56a42260a891f4a519d26c219.jpg" data-lightbox="roadtrip" data-title="File Arang Film Poster Jpg Wikipedia The Free Encyclopedia Japanese Horror Movies Terror Movies Horror Movie Posters">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/56/4b/14564bc56a42260a891f4a519d26c219.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqk7swrwCxRVMNzwvbKg0wKwYwxSLghY-dcA';" alt="File Arang Film Poster Jpg Wikipedia The Free Encyclopedia Japanese Horror Movies Terror Movies Horror Movie Posters">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">File Arang Film Poster Jpg Wikipedia The Free Encyclopedia Japanese Horror Movies Terror Movies Horror Movie Posters</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/aa/c9/76aac92f0a2db1b08c4e31a173845cf7.jpg" data-lightbox="roadtrip" data-title="Arang And The Magistrate The Last Seconds Bts Bismillah Arang And The Magistrate Korean Drama Movies Lee Joong Ki">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/aa/c9/76aac92f0a2db1b08c4e31a173845cf7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtXG0gTAu4nkxxtrs9bnpx1HgW41T7VX53uw';" alt="Arang And The Magistrate The Last Seconds Bts Bismillah Arang And The Magistrate Korean Drama Movies Lee Joong Ki">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arang And The Magistrate The Last Seconds Bts Bismillah Arang And The Magistrate Korean Drama Movies Lee Joong Ki</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/1f/49/b91f493017edf98889f3ca12f207a9cc.jpg" data-lightbox="roadtrip" data-title="Arang And The Magistrate Korean Drama Quotes Drama Quotes Arang And The Magistrate">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/1f/49/b91f493017edf98889f3ca12f207a9cc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnw4rLsE1zi853EZbbXu_wYqRro3PrDmfabQ';" alt="Arang And The Magistrate Korean Drama Quotes Drama Quotes Arang And The Magistrate">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arang And The Magistrate Korean Drama Quotes Drama Quotes Arang And The Magistrate</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/ea/45/0bea4548cc4d964733bad07b040a777e.jpg" data-lightbox="roadtrip" data-title="When A Man Loves Yeon Woo Jin For Singles July 2013 Issue Yeon Woo Jin Korean Actors Actors">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/ea/45/0bea4548cc4d964733bad07b040a777e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJJ2bQZOTLKkFqIuBK6zLYsJhkU3vX7puM_Q';" alt="When A Man Loves Yeon Woo Jin For Singles July 2013 Issue Yeon Woo Jin Korean Actors Actors">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">When A Man Loves Yeon Woo Jin For Singles July 2013 Issue Yeon Woo Jin Korean Actors Actors</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/33/9b/e8339b950edc3ab47e14c66f1f5801da.jpg" data-lightbox="roadtrip" data-title="Pin On My Favorite Drama Movie Couples">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/33/9b/e8339b950edc3ab47e14c66f1f5801da.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0fQqRNUaC44DRqR_xK72AvVxUmcAQs3gwPQ';" alt="Pin On My Favorite Drama Movie Couples">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Favorite Drama Movie Couples</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/b7/b5/19b7b5b75436ffac32bb8c7734888399.jpg" data-lightbox="roadtrip" data-title="Lee Jun Ki Lee Jun Ki Lee Joong Ki Korean Celebrities">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/b7/b5/19b7b5b75436ffac32bb8c7734888399.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG2oG4ZwooOyeUirNVvq9wsiaDjhQK0fZa8A';" alt="Lee Jun Ki Lee Jun Ki Lee Joong Ki Korean Celebrities">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Lee Jun Ki Lee Jun Ki Lee Joong Ki Korean Celebrities</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/97/1f/77/971f771f5c3825d70d1a587b089f1620.jpg" data-lightbox="roadtrip" data-title="Arang And The Magistrate Arang And The Magistrate Lee Joong Ki Lee Jun Ki">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/97/1f/77/971f771f5c3825d70d1a587b089f1620.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9ziNRo8wNPK2blUtUQIzVr5AnTuOR5K0Tw';" alt="Arang And The Magistrate Arang And The Magistrate Lee Joong Ki Lee Jun Ki">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arang And The Magistrate Arang And The Magistrate Lee Joong Ki Lee Jun Ki</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/national-guard-active-duty-status.html">National Guard Active Duty Status</a></li>
+													<li class="list-group-item"><a href="/national-guard-bureau-chief-army-general-daniel-hokanson.html">National Guard Bureau Chief Army General Daniel Hokanson</a></li>
+													<li class="list-group-item"><a href="/national-guard-amerika.html">National Guard Amerika</a></li>
+													<li class="list-group-item"><a href="/national-guard-and-reserve-component-members-deduction.html">National Guard And Reserve Component Members Deduction</a></li>
+													<li class="list-group-item"><a href="/national-guard-09-sierra.html">National Guard 09 Sierra</a></li>
+													<li class="list-group-item"><a href="/national-army-usa.html">National Army Usa</a></li>
+													<li class="list-group-item"><a href="/national-guard-birthday-383.html">National Guard Birthday 383</a></li>
+													<li class="list-group-item"><a href="/national-coast-guard-act.html">National Coast Guard Act</a></li>
+													<li class="list-group-item"><a href="/national-guard-bureau-zoominfo.html">National Guard Bureau Zoominfo</a></li>
+													<li class="list-group-item"><a href="/national-guard-at-montana-state-prison.html">National Guard At Montana State Prison</a></li>
+													<li class="list-group-item"><a href="/nama-grup-army-yang-bagus.html">Nama Grup Army Yang Bagus</a></li>
+													<li class="list-group-item"><a href="/national-guard-best-warrior-competition-2019.html">National Guard Best Warrior Competition 2019</a></li>
+													<li class="list-group-item"><a href="/national-civil-war-soldier-museum.html">National Civil War Soldier Museum</a></li>
+													<li class="list-group-item"><a href="/national-guard-california-title-32.html">National Guard California Title 32</a></li>
+													<li class="list-group-item"><a href="/national-guard-association-of-tennessee.html">National Guard Association Of Tennessee</a></li>
+													<li class="list-group-item"><a href="/national-guard-89-days.html">National Guard 89 Days</a></li>
+													<li class="list-group-item"><a href="/national-guard-42a-reclass.html">National Guard 42a Reclass</a></li>
+													<li class="list-group-item"><a href="/national-guard-at-indiana-nursing-home.html">National Guard At Indiana Nursing Home</a></li>
+													<li class="list-group-item"><a href="/national-guard-band-pay.html">National Guard Band Pay</a></li>
+													<li class="list-group-item"><a href="/national-guard-birthday-images.html">National Guard Birthday Images</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

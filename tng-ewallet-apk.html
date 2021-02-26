@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Tng Ewallet Apk - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Tng Ewallet Apk",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/80/4f/93/804f9340a8b8ad91c918fea601af7668.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=tng+ewallet+apk",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Tng Ewallet Apk</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Pay for tolls meals movies shopping and much more with Touch n Go eWallet. Use your CIMB Bank Maybank HSBC RHB Bank Islam Bank Simpanan Nasional or any other FPX supported bank. Tng ewallet apk - Download APK Apps and Games for Android Devices. <br>				
+			</p>
+										<a class="badge badge-success" href="/warna-army-tan.html">warna army tan</a>
+											<a class="badge badge-primary" href="/warrant-officer-training-national-guard.html">warrant officer training national guard</a>
+											<a class="badge badge-dark" href="/what-are-army-cargo-pants.html">what are army cargo pants</a>
+											<a class="badge badge-success" href="/warna-hijau-army-di-corel.html">warna hijau army di corel</a>
+											<a class="badge badge-secondary" href="/warna-army-maroon.html">warna army maroon</a>
+											<a class="badge badge-secondary" href="/warna-cocok-army.html">warna cocok army</a>
+											<a class="badge badge-success" href="/warna-kombinasi-army.html">warna kombinasi army</a>
+											<a class="badge badge-info" href="/what-burial-benefits-do-veterans-get.html">what burial benefits do veterans get</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you've come to pay a visit to the right blog.  Our site gives you hints for seeing the maximum quality video and picture content, search and find more enlightening video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, so we recommend this movie that you see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/92/c3/1992c3400976e4d171870a62b6aa75a4.png" data-lightbox="roadtrip" data-title="Pin On Touch N Go Ewallet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/92/c3/1992c3400976e4d171870a62b6aa75a4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxsfUgUfC-6e0CZ4dbqKQC_5wib0-gdsWDdA';" alt="Pin On Touch N Go Ewallet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Touch N Go Ewallet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn6.aptoide.com/imgs/a/d/0/ad042242f42b27992668f087b702e79a_icon.png" data-lightbox="roadtrip" data-title="Touch N Go Ewallet 1 7 43 Download Android Apk Aptoide">
+											<img class="card-img v-image ads-img " src="https://cdn6.aptoide.com/imgs/a/d/0/ad042242f42b27992668f087b702e79a_icon.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVn4PlHeGZcfNEkC-knadlkSGMgKHVLevahA';" alt="Touch N Go Ewallet 1 7 43 Download Android Apk Aptoide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Touch N Go Ewallet 1 7 43 Download Android Apk Aptoide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://imag.malavida.com/mvimgbig/download-fs/touch-n-go-ewallet-25721-1.jpg" data-lightbox="roadtrip" data-title="Touch N Go Ewallet 1 7 28 Download For Android Free">
+											<img class="card-img v-image ads-img " src="https://imag.malavida.com/mvimgbig/download-fs/touch-n-go-ewallet-25721-1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGC0ZxAbxCl68eoa0MBP1fV4eFyfUk5ZRrhQ';" alt="Touch N Go Ewallet 1 7 28 Download For Android Free">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Touch N Go Ewallet 1 7 28 Download For Android Free</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/0e/d3/d0/0ed3d0fc6afb14204df1738adaf7db2d.jpg" data-lightbox="roadtrip" data-title="Toll Payments Made Easier With Tng Card Features In The Touch N Go Ewallet Now Currently Only Available At Duke Highway To Lear Make It Simple Cards Learning">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/0e/d3/d0/0ed3d0fc6afb14204df1738adaf7db2d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDXq40aeIcG0R43vmCSWKwbGE36dgzObFPg';" alt="Toll Payments Made Easier With Tng Card Features In The Touch N Go Ewallet Now Currently Only Available At Duke Highway To Lear Make It Simple Cards Learning">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Toll Payments Made Easier With Tng Card Features In The Touch N Go Ewallet Now Currently Only Available At Duke Highway To Lear Make It Simple Cards Learning</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lh3.googleusercontent.com/39j7ohGR1SBJwQTn0XG5oczuVH8sgrcK8qbOmKvVAyggLf_fpqv6y6oXbCfu6tHJ" data-lightbox="roadtrip" data-title="Touch N Go Ewallet Download Apk Free For Android Apktume Com">
+											<img class="card-img v-image ads-img " src="https://lh3.googleusercontent.com/39j7ohGR1SBJwQTn0XG5oczuVH8sgrcK8qbOmKvVAyggLf_fpqv6y6oXbCfu6tHJ" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRikJfgmlBP9c2Kj6Fndie9Zt2r9Gwa3riknw';" alt="Touch N Go Ewallet Download Apk Free For Android Apktume Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Touch N Go Ewallet Download Apk Free For Android Apktume Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.winudf.com/v2/image1/Y29tLm1vYmUuZXdhbGxldF9zY3JlZW5fMF8xNTY3MDA2NzE5XzAyMQ/screen-0.jpg?fakeurl=1&amp;type=.jpg" data-lightbox="roadtrip" data-title="E Wallet For Android Apk Download">
+											<img class="card-img v-image ads-img " src="https://image.winudf.com/v2/image1/Y29tLm1vYmUuZXdhbGxldF9zY3JlZW5fMF8xNTY3MDA2NzE5XzAyMQ/screen-0.jpg?fakeurl=1&amp;type=.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhg_AxJG2RJ68hKhDAhcCcion6jhF2ifgG5Q';" alt="E Wallet For Android Apk Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">E Wallet For Android Apk Download</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/41/73/f7/4173f7cb5dd48aa0494ec7a911d8abb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhg_AxJG2RJ68hKhDAhcCcion6jhF2ifgG5Q';" alt="E Wallet For Android Apk Download">
+										<div class="card-body">
+						<h3 class="h5"><b>Top-up at all 7-Eleven or Circle K Convenient Stores Coin Cart all JETCO ATM machines or using a credit card 3 or the online banking platform of Bank of China Hong Kong Limited Chiyu Banking Corporation Nanyang Commercial Bank.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Tng ewallet apk</strong>. 
+								
+																	The Next Generation e-Wallet. 
+																	This app only supports iOS version 90 and above. 
+																	Grab is offering RM50 in Grab vouchers in addition to the RM50 eWallet credit. 
+																	Download APK 16 MB Versions Using APKPure App to upgrade eWallet fast free and save your internet data. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Real-time Global Remittance Global Bill Payments and Global SIM Top-ups Transfer money to designated overseas bank account or 183000 cash pick-up outlets globally across 13 countries pay bill local and overseas top up prepaid SIM all at fingertips. 
+																	With the application Touch n Go eWallet you will be able to use your phone to pay in all kinds of stores. 
+																	Enjoy Android Apps For Free. 
+																	There are more than 120000 businesses signed up to this app which allow you to pay for their services using your phone and the number of participating businesses is on the rise. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cashless is so trending. 
+																	Touch n Go TNG has stated that it will allow TNG card users to conduct top-ups via the TNG eWallet some time this year. 
+																	Pay on your mobile. 
+																	Download Tng ewallet APK by Android Developer For Free Android. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Top up your mobile prepaid get food delivered for FREE and more with the Touch n Go eWallet. 
+																	You all should start going cashless with Touch n Go eWallet to turn your spending into earning with all the cashback and voucher promotions. 
+																	Touch n Go will let you reload TNG cards via eWallet by the end of 2021. 
+																	Touch n Gos subsidiary TNG Digital has been given the green light by the Securities Commission of Malaysia SC to sell investment products like money market unit trust funds through the Touch n Go e-wallet platform without having to be directed to third-party applications. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reloading the eWallet is easy and seamless. 
+																	No more needs of visiting bank to withdraw money as it is just fast and easy to pay meals bills or even buy movie tickets using this Touch n Go e-wallet. 
+																	Download APK 14 MB Versions Using APKPure App to upgrade E Wallet fast free and save your internet data. 
+																	Top up your mobile prepaid get food delivered for FREE and get up to RM40 cashback every month with the Touch n Go eWallet. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	BMS Get up to RM50 Cashback Renew insurance road tax online seamlessly GrabMaid Cleaning Service Promotion Book a cleaning service on GrabMaid. 
+																	The Fast Growing P2P Network in Hong Kong Transfer money amongst friends and any other members of the vibrant TNG Wallet network at anytime anywhere and in any weather. 
+																	The description of E Wallet This app provides you secure wallet to save your important data. 
+																	Download the Touch n Go eWallet now. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	On top of that the first 7000 people to spend the RM50 and use at least one Grab service Grab GrabFood GrabMart or GrabExpress within the week will stand a chance to win weekly bonus of RM75 in vouchers. 
+																	24x7 Cash In and Cash Out 24x7 Cash Withdrawals Top-ups and Purchase Payments at 1200 Circle K and 7-Eleven outlets in Hong Kong Foreign. 
+																	Reloading the eWallet is easy and seamless. 
+																	You can learn. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Please enter your. 
+																	Touch n Go eWallet is a Malaysian digital wallet and online payment platform established in Kuala Lumpur Malaysia in July 2017 as a joint venture between Touch n Go and Ant Financial. 
+																	The description of eWallet eWallet - DistributorRetailer App for Mobile Recharge Postpaid Bill Payments Electricity Bill Payments Water Gas Bill Payments Internet Bill Payments Money Transfer Services. 
+																	Use your CIMB Bank. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is alongside the planned implementation of several other updates to its existing services including the removal of reload fees for TNG cards and the 10 TNG parking surcharge. 
+																	Set up Auto-Reload with Mastercard get RM15 AND RM5 cashback when purchasing TNG RFID Tag Allianz eWallet Shield Have a peace of mind with eWallet Shield. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/80/4f/93/804f9340a8b8ad91c918fea601af7668.jpg" data-lightbox="roadtrip" data-title="Pin On Hacj">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/80/4f/93/804f9340a8b8ad91c918fea601af7668.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQf7d-dvBaRz3uC-HDWKJUNHERx5qMZnom0g';" alt="Pin On Hacj">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Hacj</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.appsapk.com/wp-content/uploads/2020/08/my.com_.tngdigital.ewallet_4480168_screenshot.jpeg" data-lightbox="roadtrip" data-title="Touch N Go Ewallet Pilihanno 1 Epenjana 1 7 30 Apk Download For Android">
+											<img class="card-img v-image ads-img " src="https://www.appsapk.com/wp-content/uploads/2020/08/my.com_.tngdigital.ewallet_4480168_screenshot.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLggTe40BN29KlGNHga-dd_fjq8ra1zNjYTw';" alt="Touch N Go Ewallet Pilihanno 1 Epenjana 1 7 30 Apk Download For Android">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Touch N Go Ewallet Pilihanno 1 Epenjana 1 7 30 Apk Download For Android</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lh3.googleusercontent.com/LNsSPGxpbwpCgJ5lN9tvEl1giLKFFM4QhEHK5b8M5xJDMbABLvjJw6AbGkED9jdXTQ=w720-h310" data-lightbox="roadtrip" data-title="Touch N Go Ewallet On Windows Pc Download Free 1 7 17 My Com Tngdigital Ewallet">
+											<img class="card-img v-image ads-img " src="https://lh3.googleusercontent.com/LNsSPGxpbwpCgJ5lN9tvEl1giLKFFM4QhEHK5b8M5xJDMbABLvjJw6AbGkED9jdXTQ=w720-h310" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCCHEGRrJow1si2wAhynDaP1aiGSAXJe2PvQ';" alt="Touch N Go Ewallet On Windows Pc Download Free 1 7 17 My Com Tngdigital Ewallet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Touch N Go Ewallet On Windows Pc Download Free 1 7 17 My Com Tngdigital Ewallet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i8.downloadapk.net/Touch-39n-Go+yHdUzp2sF6.png" data-lightbox="roadtrip" data-title="Download Touch N Go Ewallet 1 4 0 Apk Downloadapk Net">
+											<img class="card-img v-image ads-img " src="https://i8.downloadapk.net/Touch-39n-Go+yHdUzp2sF6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT25bbCnmlwohzyUT_n99uzNJBQS_LPPG0K-g';" alt="Download Touch N Go Ewallet 1 4 0 Apk Downloadapk Net">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Download Touch N Go Ewallet 1 4 0 Apk Downloadapk Net</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/fc/2e/2dfc2eff263b8ee74069a257d2c7351a.png" data-lightbox="roadtrip" data-title="Pin On Touch N Go Ewallet">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/fc/2e/2dfc2eff263b8ee74069a257d2c7351a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh5d83PviJdbxxfqcS7qH_w-4-0OvyLDfGdA';" alt="Pin On Touch N Go Ewallet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Touch N Go Ewallet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/0c/fd/ef0cfd87aa222a3e9ae552878e6d0504.png" data-lightbox="roadtrip" data-title="Step To Redeem Your Reload Soft Pin Pin Soft Redeemed">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/0c/fd/ef0cfd87aa222a3e9ae552878e6d0504.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY-ZmRTvtC-sJJyuzUgdIqAeAV-SdOafGriA';" alt="Step To Redeem Your Reload Soft Pin Pin Soft Redeemed">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Step To Redeem Your Reload Soft Pin Pin Soft Redeemed</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lh3.googleusercontent.com/hLkxnA6G-v0sJNgGBUbGkBcKatOqwFHwKqldmTaNipvRtDq8_-OSdpdirlX9gJcBL8VS=w720-h310" data-lightbox="roadtrip" data-title="Touch N Go Ewallet For Pc Windows 7 8 10 Mac Free Download Guide">
+											<img class="card-img v-image ads-img " src="https://lh3.googleusercontent.com/hLkxnA6G-v0sJNgGBUbGkBcKatOqwFHwKqldmTaNipvRtDq8_-OSdpdirlX9gJcBL8VS=w720-h310" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTojh9kAATHVBkB_uWBpIOp4jy826Xm_Hr_RQ';" alt="Touch N Go Ewallet For Pc Windows 7 8 10 Mac Free Download Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Touch N Go Ewallet For Pc Windows 7 8 10 Mac Free Download Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/db/e1/d9/dbe1d9bc8b1a1c60242ba478229cbde1.jpg" data-lightbox="roadtrip" data-title="Mega888 Official Mega888 Mobile Slot Game Mega888 Android Apk Ios Slots Games Games Android Apk">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/db/e1/d9/dbe1d9bc8b1a1c60242ba478229cbde1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhe76ejsXdhrHjy83lujhHx5wuofdtjmbqYw';" alt="Mega888 Official Mega888 Mobile Slot Game Mega888 Android Apk Ios Slots Games Games Android Apk">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mega888 Official Mega888 Mobile Slot Game Mega888 Android Apk Ios Slots Games Games Android Apk</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/44/b1/c844b120f3efaa6a2e8b89a028c27d15.jpg" data-lightbox="roadtrip" data-title="Free Soft Pin Reload E Wallet Touch N Go Play Free Slots Reloading Free Slot Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/44/b1/c844b120f3efaa6a2e8b89a028c27d15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUFLRiC3oNK-82Oe4_DJeNVS2314ZckwASMw';" alt="Free Soft Pin Reload E Wallet Touch N Go Play Free Slots Reloading Free Slot Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Free Soft Pin Reload E Wallet Touch N Go Play Free Slots Reloading Free Slot Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/41/73/f7/4173f7cb5dd48aa0494ec7a911d8abb9.jpg" data-lightbox="roadtrip" data-title="918kiss Angpao Free Casino Slot Games Online Casino Slots Play Game Online">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/41/73/f7/4173f7cb5dd48aa0494ec7a911d8abb9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpIT-zaFep0jvcp6Sj8cBXz-ylzZDPA-Z3_g';" alt="918kiss Angpao Free Casino Slot Games Online Casino Slots Play Game Online">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">918kiss Angpao Free Casino Slot Games Online Casino Slots Play Game Online</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=486814215355757&amp;get_thumbnail=1" data-lightbox="roadtrip" data-title="Act Now Claim Your E Tunai Rakyat With Touch N Go Ewallet">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=486814215355757&amp;get_thumbnail=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCB08zgQo8boxaqMzUv7YnK99MhxzlwrxqBQ';" alt="Act Now Claim Your E Tunai Rakyat With Touch N Go Ewallet">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Act Now Claim Your E Tunai Rakyat With Touch N Go Ewallet</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/b0/2c/a8b02c6888fa6dddc937f0324f4e46c0.jpg" data-lightbox="roadtrip" data-title="Boost Tng Cash Back 2020 Boosting Promo Codes Cashback">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/b0/2c/a8b02c6888fa6dddc937f0324f4e46c0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaVLf01RTgnHUTzIOZJJjmrCRjco5HSfJNsQ';" alt="Boost Tng Cash Back 2020 Boosting Promo Codes Cashback">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Boost Tng Cash Back 2020 Boosting Promo Codes Cashback</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=626241957867178" data-lightbox="roadtrip" data-title="Our Rm5 Reload Pin Promo Is Fully Touch N Go Ewallet Facebook">
+											<img class="card-img v-image ads-img " src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=626241957867178" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPnvvC021IVY8eQDu6yarNDVhCTpe1N1Lhag';" alt="Our Rm5 Reload Pin Promo Is Fully Touch N Go Ewallet Facebook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Our Rm5 Reload Pin Promo Is Fully Touch N Go Ewallet Facebook</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-ranks-of-pakistan.html">Army Ranks Of Pakistan</a></li>
+													<li class="list-group-item"><a href="/army-ranks-hierarchy.html">Army Ranks Hierarchy</a></li>
+													<li class="list-group-item"><a href="/army-ranks-test.html">Army Ranks Test</a></li>
+													<li class="list-group-item"><a href="/army-ranks-ww1.html">Army Ranks Ww1</a></li>
+													<li class="list-group-item"><a href="/army-ranks-in-ww1.html">Army Ranks In Ww1</a></li>
+													<li class="list-group-item"><a href="/army-ranks-korean-war.html">Army Ranks Korean War</a></li>
+													<li class="list-group-item"><a href="/army-ranks-india.html">Army Ranks India</a></li>
+													<li class="list-group-item"><a href="/army-ranks-german-ww2.html">Army Ranks German Ww2</a></li>
+													<li class="list-group-item"><a href="/army-ranks-meme.html">Army Ranks Meme</a></li>
+													<li class="list-group-item"><a href="/army-ranks-qatar.html">Army Ranks Qatar</a></li>
+													<li class="list-group-item"><a href="/army-ranks-insignia.html">Army Ranks Insignia</a></li>
+													<li class="list-group-item"><a href="/army-ranks-vietnam.html">Army Ranks Vietnam</a></li>
+													<li class="list-group-item"><a href="/army-ranks-thailand.html">Army Ranks Thailand</a></li>
+													<li class="list-group-item"><a href="/army-ranks-jamaica.html">Army Ranks Jamaica</a></li>
+													<li class="list-group-item"><a href="/army-ranks-structure.html">Army Ranks Structure</a></li>
+													<li class="list-group-item"><a href="/army-ranks-international.html">Army Ranks International</a></li>
+													<li class="list-group-item"><a href="/army-ranks.html">Army Ranks</a></li>
+													<li class="list-group-item"><a href="/army-ranks-ranks.html">Army Ranks Ranks</a></li>
+													<li class="list-group-item"><a href="/army-ranks-meaning.html">Army Ranks Meaning</a></li>
+													<li class="list-group-item"><a href="/army-ranks-nato.html">Army Ranks Nato</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

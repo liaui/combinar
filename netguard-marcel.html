@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Netguard Marcel - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Netguard Marcel",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/600x315/47/20/c1/4720c1113cf5412a514d546912f1d606.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=netguard+marcel",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Netguard Marcel</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">NetGuard provides simple and advanced ways to block access to the internet - no root required. NetGuard 2276 NetGuard is a popular application for blocking access to games and applications installed on Android devices with Internet connectivity provided by Marcel Bokhorst Studios for free within-app payment on Google Play. NetGuard ist eine Open-Source-App mit der du den Internetzugang jeder App auf deinem Geraet blockieren kannst. <br>				
+			</p>
+										<a class="badge badge-danger" href="/karang-laut-bahasa-inggris.html">karang laut bahasa inggris</a>
+											<a class="badge badge-warning" href="/kang-ridho.html">kang ridho</a>
+											<a class="badge badge-light" href="/kang-ujang-bustomi-vs-dukun-santet.html">kang ujang bustomi vs dukun santet</a>
+											<a class="badge badge-primary" href="/kang-ri-seoul.html">kang ri seoul</a>
+											<a class="badge badge-primary" href="/karang-quotes.html">karang quotes</a>
+											<a class="badge badge-danger" href="/jung-ke-maidan-mein-indian-army-song-remix.html">jung ke maidan mein indian army song remix</a>
+											<a class="badge badge-primary" href="/kang-kalebu-sandhangan-wyanjana-yaiku.html">kang kalebu sandhangan wyanjana yaiku</a>
+											<a class="badge badge-success" href="/jsi-resort.html">jsi resort</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to pay a visit to the ideal site.  Our website provides you with suggestions for seeing the highest quality video and image content, hunt and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, especially Youtube, therefore we recommend this movie for you to see.  You can also contribute to supporting this site by sharing videos and images that you like on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences about the ease of access to downloads and the information that you get on this website.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8d/20/4d/8d204d5dd3a709aa9bc9fe34c0d988ea.png" data-lightbox="roadtrip" data-title="Netguard Is An Tools App For Androiddownload Latest Version Of Netguard No Root Firewall Apk Pro V2 225 For Androi Android How To Be Outgoing Android Hacks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8d/20/4d/8d204d5dd3a709aa9bc9fe34c0d988ea.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJIIGBo8ZAvRxbAeWn1dXwzEa7p4CXcVa3Rg';" alt="Netguard Is An Tools App For Androiddownload Latest Version Of Netguard No Root Firewall Apk Pro V2 225 For Androi Android How To Be Outgoing Android Hacks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Netguard Is An Tools App For Androiddownload Latest Version Of Netguard No Root Firewall Apk Pro V2 225 For Androi Android How To Be Outgoing Android Hacks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/6f/5c/24/6f5c249a09ca272f5be388e44afc12f3.jpg" data-lightbox="roadtrip" data-title="Netguard No Root Firewall Pro App Latest 2 283 2020 Premium Mod Apk Free Youtube How To Be Outgoing Light In The Dark Free Youtube">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/6f/5c/24/6f5c249a09ca272f5be388e44afc12f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVDTFQsaDUj5pfAY7V262mzQ_rgVnQvAwVkw';" alt="Netguard No Root Firewall Pro App Latest 2 283 2020 Premium Mod Apk Free Youtube How To Be Outgoing Light In The Dark Free Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Netguard No Root Firewall Pro App Latest 2 283 2020 Premium Mod Apk Free Youtube How To Be Outgoing Light In The Dark Free Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/67/d8/27/67d827a920d65f2a14b05b9b84d1b488.jpg" data-lightbox="roadtrip" data-title="محترف الاندرويد تحميل تطبيق Netguard Pro النسخة المدفوعة بمميزات ج Gaming Logos Logos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/67/d8/27/67d827a920d65f2a14b05b9b84d1b488.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgSLzGfQyqe4_dzQ7jdn6DY5sHaC1VzyVqXw';" alt="محترف الاندرويد تحميل تطبيق Netguard Pro النسخة المدفوعة بمميزات ج Gaming Logos Logos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">محترف الاندرويد تحميل تطبيق Netguard Pro النسخة المدفوعة بمميزات ج Gaming Logos Logos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a3/08/eb/a308eb2bc080d9d88a6f07ce0d23561e.jpg" data-lightbox="roadtrip" data-title="Firewall To Keep Data Hungry Apps In Check Https Ift Tt 2hxkc2u Mobile Data Data App">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a3/08/eb/a308eb2bc080d9d88a6f07ce0d23561e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx2BPwfCZJQoQkFMtKLzLjIELWu_Mkp1Fwpw';" alt="Firewall To Keep Data Hungry Apps In Check Https Ift Tt 2hxkc2u Mobile Data Data App">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Firewall To Keep Data Hungry Apps In Check Https Ift Tt 2hxkc2u Mobile Data Data App</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/30/1b/f9301b170c1489d114d2e2288fe65213.png" data-lightbox="roadtrip" data-title="Pin On Apkonehack">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/30/1b/f9301b170c1489d114d2e2288fe65213.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYqa3dYVjXCQkvMLwkTLeXQMAM7Zs4-vmOiw';" alt="Pin On Apkonehack">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Apkonehack</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/75/07/37/75073768fd896703855556016c6bbb9b.png" data-lightbox="roadtrip" data-title="Evoland 2 Is An Role Playing Game For Android Download Latest Version Of Evoland 2 Apk Obb Data Full Paid V1 0 4 Fo Roleplaying Game Roleplay Games To Play">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/75/07/37/75073768fd896703855556016c6bbb9b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUGPdmyvxX-WNdYWlCYGo-ZwS1rMg9VIfseA';" alt="Evoland 2 Is An Role Playing Game For Android Download Latest Version Of Evoland 2 Apk Obb Data Full Paid V1 0 4 Fo Roleplaying Game Roleplay Games To Play">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Evoland 2 Is An Role Playing Game For Android Download Latest Version Of Evoland 2 Apk Obb Data Full Paid V1 0 4 Fo Roleplaying Game Roleplay Games To Play</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/d2/d9/6e/d2d96ef522135a363e99de9608bf4475.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUGPdmyvxX-WNdYWlCYGo-ZwS1rMg9VIfseA';" alt="Evoland 2 Is An Role Playing Game For Android Download Latest Version Of Evoland 2 Apk Obb Data Full Paid V1 0 4 Fo Roleplaying Game Roleplay Games To Play">
+										<div class="card-body">
+						<h3 class="h5"><b>NetGuard provides simple and advanced ways to block access to the internet - no root required.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Netguard marcel</strong>. 
+								
+																	Blocking access to the internet can help. 
+																	Applications and addresses can individually be allowed or denied access to your Wi-Fi andor mobile connection. 
+																	Moreover it has been downloaded more than 500000 times by Android users around the world. 
+																	Android Tools Allgemein NetGuard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Applications and addresses can individually be allowed or denied access to your Wi-Fi andor mobile. 
+																	Reduce your data usage. 
+																	NetGuard 2285 NetGuard is a popular application for blocking access to games and applications installed on Android devices with Internet connectivity provided by Marcel Bokhorst Studios for free within-app payment on Google Play. 
+																	I enabled several features that might result in extra battery drain. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Applications and addresses can individually be allowed or denied access to your Wi-Fi andor mobile connection. 
+																	NetGuard 2269 NetGuard is a popular application for blocking access to games and applications installed on Android devices with Internet connectivity provided by Marcel Bokhorst Studios for free within-app payment on Google Play. 
+																	Blocking access to the internet can help. 
+																	Blocking access to the internet can help. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NetGuard provides simple and advanced ways to block access to the internet - no root required. 
+																	NetGuard keeps my device awake as you can see in the screenshot. 
+																	A BBS dumpfile reveals the same issue. 
+																	Moreover it has been downloaded more than 500000 times by Android users around the world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Blocking access to the internet can help. 
+																	Applications and addresses can individually be allowed or denied access to your Wi-Fi andor mobile connection. 
+																	NetGuard provides simple and advanced ways to block access to the internet - no root required. 
+																	Logs show log screen log internet access and IP filtering. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reduce your data usage. 
+																	NetGuard 2291 NetGuard is a popular application for blocking access to games and applications installed on Android devices with Internet connectivity provided by Marcel Bokhorst Studios for free within-app payment on Google Play. 
+																	Eine robuste Firewall fuer Android. 
+																	Reduce your data usage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Moreover it has been downloaded more than 500000 times by Android users around the world. 
+																	Moreover it has been downloaded more than 500000 times by Android users around the world. 
+																	APK certificate fingerprints SHA-1. 
+																	NetGuard ist eine Open-Source-App mit der du den Internetzugang. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	NetGuard is the first free and open source no-root firewall for Android. 
+																	Applications and addresses can individually be allowed or denied access to your Wi-Fi andor mobile connection. 
+																	NetGuard provides simple and advanced ways to block access to the internet - no root required. 
+																	This APK is signed by Marcel Bokhorst and upgrades your existing app. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Reduce your data usage. 
+																	Marcel I have a huge and abnormal wakelock with Netguard 211 maybe the same applies to the last versions. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/3f/fe/ec3ffe0974d2a370b3b68a9e4cbb19b1.png" data-lightbox="roadtrip" data-title="Pin On Apkonehack">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/3f/fe/ec3ffe0974d2a370b3b68a9e4cbb19b1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3OPO8Jfuh_lr9XBdcXzJndJKRTfRqHRePPg';" alt="Pin On Apkonehack">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Apkonehack</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/83/02/eb8302972929cbc6391fd5d6cc28988a.png" data-lightbox="roadtrip" data-title="Pin On Apkonehack">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/83/02/eb8302972929cbc6391fd5d6cc28988a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZPToWzEBovJm2KC7-_zNYmYzD-aPg6sI1g';" alt="Pin On Apkonehack">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Apkonehack</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/d7/59/83d7593b994b937a49b0e834986e7418.png" data-lightbox="roadtrip" data-title="Pin On Apkonehack">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/d7/59/83d7593b994b937a49b0e834986e7418.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJObgjxTWeFWT3Zanb-9TgfYuAbCKXaeen9g';" alt="Pin On Apkonehack">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Apkonehack</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/47/20/c1/4720c1113cf5412a514d546912f1d606.jpg" data-lightbox="roadtrip" data-title="Badland Adventure Games For Android Offline Games Addicting Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/47/20/c1/4720c1113cf5412a514d546912f1d606.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk2Vh-8lshzqDALfs4hEWT4t8F7mN3P0SfWA';" alt="Badland Adventure Games For Android Offline Games Addicting Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Badland Adventure Games For Android Offline Games Addicting Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/ef/c9/3eefc911ada89e94bef44a79b2cdfa11.png" data-lightbox="roadtrip" data-title="Virtual Pool Mobile Is An Sports Game For Android Download Latest Version Of Virtual Pool Mobile Apk Full V2 34 For Android From A Android Hacks Pool Android">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/ef/c9/3eefc911ada89e94bef44a79b2cdfa11.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSbv0bzI3WDDjgV8H3c0-YG2KM-fSBf6_CQ';" alt="Virtual Pool Mobile Is An Sports Game For Android Download Latest Version Of Virtual Pool Mobile Apk Full V2 34 For Android From A Android Hacks Pool Android">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Virtual Pool Mobile Is An Sports Game For Android Download Latest Version Of Virtual Pool Mobile Apk Full V2 34 For Android From A Android Hacks Pool Android</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/31/2b/7b312b82221ab635359adc33fad00153.png" data-lightbox="roadtrip" data-title="Ocean Is Home Survival Island Is An Adventure Game For Android Download Latest Version Of Ocean Is Home Island Survival Adventure Games For Android Survival">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/31/2b/7b312b82221ab635359adc33fad00153.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHqdSOg4RIuUPEQH3vR_vGMnF5MaJcEHMNSg';" alt="Ocean Is Home Survival Island Is An Adventure Game For Android Download Latest Version Of Ocean Is Home Island Survival Adventure Games For Android Survival">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ocean Is Home Survival Island Is An Adventure Game For Android Download Latest Version Of Ocean Is Home Island Survival Adventure Games For Android Survival</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/62/18/4a6218db87db17666335f5bea0195f5e.png" data-lightbox="roadtrip" data-title="Pin On Android Games And Apps">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/62/18/4a6218db87db17666335f5bea0195f5e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSMPdClA8DWhai5N12HurnwkNxFvMCWZ6rTw';" alt="Pin On Android Games And Apps">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Android Games And Apps</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b5/61/bd/b561bdcd0382b253269153355e021093.png" data-lightbox="roadtrip" data-title="Life Is A Game Is An Action Game For Android Download Latest Version Of Life Is A Game Mod Apk Free Shopping V2 2 4 For Android From Games Free Shopping Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b5/61/bd/b561bdcd0382b253269153355e021093.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4LPOlc-34HAPMEGBzI7DDA6m3KHgGjMM8VQ';" alt="Life Is A Game Is An Action Game For Android Download Latest Version Of Life Is A Game Mod Apk Free Shopping V2 2 4 For Android From Games Free Shopping Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Life Is A Game Is An Action Game For Android Download Latest Version Of Life Is A Game Mod Apk Free Shopping V2 2 4 For Android From Games Free Shopping Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b9/46/aa/b946aad4cbe826af294a578214a4a1bb.png" data-lightbox="roadtrip" data-title="Endless Is An Action Game For Android Download Latest Version Of Endless Apk Full Paid 4 0 For Android From Apkonehack With Dir Action Games Endless Download">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b9/46/aa/b946aad4cbe826af294a578214a4a1bb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ZeeWf6p3IHSEsWa8M6tofDUiT6KNdsrasg';" alt="Endless Is An Action Game For Android Download Latest Version Of Endless Apk Full Paid 4 0 For Android From Apkonehack With Dir Action Games Endless Download">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Endless Is An Action Game For Android Download Latest Version Of Endless Apk Full Paid 4 0 For Android From Apkonehack With Dir Action Games Endless Download</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/3a/36/943a36a64bfcf163a01e4ceacaefdf2a.png" data-lightbox="roadtrip" data-title="Mega Man 2 Mobile Is An Adventure Game For Android Download Latest Version Of Mega Man 2 Mobile Apk Full 1 02 Mega Man Mega Man 2 Adventure Games For Android">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/3a/36/943a36a64bfcf163a01e4ceacaefdf2a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOb1VA4EkOPqwuOW8DS6YTj9d6lnv_Y-3tFg';" alt="Mega Man 2 Mobile Is An Adventure Game For Android Download Latest Version Of Mega Man 2 Mobile Apk Full 1 02 Mega Man Mega Man 2 Adventure Games For Android">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mega Man 2 Mobile Is An Adventure Game For Android Download Latest Version Of Mega Man 2 Mobile Apk Full 1 02 Mega Man Mega Man 2 Adventure Games For Android</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d2/d9/6e/d2d96ef522135a363e99de9608bf4475.png" data-lightbox="roadtrip" data-title="Haramase Simulator Is An Action Game For Android Download Latest Version Of Haramase Simulator Mod Apk 18 V0 3 1 1 For And Playstore Simulation Action Games">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d2/d9/6e/d2d96ef522135a363e99de9608bf4475.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJIu29C0Y0pTmtEwcv8hI2lt3b3Me_jhZAuw';" alt="Haramase Simulator Is An Action Game For Android Download Latest Version Of Haramase Simulator Mod Apk 18 V0 3 1 1 For And Playstore Simulation Action Games">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Haramase Simulator Is An Action Game For Android Download Latest Version Of Haramase Simulator Mod Apk 18 V0 3 1 1 For And Playstore Simulation Action Games</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/bc/8c/30bc8cd25717e495b3ddfcbaa150498c.png" data-lightbox="roadtrip" data-title="Led Blinker 6 6 9 1 Professional Paid Led Paying Professional">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/bc/8c/30bc8cd25717e495b3ddfcbaa150498c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsW99RIAg-TkRmYodX78XITEMqqL9MNnxFuA';" alt="Led Blinker 6 6 9 1 Professional Paid Led Paying Professional">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Led Blinker 6 6 9 1 Professional Paid Led Paying Professional</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/50/5f/ed/505fedf5e205be9b964afa946c45174b.jpg" data-lightbox="roadtrip" data-title="Resize Me Professional 2 01 Paid In 2020 Professional">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/50/5f/ed/505fedf5e205be9b964afa946c45174b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqE82pIv1dbzZGN05r99y8WuedLAp4kpaSsQ';" alt="Resize Me Professional 2 01 Paid In 2020 Professional">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Resize Me Professional 2 01 Paid In 2020 Professional</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/netguard-app.html">Netguard App</a></li>
+													<li class="list-group-item"><a href="/netguard-issues.html">Netguard Issues</a></li>
+													<li class="list-group-item"><a href="/netguard-marcel-bokhorst.html">Netguard Marcel Bokhorst</a></li>
+													<li class="list-group-item"><a href="/netguard-guardian-pro-firewall.html">Netguard Guardian Pro Firewall</a></li>
+													<li class="list-group-item"><a href="/netguard-hosts-file-location.html">Netguard Hosts File Location</a></li>
+													<li class="list-group-item"><a href="/ncbi-copd.html">Ncbi Copd</a></li>
+													<li class="list-group-item"><a href="/nebraska-army-national-guard-website.html">Nebraska Army National Guard Website</a></li>
+													<li class="list-group-item"><a href="/netguard-block-connections-without-vpn.html">Netguard Block Connections Without Vpn</a></li>
+													<li class="list-group-item"><a href="/netguard-dns-settings.html">Netguard Dns Settings</a></li>
+													<li class="list-group-item"><a href="/netguard-nokia.html">Netguard Nokia</a></li>
+													<li class="list-group-item"><a href="/nb-dc-590-bat.html">Nb Dc 590 Bat</a></li>
+													<li class="list-group-item"><a href="/netguard-im-zugriffsbeschraenkung-modus-erlauben.html">Netguard Im Zugriffsbeschraenkung Modus Erlauben</a></li>
+													<li class="list-group-item"><a href="/nb-590-v4.html">Nb 590 V4</a></li>
+													<li class="list-group-item"><a href="/neon-army-cargo-pants.html">Neon Army Cargo Pants</a></li>
+													<li class="list-group-item"><a href="/netguard-help.html">Netguard Help</a></li>
+													<li class="list-group-item"><a href="/ncbi-covid-vaccine.html">Ncbi Covid Vaccine</a></li>
+													<li class="list-group-item"><a href="/netguard-lineageos.html">Netguard Lineageos</a></li>
+													<li class="list-group-item"><a href="/netguard-block-ads.html">Netguard Block Ads</a></li>
+													<li class="list-group-item"><a href="/netguard-exe.html">Netguard Exe</a></li>
+													<li class="list-group-item"><a href="/netguard-block-system-apps.html">Netguard Block System Apps</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

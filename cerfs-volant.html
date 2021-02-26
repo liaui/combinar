@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Cerfs Volant - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Cerfs Volant",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/736x/f4/6c/27/f46c27883677cb9b314f85be15b1a3f9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cerfs+volant",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Cerfs Volant</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Les cerfs volants Lyrics. Le cerf-volant de A a Z. La boutique du cerf-volant propose des dizaines de references de cerfs-volants 2 et 4 lignes pour le freestyle le speed ou la traction. <br>				
+			</p>
+										<a class="badge badge-success" href="/cambi-banca-ditalia.html">cambi banca ditalia</a>
+											<a class="badge badge-info" href="/can-you-work-full-time-in-the-army-national-guard.html">can you work full time in the army national guard</a>
+											<a class="badge badge-danger" href="/california-army-national-guard-ocs.html">california army national guard ocs</a>
+											<a class="badge badge-success" href="/cara-menang-zynga-poker.html">cara menang zynga poker</a>
+											<a class="badge badge-dark" href="/california-army-national-guard-awards-and-decorations.html">california army national guard awards and decorations</a>
+											<a class="badge badge-light" href="/can-national-guard-be-rangers.html">can national guard be rangers</a>
+											<a class="badge badge-danger" href="/california-national-guard-military-records.html">california national guard military records</a>
+											<a class="badge badge-primary" href="/can-you-go-from-national-guard-to-army.html">can you go from national guard to army</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the keyword you've come to visit the ideal blog.  Our site gives you hints for viewing the maximum quality video and image content, search and find more informative video content and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/53/31/ea533100e9602776794d78efe1ab5dc9.jpg" data-lightbox="roadtrip" data-title="Fabriquer Un Cerf Volant Fabriquer Un Cerf Volant Cerf Volant Cerf Volant Enfant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/53/31/ea533100e9602776794d78efe1ab5dc9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3cws4FmmHadDtNcMKG8hVJDxYu1FvSvogUQ';" alt="Fabriquer Un Cerf Volant Fabriquer Un Cerf Volant Cerf Volant Cerf Volant Enfant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fabriquer Un Cerf Volant Fabriquer Un Cerf Volant Cerf Volant Cerf Volant Enfant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/2b/7d/942b7dede7fd0211b33ed7b2a543bdab.jpg" data-lightbox="roadtrip" data-title="Fabriquer Un Cerf Volant Diaporama Fabriquer Un Cerf Volant Cerf Volant Cerf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/2b/7d/942b7dede7fd0211b33ed7b2a543bdab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRulIw0DfOavwbKiPN9fUxTX8WfLb5inMa71Q';" alt="Fabriquer Un Cerf Volant Diaporama Fabriquer Un Cerf Volant Cerf Volant Cerf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fabriquer Un Cerf Volant Diaporama Fabriquer Un Cerf Volant Cerf Volant Cerf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/a6/40/05a640ac6f897fa51000ecfb0cf98fb2.jpg" data-lightbox="roadtrip" data-title="Classic Box Cerf Volant Cellulaire Colours In Motion Colours In Motion Cerf Volant Cerf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/a6/40/05a640ac6f897fa51000ecfb0cf98fb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy5LaqXjgy5L58y4l8JJF-ly7S_sIhjDqm6g';" alt="Classic Box Cerf Volant Cellulaire Colours In Motion Colours In Motion Cerf Volant Cerf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Classic Box Cerf Volant Cellulaire Colours In Motion Colours In Motion Cerf Volant Cerf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f9/be/d9/f9bed9e5e7a334c6a3727ececc652d11.jpg" data-lightbox="roadtrip" data-title="Comment Construire Cerf Volant La Reponse Est Sur Admicile Fr Cerf Volant Cerf Volant Enfant Fabriquer Un Cerf Volant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f9/be/d9/f9bed9e5e7a334c6a3727ececc652d11.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4MF-KyXEA6kN9KNJ2u8bZl0coapUH8Gl7bA';" alt="Comment Construire Cerf Volant La Reponse Est Sur Admicile Fr Cerf Volant Cerf Volant Enfant Fabriquer Un Cerf Volant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Comment Construire Cerf Volant La Reponse Est Sur Admicile Fr Cerf Volant Cerf Volant Enfant Fabriquer Un Cerf Volant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/e7/35/9ae735213ff3da40058b29f3871b2560.jpg" data-lightbox="roadtrip" data-title="Cerf Volant Cerf Volant R201 Cerf Volant Cerf Volants">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/e7/35/9ae735213ff3da40058b29f3871b2560.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfdEBH449U-Ega-K0ZX9vUoCA_xZgOz8fetg';" alt="Cerf Volant Cerf Volant R201 Cerf Volant Cerf Volants">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cerf Volant Cerf Volant R201 Cerf Volant Cerf Volants</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/47/05/7a470500de17fa6577883c32fddee555.png" data-lightbox="roadtrip" data-title="Cerf Volant Cerf Volant Arts Visuels Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/47/05/7a470500de17fa6577883c32fddee555.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQYsIlJedL6R2GbcxQHqfqXXxEj2pAwuv8Pg';" alt="Cerf Volant Cerf Volant Arts Visuels Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cerf Volant Cerf Volant Arts Visuels Art</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/9a/a1/a0/9aa1a0af859e4a4f639a67e5119b1005.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQYsIlJedL6R2GbcxQHqfqXXxEj2pAwuv8Pg';" alt="Cerf Volant Cerf Volant Arts Visuels Art">
+										<div class="card-body">
+						<h3 class="h5"><b>Cerfs-volants de sport haut de gamme concus et fabriques depuis 1994.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Cerfs volant</strong>. 
+								
+																	Hq Colours in Motion Prism Peter Lynn. 
+																	With Tcheky Karyo Marc-Andre Grondin Gaelle Bona Claude Perron. 
+																	9782070374670 from Amazons Book Store. 
+																	----- LES CERFS VOLANTS - Benjamin Biolay ----- Em A A mesure que le temps passe je mesure le temps qui passe Fm Bm Et tandis que leau setend jusqua lautre bout de letang Em A Je regarde laube claire sallonger sous les coniferes Fm Bm A laulne a loree du jour le. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Un enfant te voit. 
+																	Cerf-volant British English. 
+																	Le Cerf Volant is a 5 acres parkland lying at the end of a driveway surrounded by majestic oak trees with a little stream and a pond far from roads and turmoil. 
+																	Buy Les cerfs-volants Folio by Gary Romain ISBN. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Existant dans des modeles statiques et pilotables il permet de realiser des figures acrobatiques etonnantes lorsquil est manipule par un cerf-voliste confirme. 
+																	Fille au cerf-volant Finistere Sud. 
+																	Endless paths and trails lead from there through the forest and the surrounding meadows for beautiful walks riding horses or bicycles. 
+																	Le cerf volant une activite ludique et sportive Souvent considere comme un loisir le cerf volant est aussi un sport a part entiere. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Navire tracte par cerf-volant via un bras articule. 
+																	Au Gujarat Makar Sankranti est celebre comme le jour de cerf-volant. 
+																	Catalogue VPC de cerfs-volants accessoires pieces detachees traction voile de traction buggy mountainboard cerf volant 2 lignes cerf volant 4 lignesfabriquer un cerf-volant construction de cerf-volant tissus cerf-volant powerkites cerf-volant de traction cerf-volant 4 lignesLe site web du magasin et de la boutique de vente en ligne de cerf-volant. 
+																	Music video by Benjamin Biolay performing Les Cerfs Volants. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Everyday low prices and free delivery on eligible orders. 
+																	Kite kaɪt NOUN A kite is an object consisting of a light frame covered with paper or cloth which you fly in the air at the end of a long string. 
+																	HttpbitlyNaivePlaylistTaken from Bruno Coulais Les choristes Original Motion Picture Soundtrack Buy on iTunes. 
+																	Et dans la tourmente. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Cerf-volant montreal cerfvolant cerf volant varennes cerfs-volants kite kites atelier de fabrication montreal. 
+																	In Gujarat Makar Sankranti is celebrated as the kite-flying day. 
+																	Boat powered by means of a kite via a hinged arm. 
+																	Two lovely cabins The Chalet by The Meadow and The Cabin in The Firs are perfectly independent and far apart cottages that welcome you for magic week ends and longer stays. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A mesure que le temps passe Je mesure le temps qui passe Et tandis que leau setend Jusqua lautre bout de letang Je regarde laube claire Sallonger sur. 
+																	Featuring free private parking the holiday home is in an area where guests can engage in activities such as hiking skiing and cycling. 
+																	Boasting a garden Le Cerf volant provides accommodations in Libin with free WiFi and garden views. 
+																	Girl with a kite South Finistere Croisic lighthouse. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is a Level 1 book for children who can read easy words less than 50 words French L es cer fs - v o la n ts Un groupe de cerfs-volants colores vole haut dans le ciel. 
+																	Noublie pas de revenir. 
+																	Haut dans les airs. 
+																	Directed by Jerome Cornuau. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Un cerf-volant est un aerodyne assez leger pour etre mu par les forces aerodynamiques lance et manoeuvre depuis le sol a laide dun ou plusieurs filsSa structure la plus commune se compose dune piece de toile ou de papier plus ou moins tendue sur une armature. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/b3/5b/76b35b7d0169c90efdf4407affa09b67.jpg" data-lightbox="roadtrip" data-title="Le Cerf Volant Dragon Cerf Volant Cerf Volants">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/b3/5b/76b35b7d0169c90efdf4407affa09b67.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_tM6UmQxdSw3U9WijKHDiZ26Mp-bUeMm_Ig';" alt="Le Cerf Volant Dragon Cerf Volant Cerf Volants">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Le Cerf Volant Dragon Cerf Volant Cerf Volants</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/ce/39/0fce3905f3e4e18f31eb8b28cef8d704.jpg" data-lightbox="roadtrip" data-title="Cerfs Volants Berck Go Fly A Kite Kite Dragon Kite">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/ce/39/0fce3905f3e4e18f31eb8b28cef8d704.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNfNj-Vvn5oAdqLKMCmQUAfiONhvxOhoCsZA';" alt="Cerfs Volants Berck Go Fly A Kite Kite Dragon Kite">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cerfs Volants Berck Go Fly A Kite Kite Dragon Kite</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e4/eb/92/e4eb9266bb92848b7244f04e0a41961a.jpg" data-lightbox="roadtrip" data-title="Coloriage Cerf Volant Chinois A Colorier Dessin A Imprimer Sleeve Tattoos Kite Silver Necklace">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e4/eb/92/e4eb9266bb92848b7244f04e0a41961a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrE9YluOpVPCQ1XYwFBOsrShA6-B3ceapwBQ';" alt="Coloriage Cerf Volant Chinois A Colorier Dessin A Imprimer Sleeve Tattoos Kite Silver Necklace">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coloriage Cerf Volant Chinois A Colorier Dessin A Imprimer Sleeve Tattoos Kite Silver Necklace</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/f4/6c/27/f46c27883677cb9b314f85be15b1a3f9.jpg" data-lightbox="roadtrip" data-title="Kite Festival Dieppe France Cerfs Volants Cerf Volant Festival Cerf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/f4/6c/27/f46c27883677cb9b314f85be15b1a3f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0fl8Cw_iaRetpycNzu_zNNKL6tjHCO4sY9A';" alt="Kite Festival Dieppe France Cerfs Volants Cerf Volant Festival Cerf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kite Festival Dieppe France Cerfs Volants Cerf Volant Festival Cerf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/51/49/1f51495b3fca34df4d1129074bd87502.jpg" data-lightbox="roadtrip" data-title="Quantum Pro Prism Kites Cerfs Volants Pilotables 2 Lignes Cerf Volant Acrobatique Prism Kites 375 Frais De Port Offerts Cerf Volant Cerf Volants">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/51/49/1f51495b3fca34df4d1129074bd87502.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVdCJdgHEohE1UntGCYRe3ZsXl5twW8i3Hgw';" alt="Quantum Pro Prism Kites Cerfs Volants Pilotables 2 Lignes Cerf Volant Acrobatique Prism Kites 375 Frais De Port Offerts Cerf Volant Cerf Volants">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Quantum Pro Prism Kites Cerfs Volants Pilotables 2 Lignes Cerf Volant Acrobatique Prism Kites 375 Frais De Port Offerts Cerf Volant Cerf Volants</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/d7/6c/e2/d76ce297188e35f21358e9fe9dc4bdd2.jpg" data-lightbox="roadtrip" data-title="International Kite Festival Dieppe France Cerfs Volants Cerf Volant Cerf Volants">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/d7/6c/e2/d76ce297188e35f21358e9fe9dc4bdd2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLSwF_-uxtheG_2-Nb_rfAp_pjBZCs-6XDig';" alt="International Kite Festival Dieppe France Cerfs Volants Cerf Volant Cerf Volants">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">International Kite Festival Dieppe France Cerfs Volants Cerf Volant Cerf Volants</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/0e/b3/560eb32c652c9abab5442573b200a460.jpg" data-lightbox="roadtrip" data-title="Fabrique Un Cerf Volant Activite Pour Enfant Diy Tuto Photos Allo Maman Dodo Cerf Volant Fabriquer Un Cerf Volant Activite Manuelle Noel Primaire">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/0e/b3/560eb32c652c9abab5442573b200a460.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl84LARlBSVTmaKdNYskPvB80dCs_tuJMR7w';" alt="Fabrique Un Cerf Volant Activite Pour Enfant Diy Tuto Photos Allo Maman Dodo Cerf Volant Fabriquer Un Cerf Volant Activite Manuelle Noel Primaire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fabrique Un Cerf Volant Activite Pour Enfant Diy Tuto Photos Allo Maman Dodo Cerf Volant Fabriquer Un Cerf Volant Activite Manuelle Noel Primaire</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/a1/a0/9aa1a0af859e4a4f639a67e5119b1005.jpg" data-lightbox="roadtrip" data-title="Cerf Volant Geant Notion Of Vortex And Velocity Of Wind Representation And Flight Cerf Volant Cerf Kite Surf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/a1/a0/9aa1a0af859e4a4f639a67e5119b1005.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTspITTYlWtwTfmTVaTltAjQOUMWSYvXxh6iw';" alt="Cerf Volant Geant Notion Of Vortex And Velocity Of Wind Representation And Flight Cerf Volant Cerf Kite Surf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cerf Volant Geant Notion Of Vortex And Velocity Of Wind Representation And Flight Cerf Volant Cerf Kite Surf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/1c/f8/481cf8bb24c4a8fbb05895ac0657928a.jpg" data-lightbox="roadtrip" data-title="Les Cerfs Volants Japonais En Papier Washi Cerf Volant Japon Poisson Japonais">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/1c/f8/481cf8bb24c4a8fbb05895ac0657928a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGwD9g_w7cPUjtjt5DCi8S4gxSN7kfqA7Adw';" alt="Les Cerfs Volants Japonais En Papier Washi Cerf Volant Japon Poisson Japonais">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Les Cerfs Volants Japonais En Papier Washi Cerf Volant Japon Poisson Japonais</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/73/92/3673926ed8bba4af2610cd18af238d29.jpg" data-lightbox="roadtrip" data-title="Cerf Volant Personnalise Cerf Volant Carte Cartes De Voeux Faites Main">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/73/92/3673926ed8bba4af2610cd18af238d29.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClU3b9WC5bcR1eSjtimLunFUawgbcj6KpJA';" alt="Cerf Volant Personnalise Cerf Volant Carte Cartes De Voeux Faites Main">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Cerf Volant Personnalise Cerf Volant Carte Cartes De Voeux Faites Main</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/31/47/c4/3147c48a0a043172c450099b3163aab0.jpg" data-lightbox="roadtrip" data-title="Kids Un Cerf Volant Avec Des Pailles Cerf Volant Activite Manuelle Cerf Volant Cerf Volant Enfant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/31/47/c4/3147c48a0a043172c450099b3163aab0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdx-vf3pdPIWA45z7lgLkPw3MFMrXOOnICog';" alt="Kids Un Cerf Volant Avec Des Pailles Cerf Volant Activite Manuelle Cerf Volant Cerf Volant Enfant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Kids Un Cerf Volant Avec Des Pailles Cerf Volant Activite Manuelle Cerf Volant Cerf Volant Enfant</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/28/14/86/28148699f249f0c8a71b5d3a4f5807d3.jpg" data-lightbox="roadtrip" data-title="Gabarit Cerf Volant Sticker Maker Adventure Nursery Cards">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/28/14/86/28148699f249f0c8a71b5d3a4f5807d3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-JgDuWJFmggqH-ghAHfHaHk6D5uql4Ll7lA';" alt="Gabarit Cerf Volant Sticker Maker Adventure Nursery Cards">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gabarit Cerf Volant Sticker Maker Adventure Nursery Cards</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/61/99/bc6199dab1de2851a4b70c1c49a15324.jpg" data-lightbox="roadtrip" data-title="Fabriquer Facilement Un Cerf Volant Avec Du Papier Craft Activite Manuelle Cerf Volant Cerf Volant">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/61/99/bc6199dab1de2851a4b70c1c49a15324.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxUnX3xbkr-gm-kBiifz2ycFGAzw-HHuHzMw';" alt="Fabriquer Facilement Un Cerf Volant Avec Du Papier Craft Activite Manuelle Cerf Volant Cerf Volant">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fabriquer Facilement Un Cerf Volant Avec Du Papier Craft Activite Manuelle Cerf Volant Cerf Volant</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/british-army-world-rank.html">British Army World Rank</a></li>
+													<li class="list-group-item"><a href="/arnold-schwarzenegger-army.html">Arnold Schwarzenegger Army</a></li>
+													<li class="list-group-item"><a href="/buhs-jgbhfwbb.html">Buhs Jgbhfwbb</a></li>
+													<li class="list-group-item"><a href="/best-army-artinya.html">Best Army Artinya</a></li>
+													<li class="list-group-item"><a href="/bts-songs-for-new-army.html">Bts Songs For New Army</a></li>
+													<li class="list-group-item"><a href="/art-army-academy.html">Art Army Academy</a></li>
+													<li class="list-group-item"><a href="/artis-indonesia-yang-seorang-army.html">Artis Indonesia Yang Seorang Army</a></li>
+													<li class="list-group-item"><a href="/best-age-of-sigmar-army-2020.html">Best Age Of Sigmar Army 2020</a></li>
+													<li class="list-group-item"><a href="/basic-training-of-army-national-guard.html">Basic Training Of Army National Guard</a></li>
+													<li class="list-group-item"><a href="/arnold-schwarzenegger-army-movie.html">Arnold Schwarzenegger Army Movie</a></li>
+													<li class="list-group-item"><a href="/buffalo-soldier-national-museum.html">Buffalo Soldier National Museum</a></li>
+													<li class="list-group-item"><a href="/baju-warna-hijau-army-cocok-dengan-celana-warna-apa.html">Baju Warna Hijau Army Cocok Dengan Celana Warna Apa</a></li>
+													<li class="list-group-item"><a href="/buffalo-soldiers-national-museum.html">Buffalo Soldiers National Museum</a></li>
+													<li class="list-group-item"><a href="/belgian-army-rank-insignia.html">Belgian Army Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/benefits-of-being-in-army-national-guard.html">Benefits Of Being In Army National Guard</a></li>
+													<li class="list-group-item"><a href="/best-army-cadence-for-running.html">Best Army Cadence For Running</a></li>
+													<li class="list-group-item"><a href="/batang-lidah-buaya.html">Batang Lidah Buaya</a></li>
+													<li class="list-group-item"><a href="/baju-army-jilbab-warna-apa.html">Baju Army Jilbab Warna Apa</a></li>
+													<li class="list-group-item"><a href="/baju-army-hijab-warna-apa.html">Baju Army Hijab Warna Apa</a></li>
+													<li class="list-group-item"><a href="/arnold-tucker-army-football.html">Arnold Tucker Army Football</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

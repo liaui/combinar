@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Active Army To National Guard Retirement - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Active Army To National Guard Retirement",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/a7/45/a8/a745a818908307724ff3806a79288113.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=active+army+to+national+guard+retirement",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Active Army To National Guard Retirement</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">A monthly expense allowance of up to 384 for more than 13500 total over a four year college career. You can estimate what your potential retirement payments may be with the official BRS military pay calculator. People who serve in the US. <br>				
+			</p>
+										<a class="badge badge-warning" href="/army-itu-fandom-siapa.html">army itu fandom siapa</a>
+											<a class="badge badge-danger" href="/army-gaya-rambut.html">army gaya rambut</a>
+											<a class="badge badge-danger" href="/army-full-form-army-full-form.html">army full form army full form</a>
+											<a class="badge badge-info" href="/army-lieutenant-ki-salary.html">army lieutenant ki salary</a>
+											<a class="badge badge-danger" href="/army-jung-ke-maidan-mein-army-song.html">army jung ke maidan mein army song</a>
+											<a class="badge badge-primary" href="/army-ki-naa-songs-download.html">army ki naa songs download</a>
+											<a class="badge badge-warning" href="/army-guard-officer-pay.html">army guard officer pay</a>
+											<a class="badge badge-success" href="/army-heritage-paintings.html">army heritage paintings</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you have come to pay a visit to the ideal blog.  Our site provides you with hints for seeing the maximum quality video and image content, hunt and find more enlightening video articles and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, therefore we recommend this video that you view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4a/b8/08/4ab808c8c632334759a7202b4cb3633f.png" data-lightbox="roadtrip" data-title="What I Wish I Knew Before Leaving Active Duty Military Service All That You Need To Know Regardi Military Husband Military Lifestyle Military Retirement Gift">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4a/b8/08/4ab808c8c632334759a7202b4cb3633f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk2gAP7GXRegwjVX_aKyI3aYtulDwAf0fYOQ';" alt="What I Wish I Knew Before Leaving Active Duty Military Service All That You Need To Know Regardi Military Husband Military Lifestyle Military Retirement Gift">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What I Wish I Knew Before Leaving Active Duty Military Service All That You Need To Know Regardi Military Husband Military Lifestyle Military Retirement Gift</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d8/a1/93/d8a193c07520f6f0f71d245b3fefcafc.jpg" data-lightbox="roadtrip" data-title="After Spending 20 Years Active Duty In The Army I Have Finally Retired I Thought I Would Provide A Check Military Marriage Military Life Military Retirement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d8/a1/93/d8a193c07520f6f0f71d245b3fefcafc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUc4imDbr7prgHUqxmAF4hRZUN3qxOZQhdgg';" alt="After Spending 20 Years Active Duty In The Army I Have Finally Retired I Thought I Would Provide A Check Military Marriage Military Life Military Retirement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">After Spending 20 Years Active Duty In The Army I Have Finally Retired I Thought I Would Provide A Check Military Marriage Military Life Military Retirement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3d/05/cc/3d05ccc0cdf48d7a66e092cdccd7d920.jpg" data-lightbox="roadtrip" data-title="Pin On Vets">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3d/05/cc/3d05ccc0cdf48d7a66e092cdccd7d920.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStynMtvFOXurgwUklGjMjPCyA0Qu40PzDj0w';" alt="Pin On Vets">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vets</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/87/0d/2c/870d2cc35b35641da75b6e1cb68686a8.jpg" data-lightbox="roadtrip" data-title="Pin On Retirement">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/87/0d/2c/870d2cc35b35641da75b6e1cb68686a8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlB0lJONOYzAm8oHqiEnjw1WAZO1tbDKarHw';" alt="Pin On Retirement">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Retirement</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3e/d4/0a/3ed40aeb529288e211fe0f06cc5673a5.jpg" data-lightbox="roadtrip" data-title="Pin On Awsome Jobs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3e/d4/0a/3ed40aeb529288e211fe0f06cc5673a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnm4UzPkYfwS6qRfNgzKEC8oSqfsMx991UvQ';" alt="Pin On Awsome Jobs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Awsome Jobs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/28/af/7828afe9482390eeeff19f6f364f738c.png" data-lightbox="roadtrip" data-title="Pin On Military Education">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/28/af/7828afe9482390eeeff19f6f364f738c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQrZijValsb8mGMemdC8byiyUVovOmkkBPA';" alt="Pin On Military Education">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Education</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e2/d6/9d/e2d69d656d682ed7636afdbe4ed059a4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQrZijValsb8mGMemdC8byiyUVovOmkkBPA';" alt="Pin On Military Education">
+										<div class="card-body">
+						<h3 class="h5"><b>If youre an Army National Guard member you must complete 20 years of qualified service to be eligible for retirement pay when you reach age 60.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Active army to national guard retirement</strong>. 
+								
+																	Active duty members essentially serve for twenty years then can retire and start drawing their pension immediately. 
+																	TERA is now available for Guardsmen serving under Title 32. 
+																	For those serving on active duty retirement is possible once 20 qualifying years of military service have been reached. 
+																	It doesnt matter if you signed a two-year active duty contract a four-year contract or even a six-year contract. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Guard and Reserve members with active service may qualify for a variety of VA benefits. 
+																	The Army National Guard official site includes discussion of the benefits for Guard members. 
+																	National Guard or Reserve members with 20 or more qualifying years are eligible to receive their monthly retired pay starting at age 60 or earlier based on qualifying active service. 
+																	It may surprise you to learn that everyone who joins the military for the first time incurs a minimum eight-year service commitment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A Soldier in the National Guard must have completed 20 years of qualifying service to be eligible for retired pay at age 60. 
+																	There are certain benefits that are available to those who choose to transfer from active service to the National Guard including bonuses of up to 20000 retirement benefits healthcare coverage opportunities for full-time employment and stabilization support for up to 36 months. 
+																	Under BRS your retirement pay will be 209075. 
+																	There are some cases where early retirement is possible with fewer than 20 years of service but military early retirement is not an open-ended option. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	At 20 years an officer with the rank of general O-10 earns 3265354. 
+																	A qualifying year is a complete year in which a Soldier has earned a. 
+																	Under the Temporary Early Retirement Authority TERA Full-time Guardsmen may become eligible for a retirement earlier than 20 years. 
+																	Any time not spent on active duty must either be served in the Active GuardReserves the program where one performs drill one weekend per month and two weeks per year or in the inactive Reserves. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The pension typically doesnt kick in until you reach the age of 60. 
+																	If you go to the Army National Guard Personnel Gateway youll see a list of calculators. 
+																	There are three non-disability retirement plans currently in effect for active duty. 
+																	In the National Guard a qualifying year for. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In June of 2016 Army Secretary Eric Flannigan signed a directiveto expand the TERA program to encompass National Guard Soldiers. 
+																	Members who accumulate 20 or more years of active service are eligible for retirement. 
+																	National Guard members require twenty Good Years which may be a combination of service in the Guard Reserves or active duty. 
+																	However the one youre looking for to calculate retirement is the Retirement Reserve Component link which will redirect you to the Army National Guard retirement calculator provided by My Army Benefits. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Military members who serve their country as part of the National Guard or a branchs reserve component may qualify for retirement benefits including a Blended Retirement System pension and Thrift Savings Plan retirement payments. 
+																	Army Guard Projections Under the High-3 system an Army National Guard enlisted E-9 sergeant major who earns 1254198 annually at retirement will receive 261249 in retirement payments annually. 
+																	If you are a member of the Active Reserves or National Guard member you must meet the following minimum requirements to be eligible for retired pay at age 60 age 50 in some cases. 
+																	The result is a full military career of 33 years 20 active duty and 13 ReserveGuard early payment of retirement benefits early age drop buy-back of active duty time into the OPM retirement system and subsequent early retirement from the civil service. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	As of 2011 this pay begins on the day the service member retires and is based upon the date you joined the service your rank the number of years served and your pay on the day you retire. 
+																	Be at least 60 years of age Note. 
+																	Active duty Title 10 - full-time duty such as but not limited to a unit deployment during war including travel to and from such duty OR. 
+																	Military for 20 years or more either as an active duty service member or a reservist receive guaranteed retirement pay. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Some reservists may qualify for retirement pay as early as age 50 and. 
+																	Your total military commitment is eight years. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/39/45/b7/3945b7e72ea43f1eb3467662d2c2034d.jpg" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/39/45/b7/3945b7e72ea43f1eb3467662d2c2034d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLpeSyzG81MPmNHFpEkb-HXz8ULLRJ4cJzhw';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e2/d6/9d/e2d69d656d682ed7636afdbe4ed059a4.png" data-lightbox="roadtrip" data-title="Pin On Top Posts At The Military Guide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e2/d6/9d/e2d69d656d682ed7636afdbe4ed059a4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR00vfwns1RyTfeGKqY6DUgIePnEoKO_uH8YA';" alt="Pin On Top Posts At The Military Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Top Posts At The Military Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/11/92/19119285939c665a0232158c5603cb2c.jpg" data-lightbox="roadtrip" data-title="My Daddy Is A Retired Soldier In The Army Even Though He S Not Actively In The Army He Will Always Be My Soldier Military Quotes Military Love Military Mom">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/11/92/19119285939c665a0232158c5603cb2c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeQJ6fG6v39VY9hlo7urpkHAyW9O0Xf3so4Q';" alt="My Daddy Is A Retired Soldier In The Army Even Though He S Not Actively In The Army He Will Always Be My Soldier Military Quotes Military Love Military Mom">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">My Daddy Is A Retired Soldier In The Army Even Though He S Not Actively In The Army He Will Always Be My Soldier Military Quotes Military Love Military Mom</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/91/87/fc9187ba88c3e6f41b4df9998f7d5783.jpg" data-lightbox="roadtrip" data-title="Pin On Military Life">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/91/87/fc9187ba88c3e6f41b4df9998f7d5783.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCSLLox3SlFzump5yBuLuXoZ9ZPGNaRsE8gw';" alt="Pin On Military Life">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Life</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/2a/a7/ba/2aa7ba4e17c11ed1209df0ebb3b8c96b.jpg" data-lightbox="roadtrip" data-title="Air Force Military Air Force Retirement Air Force Wife No Sew Blankets Military Retirement Gift Military Gifts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/2a/a7/ba/2aa7ba4e17c11ed1209df0ebb3b8c96b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStW5RZld1C-MzeP_BoWxfKK3vaWTcG8MWBjg';" alt="Air Force Military Air Force Retirement Air Force Wife No Sew Blankets Military Retirement Gift Military Gifts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Air Force Military Air Force Retirement Air Force Wife No Sew Blankets Military Retirement Gift Military Gifts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1f/f6/bc/1ff6bc80f2b88bf594fa1245ec66f120.jpg" data-lightbox="roadtrip" data-title="Pin On Reserve National Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1f/f6/bc/1ff6bc80f2b88bf594fa1245ec66f120.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROHZPjIlMwi3vZ3NGEmOGTRF4RIW_Zph0sHQ';" alt="Pin On Reserve National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Reserve National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7a/cf/0d/7acf0de586c177f863063afe2f3a4764.jpg" data-lightbox="roadtrip" data-title="Pin By Cinnamon Butterfield On Usaf Military Planes Military Quotes Veteran Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7a/cf/0d/7acf0de586c177f863063afe2f3a4764.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVS34RFNbFHajjh29YDKcrSmCROHBgqSN1sw';" alt="Pin By Cinnamon Butterfield On Usaf Military Planes Military Quotes Veteran Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Cinnamon Butterfield On Usaf Military Planes Military Quotes Veteran Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0c/82/2c/0c822cea9e9eb0343db578175e4ad1d9.jpg" data-lightbox="roadtrip" data-title="Pin By Rhonda Pleasant Walker On My U S Army Proud Veteran What Is A Veteran Veteran">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0c/82/2c/0c822cea9e9eb0343db578175e4ad1d9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk4NAQp9ifsLsdQbyPVVr5UyLJeHe2_gJF8g';" alt="Pin By Rhonda Pleasant Walker On My U S Army Proud Veteran What Is A Veteran Veteran">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Rhonda Pleasant Walker On My U S Army Proud Veteran What Is A Veteran Veteran</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/50/49/a650492d146ac28e249f30b0dfeeca1c.jpg" data-lightbox="roadtrip" data-title="Caspir Paranormal Caspir Team Twitter Military Quotes Veteran Military Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/50/49/a650492d146ac28e249f30b0dfeeca1c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4NsF4NTqF63qScT1NBfI5OvSTybYfwh0jHQ';" alt="Caspir Paranormal Caspir Team Twitter Military Quotes Veteran Military Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Caspir Paranormal Caspir Team Twitter Military Quotes Veteran Military Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a7/45/a8/a745a818908307724ff3806a79288113.png" data-lightbox="roadtrip" data-title="2016 Military Pay Scale Military Pay Chart Military Retirement Pay Military Pay">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a7/45/a8/a745a818908307724ff3806a79288113.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWPdrMUMxq_XHZ5HUhZZo5iAXeaFgJkg_KPA';" alt="2016 Military Pay Scale Military Pay Chart Military Retirement Pay Military Pay">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">2016 Military Pay Scale Military Pay Chart Military Retirement Pay Military Pay</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/f2/ec/3ff2ec9983addb22e0abeaaf25645433.jpg" data-lightbox="roadtrip" data-title="Pin On Basic Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/f2/ec/3ff2ec9983addb22e0abeaaf25645433.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBcrolkVZkoWOyxeVvYzWM642-EwWiToHfwA';" alt="Pin On Basic Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Basic Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/8c/f5/048cf50321808c8c7316033047a7ceab.png" data-lightbox="roadtrip" data-title="Pin On Guam 2019">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/8c/f5/048cf50321808c8c7316033047a7ceab.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2UaLgdtK8_1wvLUk3kcJtfyfU6GLwxx4Ikw';" alt="Pin On Guam 2019">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guam 2019</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b7/1c/48/b71c485079b5ac981c3ce8dd21cf6ae2.jpg" data-lightbox="roadtrip" data-title="Pin On Military Retired Jacket Hoodies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b7/1c/48/b71c485079b5ac981c3ce8dd21cf6ae2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE-4KIAW2D2dnDMJ1yKS-ob7r3kgFkWlH0nw';" alt="Pin On Military Retired Jacket Hoodies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Retired Jacket Hoodies</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/tulsa-angb.html">Tulsa Angb</a></li>
+													<li class="list-group-item"><a href="/tn-army-national-guard-ocs.html">Tn Army National Guard Ocs</a></li>
+													<li class="list-group-item"><a href="/trang-yue.html">Trang Yue</a></li>
+													<li class="list-group-item"><a href="/toyota-gb-website.html">Toyota Gb Website</a></li>
+													<li class="list-group-item"><a href="/uk-website-gb-gifts.html">Uk Website Gb Gifts</a></li>
+													<li class="list-group-item"><a href="/tx-set.html">Tx Set</a></li>
+													<li class="list-group-item"><a href="/txt-member.html">Txt Member</a></li>
+													<li class="list-group-item"><a href="/ukrainian-national-guard-equipment.html">Ukrainian National Guard Equipment</a></li>
+													<li class="list-group-item"><a href="/tns-umona-mp3.html">Tns Umona Mp3</a></li>
+													<li class="list-group-item"><a href="/title-32-technician-leave.html">Title 32 Technician Leave</a></li>
+													<li class="list-group-item"><a href="/trang-an-ninh-binh.html">Trang An Ninh Binh</a></li>
+													<li class="list-group-item"><a href="/turkey-army-rank-in-world.html">Turkey Army Rank In World</a></li>
+													<li class="list-group-item"><a href="/trang-yamaha.html">Trang Yamaha</a></li>
+													<li class="list-group-item"><a href="/toddler-army-cargo-pants.html">Toddler Army Cargo Pants</a></li>
+													<li class="list-group-item"><a href="/tx-series-zm700-tx.html">Tx Series Zm700 Tx</a></li>
+													<li class="list-group-item"><a href="/title-32-military-leave.html">Title 32 Military Leave</a></li>
+													<li class="list-group-item"><a href="/torguard-udp.html">Torguard Udp</a></li>
+													<li class="list-group-item"><a href="/uae-army-rank-in-world.html">Uae Army Rank In World</a></li>
+													<li class="list-group-item"><a href="/transfer-from-army-reserve-to-air-national-guard.html">Transfer From Army Reserve To Air National Guard</a></li>
+													<li class="list-group-item"><a href="/ting-iphone-notification-tone-download.html">Ting Iphone Notification Tone Download</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

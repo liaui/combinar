@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Presidents Guard - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Presidents Guard",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/51/04/e2/5104e2e0809138c8456324f8a16a00bf.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+presidents+guard",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Presidents Guard</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Presidents Bodyguard PBG is the oldest surviving mounted unit and the senior most regiment of the Indian Army. DONALD Trumps top National Security officials are reportedly considering quitting after the President is said to have resisted deploying the National Guard to Capitol Hill during Wednesdays. As of the 2020 presidential election no member of the US. <br>				
+			</p>
+										<a class="badge badge-success" href="/army-rank-with-salary.html">army rank with salary</a>
+											<a class="badge badge-secondary" href="/army-rank-order-us.html">army rank order us</a>
+											<a class="badge badge-warning" href="/army-rank-years-of-service.html">army rank years of service</a>
+											<a class="badge badge-danger" href="/army-rank-qualifications.html">army rank qualifications</a>
+											<a class="badge badge-primary" href="/army-rank-vs-air-force.html">army rank vs air force</a>
+											<a class="badge badge-primary" href="/army-rank-uk.html">army rank uk</a>
+											<a class="badge badge-light" href="/army-rank-rect.html">army rank rect</a>
+											<a class="badge badge-warning" href="/army-rank-list-in-world.html">army rank list in world</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you've come to pay a visit to the right blog.  Our site provides you with hints for viewing the maximum quality video and image content, hunt and locate more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to view.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/74/f9/9674f9149a36bda6d1336c2c870a1881.jpg" data-lightbox="roadtrip" data-title="President George W Bush In The Service Not Bad Looking American Presidents Presidents Presidential History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/74/f9/9674f9149a36bda6d1336c2c870a1881.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5ckWpIWx0hqTs2JzHRQsLFMcYWpWBB6zZA';" alt="President George W Bush In The Service Not Bad Looking American Presidents Presidents Presidential History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">President George W Bush In The Service Not Bad Looking American Presidents Presidents Presidential History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c8/36/7b/c8367b6fe6cc8fa59f5beaaa8e498e32.jpg" data-lightbox="roadtrip" data-title="The Prestigious Military Honor Guards Military Honor Honor Guard Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c8/36/7b/c8367b6fe6cc8fa59f5beaaa8e498e32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa9A-7E4mmdo5xwYIJi-kXyDZaBG9UgroMCw';" alt="The Prestigious Military Honor Guards Military Honor Honor Guard Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Prestigious Military Honor Guards Military Honor Honor Guard Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c3/e4/9f/c3e49f50ea65f2c1622416769fdb56d6.png" data-lightbox="roadtrip" data-title="Pin By Glenn De Jong On Ronald Reagan Reagan Usa Presidents Nancy Reagan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c3/e4/9f/c3e49f50ea65f2c1622416769fdb56d6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdgfNJ5a3AFNFhIynO7w35uQZxYMjpP9BLw';" alt="Pin By Glenn De Jong On Ronald Reagan Reagan Usa Presidents Nancy Reagan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Glenn De Jong On Ronald Reagan Reagan Usa Presidents Nancy Reagan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/58/3b/94583b5d90bb4d2727a78d24fe3aeb37.jpg" data-lightbox="roadtrip" data-title="State President S Guard 1977 Army Day African History South Africa States">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/58/3b/94583b5d90bb4d2727a78d24fe3aeb37.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX2QHGdY9P7Fz4l-HwsuDfKymNwyhppDGPbw';" alt="State President S Guard 1977 Army Day African History South Africa States">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">State President S Guard 1977 Army Day African History South Africa States</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/2d/60/842d609efce2a04529441be44c99f44b.jpg" data-lightbox="roadtrip" data-title="George W Bush Americana U S Presidents American Presidents Presidents">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/2d/60/842d609efce2a04529441be44c99f44b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf-jYnHQr6E19UVkwGTLxSP602wj2YnP5Y5Q';" alt="George W Bush Americana U S Presidents American Presidents Presidents">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">George W Bush Americana U S Presidents American Presidents Presidents</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/86/80/3586808b899143134d33c528c35d38e8.jpg" data-lightbox="roadtrip" data-title="Pin On Camelot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/86/80/3586808b899143134d33c528c35d38e8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReRKuXWzYEGZ2zRpMchzXY37-jLXfMpbVmBQ';" alt="Pin On Camelot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Camelot</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/de/14/68/de1468799aabd7e0b3a4fa08a3f00bca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReRKuXWzYEGZ2zRpMchzXY37-jLXfMpbVmBQ';" alt="Pin On Camelot">
+										<div class="card-body">
+						<h3 class="h5"><b>After the attack on the US Capitol by pro-Trump groups the DC National Guard was eventually called in to restore order.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us presidents guard</strong>. 
+								
+																	Even while posted at the US Capitol many troops have been seen sleeping on the floor US President Joe Biden has apologised after some members of the National Guard stationed at the Capitol were. 
+																	The president of the United States is the head of state and head of government of the United States indirectly elected to a four-year term by the American people through the Electoral CollegeThe officeholder leads the executive branch of the federal government and is the commander-in-chief of the United States Armed Forces. 
+																	Biden Jr two of them for expressing anti-government sentiments. 
+																	It was raised by Governor-General Warren Hastings in September 1773. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Marine Corps or US. 
+																	Coast Guard has yet been elected President. 
+																	Defense and administration officials said it was Vice President Mike Pence not President Trump who approved the order to deploy the DC. 
+																	Serving in the military isnt a prerequisite for becoming president. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WASHINGTON Twelve National Guard members have been removed from duties related to the inauguration of President-elect Joseph R. 
+																	A dozen members of the US National Guard have been removed from securing President-elect Joe Bidens inauguration after vetting by the FBI including two who made extremist statements. 
+																	She is the younger sister of Kamala Harris the 49th and current Vice President of the United States. 
+																	Maya 53 was also a political and legal analyst for MSNBC and served as chairwoman for her. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Around 150 to 200 National Guard troops deployed to Washington DC to provide security for President Joe Bidens inauguration have tested positive for Covid-19 on Friday news agency ANI reported. 
+																	Eisenhower federalised the entire Arkansas national guard and sent in the 101st Airborne Division to protect the students as they arrived for class. 
+																	The state National Guard is organized into units stationed in each of the 50 states three territories and the District of Columbia and operates under their respective state or territorial governor except in the instance of Washington DC where the National Guard operates under the President of the United States or his designee. 
+																	Strangely it is being reported that Vice President Mike Pence was the one who approved the orders not President Trump. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	That authority is constrained by Congress and the courts and further informed by military instructions and doctrine. 
+																	Nonetheless out of the 45 presidents of the United States 29 had some military experience in their background according to. 
+																	Andrew Carnegie offered to endow a US25000 equal to 662328 today annual pension for former chief executives in 1912 but congressmen questioned the propriety of such a private pension. 
+																	US President Donald Trump has approved federal funding for National Guard troops in the three states hardest hit by the coronavirus outbreak. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Since it was established in 1789 the office has been held by 45. 
+																	The National Guard of the several states territories and the District of Columbia serves as part of the first line of defense for the United States. 
+																	Presidents have been assassinated while in office and many more have faced serious attempts on their lives. 
+																	The most frequent military experience is ArmyArmy Reserve with 15 presidents followed by State Militias at 9 NavyNaval Reserve at 6 and the Continental Army with 2 presidents serving. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Being president of the United States comes with numerous perks and the fringe benefits continue decades after the nations chief executives exit the White House. 
+																	Andrew Jackson holds the dubious distinction of being the first sitting president to survive a serious assassination attempt which occurred in 1835. 
+																	Troops will be used in New York California and. 
+																	Hastings handpicked 50 troopers from the Moghal Horse a unit which was raised in 1760 by local sirdars. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Presidents are currently paid. 
+																	That prompted legislation to provide benefits to former presidents. 
+																	Before 1958 the US. 
+																	The president is of course the commander-in-chief of the Armed Forces and the DC. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Guard but he lacks the authority to use the military in any manner that he pleases. 
+																	Federal government provided no pension or other retirement benefits to former United States presidents. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/f4/54/05f4541543f758c56ba3bbaabdd0ba95.jpg" data-lightbox="roadtrip" data-title="Agency In Charge Of The Security Guard And Former President Of The United States Has Employed 3200 And 1300 Police Agents Poll Dangerous Jobs Obama The Secret">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/f4/54/05f4541543f758c56ba3bbaabdd0ba95.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN3Tmk9DAfTlOAvmjfldTY2vsB0eAgt1WGxw';" alt="Agency In Charge Of The Security Guard And Former President Of The United States Has Employed 3200 And 1300 Police Agents Poll Dangerous Jobs Obama The Secret">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Agency In Charge Of The Security Guard And Former President Of The United States Has Employed 3200 And 1300 Police Agents Poll Dangerous Jobs Obama The Secret</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/4f/5e/0f4f5eb205505a8dd4c70837f10e30bb.jpg" data-lightbox="roadtrip" data-title="Times Now On Twitter In 2020 Obama Barack Us Presidents">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/4f/5e/0f4f5eb205505a8dd4c70837f10e30bb.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8BTqPPHIcaumPbz--N39OZOBcS-mueIAJZw';" alt="Times Now On Twitter In 2020 Obama Barack Us Presidents">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Times Now On Twitter In 2020 Obama Barack Us Presidents</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/39/c4/af39c4bf07649f23ec8a916c5f922a98.jpg" data-lightbox="roadtrip" data-title="Pin On History We Wrote">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/39/c4/af39c4bf07649f23ec8a916c5f922a98.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtwKlf4agJDnJ_5v28hh9KAh6mZRwDe4f5Mw';" alt="Pin On History We Wrote">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On History We Wrote</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/18/1e/d9/181ed986dfc5089dc72aa3da023e51de.jpg" data-lightbox="roadtrip" data-title="Title Truman Visit To The U S Coast Guard Academy New London Connecticut Description On His First Visit T Coast Guard Academy Coast Guard Honor Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/18/1e/d9/181ed986dfc5089dc72aa3da023e51de.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_n2rKpRcRIrfNEYDXWqaa3tA3wvkE5jbzVA';" alt="Title Truman Visit To The U S Coast Guard Academy New London Connecticut Description On His First Visit T Coast Guard Academy Coast Guard Honor Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Title Truman Visit To The U S Coast Guard Academy New London Connecticut Description On His First Visit T Coast Guard Academy Coast Guard Honor Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/83/59/0b83598c1cfd3fbba802171280eaad0d.jpg" data-lightbox="roadtrip" data-title="Barack Obama Presidency A U S Secret Service Agent Rides In A Vehicle In The Motorcade Carrying U Executive Protection United States Secret Service Vehicles">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/83/59/0b83598c1cfd3fbba802171280eaad0d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNihdT-nfvVcRO2DpHEczt9uK_y1sq5V2c5A';" alt="Barack Obama Presidency A U S Secret Service Agent Rides In A Vehicle In The Motorcade Carrying U Executive Protection United States Secret Service Vehicles">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barack Obama Presidency A U S Secret Service Agent Rides In A Vehicle In The Motorcade Carrying U Executive Protection United States Secret Service Vehicles</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/05/47/bd/0547bd9485695f17c96f8d77d1639ef6.jpg" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/05/47/bd/0547bd9485695f17c96f8d77d1639ef6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-DPsVvN0OGIZUSq42CmSurszdVIecGH998w';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/62/57/496257516ef26ae87ad68b5bd30e5278.jpg" data-lightbox="roadtrip" data-title="The Vintage Life Community Google American Presidents Usa Presidents Presidents">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/62/57/496257516ef26ae87ad68b5bd30e5278.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrVXIIsFSyfJ5ED7PLKMIbBTBF8nlZhKZkEQ';" alt="The Vintage Life Community Google American Presidents Usa Presidents Presidents">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Vintage Life Community Google American Presidents Usa Presidents Presidents</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e8/18/57/e81857943a51967ebb252e867e15d7d0.jpg" data-lightbox="roadtrip" data-title="Headlines Post Obama Gets Ceremonial Guard Of Honour By Women Officer Indian Army Army Navy Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e8/18/57/e81857943a51967ebb252e867e15d7d0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj1TT-LsR6zusKSuPTInv6wxcvspeITlSNMw';" alt="Headlines Post Obama Gets Ceremonial Guard Of Honour By Women Officer Indian Army Army Navy Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Headlines Post Obama Gets Ceremonial Guard Of Honour By Women Officer Indian Army Army Navy Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/de/14/68/de1468799aabd7e0b3a4fa08a3f00bca.jpg" data-lightbox="roadtrip" data-title="Pin On Barack Obama Presidency First Family 44 Usa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/de/14/68/de1468799aabd7e0b3a4fa08a3f00bca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFNeFtVHaQ7f35OzsIX2BgFO92G5Ba5JZoCw';" alt="Pin On Barack Obama Presidency First Family 44 Usa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Barack Obama Presidency First Family 44 Usa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/4a/82/2c4a825902238e7a47e5cf5c5ff6b962.jpg" data-lightbox="roadtrip" data-title="Usmc Color Guard United States Marine Corps Usmc United States Marine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/4a/82/2c4a825902238e7a47e5cf5c5ff6b962.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH4VgCAdEVObQm3DztvNtGBFWybs-WpZmI8A';" alt="Usmc Color Guard United States Marine Corps Usmc United States Marine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Usmc Color Guard United States Marine Corps Usmc United States Marine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/00/cd/b2/00cdb2652e63d3089cb03fb6bf45804f.jpg" data-lightbox="roadtrip" data-title="Army Military Honor Guard At Funeral Military Honor Honor Guard United States Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/00/cd/b2/00cdb2652e63d3089cb03fb6bf45804f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTppbXMz9XMgxdEH-4MmbJRNPOlmCobPm-bqQ';" alt="Army Military Honor Guard At Funeral Military Honor Honor Guard United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Military Honor Guard At Funeral Military Honor Honor Guard United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/51/04/e2/5104e2e0809138c8456324f8a16a00bf.jpg" data-lightbox="roadtrip" data-title="1963 11 25 Jfk S Grave Following The Burial Service Honor Guard Kennedy Assasination John F Kennedy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/51/04/e2/5104e2e0809138c8456324f8a16a00bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmM26n0pNcqyHA-VXcyQzMAaZJVyYiwEKUOw';" alt="1963 11 25 Jfk S Grave Following The Burial Service Honor Guard Kennedy Assasination John F Kennedy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">1963 11 25 Jfk S Grave Following The Burial Service Honor Guard Kennedy Assasination John F Kennedy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d3/9b/68/d39b684e30e82393bad46c5afa3857ad.jpg" data-lightbox="roadtrip" data-title="Pope Francis Leaves The U S Photos Pope Francis Visits The United States Pope Francis Obama Pictures Of The Week">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d3/9b/68/d39b684e30e82393bad46c5afa3857ad.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4CUz1c6qJhj0SG1WhxDHIL_PTjHGmrhy2TA';" alt="Pope Francis Leaves The U S Photos Pope Francis Visits The United States Pope Francis Obama Pictures Of The Week">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pope Francis Leaves The U S Photos Pope Francis Visits The United States Pope Francis Obama Pictures Of The Week</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/is-army-rank-insignia.html">Is Army Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/is-army-national-guard-active-duty.html">Is Army National Guard Active Duty</a></li>
+													<li class="list-group-item"><a href="/irish-army-ranger-wing-requirements.html">Irish Army Ranger Wing Requirements</a></li>
+													<li class="list-group-item"><a href="/irish-army-ranger-wing-sniper-competition.html">Irish Army Ranger Wing Sniper Competition</a></li>
+													<li class="list-group-item"><a href="/indian-army-songs-download-mp3.html">Indian Army Songs Download Mp3</a></li>
+													<li class="list-group-item"><a href="/is-left-guard-or-right-guard-more-important.html">Is Left Guard Or Right Guard More Important</a></li>
+													<li class="list-group-item"><a href="/is-a-person-who-served-in-the-national-guard-considered-a-veteran.html">Is A Person Who Served In The National Guard Considered A Veteran</a></li>
+													<li class="list-group-item"><a href="/indian-army-song-audio-download-mp3.html">Indian Army Song Audio Download Mp3</a></li>
+													<li class="list-group-item"><a href="/indian-army-song-jung-ke-maidan-mein-indian-army-song.html">Indian Army Song Jung Ke Maidan Mein Indian Army Song</a></li>
+													<li class="list-group-item"><a href="/is-a-6-year-reservist-considered-a-veteran.html">Is A 6 Year Reservist Considered A Veteran</a></li>
+													<li class="list-group-item"><a href="/indian-army-songs-mp3-download-naa-songs.html">Indian Army Songs Mp3 Download Naa Songs</a></li>
+													<li class="list-group-item"><a href="/is-national-guard-a-military-branch.html">Is National Guard A Military Branch</a></li>
+													<li class="list-group-item"><a href="/irish-army-ranger-wing-book.html">Irish Army Ranger Wing Book</a></li>
+													<li class="list-group-item"><a href="/indian-army-songs-mp3-download-djpunjab.html">Indian Army Songs Mp3 Download Djpunjab</a></li>
+													<li class="list-group-item"><a href="/information-about-national-guard.html">Information About National Guard</a></li>
+													<li class="list-group-item"><a href="/iran-army-rank-insignia.html">Iran Army Rank Insignia</a></li>
+													<li class="list-group-item"><a href="/is-army-reserve-or-national-guard-better.html">Is Army Reserve Or National Guard Better</a></li>
+													<li class="list-group-item"><a href="/indiana-national-guard-military-ball.html">Indiana National Guard Military Ball</a></li>
+													<li class="list-group-item"><a href="/indian-army-song-dj-full.html">Indian Army Song Dj Full</a></li>
+													<li class="list-group-item"><a href="/is-coast-guard-a-soldier.html">Is Coast Guard A Soldier</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

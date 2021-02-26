@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Cnn National Guard Vetting - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Cnn National Guard Vetting",
+  "datePublished": "2021-02-27",
+  "image": "http://www.jamaicaobserver.com/apps/pbcsi.dll/storyimage/JO/20210119/ARTICLE/210119536/AR/0/AR-210119536.jpg&amp;maxh=332&amp;maxw=504",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cnn+national+guard+vetting",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Cnn National Guard Vetting</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Twelve Army National Guard members were removed from inauguration duty as part of the security vetting to ensure none of the troops have ties to extremist groups the chief of the National Guard. AP PhotoAndrew Harnik Officials at the Pentagon addressed questions from reporters Tuesday afternoon about allegations from. Defense officials are reportedly worried about an insider attack from service members. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/army-songs-free-download.html">army songs free download</a>
+											<a class="badge badge-danger" href="/army-songs-rap.html">army songs rap</a>
+											<a class="badge badge-danger" href="/army-songs-for-download.html">army songs for download</a>
+											<a class="badge badge-dark" href="/army-songs-and.html">army songs and</a>
+											<a class="badge badge-dark" href="/army-song-pakistan.html">army song pakistan</a>
+											<a class="badge badge-warning" href="/army-song-pawitar-mp3.html">army song pawitar mp3</a>
+											<a class="badge badge-danger" href="/army-songs-in-hindi.html">army songs in hindi</a>
+											<a class="badge badge-warning" href="/army-song-old.html">army song old</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to pay a visit to the right site.  Our website provides you with hints for seeing the highest quality video and picture content, hunt and locate more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from several sources, especially Youtube, so we recommend this video for you to see.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kvia.b-cdn.net/2021/01/hypatia-h_2da708625cdb4f06cf22292af9225462-h_b74240f85d9005a71e48e07cec8fa22f_preview.jpg" data-lightbox="roadtrip" data-title="12 National Guard Members With Ties To Extremist Groups Now Pulled From Inauguration Duty Kvia">
+											<img class="card-img v-image ads-img " src="https://kvia.b-cdn.net/2021/01/hypatia-h_2da708625cdb4f06cf22292af9225462-h_b74240f85d9005a71e48e07cec8fa22f_preview.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT4sxt15Qjj7Fcsrcw92wxr4DCLFzyluW8FA';" alt="12 National Guard Members With Ties To Extremist Groups Now Pulled From Inauguration Duty Kvia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 National Guard Members With Ties To Extremist Groups Now Pulled From Inauguration Duty Kvia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://newscdn2.weigelbroadcasting.com/jbEtG-1610999872-184481-blog-hypatia-h_b75b2da9cab9d47e746e1d7445960591-h_a00564284b5b4388ee4cd290280a6496.jpg" data-lightbox="roadtrip" data-title="Pentagon Chief Says No Intelligence Indicating An Insider Threat To Inauguration As Fbi Vets National Guard">
+											<img class="card-img v-image ads-img " src="https://newscdn2.weigelbroadcasting.com/jbEtG-1610999872-184481-blog-hypatia-h_b75b2da9cab9d47e746e1d7445960591-h_a00564284b5b4388ee4cd290280a6496.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNkCltuCd6MrLZDdcddfJ-ZZ2NvNwKSfhEwg';" alt="Pentagon Chief Says No Intelligence Indicating An Insider Threat To Inauguration As Fbi Vets National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pentagon Chief Says No Intelligence Indicating An Insider Threat To Inauguration As Fbi Vets National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cdn.cnn.com/cnnnext/dam/assets/210116143644-04-washington-dc-security-0116-live-video.jpg" data-lightbox="roadtrip" data-title="Two Army National Guard Members Removed From Inauguration Duty">
+											<img class="card-img v-image ads-img " src="https://cdn.cnn.com/cnnnext/dam/assets/210116143644-04-washington-dc-security-0116-live-video.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2LzbbQr3HLa2Bd_8k6r0H0W_z6neIqemNpw';" alt="Two Army National Guard Members Removed From Inauguration Duty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Two Army National Guard Members Removed From Inauguration Duty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kfoxtv.com/resources/media2/16x9/full/1015/center/80/1394e0f6-58a7-4ca1-a9c0-f446d7b1d271-large16x9_AP21016712702041.jpg" data-lightbox="roadtrip" data-title="Governor Greg Abbott Says He S Offended By Vetting Of Texas National Guard In Dc Kfox">
+											<img class="card-img v-image ads-img " src="https://kfoxtv.com/resources/media2/16x9/full/1015/center/80/1394e0f6-58a7-4ca1-a9c0-f446d7b1d271-large16x9_AP21016712702041.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKiDli6hKkJ3Kl2ndxc1T5SKeT52H66cRNMQ';" alt="Governor Greg Abbott Says He S Offended By Vetting Of Texas National Guard In Dc Kfox">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Governor Greg Abbott Says He S Offended By Vetting Of Texas National Guard In Dc Kfox</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/u-s-national-guard-soldiers-moved-to-parking-garage-ii-jpg-1611324748.jpg" data-lightbox="roadtrip" data-title="National Guard Troops In Dc Forced To Sleep In Garages Sparking Outcry">
+											<img class="card-img v-image ads-img " src="https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/u-s-national-guard-soldiers-moved-to-parking-garage-ii-jpg-1611324748.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT58TKSuZyQ53xCCDwQJGB-GefWatYGbT5oCw';" alt="National Guard Troops In Dc Forced To Sleep In Garages Sparking Outcry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Troops In Dc Forced To Sleep In Garages Sparking Outcry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/3kFohKWto6s/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Fbi Vetting National Guard Members Ahead Of Biden Inauguration Fox 5 Dc Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/3kFohKWto6s/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_KtwKM3y3pc_0ogR-1urF2xDNxzcUO3H77Q';" alt="Fbi Vetting National Guard Members Ahead Of Biden Inauguration Fox 5 Dc Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fbi Vetting National Guard Members Ahead Of Biden Inauguration Fox 5 Dc Youtube</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://localnews8.b-cdn.net/2021/01/National-Guard-Soldiers-and-Airmen-from-several-states-have-traveled-to-Washington-to-provide-support-to-federal-and-district-authorities-leading-up-to-the-59th-Biden-Presidential-Inauguration-logo.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_KtwKM3y3pc_0ogR-1urF2xDNxzcUO3H77Q';" alt="Fbi Vetting National Guard Members Ahead Of Biden Inauguration Fox 5 Dc Youtube">
+										<div class="card-body">
+						<h3 class="h5"><b>CNN -- Acting Secretary of Defense Christopher Miller said Monday that there is no intelligence indicating an insider threat to President-elect Joe Bidens inauguration though National Guard.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Cnn national guard vetting</strong>. 
+								
+																	The vetting process of the 25000 National Guard troops heading to DC has been ongoing after the Capitol Hill protests left five dead. 
+																	Two Army National Guard members removed from inauguration duty Two members of the Army National Guard were removed form inauguration duty during the vetting process. 
+																	Washington CNN Acting Secretary of Defense Christopher Miller said Monday that there is no intelligence indicating an insider threat to President-elect Joe Bidens inauguration though National. 
+																	FBI vetting National Guard members involved in securing US Capitol The head of the DC National Guard said Monday that the FBI is vetting troops involved in securing the US Capitol around. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Steve Cohen Tennessee Democrat said the National Guard detail in and around the National Mall are a suspect for some type of anti-Biden action. 
+																	He brought up the assassination of. 
+																	CNN previously reported that the FBI is vetting the thousands of National Guard troops providing security at the inauguration ahead of their arrival in Washington in order to prevent any insider. 
+																	Democrat Representative Steve Cohen perpetuated the conspiracy theory that Trump-supporting National Guard members are a threat to the Biden inauguration. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	FBI and Army vetting 25000 National Guard troops in DC to protect the Inauguration. 
+																	Pentagon Officials Explain Vetting of National Guard Troops Source. 
+																	Twelve Army National Guard members have been removed from inauguration duty in Washington DC as part of the security vetting process initiated in part to ensure troops tasked with. 
+																	Washington CNN Acting Secretary of Defense Christopher Miller said Monday that there is no intelligence indicating an insider threat to President-elect Joe Bidens inauguration though National. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Defense officials overseeing the monumental task of safeguarding the US Capitol during President-elect Joe Bidens inauguration week are using the FBI to vet all of the 25000 National Guard. 
+																	CNNs Alex Marquardt reports. 
+																	Speaking to Jim Sciutto on CNN Cohen brought up the assassinations of previous political leaders such as Anwar Sadat and Indira Gandhi who Cohen noted were killed by their own people and claimed he was concerned about actions being taken by the National Guard at the inauguration of Joe Biden on Wednesday. 
+																	CNNs Barbara Starr reports. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	FBI vetting National Guard troops in DC amid fears of insider attack The concern is prompting the FBI to vet all 25000 troops coming into the nations capital for securing President-elect Biden. 
+																	CNN Twelve Army National Guard members have been removed from inauguration duty in Washington DC as part of the security vetting process initiated in part to ensure troops tasked with. 
+																	Twelve Army National Guard members have been removed from inauguration duty in Washington DC as part of the security vetting process initiated in part to ensure troops tasked with securing the. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/41526ca1-ead8-4789-a70d-e425b7e30d9f.png" data-lightbox="roadtrip" data-title="65 Biden Inaugural Committee Celebrates National Run For Office Day">
+											<img class="card-img v-image ads-img " src="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/41526ca1-ead8-4789-a70d-e425b7e30d9f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqhXlsGbdBGpBOSfSOs_a3l49h2kpbZ02J4w';" alt="65 Biden Inaugural Committee Celebrates National Run For Office Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">65 Biden Inaugural Committee Celebrates National Run For Office Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://localnews8.b-cdn.net/2021/01/National-Guard-Soldiers-and-Airmen-from-several-states-have-traveled-to-Washington-to-provide-support-to-federal-and-district-authorities-leading-up-to-the-59th-Biden-Presidential-Inauguration-logo.jpg" data-lightbox="roadtrip" data-title="Fbi Vetting National Guard Members Involved In Securing Us Capitol Local News 8">
+											<img class="card-img v-image ads-img " src="https://localnews8.b-cdn.net/2021/01/National-Guard-Soldiers-and-Airmen-from-several-states-have-traveled-to-Washington-to-provide-support-to-federal-and-district-authorities-leading-up-to-the-59th-Biden-Presidential-Inauguration-logo.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRNHsi3WUFSErN7hbQLRB2Ps5o5vI5U3p78A';" alt="Fbi Vetting National Guard Members Involved In Securing Us Capitol Local News 8">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fbi Vetting National Guard Members Involved In Securing Us Capitol Local News 8</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://newscdn2.weigelbroadcasting.com/lt1up-1611076680-184566-blog-hypatia-h_7e6a134ef2a3f2d84a4a3f63ece3b7d5-h_579ce8594f599234c9c0f575be448434.jpg" data-lightbox="roadtrip" data-title="Two Army National Guard Members Removed From Inauguration Duty">
+											<img class="card-img v-image ads-img " src="https://newscdn2.weigelbroadcasting.com/lt1up-1611076680-184566-blog-hypatia-h_7e6a134ef2a3f2d84a4a3f63ece3b7d5-h_579ce8594f599234c9c0f575be448434.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp1Q0rWidnfRJyjeAHzAiXhaKEfwyHjWv0JA';" alt="Two Army National Guard Members Removed From Inauguration Duty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Two Army National Guard Members Removed From Inauguration Duty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.jamaicaobserver.com/apps/pbcsi.dll/storyimage/JO/20210119/ARTICLE/210119536/AR/0/AR-210119536.jpg&amp;maxh=332&amp;maxw=504" data-lightbox="roadtrip" data-title="Two Us National Guard Troops Pulled From Inauguration Duty Report">
+											<img class="card-img v-image ads-img " src="http://www.jamaicaobserver.com/apps/pbcsi.dll/storyimage/JO/20210119/ARTICLE/210119536/AR/0/AR-210119536.jpg&amp;maxh=332&amp;maxw=504" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiqwxcKSFfV5DA0XgnIShI-lc3zz0XeqCafQ';" alt="Two Us National Guard Troops Pulled From Inauguration Duty Report">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Two Us National Guard Troops Pulled From Inauguration Duty Report</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/cd588385-26d0-424d-b6f9-93a38fed8c81.jpg" data-lightbox="roadtrip" data-title="38 Biden S Secretary Of State Nominee Says Trump Was Right To Take Tougher Approach To China">
+											<img class="card-img v-image ads-img " src="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/cd588385-26d0-424d-b6f9-93a38fed8c81.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wg58EBJ3b4omT23Hotn_FJ66ApssozOEAg';" alt="38 Biden S Secretary Of State Nominee Says Trump Was Right To Take Tougher Approach To China">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">38 Biden S Secretary Of State Nominee Says Trump Was Right To Take Tougher Approach To China</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/u-s-national-guard-soldiers-moved-to-parking-garage-jpg-1611324522.jpg?crop=1.00xw:0.752xh;0,0.167xh&amp;resize=1200:*" data-lightbox="roadtrip" data-title="National Guard Troops In Dc Forced To Sleep In Garages Sparking Outcry">
+											<img class="card-img v-image ads-img " src="https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/u-s-national-guard-soldiers-moved-to-parking-garage-jpg-1611324522.jpg?crop=1.00xw:0.752xh;0,0.167xh&amp;resize=1200:*" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ3WrrjfSSuBpHqpAlB0uw5YZ2hxRR9pBsTQ';" alt="National Guard Troops In Dc Forced To Sleep In Garages Sparking Outcry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Troops In Dc Forced To Sleep In Garages Sparking Outcry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://bloximages.chicago2.vip.townnews.com/napavalleyregister.com/content/tncms/assets/v3/editorial/9/14/91448a43-0122-59f3-968b-c2348eb7fd69/600ac8fec73aa.image.jpg?resize=1200%2C900" data-lightbox="roadtrip" data-title="National Guard Allowed Back Into Capitol Complex After Lawmakers Erupt At Banishment To Parking Garage National Napavalleyregister Com">
+											<img class="card-img v-image ads-img " src="https://bloximages.chicago2.vip.townnews.com/napavalleyregister.com/content/tncms/assets/v3/editorial/9/14/91448a43-0122-59f3-968b-c2348eb7fd69/600ac8fec73aa.image.jpg?resize=1200%2C900" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDc7tXvPTPc91oQK8lSSXcvm_pmrEZFghz6g';" alt="National Guard Allowed Back Into Capitol Complex After Lawmakers Erupt At Banishment To Parking Garage National Napavalleyregister Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Allowed Back Into Capitol Complex After Lawmakers Erupt At Banishment To Parking Garage National Napavalleyregister Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.gannett-cdn.com/presto/2021/01/06/USAT/ced8091b-6d9e-4c8a-9861-b3500a23b706-XXX_ErE8IgvXEAYQF_Y.JPG?crop=1919,1079,x1,y262&amp;width=660&amp;height=372&amp;format=pjpg&amp;auto=webp" data-lightbox="roadtrip" data-title="Steve Cohen Criticized For Comments On Lauren Boebert National Guard">
+											<img class="card-img v-image ads-img " src="https://www.gannett-cdn.com/presto/2021/01/06/USAT/ced8091b-6d9e-4c8a-9861-b3500a23b706-XXX_ErE8IgvXEAYQF_Y.JPG?crop=1919,1079,x1,y262&amp;width=660&amp;height=372&amp;format=pjpg&amp;auto=webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw7AfDDdL5-2MK8sWTofMhCITWvpSIAX89AA';" alt="Steve Cohen Criticized For Comments On Lauren Boebert National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Steve Cohen Criticized For Comments On Lauren Boebert National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/c298bf17-fff6-4696-bd23-afe834fa8af9.jpg" data-lightbox="roadtrip" data-title="45 12 Us National Guard Members Removed From Inauguration For Questionable Behavior">
+											<img class="card-img v-image ads-img " src="https://dynaimage.cdn.cnn.com/cnn/digital-images/org/c298bf17-fff6-4696-bd23-afe834fa8af9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL8FkJPVQ1SzREecVAwpTbP8qmpcctVDfaow';" alt="45 12 Us National Guard Members Removed From Inauguration For Questionable Behavior">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">45 12 Us National Guard Members Removed From Inauguration For Questionable Behavior</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ktul.com/resources/media/3a0c6e83-6ab0-4ce8-82cd-990700afb6ea-medium16x9_AP21017708736409.jpg?1610980879995" data-lightbox="roadtrip" data-title="Fbi Vetting Guard Troops In Dc Amid Fears Of Insider Attack Ktul">
+											<img class="card-img v-image ads-img " src="https://ktul.com/resources/media/3a0c6e83-6ab0-4ce8-82cd-990700afb6ea-medium16x9_AP21017708736409.jpg?1610980879995" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsiW2m_JVfREJwnYqxqrd9ZTDE0qqGQu1UTg';" alt="Fbi Vetting Guard Troops In Dc Amid Fears Of Insider Attack Ktul">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fbi Vetting Guard Troops In Dc Amid Fears Of Insider Attack Ktul</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s.yimg.com/ny/api/res/1.2/RotxKlRKSCdOPXKdbWcCkw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTM1Mi4zMjMzMDgyNzA2NzY3/https://s.yimg.com/uu/api/res/1.2/7CcgaTmxPzG1k6FWs_qObA--~B/aD05OTc7dz0xOTk1O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/business_insider_articles_888/6d04fb7510af6976dd049050ae582e51" data-lightbox="roadtrip" data-title="12 National Guard Troops Were Pulled Off Security For Biden S Inauguration Over Concerns Including Suspected Ties To Far Right Groups">
+											<img class="card-img v-image ads-img " src="https://s.yimg.com/ny/api/res/1.2/RotxKlRKSCdOPXKdbWcCkw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTcwNTtoPTM1Mi4zMjMzMDgyNzA2NzY3/https://s.yimg.com/uu/api/res/1.2/7CcgaTmxPzG1k6FWs_qObA--~B/aD05OTc7dz0xOTk1O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/business_insider_articles_888/6d04fb7510af6976dd049050ae582e51" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGxtdpcduVUvVUw9rcmQjqwB8eNNoR28minA';" alt="12 National Guard Troops Were Pulled Off Security For Biden S Inauguration Over Concerns Including Suspected Ties To Far Right Groups">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">12 National Guard Troops Were Pulled Off Security For Biden S Inauguration Over Concerns Including Suspected Ties To Far Right Groups</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.saltwire.com/media/photologue/photos/cache/some-national-guard-troops-helping-secure-inauguration-will-be-armed-officials_large" data-lightbox="roadtrip" data-title="Bruce Evans Cancel Culture Runs Riot In Ominous Sign For Biden Era Local Perspectives Opinion Saltwire">
+											<img class="card-img v-image ads-img " src="https://www.saltwire.com/media/photologue/photos/cache/some-national-guard-troops-helping-secure-inauguration-will-be-armed-officials_large" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-YP7KRGGySXgMz2lA4D2Q_kT3UzW7V692uA';" alt="Bruce Evans Cancel Culture Runs Riot In Ominous Sign For Biden Era Local Perspectives Opinion Saltwire">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bruce Evans Cancel Culture Runs Riot In Ominous Sign For Biden Era Local Perspectives Opinion Saltwire</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.omnycontent.com/d/playlist/d83f52e4-2455-47f4-982e-ab790120b954/48404811-1da5-45d3-9b98-ab86010e97af/67b4af9c-7179-4e4f-9b9d-ab86010e97b3/image.jpg?t=1584894314&amp;size=Large" data-lightbox="roadtrip" data-title="Fbi Vetting National Guard Troops To Protect Inauguration Cuomo Prime Time With Chris Cuomo Lyssna Har Poddtoppen Se">
+											<img class="card-img v-image ads-img " src="https://www.omnycontent.com/d/playlist/d83f52e4-2455-47f4-982e-ab790120b954/48404811-1da5-45d3-9b98-ab86010e97af/67b4af9c-7179-4e4f-9b9d-ab86010e97b3/image.jpg?t=1584894314&amp;size=Large" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxHz1XHoEOMwdGc0WIpdaZ848j9nz8UVjHQQ';" alt="Fbi Vetting National Guard Troops To Protect Inauguration Cuomo Prime Time With Chris Cuomo Lyssna Har Poddtoppen Se">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fbi Vetting National Guard Troops To Protect Inauguration Cuomo Prime Time With Chris Cuomo Lyssna Har Poddtoppen Se</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/maryland-army-national-guard-official-website.html">Maryland Army National Guard Official Website</a></li>
+													<li class="list-group-item"><a href="/mang-jana.html">Mang Jana</a></li>
+													<li class="list-group-item"><a href="/mang-kabayan-harapan-indah.html">Mang Kabayan Harapan Indah</a></li>
+													<li class="list-group-item"><a href="/mcentire-and-mayes-interiors.html">Mcentire And Mayes Interiors</a></li>
+													<li class="list-group-item"><a href="/massachusetts-national-guard-military-records.html">Massachusetts National Guard Military Records</a></li>
+													<li class="list-group-item"><a href="/mass-national-guard-soldier.html">Mass National Guard Soldier</a></li>
+													<li class="list-group-item"><a href="/manga-hyouka-indonesia.html">Manga Hyouka Indonesia</a></li>
+													<li class="list-group-item"><a href="/mang-engking-depok.html">Mang Engking Depok</a></li>
+													<li class="list-group-item"><a href="/mcentire-and-miller-interiors.html">Mcentire And Miller Interiors</a></li>
+													<li class="list-group-item"><a href="/mang-jaya-dongeng.html">Mang Jaya Dongeng</a></li>
+													<li class="list-group-item"><a href="/menang-hp-iphone.html">Menang Hp Iphone</a></li>
+													<li class="list-group-item"><a href="/mcghee-tyson-ang.html">Mcghee Tyson Ang</a></li>
+													<li class="list-group-item"><a href="/mcentire-air-base-sc.html">Mcentire Air Base Sc</a></li>
+													<li class="list-group-item"><a href="/mang-engking.html">Mang Engking</a></li>
+													<li class="list-group-item"><a href="/manga-high-low.html">Manga High Low</a></li>
+													<li class="list-group-item"><a href="/manga-haikyuu-karasuno-vs-nekoma.html">Manga Haikyuu Karasuno Vs Nekoma</a></li>
+													<li class="list-group-item"><a href="/menang-bhs-inggris.html">Menang Bhs Inggris</a></li>
+													<li class="list-group-item"><a href="/manfaat-nge-gamat-emas.html">Manfaat Nge Gamat Emas</a></li>
+													<li class="list-group-item"><a href="/menang-besar-slot.html">Menang Besar Slot</a></li>
+													<li class="list-group-item"><a href="/mangayosh.html">Mangayosh</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

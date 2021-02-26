@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Songs Funny - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Songs Funny",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/564x/b4/0c/1f/b40c1fd950fa2a2f7f4a5a97440e1839.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+songs+funny",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Songs Funny</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">These Colors Dont Run Iron Maiden. Share your videos with friends family and the world. Ive got my spine Ive got my orange crushIve had my fun and now its timeTo serve your conscience overseas. <br>				
+			</p>
+										<a class="badge badge-info" href="/military-songs-youtube.html">military songs youtube</a>
+											<a class="badge badge-primary" href="/mnangagwa-news.html">mnangagwa news</a>
+											<a class="badge badge-primary" href="/military-ranks-youtube.html">military ranks youtube</a>
+											<a class="badge badge-danger" href="/mode-orang-tua-xiaomi.html">mode orang tua xiaomi</a>
+											<a class="badge badge-secondary" href="/military-leave-for-national-guard.html">military leave for national guard</a>
+											<a class="badge badge-primary" href="/mn-national-guard-armory.html">mn national guard armory</a>
+											<a class="badge badge-dark" href="/military-rank-or-insignia.html">military rank or insignia</a>
+											<a class="badge badge-info" href="/mo-guardianship-statute.html">mo guardianship statute</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the keyword you've come to pay a visit to the right site.  Our site gives you suggestions for viewing the maximum quality video and image content, search and find more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie that you see.  It is also possible to contribute to supporting this website by sharing videos and images that you like on this blog on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the ease of access to downloads and the information you get on this site.  This site is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/54/33/65/5433658ccb013d3a23214f82b63bec54.jpg" data-lightbox="roadtrip" data-title="Pak Army New Funny Song Iko Boti Naal Pak Army Songs 2017 Pakistan Funny Songs Songs 2017 Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/54/33/65/5433658ccb013d3a23214f82b63bec54.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbwtZNCSCy4xyYTvDzbxTXnUamm4QO5xR9JQ';" alt="Pak Army New Funny Song Iko Boti Naal Pak Army Songs 2017 Pakistan Funny Songs Songs 2017 Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pak Army New Funny Song Iko Boti Naal Pak Army Songs 2017 Pakistan Funny Songs Songs 2017 Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b4/0c/1f/b40c1fd950fa2a2f7f4a5a97440e1839.jpg" data-lightbox="roadtrip" data-title="Pakistan Army Funny Videos New 2020 Pak Army Songs Tiktok Funny Pak Army Army Humor Funny Gif Army Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b4/0c/1f/b40c1fd950fa2a2f7f4a5a97440e1839.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1LZcVzwXZMCsiGkn4oy3uEF-4swnNWB72mQ';" alt="Pakistan Army Funny Videos New 2020 Pak Army Songs Tiktok Funny Pak Army Army Humor Funny Gif Army Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistan Army Funny Videos New 2020 Pak Army Songs Tiktok Funny Pak Army Army Humor Funny Gif Army Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/80/8b/9c808ba331dc0e99a11191acd599249f.jpg" data-lightbox="roadtrip" data-title="Comedy Central On Instagram The Armed Forces Day Theme Song That Never Quite Took Off Comedy Central Theme Song Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/80/8b/9c808ba331dc0e99a11191acd599249f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQczLOng7w9ZneETNwyXQvxKkI60BNTeQxOgw';" alt="Comedy Central On Instagram The Armed Forces Day Theme Song That Never Quite Took Off Comedy Central Theme Song Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Comedy Central On Instagram The Armed Forces Day Theme Song That Never Quite Took Off Comedy Central Theme Song Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4c/a4/62/4ca4623d6e890fccaffa66167b9706fa.jpg" data-lightbox="roadtrip" data-title="Pin By Simba455 On یہ وطن ہمارا ہے ہم ہیں پاسباں اس کے Pak Army Quotes Army Poetry Army Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4c/a4/62/4ca4623d6e890fccaffa66167b9706fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEr--UGrDbQmT00onHvvxn5rsPBmRrC5Qr7Q';" alt="Pin By Simba455 On یہ وطن ہمارا ہے ہم ہیں پاسباں اس کے Pak Army Quotes Army Poetry Army Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Simba455 On یہ وطن ہمارا ہے ہم ہیں پاسباں اس کے Pak Army Quotes Army Poetry Army Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/cf/e7/26/cfe72616f33b142a5bbd24a43aa773ff.jpg" data-lightbox="roadtrip" data-title="Indian Army Roast By Pakistani Indian Army Funny Indian Army Fails 2020 Youtube Army Humor Indian Army Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/cf/e7/26/cfe72616f33b142a5bbd24a43aa773ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMyWoNrIWJji9NmIWNlg1Ipu_Ln4McI8cz1g';" alt="Indian Army Roast By Pakistani Indian Army Funny Indian Army Fails 2020 Youtube Army Humor Indian Army Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Roast By Pakistani Indian Army Funny Indian Army Fails 2020 Youtube Army Humor Indian Army Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9c/b6/1a/9cb61aa00af7cd5c8eccdf4cdda449c2.jpg" data-lightbox="roadtrip" data-title="Seamus Kennedy Tribute To The Armed Services Drunken Sailor Youtube Bones Funny Good Music Tribute">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9c/b6/1a/9cb61aa00af7cd5c8eccdf4cdda449c2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr-MCLV4FtFfqmYp4Z2KBmujgSeMy5BBtLOA';" alt="Seamus Kennedy Tribute To The Armed Services Drunken Sailor Youtube Bones Funny Good Music Tribute">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Seamus Kennedy Tribute To The Armed Services Drunken Sailor Youtube Bones Funny Good Music Tribute</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/cf/e7/26/cfe72616f33b142a5bbd24a43aa773ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr-MCLV4FtFfqmYp4Z2KBmujgSeMy5BBtLOA';" alt="Seamus Kennedy Tribute To The Armed Services Drunken Sailor Youtube Bones Funny Good Music Tribute">
+										<div class="card-body">
+						<h3 class="h5"><b>They say that in the army The char bor very nice.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army songs funny</strong>. 
+								
+																	Soldier Boy The Shirelles. 
+																	This collection of funny country songs is extensive but it needs your help to be even better. 
+																	Welcome to my page with FunnyHD videosI hope you like my videos and enjoySubscribe to my FunnyHD channel. 
+																	Boogie Woogie Bugle Boy Of Company B The Andrews Sisters 1941. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sky Pilot song Soldier Harvey Andrews song Soldier Boy 1915 song Soldier Boy The Shirelles song Soldiers of Misfortune song Suicide Is Painless. 
+																	Not your first thought for a military song but these colors dont run is a metal ballad for soldiers. 
+																	And later even Vera Lynn. 
+																	Same as above Third Chorus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The US Armed Forces Medley is a combination of the anthems of the various branches of the United States Military consisting of the Army Navy Coast Guard. 
+																	The song is a new wave track that was lyrically inspired by the Troubles in Northern Ireland and includes lyrics critical of the socioeconomic components of war. 
+																	Musically the song features a glossy production and a keyboard perfor. 
+																	Osbourne House 143-145 Stanwell Road Ashford Middlesex TW15 3QN. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In 1940 Askey wanted to record Its Really Nice to See you Mr. 
+																	Slower more freely Men in rags men who froze Still that Army met its foes And the Army went rolling along. 
+																	And the Army keeps rolling along. 
+																	Hess after Hitlers deputy fled to Scotland but the song was banned by the War Office. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Barmy Army Limited registered in England and Wales. 
+																	Patti Smith Radio Baghdad War. 
+																	Happy Birthday to You. 
+																	This video was uploaded from an Android phone. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sergeant Major a British soldiers song mocking their officers was written by Art Noel and Don Pelosi in 1939 and recorded by Askey George Formby Jr. 
+																	I dont want to live an army life Ya I just want to live a simple life Ya PC I wanna go OC dont let me go Mommy I want to go home. 
+																	What a perfect free way to say Happy Birthday to all of your family and friends. 
+																	Here are the 9 that did it best. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army by Ben Folds It Makes a Fellow Proud to be a Soldier by Tom Lehrer Oh how I hate to get up in the morning by Irving Berlin The Army Song by Brecht Weill Arthur McBride traditional song about the evils of recruiting officers I plan to close with In the Navy. 
+																	A lot of popular music artists have attempted to capture the military experience over the years but only a small percentage of them have gotten it right in the eyes of the community. 
+																	Laugh cry be inspired and enjoy the top 10 best songs for military. 
+																	If you know of a song that isnt yet included please add it to the archives if needed then add a. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Our adorable and cuddly cast and crew bring you Funny and cute Happy Birthday Wishes every day of the year. 
+																	When you ask for Cindy Crawford They give you Frankenstein Chorus They say that in the army The sergeant very nice You ask for early book out They tell you CCB Chorus. 
+																	A classic love song. 
+																	Costello had travelled to Northern Ireland and was influenced by sights of British soldiers patrolling Belfast. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Olivers Army is a song written by Elvis Costello and performed by Elvis Costello and the Attractions from the formers third studio album Armed Forces. 
+																	Funny Birthday Songs - brought to you by a host of funny singing animals. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/d9/a0/78d9a0a314e0fa54df9c52e10c74ad8c.jpg" data-lightbox="roadtrip" data-title="یہ لڑکی بے غیرت تھی یالڑکاکیا ھوتارہاشرمناک ویڈیو لڑکیوں اپنی عزت کی رکھوالی بھی خود کریں Pak Armypak Army Songs Indian Army News Cricket Videos Crickets Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/d9/a0/78d9a0a314e0fa54df9c52e10c74ad8c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3yv0TotV-SQ-XjostI3P22oWPyqWZetgCpg';" alt="یہ لڑکی بے غیرت تھی یالڑکاکیا ھوتارہاشرمناک ویڈیو لڑکیوں اپنی عزت کی رکھوالی بھی خود کریں Pak Armypak Army Songs Indian Army News Cricket Videos Crickets Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">یہ لڑکی بے غیرت تھی یالڑکاکیا ھوتارہاشرمناک ویڈیو لڑکیوں اپنی عزت کی رکھوالی بھی خود کریں Pak Armypak Army Songs Indian Army News Cricket Videos Crickets Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7f/9f/40/7f9f40e2b7fcbce0ae05de1e0ff301f9.jpg" data-lightbox="roadtrip" data-title="Feeling Proud Indian Army Feeling Proud Indian Army Song Indian Army Song Feeling Proud Indian Army Youtube Dj Remix Songs Dj Remix Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7f/9f/40/7f9f40e2b7fcbce0ae05de1e0ff301f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89SsTwlzJrcDS82Mk4ULFQ_uRKLJXOOsE0g';" alt="Feeling Proud Indian Army Feeling Proud Indian Army Song Indian Army Song Feeling Proud Indian Army Youtube Dj Remix Songs Dj Remix Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Feeling Proud Indian Army Feeling Proud Indian Army Song Indian Army Song Feeling Proud Indian Army Youtube Dj Remix Songs Dj Remix Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/43/1a/93/431a93b11eedc8ca907b218da7fd10bf.jpg" data-lightbox="roadtrip" data-title="Knowyourarmy Pak Army Quotes Army Memes Army Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/43/1a/93/431a93b11eedc8ca907b218da7fd10bf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF6rqlhATY0jZjDYAuzQrKlaABKAaIyOKS3w';" alt="Knowyourarmy Pak Army Quotes Army Memes Army Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Knowyourarmy Pak Army Quotes Army Memes Army Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/4e/20/bb4e2094b30ea081377b6f774031f1b3.jpg" data-lightbox="roadtrip" data-title="Bts Meme Xd Bts Funny Bts Memes Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/4e/20/bb4e2094b30ea081377b6f774031f1b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ikmxvKc3cNWUVbg0saCJ1StfpbSV79vbrw';" alt="Bts Meme Xd Bts Funny Bts Memes Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bts Meme Xd Bts Funny Bts Memes Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/aa/e1/6faae10eb60242510cea1d06d0d01e59.jpg" data-lightbox="roadtrip" data-title="The 13 Funniest Military Memes Of The Week We Are The Mighty Military Memes Military Humor Very Funny Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/aa/e1/6faae10eb60242510cea1d06d0d01e59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvWwaVeL7L-RhA8oNN-i0AGktOTO_gXxoQKg';" alt="The 13 Funniest Military Memes Of The Week We Are The Mighty Military Memes Military Humor Very Funny Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The 13 Funniest Military Memes Of The Week We Are The Mighty Military Memes Military Humor Very Funny Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d9/6c/47/d96c47ce01b6a5afcd3981ec1c8a1f96.jpg" data-lightbox="roadtrip" data-title="Pin By Bts Army On Stuff That Makes Me Laugh Funny Memes Detroit Become Human Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d9/6c/47/d96c47ce01b6a5afcd3981ec1c8a1f96.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAv4ZbEjmAqiUyucZiTjgbAnT0Z-yCJDJJJA';" alt="Pin By Bts Army On Stuff That Makes Me Laugh Funny Memes Detroit Become Human Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Bts Army On Stuff That Makes Me Laugh Funny Memes Detroit Become Human Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/44/0a/ac/440aaca69a2ff49ff6f901dc2e37fdca.jpg" data-lightbox="roadtrip" data-title="Pin By Sadia Khan On Pakistani Memes Pakistani Songs Pakistani Dramas Best Dramas">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/44/0a/ac/440aaca69a2ff49ff6f901dc2e37fdca.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNy26P9uMn4Pk_YViTYaFD8e_-8Z2K24ID0Q';" alt="Pin By Sadia Khan On Pakistani Memes Pakistani Songs Pakistani Dramas Best Dramas">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sadia Khan On Pakistani Memes Pakistani Songs Pakistani Dramas Best Dramas</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6f/67/5c/6f675ce7d5cb80f52a174a42e08e40d5.jpg" data-lightbox="roadtrip" data-title="ہمبستری کے بعد جسم کا کونسا حصہ دھونا چاہیے Pak Armypak Army Songspak Army Trainingpak Army Videospak Army Songs Crickets Funny Indian Army News Cricket Videos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6f/67/5c/6f675ce7d5cb80f52a174a42e08e40d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYUFhXTLG4ICa4tuqVD8jckVlJiY8wOzZsfQ';" alt="ہمبستری کے بعد جسم کا کونسا حصہ دھونا چاہیے Pak Armypak Army Songspak Army Trainingpak Army Videospak Army Songs Crickets Funny Indian Army News Cricket Videos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">ہمبستری کے بعد جسم کا کونسا حصہ دھونا چاہیے Pak Armypak Army Songspak Army Trainingpak Army Videospak Army Songs Crickets Funny Indian Army News Cricket Videos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/8e/bc/a2/8ebca294d8a68878404d30cfffb8a374.jpg" data-lightbox="roadtrip" data-title="Pin By Broke Army On Bts Bts Quotes Bts Tweet Bts Playlist">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/8e/bc/a2/8ebca294d8a68878404d30cfffb8a374.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj17nHJpwnkzvEH7Gz6Lc_E5sRpdgo3pyeEQ';" alt="Pin By Broke Army On Bts Bts Quotes Bts Tweet Bts Playlist">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Broke Army On Bts Bts Quotes Bts Tweet Bts Playlist</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/ba/f7/e5baf7cac1bc33adacf64b8cb3313fa3.jpg" data-lightbox="roadtrip" data-title="بغیر نکاح غیرلڑکی سے جسمانی تعلقات قائم کرنا جائز ہے Pak Armypak Army Songspak Army Trainingpak Army Videospak Indian Army News Cricket Videos Crickets Funny">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/ba/f7/e5baf7cac1bc33adacf64b8cb3313fa3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAkeaO1v7u19VLZujWJn62Mvrs1uPEKLmrtg';" alt="بغیر نکاح غیرلڑکی سے جسمانی تعلقات قائم کرنا جائز ہے Pak Armypak Army Songspak Army Trainingpak Army Videospak Indian Army News Cricket Videos Crickets Funny">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">بغیر نکاح غیرلڑکی سے جسمانی تعلقات قائم کرنا جائز ہے Pak Armypak Army Songspak Army Trainingpak Army Videospak Indian Army News Cricket Videos Crickets Funny</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/86/83/fd8683d6425535885cbc132a90521e0b.png" data-lightbox="roadtrip" data-title="Pin On Armed Forces Patriotism">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/86/83/fd8683d6425535885cbc132a90521e0b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfQQXrchg8ksyg9ny4NseDu7OHuYZ0zbIk-g';" alt="Pin On Armed Forces Patriotism">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Armed Forces Patriotism</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7d/1e/17/7d1e17bee0785208fd95dae34a4aa4d2.gif" data-lightbox="roadtrip" data-title="Images Of War Heros Yahoo Search Results Military Songs Military Humor Military Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7d/1e/17/7d1e17bee0785208fd95dae34a4aa4d2.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpZB5BQRYHoep6nntFaCh1FGCYeCF16eS4Aw';" alt="Images Of War Heros Yahoo Search Results Military Songs Military Humor Military Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Images Of War Heros Yahoo Search Results Military Songs Military Humor Military Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2f/86/a2/2f86a2e818353d04a2d5eda9a3792f52.jpg" data-lightbox="roadtrip" data-title="Second Grade Savvy Birthdays 2nd Grade Style Teacher Websites 2nd Grade Birthday Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2f/86/a2/2f86a2e818353d04a2d5eda9a3792f52.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaVcEKbkKewbCIZ7n2T4lwE32xtYBI85CyNA';" alt="Second Grade Savvy Birthdays 2nd Grade Style Teacher Websites 2nd Grade Birthday Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Second Grade Savvy Birthdays 2nd Grade Style Teacher Websites 2nd Grade Birthday Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/quotes-jangan-sombong.html">Quotes Jangan Sombong</a></li>
+													<li class="list-group-item"><a href="/pasang-diamond-gigi.html">Pasang Diamond Gigi</a></li>
+													<li class="list-group-item"><a href="/reba-mcentire-and-george-strait-duet.html">Reba Mcentire And George Strait Duet</a></li>
+													<li class="list-group-item"><a href="/pashmina-warna-army.html">Pashmina Warna Army</a></li>
+													<li class="list-group-item"><a href="/pubg-mobile-emulator-tgb.html">Pubg Mobile Emulator Tgb</a></li>
+													<li class="list-group-item"><a href="/pentathlon-gb-website.html">Pentathlon Gb Website</a></li>
+													<li class="list-group-item"><a href="/reba-mcentire-and-charlie-battles.html">Reba Mcentire And Charlie Battles</a></li>
+													<li class="list-group-item"><a href="/reba-mcentire-and-brooks-dunn.html">Reba Mcentire And Brooks Dunn</a></li>
+													<li class="list-group-item"><a href="/rating-rookie-historian-goo-hae-ryung.html">Rating Rookie Historian Goo Hae Ryung</a></li>
+													<li class="list-group-item"><a href="/reba-mcentire-and-her-family.html">Reba Mcentire And Her Family</a></li>
+													<li class="list-group-item"><a href="/ranks-in-the-united-states-coast-guard.html">Ranks In The United States Coast Guard</a></li>
+													<li class="list-group-item"><a href="/rank-list-of-army.html">Rank List Of Army</a></li>
+													<li class="list-group-item"><a href="/peoples-liberation-army-apa-artinya.html">Peoples Liberation Army Apa Artinya</a></li>
+													<li class="list-group-item"><a href="/pak-army-songs-list-mp3-download.html">Pak Army Songs List Mp3 Download</a></li>
+													<li class="list-group-item"><a href="/pennsylvania-army-national-guard.html">Pennsylvania Army National Guard</a></li>
+													<li class="list-group-item"><a href="/pink-army-cargo-pants.html">Pink Army Cargo Pants</a></li>
+													<li class="list-group-item"><a href="/pitpoint-cng-app.html">Pitpoint Cng App</a></li>
+													<li class="list-group-item"><a href="/reba-mcentire-and-gayle-ritter.html">Reba Mcentire And Gayle Ritter</a></li>
+													<li class="list-group-item"><a href="/qed-performance-xtc.html">Qed Performance Xtc</a></li>
+													<li class="list-group-item"><a href="/pasang-dioda.html">Pasang Dioda</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

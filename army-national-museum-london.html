@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army National Museum London - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army National Museum London",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/35/70/b2/3570b2d84f82b51309f9327c0b76b0d6.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+national+museum+london",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army National Museum London</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">North Circular A406 South Circular A205 Favourite river buses. Opened by the Queen on March 30 2017 after a 2375 million makeover the National Army Museum in London is home to around 2500 objects divided into five galleries arranged by theme over four floors as well as space for temporary exhibitions a study centre cafe shop and play area. National Army Museum Royal Hospital Road Chelsea London SW3 4HT. <br>				
+			</p>
+										<a class="badge badge-secondary" href="/argus-quotes.html">argus quotes</a>
+											<a class="badge badge-danger" href="/argus-build-tank.html">argus build tank</a>
+											<a class="badge badge-primary" href="/argus-quick-release-couplings.html">argus quick release couplings</a>
+											<a class="badge badge-info" href="/are-national-guard-members-eligible-for-va-loans.html">are national guard members eligible for va loans</a>
+											<a class="badge badge-primary" href="/are-national-guard-considered-veterans.html">are national guard considered veterans</a>
+											<a class="badge badge-warning" href="/are-soldier-ants-male-or-female.html">are soldier ants male or female</a>
+											<a class="badge badge-secondary" href="/argus-nc.html">argus nc</a>
+											<a class="badge badge-warning" href="/are-national-guard-members-eligible-for-burial-flag.html">are national guard members eligible for burial flag</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the keyword you have come to visit the right site.  Our site provides you with hints for seeing the maximum quality video and image content, hunt and locate more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, particularly Youtube, so we recommend this movie that you see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/35/70/b2/3570b2d84f82b51309f9327c0b76b0d6.jpg" data-lightbox="roadtrip" data-title="National Army Museum London London Museums London Museum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/35/70/b2/3570b2d84f82b51309f9327c0b76b0d6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-c3V9sxCKCbsRZX3O3b6rAAymOQvsIQuyJw';" alt="National Army Museum London London Museums London Museum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Army Museum London London Museums London Museum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ef/51/b1/ef51b14057fee7f32f35bac84c130ec6.jpg" data-lightbox="roadtrip" data-title="Natural History Museum London Natural History Museum London Museum Architecture London Architecture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ef/51/b1/ef51b14057fee7f32f35bac84c130ec6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtKNduJ7IYKvD4i48dpKDn1eVfFSTqXh2onQ';" alt="Natural History Museum London Natural History Museum London Museum Architecture London Architecture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Natural History Museum London Natural History Museum London Museum Architecture London Architecture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/67/68/73/6768731d81daab032d348c58a8e9cf89.jpg" data-lightbox="roadtrip" data-title="Must See Natural History Museum London The Admission Is Free Naturalhisto Must See In 2020 Natural History Museum London History Museum Natural History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/67/68/73/6768731d81daab032d348c58a8e9cf89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaKVwaFeH__s48sNKXMb_6ZE82I8FpcsgTig';" alt="Must See Natural History Museum London The Admission Is Free Naturalhisto Must See In 2020 Natural History Museum London History Museum Natural History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Must See Natural History Museum London The Admission Is Free Naturalhisto Must See In 2020 Natural History Museum London History Museum Natural History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/46/fd/df46fda3cf7f9acdfe25b93c85271206.jpg" data-lightbox="roadtrip" data-title="Imperial War Museum Foster Partners Museum Architecture Foster Partners Military Museum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/46/fd/df46fda3cf7f9acdfe25b93c85271206.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmR0WmlLHuqyaFroTM-UYQuqipM2IaQ8VXCg';" alt="Imperial War Museum Foster Partners Museum Architecture Foster Partners Military Museum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imperial War Museum Foster Partners Museum Architecture Foster Partners Military Museum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/11/34/ea/1134eaa935b0ef0373e70c1953391b62.jpg" data-lightbox="roadtrip" data-title="National Army Museum In London Goloro Com">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/11/34/ea/1134eaa935b0ef0373e70c1953391b62.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Lcb6yw_LvMnj91Yj9OyyoqJjHFK7CXIlCA';" alt="National Army Museum In London Goloro Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Army Museum In London Goloro Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/34/9d/4f/349d4fffd36720dc60fc04646c3cbe78.jpg" data-lightbox="roadtrip" data-title="Bdp National Army Museum London Arquitectura Militar Arquitectura Militar">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/34/9d/4f/349d4fffd36720dc60fc04646c3cbe78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMXbY_Jb76FSZEwyA5Pw0yE-pkuwlesS6uIA';" alt="Bdp National Army Museum London Arquitectura Militar Arquitectura Militar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bdp National Army Museum London Arquitectura Militar Arquitectura Militar</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/df/46/fd/df46fda3cf7f9acdfe25b93c85271206.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMXbY_Jb76FSZEwyA5Pw0yE-pkuwlesS6uIA';" alt="Bdp National Army Museum London Arquitectura Militar Arquitectura Militar">
+										<div class="card-body">
+						<h3 class="h5"><b>National Army Museum Royal Hospital Road London SW3 4HT Registered Charity Number.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army national museum london</strong>. 
+								
+																	National Army Museum Royal Hospital Road London SW3 4HT Registered Charity Number. 
+																	I met two very pleasant gentlemen who both live at the hospital. 
+																	The Lived Experience Author Peter Johnston. 
+																	Central London Red Routes. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	British Forces in Germany. 
+																	National Museum of the United States Army The National Museum of the United States Army celebrates over 245 years of Army history and honors our nations Soldierspast present and futurethe regular Army the Army Reserve and the Army National Guard. 
+																	Discover personal stories from the National Army Museums Collection demonstrating the impact of the War. 
+																	The arm museum was a excellent experience Looking at he history. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Britains largest teaching union the National Education Union NEU said any plans to lengthen the school day or extend terms dates would require a new deal over pay. 
+																	The museum is not just refurbished but is a new incarnation the New National Army Museum. 
+																	The army museum is situated next to the royal Chelsea hospital. 
+																	020 7730 0717 infonamacuk. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its a beautiful chrisptor wren building well with a visit has are the gardens. 
+																	National Army Museum Bus routes. 
+																	The galleries explore what is like to be a Soldier the origins of the Army how Battle tactics and technology has changed over time how the Army influences Society and the impact the army has had around the world. 
+																	This comprehensive publication accompanies the National Army Museums exhibition Foe to Friend which runs from the 12th September 2020 - 1st July 2021. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	3500 Your guide to the newly refurbished galleries at the National Army Museum. 
+																	National Army Museum Royal Hospital Road London SW3 4HT Registered Charity Number. 
+																	22k comments 2 videos. 
+																	Bed and Breakfast London. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is usually open to the public from 1000am to 530pm except on 2526 December and 1 January. 
+																	The National Army Museum is an excellent place to visit with the Kings Man exhibition it was even better loads of items from the film in a special exhibition the permanent items are superb well worth a visit and donation they currently only take cash. 
+																	National Army Museum Royal Hospital Road London SW3 4HT Registered Charity Number. 
+																	Done updating my favourites. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bus routes served by this stop. 
+																	Explore an interactive global map and timeline and uncover the latest commemorative news and events. 
+																	Live arrivals at 175854. 
+																	Showing all results near National Army Museum. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The museum is a non-departmental public body. 
+																	The National Army Museum is the British Armys central museum. 
+																	The National Army Museum has five state-of-the-art gallery spaces taking you on an interactive journey exploring the armys character and impact from the British Civil War right up to the modern day. 
+																	It is located in the Chelsea district of central London adjacent to the Royal Hospital Chelsea the home of the Chelsea Pensioners. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	National Army Museum Royal Hospital Road London SW3 4HT Registered Charity Number. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.euro-t-guide.com/See_Photo/UK/London/National-Army-Museum-2007-02.jpg" data-lightbox="roadtrip" data-title="Http Www Euro T Guide Com See Photo Uk London National Army Museum 2007 02 Jpg Baby Strollers Stroller Museum">
+											<img class="card-img v-image ads-img " src="http://www.euro-t-guide.com/See_Photo/UK/London/National-Army-Museum-2007-02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzSLVedoN-NFgNedI1jkK3I_RKj_cLDPazpg';" alt="Http Www Euro T Guide Com See Photo Uk London National Army Museum 2007 02 Jpg Baby Strollers Stroller Museum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Http Www Euro T Guide Com See Photo Uk London National Army Museum 2007 02 Jpg Baby Strollers Stroller Museum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4d/fe/e8/4dfee8819327debb217946785ffdc30d.jpg" data-lightbox="roadtrip" data-title="Met Studio Designs War Horse Exhibition For National Army Museum Museum Exhibition Design Museum Exhibition Exhibition">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4d/fe/e8/4dfee8819327debb217946785ffdc30d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi0knDIdR0_B-xO9CpZ9EeNW1dCEKWKYrByw';" alt="Met Studio Designs War Horse Exhibition For National Army Museum Museum Exhibition Design Museum Exhibition Exhibition">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Met Studio Designs War Horse Exhibition For National Army Museum Museum Exhibition Design Museum Exhibition Exhibition</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/c8/29/78c82958978106e43b2e4afcd4806c34.jpg" data-lightbox="roadtrip" data-title="Women S Auxiliary Army Corps 1917 National Museum London Http Www History Com This Day In History British Womens Auxi History World War One History Rocks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/c8/29/78c82958978106e43b2e4afcd4806c34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCY4FVuZcPQKxIRjiVyyEnRteT4PT_ziWrUA';" alt="Women S Auxiliary Army Corps 1917 National Museum London Http Www History Com This Day In History British Womens Auxi History World War One History Rocks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Women S Auxiliary Army Corps 1917 National Museum London Http Www History Com This Day In History British Womens Auxi History World War One History Rocks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/1b/ec/ea1bec113e8df6674c178920c4c2d0d5.jpg" data-lightbox="roadtrip" data-title="Imperial War Museum Military Museum Museum London Landmarks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/1b/ec/ea1bec113e8df6674c178920c4c2d0d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-MSp8WkIwzFgbxy7XnnoT896Bu2PLp2r98g';" alt="Imperial War Museum Military Museum Museum London Landmarks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Imperial War Museum Military Museum Museum London Landmarks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/23/43/242343a4103fc5ef71a23ef62d4d28f3.jpg" data-lightbox="roadtrip" data-title="Dark Subterranean And Secret 10 Uk Tunnels You Must Explore The Telegraph London History National Museum United States Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/23/43/242343a4103fc5ef71a23ef62d4d28f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2P7Mm3bzvYYg_3tdLQozovmXRivPzdibHxg';" alt="Dark Subterranean And Secret 10 Uk Tunnels You Must Explore The Telegraph London History National Museum United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dark Subterranean And Secret 10 Uk Tunnels You Must Explore The Telegraph London History National Museum United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/b0/94/14b0946bd7a808c72d7a73abcf467eea.jpg" data-lightbox="roadtrip" data-title="National Museum Of The United States Army Skidmore Owings Merrill United States Army National Museum Architecture Exterior">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/b0/94/14b0946bd7a808c72d7a73abcf467eea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF94jl0b_NQZirx5iZcNF_CMA_93vHACXZrg';" alt="National Museum Of The United States Army Skidmore Owings Merrill United States Army National Museum Architecture Exterior">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Museum Of The United States Army Skidmore Owings Merrill United States Army National Museum Architecture Exterior</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/19/71/8d/19718db6a831e3143af09edd9ef77fab.jpg" data-lightbox="roadtrip" data-title="Som Reveals National Museum Of The United States Army Architecture American Architecture Contemporary Building">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/19/71/8d/19718db6a831e3143af09edd9ef77fab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNeo0-Fkmclmh6UQnCOsA7yBO5vMSsqy53Sg';" alt="Som Reveals National Museum Of The United States Army Architecture American Architecture Contemporary Building">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Som Reveals National Museum Of The United States Army Architecture American Architecture Contemporary Building</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/6a/01/536a012ab4923fd5b759ba9e1c0ab53f.jpg" data-lightbox="roadtrip" data-title="National Infantry Museum And Soldier Center Museum Exhibition Design Museum Exhibition Design Museum">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/6a/01/536a012ab4923fd5b759ba9e1c0ab53f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw6K2UoOiZ2jMU2R-8PhIV612VsToeX5_a3w';" alt="National Infantry Museum And Soldier Center Museum Exhibition Design Museum Exhibition Design Museum">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Infantry Museum And Soldier Center Museum Exhibition Design Museum Exhibition Design Museum</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/d5/b5/1cd5b54cbbd3c90dcd85dcb1d688e419.jpg" data-lightbox="roadtrip" data-title="General Pershing Coming Ashore On Arrival At Boulogne 1917 History War Pershing Army History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/d5/b5/1cd5b54cbbd3c90dcd85dcb1d688e419.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxQAY01T7nSFeTctq79jrqfDTQp0Erdb0ucw';" alt="General Pershing Coming Ashore On Arrival At Boulogne 1917 History War Pershing Army History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">General Pershing Coming Ashore On Arrival At Boulogne 1917 History War Pershing Army History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/2b/a9/58/2ba95855ad5c59c56f328d8e1b087931.jpg" data-lightbox="roadtrip" data-title="Berlin Wall Three Sections Of The Berlin Wall Stand Outside The National Army Museum There Is Another Piece Inside An Berlin Wall Coors Light Beer Can London">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/2b/a9/58/2ba95855ad5c59c56f328d8e1b087931.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJZjkKHUcW8n8ZjUbzKMM2sgPqkruN8tXA7Q';" alt="Berlin Wall Three Sections Of The Berlin Wall Stand Outside The National Army Museum There Is Another Piece Inside An Berlin Wall Coors Light Beer Can London">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Berlin Wall Three Sections Of The Berlin Wall Stand Outside The National Army Museum There Is Another Piece Inside An Berlin Wall Coors Light Beer Can London</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/40/9e/52/409e52507e7c330a888d168cffb0bf69.jpg" data-lightbox="roadtrip" data-title="Halt Of London Imperial Volunteers 1900 C Online Collection National Army Museum London In 2020 Online Collections World History Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/40/9e/52/409e52507e7c330a888d168cffb0bf69.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTefITQpkPooMq6LcFDB40y-gjxwx87-S8LIQ';" alt="Halt Of London Imperial Volunteers 1900 C Online Collection National Army Museum London In 2020 Online Collections World History Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Halt Of London Imperial Volunteers 1900 C Online Collection National Army Museum London In 2020 Online Collections World History Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c7/89/6a/c7896aed565bd3a2f4e9dc6085930f5b.jpg" data-lightbox="roadtrip" data-title="Members Of A Boer Commando 1899 C Online Collection National Army Museum London World History Online Collections Art">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c7/89/6a/c7896aed565bd3a2f4e9dc6085930f5b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT36e1SKwI3Et6VSfbFUiiU4i3HMIv6nJ1cvA';" alt="Members Of A Boer Commando 1899 C Online Collection National Army Museum London World History Online Collections Art">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Members Of A Boer Commando 1899 C Online Collection National Army Museum London World History Online Collections Art</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/fb/09/85fb09ed43f16c7551613e48411e7f9b.jpg" data-lightbox="roadtrip" data-title="The National Army Museum Chelsea Army Museum London Sights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/fb/09/85fb09ed43f16c7551613e48411e7f9b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWri2Rtmx0ktp_JgA85u3N7Rqv2583gkEfwQ';" alt="The National Army Museum Chelsea Army Museum London Sights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The National Army Museum Chelsea Army Museum London Sights</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-song-army-song.html">Army Song Army Song</a></li>
+													<li class="list-group-item"><a href="/army-reserve-drill-schedule.html">Army Reserve Drill Schedule</a></li>
+													<li class="list-group-item"><a href="/army-song-dj-bass.html">Army Song Dj Bass</a></li>
+													<li class="list-group-item"><a href="/army-song-come-kannada.html">Army Song Come Kannada</a></li>
+													<li class="list-group-item"><a href="/army-running-cadence-songs-with-lyrics.html">Army Running Cadence Songs With Lyrics</a></li>
+													<li class="list-group-item"><a href="/army-reserve-vs-national-guard-reserve.html">Army Reserve Vs National Guard Reserve</a></li>
+													<li class="list-group-item"><a href="/army-rings.html">Army Rings</a></li>
+													<li class="list-group-item"><a href="/army-sing-song-for-bts.html">Army Sing Song For Bts</a></li>
+													<li class="list-group-item"><a href="/army-reserve-drill-sergeant.html">Army Reserve Drill Sergeant</a></li>
+													<li class="list-group-item"><a href="/army-reserve-drill-pay-2021.html">Army Reserve Drill Pay 2021</a></li>
+													<li class="list-group-item"><a href="/army-reserve-versus-army-national-guard.html">Army Reserve Versus Army National Guard</a></li>
+													<li class="list-group-item"><a href="/army-reserve-drill-weekend.html">Army Reserve Drill Weekend</a></li>
+													<li class="list-group-item"><a href="/army-reserve-drill-dates.html">Army Reserve Drill Dates</a></li>
+													<li class="list-group-item"><a href="/army-reserve-or-army-national-guard.html">Army Reserve Or Army National Guard</a></li>
+													<li class="list-group-item"><a href="/army-reserve-drill-weekend-schedule-2019.html">Army Reserve Drill Weekend Schedule 2019</a></li>
+													<li class="list-group-item"><a href="/army-song-by-bts.html">Army Song By Bts</a></li>
+													<li class="list-group-item"><a href="/army-song-download-djyoungster.html">Army Song Download Djyoungster</a></li>
+													<li class="list-group-item"><a href="/army-rock-painting-ideas.html">Army Rock Painting Ideas</a></li>
+													<li class="list-group-item"><a href="/army-reserve-drill-pay-codes.html">Army Reserve Drill Pay Codes</a></li>
+													<li class="list-group-item"><a href="/army-song-dj-mix.html">Army Song Dj Mix</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

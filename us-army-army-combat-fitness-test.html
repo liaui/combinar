@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Army Combat Fitness Test - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Army Combat Fitness Test",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/b2/3b/42/b23b42d836ed4627ccff889bd167631b.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+army+combat+fitness+test",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Army Combat Fitness Test</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Since 2017 the ACFT has been rigorously tested and studied at select battalions. THE FITNESS TESTS THAT YOU TAKE AT THE ARMY ASSESSMENT CENTRE HAVE CHANGED The new tests are designed to be a better reflection of the type of tasks that you will use in the Army. Appreciation for the Armed Forces A Weekend Warrior friend of mine and VIGOR Training member showed me. <br>				
+			</p>
+										<a class="badge badge-dark" href="/air-national-guard-recruiter.html">air national guard recruiter</a>
+											<a class="badge badge-success" href="/air-national-guard-dod.html">air national guard dod</a>
+											<a class="badge badge-danger" href="/american-ants-army.html">american ants army</a>
+											<a class="badge badge-success" href="/air-national-guard-it-jobs.html">air national guard it jobs</a>
+											<a class="badge badge-danger" href="/air-national-guard-military-ball.html">air national guard military ball</a>
+											<a class="badge badge-light" href="/air-national-guard-plane.html">air national guard plane</a>
+											<a class="badge badge-danger" href="/air-national-guard-military-records.html">air national guard military records</a>
+											<a class="badge badge-light" href="/air-national-guard-pay-officer.html">air national guard pay officer</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to visit the ideal site.  Our site provides you with suggestions for seeing the maximum quality video and picture content, search and find more enlightening video content and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from several sources, particularly Youtube, so we recommend this video for you to see.   This blog is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3f/50/8c/3f508ca1260f2b09cb59a2682ea16102.jpg" data-lightbox="roadtrip" data-title="The Army Combat Fitness Test Youtube In 2020 Army Workout Combat Military Training">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3f/50/8c/3f508ca1260f2b09cb59a2682ea16102.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd3o40mdBmo_bFyJeQIWgbS9fkUe5gidKywg';" alt="The Army Combat Fitness Test Youtube In 2020 Army Workout Combat Military Training">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Army Combat Fitness Test Youtube In 2020 Army Workout Combat Military Training</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/c3/33/76/c333769ce9473ada0364e0027bf5c712.jpg" data-lightbox="roadtrip" data-title="Pin On Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/c3/33/76/c333769ce9473ada0364e0027bf5c712.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSemyeMc9srvro97N0gMfvHsooDpQNxR9lkRg';" alt="Pin On Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/1d/48/50/1d4850a4f0dbeaf62886b1472cba4415.jpg" data-lightbox="roadtrip" data-title="Pin On Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/1d/48/50/1d4850a4f0dbeaf62886b1472cba4415.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYOPlQx3SFvKz7Ro7pv1m9wLPwWO0e18OfQA';" alt="Pin On Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/28/bb/d8/28bbd85644e013904758599ea7ddcd70.jpg" data-lightbox="roadtrip" data-title="Pin On Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/28/bb/d8/28bbd85644e013904758599ea7ddcd70.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoOb-hDkMsKvDwJqWDUPAe5zd_PUyzeVPh0Q';" alt="Pin On Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/ca/0e/6e/ca0e6ea48e684e440c5764db7a9ae205.jpg" data-lightbox="roadtrip" data-title="Pin On New Army Pt Test">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/ca/0e/6e/ca0e6ea48e684e440c5764db7a9ae205.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsAVhl3TAIAFvq9-R2bScL7er2XG9NbqZKcQ';" alt="Pin On New Army Pt Test">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On New Army Pt Test</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/ec/e5/10ece5c82a745422328e9f99ac5c6e08.jpg" data-lightbox="roadtrip" data-title="Pin On Military Tactical Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/ec/e5/10ece5c82a745422328e9f99ac5c6e08.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQaJcv9g7FxMRHIu_cnlPKrJooCisgVynmZA';" alt="Pin On Military Tactical Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military Tactical Fitness</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/3a/ec/c1/3aecc1638b2fd363816dc911e9b261ae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQaJcv9g7FxMRHIu_cnlPKrJooCisgVynmZA';" alt="Pin On Military Tactical Fitness">
+										<div class="card-body">
+						<h3 class="h5"><b>Every US Army soldier active reservist and national guard must pass this test to stay in the Army.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army army combat fitness test</strong>. 
+								
+																	Chief of Army Reserve. 
+																	Army Medicine Sergeants Major participate in a Army Combat Fitness Test validation exercise on Jan. 
+																	The Army Physical Fitness Test APFT was designed to test the muscular strength endurance and cardiovascular respiratory fitness of soldiers in the United States ArmySoldiers were scored based on their performance in three events consisting of the push-up sit-up and a two-mile run ranging from 0 to 100 points in each eventA minimum score of 60 in each event was required to pass the test. 
+																	Sandbaggers will be sorry when they take part in the new Army Combat Fitness Test ACFT. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Its a serious test of strength stamina and speed. 
+																	The Army Physical Fitness test served us for 40 years and through our improved understanding of exercise. 
+																	The USMC physical fitness test PFT requirements include crunches for two minutes pull-ups to the maximum repetition and a three-mile run. 
+																	Perform a three-repetition deadlift as the weight increased with. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WASHINGTON To ace the new Army Combat Fitness Test a soldier would need to deadlift 340 pounds launch a medicine ball 125 meters backwards complete 60 hand-release pushups finish the new. 
+																	Its called the new Army Combat Fitness Test and will be fully implemented throughout the Army by October 2020. 
+																	It consists of six events and is graded on a scale with a maximum score of 600. 
+																	Army Combat Fitness Test. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Soldiers will complete the following events in order. 
+																	Army Combat Fitness Test The ACFT is gender and age-neutral. 
+																	The Marines have arguably the most difficult fitness test as it requires Marines to run an additional mile and do pull-ups. 
+																	It also added a plan to have new soldiers in initial military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The United States Army Combat Fitness Test ACFT is the forthcoming fitness test for the United States Army. 
+																	They are not harder and the training that youve done towards the old tests will also help you through the new ones. 
+																	The old test graded soldiers differently based on their age and gender. 
+																	Evolution and adaptability are the cornerstones of our force. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It was designed to better reflect the stresses of a combat environment to address the poor physical fitness of recruits and to reduce the risk of musculoskeletal injuries for service members. 
+																	By October 2020 the United States Army plans to begin requiring all soldiers to take the new Army Combat Fitness Test ACFTreplacing the push-ups sit-ups and two-mile run soldiers have taken as part of the Army Physical Fitness Test APFT for nearly forty years. 
+																	While many junior Soldiers have made the transition seamlessly other Soldiers Noncommissioned Officers and Officers. 
+																	On October 1 the ACFT became the Armys only physical fitness test of record. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army on Friday announced major changes to its new Army Combat Fitness Test ACFT including lowering standards in some cases. 
+																	I cant help you with lack of motivation but if youre willing to do the work this plan will help you avoid a November Golf no go on test day. 
+																	20 2021 at Fort Gordon GA prior to the Army Best Medic Competition AMBC. 
+																	The Army Physical Fitness test served us for 40 years and through our improved understanding of exercise science and physical. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The Army Combat Fitness Test ACFT - previously called the Army Combat Readiness Test - is a newly designed fitness testing protocol that more closely replicates the types of physical actions that army personel do on the battlefield. 
+																	The US Army is making changes to ensure its soldiers are battle ready. 
+																	Which will take. 
+																	Evolution and adaptability are the cornerstones of our force. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All Soldiers will be required to take the new gender and age-neutral test starting in October 2020. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/df/0b/e2/df0be2e30989872d18c4d0b361de01be.jpg" data-lightbox="roadtrip" data-title="Pin On Army Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/df/0b/e2/df0be2e30989872d18c4d0b361de01be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVVJ36rSPLiVswsvriCxrIfPO7It-2BdW8Yw';" alt="Pin On Army Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/af/e3/76afe353114320b03aedbe4b5451cb76.jpg" data-lightbox="roadtrip" data-title="Pin On Army Combat Fitness Test">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/af/e3/76afe353114320b03aedbe4b5451cb76.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeLG6hCvg3QW_mWdiP-J-ai0j4DBmu-dnpKQ';" alt="Pin On Army Combat Fitness Test">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Army Combat Fitness Test</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/db/40/a4/db40a4e1a84801e51a21ac880c2ca274.jpg" data-lightbox="roadtrip" data-title="Pin On The Pentagon Fitness Post">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/db/40/a4/db40a4e1a84801e51a21ac880c2ca274.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToqzfcBObRxnmq801tcRsqXkDjgjC5lme8Mw';" alt="Pin On The Pentagon Fitness Post">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On The Pentagon Fitness Post</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/14/7a/68/147a68b61fc20805aa67714a07299f30.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Strong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/14/7a/68/147a68b61fc20805aa67714a07299f30.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9SvZvaT4tBSHass96hFYbQd94nNtcES-aFw';" alt="Pin On Guard Strong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Strong</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/15/c1/0615c11ca08faed8bc58902da9223369.jpg" data-lightbox="roadtrip" data-title="Pin Auf Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/15/c1/0615c11ca08faed8bc58902da9223369.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9kJzPqOPVio1_l9Wf8T1zLQYPdr0ml02EhQ';" alt="Pin Auf Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Auf Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/82/2d/a5/822da5a9e0352a0ea606ba3df2ed61a5.jpg" data-lightbox="roadtrip" data-title="Pin On Career Goals">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/82/2d/a5/822da5a9e0352a0ea606ba3df2ed61a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHVsM2PeaV-i6Uo-PSEMGE7baJGAQrCn6NEg';" alt="Pin On Career Goals">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Career Goals</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/40/23/b84023e471aae5b2dfab05157319a7c8.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Strong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/40/23/b84023e471aae5b2dfab05157319a7c8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4--AGS45qA_F2AOT2iAhdB-oGmEy5FZ-WmA';" alt="Pin On Guard Strong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Strong</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/72/99/8f/72998f9b87ba60177f16b29202a9f091.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Strong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/72/99/8f/72998f9b87ba60177f16b29202a9f091.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRyzyt5LnA4-L5KURO9xMM_Udf0P0tY5H_vw';" alt="Pin On Guard Strong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Strong</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/c7/f6/2cc7f6b807ec2b2bc2a947e25d274df0.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Strong">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/c7/f6/2cc7f6b807ec2b2bc2a947e25d274df0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6dLNwCfcp3git91GKnjo3Jzy6JaS7cbYvKQ';" alt="Pin On Guard Strong">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Strong</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/cc/ba/30ccbaa072977053434bd956d755d7c5.jpg" data-lightbox="roadtrip" data-title="Today Maxkutler19 And I Got To Present A Brief On The New Army Combat Fitness Test To The Soldiers Of The 153rd Mp Co In 2020 Fitness Motivation Army Strong Fitness">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/cc/ba/30ccbaa072977053434bd956d755d7c5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAJ3pxCqMdqSjcfVhtshRouw-XxhvnL7yg_g';" alt="Today Maxkutler19 And I Got To Present A Brief On The New Army Combat Fitness Test To The Soldiers Of The 153rd Mp Co In 2020 Fitness Motivation Army Strong Fitness">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Today Maxkutler19 And I Got To Present A Brief On The New Army Combat Fitness Test To The Soldiers Of The 153rd Mp Co In 2020 Fitness Motivation Army Strong Fitness</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/ec/c1/3aecc1638b2fd363816dc911e9b261ae.png" data-lightbox="roadtrip" data-title="Pin On Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/ec/c1/3aecc1638b2fd363816dc911e9b261ae.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIZiWgLl1xEi2QVqMNTB_kftcgxhs7FR2_Iw';" alt="Pin On Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b2/3b/42/b23b42d836ed4627ccff889bd167631b.jpg" data-lightbox="roadtrip" data-title="Pin On Garage Gym">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b2/3b/42/b23b42d836ed4627ccff889bd167631b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfiBB-yMGj0Q0slSoPJkfz9yDvIbkP3qNVDw';" alt="Pin On Garage Gym">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Garage Gym</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2e/f2/c0/2ef2c0008b5a0f390239fdb5ffb7445c.jpg" data-lightbox="roadtrip" data-title="Pin On Useful Info And Stuff">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2e/f2/c0/2ef2c0008b5a0f390239fdb5ffb7445c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsfb8hZK9PhLaw7dUcW6uggCIKUr6f0tE9UQ';" alt="Pin On Useful Info And Stuff">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Useful Info And Stuff</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/oklahoma-army-national-guard-agr-jobs.html">Oklahoma Army National Guard Agr Jobs</a></li>
+													<li class="list-group-item"><a href="/oppo-joy-plus.html">Oppo Joy Plus</a></li>
+													<li class="list-group-item"><a href="/nys-national-guard-history.html">Nys National Guard History</a></li>
+													<li class="list-group-item"><a href="/one-man-army-hindi-songs.html">One Man Army Hindi Songs</a></li>
+													<li class="list-group-item"><a href="/oppo-reno-4-harga.html">Oppo Reno 4 Harga</a></li>
+													<li class="list-group-item"><a href="/orang-dengan-kualitas-baik-selalu.html">Orang Dengan Kualitas Baik Selalu</a></li>
+													<li class="list-group-item"><a href="/oklahoma-army-national-guard-drill-schedule.html">Oklahoma Army National Guard Drill Schedule</a></li>
+													<li class="list-group-item"><a href="/oppo-ram-3.html">Oppo Ram 3</a></li>
+													<li class="list-group-item"><a href="/oppo-terbaru-2021.html">Oppo Terbaru 2021</a></li>
+													<li class="list-group-item"><a href="/ootd-warna-army.html">Ootd Warna Army</a></li>
+													<li class="list-group-item"><a href="/oppo-reno-2-harga-dan-spesifikasi.html">Oppo Reno 2 Harga Dan Spesifikasi</a></li>
+													<li class="list-group-item"><a href="/oppo-keluaran-terbaru.html">Oppo Keluaran Terbaru</a></li>
+													<li class="list-group-item"><a href="/orang-atau-pihak-yang-menghasilkan-barang-dinamakan.html">Orang Atau Pihak Yang Menghasilkan Barang Dinamakan</a></li>
+													<li class="list-group-item"><a href="/orang-champa-merupakan-salah-satu-penduduk-yang-mendiami-negara.html">Orang Champa Merupakan Salah Satu Penduduk Yang Mendiami Negara</a></li>
+													<li class="list-group-item"><a href="/ohio-army-national-guard-medical-detachment.html">Ohio Army National Guard Medical Detachment</a></li>
+													<li class="list-group-item"><a href="/oppo-y71.html">Oppo Y71</a></li>
+													<li class="list-group-item"><a href="/ny-army-national-guard-jobs.html">Ny Army National Guard Jobs</a></li>
+													<li class="list-group-item"><a href="/ny-army-national-guard-flickr.html">Ny Army National Guard Flickr</a></li>
+													<li class="list-group-item"><a href="/opiratsya-perevod.html">Opiratsya Perevod</a></li>
+													<li class="list-group-item"><a href="/oklahoma-army-national-guard-ocs.html">Oklahoma Army National Guard Ocs</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

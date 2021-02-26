@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Army Aviation News - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Army Aviation News",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/736x/81/fc/3b/81fc3b27b23351a37e77c475110eaaf7.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+army+aviation+news",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Army Aviation News</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">February 5 2021 Tom Demerly USAF Says Boarding of C-40 VIP Transport At Joint Base Andrews. Rescue The state of Idaho has two Airbus UH-72 Lakota helicopters dedicated to rescue missions that belongs to the Idaho Army National Guard Detachment 1 Delta Company 112th Service and Support Battalion based at Gowen Field Boises Air Terminal and National Guard base. The US Army is seeking industry proposals for the development of a new software-defined tactical rad. <br>				
+			</p>
+										<a class="badge badge-warning" href="/usa-coast-line.html">usa coast line</a>
+											<a class="badge badge-light" href="/us-guardianship.html">us guardianship</a>
+											<a class="badge badge-warning" href="/us-coast-guard-texas.html">us coast guard texas</a>
+											<a class="badge badge-dark" href="/us-coast-guard-inspection.html">us coast guard inspection</a>
+											<a class="badge badge-primary" href="/us-coast-guard-kodiak-ak.html">us coast guard kodiak ak</a>
+											<a class="badge badge-info" href="/us-coast-guard-msrt.html">us coast guard msrt</a>
+											<a class="badge badge-secondary" href="/us-guard-film.html">us guard film</a>
+											<a class="badge badge-warning" href="/us-coast-guard-regulations.html">us coast guard regulations</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you have come to pay a visit to the right site.  Our site provides you with hints for viewing the highest quality video and picture content, hunt and locate more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from various sources, especially Youtube, so we recommend this movie that you view.  You can also bring about supporting this site by sharing videos and graphics that you like on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ed/01/22/ed01222d44b237ea2198f1299d6e4076.jpg" data-lightbox="roadtrip" data-title="It S Either The Biggest Aviation News Scoop In The Last Decade Or The Latest In Hollywood Fakery This Photo Military Aircraft Helicopter Military Helicopter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ed/01/22/ed01222d44b237ea2198f1299d6e4076.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaFOm294TQEhlMJFmdVw2PlEAFUbgDkYY5nQ';" alt="It S Either The Biggest Aviation News Scoop In The Last Decade Or The Latest In Hollywood Fakery This Photo Military Aircraft Helicopter Military Helicopter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">It S Either The Biggest Aviation News Scoop In The Last Decade Or The Latest In Hollywood Fakery This Photo Military Aircraft Helicopter Military Helicopter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/43/26/fb43263e8b62ac0873d5615d72092e19.png" data-lightbox="roadtrip" data-title="Military And Commercial Technology Us Army To Receive Ah 64e Version 6 Upgrade With Ship And Uav Hunting Capabi Military Helicopter Military Aircraft Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/43/26/fb43263e8b62ac0873d5615d72092e19.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2lo_zhbHtD_pwDTcD2GoglCUMm2noF9yXTA';" alt="Military And Commercial Technology Us Army To Receive Ah 64e Version 6 Upgrade With Ship And Uav Hunting Capabi Military Helicopter Military Aircraft Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military And Commercial Technology Us Army To Receive Ah 64e Version 6 Upgrade With Ship And Uav Hunting Capabi Military Helicopter Military Aircraft Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/cd/d6/e9/cdd6e9fb6af7ed3e347f77046b9e0a3d.jpg" data-lightbox="roadtrip" data-title="Boeing Fara Designed With The Future In Mind In 2020 Reconnaissance Aircraft Boeing Aviation Industry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/cd/d6/e9/cdd6e9fb6af7ed3e347f77046b9e0a3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBvJqK3f0elM32Xbbo5135idMEScKRbTa0GQ';" alt="Boeing Fara Designed With The Future In Mind In 2020 Reconnaissance Aircraft Boeing Aviation Industry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Boeing Fara Designed With The Future In Mind In 2020 Reconnaissance Aircraft Boeing Aviation Industry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d5/16/58/d516580037d592303f33c25179a5e58d.jpg" data-lightbox="roadtrip" data-title="Pin On Us Military Aircrafts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d5/16/58/d516580037d592303f33c25179a5e58d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8xYW0pbDFD7Q25i1p4jU97j5WxYLrXlWGOQ';" alt="Pin On Us Military Aircrafts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Us Military Aircrafts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/6b/4e/9a6b4e4e676f6a442066a780015bbde0.jpg" data-lightbox="roadtrip" data-title="Elbit Announced That Elbit Systems Of America Was Awarded A Contract To Provide Life Cycle Contractor Support For Us Army C 26 And U Us Army Army Aviation News">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/6b/4e/9a6b4e4e676f6a442066a780015bbde0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ314tsKxZypd0V7G1ZpxsUBizxbcSqk_7byg';" alt="Elbit Announced That Elbit Systems Of America Was Awarded A Contract To Provide Life Cycle Contractor Support For Us Army C 26 And U Us Army Army Aviation News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Elbit Announced That Elbit Systems Of America Was Awarded A Contract To Provide Life Cycle Contractor Support For Us Army C 26 And U Us Army Army Aviation News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/12/a5/5512a540df9e71ee51d5556aa82ce2cb.png" data-lightbox="roadtrip" data-title="Pin On Military News Aviation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/12/a5/5512a540df9e71ee51d5556aa82ce2cb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM8tR6dQEiNlzQOg27HOTV6imqS31-7UmboQ';" alt="Pin On Military News Aviation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military News Aviation</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/c1/53/47/c15347b380359e645cab839c40d0e1be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM8tR6dQEiNlzQOg27HOTV6imqS31-7UmboQ';" alt="Pin On Military News Aviation">
+										<div class="card-body">
+						<h3 class="h5"><b>WASHINGTON The US.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us army aviation news</strong>. 
+								
+																	It doesnt get any faster than this. 
+																	The Federal Aviation Administration and commercial aviation trade group have raised concerns that 5G deployment could cause interference to civil and military aircraft. 
+																	Idaho National Guard Rescue Helicopter 31-Jul-20. 
+																	A US Navy contingent including Poseidon and F-35 aircraft have this week been training with the Royal Air Force in Scotland. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Daily news updates from the military community and abroad including military gear and equipment breaking news international news and more. 
+																	The RAF declined read more. 
+																	Search Sign In Join News. 
+																	Armys 1st Combat Aviation Brigade based in Fort Riley Kan will deploy to Europe in April in a troop rotation the Army announced on Monday. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Essential news and analysis on the defense aerospace business. 
+																	VMFAAW-225 has transitioned to the F-35B and redesignated as VMFA-225 during redesignation and assumption of command ceremony at MCAS Yuma on Jan. 
+																	News of UH-72A Lakota in US Army Aviation helicopter service. 
+																	News - United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Defence Talk features world defense aerospace security war military aviation and armed forces news forum and military photos Monday February 8 2021 About us. 
+																	The 1st CAB an element of. 
+																	News about US Army Aviation Sling-Load Training 12-Dec-20. 
+																	PLA continues modernising land. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	8 UPI --The US. 
+																	Military Aviation. 
+																	Sling The 145th Support Maintenance Company New York Army National Guard received sling Load training with a UH-60 Black Hawk helicopter from Bravo Company 3rd Battalion 142nd Aviation Regiment. 
+																	Army will head out west to conduct an intricate aviation-focused exercise called Edge 21 ahead of the services second Project Convergence event Brig. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Constantly updated with the latest aviation news stories and press releases from all over the globe. 
+																	View all C4ISR news. 
+																	RAF Lossiemouth where the RAFs recently acquired P-8A Poseidon aircraft are based has been hosting the US detachment as part of training and maritime security tasks. 
+																	Your trusted source for new and ongoing programs and requirements in military aircraft manned and unmanned engines avionics. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army Aviation and Missile Command partnership with an arm of the Defense Logistics Agency will significantly reduce delivery time on necessary parts while simultaneously saving millions of. 
+																	Intruder at Joint Base Andrews Boarded C-40 Aircraft Had Existing Warrants. 
+																	Military Aviation News - Latest Developments in Military Aircraft The B-21 Bomber Could Be the Coolest Plane Ever Sounds Like the Air Force Wants to Buy F-16s Again The Secretary of Defense Doesnt. 
+																	After the United States Army Air Corps grew into the Army Air Forces and split into the new service the United States Air Force the Army was left with its sole fixed-wing aviation units flying Taylorcraft L-2 Grasshopper observation planes for artillery units. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	See in mobile app. 
+																	Military Aviation News F-22 Raptor gets major upgrades courtesy of Hill AFBs 574th Aircraft Maintenance Squadron 02052021 The 5th-generation F-22 Raptor has been one of the worlds most dominant fighter aircraft since entering service and has defined what air dominance means to the US. 
+																	From ace pilots during WWII to todays Army to the first aircraft taking off of the beaches of North Carolina the Army has been a part of aviation since its beginning. 
+																	Get your Aviation Industry news the second it hits the news bureaus. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	An unrivaled 10000 news sources are searched every day for aviation news. 
+																	The Armys 1st Combat Aviation Brigade will deploy to Europe in April to support training operations in at least four allied countries the service announced Monday. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fb/c9/01/fbc90156d9bfa8086afa973d828dd1a0.png" data-lightbox="roadtrip" data-title="Pin On Helicopteros Militares">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fb/c9/01/fbc90156d9bfa8086afa973d828dd1a0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTHphWO06mhTQmHh2jfHBgpljITdfyb-GBqg';" alt="Pin On Helicopteros Militares">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Helicopteros Militares</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f1/09/37/f10937fa8ab0778f190d919d4ea75870.jpg" data-lightbox="roadtrip" data-title="Pin On Air Force Vertolyoty">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f1/09/37/f10937fa8ab0778f190d919d4ea75870.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFMsguTydaMnkFfopsjSnV3sitHgq3j4_SiQ';" alt="Pin On Air Force Vertolyoty">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Air Force Vertolyoty</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/35/d2/e535d276afb52314a435838e27dc89be.jpg" data-lightbox="roadtrip" data-title="Pin On Military News Aviation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/35/d2/e535d276afb52314a435838e27dc89be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzur_b5HlVW1owJ9M4cm9o2hZz-sZBhkl7kw';" alt="Pin On Military News Aviation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Military News Aviation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4f/3e/1d/4f3e1dd59539d496af4d407bb02c2b9d.jpg" data-lightbox="roadtrip" data-title="Us Military Technologies Revelation Beginnings Of Skynet The Best Rob Military Technology Fighter Jets Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4f/3e/1d/4f3e1dd59539d496af4d407bb02c2b9d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqFJDDKkHdKT8w9a143Q6k4yKA67x2DZpIHg';" alt="Us Military Technologies Revelation Beginnings Of Skynet The Best Rob Military Technology Fighter Jets Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Military Technologies Revelation Beginnings Of Skynet The Best Rob Military Technology Fighter Jets Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/d9/34/b1/d934b14ac0e64d025d4ff7ede4436027.jpg" data-lightbox="roadtrip" data-title="The Us Army S Future Attack Aircraft Was Designed Superb Agility In All Flight Modes Youtube Us Army All Flights Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/d9/34/b1/d934b14ac0e64d025d4ff7ede4436027.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHi0-o0Iw4AfdySxyv2cKv5s_1WlJgyapoxQ';" alt="The Us Army S Future Attack Aircraft Was Designed Superb Agility In All Flight Modes Youtube Us Army All Flights Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Us Army S Future Attack Aircraft Was Designed Superb Agility In All Flight Modes Youtube Us Army All Flights Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/36/58/dc/3658dc56ca49aef22c6ab8c28cae449a.jpg" data-lightbox="roadtrip" data-title="Fox News Pilots Killed In Air Force Plane Crash In Afghanistan Identified In 2020 Aircraft Afghanistan Air Force Planes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/36/58/dc/3658dc56ca49aef22c6ab8c28cae449a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNg1Z_b7f49SppN8oyoiD29-jz-ZINyG0iwA';" alt="Fox News Pilots Killed In Air Force Plane Crash In Afghanistan Identified In 2020 Aircraft Afghanistan Air Force Planes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Fox News Pilots Killed In Air Force Plane Crash In Afghanistan Identified In 2020 Aircraft Afghanistan Air Force Planes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/07/a5/f3/07a5f3c892d8bd5eeb2ca873dc4eb54b.png" data-lightbox="roadtrip" data-title="Military And Commercial Technology Us Army Chooses Bell And Sikorsky Boeing Team For Flraa Competition Sikorsky Us Army Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/07/a5/f3/07a5f3c892d8bd5eeb2ca873dc4eb54b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKTLjBazkgV9F_10jj4C-fzGqdTTcos8QgHw';" alt="Military And Commercial Technology Us Army Chooses Bell And Sikorsky Boeing Team For Flraa Competition Sikorsky Us Army Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Military And Commercial Technology Us Army Chooses Bell And Sikorsky Boeing Team For Flraa Competition Sikorsky Us Army Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/58/3a/d2/583ad2c5dc1b16f19d35e6ee9fecad5b.jpg" data-lightbox="roadtrip" data-title="Us Army Orders Next Generation Missile Warning Systems Baesystems Limws Missilewarningsystem Usarmy In 2020 Bae Systems Us Army Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/58/3a/d2/583ad2c5dc1b16f19d35e6ee9fecad5b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjrvCC6u7Ltw-bK7k_t8ra3vdqtnM00qruQ';" alt="Us Army Orders Next Generation Missile Warning Systems Baesystems Limws Missilewarningsystem Usarmy In 2020 Bae Systems Us Army Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army Orders Next Generation Missile Warning Systems Baesystems Limws Missilewarningsystem Usarmy In 2020 Bae Systems Us Army Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/81/fc/3b/81fc3b27b23351a37e77c475110eaaf7.jpg" data-lightbox="roadtrip" data-title="Rt Smithbusinessco Rt Generalelectric Rt Geaviation U S Army Selects Ges T901 Engine For Itep Engineering Manufacturing Develo Us Army Army Aviation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/81/fc/3b/81fc3b27b23351a37e77c475110eaaf7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxoLnQS6uewW6N2cxJmIa9FdyYMoWnTevI0A';" alt="Rt Smithbusinessco Rt Generalelectric Rt Geaviation U S Army Selects Ges T901 Engine For Itep Engineering Manufacturing Develo Us Army Army Aviation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rt Smithbusinessco Rt Generalelectric Rt Geaviation U S Army Selects Ges T901 Engine For Itep Engineering Manufacturing Develo Us Army Army Aviation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/bc/60/4f/bc604f688341e415f228aaf79c006e78.jpg" data-lightbox="roadtrip" data-title="Helihub Com On Instagram Genesys Aerosystems And Xp Services Announce Faa Supplemental Type Certification Stc Approval Of Th Military News Us Army Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/bc/60/4f/bc604f688341e415f228aaf79c006e78.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS00koyBbuHoUzVX8A9KA4ic-g0XUmDKa0FPA';" alt="Helihub Com On Instagram Genesys Aerosystems And Xp Services Announce Faa Supplemental Type Certification Stc Approval Of Th Military News Us Army Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Helihub Com On Instagram Genesys Aerosystems And Xp Services Announce Faa Supplemental Type Certification Stc Approval Of Th Military News Us Army Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/d0/6d/65d06d94265e5214ed5f83ae0db4a898.png" data-lightbox="roadtrip" data-title="Croatian Air Force Conducts Live Firing From Oh 58d Kiowa Warrior Armed Reconnaissance Helicopters Militaryleak Air Force Helicopter Kiowa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/d0/6d/65d06d94265e5214ed5f83ae0db4a898.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy9XbSggwsZ-Tq9iCyCvEKF4JbjAOOC_xDvA';" alt="Croatian Air Force Conducts Live Firing From Oh 58d Kiowa Warrior Armed Reconnaissance Helicopters Militaryleak Air Force Helicopter Kiowa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Croatian Air Force Conducts Live Firing From Oh 58d Kiowa Warrior Armed Reconnaissance Helicopters Militaryleak Air Force Helicopter Kiowa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e3/ad/e9/e3ade927bdea392ad0fd2911c4ec1a34.jpg" data-lightbox="roadtrip" data-title="Pin On Ch 47 Chinook">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e3/ad/e9/e3ade927bdea392ad0fd2911c4ec1a34.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCw_uNIoaBr3EJOZD7-od8TNbURs8WLKRpsA';" alt="Pin On Ch 47 Chinook">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ch 47 Chinook</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c1/53/47/c15347b380359e645cab839c40d0e1be.jpg" data-lightbox="roadtrip" data-title="Us Army S Cloud In The Sky Should Be On Board By Late 2024 Reconnaissance Aircraft Army Us Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c1/53/47/c15347b380359e645cab839c40d0e1be.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhyzHLJUmoHFa-NfaRV6gXuqqXna87pkEUrw';" alt="Us Army S Cloud In The Sky Should Be On Board By Late 2024 Reconnaissance Aircraft Army Us Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Army S Cloud In The Sky Should Be On Board By Late 2024 Reconnaissance Aircraft Army Us Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-often-is-drill-for-army-reserves.html">How Often Is Drill For Army Reserves</a></li>
+													<li class="list-group-item"><a href="/homeland-security-is-preparing-to-mobilize.html">Homeland Security Is Preparing To Mobilize</a></li>
+													<li class="list-group-item"><a href="/how-many-national-guard-soldiers-have-died.html">How Many National Guard Soldiers Have Died</a></li>
+													<li class="list-group-item"><a href="/homeland-security-deploying-national-guard.html">Homeland Security Deploying National Guard</a></li>
+													<li class="list-group-item"><a href="/how-long-does-ait-last-for-national-guard.html">How Long Does Ait Last For National Guard</a></li>
+													<li class="list-group-item"><a href="/hitung-zakat-harta.html">Hitung Zakat Harta</a></li>
+													<li class="list-group-item"><a href="/how-to-access-army-national-guard-orb.html">How To Access Army National Guard Orb</a></li>
+													<li class="list-group-item"><a href="/how-powerful-is-the-egyptian-army.html">How Powerful Is The Egyptian Army</a></li>
+													<li class="list-group-item"><a href="/how-strong-is-mexico-army.html">How Strong Is Mexico Army</a></li>
+													<li class="list-group-item"><a href="/how-many-army-national-guard-soldiers-are-there.html">How Many Army National Guard Soldiers Are There</a></li>
+													<li class="list-group-item"><a href="/how-long-does-it-take-to-transfer-from-national-guard-to-active-duty.html">How Long Does It Take To Transfer From National Guard To Active Duty</a></li>
+													<li class="list-group-item"><a href="/homeland-security-preparing-to-mobilize-the-national-guard.html">Homeland Security Preparing To Mobilize The National Guard</a></li>
+													<li class="list-group-item"><a href="/how-much-do-you-get-paid-for-drill-weekend.html">How Much Do You Get Paid For Drill Weekend</a></li>
+													<li class="list-group-item"><a href="/how-many-national-guard-troops-in-dc.html">How Many National Guard Troops In Dc</a></li>
+													<li class="list-group-item"><a href="/how-do-you-get-rid-of-army-ants.html">How Do You Get Rid Of Army Ants</a></li>
+													<li class="list-group-item"><a href="/homeland-security-is-preparing-to-mobilize-the-national-guard.html">Homeland Security Is Preparing To Mobilize The National Guard</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-bah-army-national-guard.html">How To Apply For Bah Army National Guard</a></li>
+													<li class="list-group-item"><a href="/how-many-national-guard-soldiers-are-there.html">How Many National Guard Soldiers Are There</a></li>
+													<li class="list-group-item"><a href="/hitung-zodiak.html">Hitung Zodiak</a></li>
+													<li class="list-group-item"><a href="/how-long-is-ait-for-national-guard.html">How Long Is Ait For National Guard</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

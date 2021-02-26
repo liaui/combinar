@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>No Guard Wife Bahasa Indonesia - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "No Guard Wife Bahasa Indonesia",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/4c/b8/a4/4cb8a453e42fc36963dcfc9f62b2eb02.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=no+guard+wife+bahasa+indonesia",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>No Guard Wife Bahasa Indonesia</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">168k Followers 385 Following 1984 Posts - See Instagram photos and videos from Joanne Bergamin swissguardwife. Create an account or log into Facebook. Layanan gratis Google secara instan menerjemahkan kata frasa dan halaman web antara bahasa Inggris dan lebih dari 100 bahasa lainnya. <br>				
+			</p>
+										<a class="badge badge-light" href="/29th-infantry-division-squad.html">29th infantry division squad</a>
+											<a class="badge badge-warning" href="/abg-values.html">abg values</a>
+											<a class="badge badge-warning" href="/acer-driver.html">acer driver</a>
+											<a class="badge badge-danger" href="/activating-national-guard.html">activating national guard</a>
+											<a class="badge badge-warning" href="/81st-armored-brigade-combat-team.html">81st armored brigade combat team</a>
+											<a class="badge badge-danger" href="/201st-red-horse-squadron.html">201st red horse squadron</a>
+											<a class="badge badge-secondary" href="/active-guard-reserve-openings.html">active guard reserve openings</a>
+											<a class="badge badge-info" href="/13f-national-guard.html">13f national guard</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information linked to the key word you have come to pay a visit to the ideal blog.  Our website provides you with hints for viewing the maximum quality video and image content, hunt and locate more enlightening video content and images that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from various sources, especially Youtube, so we recommend this video that you see.  You can also contribute to supporting this site by sharing videos and graphics that you enjoy on this site on your social networking accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/DkRu6g1XsAAsKJT.jpg" data-lightbox="roadtrip" data-title="Mangadex On Twitter Chapter 11 Of No Guard Wife Is On Mangadex">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/DkRu6g1XsAAsKJT.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVTmGb2edvLzurIcvfM8cP4cqdZqVdrziwWA';" alt="Mangadex On Twitter Chapter 11 Of No Guard Wife Is On Mangadex">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Mangadex On Twitter Chapter 11 Of No Guard Wife Is On Mangadex</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://klikmanga.com/wp-content/uploads/2019/11/29389-193x278.jpg" data-lightbox="roadtrip" data-title="Komik No Guard Wife Bahasa Indonesia Klikmanga">
+											<img class="card-img v-image ads-img " src="https://klikmanga.com/wp-content/uploads/2019/11/29389-193x278.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCG8ESbzRbF3yd7TmZ2vxYH6XYiiJw2dqNKA';" alt="Komik No Guard Wife Bahasa Indonesia Klikmanga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Komik No Guard Wife Bahasa Indonesia Klikmanga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/ENszmmWUYAAYlKI.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/ENszmmWUYAAYlKI.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAZobtMT4tbB1buxH1UStkQAq1_6J-29vDYQ';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/DkH-b-UUUAAI1O-.jpg" data-lightbox="roadtrip" data-title="Dizzy Ziddy On Twitter Story Of A Bride Whose Love Attack Power Is 255 But Her Defensive Power Is 0 Fitting That The Title Is No Guard Wife Ziddyreads Https T Co Wkiwkb2jyv">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/DkH-b-UUUAAI1O-.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMrai0vlB6zsy6eSMy41vhAH_lqtTnei6aSw';" alt="Dizzy Ziddy On Twitter Story Of A Bride Whose Love Attack Power Is 255 But Her Defensive Power Is 0 Fitting That The Title Is No Guard Wife Ziddyreads Https T Co Wkiwkb2jyv">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dizzy Ziddy On Twitter Story Of A Bride Whose Love Attack Power Is 255 But Her Defensive Power Is 0 Fitting That The Title Is No Guard Wife Ziddyreads Https T Co Wkiwkb2jyv</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/EL8GLtnU0AAT-pi.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://pbs.twimg.com/media/EL8GLtnU0AAT-pi.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrJ2wp1yrv40YLJr9aJZFJ3FHQBr8jsqT1jg';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2b/7b/5f/2b7b5fd8a3a5d93c07d975a99fb7e128.png" data-lightbox="roadtrip" data-title="Pin On Me Teach">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2b/7b/5f/2b7b5fd8a3a5d93c07d975a99fb7e128.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEnT_BgFiCN7MbA4qTeFrP73axgbhanlSycA';" alt="Pin On Me Teach">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Me Teach</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://klikmanga.com/wp-content/uploads/2019/11/29389-193x278.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEnT_BgFiCN7MbA4qTeFrP73axgbhanlSycA';" alt="Pin On Me Teach">
+										<div class="card-body">
+						<h3 class="h5"><b>Charli damelio charlidamelio charli damelio on TikTok 59B Likes.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>No guard wife bahasa indonesia</strong>. 
+								
+																	Chapter Baru Chapter 01-03. 
+																	Baca no guard wife no guard wife bahasa indonesia no guard wife indo download no guard wife indo baca online no guard wife Chapter No Guard Wife. 
+																	Indonesian bahasa Indonesia baˈhasa indoˈnesja is the official language of IndonesiaIt is a standardised variety of Malay an Austronesian language that has been used as a lingua franca in the multilingual Indonesian archipelago for centuries. 
+																	Baca novel China Korea Jepang Thailand dll online Bahasa Indonesia online gratis. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Share photos and videos send messages and get updates. 
+																	The Superb Captain in the. 
+																	Read the latest manga No Guard Wife Chapter 1 Bahasa Indonesia at Mangashiro Manga No Guard Wife is always updated at Mangashiro Dont forget to read the other manga updates. 
+																	A list of manga collections Mangashiro is in the Manga List menu. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Born Kusno Sosrodihardjo Javanese. 
+																	Chapter 01-03 Agustus 17 2018. 
+																	Chapter Baru Chapter 01-03. 
+																	Share photos and videos send messages and get updates. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I am Worried that my Childhood Friend is too Cute. 
+																	Connect with friends family and other people you know. 
+																	Kimi to Boku no Saigo no Senjou Aruiwa Sekai ga Hajimaru Seisen. 
+																	Sukarno s uː ˈ k ɑːr n oʊ. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kuma Kuma Kuma Bear. 
+																	I am a megan thee stallion stan for life my orosa nail polish collection below. 
+																	Indonesia is the fourth most populous nation in the worldof which the majority speak Indonesian which makes it one of the most widely. 
+																	Connect with friends family and other people you know. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chapter 01-03 August 17 2018. 
+																	6 June 1901 21 June 1970 was an Indonesian politician who was the first president of Indonesia serving from 1945 to 1967. 
+																	Sukarno was the leader of the Indonesian struggle for independence from the Dutch EmpireHe was a prominent leader of Indonesias nationalist movement during the Dutch colonial period and. 
+																	Chapter Awal Chapter. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Chapter No Guard Wife. 
+																	Baca no guard wife no guard wife bahasa indonesia no guard wife indo download no guard wife indo baca no guard wife online. 
+																	This is a challenge that I have wanted to do for a while now and I ended up annoying Max in the process two birds one stoneThe hoodie I wore in this video. 
+																	Rilis Terbaru Lihat Semua. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Create an account or log in to Facebook. 
+																	Googles free service instantly translates words phrases and web pages between English and over 100 other languages. 
+																	Update terbaru setiap hari. 
+																	Chapter Awal Chapter. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Animeindo - Nonton Anime Subtitle Indonesia. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/85/12/61/85126129086bd0cd2a4c2f0cb23fc2dc.jpg" data-lightbox="roadtrip" data-title="Pin By Stiward Beriguete On Manga En Espanol Gratis In 2020 Romantic Anime Free Manga Manga">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/85/12/61/85126129086bd0cd2a4c2f0cb23fc2dc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsAT4P6r8Kv926qQnEMD-GN8-nH1K-V94Dbg';" alt="Pin By Stiward Beriguete On Manga En Espanol Gratis In 2020 Romantic Anime Free Manga Manga">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Stiward Beriguete On Manga En Espanol Gratis In 2020 Romantic Anime Free Manga Manga</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/dd/51/fddd51d12a96c08a77e075b61b798714.jpg" data-lightbox="roadtrip" data-title="Related Image Hindu Art Lord Rama Images Shri Ram Wallpaper">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/dd/51/fddd51d12a96c08a77e075b61b798714.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6f_S9pssAho6zgzN6kvr7IV0UvzYkVSPqbg';" alt="Related Image Hindu Art Lord Rama Images Shri Ram Wallpaper">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Related Image Hindu Art Lord Rama Images Shri Ram Wallpaper</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/f7/bd/aff7bd5811287230360f81d33f604efa.jpg" data-lightbox="roadtrip" data-title="Pin Di Animation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/f7/bd/aff7bd5811287230360f81d33f604efa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTzNsX9YQs12YlhILSeipXvUIy2qLX9Zsig';" alt="Pin Di Animation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin Di Animation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/47/e0/b847e0fcc757deba259345e1dd244b77.jpg" data-lightbox="roadtrip" data-title="B Asks Does The Quran Say Women Must Wear Hijab What The Quran Says Regarding Hijab Islamic Quotes Best Islamic Quotes Islam Marriage">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/47/e0/b847e0fcc757deba259345e1dd244b77.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbd-DzcvW2BD7zfOKA5XbQTWv_dNpF9WWWEA';" alt="B Asks Does The Quran Say Women Must Wear Hijab What The Quran Says Regarding Hijab Islamic Quotes Best Islamic Quotes Islam Marriage">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">B Asks Does The Quran Say Women Must Wear Hijab What The Quran Says Regarding Hijab Islamic Quotes Best Islamic Quotes Islam Marriage</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/e3/4e/26e34e42451f60e6a0309afcd25ad80c.jpg" data-lightbox="roadtrip" data-title="Pin By Choi Kazuki On Lanwanji X Weiwuxian Anime Art Gusu">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/e3/4e/26e34e42451f60e6a0309afcd25ad80c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_s0yIVgJOiqSYzTukzDZf5j2U-UNt-Z8-Lw';" alt="Pin By Choi Kazuki On Lanwanji X Weiwuxian Anime Art Gusu">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Choi Kazuki On Lanwanji X Weiwuxian Anime Art Gusu</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/f8/4d/91f84d854f7f9831e97999435e3cd304.jpg" data-lightbox="roadtrip" data-title="15 Trendy Memes Indonesia Bacot Memes Funny Faces True Beauty Cute Memes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/f8/4d/91f84d854f7f9831e97999435e3cd304.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPC2Sajq8TSCYXGIzKzQh8_Iolq3SY_5PZNA';" alt="15 Trendy Memes Indonesia Bacot Memes Funny Faces True Beauty Cute Memes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">15 Trendy Memes Indonesia Bacot Memes Funny Faces True Beauty Cute Memes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/4c/b8/a4/4cb8a453e42fc36963dcfc9f62b2eb02.jpg" data-lightbox="roadtrip" data-title="Pin On I S L A M دين الاسلام">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/4c/b8/a4/4cb8a453e42fc36963dcfc9f62b2eb02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTYIc8hRpArl-xSs8tHxNaJAW2NbMwXMMUGA';" alt="Pin On I S L A M دين الاسلام">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On I S L A M دين الاسلام</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/66/54/1d/66541d48870cf643dfb9ebbdca9be764.jpg" data-lightbox="roadtrip" data-title="Genius Doctor Black Belly Miss Versi Bahasa Indonesia Fantasi Peri Fantasi Gambar Tokoh">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/66/54/1d/66541d48870cf643dfb9ebbdca9be764.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYlg-FzvOGH5STvcZm92LwE-7ueue0iq3TNA';" alt="Genius Doctor Black Belly Miss Versi Bahasa Indonesia Fantasi Peri Fantasi Gambar Tokoh">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Genius Doctor Black Belly Miss Versi Bahasa Indonesia Fantasi Peri Fantasi Gambar Tokoh</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bb/a8/59/bba859d461800994870bf650c3f17168.jpg" data-lightbox="roadtrip" data-title="Pin By Becci Spaid On Asl Asl Sign Language Sign Language Sign Language Interpreter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bb/a8/59/bba859d461800994870bf650c3f17168.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5TIAVqYwCxNS7LYN2xied858GDg57mncFag';" alt="Pin By Becci Spaid On Asl Asl Sign Language Sign Language Sign Language Interpreter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Becci Spaid On Asl Asl Sign Language Sign Language Sign Language Interpreter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c0/48/6c/c0486cdbaba6859ae09a279924f3dfe5.png" data-lightbox="roadtrip" data-title="Pin On Pretty Women">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c0/48/6c/c0486cdbaba6859ae09a279924f3dfe5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdQNcetyd3miMm_1JwmmPNraye_9wmC4uN-A';" alt="Pin On Pretty Women">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Pretty Women</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/20/fa/8520facb10ce45568eab9c00ef9ed2b3.jpg" data-lightbox="roadtrip" data-title="03424555bfb1d9bf0da4644127a4a24d Jpg 500 500 Wisdom Quotes Relationship Quotes Words">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/20/fa/8520facb10ce45568eab9c00ef9ed2b3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzvm38TG9FPfcgv2C9AHGoOEMD46Gt3yJ1ow';" alt="03424555bfb1d9bf0da4644127a4a24d Jpg 500 500 Wisdom Quotes Relationship Quotes Words">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">03424555bfb1d9bf0da4644127a4a24d Jpg 500 500 Wisdom Quotes Relationship Quotes Words</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cb/b3/fb/cbb3fb41a922568188e709ba0c6cd557.jpg" data-lightbox="roadtrip" data-title="20 Kata Bijak Bertemakan Cinta Dalam Bahasa Inggris Dan Artinya Http Www Ilmubahasainggris Com 20 Kata Bijak Bertemakan Ci Romantis Bijak Kata Kata Mutiara">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cb/b3/fb/cbb3fb41a922568188e709ba0c6cd557.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3uJ68x4Bz-k6ib576eTrHga0TpSNRwl1wDA';" alt="20 Kata Bijak Bertemakan Cinta Dalam Bahasa Inggris Dan Artinya Http Www Ilmubahasainggris Com 20 Kata Bijak Bertemakan Ci Romantis Bijak Kata Kata Mutiara">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">20 Kata Bijak Bertemakan Cinta Dalam Bahasa Inggris Dan Artinya Http Www Ilmubahasainggris Com 20 Kata Bijak Bertemakan Ci Romantis Bijak Kata Kata Mutiara</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/4d/1e/f04d1e3620705b6d0d7ef465ac0e0c45.jpg" data-lightbox="roadtrip" data-title="General Douglas Macarthur S Hat By Peg Price Douglas Macarthur Military Memorabilia Us Army General">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/4d/1e/f04d1e3620705b6d0d7ef465ac0e0c45.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYYAbnB2IgOOIdtd4kr50k2IuuPJFho_-hMg';" alt="General Douglas Macarthur S Hat By Peg Price Douglas Macarthur Military Memorabilia Us Army General">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">General Douglas Macarthur S Hat By Peg Price Douglas Macarthur Military Memorabilia Us Army General</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-ranks-how-to-move-up.html">Army Ranks How To Move Up</a></li>
+													<li class="list-group-item"><a href="/army-ranks-general.html">Army Ranks General</a></li>
+													<li class="list-group-item"><a href="/army-ranks-lance-corporal.html">Army Ranks Lance Corporal</a></li>
+													<li class="list-group-item"><a href="/army-ranks-of-ww2.html">Army Ranks Of Ww2</a></li>
+													<li class="list-group-item"><a href="/army-ranks-germany.html">Army Ranks Germany</a></li>
+													<li class="list-group-item"><a href="/army-ranks-royal-artillery.html">Army Ranks Royal Artillery</a></li>
+													<li class="list-group-item"><a href="/army-ranks-nato.html">Army Ranks Nato</a></li>
+													<li class="list-group-item"><a href="/army-ranks-with-symbols.html">Army Ranks With Symbols</a></li>
+													<li class="list-group-item"><a href="/army-recruiter-orange-park-fl.html">Army Recruiter Orange Park Fl</a></li>
+													<li class="list-group-item"><a href="/army-rating-regulation.html">Army Rating Regulation</a></li>
+													<li class="list-group-item"><a href="/army-ranks-logo.html">Army Ranks Logo</a></li>
+													<li class="list-group-item"><a href="/army-ranks-uganda.html">Army Ranks Uganda</a></li>
+													<li class="list-group-item"><a href="/army-ranks-uk.html">Army Ranks Uk</a></li>
+													<li class="list-group-item"><a href="/army-ranks-timeline.html">Army Ranks Timeline</a></li>
+													<li class="list-group-item"><a href="/army-ranks-in-medieval-times.html">Army Ranks In Medieval Times</a></li>
+													<li class="list-group-item"><a href="/army-reserve-and-army-national-guard.html">Army Reserve And Army National Guard</a></li>
+													<li class="list-group-item"><a href="/army-ranks-medical-corps.html">Army Ranks Medical Corps</a></li>
+													<li class="list-group-item"><a href="/army-ranks-quora.html">Army Ranks Quora</a></li>
+													<li class="list-group-item"><a href="/army-ranks-test.html">Army Ranks Test</a></li>
+													<li class="list-group-item"><a href="/army-ranks-poland.html">Army Ranks Poland</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

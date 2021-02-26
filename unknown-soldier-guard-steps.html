@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Unknown Soldier Guard Steps - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Unknown Soldier Guard Steps",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/1b/a9/af/1ba9af35fdc47b3727d1a5db5d32413c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=unknown+soldier+guard+steps",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Unknown Soldier Guard Steps</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The significance of 21 reflects the twenty-one gun salute the highest honor given any military or foreign dignitary. When it comes to discipline The Old Guard have such firm bearing that they can get stabbed in the foot with a bayonet and keep standing guard. Guards for the Tomb of the Unknown Soldier must commit 2 years of life to guard the tomb live in a barracks under the tomb cannot drink any alcohol on or off duty for the rest of their live and cannot swear in public for the rest of their lives and cannot disgrace the uniform or the tomb in any way. <br>				
+			</p>
+										<a class="badge badge-success" href="/hilang-bekas-jerawat.html">hilang bekas jerawat</a>
+											<a class="badge badge-secondary" href="/guard-pa-pure.html">guard pa pure</a>
+											<a class="badge badge-info" href="/global-army-song-for-bts.html">global army song for bts</a>
+											<a class="badge badge-success" href="/guard-reserve.html">guard reserve</a>
+											<a class="badge badge-secondary" href="/harga-jaket-us-army.html">harga jaket us army</a>
+											<a class="badge badge-danger" href="/global-army-ranking-2020.html">global army ranking 2020</a>
+											<a class="badge badge-secondary" href="/gb-whatsapp-delta.html">gb whatsapp delta</a>
+											<a class="badge badge-danger" href="/gods-army-songs-mp3-download-2018.html">gods army songs mp3 download 2018</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information linked to the key word you've come to pay a visit to the ideal blog.  Our website gives you suggestions for seeing the maximum quality video and image content, search and find more informative video articles and images that fit your interests.
+</p>
+<p align="justify">
+	includes one of thousands of movie collections from several sources, especially Youtube, so we recommend this video that you view.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ab/23/e2/ab23e281e8313f3661e28af3d42d66a6.jpg" data-lightbox="roadtrip" data-title="Standing Guard At The Tomb Of The Unknown Soldier In This Week S Snow Storm God Bless Our Military Unknown Soldier Military Photos Military Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ab/23/e2/ab23e281e8313f3661e28af3d42d66a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqATW4J-wHcGFJFptRpCCE0q43CHr-Ti18_Q';" alt="Standing Guard At The Tomb Of The Unknown Soldier In This Week S Snow Storm God Bless Our Military Unknown Soldier Military Photos Military Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Standing Guard At The Tomb Of The Unknown Soldier In This Week S Snow Storm God Bless Our Military Unknown Soldier Military Photos Military Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/57/3a/7d/573a7da02a565273640a922267586bf6.jpg" data-lightbox="roadtrip" data-title="21 Steps Unknown Soldier Military Pride Honor Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/57/3a/7d/573a7da02a565273640a922267586bf6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT09XSZ2CtDw7AB7AYJNSZYfaxAVStN0jghIA';" alt="21 Steps Unknown Soldier Military Pride Honor Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">21 Steps Unknown Soldier Military Pride Honor Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/04/d3/2c/04d32c6ac18d9e8b7225e277b3f80bb2.jpg" data-lightbox="roadtrip" data-title="Guards At The Tomb Of The Unknown Soldier Unknown Soldier Military Heroes Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/04/d3/2c/04d32c6ac18d9e8b7225e277b3f80bb2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWWRKPzYL-0zLpHTMKtJQVsJTsau5mf9o4eQ';" alt="Guards At The Tomb Of The Unknown Soldier Unknown Soldier Military Heroes Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Guards At The Tomb Of The Unknown Soldier Unknown Soldier Military Heroes Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/14/fb/f614fbe59497332ce0377c7700505450.jpg" data-lightbox="roadtrip" data-title="A Guard At The Tomb Of The Unknown Soldier Must Take A Special Kind Of Person Question How Many Steps Does The Guard Take Durin Unknown Soldier Soldier Tomb">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/14/fb/f614fbe59497332ce0377c7700505450.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLtGEl_FFhsh1ikh8mKnHEXaokNyVz5c8zQ';" alt="A Guard At The Tomb Of The Unknown Soldier Must Take A Special Kind Of Person Question How Many Steps Does The Guard Take Durin Unknown Soldier Soldier Tomb">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Guard At The Tomb Of The Unknown Soldier Must Take A Special Kind Of Person Question How Many Steps Does The Guard Take Durin Unknown Soldier Soldier Tomb</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/53/3a/a5/533aa552fb3aae845288725e37f89f14.jpg" data-lightbox="roadtrip" data-title="Arlington Cemetery Honor Guard On Duty At The Tomb Of The Unknown Soldier Each Guard Takes 21 Steps During His Honor Guard American Soldiers American Veterans">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/53/3a/a5/533aa552fb3aae845288725e37f89f14.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSodm5FvEeZYbTml2JV9W7serWHREO9GLwcLA';" alt="Arlington Cemetery Honor Guard On Duty At The Tomb Of The Unknown Soldier Each Guard Takes 21 Steps During His Honor Guard American Soldiers American Veterans">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Arlington Cemetery Honor Guard On Duty At The Tomb Of The Unknown Soldier Each Guard Takes 21 Steps During His Honor Guard American Soldiers American Veterans</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b7/1e/37/b71e3710aba0c4e2d882b00080155641.jpg" data-lightbox="roadtrip" data-title="Left To Right Sergeant Benton Thames Sergeant Jeff Binek And Specialist William Johnson Assig Arlington National Cemetery Unknown Soldier National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b7/1e/37/b71e3710aba0c4e2d882b00080155641.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlC1NMQoe4rceAuHceB3N4vyuKOB0gjSS8hw';" alt="Left To Right Sergeant Benton Thames Sergeant Jeff Binek And Specialist William Johnson Assig Arlington National Cemetery Unknown Soldier National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Left To Right Sergeant Benton Thames Sergeant Jeff Binek And Specialist William Johnson Assig Arlington National Cemetery Unknown Soldier National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/ab/23/e2/ab23e281e8313f3661e28af3d42d66a6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlC1NMQoe4rceAuHceB3N4vyuKOB0gjSS8hw';" alt="Left To Right Sergeant Benton Thames Sergeant Jeff Binek And Specialist William Johnson Assig Arlington National Cemetery Unknown Soldier National Cemetery">
+										<div class="card-body">
+						<h3 class="h5"><b>The sentinel marches 21 steps across the black mat past the final resting places of the Unknown Soldiers of World War I World War II Korea and the crypt of the Unknown Soldier of the Vietnam War.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Unknown soldier guard steps</strong>. 
+								
+																	What is the step sequence. 
+																	In fact it is considered an honor to walk the mat during inclement weather. 
+																	Thus the newest Unknown began a two-week journey from a Hawaii laboratory to Arlington in May 1984 with the highest military honors at every step many rendered by Old Guard soldiers. 
+																	And these guys do not mess around. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The sentinel marches 21 steps across the black mat past the final resting places of the Unknown Soldiers of World War I World War II Korea and the crypt of the Unknown Soldier of the Vietnam. 
+																	The Tomb Guard marches 21 steps behind the Tomb turns faces east for 21 seconds turns and faces north for 21 seconds then takes 21 steps down the mat and repeats the process. 
+																	The guard takes 21 steps and then pauses for 21 seconds after his about face to begin his return walk. 
+																	The Tomb Guard marches exactly 21 steps down the black mat behind the Tomb turns faces east for 21 seconds turns and faces north for 21 seconds then takes 21 steps down the mat and repeats the process. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	They must commit 2 years of life to guard the tomb live in a. 
+																	With a crisp turn the sentinel turns 90 degrees not about-face to face east for 21 seconds. 
+																	Soldiers guard the Tomb of Unknown Soldier around the clock during the coronavirus pandemic. 
+																	It consists of the soldiers who guard the Tomb of the Unknown Soldier and its members are also in other specialty honor battalions and platoons. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The number 21 symbolizes the highest military honor that can be bestowed the 21-gun salute. 
+																	How many steps does the guard take during his walk across the Tomb of the Unknown Soldier. 
+																	After serving honorably for a period of nine months and having passed the sequence of tests a tomb guard is permanently awarded the Badge. 
+																	Army -- the Old Guard -- started in 1784. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Infantry Regiment of the US. 
+																	It alludes to the twenty-one gun salute which is the highest honor given any military or foreign dignitary. 
+																	Guards get the Tomb Guard Identification Badge immediately. 
+																	Because of their dedication the weather does not bother them. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	A special Army decoration the Tomb of the Unknown Soldier Guard Identification Badge is authorized for wear after passing a detailed test of 100 questions from a pool of more than 300 a uniform test with two gigs errors or fewer measured to the 164 and a test on the guard-changing sequence. 
+																	A member of the honor guard carries a wreath at the Tomb of the Unknown Soldier on Veterans Day at Arlington National Cemetery in Arlington Virginia US November 11 2018. 
+																	The crowd burst into laughter for an unknown reason as the guard was pacing back and forth in front of the Tomb performing the meticulous routine known as walking the mat Protecting the Tomb is his number one duty but commanding silence out of respect for the honored dead is a close second. 
+																	For a person to apply for guard duty at the tomb he must be between 5 10 and 6 2 tall and his waist size cannot exceed 30. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sentinels take 21 steps down the mat then pause for 21 seconds. 
+																	Soldiers in training may guard the tomb and perform their duties just as a sentinel but only a sentinel may wear the badge. 
+																	The Sentinels at the Tomb of the Unknown Soldier are completely dedicated to their duty of guarding the Tomb. 
+																	Arlington National Cemeterys Tomb of the Unknowns is guarded 24 hours a day seven days a week by the tomb sentinels of the 3rd Infantry Regiment The Old Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	How many steps does the guard take during his walk across the Tomb of the Unknown and why. 
+																	In fact line eight of our Sentinels Creed refers to the discomfort of the elements. 
+																	There is a difference between being a soldier who guards the Tomb of the Unknown Soldier and being a sentinel. 
+																	As part of its service to the country the Old Guard is the Presidents escort and serves as the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The steps the guards perform have specific meaning. 
+																	Everything the guards do is a series of 21 which alludes to the 21-gun salute. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/47/48/ca/4748caf2c849fc646b4d903f81686230.jpg" data-lightbox="roadtrip" data-title="Twenty One Steps Guarding The Tomb Of The Unknown Soldier By Jeff Gottesfeld Illustrated By Matt Tavares Unknown Soldier Tomb Guard Tomb">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/47/48/ca/4748caf2c849fc646b4d903f81686230.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQY9do33FKLw01MO-IDD3_YLsKbvtFxujJTA';" alt="Twenty One Steps Guarding The Tomb Of The Unknown Soldier By Jeff Gottesfeld Illustrated By Matt Tavares Unknown Soldier Tomb Guard Tomb">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Twenty One Steps Guarding The Tomb Of The Unknown Soldier By Jeff Gottesfeld Illustrated By Matt Tavares Unknown Soldier Tomb Guard Tomb</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/62/8c/48628caf4b3b770b6271d9937629b47a.jpg" data-lightbox="roadtrip" data-title="Pin By April Heflen On Nature Pictures Unknown Soldier Honor Guard Arlington National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/62/8c/48628caf4b3b770b6271d9937629b47a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd5wAQRtVCLQWZEtxUM_p0AabAVhOrFw2Kzg';" alt="Pin By April Heflen On Nature Pictures Unknown Soldier Honor Guard Arlington National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By April Heflen On Nature Pictures Unknown Soldier Honor Guard Arlington National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/54/90/01/549001a9bf7a8d9c7ef207b8732caf80.jpg" data-lightbox="roadtrip" data-title="Rain Or Shine Soldiers Keep Watch Over The Tomb Of The Unknown Soldier To Honor The Servic Unknown Soldier Tomb Of Unknown Soldier Arlington National Cemetery">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/54/90/01/549001a9bf7a8d9c7ef207b8732caf80.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgcprsnxOAx44VtK_opvMMjoKDIf4yazuFTQ';" alt="Rain Or Shine Soldiers Keep Watch Over The Tomb Of The Unknown Soldier To Honor The Servic Unknown Soldier Tomb Of Unknown Soldier Arlington National Cemetery">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Rain Or Shine Soldiers Keep Watch Over The Tomb Of The Unknown Soldier To Honor The Servic Unknown Soldier Tomb Of Unknown Soldier Arlington National Cemetery</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7e/ee/6c/7eee6c52ab28cbe31cc1bddfbfd92308.jpg" data-lightbox="roadtrip" data-title="Changing Of The Guard Tomb Of The Unknown Soldier Arlington National Cemetery An Incredible Cer Unknown Soldier Arlington National Cemetery American Heroes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7e/ee/6c/7eee6c52ab28cbe31cc1bddfbfd92308.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrDs6x4FvNHCXW7dmt6cLmBtUOKnrX3MPriA';" alt="Changing Of The Guard Tomb Of The Unknown Soldier Arlington National Cemetery An Incredible Cer Unknown Soldier Arlington National Cemetery American Heroes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Changing Of The Guard Tomb Of The Unknown Soldier Arlington National Cemetery An Incredible Cer Unknown Soldier Arlington National Cemetery American Heroes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1b/a9/af/1ba9af35fdc47b3727d1a5db5d32413c.jpg" data-lightbox="roadtrip" data-title="The Methods And Reasons Behind The Duties Of The Guards At The Tomb Of The Unknown Soldier Fun Facts Facts Love People">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1b/a9/af/1ba9af35fdc47b3727d1a5db5d32413c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEi-cgm8zfn3GBhCzjnd044AuN_RCel-UykQ';" alt="The Methods And Reasons Behind The Duties Of The Guards At The Tomb Of The Unknown Soldier Fun Facts Facts Love People">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Methods And Reasons Behind The Duties Of The Guards At The Tomb Of The Unknown Soldier Fun Facts Facts Love People</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/3b/09/853b09f22fc3267ec9f5c9f00ca48c04.jpg" data-lightbox="roadtrip" data-title="Pin On Washington Dc">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/3b/09/853b09f22fc3267ec9f5c9f00ca48c04.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNCZ4aJfov1kWUgGnckRfNAsV1RT0TNoTgiA';" alt="Pin On Washington Dc">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Washington Dc</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/da/ed/5e/daed5e1cd8fb4a77d2897d4df13b29ff.jpg" data-lightbox="roadtrip" data-title="How Much Do You Know About The Tomb Of The Unknown Soldier And Its Sentinels Unknown Soldier Vietnam War Veterans Vietnam War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/da/ed/5e/daed5e1cd8fb4a77d2897d4df13b29ff.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5hkxwFMoRb9WackDz-Ur5eCnNM8R3WzdRBQ';" alt="How Much Do You Know About The Tomb Of The Unknown Soldier And Its Sentinels Unknown Soldier Vietnam War Veterans Vietnam War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Do You Know About The Tomb Of The Unknown Soldier And Its Sentinels Unknown Soldier Vietnam War Veterans Vietnam War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/22/9f/44/229f44b1c1904e6983e61c0772c93dab.jpg" data-lightbox="roadtrip" data-title="Tomb Of The Unknown Soldier Honor Guard Honor Guard Military Love Unknown Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/22/9f/44/229f44b1c1904e6983e61c0772c93dab.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuCx-h2xjrVj1Y_Uw24E2cvl9URIM5GAV1bg';" alt="Tomb Of The Unknown Soldier Honor Guard Honor Guard Military Love Unknown Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tomb Of The Unknown Soldier Honor Guard Honor Guard Military Love Unknown Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/1c/c6/491cc677a087046f614be7c64ae94787.jpg" data-lightbox="roadtrip" data-title="Pin On Things That Make Me Smile And A Few That Make Me Cry">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/1c/c6/491cc677a087046f614be7c64ae94787.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM5u_xW_Ai0oosWS-DTXScuvrtcUmVfoMlDA';" alt="Pin On Things That Make Me Smile And A Few That Make Me Cry">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Things That Make Me Smile And A Few That Make Me Cry</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/74/39/a2/7439a21d8659657d548a6a42c7f8323c.jpg" data-lightbox="roadtrip" data-title="Sgt Heather Johnson Us Army First Female To Be Selected To Serve As A Sentinel At The Tomb Of The Unknown Soldie Military Women Lynn Johnson Women In History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/74/39/a2/7439a21d8659657d548a6a42c7f8323c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmPYt8l0Dt7M2_Fba_vMYW4siELuPSYSgzcg';" alt="Sgt Heather Johnson Us Army First Female To Be Selected To Serve As A Sentinel At The Tomb Of The Unknown Soldie Military Women Lynn Johnson Women In History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sgt Heather Johnson Us Army First Female To Be Selected To Serve As A Sentinel At The Tomb Of The Unknown Soldie Military Women Lynn Johnson Women In History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e1/17/39/e11739708a39027305c33d27a88d37f8.jpg" data-lightbox="roadtrip" data-title="How Much Do You Know About The Tomb Of The Unknown Soldier And Its Sentinels Unknown Soldier Soldier Tomb">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e1/17/39/e11739708a39027305c33d27a88d37f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzLvYukj5xsfRRftwxpTDam1K9DILn8wyWUQ';" alt="How Much Do You Know About The Tomb Of The Unknown Soldier And Its Sentinels Unknown Soldier Soldier Tomb">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Much Do You Know About The Tomb Of The Unknown Soldier And Its Sentinels Unknown Soldier Soldier Tomb</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/71/59/fd71597337d00121245cee9946478b4d.jpg" data-lightbox="roadtrip" data-title="Who Is Buried In The Tomb Of The Unknown Soldier Unknown Soldier Tomb Of Unknown Soldier Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/71/59/fd71597337d00121245cee9946478b4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR29hLhdetFNH1cn9vq5rKyvPshpiGZ2CA9KA';" alt="Who Is Buried In The Tomb Of The Unknown Soldier Unknown Soldier Tomb Of Unknown Soldier Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Who Is Buried In The Tomb Of The Unknown Soldier Unknown Soldier Tomb Of Unknown Soldier Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/1e/29/131e29cc5b56de5fed72c85cb74ecdc1.jpg" data-lightbox="roadtrip" data-title="Flags In At The Tomb Of The Unknown Soldier Unknown Soldier Military Heroes Soldier">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/1e/29/131e29cc5b56de5fed72c85cb74ecdc1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5L6nfZOS9V8j4cTMO-KLDOVMFyAG6iBlQQ';" alt="Flags In At The Tomb Of The Unknown Soldier Unknown Soldier Military Heroes Soldier">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Flags In At The Tomb Of The Unknown Soldier Unknown Soldier Military Heroes Soldier</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-to-calculate-your-military-retirement-pay.html">How To Calculate Your Military Retirement Pay</a></li>
+													<li class="list-group-item"><a href="/how-to-join-the-national-guard-as-an-officer.html">How To Join The National Guard As An Officer</a></li>
+													<li class="list-group-item"><a href="/how-to-look-up-retired-military-records.html">How To Look Up Retired Military Records</a></li>
+													<li class="list-group-item"><a href="/how-to-stop-soldier-ants.html">How To Stop Soldier Ants</a></li>
+													<li class="list-group-item"><a href="/how-to-workout-for-the-military.html">How To Workout For The Military</a></li>
+													<li class="list-group-item"><a href="/indian-army-kannada-mp3-songs-download.html">Indian Army Kannada Mp3 Songs Download</a></li>
+													<li class="list-group-item"><a href="/indian-army-dj-song-come.html">Indian Army Dj Song Come</a></li>
+													<li class="list-group-item"><a href="/indian-army-jung-ke-maidan-mein-mp3-song.html">Indian Army Jung Ke Maidan Mein Mp3 Song</a></li>
+													<li class="list-group-item"><a href="/in-national-guard-how-long-do-you-get-deployed.html">In National Guard How Long Do You Get Deployed</a></li>
+													<li class="list-group-item"><a href="/indian-army-orange-alert.html">Indian Army Orange Alert</a></li>
+													<li class="list-group-item"><a href="/indian-army-jung-ke-maidan-mein-tu-song.html">Indian Army Jung Ke Maidan Mein Tu Song</a></li>
+													<li class="list-group-item"><a href="/indian-army-all-songs-mp3-download.html">Indian Army All Songs Mp3 Download</a></li>
+													<li class="list-group-item"><a href="/how-to-be-an-army-lieutenant.html">How To Be An Army Lieutenant</a></li>
+													<li class="list-group-item"><a href="/how-to-qualify-to-be-an-army-ranger.html">How To Qualify To Be An Army Ranger</a></li>
+													<li class="list-group-item"><a href="/illinois-national-guard-military-police.html">Illinois National Guard Military Police</a></li>
+													<li class="list-group-item"><a href="/how-to-join-the-florida-national-guard.html">How To Join The Florida National Guard</a></li>
+													<li class="list-group-item"><a href="/incredible-us-air-force-honor-guard-performance.html">Incredible Us Air Force Honor Guard Performance</a></li>
+													<li class="list-group-item"><a href="/how-to-deal-with-soldier-ants.html">How To Deal With Soldier Ants</a></li>
+													<li class="list-group-item"><a href="/how-to-get-bah-national-guard.html">How To Get Bah National Guard</a></li>
+													<li class="list-group-item"><a href="/how-to-join-the-national-guard.html">How To Join The National Guard</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Song Dj Tik Tok - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Song Dj Tik Tok",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/736x/97/ad/b2/97adb29f29a166a14cfe421e8a143916.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+song+dj+tik+tok",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Song Dj Tik Tok</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Log in to follow creators like videos and view comments. Filling Proud Indian Army Dj Remix Song Sumit Goswami Best TikTok Famous Song 2019Filling Proud Indian Army Ringtone Best TikTok Famous Ringtone 201. Listen to music by DJ Kantik on Apple Music. <br>				
+			</p>
+										<a class="badge badge-dark" href="/basic-training-of-army-national-guard.html">basic training of army national guard</a>
+											<a class="badge badge-danger" href="/batang-logam-p-dan-q-dengan-ukuran-panjang-dan-luas-penampang-yang-sama-disambungkan-seperti-gambar.html">batang logam p dan q dengan ukuran panjang dan luas penampang yang sama disambungkan seperti gambar</a>
+											<a class="badge badge-primary" href="/ashe-army-art.html">ashe army art</a>
+											<a class="badge badge-primary" href="/average-military-rank-by-age.html">average military rank by age</a>
+											<a class="badge badge-info" href="/baju-warna-army-cocok-dengan-rok-warna-apa.html">baju warna army cocok dengan rok warna apa</a>
+											<a class="badge badge-dark" href="/british-army-songs-lyrics.html">british army songs lyrics</a>
+											<a class="badge badge-info" href="/benang-rajut-warna-army.html">benang rajut warna army</a>
+											<a class="badge badge-light" href="/baca-no-guard-wife.html">baca no guard wife</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to visit the right blog.  Our website provides you with suggestions for viewing the highest quality video and image content, hunt and locate more enlightening video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of thousands of video collections from several sources, especially Youtube, therefore we recommend this video for you to view.  You can also bring about supporting this site by sharing videos and images that you enjoy on this site on your social media accounts such as Facebook and Instagram or educate your closest friends share your experiences concerning the ease of access to downloads and the information that you get on this site.  This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/7f/9f/40/7f9f40e2b7fcbce0ae05de1e0ff301f9.jpg" data-lightbox="roadtrip" data-title="Feeling Proud Indian Army Feeling Proud Indian Army Song Indian Army Song Feeling Proud Indian Army Youtube Dj Remix Songs Dj Remix Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/7f/9f/40/7f9f40e2b7fcbce0ae05de1e0ff301f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT89SsTwlzJrcDS82Mk4ULFQ_uRKLJXOOsE0g';" alt="Feeling Proud Indian Army Feeling Proud Indian Army Song Indian Army Song Feeling Proud Indian Army Youtube Dj Remix Songs Dj Remix Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Feeling Proud Indian Army Feeling Proud Indian Army Song Indian Army Song Feeling Proud Indian Army Youtube Dj Remix Songs Dj Remix Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f3/de/3c/f3de3c09336fcc8529199ece160bc331.jpg" data-lightbox="roadtrip" data-title="Feeling Proud Indian Army Dj Remix Song Tik Tok Famous Song 2019 Army Sumit Goswami Song 2019 Youtube Dj Remix Songs Songs Dj Remix">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f3/de/3c/f3de3c09336fcc8529199ece160bc331.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRussddvI9Qk7y00sQZZ_mYCXmJXTk01IZYqA';" alt="Feeling Proud Indian Army Dj Remix Song Tik Tok Famous Song 2019 Army Sumit Goswami Song 2019 Youtube Dj Remix Songs Songs Dj Remix">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Feeling Proud Indian Army Dj Remix Song Tik Tok Famous Song 2019 Army Sumit Goswami Song 2019 Youtube Dj Remix Songs Songs Dj Remix</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/4b/39/36/4b39369108279293272edb7199d4782e.jpg" data-lightbox="roadtrip" data-title="Feeling Proud Indian Army Ringtone New Tik Tok Ringtones 2019 Famous Ringtone Youtube Videos Funny Song Hindi Indian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/4b/39/36/4b39369108279293272edb7199d4782e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmL8kRe85HmiFtZTt8bMe_XBVYc3W6jVEVA';" alt="Feeling Proud Indian Army Ringtone New Tik Tok Ringtones 2019 Famous Ringtone Youtube Videos Funny Song Hindi Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Feeling Proud Indian Army Ringtone New Tik Tok Ringtones 2019 Famous Ringtone Youtube Videos Funny Song Hindi Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/52/05/a0/5205a024368d71aedc714ae3bdd90887.jpg" data-lightbox="roadtrip" data-title="Pin By Ayush On Ayush Indian Army Army Dj">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/52/05/a0/5205a024368d71aedc714ae3bdd90887.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3YEQrXySjuMMKFSKhHSgX6XmLHsgUZBLnGg';" alt="Pin By Ayush On Ayush Indian Army Army Dj">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Ayush On Ayush Indian Army Army Dj</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/81/39/5c/81395c9efa082c1cf170d9e77864c578.jpg" data-lightbox="roadtrip" data-title="Filling Proud Indian Army Dj Remix Best Tiktok Famous Remix Song 2019 Youtube Dj Remix Army Indian Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/81/39/5c/81395c9efa082c1cf170d9e77864c578.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1fyVEz1-jQBJ4Zm2w54PKmQXGOvfUIZENpw';" alt="Filling Proud Indian Army Dj Remix Best Tiktok Famous Remix Song 2019 Youtube Dj Remix Army Indian Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Filling Proud Indian Army Dj Remix Best Tiktok Famous Remix Song 2019 Youtube Dj Remix Army Indian Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/48/c4/1e/48c41ed98f0419c25bbad490c66e77fc.jpg" data-lightbox="roadtrip" data-title="Indian Army Ringtone 2019 Tik Tok Famous Ringtone 2019 Youtube Modern Warfare Call Of Duty Warfare">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/48/c4/1e/48c41ed98f0419c25bbad490c66e77fc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU9UJh-TQNJc4bzgLdUNuL2MJhfJ1ktm7zSQ';" alt="Indian Army Ringtone 2019 Tik Tok Famous Ringtone 2019 Youtube Modern Warfare Call Of Duty Warfare">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Ringtone 2019 Tik Tok Famous Ringtone 2019 Youtube Modern Warfare Call Of Duty Warfare</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/f4/45/b4/f445b4228b841459452bcb6d7d77d2d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU9UJh-TQNJc4bzgLdUNuL2MJhfJ1ktm7zSQ';" alt="Indian Army Ringtone 2019 Tik Tok Famous Ringtone 2019 Youtube Modern Warfare Call Of Duty Warfare">
+										<div class="card-body">
+						<h3 class="h5"><b>Help Safety Terms.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army song dj tik tok</strong>. 
+								
+																	TikTok for Good Advertise Developers Transparency. 
+																	TikTok for Good Advertise Developers Transparency. 
+																	Game details TikTok DJs is a fun girl dress up game. 
+																	Funny tik tok videos - funny tik tok videos indian telugu -telugu new whatsapp status songs - telugu song status - telugu song status video - tik tok videos indian telugu - funny tik tok DANCE. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	ToosoonXMizan armydanial20 has created a short video on TikTok with music Haning Lagu Dayak. 
+																	Indian Army most popular videos Indianarmy popular tik tok videos second part video 2httpsyoutube0tQrVx31B4s Indian Army motivation Tik tok video I. 
+																	Download RozDhan App Now - httpsylinkcceR8FCUse My Invite Code To Get Rs50 Instantly - 005GTH- - - - - - - - - - - - - - - - - - -. 
+																	About Newsroom Store Contact Careers ByteDance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find top songs and albums by DJ Kantik including Shenai Kul and more. 
+																	Imagine that you mix a song for your Tik Tok profile and it instantly becomes a hit with million views. 
+																	The Evil Army ist ein beliebtes Lied von DJ Deuch Erstelle deine eigenen TikTok-Videos mit dem Lied The Evil Army und entdecke 1 Videos von neuen und beliebten Erstellern. 
+																	About Newsroom Store Contact Careers ByteDance. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Indian Army Lovers is a popular song by Dj Akhil Kampli Create your own TikTok videos with the Indian Army Lovers song and explore 4 videos made by new and popular creators. 
+																	Next thing you know youve become a DJ invited to the biggest party in town to mix. 
+																	Seven Nation Army is a popular song by DJ Fluke Create your own TikTok videos with the Seven Nation Army song and explore 0 videos made by new and popular creators. 
+																	Marching Army 2 is a popular song by DJ Nils Sifrin Create your own TikTok videos with the Marching Army 2 song and explore 0 videos made by new and popular creators. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Help Safety Terms. 
+																	Log in to follow creators like videos and view comments. 
+																	 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/57/44/1e/57441ee18f44239b9d35543ae3a03b0b.jpg" data-lightbox="roadtrip" data-title="Deshbhaktidj Song Hard Dholki Mix Dj 26 January Whatsapp Status 2019 Song And Dialogues Mix Songs 26 January Whatsapp Status 26th Ja Dj Songs Mixing Dj Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/57/44/1e/57441ee18f44239b9d35543ae3a03b0b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlUcm4WjSsmKGVu9--zFK-ZjsWAgPYBTkOUg';" alt="Deshbhaktidj Song Hard Dholki Mix Dj 26 January Whatsapp Status 2019 Song And Dialogues Mix Songs 26 January Whatsapp Status 26th Ja Dj Songs Mixing Dj Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Deshbhaktidj Song Hard Dholki Mix Dj 26 January Whatsapp Status 2019 Song And Dialogues Mix Songs 26 January Whatsapp Status 26th Ja Dj Songs Mixing Dj Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/7f/85/26/7f85262dfa7036b03b8a06787d2ac946.jpg" data-lightbox="roadtrip" data-title="Pin On Status Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/7f/85/26/7f85262dfa7036b03b8a06787d2ac946.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc55DTLORBOBghx9Ok3lvmryVIQ71dWa4b8g';" alt="Pin On Status Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Status Song</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f4/5c/65/f45c654178e7f31533d26d818c0eba90.jpg" data-lightbox="roadtrip" data-title="Feeling Proud Indian Army Song Whatsapp Status Ringtone Tiktok New Ringtone Youtube Indian Army Army Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f4/5c/65/f45c654178e7f31533d26d818c0eba90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKKaqHl4cgUhls1jhylQe12WhLhQv9FShYSg';" alt="Feeling Proud Indian Army Song Whatsapp Status Ringtone Tiktok New Ringtone Youtube Indian Army Army Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Feeling Proud Indian Army Song Whatsapp Status Ringtone Tiktok New Ringtone Youtube Indian Army Army Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/97/ad/b2/97adb29f29a166a14cfe421e8a143916.jpg" data-lightbox="roadtrip" data-title="Srujana Nak Nak Nakoddu Full Song Dj Song Dj Karthik Fz Rasoolpura Www Newdjsworld In In 2020 Dj Remix Songs Dj Mix Songs Dj Remix">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/97/ad/b2/97adb29f29a166a14cfe421e8a143916.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnj9WrrfVBBfliWOYJscv1SWIYtXjwcHWLvg';" alt="Srujana Nak Nak Nakoddu Full Song Dj Song Dj Karthik Fz Rasoolpura Www Newdjsworld In In 2020 Dj Remix Songs Dj Mix Songs Dj Remix">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Srujana Nak Nak Nakoddu Full Song Dj Song Dj Karthik Fz Rasoolpura Www Newdjsworld In In 2020 Dj Remix Songs Dj Mix Songs Dj Remix</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f4/45/b4/f445b4228b841459452bcb6d7d77d2d1.jpg" data-lightbox="roadtrip" data-title="Indian Army Whatsapp Status Teri Metti Me Mai Mil Java Gul Banke Khil Java Itnisi Hai Dil Ki Aarju Youtube Mom Song Shayari Love Dard Army Day">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f4/45/b4/f445b4228b841459452bcb6d7d77d2d1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR_-lYZDJ-vYRWAUM5f-331Bg2rUBwZML20A';" alt="Indian Army Whatsapp Status Teri Metti Me Mai Mil Java Gul Banke Khil Java Itnisi Hai Dil Ki Aarju Youtube Mom Song Shayari Love Dard Army Day">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Whatsapp Status Teri Metti Me Mai Mil Java Gul Banke Khil Java Itnisi Hai Dil Ki Aarju Youtube Mom Song Shayari Love Dard Army Day</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/3d/7d/a3/3d7da34f11649b6d85e96a56bdfb8d0a.jpg" data-lightbox="roadtrip" data-title="Pin By Arman On My Saves Dj Remix Songs Dj Songs Dj Remix">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/3d/7d/a3/3d7da34f11649b6d85e96a56bdfb8d0a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxpq70Yd3ZYEa71XIyIv0qHmgQY4DzNWULpA';" alt="Pin By Arman On My Saves Dj Remix Songs Dj Songs Dj Remix">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Arman On My Saves Dj Remix Songs Dj Songs Dj Remix</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/73/1d/7f/731d7f176f49a029c1b29e891e8d44f6.jpg" data-lightbox="roadtrip" data-title="Pin On My Love">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/73/1d/7f/731d7f176f49a029c1b29e891e8d44f6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb4M5rggZV-MNqCKp8PANnCGPcLl4j8NiLHw';" alt="Pin On My Love">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Love</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/f2/dc/aef2dc0ae3820253742da2d51aa3789a.jpg" data-lightbox="roadtrip" data-title="Pin By Komal Khatri On Beauty Dj Remix Army Remix">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/f2/dc/aef2dc0ae3820253742da2d51aa3789a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfn_dettZhlhhltJsQ8qAlm1sxx1G_ng8Nvg';" alt="Pin By Komal Khatri On Beauty Dj Remix Army Remix">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Komal Khatri On Beauty Dj Remix Army Remix</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/db/ce/01/dbce011d3d32b3e65fdda7c181d70285.jpg" data-lightbox="roadtrip" data-title="Army Song Army Emotional Video Song Tribute To Indian Army Youtube Emotional Songs Songs Army Video">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/db/ce/01/dbce011d3d32b3e65fdda7c181d70285.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg197_JCAWH3DMchzIgvNexTHTMRPF4suHjw';" alt="Army Song Army Emotional Video Song Tribute To Indian Army Youtube Emotional Songs Songs Army Video">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Song Army Emotional Video Song Tribute To Indian Army Youtube Emotional Songs Songs Army Video</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/ac/ff/ea/acffeaf6cab54aca2bc173471df90413.jpg" data-lightbox="roadtrip" data-title="Yema Pilla Anapudu Ala New Folk Song Mix By Dj Anil Www Newdjsworld In Mixing Dj Dj Folk Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/ac/ff/ea/acffeaf6cab54aca2bc173471df90413.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBL8KRYoeIIO9vy2_QCJDl0ersUDr-IBbyXA';" alt="Yema Pilla Anapudu Ala New Folk Song Mix By Dj Anil Www Newdjsworld In Mixing Dj Dj Folk Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Yema Pilla Anapudu Ala New Folk Song Mix By Dj Anil Www Newdjsworld In Mixing Dj Dj Folk Song</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a2/5e/aa/a25eaa0d094f14aa2fa50727f968f951.jpg" data-lightbox="roadtrip" data-title="Pin By Nitesh Kumar On Indian Armed Forces Indian Army Quotes Army Quotes Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a2/5e/aa/a25eaa0d094f14aa2fa50727f968f951.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEcmXwJ3U1mItmbGxOxC17iHAZZwizFADkSw';" alt="Pin By Nitesh Kumar On Indian Armed Forces Indian Army Quotes Army Quotes Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Nitesh Kumar On Indian Armed Forces Indian Army Quotes Army Quotes Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/99/09/f2/9909f260bca619fe595586412cf24d32.jpg" data-lightbox="roadtrip" data-title="April 2020 Tiktok Dj Dance Hindi Tiktok Song Dj Remix 2020 Tiktok Viral Dj Song 2020 Hindi Youtube Remix Incoming Call Incoming Call Screenshot">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/99/09/f2/9909f260bca619fe595586412cf24d32.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoFNskyNXrTpCz-XVm19me5dwRq_ueTep-pA';" alt="April 2020 Tiktok Dj Dance Hindi Tiktok Song Dj Remix 2020 Tiktok Viral Dj Song 2020 Hindi Youtube Remix Incoming Call Incoming Call Screenshot">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">April 2020 Tiktok Dj Dance Hindi Tiktok Song Dj Remix 2020 Tiktok Viral Dj Song 2020 Hindi Youtube Remix Incoming Call Incoming Call Screenshot</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/bb/0c/39/bb0c392dbfe0301408988056fa04801b.jpg" data-lightbox="roadtrip" data-title="Dj Tik Tok Terbaru 2020 Dj Someone You Loved Remix Terbaru Full Bass 2020 Viral Paling Enak Youtube Dj Remix Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/bb/0c/39/bb0c392dbfe0301408988056fa04801b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvaAdl-D47jw5y9MHItjm5ao1vfK8elMCxDw';" alt="Dj Tik Tok Terbaru 2020 Dj Someone You Loved Remix Terbaru Full Bass 2020 Viral Paling Enak Youtube Dj Remix Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dj Tik Tok Terbaru 2020 Dj Someone You Loved Remix Terbaru Full Bass 2020 Viral Paling Enak Youtube Dj Remix Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/national-guard-usa-wikipedia.html">National Guard Usa Wikipedia</a></li>
+													<li class="list-group-item"><a href="/national-guard-soldiers-dc.html">National Guard Soldiers Dc</a></li>
+													<li class="list-group-item"><a href="/national-guard-warrant-officer-recruiting.html">National Guard Warrant Officer Recruiting</a></li>
+													<li class="list-group-item"><a href="/national-guard-wi-covid-testing.html">National Guard Wi Covid Testing</a></li>
+													<li class="list-group-item"><a href="/national-reserve-military.html">National Reserve Military</a></li>
+													<li class="list-group-item"><a href="/national-guard-yearly-salary.html">National Guard Yearly Salary</a></li>
+													<li class="list-group-item"><a href="/national-guard-special-forces-washington.html">National Guard Special Forces Washington</a></li>
+													<li class="list-group-item"><a href="/national-guard-soldiers-kicked-out.html">National Guard Soldiers Kicked Out</a></li>
+													<li class="list-group-item"><a href="/national-guard-training-yard-fallout-4-power-armor.html">National Guard Training Yard Fallout 4 Power Armor</a></li>
+													<li class="list-group-item"><a href="/national-guard-soldiers-take-the-oath-and-are-deputized-at-us-capitol.html">National Guard Soldiers Take The Oath And Are Deputized At Us Capitol</a></li>
+													<li class="list-group-item"><a href="/national-security-guard-or-black-cats.html">National Security Guard Or Black Cats</a></li>
+													<li class="list-group-item"><a href="/national-guard-webmail.html">National Guard Webmail</a></li>
+													<li class="list-group-item"><a href="/national-guard-weekend-pay.html">National Guard Weekend Pay</a></li>
+													<li class="list-group-item"><a href="/national-guard-slept-at-capitol.html">National Guard Slept At Capitol</a></li>
+													<li class="list-group-item"><a href="/national-guard-veterans-hat.html">National Guard Veterans Hat</a></li>
+													<li class="list-group-item"><a href="/national-guard-troops-to-teachers.html">National Guard Troops To Teachers</a></li>
+													<li class="list-group-item"><a href="/national-guard-vs-active-duty-benefits.html">National Guard Vs Active Duty Benefits</a></li>
+													<li class="list-group-item"><a href="/national-guard-us-election-2020.html">National Guard Us Election 2020</a></li>
+													<li class="list-group-item"><a href="/national-guard-web-portal.html">National Guard Web Portal</a></li>
+													<li class="list-group-item"><a href="/national-guard-tulare-ca.html">National Guard Tulare Ca</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

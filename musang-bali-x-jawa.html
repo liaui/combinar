@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Musang Bali X Jawa - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Musang Bali X Jawa",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/564x/60/ff/4c/60ff4cc70eeb9ae8e3d1278bb2e96ad0.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=musang+bali+x+jawa",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Musang Bali X Jawa</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Sports music news and podcasts. This video is unavailable. Musang ini selain bisa jinak banget muka nya itu lucu banget gan seperti campuran antara lemur dan musang. <br>				
+			</p>
+										<a class="badge badge-info" href="/ncbi-carpal-tunnel-syndrome.html">ncbi carpal tunnel syndrome</a>
+											<a class="badge badge-success" href="/netguard-local-vpn.html">netguard local vpn</a>
+											<a class="badge badge-success" href="/netguard-gmail.html">netguard gmail</a>
+											<a class="badge badge-dark" href="/ncbi-radiology.html">ncbi radiology</a>
+											<a class="badge badge-info" href="/netguard-cctv-app-for-android.html">netguard cctv app for android</a>
+											<a class="badge badge-secondary" href="/netguard-hosts-file.html">netguard hosts file</a>
+											<a class="badge badge-light" href="/netguard-linux.html">netguard linux</a>
+											<a class="badge badge-dark" href="/nb-mt590-v4.html">nb mt590 v4</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information linked to the key word you have come to pay a visit to the right blog.  Our website provides you with hints for seeing the highest quality video and image content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of video collections from various sources, especially Youtube, so we recommend this movie that you see.  You can also bring about supporting this site by sharing videos and graphics that you like on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences about the simplicity of access to downloads and the information that you get on this site.  This site is for them to stop by this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ik.imagekit.io/carro/jualo/original/16807407/musang-bali-x-musang-hewan-lainnya-16807407.jpg?v=1534258320" data-lightbox="roadtrip" data-title="Musang Bali X Musang Pandan Kab Sukoharjo Jualo">
+											<img class="card-img v-image ads-img " src="https://ik.imagekit.io/carro/jualo/original/16807407/musang-bali-x-musang-hewan-lainnya-16807407.jpg?v=1534258320" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS9sPlL4roDd-iFGy4cCkglEJYe621SWkg3g';" alt="Musang Bali X Musang Pandan Kab Sukoharjo Jualo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Musang Bali X Musang Pandan Kab Sukoharjo Jualo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/jQp4UBQ6duo/hqdefault.jpg" data-lightbox="roadtrip" data-title="Perkawinan Musang Bali X Musang Jawa Bagian 2 Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/jQp4UBQ6duo/hqdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_DTeJTgDuW-pOxASgnsWyU86AHREn0zq07w';" alt="Perkawinan Musang Bali X Musang Jawa Bagian 2 Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Perkawinan Musang Bali X Musang Jawa Bagian 2 Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://cf.shopee.co.id/file/df18eed1def81b1dd4db3339a6e4aae6" data-lightbox="roadtrip" data-title="Jual Musang Bali X Musang Pandan Shopee Indonesia">
+											<img class="card-img v-image ads-img " src="https://cf.shopee.co.id/file/df18eed1def81b1dd4db3339a6e4aae6" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzSEkgK7JJX0dYeLZYzasumYhBhMZYe_E_2A';" alt="Jual Musang Bali X Musang Pandan Shopee Indonesia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Jual Musang Bali X Musang Pandan Shopee Indonesia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/qL7CvV08n3w/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Perkawinan Yg Ke 5 Betina Welas Musang Pandan Bali X Jantan Predator Musang Pandan Jawa Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/qL7CvV08n3w/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcbUnuglv6pY8lJYl0dH9nmbwG8RA0XEIznQ';" alt="Perkawinan Yg Ke 5 Betina Welas Musang Pandan Bali X Jantan Predator Musang Pandan Jawa Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Perkawinan Yg Ke 5 Betina Welas Musang Pandan Bali X Jantan Predator Musang Pandan Jawa Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/74/4d/86/744d86a8abd51a996113dfba3eac54f3.jpg" data-lightbox="roadtrip" data-title="Pin On Resort Design">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/74/4d/86/744d86a8abd51a996113dfba3eac54f3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt2ZPLYDaQnVHNbD-wXEPKgbRtQPX2OvY6Vg';" alt="Pin On Resort Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Resort Design</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/76/94/70/769470b4cdd37ffe24031df93e9ec077.jpg" data-lightbox="roadtrip" data-title="Hawaii Luau Company Hawaii S Premiere Corporate Event Luau Wedding And Entertainment Company Www Great View Paradise Travel Outdoor Restaurant Patio">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/76/94/70/769470b4cdd37ffe24031df93e9ec077.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbIviTFHGDZGgrxV5k27e_gZn-pnGS4FqBqA';" alt="Hawaii Luau Company Hawaii S Premiere Corporate Event Luau Wedding And Entertainment Company Www Great View Paradise Travel Outdoor Restaurant Patio">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hawaii Luau Company Hawaii S Premiere Corporate Event Luau Wedding And Entertainment Company Www Great View Paradise Travel Outdoor Restaurant Patio</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/f2/e0/6d/f2e06d4ba91d25b8fa0bb55f9c3e4026.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbIviTFHGDZGgrxV5k27e_gZn-pnGS4FqBqA';" alt="Hawaii Luau Company Hawaii S Premiere Corporate Event Luau Wedding And Entertainment Company Www Great View Paradise Travel Outdoor Restaurant Patio">
+										<div class="card-body">
+						<h3 class="h5"><b>Kemampuan memanjat nya juga bisa dibilang diatas musang-musang lainya bener2 kaya monyet yang bisa seimbang.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Musang bali x jawa</strong>. 
+								
+																	Stream Radio from Stream Indonesia free online. 
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+																	Musang spesial ini bisa ditemuin di beberapa tempat di indonesia gan yaitu Sumatera Kalimantan Bangka Jawa dan beberapa pulau kecil di Indonesia kenapa ane bilang spesial. 
+																	In Indonesia it is threatened by poaching and illegal wildlife trade. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Buyers use it for the. 
+																	Nama ilmiahnya adalah Paradoxurus hermaphroditus dan di Malaysia dikenal sebagai musang pulut. 
+																	Hewan ini kebanyakan merupakan hewan malam dan pemanjat yang baik. 
+																	I am torn between spending all of the trip on Java or going to Bali. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Dijual Ford Mustang 23 Ecoboost 2016 Service Record Harga Nego Ford Mustang 23 EcoboostWhite on BlackKM 10rb on goingNIK 2016Pemakaian 2017Pajak. 
+																	Update kondisi si rijal usia 3 bulananMusang pandanMusangloversMusangloversIndonesia. 
+																	I will be flying into Jakarta. 
+																	Musang luak adalah hewan menyusu yang termasuk suku musang dan garangan Viverridae. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	KEMBALI Keluarga Musang Bali has 2063 members. 
+																	Musang ini diberikan nama sesuai dengan tempat ditemukannya. 
+																	Untuk harganya rata-rata dijual dengan harga 500 ribu hingga 15 juta rupiah. 
+																	Yang paling dikenal dari berbagai jenisnya adalah musang luwak Paradoxurus hermaphroditusMusang ini biasa hidup di dekat pemukiman termasuk perkotaan dan sering pula didapati memangsa ayam peliharaan di malam hari. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Kawan Musang Surabaya - KAMUS. 
+																	Setelah dikawinkan dengan si Bule beberapa bulan lalu ternyata Siti belum hamil gaes oleh karena itu sekarang PAK PET mau jodohin siti dengan Ricky si musan. 
+																	Hewan ini juga dipanggil dengan berbagai sebutan lain seperti musang nama umum Betawi careuh bulan Sunda luak atau luwak Jawa serta common palm civet common musang house musang atau toddy cat. 
+																	Enjoy the videos and music you love upload original content and share it all with friends family and the world on YouTube. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Musang biul atau sering disebut oleh orang barat sebagai javan ferret badger adalah jenis keluarga musang. 
+																	Musang adalah nama umum bagi sekelompok mamalia pemangsa bangsa karnivora dari suku Viverridae. 
+																	Sat 09 Jul 2011 172635 0000. 
+																	The Asian palm civet Paradoxurus hermaphroditus is a viverrid native to South and Southeast AsiaSince 2008 it is IUCN Red Listed as Least Concern as it accommodates to a broad range of habitatsIt is widely distributed with large populations that in 2008 were thought unlikely to be declining. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	What in your opinion would be the best option for a first time visitor. 
+																	Jenis musang paling mahal selanjutnya adalah Musang Bali. 
+																	Mf melencengmhon info bus malam jawa bali yg bisa dititipin barang ntar malam lewat jalan pantura tujuan denpasar. 
+																	Enjoy the videos and music you love upload original content and share it all with friends family and the world on YouTube. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	It is a shortish trip of only 10 days. 
+																	Safari Live Face Book Live. 
+																	Tidak seperti musang pandan yang bersifat arboreal. 
+																	A new born Elephant tries to stand for the first time Oct 17 2017 - Duration. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Karena memang musang jenis satu ini banyak ditemukan di area bali dengan tubuh hampir semuanya berwarna putih agak kusam. 
+																	Hear the audio that matters most to you. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0f/ae/37/0fae37a690c3a43f308ba4f58c71bedc.jpg" data-lightbox="roadtrip" data-title="Karimun Jawa Island Central Java Indonesia Pantai Fotografi Pantai Bali">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0f/ae/37/0fae37a690c3a43f308ba4f58c71bedc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9zbFLB2FGZuxIT5wbJsRo25pabxrUaGRfVw';" alt="Karimun Jawa Island Central Java Indonesia Pantai Fotografi Pantai Bali">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Karimun Jawa Island Central Java Indonesia Pantai Fotografi Pantai Bali</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/23/eb/b8/23ebb8711d9f375ce626f6bfea8d26ce.jpg" data-lightbox="roadtrip" data-title="Pin On Finished Adult Coloring Pages">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/23/eb/b8/23ebb8711d9f375ce626f6bfea8d26ce.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVhP2l1q8QNnjkigsz87Kxz81HbkO-HBYPeg';" alt="Pin On Finished Adult Coloring Pages">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Finished Adult Coloring Pages</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/92/91/ad9291384bda8c7ba6f192e239823ddc.jpg" data-lightbox="roadtrip" data-title="Pin On Sculpture">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/92/91/ad9291384bda8c7ba6f192e239823ddc.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZ203dJyBBM5I22wj7iYXfXmzdwptTdpqPw';" alt="Pin On Sculpture">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sculpture</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/60/ff/4c/60ff4cc70eeb9ae8e3d1278bb2e96ad0.jpg" data-lightbox="roadtrip" data-title="Barong Mask King Of The Spirits Bali Mythology Barong Is A Lion Like Creature And Character In The Mythology Of Bali I Barong Tribal Art Designs Barong Bali">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/60/ff/4c/60ff4cc70eeb9ae8e3d1278bb2e96ad0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuvplUH-4WMLzcheoPXjqutOhQgGOs-hj4WQ';" alt="Barong Mask King Of The Spirits Bali Mythology Barong Is A Lion Like Creature And Character In The Mythology Of Bali I Barong Tribal Art Designs Barong Bali">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Barong Mask King Of The Spirits Bali Mythology Barong Is A Lion Like Creature And Character In The Mythology Of Bali I Barong Tribal Art Designs Barong Bali</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/48/4c/84/484c84627b9df60c30572173991dabe2.jpg" data-lightbox="roadtrip" data-title="Gambar Harimau Foto Harimau Ciri Ciri Harimau Harimau Jawa Harimau Sumatera Harimau Bali Harimau Sumatra Aneka Kucing Besar Binatang Harimau Putih">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/48/4c/84/484c84627b9df60c30572173991dabe2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNmf0_VzmiJ8PcW-516IcE92qa_xOgG8InkQ';" alt="Gambar Harimau Foto Harimau Ciri Ciri Harimau Harimau Jawa Harimau Sumatera Harimau Bali Harimau Sumatra Aneka Kucing Besar Binatang Harimau Putih">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gambar Harimau Foto Harimau Ciri Ciri Harimau Harimau Jawa Harimau Sumatera Harimau Bali Harimau Sumatra Aneka Kucing Besar Binatang Harimau Putih</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/64/77/82/6477821b33ffa0ce3550864f6a17a75f.jpg" data-lightbox="roadtrip" data-title="Patung Pangeran Diponegoro Magelang Kota Photo">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/64/77/82/6477821b33ffa0ce3550864f6a17a75f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwM_c1PL80qV4dAfoGlQw4RRdPfchQ4yVXdg';" alt="Patung Pangeran Diponegoro Magelang Kota Photo">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Patung Pangeran Diponegoro Magelang Kota Photo</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/dc/23/aa/dc23aa1248ee0f1a0872451553684615.jpg" data-lightbox="roadtrip" data-title="Indonesian Map Vector Illustrationmap Indonesian Illustration Vector Map Vector Map Illustrated Map">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/dc/23/aa/dc23aa1248ee0f1a0872451553684615.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9kMnzAa35s51PFewHO41SKya4ItWX0IisTw';" alt="Indonesian Map Vector Illustrationmap Indonesian Illustration Vector Map Vector Map Illustrated Map">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indonesian Map Vector Illustrationmap Indonesian Illustration Vector Map Vector Map Illustrated Map</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f2/e0/6d/f2e06d4ba91d25b8fa0bb55f9c3e4026.jpg" data-lightbox="roadtrip" data-title="Asal Mula Kopi Luwak Terkait Erat Dengan Sejarah Pembudidayaan Tanaman Kopi Di Indonesia Pada Awal Abad Ke 18 Belanda Membuka Perkebunan Tanaman Kome Fotografii">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f2/e0/6d/f2e06d4ba91d25b8fa0bb55f9c3e4026.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzvjKTuJHc2ztEJLG9ITLij5hpqy4bPvCPLw';" alt="Asal Mula Kopi Luwak Terkait Erat Dengan Sejarah Pembudidayaan Tanaman Kopi Di Indonesia Pada Awal Abad Ke 18 Belanda Membuka Perkebunan Tanaman Kome Fotografii">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Asal Mula Kopi Luwak Terkait Erat Dengan Sejarah Pembudidayaan Tanaman Kopi Di Indonesia Pada Awal Abad Ke 18 Belanda Membuka Perkebunan Tanaman Kome Fotografii</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fd/37/57/fd37576dc15674269197d915086de9a5.jpg" data-lightbox="roadtrip" data-title="Love Bali Sign Tegalalang Rice Terraces Ubud Bali Best Rice Fields Bali Charlie Lauren Uk Travel Bali Travel Photography Bali Travel Bali Travel Guide">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fd/37/57/fd37576dc15674269197d915086de9a5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmh6ls8S2QQOLmr_qmUoaN6qSuBaU8OZiwkw';" alt="Love Bali Sign Tegalalang Rice Terraces Ubud Bali Best Rice Fields Bali Charlie Lauren Uk Travel Bali Travel Photography Bali Travel Bali Travel Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Love Bali Sign Tegalalang Rice Terraces Ubud Bali Best Rice Fields Bali Charlie Lauren Uk Travel Bali Travel Photography Bali Travel Bali Travel Guide</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/29/fe/3f/29fe3fe383b3721c6996b78f0608fc5e.png" data-lightbox="roadtrip" data-title="Tigers Tiger Species Bengal Cat Facts Tiger Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/29/fe/3f/29fe3fe383b3721c6996b78f0608fc5e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ezS6zzrYrDJlEAJFDsDqyu3jEa17fplJDw';" alt="Tigers Tiger Species Bengal Cat Facts Tiger Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tigers Tiger Species Bengal Cat Facts Tiger Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/32/df/46/32df46b7b80e80822ba59b65d623fdfe.jpg" data-lightbox="roadtrip" data-title="We Made A Javanese Traditional Wooden House Using Primitive Panels As The Front Wooden Walls Size 5 5m X 7 Meters All Teak This Is Called Bali Villa Rumah">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/32/df/46/32df46b7b80e80822ba59b65d623fdfe.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSG01Yrxe1BGjWjUgy2Ru2Vg6922SU3BJmBw';" alt="We Made A Javanese Traditional Wooden House Using Primitive Panels As The Front Wooden Walls Size 5 5m X 7 Meters All Teak This Is Called Bali Villa Rumah">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">We Made A Javanese Traditional Wooden House Using Primitive Panels As The Front Wooden Walls Size 5 5m X 7 Meters All Teak This Is Called Bali Villa Rumah</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/95/9a/d1959a66a45b82fb551b8482138765f5.gif" data-lightbox="roadtrip" data-title="Indonesia Large Color Map Bali Map Bali Indonesia Indonesia">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/95/9a/d1959a66a45b82fb551b8482138765f5.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1wHSJRyN87obv60uCOvW4QtJAxuw9M0Gcgw';" alt="Indonesia Large Color Map Bali Map Bali Indonesia Indonesia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indonesia Large Color Map Bali Map Bali Indonesia Indonesia</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/ac/6c/83ac6c9b3197ae8441d2fa6b18018408.jpg" data-lightbox="roadtrip" data-title="Top 5 Resorts In Bali That Offer Mouthwatering Floating Breakfast Bali Travel Photography Beautiful Places To Travel Scenic Roads">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/ac/6c/83ac6c9b3197ae8441d2fa6b18018408.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbiWHTTqYNZlBLepB9A5iPg0w1bmFIxjnmtg';" alt="Top 5 Resorts In Bali That Offer Mouthwatering Floating Breakfast Bali Travel Photography Beautiful Places To Travel Scenic Roads">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 5 Resorts In Bali That Offer Mouthwatering Floating Breakfast Bali Travel Photography Beautiful Places To Travel Scenic Roads</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-army-rank-and-mos.html">Us Army Rank And Mos</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-pictures.html">Us Army Rank Pictures</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-table.html">Us Army Rank Table</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-insignia-enlisted.html">Us Army Rank Insignia Enlisted</a></li>
+													<li class="list-group-item"><a href="/us-army-senior-nco-academy.html">Us Army Senior Nco Academy</a></li>
+													<li class="list-group-item"><a href="/us-army-submachine-guns.html">Us Army Submachine Guns</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-responsibilities.html">Us Army Rank Responsibilities</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-and-their-salary.html">Us Army Rank And Their Salary</a></li>
+													<li class="list-group-item"><a href="/us-army-rangers-cod.html">Us Army Rangers Cod</a></li>
+													<li class="list-group-item"><a href="/us-army-super-gun.html">Us Army Super Gun</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-crossword-clue.html">Us Army Rank Crossword Clue</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-cw3.html">Us Army Rank Cw3</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-quiz.html">Us Army Rank Quiz</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-numbers.html">Us Army Rank Numbers</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-structure.html">Us Army Rank Structure</a></li>
+													<li class="list-group-item"><a href="/us-army-reserve-center-orangeburg-sc.html">Us Army Reserve Center Orangeburg Sc</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-breakdown.html">Us Army Rank Breakdown</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-age.html">Us Army Rank Age</a></li>
+													<li class="list-group-item"><a href="/us-army-specialist-rank-patch.html">Us Army Specialist Rank Patch</a></li>
+													<li class="list-group-item"><a href="/us-army-rank-regulation.html">Us Army Rank Regulation</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

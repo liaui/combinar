@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>How Often Do National Guard Infantry Get Deployed - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "How Often Do National Guard Infantry Get Deployed",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/736x/37/71/90/377190bec8cfa8d0087ea57dfd91fd90.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+often+do+national+guard+infantry+get+deployed",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>How Often Do National Guard Infantry Get Deployed</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">In theory a unit is up for deployment rotation every 4 years. Answered October 4 2018 - First Sergeant Former Employee - Austin TX. Soldiers are eligible for two weeks leave after a six month period within a 12 month deployment. <br>				
+			</p>
+										<a class="badge badge-danger" href="/stang-vespa.html">stang vespa</a>
+											<a class="badge badge-danger" href="/tacp-reserve-unit.html">tacp reserve unit</a>
+											<a class="badge badge-primary" href="/strong-woman-artinya.html">strong woman artinya</a>
+											<a class="badge badge-dark" href="/strong-woman-do-bong-soon-cast.html">strong woman do bong soon cast</a>
+											<a class="badge badge-light" href="/stang-yang-cocok-untuk-cb150r.html">stang yang cocok untuk cb150r</a>
+											<a class="badge badge-warning" href="/stang-trail-tinggi.html">stang trail tinggi</a>
+											<a class="badge badge-warning" href="/stang-yz.html">stang yz</a>
+											<a class="badge badge-light" href="/sudan-army-rank-in-the-world.html">sudan army rank in the world</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for picture and video information related to the keyword you've come to pay a visit to the ideal blog.  Our website gives you hints for viewing the maximum quality video and picture content, search and locate more enlightening video content and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, therefore we recommend this video that you view.   This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://qph.fs.quoracdn.net/main-qimg-f8f871c70e3d9fef49d64c294b5393f0" data-lightbox="roadtrip" data-title="How Often Do National Guard Units Deploy To Fight Overseas Quora">
+											<img class="card-img v-image ads-img " src="https://qph.fs.quoracdn.net/main-qimg-f8f871c70e3d9fef49d64c294b5393f0" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaAAyydrQSBWnenfYfSuX-rljXiZ06_PlzDw';" alt="How Often Do National Guard Units Deploy To Fight Overseas Quora">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Often Do National Guard Units Deploy To Fight Overseas Quora</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.658166.1610397756!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" data-lightbox="roadtrip" data-title="Up To 15 000 National Guard Troops Could Activate To Help Law Enforcement During Biden Inauguration U S Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.658166.1610397756!/image/image.jpg_gen/derivatives/landscape_900/image.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaWFu_FNvGKPgBbdauouWzTAYIRgGebxo3uw';" alt="Up To 15 000 National Guard Troops Could Activate To Help Law Enforcement During Biden Inauguration U S Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Up To 15 000 National Guard Troops Could Activate To Help Law Enforcement During Biden Inauguration U S Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d26horl2n8pviu.cloudfront.net/pictures/images/000/046/182/large_v2/header.png?1433874499" data-lightbox="roadtrip" data-title="What S It Like Being A 11b In The Army National Guard Rallypoint">
+											<img class="card-img v-image ads-img " src="https://d26horl2n8pviu.cloudfront.net/pictures/images/000/046/182/large_v2/header.png?1433874499" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxoKSVd3Pneqy6Pcemuhahl67CSqzL6d42tw';" alt="What S It Like Being A 11b In The Army National Guard Rallypoint">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What S It Like Being A 11b In The Army National Guard Rallypoint</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images04.military.com/sites/default/files/styles/full/public/2018-05/army-guard-irwin-train-1800.jpg?itok=h_j_w5Ft" data-lightbox="roadtrip" data-title="Army Guard Plans For Short Notice Deployments More Training Days Military Com">
+											<img class="card-img v-image ads-img " src="https://images04.military.com/sites/default/files/styles/full/public/2018-05/army-guard-irwin-train-1800.jpg?itok=h_j_w5Ft" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0jV14OOtsYq8L_WjRzZzBu96m3ragukaKtg';" alt="Army Guard Plans For Short Notice Deployments More Training Days Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Army Guard Plans For Short Notice Deployments More Training Days Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/mG4RTEyosIo/maxresdefault.jpg" data-lightbox="roadtrip" data-title="This Is Infantry In The National Guard Youtube">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/mG4RTEyosIo/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROylmcQA5-VjcuvU2_1hYTRKKN5wr6R4b6vQ';" alt="This Is Infantry In The National Guard Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Is Infantry In The National Guard Youtube</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Apr/01/2002273521/-1/-1/0/200331-Z-OC517-1005.JPG" data-lightbox="roadtrip" data-title="Connecticut Guardsmen Go On State Active Duty Respond To Covid 19 103rd Airlift Wing Article Display">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Apr/01/2002273521/-1/-1/0/200331-Z-OC517-1005.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Yr94suSWasu5TGkNRB7H31ii89ynvTwX_w';" alt="Connecticut Guardsmen Go On State Active Duty Respond To Covid 19 103rd Airlift Wing Article Display">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Connecticut Guardsmen Go On State Active Duty Respond To Covid 19 103rd Airlift Wing Article Display</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://qph.fs.quoracdn.net/main-qimg-544e2a36ac3d7a1719e5f35aebbafdc3.webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Yr94suSWasu5TGkNRB7H31ii89ynvTwX_w';" alt="Connecticut Guardsmen Go On State Active Duty Respond To Covid 19 103rd Airlift Wing Article Display">
+										<div class="card-body">
+						<h3 class="h5"><b>For the past ten years dealing with the high operational tempo OPTEMPO the Army has gone from 18 month deployments to 15 month deployments to 12 month deployments to 9 month deployments to six month deployment cycles.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How often do national guard infantry get deployed</strong>. 
+								
+																	But if your type of unit is needed on their rotation year then the probability of a deployment is high. 
+																	But GEN Grass the National Guard Bureau chief to the Army and Air Force chiefs of staff did just come out with a statement that said the Guard was ready to go when and if needed. 
+																	1 point 1 year ago. 
+																	They are no longer than 12 months but have a long train up and redeployment. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This means that reserve component units are trained and ready to deploy for 12 months every 5 years. 
+																	Like once every 5 years and its a 12 month deployment. 
+																	Like the odds of seeing combat theres no set rule for the length of deployment. 
+																	So it really depends on the unit company and need of the military to put together a compelete unit to send over. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The 4th Infantry Divisions Combat Aviation Brigade stationed at Fort Carson will also deploy to Afghanistan to. 
+																	He said that a unit could do one deployment 9-12 months long within a 3-year cycle if it was an unplanned contingency or one deployment 9-12 months within a 5-year period for state operations. 
+																	Depends on MOS and position. 
+																	That doesnt necessarily dictate when youll be needed though. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Army National Guard and Army Reserve units are on 5 year deployment cycle while Regular Army units are on 3 year deployment cycle. 
+																	Can volunteer but expect a deployment at least every fifth year. 
+																	The Army deployed the 1st SFAB for the first time in 2018 to Afghanistan. 
+																	Active component units are trained and ready to deploy for 12 months once every 3 years. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For instance the NG unit that just deployed has never been deployed before since this war started but 2 of the companies in the unit have each deployed once before. 
+																	The demand is obviously based on politics. 
+																	If youre called up by your state government active duty missions usually run from 15-to-60 days. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2019/12/18/573665/original.jpg" data-lightbox="roadtrip" data-title="National Guard Seeking More Rangers Looks To Fort Benning Training Units For Prospects Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2019/12/18/573665/original.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkIAppC9OV3HE-pDaomvaYOh8hZEnFJZk5Xg';" alt="National Guard Seeking More Rangers Looks To Fort Benning Training Units For Prospects Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Seeking More Rangers Looks To Fort Benning Training Units For Prospects Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://qph.fs.quoracdn.net/main-qimg-544e2a36ac3d7a1719e5f35aebbafdc3.webp" data-lightbox="roadtrip" data-title="What Is It Like To Be An Infantry Officer In The Florida National Guard Quora">
+											<img class="card-img v-image ads-img " src="https://qph.fs.quoracdn.net/main-qimg-544e2a36ac3d7a1719e5f35aebbafdc3.webp" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0RiyUiF4vf5Mp0Il8ym0BMkx8gTiR2J7bhw';" alt="What Is It Like To Be An Infantry Officer In The Florida National Guard Quora">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">What Is It Like To Be An Infantry Officer In The Florida National Guard Quora</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://images05.military.com/sites/default/files/styles/full/public/2021-01/mil-virginia-national-guard-inauguration-1800.jpg?itok=i8cz7uk-" data-lightbox="roadtrip" data-title="National Guard Plans To Ask Thousands Of Troops To Remain In Dc Until Mid March Military Com">
+											<img class="card-img v-image ads-img " src="https://images05.military.com/sites/default/files/styles/full/public/2021-01/mil-virginia-national-guard-inauguration-1800.jpg?itok=i8cz7uk-" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxSzysnbmbVXSTuNegBPPh97bqUNG2cUvEzA';" alt="National Guard Plans To Ask Thousands Of Troops To Remain In Dc Until Mid March Military Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Plans To Ask Thousands Of Troops To Remain In Dc Until Mid March Military Com</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/37/71/90/377190bec8cfa8d0087ea57dfd91fd90.jpg" data-lightbox="roadtrip" data-title="Pin On Inspiration">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/37/71/90/377190bec8cfa8d0087ea57dfd91fd90.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp6BmvIOuAGH5m8bm4T1u9IsC7fNs1v76NWw';" alt="Pin On Inspiration">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Inspiration</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/94/1e/58/941e581007d789898f573b5293217399.jpg" data-lightbox="roadtrip" data-title="Pin On Guard Is Family">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/94/1e/58/941e581007d789898f573b5293217399.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvoVxTmzRNj8NGG2Fp0sOBx78RmMAyHBQRWw';" alt="Pin On Guard Is Family">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Guard Is Family</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2020/12/02/e1b54bef/size0-full.jpg" data-lightbox="roadtrip" data-title="National Guard Leader Highlights Missions During Unprecedented Year Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2020/12/02/e1b54bef/size0-full.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhTW-dVb7qxTN7yAiCQFFoQp1fQI0l5JDcg';" alt="National Guard Leader Highlights Missions During Unprecedented Year Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">National Guard Leader Highlights Missions During Unprecedented Year Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://reservenationalguard.com/wp-content/uploads/2019/09/IMG-2654-750x375.jpeg" data-lightbox="roadtrip" data-title="An Unspoken Truth In The Army National Guard Special Forces Reserve National Guard">
+											<img class="card-img v-image ads-img " src="https://reservenationalguard.com/wp-content/uploads/2019/09/IMG-2654-750x375.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiiE9D0_bPgULhY-hCN7AcuelaQ4wOirDaTg';" alt="An Unspoken Truth In The Army National Guard Special Forces Reserve National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">An Unspoken Truth In The Army National Guard Special Forces Reserve National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.stripes.com/polopoly_fs/1.658752.1610814958!/image/image.JPG_gen/derivatives/landscape_900/image.JPG" data-lightbox="roadtrip" data-title="Overnight Deployment How Maryland Guard Troops Readied To Protect Us Capitol U S Stripes">
+											<img class="card-img v-image ads-img " src="https://www.stripes.com/polopoly_fs/1.658752.1610814958!/image/image.JPG_gen/derivatives/landscape_900/image.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiNUXoo_HYEfgxPXxvbTcouIF6o-8LDkmwLA';" alt="Overnight Deployment How Maryland Guard Troops Readied To Protect Us Capitol U S Stripes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Overnight Deployment How Maryland Guard Troops Readied To Protect Us Capitol U S Stripes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://api.army.mil/e2/c/images/2020/02/12/576780/size0-full.jpg" data-lightbox="roadtrip" data-title="Oregon National Guard Prepares For Peacekeeping In Kosovo Article The United States Army">
+											<img class="card-img v-image ads-img " src="https://api.army.mil/e2/c/images/2020/02/12/576780/size0-full.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg41ZmIAuIgA-OZ6Yk15f0H9cyHQ8uO8CaPQ';" alt="Oregon National Guard Prepares For Peacekeeping In Kosovo Article The United States Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Oregon National Guard Prepares For Peacekeeping In Kosovo Article The United States Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Apr/03/2002274270/600/400/0/200331-A-AQ105-423.JPG" data-lightbox="roadtrip" data-title="Georgia Guard Disinfecting Nursing Homes Across The State National Guard Guard News The National Guard">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Apr/03/2002274270/600/400/0/200331-A-AQ105-423.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDfMCF50Bit8Y9OvbuBuG28sodKl8mARQtzg';" alt="Georgia Guard Disinfecting Nursing Homes Across The State National Guard Guard News The National Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Georgia Guard Disinfecting Nursing Homes Across The State National Guard Guard News The National Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.defense.gov/2020/Jun/02/2002309571/-1/-1/0/200530-O-ZZ999-001H.JPG" data-lightbox="roadtrip" data-title="Dod Official National Guard Is First Choice In Response To Civil Unrest U S Department Of Defense Defense Department News">
+											<img class="card-img v-image ads-img " src="https://media.defense.gov/2020/Jun/02/2002309571/-1/-1/0/200530-O-ZZ999-001H.JPG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-DybbyZCa_j_wryMnEPyoopW9haXUjwIpLw';" alt="Dod Official National Guard Is First Choice In Response To Civil Unrest U S Department Of Defense Defense Department News">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Dod Official National Guard Is First Choice In Response To Civil Unrest U S Department Of Defense Defense Department News</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://resize.hswstatic.com/w_796/gif/national-guard.jpg" data-lightbox="roadtrip" data-title="How Is The National Guard Different From The Regular Army Howstuffworks">
+											<img class="card-img v-image ads-img " src="https://resize.hswstatic.com/w_796/gif/national-guard.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9onbVor3GGE1Hojnho_VVy1e07-8YXVbfqQ';" alt="How Is The National Guard Different From The Regular Army Howstuffworks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">How Is The National Guard Different From The Regular Army Howstuffworks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://dma.wi.gov/DMA/images/NEWS/2019NEWS/sm191205-O-QS269-1074.jpg" data-lightbox="roadtrip" data-title="Remainder Of Wisconsin Guard Infantry Battalion Now Back In State">
+											<img class="card-img v-image ads-img " src="https://dma.wi.gov/DMA/images/NEWS/2019NEWS/sm191205-O-QS269-1074.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrviMuasMzJFnuhZad8WU4jHd_qsOZsK7S7Q';" alt="Remainder Of Wisconsin Guard Infantry Battalion Now Back In State">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Remainder Of Wisconsin Guard Infantry Battalion Now Back In State</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/us-army-orange-beret.html">Us Army Orange Beret</a></li>
+													<li class="list-group-item"><a href="/us-army-ranger-uniform-ww2.html">Us Army Ranger Uniform Ww2</a></li>
+													<li class="list-group-item"><a href="/us-army-ngsw-program.html">Us Army Ngsw Program</a></li>
+													<li class="list-group-item"><a href="/us-army-magic-bullet.html">Us Army Magic Bullet</a></li>
+													<li class="list-group-item"><a href="/us-army-magic-statement.html">Us Army Magic Statement</a></li>
+													<li class="list-group-item"><a href="/us-army-ranger-green-beret.html">Us Army Ranger Green Beret</a></li>
+													<li class="list-group-item"><a href="/us-army-news-in-germany.html">Us Army News In Germany</a></li>
+													<li class="list-group-item"><a href="/us-army-news-weapons.html">Us Army News Weapons</a></li>
+													<li class="list-group-item"><a href="/us-army-pictures.html">Us Army Pictures</a></li>
+													<li class="list-group-item"><a href="/us-army-ranger-jacket.html">Us Army Ranger Jacket</a></li>
+													<li class="list-group-item"><a href="/us-army-logo-transparent-background.html">Us Army Logo Transparent Background</a></li>
+													<li class="list-group-item"><a href="/us-army-nco-sword-regulations.html">Us Army Nco Sword Regulations</a></li>
+													<li class="list-group-item"><a href="/us-army-new-service-rifle.html">Us Army New Service Rifle</a></li>
+													<li class="list-group-item"><a href="/us-army-pictures-and-their-names.html">Us Army Pictures And Their Names</a></li>
+													<li class="list-group-item"><a href="/us-army-png.html">Us Army Png</a></li>
+													<li class="list-group-item"><a href="/us-army-logo-pics.html">Us Army Logo Pics</a></li>
+													<li class="list-group-item"><a href="/us-army-nco-sword-history.html">Us Army Nco Sword History</a></li>
+													<li class="list-group-item"><a href="/us-army-ncoer-support-form-examples.html">Us Army Ncoer Support Form Examples</a></li>
+													<li class="list-group-item"><a href="/us-army-pictures-download.html">Us Army Pictures Download</a></li>
+													<li class="list-group-item"><a href="/us-army-new-sidearm.html">Us Army New Sidearm</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

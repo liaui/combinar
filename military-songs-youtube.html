@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Military Songs Youtube - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Military Songs Youtube",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/564x/94/7c/08/947c08d356a7f3bd4002c3e4c7c44c86.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=military+songs+youtube",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Military Songs Youtube</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Military Songs I wont let go Rascal Flatts Enjoy the videos and music you love upload original content and share it all with friends family and the world on YouTube. Music can be very powerful and create an emotional attachment. Skip navigation Sign in. <br>				
+			</p>
+										<a class="badge badge-danger" href="/orang-zaman-dahulu-cenderung-mengonsumsi-buah-dengan-cara.html">orang zaman dahulu cenderung mengonsumsi buah dengan cara</a>
+											<a class="badge badge-primary" href="/orang-x2.html">orang x2</a>
+											<a class="badge badge-danger" href="/orang-random-artinya.html">orang random artinya</a>
+											<a class="badge badge-light" href="/orang-zalim.html">orang zalim</a>
+											<a class="badge badge-success" href="/orange-army-captain.html">orange army captain</a>
+											<a class="badge badge-info" href="/orang-tua-jenderal-andika-perkasa.html">orang tua jenderal andika perkasa</a>
+											<a class="badge badge-light" href="/orang-tua-cha-eun-woo.html">orang tua cha eun woo</a>
+											<a class="badge badge-warning" href="/orange-army-cell.html">orange army cell</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the key word you've come to visit the right blog.  Our website provides you with hints for seeing the highest quality video and image content, search and find more informative video articles and images that match your interests.
+</p>
+<p align="justify">
+	includes one of tens of thousands of movie collections from various sources, particularly Youtube, therefore we recommend this video that you see.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/79/14/fc/7914fc74fbb5e32e39bc7bc1522e5d51.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/79/14/fc/7914fc74fbb5e32e39bc7bc1522e5d51.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvYuZnnBlv1hgF0vPsWZ8vIONfThf9UrSmSg';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/73/cd/54/73cd54a38faab69eb44d2d91ebd20b5a.jpg" data-lightbox="roadtrip" data-title="They Say That In The Army Ii Youtube Army Music Songs Youtube Videos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/73/cd/54/73cd54a38faab69eb44d2d91ebd20b5a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVWjk0eoeHs3S2mO3WHJ-N3cOFVxbA-DZMWw';" alt="They Say That In The Army Ii Youtube Army Music Songs Youtube Videos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">They Say That In The Army Ii Youtube Army Music Songs Youtube Videos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/99/57/c9/9957c9df92b1fc68d5e139baff449f4d.jpg" data-lightbox="roadtrip" data-title="Top 100 Vietnam War Songs Greatest Rock N Roll Vietnam War Music 60s 70s Classic Rock Songs Youtube Classic Rock Songs Rock Songs Best Classic Rock">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/99/57/c9/9957c9df92b1fc68d5e139baff449f4d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqBtsJ6UwNi3iD7rlnABb3zYGQfcwzaUGmfA';" alt="Top 100 Vietnam War Songs Greatest Rock N Roll Vietnam War Music 60s 70s Classic Rock Songs Youtube Classic Rock Songs Rock Songs Best Classic Rock">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 100 Vietnam War Songs Greatest Rock N Roll Vietnam War Music 60s 70s Classic Rock Songs Youtube Classic Rock Songs Rock Songs Best Classic Rock</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/79/d3/a979d37c8e86d07e9510b7830fec650a.jpg" data-lightbox="roadtrip" data-title="Atif Aslam New Heart Touching Song For Pakistan Army Songs Youtube Atif Aslam">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/79/d3/a979d37c8e86d07e9510b7830fec650a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnhIJNYBUzOyBVMDj2xlkWlSE_911fyKYLlA';" alt="Atif Aslam New Heart Touching Song For Pakistan Army Songs Youtube Atif Aslam">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Atif Aslam New Heart Touching Song For Pakistan Army Songs Youtube Atif Aslam</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b5/14/b0/b514b0da22dc31758d426aeebdac7353.jpg" data-lightbox="roadtrip" data-title="Hum Tere Sipahi Hai Pak Army Song Youtube Pakistan Armed Forces Pakistan Army Armed Forces">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b5/14/b0/b514b0da22dc31758d426aeebdac7353.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1vb1fiGZXFdubTP7cPxhau61reSNO2fCqCA';" alt="Hum Tere Sipahi Hai Pak Army Song Youtube Pakistan Armed Forces Pakistan Army Armed Forces">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Hum Tere Sipahi Hai Pak Army Song Youtube Pakistan Armed Forces Pakistan Army Armed Forces</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/10/fc/27/10fc274ebc33410a0766815ee0d8a032.jpg" data-lightbox="roadtrip" data-title="Himmat Hai Meedan Ma Aa Pak Army New Song Youtube Army Pakistan Army News Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/10/fc/27/10fc274ebc33410a0766815ee0d8a032.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7WNs_FnRn0ZgW2I9t0ugZPjAz6dAVXOWIag';" alt="Himmat Hai Meedan Ma Aa Pak Army New Song Youtube Army Pakistan Army News Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Himmat Hai Meedan Ma Aa Pak Army New Song Youtube Army Pakistan Army News Songs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/564x/73/cd/54/73cd54a38faab69eb44d2d91ebd20b5a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7WNs_FnRn0ZgW2I9t0ugZPjAz6dAVXOWIag';" alt="Himmat Hai Meedan Ma Aa Pak Army New Song Youtube Army Pakistan Army News Songs">
+										<div class="card-body">
+						<h3 class="h5"><b>The Greatest American Marches - Patriotic Military Marches Playlist - Marching Band MusicAmerica_the_Beautiful Anchors_Aweigh_1921 Ceremonial_Medleystars.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Military songs youtube</strong>. 
+								
+																	A new music service with official albums singles videos remixes live performances and more for Android iOS and desktop. 
+																	Laugh cry be inspired and enjoy the top 10 best songs for military. 
+																	Military Bands on AllMusic. 
+																	Psalm 121 The Message I look up to the mountai. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	1 The Liberty Bell - Band Of Grenadier Guards2 Colonel Bogey March - Band Of Ro. 
+																	This is my opinion of the top 10 military bagpipe marching tunes. 
+																	Its purpose is advertising and growing the media range of said. 
+																	The US Armed Forces Medley is a combination of the anthems of the various branches of the United States Military consisting of the Army Navy Coast Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is not an official channel run by the austrian secretary of defense. 
+																	Its maintained by the Verein zur Foerderung des oesterreichischen Militaermusikwesens in Vorarlberg. 
+																	This is for you pop. 
+																	Share your videos with friends family and the world. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The videos in my playlists are uploaded by many wonderful people who take a lot of time and effort to make these videos available for us to enjoy. 
+																	Mars na Drinu-Stanislav BinickiSchubert-Military marchJugoslovenski mars-Dolazak komandantaErika-Deutche WechmahtRichard Wagner-The ride of the valkyriesJube. 
+																	Todays modern military musicians are extremely capable and multi talented and perform in various sized groups from Marching Band to Rock Pop Group Mounted Band to String Orchestra. 
+																	Here are the 9 that did it best. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Boogie Woogie Bugle Boy Of Company B The Andrews Sisters. 
+																	Posted On January 28 2019 183817 A lot of popular music artists have attempted to capture the military experience over the years but only a small percentage of them have gotten it right in the eyes of the community. 
+																	These Colors Dont Run Iron Maiden. 
+																	Track list and download0000 CEPHEI - Tarbotron httppdjccfl80g0315 CEPHEI - Give us back the sky httppdjccfkq5k0757 CEPHEI - We take over the wo. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The songs we chose for the top 10 best military songs are no different. 
+																	If I Die Before You Wake Tribute to Armed Forces - GOD BLESS THOSE WHO HAVE SERVED THOSE WHO ARE STILL SERVING AND THOSE WHO FOUGHT AND GAVE ALL. 
+																	The 9 greatest military-themed pop songs in modern history. 
+																	Find album reviews stream songs credits and award information for 50 American Patriotic Military Songs - US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	My father a WW II vet was a big fan of marching bands. 
+																	Let the War beginPlease c. 
+																	This channel is mainly dedicated to the military concertband Militaermusik Vorarlberg as well as all other military orchestras of the austrian army. 
+																	Top 10 Best Songs For Military. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	All Regular Army Bands are part of the Royal Corps of Army Music. 
+																	What do you think is the top 10 military bagpipe marching tunes. 
+																	Songs of High Worship Praise and Deliverance to help you keep the right focus and make it through each day. 
+																	The Royal Corps of Army Music was formed in 1994 under the Options for Change Defence Review. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Find album reviews stream songs credits and award information for 100 Greatest Military Band Favourites Silva Screen - Various Artists on AllMusic - 2008. 
+																	1 - Majestic Jacopo Cicatiello2 - Separate World Instrumental Core Worldwuan Videos. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/1c/ff/d9/1cffd953d441faaa8f8984507d5a4f97.jpg" data-lightbox="roadtrip" data-title="Idf Israeli Military Power 2020 Youtube In 2020 Israel Defense Forces Power Military">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/1c/ff/d9/1cffd953d441faaa8f8984507d5a4f97.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWZetcxRNS7QT2kDFwSMTbLvjybLtqeV4eCQ';" alt="Idf Israeli Military Power 2020 Youtube In 2020 Israel Defense Forces Power Military">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Idf Israeli Military Power 2020 Youtube In 2020 Israel Defense Forces Power Military</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/20/0e/57/200e57d81c595872385ae1889be797f2.jpg" data-lightbox="roadtrip" data-title="14 August Songs Pakistani Army Emotional Song Ispr Pakistan Pak Army Youtube 14 August Songs Emotional Songs Independence Day Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/20/0e/57/200e57d81c595872385ae1889be797f2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeGbV8tM4srbMm1R_tRTYXMwih-lGdr4-YRQ';" alt="14 August Songs Pakistani Army Emotional Song Ispr Pakistan Pak Army Youtube 14 August Songs Emotional Songs Independence Day Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">14 August Songs Pakistani Army Emotional Song Ispr Pakistan Pak Army Youtube 14 August Songs Emotional Songs Independence Day Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/3f/77/fb/3f77fb7da0a2edda36f748a54c4677a9.jpg" data-lightbox="roadtrip" data-title="Baghali Pak Army Zinda Abad Army Paks Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/3f/77/fb/3f77fb7da0a2edda36f748a54c4677a9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl4euOGjDV7sM2O7zo7l2Sr2npwiGeDaZO1Q';" alt="Baghali Pak Army Zinda Abad Army Paks Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Baghali Pak Army Zinda Abad Army Paks Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f6/9c/31/f69c310fe723122fc09b4b2932755a20.jpg" data-lightbox="roadtrip" data-title="Pakistan Army Power Pak Army Songs National Songs Of Pakistan Army Tik Tok Army Youtube In 2020 National Songs Pakistan Army History Of Pakistan">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f6/9c/31/f69c310fe723122fc09b4b2932755a20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIuocAGbJPamRsPeb4k00vIYw7VrCgaQTILQ';" alt="Pakistan Army Power Pak Army Songs National Songs Of Pakistan Army Tik Tok Army Youtube In 2020 National Songs Pakistan Army History Of Pakistan">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistan Army Power Pak Army Songs National Songs Of Pakistan Army Tik Tok Army Youtube In 2020 National Songs Pakistan Army History Of Pakistan</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/b6/53/0e/b6530e0b0373205f01abdfca27f52791.jpg" data-lightbox="roadtrip" data-title="Youngest Shaheed S Of Pakistan Army Pak Army Best Song Youtube Pak Army Soldiers Army Women Army Girl">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/b6/53/0e/b6530e0b0373205f01abdfca27f52791.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyXLPj_I9vAAk2OCD1erQKY9AXbpHm0q_bjA';" alt="Youngest Shaheed S Of Pakistan Army Pak Army Best Song Youtube Pak Army Soldiers Army Women Army Girl">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youngest Shaheed S Of Pakistan Army Pak Army Best Song Youtube Pak Army Soldiers Army Women Army Girl</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/13/01/4c/13014cf719b7c69a5d125ca325583b6e.jpg" data-lightbox="roadtrip" data-title="Latest New Pak Army Whatsapp Status Songs Mashup Youtube Youtube Songs Mashup">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/13/01/4c/13014cf719b7c69a5d125ca325583b6e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBv0_0qVBMfC07i2KaESTepKGSw4tAEUcf_Q';" alt="Latest New Pak Army Whatsapp Status Songs Mashup Youtube Youtube Songs Mashup">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Latest New Pak Army Whatsapp Status Songs Mashup Youtube Youtube Songs Mashup</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/01/d5/4601d58bad72b5c7842d4aa6d1ea7e00.jpg" data-lightbox="roadtrip" data-title="Deployed Lazy Song Bruno Mars Tribute Via Youtube Parody Songs Military Songs Bruno Mars Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/01/d5/4601d58bad72b5c7842d4aa6d1ea7e00.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wbypJPiqLM148vgF_u43yRk4V3eI5bCrDg';" alt="Deployed Lazy Song Bruno Mars Tribute Via Youtube Parody Songs Military Songs Bruno Mars Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Deployed Lazy Song Bruno Mars Tribute Via Youtube Parody Songs Military Songs Bruno Mars Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/46/cd/49/46cd49a94aa8e51a49adb242b6b731df.jpg" data-lightbox="roadtrip" data-title="Youtube Youtube Songs Paks">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/46/cd/49/46cd49a94aa8e51a49adb242b6b731df.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLodpPQlkJHKlLb-XZJ_E_bCl8Q74G_RfLPQ';" alt="Youtube Youtube Songs Paks">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Youtube Youtube Songs Paks</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a6/99/57/a69957c683a1820c08a9585f8d848121.jpg" data-lightbox="roadtrip" data-title="Atif Aslam New Video Song For Pakistan Army Air Force Navy Pakistan Army Songs Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a6/99/57/a69957c683a1820c08a9585f8d848121.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLE0SnI9HWkQEzHy3b9QxUUVb9qoFhF8db6w';" alt="Atif Aslam New Video Song For Pakistan Army Air Force Navy Pakistan Army Songs Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Atif Aslam New Video Song For Pakistan Army Air Force Navy Pakistan Army Songs Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/29/34/9e/29349e8ee4e4f7c7325e9ebfcc14ff56.jpg" data-lightbox="roadtrip" data-title="Pakistan Air Force National Songs By Junaid Jamshed Youtube National Songs Songs Pakistan Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/29/34/9e/29349e8ee4e4f7c7325e9ebfcc14ff56.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ZcVG4St0h7yZRP1z4mDTH2YeJ0jN5cW1iw';" alt="Pakistan Air Force National Songs By Junaid Jamshed Youtube National Songs Songs Pakistan Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistan Air Force National Songs By Junaid Jamshed Youtube National Songs Songs Pakistan Song</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/02/a3/a802a305f8bd624828181bdd755abc94.jpg" data-lightbox="roadtrip" data-title="Aye Wattan Pyare Wattan Pakistani Songs Ustad Amanat Ali Khan Songs Pakistan Army Song Youtube Pakistani Songs National Songs Pakistan Song">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/02/a3/a802a305f8bd624828181bdd755abc94.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFitJivue4BmxRz7FCVBReJPBCx23Z1UX-dA';" alt="Aye Wattan Pyare Wattan Pakistani Songs Ustad Amanat Ali Khan Songs Pakistan Army Song Youtube Pakistani Songs National Songs Pakistan Song">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Aye Wattan Pyare Wattan Pakistani Songs Ustad Amanat Ali Khan Songs Pakistan Army Song Youtube Pakistani Songs National Songs Pakistan Song</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/94/7c/08/947c08d356a7f3bd4002c3e4c7c44c86.jpg" data-lightbox="roadtrip" data-title="Pakistan Army Release New Song Hum Tery Sipahi Hain Official Song 2018 Youtube In 2020 Pakistan Army National Songs Army">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/94/7c/08/947c08d356a7f3bd4002c3e4c7c44c86.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFEp_RgZjiO2E6M9xLY4nHWMkWwdGb4M4-hg';" alt="Pakistan Army Release New Song Hum Tery Sipahi Hain Official Song 2018 Youtube In 2020 Pakistan Army National Songs Army">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pakistan Army Release New Song Hum Tery Sipahi Hain Official Song 2018 Youtube In 2020 Pakistan Army National Songs Army</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/f3/56/82/f3568231b0cce4d14f26d99148899a79.jpg" data-lightbox="roadtrip" data-title="Feeling Proud Indian Army Full Song 26th January Special Indian Army Song Youtube Bhakti Song Indian Army Republic Day Status">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/f3/56/82/f3568231b0cce4d14f26d99148899a79.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-PLkKEMqgovWO_3KKslWoqy6pakrYLV8C7Q';" alt="Feeling Proud Indian Army Full Song 26th January Special Indian Army Song Youtube Bhakti Song Indian Army Republic Day Status">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Feeling Proud Indian Army Full Song 26th January Special Indian Army Song Youtube Bhakti Song Indian Army Republic Day Status</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/hilang-dalam-terang.html">Hilang Dalam Terang</a></li>
+													<li class="list-group-item"><a href="/hitung-map.html">Hitung Map</a></li>
+													<li class="list-group-item"><a href="/hitung-kalori-makanan-online.html">Hitung Kalori Makanan Online</a></li>
+													<li class="list-group-item"><a href="/hitung-mundur-puasa.html">Hitung Mundur Puasa</a></li>
+													<li class="list-group-item"><a href="/hitung-jumlah-leukosit.html">Hitung Jumlah Leukosit</a></li>
+													<li class="list-group-item"><a href="/hilang-cinta.html">Hilang Cinta</a></li>
+													<li class="list-group-item"><a href="/hitung-jarak.html">Hitung Jarak</a></li>
+													<li class="list-group-item"><a href="/hilang-penciuman-apakah-gejala-corona.html">Hilang Penciuman Apakah Gejala Corona</a></li>
+													<li class="list-group-item"><a href="/hiring-qatar.html">Hiring Qatar</a></li>
+													<li class="list-group-item"><a href="/hilang-harapan.html">Hilang Harapan</a></li>
+													<li class="list-group-item"><a href="/hitung-umur.html">Hitung Umur</a></li>
+													<li class="list-group-item"><a href="/hilang-respek.html">Hilang Respek</a></li>
+													<li class="list-group-item"><a href="/hitung-jumlah-denyut-nadi-selama-60-detik.html">Hitung Jumlah Denyut Nadi Selama 60 Detik</a></li>
+													<li class="list-group-item"><a href="/hilang-ingatan-tts.html">Hilang Ingatan Tts</a></li>
+													<li class="list-group-item"><a href="/hilang-tanpa-jejak.html">Hilang Tanpa Jejak</a></li>
+													<li class="list-group-item"><a href="/hindi-army-songs-come.html">Hindi Army Songs Come</a></li>
+													<li class="list-group-item"><a href="/hiring-artinya.html">Hiring Artinya</a></li>
+													<li class="list-group-item"><a href="/hitung-lah-luas-lingkaran-berikut.html">Hitung Lah Luas Lingkaran Berikut</a></li>
+													<li class="list-group-item"><a href="/hitung-keliling-lingkaran.html">Hitung Keliling Lingkaran</a></li>
+													<li class="list-group-item"><a href="/hilang-dan-lupakan.html">Hilang Dan Lupakan</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

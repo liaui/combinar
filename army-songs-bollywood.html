@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Army Songs Bollywood - Popular</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Army Songs Bollywood",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/65/58/ae/6558aec79637b86dfcaa3902c9bfc67d.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=army+songs+bollywood",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Army Songs Bollywood</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The beautifully written and sung Bollywood songs are the perfect delight to your ears. Dilbar Aankh Marey O Saki Saki are to name a few. Enjoy the videos and music you love upload original content and share it all with friends family and the world on YouTube. <br>				
+			</p>
+										<a class="badge badge-info" href="/title-32-employees.html">title 32 employees</a>
+											<a class="badge badge-danger" href="/tx-seafood.html">tx seafood</a>
+											<a class="badge badge-info" href="/top-army-ranking-in-the-world-2020.html">top army ranking in the world 2020</a>
+											<a class="badge badge-secondary" href="/txt-members.html">txt members</a>
+											<a class="badge badge-secondary" href="/trang-yeu-thich-dja-luu.html">trang yeu thich dja luu</a>
+											<a class="badge badge-info" href="/tng-ewallet-free.html">tng ewallet free</a>
+											<a class="badge badge-dark" href="/ukrainian-national-guard-equipment.html">ukrainian national guard equipment</a>
+											<a class="badge badge-dark" href="/trang-an-ninh-binh.html">trang an ninh binh</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for video and picture information related to the key word you have come to pay a visit to the right blog.  Our site provides you with hints for seeing the maximum quality video and image content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of video collections from various sources, especially Youtube, therefore we recommend this movie for you to view.   This site is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/55/d8/e1/55d8e1895b72dcda3b97f3c75f650b09.png" data-lightbox="roadtrip" data-title="10 Beautiful Songs For Indian Army Youtube In 2020 Beautiful Songs Indian Army Best Bollywood Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/55/d8/e1/55d8e1895b72dcda3b97f3c75f650b09.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6vL6ZUwrfUl8RqnpGDbODN_XgN6kpCUdPKg';" alt="10 Beautiful Songs For Indian Army Youtube In 2020 Beautiful Songs Indian Army Best Bollywood Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">10 Beautiful Songs For Indian Army Youtube In 2020 Beautiful Songs Indian Army Best Bollywood Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/25/69/e8/2569e8bc93678e3d764ff98e05025e3d.jpg" data-lightbox="roadtrip" data-title="Top 20 Best Hindi Patriotic Songs Desh Bhakti Songs List Bhakti Song Song Hindi Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/25/69/e8/2569e8bc93678e3d764ff98e05025e3d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBOR0aQKy3BlWnhVX9gaDYBOWwhraDZR_FJQ';" alt="Top 20 Best Hindi Patriotic Songs Desh Bhakti Songs List Bhakti Song Song Hindi Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Top 20 Best Hindi Patriotic Songs Desh Bhakti Songs List Bhakti Song Song Hindi Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/7b/63/6b/7b636b5e62490c9d80680b4d87b492cf.jpg" data-lightbox="roadtrip" data-title="50 Bollywood Romantic Dialogues That Will Make You Fall In Love All Over Again Bollywood Love Quotes Romantic Dialogues Bollywood Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/7b/63/6b/7b636b5e62490c9d80680b4d87b492cf.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm8nR_7kON-IjL64CeGECE3gAooDWZInqbpA';" alt="50 Bollywood Romantic Dialogues That Will Make You Fall In Love All Over Again Bollywood Love Quotes Romantic Dialogues Bollywood Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">50 Bollywood Romantic Dialogues That Will Make You Fall In Love All Over Again Bollywood Love Quotes Romantic Dialogues Bollywood Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/cd/86/6f/cd866fa5572ba429f2a30659109e30b6.jpg" data-lightbox="roadtrip" data-title="Bollywood Indian Army Quotes Army Quotes Navy Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/cd/86/6f/cd866fa5572ba429f2a30659109e30b6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSckcTwiSo9_ysgx7kXFHpZH8TYuX2AO55BFw';" alt="Bollywood Indian Army Quotes Army Quotes Navy Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Bollywood Indian Army Quotes Army Quotes Navy Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/06/1e/d1/061ed19d46d2c6e0ae5560c71843982d.jpg" data-lightbox="roadtrip" data-title="Feeling Proud Indian Army Song Sumit Goswami Gangwar 2 Song Latest Haryanvi Song Ashu Creation Youtube Indian Army Army Army Video">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/06/1e/d1/061ed19d46d2c6e0ae5560c71843982d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT22IJ6wi8VeG2zlof1oAaOOs9y6T1hSHfs0g';" alt="Feeling Proud Indian Army Song Sumit Goswami Gangwar 2 Song Latest Haryanvi Song Ashu Creation Youtube Indian Army Army Army Video">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Feeling Proud Indian Army Song Sumit Goswami Gangwar 2 Song Latest Haryanvi Song Ashu Creation Youtube Indian Army Army Army Video</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/6a/64/e3/6a64e3f0eef997ff5a56abe645e9f9fa.jpg" data-lightbox="roadtrip" data-title="Challa Main Lad Jaana Uri Full Video Song Vicky Kaushal Yami Gautam Youtube Motivational Songs Songs Bollywood Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/6a/64/e3/6a64e3f0eef997ff5a56abe645e9f9fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM4EuIbYiEsx39veYrcfkrrKwdLSspifrXyQ';" alt="Challa Main Lad Jaana Uri Full Video Song Vicky Kaushal Yami Gautam Youtube Motivational Songs Songs Bollywood Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Challa Main Lad Jaana Uri Full Video Song Vicky Kaushal Yami Gautam Youtube Motivational Songs Songs Bollywood Songs</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/55/d8/e1/55d8e1895b72dcda3b97f3c75f650b09.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM4EuIbYiEsx39veYrcfkrrKwdLSspifrXyQ';" alt="Challa Main Lad Jaana Uri Full Video Song Vicky Kaushal Yami Gautam Youtube Motivational Songs Songs Bollywood Songs">
+										<div class="card-body">
+						<h3 class="h5"><b>A Soldier Is Never Off Duty 2014 URI 2019 Satellite Shankar 2019.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Army songs bollywood</strong>. 
+								
+																	Abhijeet Bhattacharya Alka Yagnik Jolly Mukherjee Vinod Rathod Sadhana Sargam Udit Narayan Kumar Sanu Sadhana Sargam. 
+																	If there is anything unsatisfactory please give us a comment. 
+																	Alka Yagnik Vinod Rathod Abhijeet Jolly Mukherjee Ho Gayee Tiyar Hamari Army0639 3. 
+																	List of Films Based on Indian Army Lakshya 2004 Haqeeqat 1964 Border 1997 LOC Kargil 2003 Shaurya 2008 Tango Charlie 2005 Vijeta 1982 Prahaar. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	You can play Indian Army songs online for free and download mp3 songs of Indian Army on the Wynk Music mobile app. 
+																	The album Indian Army has 1 song which are sung by artists like Vishu Puthi. 
+																	Army song from the Army album is composed by Kaka while the lyrics are penned by Sumit Goswami. 
+																	Download RozDhan App Now - httpsylinkcceR8FCUse My Invite Code To Get Rs50 Instantly - 005GTH- - - - - - - - - - - - - - - - - - -. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Gaana offers you free unlimited access to over 45 million Hindi Songs Bollywood Music English MP3 songs Regional Music Mirchi Play. 
+																	You can enjoy your favorite Pakistani Hindi songs from various websites like Spark shell. 
+																	Sadhana Sargam Udit Narayan Chorus Achikoo Bachikoo Kachikoo0523 5. 
+																	Synthesis of the best hindi songs bringing relaxed moments to listeners. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Latest Bollywood Party songs of 2016 Afghan Jalebi- Asrar Akhtar Chanai Zahri Phantom- 2015 Manma Emotion Jaage- Anushka Manchanda Amit Mishra and Antara Mitra Dilwale-2015. 
+																	Army 1996 Movie Mp3 Songs. 
+																	It takes you on a journey to the Front Line where a soldier reads letters sent from lovers mothers and childhood friends asking for his return. 
+																	Alka Yagnik Vinod Rathod Abhijeet Jolly Mukherjee De Taali0703 4. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Click Play Party HardTipsOfficials got the perfect party tracks clubbed in this Jukebox listed of songs JihneMeraDilLuteya to DhatingNaach weve got i. 
+																	Bollywood Hits Songs - ASPL Channel. 
+																	The Final Attack 1991 Hindustan Ki Kasam 1973 1971 2007 Holiday. 
+																	Army Songs Download- Listen to Army songs MP3 free online. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Hats off to rafi sir as he sang the most number of these beautiful songs for our nationhis melody songs inspired everyone either he is a common people or the soldier of our countryhis kar chale hum fida or aye watan aye watan humko teri kasamjahan dal dal par soneki chidiyaapni azadi ko humsarfaroshi ki tamanna and many more are the gemsjust superb. 
+																	Top 25 Hindi Patriotic Songs Thatll Leave Goosebumps on Your Skin. 
+																	Alka Yagnik Ek Beeti Hui Kahani 0518 6. 
+																	Indian army sad song video indian army sad song video download. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Right Click On Songs Name then Click On Save target As. 
+																	Sandese Aate Hain सदस आत ह This track from the movie Border is a musical feast. 
+																	Gaana is the one-stop solution for all your music needs. 
+																	Popular Haryanvi singer Sumit Goswami marvelously voiced this Haryanvi patriotic song. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	LIKECMNTSUBSCRIBEFOR MORE Follow me on Instagram imdhiraj1. 
+																	HamariWeb provides you the information to download videos songs free download Pakistani songs free download Hindi songs content that is available online. 
+																	ARMAAN MALIK New Songs CHALE AANA Latest_Bollywood_Romantic_Songs Armaan Malik SONGS 2020ARMAAN MALIK New Songs CHALE AANA Latest_Bollywood_Romanti. 
+																	Related Tags - Army Army Song Army MP3 Song Army MP3 Download Army Song Sumit Goswami Army Song Army Army Song Army Song By Sumit Goswami Army Song Download Download Army MP3 Song. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	There are many popular Bollywood songs which are loved by the audience. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/13/aa/54/13aa54e15cc0dfdb47bff005590f119f.jpg" data-lightbox="roadtrip" data-title="O Saki Saki Song Download From Batla House Latest Bollywood Songs Bollywood Songs Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/13/aa/54/13aa54e15cc0dfdb47bff005590f119f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8XcfoSZZGC2WX9Tge_OxdrWJlEewAq0GwTQ';" alt="O Saki Saki Song Download From Batla House Latest Bollywood Songs Bollywood Songs Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">O Saki Saki Song Download From Batla House Latest Bollywood Songs Bollywood Songs Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ec/04/c4/ec04c4816cea2c8a0eb9ad36af945b06.jpg" data-lightbox="roadtrip" data-title="Sonakshi Sinha Spends Time With The Indian Army Army Girlfriend Pictures Army Women Army Images">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ec/04/c4/ec04c4816cea2c8a0eb9ad36af945b06.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeSKmav-6VYL24jXHQrQ4kpWY-QqvK_VIiiA';" alt="Sonakshi Sinha Spends Time With The Indian Army Army Girlfriend Pictures Army Women Army Images">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Sonakshi Sinha Spends Time With The Indian Army Army Girlfriend Pictures Army Women Army Images</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/83/16/b2/8316b20695f192c5396cf925de8ec046.jpg" data-lightbox="roadtrip" data-title="Pin On Vicky">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/83/16/b2/8316b20695f192c5396cf925de8ec046.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpPwBxGMg6xeWg2gNnNGDyxtd5cM9VpzyHaA';" alt="Pin On Vicky">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Vicky</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/9f/0a/6b9f0ac6e415dbd35f9967e61170855c.jpg" data-lightbox="roadtrip" data-title="Gaana Movie Indian Army Wallpapers Army Pics Army Girlfriend Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/9f/0a/6b9f0ac6e415dbd35f9967e61170855c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKpHM76AEMLBNp_SwWZNndbXnkB8nAondEGA';" alt="Gaana Movie Indian Army Wallpapers Army Pics Army Girlfriend Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Gaana Movie Indian Army Wallpapers Army Pics Army Girlfriend Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/01/62/be/0162be3dde7e893dd9551444fa75c281.jpg" data-lightbox="roadtrip" data-title="A Beautiful Song On Army Man S Separation From His Lover Soulfully Sung By Arijitsingh From Movie Holiday Latest Bollywood Songs Songs Bollywood Movie Songs">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/01/62/be/0162be3dde7e893dd9551444fa75c281.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyloH1fs6RiztIWub62vuSFVLyfsUBaIIrzQ';" alt="A Beautiful Song On Army Man S Separation From His Lover Soulfully Sung By Arijitsingh From Movie Holiday Latest Bollywood Songs Songs Bollywood Movie Songs">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Beautiful Song On Army Man S Separation From His Lover Soulfully Sung By Arijitsingh From Movie Holiday Latest Bollywood Songs Songs Bollywood Movie Songs</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/eb/69/7b/eb697b86abdec52f59627acaa8ee3686.jpg" data-lightbox="roadtrip" data-title="Commando A One Man Army 2013 Hindi Movie Songs Download Lazy Moviez Hindi Movies Hindi Movie Song Bollywood Movie">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/eb/69/7b/eb697b86abdec52f59627acaa8ee3686.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxddpeJr_Xu17BzcOix3l2itZUM1fUdHjW_A';" alt="Commando A One Man Army 2013 Hindi Movie Songs Download Lazy Moviez Hindi Movies Hindi Movie Song Bollywood Movie">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Commando A One Man Army 2013 Hindi Movie Songs Download Lazy Moviez Hindi Movies Hindi Movie Song Bollywood Movie</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/58/ae/6558aec79637b86dfcaa3902c9bfc67d.jpg" data-lightbox="roadtrip" data-title="Armay Bhi Kamal K Hote Army Quotes Indian Army Quotes Army Girlfriend Pictures">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/58/ae/6558aec79637b86dfcaa3902c9bfc67d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbJBZEfjYJ9sqyFCHejU9Mg1ELWp1zqGyxvg';" alt="Armay Bhi Kamal K Hote Army Quotes Indian Army Quotes Army Girlfriend Pictures">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Armay Bhi Kamal K Hote Army Quotes Indian Army Quotes Army Girlfriend Pictures</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/35/99/36/3599365a021af3318037bc05630d0cb7.jpg" data-lightbox="roadtrip" data-title="Indian Army Motivational Songs 2018 19 Hindi Youtube Motivational Songs Indian Army Song Status">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/35/99/36/3599365a021af3318037bc05630d0cb7.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4GHCZ4dqfa7939fel3KAlfKxNxnar31oyoA';" alt="Indian Army Motivational Songs 2018 19 Hindi Youtube Motivational Songs Indian Army Song Status">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Motivational Songs 2018 19 Hindi Youtube Motivational Songs Indian Army Song Status</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/71/40/ba/7140ba44e48d6465d2149e8cb9b348a2.jpg" data-lightbox="roadtrip" data-title="Ashq Na Ho Full Video Holiday Ft Arijit Singh Akshay Kumar Sonakshi Sinha Youtube Latest Video Songs Bollywood Music Videos Bollywood Music">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/71/40/ba/7140ba44e48d6465d2149e8cb9b348a2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx8m6E_x3UdaICs8BVOVVx9qdDw17kwyhmbg';" alt="Ashq Na Ho Full Video Holiday Ft Arijit Singh Akshay Kumar Sonakshi Sinha Youtube Latest Video Songs Bollywood Music Videos Bollywood Music">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ashq Na Ho Full Video Holiday Ft Arijit Singh Akshay Kumar Sonakshi Sinha Youtube Latest Video Songs Bollywood Music Videos Bollywood Music</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/b8/23/6a/b8236ae880f4cba342af81f703c54ded.png" data-lightbox="roadtrip" data-title="Pin By Sushma Batra Laxman On Hindi Songs And Lyrics Song Lyric Quotes Old Bollywood Songs Cool Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/b8/23/6a/b8236ae880f4cba342af81f703c54ded.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe7AzkCCriqBbu9ueW8t4bi39iCgUABUJCuQ';" alt="Pin By Sushma Batra Laxman On Hindi Songs And Lyrics Song Lyric Quotes Old Bollywood Songs Cool Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Sushma Batra Laxman On Hindi Songs And Lyrics Song Lyric Quotes Old Bollywood Songs Cool Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c8/c7/1b/c8c71b8deee64d6bf6d52a63ce4b4b35.jpg" data-lightbox="roadtrip" data-title="Indian Army Quotes In Hindi Indian Army Quotes Army Quotes Military Quotes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c8/c7/1b/c8c71b8deee64d6bf6d52a63ce4b4b35.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-4D7Qhq1fVQAp8BLIlKg2istiM9zhuhhKcw';" alt="Indian Army Quotes In Hindi Indian Army Quotes Army Quotes Military Quotes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Indian Army Quotes In Hindi Indian Army Quotes Army Quotes Military Quotes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/fe/b1/6d/feb16d4e040f4dad490c18978b15cae3.jpg" data-lightbox="roadtrip" data-title="Pin By Bhavin Makavana On Song Lyrics Bollywood Quotes Songs Song Lyrics">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/fe/b1/6d/feb16d4e040f4dad490c18978b15cae3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLvlqav-hihKapIa9SfFokeANvZ7y6qwzFg';" alt="Pin By Bhavin Makavana On Song Lyrics Bollywood Quotes Songs Song Lyrics">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Bhavin Makavana On Song Lyrics Bollywood Quotes Songs Song Lyrics</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/70/e7/86/70e786fcc68e20da0f0a60e42429a204.jpg" data-lightbox="roadtrip" data-title="Challa Main Lad Jaana Song Lyrics Uri The Surgical Strike Movie National Film Awards Film Awards Hd Movies">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/70/e7/86/70e786fcc68e20da0f0a60e42429a204.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_khAeqyg4aswXoqnaXEmNvzoIwYI8EZN28w';" alt="Challa Main Lad Jaana Song Lyrics Uri The Surgical Strike Movie National Film Awards Film Awards Hd Movies">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Challa Main Lad Jaana Song Lyrics Uri The Surgical Strike Movie National Film Awards Film Awards Hd Movies</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/vtt-visa.html">Vtt Visa</a></li>
+													<li class="list-group-item"><a href="/vtg-vehicle.html">Vtg Vehicle</a></li>
+													<li class="list-group-item"><a href="/wantex-warna-hijau-army.html">Wantex Warna Hijau Army</a></li>
+													<li class="list-group-item"><a href="/virginia-army-national-guard-recruiting-station-chesapeake-va.html">Virginia Army National Guard Recruiting Station Chesapeake Va</a></li>
+													<li class="list-group-item"><a href="/virginia-national-guard-military-intelligence.html">Virginia National Guard Military Intelligence</a></li>
+													<li class="list-group-item"><a href="/voting-mentimeter.html">Voting Mentimeter</a></li>
+													<li class="list-group-item"><a href="/vtg-valmet.html">Vtg Valmet</a></li>
+													<li class="list-group-item"><a href="/warna-apa-yang-cocok-dipadukan-dengan-warna-army.html">Warna Apa Yang Cocok Dipadukan Dengan Warna Army</a></li>
+													<li class="list-group-item"><a href="/vt-x-bts-stay-it.html">Vt X Bts Stay It</a></li>
+													<li class="list-group-item"><a href="/warna-army-cocok-untuk-kulit-sawo-matang.html">Warna Army Cocok Untuk Kulit Sawo Matang</a></li>
+													<li class="list-group-item"><a href="/vtns.html">Vtns</a></li>
+													<li class="list-group-item"><a href="/warna-army-cardigan-rajut.html">Warna Army Cardigan Rajut</a></li>
+													<li class="list-group-item"><a href="/voting-itu-apa.html">Voting Itu Apa</a></li>
+													<li class="list-group-item"><a href="/vit-kulit.html">Vit Kulit</a></li>
+													<li class="list-group-item"><a href="/vt-r-on-t.html">Vt R On T</a></li>
+													<li class="list-group-item"><a href="/voting-indonesian-idol.html">Voting Indonesian Idol</a></li>
+													<li class="list-group-item"><a href="/voting-maker.html">Voting Maker</a></li>
+													<li class="list-group-item"><a href="/warna-army-baju-rajut.html">Warna Army Baju Rajut</a></li>
+													<li class="list-group-item"><a href="/vita-alvia-jangan-nget-ngetan.html">Vita Alvia Jangan Nget Ngetan</a></li>
+													<li class="list-group-item"><a href="/voting-mama-2020.html">Voting Mama 2020</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

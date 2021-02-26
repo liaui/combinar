@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Otis And Ruby Episode - News</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Otis And Ruby Episode",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/ea/86/9a/ea869a1f0d6995e998788537fe0d9aa9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=otis+and+ruby+episode",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Otis And Ruby Episode</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">The fact both Otis and Ruby were too drunk to really remember the incident allowed the show to bypass the event completely meaning that the audience knows what they know. Stay tuned for season 4 haha. WATCH FULL EPISODE HERE. <br>				
+			</p>
+										<a class="badge badge-warning" href="/army-rank-lt.html">army rank lt</a>
+											<a class="badge badge-info" href="/army-rank-to-gs-level.html">army rank to gs level</a>
+											<a class="badge badge-info" href="/army-rank-uniform.html">army rank uniform</a>
+											<a class="badge badge-danger" href="/army-ranking-around-the-world.html">army ranking around the world</a>
+											<a class="badge badge-secondary" href="/army-rank-ww2.html">army rank ww2</a>
+											<a class="badge badge-secondary" href="/army-rank-thailand.html">army rank thailand</a>
+											<a class="badge badge-secondary" href="/army-rank-pay-yearly.html">army rank pay yearly</a>
+											<a class="badge badge-success" href="/army-rank-list-name.html">army rank list name</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information linked to the keyword you have come to pay a visit to the right blog.  Our website provides you with hints for viewing the highest quality video and picture content, search and find more informative video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of movie collections from several sources, particularly Youtube, therefore we recommend this video that you view.   This blog is for them to visit this site.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/c5/82/a7/c582a7c97610fd5fa46b6d2935956b1e.jpg" data-lightbox="roadtrip" data-title="One Of My Favorite Scenes W Otis Ruby The Morning After Series E Filmes Filmes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/c5/82/a7/c582a7c97610fd5fa46b6d2935956b1e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5zLjQtd_PvhLdUgll_YLebYk17isREb7K2w';" alt="One Of My Favorite Scenes W Otis Ruby The Morning After Series E Filmes Filmes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">One Of My Favorite Scenes W Otis Ruby The Morning After Series E Filmes Filmes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ae/4e/41/ae4e4100db768db7ffff856605c15f59.jpg" data-lightbox="roadtrip" data-title="Asa Butterfield Netflix Filmes E Series Series E Filmes Filmes">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ae/4e/41/ae4e4100db768db7ffff856605c15f59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJG0TJthkY7XuNCXOvhnDAUUqyAsVJLqmPQ';" alt="Asa Butterfield Netflix Filmes E Series Series E Filmes Filmes">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Asa Butterfield Netflix Filmes E Series Series E Filmes Filmes</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/bc/5a/12/bc5a123060987764c9cec200287f1c59.jpg" data-lightbox="roadtrip" data-title="Otis And Ruby Gillian Anderson Series E Filmes Cena De Filme">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/bc/5a/12/bc5a123060987764c9cec200287f1c59.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfjPWRNvZSh4gZiyHnyG4wwASphz1c_bt2Yw';" alt="Otis And Ruby Gillian Anderson Series E Filmes Cena De Filme">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Otis And Ruby Gillian Anderson Series E Filmes Cena De Filme</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/MTPXvAr0pvA/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Pin On Videos De Nicky Nickin Wick 3 El Bromas 2019">
+											<img class="card-img v-image ads-img " src="https://i.ytimg.com/vi/MTPXvAr0pvA/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQecN-EEcMlhFAvaPkRgE3p5aIuAXMHKnYcUg';" alt="Pin On Videos De Nicky Nickin Wick 3 El Bromas 2019">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Videos De Nicky Nickin Wick 3 El Bromas 2019</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/24/b3/7b/24b37bea792d960a996f01b68f774748.jpg" data-lightbox="roadtrip" data-title="Pin De Matth Lima Em Series Filmes Etc Filmes Live Action Personagem">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/24/b3/7b/24b37bea792d960a996f01b68f774748.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuZo3wXCCrQN1F8XPmbtdyldh2LSX0wdT2aQ';" alt="Pin De Matth Lima Em Series Filmes Etc Filmes Live Action Personagem">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin De Matth Lima Em Series Filmes Etc Filmes Live Action Personagem</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/20/64/56/206456af7a1ee4e5743597c7cd8ab948.jpg" data-lightbox="roadtrip" data-title="Pin On Netflix">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/20/64/56/206456af7a1ee4e5743597c7cd8ab948.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafZVlJfxPM2yNqxpetRgXJ1gZTmsmOqbBTg';" alt="Pin On Netflix">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Netflix</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/e5/db/b7/e5dbb7ed36fe7cd62f1cb409e46a0749.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafZVlJfxPM2yNqxpetRgXJ1gZTmsmOqbBTg';" alt="Pin On Netflix">
+										<div class="card-body">
+						<h3 class="h5"><b>They had sex but the.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Otis and ruby episode</strong>. 
+								
+																	About Press Copyright Contact us Creators Advertise Developers Terms Privacy Policy Safety How YouTube works Test new features Press Copyright Contact us Creators. 
+																	Isaac tells Maeve that her mother is pretending to go to work. 
+																	SEX EDUCATION SEASON 2Otis Ruby Momments. 
+																	During Season 1 Otis and Ruby hardly interact except for when he and Maeve will help her identify the person who sent the whole school a compromising picture of her Episode 5. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Otis first time certainly didnt go as he always imagined it would. 
+																	Later it emerges Ruby intentionally has sex with Otis because she likes to sleep with nerds when shes feeling down. 
+																	At first Ruby was confident they did use a condom although she admitted that she couldnt find where it is. 
+																	Ncuti Gatwa Emma Mackey Connor Swindells Aimee Lou Wood and Kedar Williams-Stirling co-star. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	In the prior episode Otis is clearly shown as being incapable of giving consent for sex. 
+																	Spoilers ahead for Sex Education season 2 episode 7. 
+																	With his memory of the night hazy due to the quantity of alcohol he drank he asked her if they used contraception. 
+																	Sex Education Season 2 Episode 7 ends with Otis returning home after helping Ruby. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Sex Education By. 
+																	In the seventh of the seasons eight episodes Otis wakes up after a raucous party at his house with an unfamiliar girl in his bed. 
+																	Sex Education season 3 on Netflix will probably shuffle things even more and introduce new characters who may have better luck than poor Rahim. 
+																	Jean asks about the sex advice he has been handing out and he lies You look just like your father when you lie. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	For starters after Otis Asa Butterfield drunkenly loses his. 
+																	Its Ruby one of the ueber-mean Untouchables who run his high. 
+																	The wildcard as of now could be Rubys obvious interest in Otis and a small bit of female backlash against Maeve. 
+																	Otis then asks Ruby if SHE gave consentand Ruby forces him to pay for the morning after pill. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WATCH FULL EPISODE HERE. 
+																	Sex Education is a British comedy-drama television series created by Laurie NunnStarring Asa Butterfield as an insecure teenager and Gillian Anderson as his mother a sex therapist the series premiered on 11 January 2019 on Netflix. 
+																	Maive finds out Isaac deleted the voicemail maybe he even tells her and encourages her to see Otis. 
+																	Final scene of season 3 episode 8. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After his wreck of a party a drunken Otis discovers that he unknowingly had intercourse with Ruby Mimi Keene. 
+																	A teenage boy with a sex therapist mother teams up with a high schoolclassmate to set up an underground sex therapy clinic at schoolShow. 
+																	Otis and Ruby During season 1 Otis and Ruby never interact except during episode 5 during which he and Maeve will help her identify the person who sent the whole school a compromising picture of herself. 
+																	S2 E5 Episode 5 Whats the song playing on 3743-3837 in ep 5 Cant find it any help will be appreciated more S2 E6 Episode 6 What song was the otis drunk drinking On which song did otis drink after drinking alcohol. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	I own nothing but the editing. 
+																	She runs to his house only to find him and Ruby kiss. 
+																	He remembers nothing of losing his virginitywhereas Ruby remembers the entire encounter. 
+																	I own nothing but the editing. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Both of Isaac and maeve and Otis and ruby will not get together but I do admit there was a bit of lifting between maeve and Isaac but kids at that age flirt with everyone and also the writers have very unique and different ideas so repeating a storyline of Maeve or Otis getting with someone else to get over the other will not happen and both of them love each other clearly but Otis although less confident is better at releasing his feelings and Maeve is really bad at it so even though. 
+																	It became a critical and commercial success for Netflix with. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/03/90/2d/03902d02643f0c44e576da1237487bf8.jpg" data-lightbox="roadtrip" data-title="Pin On Films">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/03/90/2d/03902d02643f0c44e576da1237487bf8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpZnAnzoJLhZC_efaINbfdkwOTq_LJ7l1ZeQ';" alt="Pin On Films">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Films</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ea/86/9a/ea869a1f0d6995e998788537fe0d9aa9.jpg" data-lightbox="roadtrip" data-title="Pin On My Pins">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ea/86/9a/ea869a1f0d6995e998788537fe0d9aa9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL8Opuo3izNyd1625FHZOpaMfiGSMDwlsqzw';" alt="Pin On My Pins">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On My Pins</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/06/ed/ef/06edefaa0ebc894efc5046d16cfc0535.jpg" data-lightbox="roadtrip" data-title="Pin On Fear Is A Waste Of Time">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/06/ed/ef/06edefaa0ebc894efc5046d16cfc0535.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSfykvCA0w9fQYnA5dcAlWDqYSLc_v3KCW2g';" alt="Pin On Fear Is A Waste Of Time">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Fear Is A Waste Of Time</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/56/c1/67/56c167429a349be021917f181ae1262f.jpg" data-lightbox="roadtrip" data-title="Pin On S E X E D U C A T I O N">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/56/c1/67/56c167429a349be021917f181ae1262f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQM3ZUHxptbTOul5qVBUMin1-VNmrLX4_d0g';" alt="Pin On S E X E D U C A T I O N">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On S E X E D U C A T I O N</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/79/3c/16/793c1631b16f1a57324b5f7e90d31d08.gif" data-lightbox="roadtrip" data-title="Pin On A Myself">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/79/3c/16/793c1631b16f1a57324b5f7e90d31d08.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzFnZPB3chNmLDrfMUF5JRcPXpuUIH-klsEg';" alt="Pin On A Myself">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On A Myself</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/9a/39/52/9a3952ee5892fa79ba93828953676fc6.jpg" data-lightbox="roadtrip" data-title="Pin On Series">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/9a/39/52/9a3952ee5892fa79ba93828953676fc6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAfoaIyXaRgC5B09XEKVD0KqRT92nYvSfcLg';" alt="Pin On Series">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Series</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/88/0d/76/880d765587462325cadc7ee7b7ee3e33.jpg" data-lightbox="roadtrip" data-title="Pin On Sexeducation">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/88/0d/76/880d765587462325cadc7ee7b7ee3e33.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhRwwNZTOaIBy_0DhvKSvtdW69bsxNvxOeHg';" alt="Pin On Sexeducation">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sexeducation</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d4/c3/30/d4c330e107aec225849170c0778d611b.png" data-lightbox="roadtrip" data-title="Pin On Ruby">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d4/c3/30/d4c330e107aec225849170c0778d611b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGcOFa-MoRW2aRuEjYaPOpHpprr-TZnS8koA';" alt="Pin On Ruby">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ruby</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/e5/db/b7/e5dbb7ed36fe7cd62f1cb409e46a0749.png" data-lightbox="roadtrip" data-title="Pin On Thrifthing">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/e5/db/b7/e5dbb7ed36fe7cd62f1cb409e46a0749.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4DGA7DS2KA8YJsi9YIyYYPfrq5wEMWogb2w';" alt="Pin On Thrifthing">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Thrifthing</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6b/01/00/6b01008ac3c38ade31fe560e078f215b.jpg" data-lightbox="roadtrip" data-title="Pin On Meave And Otis">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6b/01/00/6b01008ac3c38ade31fe560e078f215b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkDAmgCtu4NNmSwuvrz7RSeT8lU6gD89l1HQ';" alt="Pin On Meave And Otis">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Meave And Otis</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/c6/6a/a9c66a3efa2213b96d6c64cdcac36134.jpg" data-lightbox="roadtrip" data-title="Pin On Moordale">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/c6/6a/a9c66a3efa2213b96d6c64cdcac36134.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7JNFw0TSDBxtoUcho7vikyHMzJ1QlY3dhdg';" alt="Pin On Moordale">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Moordale</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/3a/a9/3a/3aa93a1fa3c6618db0629e4eec509946.jpg" data-lightbox="roadtrip" data-title="Pin On Sex Education S1">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/3a/a9/3a/3aa93a1fa3c6618db0629e4eec509946.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgKtml6_gYsQAPsHbXjsUQJYylFEwbhRTVHw';" alt="Pin On Sex Education S1">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Sex Education S1</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f0/85/d0/f085d01cb74a38ea25c3e6b4ae0266e7.png" data-lightbox="roadtrip" data-title="Pin On 1 Looks For The Future">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f0/85/d0/f085d01cb74a38ea25c3e6b4ae0266e7.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqF7Jn0iGRJm2eUtQ4QS5jjOl5KW_UfV3AfQ';" alt="Pin On 1 Looks For The Future">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On 1 Looks For The Future</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/army-army-picture.html">Army Army Picture</a></li>
+													<li class="list-group-item"><a href="/army-cadence-song-hard-work.html">Army Cadence Song Hard Work</a></li>
+													<li class="list-group-item"><a href="/army-art-sri-lanka.html">Army Art Sri Lanka</a></li>
+													<li class="list-group-item"><a href="/army-army-ringtone.html">Army Army Ringtone</a></li>
+													<li class="list-group-item"><a href="/army-battlefield-painting.html">Army Battlefield Painting</a></li>
+													<li class="list-group-item"><a href="/army-border-song.html">Army Border Song</a></li>
+													<li class="list-group-item"><a href="/army-art-photos.html">Army Art Photos</a></li>
+													<li class="list-group-item"><a href="/army-art-prints.html">Army Art Prints</a></li>
+													<li class="list-group-item"><a href="/army-army-ke-song.html">Army Army Ke Song</a></li>
+													<li class="list-group-item"><a href="/army-artinya-apa-ya.html">Army Artinya Apa Ya</a></li>
+													<li class="list-group-item"><a href="/army-army-world.html">Army Army World</a></li>
+													<li class="list-group-item"><a href="/army-arti.html">Army Arti</a></li>
+													<li class="list-group-item"><a href="/army-art-of-command.html">Army Art Of Command</a></li>
+													<li class="list-group-item"><a href="/army-art-tattoos.html">Army Art Tattoos</a></li>
+													<li class="list-group-item"><a href="/army-army-pubs.html">Army Army Pubs</a></li>
+													<li class="list-group-item"><a href="/army-artinya.html">Army Artinya</a></li>
+													<li class="list-group-item"><a href="/army-army-monthly-a.html">Army Army Monthly A</a></li>
+													<li class="list-group-item"><a href="/army-arts-and-crafts.html">Army Arts And Crafts</a></li>
+													<li class="list-group-item"><a href="/army-army-ka-gana.html">Army Army Ka Gana</a></li>
+													<li class="list-group-item"><a href="/army-art-poster.html">Army Art Poster</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

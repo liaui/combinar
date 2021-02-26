@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>George Bush National Guard - You Must Know</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "George Bush National Guard",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/49/62/57/496257516ef26ae87ad68b5bd30e5278.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=george+bush+national+guard",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>George Bush National Guard</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Two weeks before he was to graduate from Yale George Walker Bush stepped into the offices of the Texas Air National Guard at Ellington Field outside Houston and announced that he wanted to sign up. Bush called in the National Guard to restore order on the island of St. Bush joined the Texas Air National Guards 147th Fighter Group at Ellington Field completed Air Force flight training and served as an F-102 fighter pilot before he left the Guard in 1973. <br>				
+			</p>
+										<a class="badge badge-primary" href="/army-song-hindi-download-mp3.html">army song hindi download mp3</a>
+											<a class="badge badge-danger" href="/army-song-lyrics-english.html">army song lyrics english</a>
+											<a class="badge badge-primary" href="/army-song-in-lyrics.html">army song in lyrics</a>
+											<a class="badge badge-dark" href="/army-song-dude-perfect-lyrics.html">army song dude perfect lyrics</a>
+											<a class="badge badge-dark" href="/army-song-jio-tune.html">army song jio tune</a>
+											<a class="badge badge-dark" href="/army-song-full-dj.html">army song full dj</a>
+											<a class="badge badge-secondary" href="/army-song-download-mp3-status.html">army song download mp3 status</a>
+											<a class="badge badge-warning" href="/army-song-download-mr-jatt-mp3-pagalworld.html">army song download mr jatt mp3 pagalworld</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're searching for picture and video information related to the key word you've come to pay a visit to the ideal blog.  Our site provides you with suggestions for viewing the maximum quality video and image content, search and find more informative video articles and graphics that fit your interests.
+</p>
+<p align="justify">
+	comprises one of thousands of movie collections from several sources, especially Youtube, so we recommend this movie for you to see.   This blog is for them to stop by this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/96/74/f9/9674f9149a36bda6d1336c2c870a1881.jpg" data-lightbox="roadtrip" data-title="President George W Bush In The Service Not Bad Looking American Presidents Presidents Presidential History">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/96/74/f9/9674f9149a36bda6d1336c2c870a1881.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5ckWpIWx0hqTs2JzHRQsLFMcYWpWBB6zZA';" alt="President George W Bush In The Service Not Bad Looking American Presidents Presidents Presidential History">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">President George W Bush In The Service Not Bad Looking American Presidents Presidents Presidential History</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a0/c7/10/a0c710d79b852ec7728762de879c2379.jpg" data-lightbox="roadtrip" data-title="George W Bush Fast Facts George Fast Facts Facts">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a0/c7/10/a0c710d79b852ec7728762de879c2379.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSscI4Rq_wynlb35B6f1qYdV600i8ISO8CAyQ';" alt="George W Bush Fast Facts George Fast Facts Facts">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">George W Bush Fast Facts George Fast Facts Facts</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/84/2d/60/842d609efce2a04529441be44c99f44b.jpg" data-lightbox="roadtrip" data-title="George W Bush Americana U S Presidents American Presidents Presidents">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/84/2d/60/842d609efce2a04529441be44c99f44b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf-jYnHQr6E19UVkwGTLxSP602wj2YnP5Y5Q';" alt="George W Bush Americana U S Presidents American Presidents Presidents">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">George W Bush Americana U S Presidents American Presidents Presidents</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/49/62/57/496257516ef26ae87ad68b5bd30e5278.jpg" data-lightbox="roadtrip" data-title="The Vintage Life Community Google American Presidents Usa Presidents Presidents">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/49/62/57/496257516ef26ae87ad68b5bd30e5278.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrVXIIsFSyfJ5ED7PLKMIbBTBF8nlZhKZkEQ';" alt="The Vintage Life Community Google American Presidents Usa Presidents Presidents">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Vintage Life Community Google American Presidents Usa Presidents Presidents</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/26/fb/d0/26fbd0c14a9a2417cce6c7ebc50a88ea.jpg" data-lightbox="roadtrip" data-title="George W Bush Texas Air National Guard Presidential History American Presidents Presidents">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/26/fb/d0/26fbd0c14a9a2417cce6c7ebc50a88ea.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2VKepbWcWbb04TKBYr1_O1W14OorMkdFLQw';" alt="George W Bush Texas Air National Guard Presidential History American Presidents Presidents">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">George W Bush Texas Air National Guard Presidential History American Presidents Presidents</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/65/27/1b/65271b2c00644d996d8770b0f09ba7d5.jpg" data-lightbox="roadtrip" data-title="Pin On Celebrities In Uniform">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/65/27/1b/65271b2c00644d996d8770b0f09ba7d5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Tj9cmyfqNeKXlJwu_SipvJrNQyTQPiYXUg';" alt="Pin On Celebrities In Uniform">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Celebrities In Uniform</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/69/8a/89/698a891d137336def64d26302f652cf5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Tj9cmyfqNeKXlJwu_SipvJrNQyTQPiYXUg';" alt="Pin On Celebrities In Uniform">
+										<div class="card-body">
+						<h3 class="h5"><b>The missing military records include a bevy of forms logs pay stubs and evaluations from Mr.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>George bush national guard</strong>. 
+								
+																	And outside Houston in Texas a 26-year-old named George Bush a lieutenant in the National Guard reported for drill duty as usual at. 
+																	Linda Allisons story never before published contradicts the Bush campaigns assertion that George W Bush transferred from the Texas Air National Guard to the Alabama National Guard in 1972. 
+																	The 1400-square-foot house in Midland Texas where former President George W. 
+																	CBS News evaluation of all the documents released by the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Documents that should have. 
+																	The Bush administration. 
+																	Bush is suspended from flying with the Air National Guard On August 1 1972 future President George Walker Bush son of former president George Herbert Walker Bush is. 
+																	August 01 George W. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bushs Vietnam Warera service in the National Guard. 
+																	Bushs service in the Texas Air National Guard in 197273 allegedly typed in 1973. 
+																	Tonight we are new documents and new information on the presidents military service and the first-ever interview with the man who says he pulled the strings to get young George W. 
+																	Within a year of Brokaws retirement and Jenningss death Rather left the anchor desk in 2005 following the Killian documents controversy in which he presented unauthenticated documents in a news report on President George W. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	After graduating from Yale University in 1968 George W. 
+																	Bush the nations 43rd president was permanently suspended from flying with the Texas Air National Guard for having missed an annual medical examination. 
+																	The park service said it had started a special resource study as directed by Congress in 2019 to examine the eligibility of the home on West Ohio Avenue as a new unit of the. 
+																	Bush spent part of his childhood is under consideration to become part of the national park system the National Park Service said. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Democrats made similar attacks. 
+																	On September 5 the Associated Press which had sued in a failed attempt to see a microfilm copy of Bushs entire Texas Air National Guard personnel record declared. 
+																	Latest US news world news sports business opinion analysis and reviews from the Guardian the worlds leading liberal voice. 
+																	Rather and his producer Mary Mapes played by Cate Blanchett in Truth aired a story that alleged that Bush went AWOL during his time in the Texas Air National Guard. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bushs time in the Texas Air National Guard. 
+																	On this day in 1972 George W. 
+																	The Killian documents controversy also referred to as Memogate or Rathergate involved six documents containing unsubstantiated critical allegations about President George W. 
+																	Looting and racial tension broke out following devastating damage. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Bush joined the 147th Fighter-Interceptor Group of the Texas Air National Guard on May 27 1968 during the Vietnam War. 
+																	CBS News apologized Monday for a mistake in judgment in its story questioning President Bushs National Guard service claiming it was misled by the source of documents that several experts have. 
+																	He committed to serve until May 26 1974 with two years on active duty while training to fly and four years on part-time duty. 
+																	American troops were on their way home from Vietnam. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	WASHINGTON District of Columbia National Guard DCNG Soldiers and Airmen provided security transportation and disaster response capabilities during the state funeral held at the Washington National Cathedral for the 41st President of the United States George HW. 
+																	Croix of the US. 
+																	He continued to work with CBS until 2006 when he was abruptly fired. 
+																	Following a career in the oil business and part ownership of the Texas Rangers major league baseball team Bush was elected Governor of Texas in 1994. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	He received a masters of business administration degree from the Harvard Business School in 1975. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/0b/52/1e/0b521e63ba69d2b97983e52845cd9dfa.jpg" data-lightbox="roadtrip" data-title="George W Bush Celebrity Yearbook Photos Childhood Photos Yearbook Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/0b/52/1e/0b521e63ba69d2b97983e52845cd9dfa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVwdt6x77R4p6lj8lxxiebiOD5s7L2CaveKg';" alt="George W Bush Celebrity Yearbook Photos Childhood Photos Yearbook Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">George W Bush Celebrity Yearbook Photos Childhood Photos Yearbook Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/13/0a/4f/130a4fa5480d17a44bf55e9ecd9e1ad8.jpg" data-lightbox="roadtrip" data-title="Pin On Ww2">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/13/0a/4f/130a4fa5480d17a44bf55e9ecd9e1ad8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZr45lfBLGgjRCKh2SWY1qas9sznOl9_UWEQ';" alt="Pin On Ww2">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Ww2</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a9/77/27/a977275af32867a9afad60fe4a0427cd.jpg" data-lightbox="roadtrip" data-title="The Best Of Life 37 Years In Pictures Freedom Riders Civil Rights Movement Civil Rights">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a9/77/27/a977275af32867a9afad60fe4a0427cd.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWgURYVDJohxyl_QJ5KLm76L_kVdF5BLfcuw';" alt="The Best Of Life 37 Years In Pictures Freedom Riders Civil Rights Movement Civil Rights">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Best Of Life 37 Years In Pictures Freedom Riders Civil Rights Movement Civil Rights</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/69/8a/89/698a891d137336def64d26302f652cf5.jpg" data-lightbox="roadtrip" data-title="Obama Signs Law Banning Himself From Entering The Us Usaf Soldier Obama">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/69/8a/89/698a891d137336def64d26302f652cf5.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF5DvfyyhUU8vnZA-_bJ5byMVS906KKx37Jg';" alt="Obama Signs Law Banning Himself From Entering The Us Usaf Soldier Obama">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Obama Signs Law Banning Himself From Entering The Us Usaf Soldier Obama</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/78/68/0a/78680a32547fff236153e0a6cf95bea0.jpg" data-lightbox="roadtrip" data-title="Pin On Marines Air Force Army Navy National Guard Coash Guard And President Bush">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/78/68/0a/78680a32547fff236153e0a6cf95bea0.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ1kwqj5iaZvs-UtO3QQs_5Bz-Lqcz2-AyVA';" alt="Pin On Marines Air Force Army Navy National Guard Coash Guard And President Bush">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Marines Air Force Army Navy National Guard Coash Guard And President Bush</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/ad/1d/36/ad1d362cc0d87c021a302c37a1cfa64b.jpg" data-lightbox="roadtrip" data-title="Us Soldier Saying Goodbye To Family Wwi World War I World War One World War">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/ad/1d/36/ad1d362cc0d87c021a302c37a1cfa64b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH5dlkpoUwRmvAOpiHxQ3xsTmDxqF6LRTNsQ';" alt="Us Soldier Saying Goodbye To Family Wwi World War I World War One World War">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Us Soldier Saying Goodbye To Family Wwi World War I World War One World War</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/91/c6/90/91c6905af0dc89c7e96e42c979303369.jpg" data-lightbox="roadtrip" data-title="Pin On Bugling">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/91/c6/90/91c6905af0dc89c7e96e42c979303369.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU2HeRZh0inlR72Ry35k4hN4vwqFgTRkY3tQ';" alt="Pin On Bugling">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Bugling</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/01/02/35/01023564a50df222cf50c7be23bb8085.jpg" data-lightbox="roadtrip" data-title="Tearful George W Bush Breaks Down During Eulogy To His Father George Eulogy Military Honor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/01/02/35/01023564a50df222cf50c7be23bb8085.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToxkaWmUAZEVLL35aLEziOmlozWn1VwNX1og';" alt="Tearful George W Bush Breaks Down During Eulogy To His Father George Eulogy Military Honor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Tearful George W Bush Breaks Down During Eulogy To His Father George Eulogy Military Honor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/98/2e/57/982e579e408ca058e1a97c4ce33f3e03.jpg" data-lightbox="roadtrip" data-title="Chuck Yeager Other Pilots Idolize Him Airline Pilots Try To Talk Like Him Fighter Pilot Pilot Usaf">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/98/2e/57/982e579e408ca058e1a97c4ce33f3e03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiqyMZ4FnEiOw4oGGEQqhG3o6pLdPhkE89Gw';" alt="Chuck Yeager Other Pilots Idolize Him Airline Pilots Try To Talk Like Him Fighter Pilot Pilot Usaf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Chuck Yeager Other Pilots Idolize Him Airline Pilots Try To Talk Like Him Fighter Pilot Pilot Usaf</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/474x/0a/f5/95/0af595dc624c8cc2984dc050aa9a80f9.jpg" data-lightbox="roadtrip" data-title="Pin On At Work">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/474x/0a/f5/95/0af595dc624c8cc2984dc050aa9a80f9.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdTcFr0l1neblzyYHsScsg4D_gzRD-AtiWoA';" alt="Pin On At Work">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On At Work</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/236x/9e/59/a6/9e59a6cb5e36d450cea1ccbb29d1d704.jpg" data-lightbox="roadtrip" data-title="This Day In History Joe M Jackson His Amazing Rescue At Kham Duc Medal Of Honor Medal Of Honor Recipients Honor">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/236x/9e/59/a6/9e59a6cb5e36d450cea1ccbb29d1d704.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiVnLtZwdkdl5cXL8AvU2OQeeTiJx9Z98wAw';" alt="This Day In History Joe M Jackson His Amazing Rescue At Kham Duc Medal Of Honor Medal Of Honor Recipients Honor">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">This Day In History Joe M Jackson His Amazing Rescue At Kham Duc Medal Of Honor Medal Of Honor Recipients Honor</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/8b/40/17/8b4017189fda75609789dee3f7474ec4.jpg" data-lightbox="roadtrip" data-title="General William Westmoreland Commanding General Of The Viet Nam War Google Image Result For Http Up William Westmoreland Vietnam War Vietnam War Photos">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/8b/40/17/8b4017189fda75609789dee3f7474ec4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyMNx2utBIPYogKiaSsmPQ6DuXlxe8sVNirQ';" alt="General William Westmoreland Commanding General Of The Viet Nam War Google Image Result For Http Up William Westmoreland Vietnam War Vietnam War Photos">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">General William Westmoreland Commanding General Of The Viet Nam War Google Image Result For Http Up William Westmoreland Vietnam War Vietnam War Photos</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/10/86/14/108614e202d9c559ebda58c23d76f69a.jpg" data-lightbox="roadtrip" data-title="Pin On Aircraft Spacecraft">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/10/86/14/108614e202d9c559ebda58c23d76f69a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV8ax7yvnZP-Tx6ASAuWnZWW5UMiG_HOHMWg';" alt="Pin On Aircraft Spacecraft">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Aircraft Spacecraft</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/hilang-perasa-makanan.html">Hilang Perasa Makanan</a></li>
+													<li class="list-group-item"><a href="/hilang-tak-berkesan-lirik.html">Hilang Tak Berkesan Lirik</a></li>
+													<li class="list-group-item"><a href="/hitung-mundur-ramadhan-2021.html">Hitung Mundur Ramadhan 2021</a></li>
+													<li class="list-group-item"><a href="/hilang-ost-cinderella.html">Hilang Ost Cinderella</a></li>
+													<li class="list-group-item"><a href="/hilang-rasa-pengecap.html">Hilang Rasa Pengecap</a></li>
+													<li class="list-group-item"><a href="/hilang-pergi-dan-lupakan-lirik.html">Hilang Pergi Dan Lupakan Lirik</a></li>
+													<li class="list-group-item"><a href="/hilang-sinyal.html">Hilang Sinyal</a></li>
+													<li class="list-group-item"><a href="/hiring-quezon-city.html">Hiring Quezon City</a></li>
+													<li class="list-group-item"><a href="/hilang-tanpa-jejak.html">Hilang Tanpa Jejak</a></li>
+													<li class="list-group-item"><a href="/hilang-garasi-mp3.html">Hilang Garasi Mp3</a></li>
+													<li class="list-group-item"><a href="/hitung-weton-jodoh-online.html">Hitung Weton Jodoh Online</a></li>
+													<li class="list-group-item"><a href="/hilang-empati.html">Hilang Empati</a></li>
+													<li class="list-group-item"><a href="/hitung-uang-tiktok.html">Hitung Uang Tiktok</a></li>
+													<li class="list-group-item"><a href="/hilang-emosi.html">Hilang Emosi</a></li>
+													<li class="list-group-item"><a href="/hiring-quest.html">Hiring Quest</a></li>
+													<li class="list-group-item"><a href="/history-of-national-guard.html">History Of National Guard</a></li>
+													<li class="list-group-item"><a href="/hitung-mundur-hari.html">Hitung Mundur Hari</a></li>
+													<li class="list-group-item"><a href="/hitung-lah-keliling-lingkaran-berikut.html">Hitung Lah Keliling Lingkaran Berikut</a></li>
+													<li class="list-group-item"><a href="/hitung-jarak.html">Hitung Jarak</a></li>
+													<li class="list-group-item"><a href="/hitung-weton-lahir.html">Hitung Weton Lahir</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>

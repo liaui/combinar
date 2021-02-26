@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+	
+	body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}
+	
+	@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}
+	@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}
+	
+	.main{margin-top: 6rem;}
+	.form-inline .form-control{min-width: 300px;}
+
+
+	.form-inline .search-box{color:#333;background-color:#f5f5f5;min-width:30px;;height:50px;padding:0 35px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+	
+	@media  only screen and (max-width:490px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+		}
+	}
+	@media  only screen and (max-width:347px){
+		.form-inline .search-box{
+			color:#333;background-color:#f5f5f5;
+			width:80px;
+			height:50px;
+			padding:0 20px;
+			border:none;
+			border-radius:20px;
+			outline:0;border:1px solid #002cd92e;
+			font-size: 12px;
+			margin-right: -50px;
+		}
+
+		.navbar .navbar-brand {
+			margin: 0 20px 0 -40px;
+			font-size: 28px;
+			padding: 0;
+			line-height: 24px;
+		}
+	}
+	
+	
+	.bg-white {
+        background-color: #292929!important;
+    }
+    .main {
+        margin-top: 3rem;
+        background: black;
+    }
+    body {
+        color: #ececec;
+    }
+    .navbar-light .navbar-brand {
+        color: rgb(255 255 255 / 90%);
+    }
+    .navbar-light .navbar-brand:hover {
+        color: #45e5ec;
+    }
+    .list-group li {
+        padding: 0;
+        background: #212121;
+    }
+    a {
+        color: #45e5ec;
+    }
+    .card {
+        background-color: #1d1d1d;
+    }
+    .posts-image-big h2 a {
+        color: #45e5ec;
+    }
+    .posts-image h2 a {
+        color: #45e5ec;
+        background: black;
+    }
+	
+	</style>
+	<title>Us Coast Guard On Submarine - Trending</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Yeet"
+  },
+  "headline": "Us Coast Guard On Submarine",
+  "datePublished": "2021-02-27",
+  "image": "https://i.pinimg.com/originals/99/a7/19/99a7190e6c6ce3ff820788d9fc789723.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Combint",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=us+coast+guard+on+submarine",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->	
+	<!-- Popunder - viva-c085d.web.app 
+	<script type='text/javascript' src='//0x01n2ptpuz3.com/9a/89/be/9a89bef9df72516e762abd6a8655d4f4.js'></script>
+	-->
+	
+</head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Combint" class="navbar-brand mb-1">Combint</a>
+			  			   <!-- <form class="form-inline mb-1" action="/" method="get"> -->
+			   <form class="form-inline mb-1">
+				<!-- <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search and hit enter.." aria-label="Search"> -->
+				<input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+				
+			  </form>
+			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Us Coast Guard On Submarine</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">These vessels were used primarily for counter-drug patrols. Coast Guard released video Thursday of service members leaping onto a submarine carrying 17000 pounds of cocaine as part of a monthslong 569 million cocaine bust. Dramatic video released by the US. <br>				
+			</p>
+										<a class="badge badge-warning" href="/us-army-news-app.html">us army news app</a>
+											<a class="badge badge-info" href="/us-army-photo-frames.html">us army photo frames</a>
+											<a class="badge badge-info" href="/us-army-latest-news.html">us army latest news</a>
+											<a class="badge badge-dark" href="/us-army-ngats-program.html">us army ngats program</a>
+											<a class="badge badge-light" href="/us-army-poland-news.html">us army poland news</a>
+											<a class="badge badge-secondary" href="/us-army-pickelhaube.html">us army pickelhaube</a>
+											<a class="badge badge-warning" href="/us-army-ranger-dress-uniform.html">us army ranger dress uniform</a>
+											<a class="badge badge-success" href="/us-army-ncoer-signature-order.html">us army ncoer signature order</a>
+						</div>
+	
+	<!-- Ads in article --> 
+	
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+	</center>
+	</div>
+	
+	<!-- Ads in article -->
+	
+					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	
+	<div class="col-md-12">
+        <!-- <h2>Spintax Test</h2> -->
+         <p align="justify">
+	If you're looking for video and picture information related to the keyword you've come to visit the ideal blog.  Our website provides you with hints for seeing the highest quality video and picture content, hunt and find more enlightening video articles and graphics that match your interests.
+</p>
+<p align="justify">
+	comprises one of tens of thousands of video collections from various sources, particularly Youtube, so we recommend this video that you see.  You can also contribute to supporting this website by sharing videos and graphics that you enjoy on this blog on your social media accounts like Facebook and Instagram or tell your closest friends share your experiences concerning the simplicity of access to downloads and the information that you get on this website.  This blog is for them to visit this website.
+</p>
+
+
+		
+    </div>
+        
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/85/d4/f6/85d4f69741e2ed5a94a273291a8dfd2e.jpg" data-lightbox="roadtrip" data-title="Pin On Coast Guard Wow They Were On It Cool Good For Them Too Often Forgotten For How Much They Really Do">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/85/d4/f6/85d4f69741e2ed5a94a273291a8dfd2e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiY0GDqTSn2gHNJdQs3Nk2jtl42i9k5QOBXw';" alt="Pin On Coast Guard Wow They Were On It Cool Good For Them Too Often Forgotten For How Much They Really Do">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Coast Guard Wow They Were On It Cool Good For Them Too Often Forgotten For How Much They Really Do</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/d1/12/49/d1124968499d383c303344d4189e8eb1.jpg" data-lightbox="roadtrip" data-title="Pin On Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/d1/12/49/d1124968499d383c303344d4189e8eb1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPCZlVx-JAsNwdUdvDEos_kyvABvyvUVkPFQ';" alt="Pin On Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/b5/25/99b525f49c3cc6bcaedf40798661039a.png" data-lightbox="roadtrip" data-title="Pin By Robert Cadam On Submarines 1 Seawolf Class Submarine Aircraft Carrier Submarine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/b5/25/99b525f49c3cc6bcaedf40798661039a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu08oDoO07KlmRdYs2MZs2YIOQCMVlNRAjXw';" alt="Pin By Robert Cadam On Submarines 1 Seawolf Class Submarine Aircraft Carrier Submarine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Robert Cadam On Submarines 1 Seawolf Class Submarine Aircraft Carrier Submarine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/77/47/be7747ef820395cb88ed2c563289530d.jpg" data-lightbox="roadtrip" data-title="The Coast Guard Is Catching More Drug Running Subs But Most Very Stealthy Narco Subs Are Probably Going Undetected Us Coast Guard Coast Guard Coast Guard Cutter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/77/47/be7747ef820395cb88ed2c563289530d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUo-N5xmMcX2KxM0jMN81WakVXu_jsxmfhHQ';" alt="The Coast Guard Is Catching More Drug Running Subs But Most Very Stealthy Narco Subs Are Probably Going Undetected Us Coast Guard Coast Guard Coast Guard Cutter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Coast Guard Is Catching More Drug Running Subs But Most Very Stealthy Narco Subs Are Probably Going Undetected Us Coast Guard Coast Guard Coast Guard Cutter</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/a6/d5/84/a6d584adba058ef19f08ba08785052af.jpg" data-lightbox="roadtrip" data-title="Pin By Matt Hodel On Narco Subs Submarine Us Coast Guard Navy">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/a6/d5/84/a6d584adba058ef19f08ba08785052af.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDJTbzDYVss7m62sG7jJ5JLqVCnn6EoZV59Q';" alt="Pin By Matt Hodel On Narco Subs Submarine Us Coast Guard Navy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By Matt Hodel On Narco Subs Submarine Us Coast Guard Navy</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2d/4b/fd/2d4bfd3d58815cb68b9b2de5d977f30f.jpg" data-lightbox="roadtrip" data-title="Powering The U S Coast Guard With Lng Gcaptain Coast Guard Ships Coast Guard Boats Coast Guard Cutter">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2d/4b/fd/2d4bfd3d58815cb68b9b2de5d977f30f.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmBf9wiRY4vy9MGZMuyNJfoEWCcBpuKbcUkQ';" alt="Powering The U S Coast Guard With Lng Gcaptain Coast Guard Ships Coast Guard Boats Coast Guard Cutter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Powering The U S Coast Guard With Lng Gcaptain Coast Guard Ships Coast Guard Boats Coast Guard Cutter</h3>
+				</div>
+			</div>
+		</div>
+		        
+			<div class="col-12 mb-4">
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+				<div class="card">
+										<img class="card-img-top v-cover ads-img " src="https://i.pinimg.com/originals/99/b5/25/99b525f49c3cc6bcaedf40798661039a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmBf9wiRY4vy9MGZMuyNJfoEWCcBpuKbcUkQ';" alt="Powering The U S Coast Guard With Lng Gcaptain Coast Guard Ships Coast Guard Boats Coast Guard Cutter">
+										<div class="card-body">
+						<h3 class="h5"><b>A crew member on board US Coastguard cutter Munro can be heard shouting.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>Us coast guard on submarine</strong>. 
+								
+																	Four have now been. 
+																	The ship deployed a. 
+																	Five smugglers transported more than 7 tons of cocaine on a submarine. 
+																	South American cartels use submarines to smuggle drugs into the United States. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coast Guard Cutter Munro. 
+																	By the end of World War II submarine chasers had sunk around 67 German U-boats. 
+																	Submarine chasers were used mostly by the United States Coast Guard in World War II for destroying German U-boats that were stationed off the coast of the United States that were trying to sink merchant convoys as they departed American ports. 
+																	When it stopped one of the vessels in July last year it was. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	According to CNN they are building them deep in the jungle. 
+																	President Donald Trump has praised the amazing Coast Guard sailors after dramatic footage showed them jumping on to a moving submarine 7 Vice President Mike Pence walks past bales of seized. 
+																	The Coast Guard Cutter Stratton crew seizes bales from a self-propelled semi-submersible submarine interdicted in international waters off the coast of Centr. 
+																	The video shows Coast Guard officers boarding the submarine and ordering those inside to open the hatch. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	The US Coast Guard has released bodycam footage of a raid on a moving submarine-type vessel filled with 185m of cocaine. 
+																	US Coast Guard The US Coast Guard successfully stopped almost 40 narco submarines in 2019 with more being intercepted this year. 
+																	All are homeported in Pascagoula Mississippi. 
+																	The US Coast Guard released a video on Thursday that showed exactly how one might intercept a fast-moving narco-sub on the high seas netting more than 17000 pounds of cocaine in the process. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	This is a class of fifteen 65-foot tugs used by the United States Coast Guard for search and rescue law enforcement aids-to-navigation work and light icebreaking. 
+																	July 11 the US Coast Guard has reported on Twitter about the arrest of drug dealers in the eastern Pacific Ocean. 
+																	But on June 18 there was a positive hit on a narco-submarine hundreds of miles off the Colombian and Ecuadoran coast in waters patrolled by the US. 
+																	Coast Guard shows an interdiction team at sea shouting in Spanish while forcibly boarding a homemade submarine alleged to be carrying thousands of pounds of. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Navy and Coast Guard stopped three narco submarines in their tracks. 
+																	The incident happened in June and the video of the drug bust was released recently. 
+																	Members from the Coast Guard Cutter Munro chased the. 
+																	The US Coast Guard says a cutter fast patrol boat intercepted a submarine suspected of smuggling drugs in the Pacific Ocean. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Incredible footage shows the moment a member of the US Coast Guard jumped on top of a suspected drug smuggling submarine in a high speed chase. 
+																	Cyclone-class patrol boat - 179-foot boats leased short-term from the US. 
+																	WILD RIDE Coast Guard jumps onto fleeing narco-sub in Pacific Ocean - YouTube NEWS Incredible footage of crewmen from the US. 
+																	During World War II its aircraft and ships led by the Treasury-class cutters hunted subs on the. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coast Guard crews guided hundreds of ships through submarine-infested waters during World War I. 
+																	Navy and Coast Guard interdicted three Low Profile vessels LPVs known as. 
+																	Small Harbor Tug WYTL. 
+																	During four short days in mid-May the US. 
+															</p>
+													<p class="p-2" align="justify">
+								
+																	Coast Guard Cutter USS Douglas Munro jumping onto the top of a. 
+															</p>
+											</div>
+				</div>
+				<!-- Ads in article -->
+				<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		<!--
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		-->
+		<script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div>
+	</center>
+</div>
+			</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/f6/3e/6e/f63e6e831296567c16bd253fffb4b650.jpg" data-lightbox="roadtrip" data-title="A Submarine Can I Travel In One Of These Please Louisville Royal Australian Navy Okinawa">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/f6/3e/6e/f63e6e831296567c16bd253fffb4b650.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6siR8nu4byJ5wFf3LTrvfjIoFB-BI_Eq_qA';" alt="A Submarine Can I Travel In One Of These Please Louisville Royal Australian Navy Okinawa">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">A Submarine Can I Travel In One Of These Please Louisville Royal Australian Navy Okinawa</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/30/bd/87/30bd87850e2efb1b890ff46ef6f9bbd1.jpg" data-lightbox="roadtrip" data-title="Pin By No On Seaview Submarine Movie Nuclear Submarine Submarines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/30/bd/87/30bd87850e2efb1b890ff46ef6f9bbd1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyK3n9RLQ1BtpRnr0aPkz7kCZ9ojpARkDlcw';" alt="Pin By No On Seaview Submarine Movie Nuclear Submarine Submarines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin By No On Seaview Submarine Movie Nuclear Submarine Submarines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/564x/59/21/f2/5921f2749ecf876288f357a172f013f1.jpg" data-lightbox="roadtrip" data-title="Wild Ride Coast Guard Jumps Onto Fleeing Narco Submarine In Pacific Ocean Youtube Coast Guard Us Coast Guard Coast">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/564x/59/21/f2/5921f2749ecf876288f357a172f013f1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnTw_e7zJcVGUBdKLcAqZhYFz_-g4vp_JtWQ';" alt="Wild Ride Coast Guard Jumps Onto Fleeing Narco Submarine In Pacific Ocean Youtube Coast Guard Us Coast Guard Coast">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Wild Ride Coast Guard Jumps Onto Fleeing Narco Submarine In Pacific Ocean Youtube Coast Guard Us Coast Guard Coast</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/2c/9e/a6/2c9ea6984d9cc1f3c756358dd9eac333.jpg" data-lightbox="roadtrip" data-title="Coast Guard Working With Canadians Finns On Future Icebreaker Design Usni News Coast Guard Canadian Coast Guard Us Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/2c/9e/a6/2c9ea6984d9cc1f3c756358dd9eac333.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj_hzesfiyDHgH_HEAngvYKWV0naPX1PQbag';" alt="Coast Guard Working With Canadians Finns On Future Icebreaker Design Usni News Coast Guard Canadian Coast Guard Us Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Coast Guard Working With Canadians Finns On Future Icebreaker Design Usni News Coast Guard Canadian Coast Guard Us Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/fc/09/c0/fc09c0c36d2f7afe01ae8b6f87379c38.jpg" data-lightbox="roadtrip" data-title="Ssbn 631 Ullyses S Grant 1991 Us Navy Submarines Submarines Nuclear Submarine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/fc/09/c0/fc09c0c36d2f7afe01ae8b6f87379c38.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3pTvijVGe21N4VhqH_f0iQCkAAP4bJo98aw';" alt="Ssbn 631 Ullyses S Grant 1991 Us Navy Submarines Submarines Nuclear Submarine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Ssbn 631 Ullyses S Grant 1991 Us Navy Submarines Submarines Nuclear Submarine</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/99/a7/19/99a7190e6c6ce3ff820788d9fc789723.jpg" data-lightbox="roadtrip" data-title="Pin On Coming 2015">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/99/a7/19/99a7190e6c6ce3ff820788d9fc789723.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2RyoPmMizLOZWdlgX6fLR4vE4z3PoMvmrw';" alt="Pin On Coming 2015">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Coming 2015</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/be/86/cf/be86cfc187f55f3f8965f5f4185c3203.jpg" data-lightbox="roadtrip" data-title="The Coast Guard Cutter Mellon Whec717 She Was The First And Only Uscg Cutter To Be Fitted With The Harpoon M Coast Guard Cutter Coast Guard Us Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/be/86/cf/be86cfc187f55f3f8965f5f4185c3203.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1WKuXBpN82fsXTR0HO2VTfXp8rKq-SBa3Ag';" alt="The Coast Guard Cutter Mellon Whec717 She Was The First And Only Uscg Cutter To Be Fitted With The Harpoon M Coast Guard Cutter Coast Guard Us Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Coast Guard Cutter Mellon Whec717 She Was The First And Only Uscg Cutter To Be Fitted With The Harpoon M Coast Guard Cutter Coast Guard Us Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/6a/e1/83/6ae183595effb45afd63d47311004c63.jpg" data-lightbox="roadtrip" data-title="Uss Topeka In 2020 Topeka Us Coast Guard Electric Boat">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/6a/e1/83/6ae183595effb45afd63d47311004c63.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq935-rEqo95ax6C1_xyiSG-w2JhAqhnu_jg';" alt="Uss Topeka In 2020 Topeka Us Coast Guard Electric Boat">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uss Topeka In 2020 Topeka Us Coast Guard Electric Boat</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/600x315/cc/9e/15/cc9e15360779ea73272a2103bb739653.jpg" data-lightbox="roadtrip" data-title="Uscgc Gallatin Whec 721 Charleston Sc Flight Deck Coast Guard Us Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/600x315/cc/9e/15/cc9e15360779ea73272a2103bb739653.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhljEAxtzJxfz5eq_T1a10QQrjvsNhF3gooA';" alt="Uscgc Gallatin Whec 721 Charleston Sc Flight Deck Coast Guard Us Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Uscgc Gallatin Whec 721 Charleston Sc Flight Deck Coast Guard Us Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/736x/52/77/d0/5277d005b1dddfe9105cffd299da661e.jpg" data-lightbox="roadtrip" data-title="The Us Coast Guards Newest Vessel The National Security Cutter Stone Recently Completed Sea Trials In 2020 Coast Guard Cutter Us Coast Guard Coast Guard">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/736x/52/77/d0/5277d005b1dddfe9105cffd299da661e.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9wWSDoVRXKIPy1aHMlqh9Ry8r41TextVVIg';" alt="The Us Coast Guards Newest Vessel The National Security Cutter Stone Recently Completed Sea Trials In 2020 Coast Guard Cutter Us Coast Guard Coast Guard">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Us Coast Guards Newest Vessel The National Security Cutter Stone Recently Completed Sea Trials In 2020 Coast Guard Cutter Us Coast Guard Coast Guard</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/af/78/e3/af78e3f91039ebb601428946827b907d.jpg" data-lightbox="roadtrip" data-title="The Virginia Class Of Attack Submarines Is Part Of The U S Navy S Replacement For The Older Los Angeles Virginia Class Submarine Coast Guard Ships Submarines">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/af/78/e3/af78e3f91039ebb601428946827b907d.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVLcyAvlCzTcQVEQQIU8yszg-HDLcTnHUwNg';" alt="The Virginia Class Of Attack Submarines Is Part Of The U S Navy S Replacement For The Older Los Angeles Virginia Class Submarine Coast Guard Ships Submarines">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">The Virginia Class Of Attack Submarines Is Part Of The U S Navy S Replacement For The Older Los Angeles Virginia Class Submarine Coast Guard Ships Submarines</h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/21/5d/60/215d600b7bd662765a7dd1065deab38a.jpg" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/21/5d/60/215d600b7bd662765a7dd1065deab38a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdmQYFbP2bJqsXZsOvgmQfw1fj3Yo0ZJy6pg';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+		 
+	 
+			
+        
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.pinimg.com/originals/a8/d9/0c/a8d90cfa110825a8bac53c9ac393a7f8.jpg" data-lightbox="roadtrip" data-title="Pin On Marine">
+											<img class="card-img v-image ads-img " src="https://i.pinimg.com/originals/a8/d9/0c/a8d90cfa110825a8bac53c9ac393a7f8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp3t79khyIdDu-xyWz-wgAt1WV9OGwTc1_jQ';" alt="Pin On Marine">
+										
+				</a>
+				<div class="card-body text-center">      
+										<!-- <div class="d-block mb-2">
+						<a class="btn btn-sm btn-danger" href='/' >Save Image<i class="fas fa-cloud-download-alt ml-1"></i></a>
+					</div> -->
+					<h3 class="h6">Pin On Marine</h3>
+				</div>
+			</div>
+		</div>
+		 
+		</div>	
+				<div class="clearfix"></div>
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+			<div class="d-block p-4">
+		<center>
+		<!-- IN ARTICLE ADS -->
+		<!-- Ikea King (Vercel/Firebase) -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'efec7ecd7c45ded428ac0504e0e91168',
+				'format' : 'iframe',
+				'height' : 250,
+				'width' : 300,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/efec7ecd7c45ded428ac0504e0e91168/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+		<!-- <script async="async" data-cfasync="false" src="//0x01n2ptpuz3.com/22a4bd9ecf1e5ac17d5bfa5bb09ca532/invoke.js"></script>
+        <div id="container-22a4bd9ecf1e5ac17d5bfa5bb09ca532"></div> -->
+        </center>
+        </div>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/utah-national-guard-dc-hotels.html">Utah National Guard Dc Hotels</a></li>
+													<li class="list-group-item"><a href="/vespa-warna-army.html">Vespa Warna Army</a></li>
+													<li class="list-group-item"><a href="/usp-downpipe-mk6-gti.html">Usp Downpipe Mk6 Gti</a></li>
+													<li class="list-group-item"><a href="/usp-le-mineral.html">Usp Le Mineral</a></li>
+													<li class="list-group-item"><a href="/usp-food-fraud.html">Usp Food Fraud</a></li>
+													<li class="list-group-item"><a href="/uspfo-montgomery-al.html">Uspfo Montgomery Al</a></li>
+													<li class="list-group-item"><a href="/usp-bks.html">Usp Bks</a></li>
+													<li class="list-group-item"><a href="/vermont-air-national-guard-base.html">Vermont Air National Guard Base</a></li>
+													<li class="list-group-item"><a href="/usaf-mission-and-vision-statement.html">Usaf Mission And Vision Statement</a></li>
+													<li class="list-group-item"><a href="/uspto-utility-patent.html">Uspto Utility Patent</a></li>
+													<li class="list-group-item"><a href="/utah-army-national-guard-website.html">Utah Army National Guard Website</a></li>
+													<li class="list-group-item"><a href="/vgjf.html">Vgjf</a></li>
+													<li class="list-group-item"><a href="/utah-national-guard-pay-chart.html">Utah National Guard Pay Chart</a></li>
+													<li class="list-group-item"><a href="/uspto-issue-fee-increase.html">Uspto Issue Fee Increase</a></li>
+													<li class="list-group-item"><a href="/uspto-ids.html">Uspto Ids</a></li>
+													<li class="list-group-item"><a href="/uspto-us-classes.html">Uspto Us Classes</a></li>
+													<li class="list-group-item"><a href="/usp-food.html">Usp Food</a></li>
+													<li class="list-group-item"><a href="/usp-standard.html">Usp Standard</a></li>
+													<li class="list-group-item"><a href="/utah-army-national-guard-state-tuition-waiver.html">Utah Army National Guard State Tuition Waiver</a></li>
+													<li class="list-group-item"><a href="/venezuela-army-rank-insignia.html">Venezuela Army Rank Insignia</a></li>
+						 
+						</ul>
+					</div>
+					<!--
+					<div class="col-sm-12 widget">   Ads for my online shop 
+						<h3 class="widget-title">Our Partner</h3>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="https://p-store.net/user/morbtale">P-Store.net</a></li>
+							<! <li class="list-group-item"><a href="https://www.frematers.com/">Blog Frematers</a></li> 
+							<li class="list-group-item"><a href="https://shop.frematers.com/">Shop Frematers</a></li>
+							<li class="list-group-item"><a href="https://store.frematers.com">Store Frematers</a></li>
+							<li class="list-group-item"><a href="https://web.facebook.com/AstraKomik">Astra Komik</a></li>
+						</ul>
+					</div> 
+					-->
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+		<!-- Histats.com  (div with counter) -->
+		<div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">var _Hasync= _Hasync|| [];
+        _Hasync.push(['Histats.start', '1,4483352,4,8,210,40,00011100']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function() {
+        var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+        hs.src = ('//s10.histats.com/js15_as.js');
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+        })();</script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4483352&101" alt="site stats" border="0"></a></noscript>
+        <!-- Histats.com  END  -->
+		
+		<script type="text/javascript">
+			atOptions = {
+				'key' : 'a3bdf395a0ecdeb1468ded77e5fa8393',
+				'format' : 'iframe',
+				'height' : 600,
+				'width' : 160,
+				'params' : {}
+			};
+			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://0x01n2ptpuz3.com/a3bdf395a0ecdeb1468ded77e5fa8393/invoke.js"></scr' + 'ipt>');
+		</script>
+		
+	</center>
+</div>
+					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+		<script type="text/javascript">
+		$(document).ready(function()
+		{
+		  $('body').addClass('xepo_ads');
+		});
+
+		$(document).on('click','.xepo_ads',function(e)
+		{
+		    $(this).removeClass('xepo_ads');
+		    window.open('https://0x01n2ptpuz3.com/j49baxpnr?key=cc742e57bbcd4afeb345341679fda749', '_blank');
+		});
+	</script>
+	    
+
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	
+	<script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+    <!-- Social Bar Ad 
+    <script type='text/javascript' src='//0x01n2ptpuz3.com/cd/0e/bc/cd0ebcb246383ade3afba0eefb9d2cca.js'></script>
+    -->
+</body>
+</html>
